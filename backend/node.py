@@ -25,6 +25,7 @@ class Node:
         self.curr_block = None  # the current block
         self.peer_stakes = []
         
+        
     def create_transaction(self, receiver_address, type_of_transaction, amount, message):
         trans = Transaction(self.wallet.public_key, receiver_address, type_of_transaction, amount, message)
         trans.sign_transaction(self.wallet.private_key)
@@ -37,12 +38,17 @@ class Node:
         pass
 
     def stake(self, stake_amount): # TODO
+    # Η συνάρτηση καλείται από τους nodes για να καθορίσουν το ποσό που δεσμεύουν ως stake για τη
+    # διαδικασία του proof-of-stake. Αυτό το ποσό καθορίζει και την πιθανότητα του κόμβου να επιλεγεί
+    # ως validator. Εννοείται ότι κάθε validator θα πρέπει να είναι σε θέση να κάνει και update στο ποσό
+    # που έχει αποφασίσει να δεσμεύσει.
         if self.balance < stake_amount:
             print(f"Can't stake {stake_amount}, not enough BCC in your acount...")
             return False
         else:
             self.stake = stake_amount
             self.create_transaction(0, type_of_transaction="stake", amount=stake_amount, message=None)
+            
         
     def validate_block(self, block): 
         # validate the previous hash and check validity of current hash
