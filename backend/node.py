@@ -94,7 +94,8 @@ class Node:
         pass
 
     # TODO who is this called by? all nodes or some validator
-    # TODO add mutexes if needed
+    # TODO add mutexes if 
+    # TODO i want it to return True/False in success, failure. used in api
     def add_to_block(self, transaction):
 
         if self.curr_block == None: # this only happens when freshly created, right after genesis block
