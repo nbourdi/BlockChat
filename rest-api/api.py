@@ -29,8 +29,6 @@ def get_block():
     return jsonify({'message': "Block added to blockchain."}), 200
 
 
-    
-
 # Endpoint to validate a transaction
 @app.route('/validate_transaction', methods=['POST'])
 def validate_transaction():
@@ -122,30 +120,30 @@ def create_transaction ():
     else:
         return jsonify({'message': 'Transaction failed. Wrong receiver id.'}), 4
 
-# Endpoint to get the balance
-@app.route('/get_balance', methods=['GET'])
-def get_balance():
-    # Logic to get balance
+# # Endpoint to get the balance
+# @app.route('/get_balance', methods=['GET'])
+# def get_balance():
+#     # Logic to get balance
 
-# Endpoint to get transactions
-@app.route('/get_transactions', methods=['GET'])
-def get_transactions():
-    # Logic to get transactions
+# # Endpoint to get transactions
+# @app.route('/get_transactions', methods=['GET'])
+# def get_transactions():
+#     # Logic to get transactions
 
-# Endpoint to get my transactions
-@app.route('/get_my_transactions', methods=['GET'])
-def get_my_transactions():
-    # Logic to get transactions
+# # Endpoint to get my transactions
+# @app.route('/get_my_transactions', methods=['GET'])
+# def get_my_transactions():
+#     # Logic to get transactions
 
-# Endpoint to get ID
-@app.route('/get_id', methods=['GET'])
-def get_id():
-    # Logic to get ID
+# # Endpoint to get ID
+# @app.route('/get_id', methods=['GET'])
+# def get_id():
+#     # Logic to get ID
 
-# Endpoint to get metrics
-@app.route('/get_metrics', methods=['GET'])
-def get_metrics():
-    # Logic to get metrics
+# # Endpoint to get metrics
+# @app.route('/get_metrics', methods=['GET'])
+# def get_metrics():
+#     # Logic to get metrics
 
 if __name__ == '__main__':
     app.run(debug=True)

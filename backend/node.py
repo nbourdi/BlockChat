@@ -127,6 +127,9 @@ class Node:
             # call mine competition??
             self.proof_of_stake()
 
+    # TODO needed for the "view" command in cli, should return last validated block's transactions and the validators id 
+    def view_block():
+        pass
         
 
         
