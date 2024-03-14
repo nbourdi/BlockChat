@@ -15,16 +15,17 @@ class Peer: # helper class, to represent peer node data
 
 class Node:
 
-    def __init__(self):
+    def __init__(self, capacity=5, stake=10):
         self.id = None  # node's index/id
         self.wallet = Wallet()
         self.blockchain = Blockchain()
         self.peers = []  # info about other nodes, should be in the [ip, port, pubkey] format, the ring
-       # self.ip_address = None # TODO, maybe ip and port are aquired differently
-       # self.port = 3000 # maybe?
+        self.nonce = 0
         self.curr_block = None  # the current block
         self.peer_stakes = []
-        
+        self.q_transactions = [] # list of transactions in queue that belong to the next block
+        self.capacity = capacity # idk how we will set this, may just do it manually for each experiment
+        self.stake = stake # same question as cap
         
     def create_transaction(self, receiver_address, type_of_transaction, amount, message):
         trans = Transaction(self.wallet.public_key, receiver_address, type_of_transaction, amount, message)
@@ -123,13 +124,24 @@ class Node:
         self.curr_block.add_transaction(transaction)
 
         if self.curr_block.is_full():
+            print("Block is full, attempting minting...")
             # Current block is full, initiate mining process
             # call mine competition??
             self.proof_of_stake()
+            # if that is successful then empty the queued transactions
+            self.q_transactions.clear()
+        else:
+            print("Transaction is added to queue block, capacity not reached.")
+            
+        
 
-    # TODO needed for the "view" command in cli, should return last validated block's transactions and the validators id 
-    def view_block():
-        pass
+    # needed for the "view" command in cli, should return last validated block's transactions and the validators id 
+    def view_block(self):
+        last_block = self.blockchain.blocks[-1]
+        return {"validator": last_block.validator, "transactions": last_block.transactions}
+
+
+        
         
 
         

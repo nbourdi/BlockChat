@@ -35,12 +35,19 @@ class CLI:
             print("Error: 'stake' command requires the amount to be specified.")
             return
         amount = args[0]
-        # # TODO call stake() from backend
+        # # TODO call stake() from backend, handle failure for insuff funds
         print(f"Staking {amount}")
 
     def view(self, args):
-        # TODO
-        print("Viewing last validated block")
+        # TODO: print  nicely
+        print("Viewing last validated block...\n\n")
+        last_block = node.view_block()
+        validator, transactions = last_block["validator"], last_block["transactions"]
+        print(
+            f"Validated by: {validator}\n\n"
+            f"TRANSACTIONS\n"
+            )
+
 
     def check_balance(self, args):
         # TODO

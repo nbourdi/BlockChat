@@ -1,6 +1,7 @@
 from cryptography.hazmat.primitives import serialization, hashes
 from cryptography.hazmat.backends import default_backend
 from cryptography.hazmat.primitives.asymmetric import padding, rsa, utils
+from tabulate import tabulate
 
 class Transaction:
 
@@ -20,6 +21,26 @@ class Transaction:
         self.nonce = None  # TODO
         # self.transaction_id # TODO
         self.signature = None
+
+
+    # made this to print in view command, use by print(transaction object)
+    def __str__(self):
+        if self.type_of_transaction == "message":
+            transaction_type = "Message"
+            details = f"Message: {self.message}"
+        else:
+            transaction_type = "Transfer"
+            details = f"Amount: {self.amount}"
+
+        transaction_data = [
+            ["Transaction Type", transaction_type],
+            ["Sender Address", self.sender_address],
+            ["Receiver Address", self.receiver_address],
+            [f"{transaction_type} Details", details],
+            ["Signature", self.signature.hex() if self.signature else 'Not signed yet']
+        ]
+
+        return tabulate(transaction_data, tablefmt="fancy_grid")
 
     def sign_transaction(self, private_key):
         
@@ -67,10 +88,5 @@ class Transaction:
             return self.message.encode()
         else:
             return str(self.amount).encode()
-
-    
-
-    def validate_transaction(): # TODO
-        pass
 
 
