@@ -3,6 +3,7 @@ from backend.transaction import Transaction
 from backend.wallet import Wallet
 from backend.blockchain import Blockchain
 from backend.block import Block
+import threading
 
 class Peer: # helper class, to represent peer node data
     def __init__(self, peer_id, ip, port, public_key, balance):
