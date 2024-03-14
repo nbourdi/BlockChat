@@ -92,10 +92,12 @@ class Node:
             index = 0
             previous_hash = 1
             validator = 0
+            capacity = None #not sure about capacity yet, wanna check it out later -Anastasia
             self.curr_block = Block(index, previous_hash, validator, capacity)
             # (Anast) dk yet about capacity
+             # #TODO λίστα από transactions περιλαμβάνει μόνο ένα transaction που δίνει στον bootsrap κόμβο 1000*n BCC coins από την wallet διεύθυνση 0
         else:
-            self.curr_block = Block(None, None, None, None ) #ksanades to meta (Anast)
+            self.curr_block = Block(None, None, None, None ) #None values for the time being, gotta check the mining mathod -Anastasia
 
         return self.curr_block
 
