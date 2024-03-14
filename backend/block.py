@@ -24,7 +24,7 @@ class Block:
         self.current_hash = None
         self.nonce = None
         self.previous_hash = previous_hash
-        self.capacity = capacity  # i added this
+        self.capacity = capacity  # i added this 
         
     def is_full(self):
         if len(self.transactions) < self.capacity:

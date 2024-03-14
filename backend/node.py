@@ -26,6 +26,8 @@ class Node:
         self.q_transactions = [] # list of transactions in queue that belong to the next block
         self.capacity = capacity # idk how we will set this, may just do it manually for each experiment
         self.stake = stake # same question as cap
+        #self.capacity = None #Anastasia added this (probably wrong)
+
         
     def create_transaction(self, receiver_address, type_of_transaction, amount, message):
         trans = Transaction(self.wallet.public_key, receiver_address, type_of_transaction, amount, message)
@@ -33,23 +35,26 @@ class Node:
         trans.broadcast_transaction(trans)
 
     def broadcast_transaction(self, trans): # TODO
+
         # this should broadcast trans to all self.peers
         # need threads for this
         # 
         pass
 
     def stake(self, stake_amount): # TODO
-    # Η συνάρτηση καλείται από τους nodes για να καθορίσουν το ποσό που δεσμεύουν ως stake για τη
-    # διαδικασία του proof-of-stake. Αυτό το ποσό καθορίζει και την πιθανότητα του κόμβου να επιλεγεί
-    # ως validator. Εννοείται ότι κάθε validator θα πρέπει να είναι σε θέση να κάνει και update στο ποσό
-    # που έχει αποφασίσει να δεσμεύσει.
+        # Η συνάρτηση καλείται από τους nodes 
+        #για να καθορίσουν το ποσό που δεσμεύουν ως stake για το proof-of-stake
+        # Αυτό το ποσό καθορίζει και την πιθανότητα του κόμβου να επιλεγεί ως validator.
+        # κάθε validator θα πρέπει να είναι σε θέση να κάνει και update στο ποσό
+        # που έχει αποφασίσει να δεσμεύσει.
+        # transaction με receiver_address = 0 και το ποσο που θλει να δεσμευσει ο καθε κομβος
+        # 
         if self.balance < stake_amount:
             print(f"Can't stake {stake_amount}, not enough BCC in your acount...")
             return False
         else:
             self.stake = stake_amount
             self.create_transaction(0, type_of_transaction="stake", amount=stake_amount, message=None)
-            
         
     def validate_block(self, block): 
         # validate the previous hash and check validity of current hash
@@ -81,9 +86,21 @@ class Node:
         self.peers.append(peer)
 
     def create_block(self): #TODO
-        pass
+        # I'm creating and adding a new block to the blockchain (Anast)
+        if len(self.chain.blocks) == 0:
+            #genesis block of the chain
+            index = 0
+            previous_hash = 1
+            validator = 0
+            self.curr_block = Block(index, previous_hash, validator, capacity)
+            # (Anast) dk yet about capacity
+        else:
+            self.curr_block = Block(None, None, None, None ) #ksanades to meta (Anast)
+
+        return self.curr_block
 
     def proof_of_stake(self): # TODO
+
         # i need all peers stakes at this moment
         # then call a random number gen with the same seed for all node instances to get the same result
         # retutn true if im the validator
@@ -94,7 +111,7 @@ class Node:
         self.mine_block()
         
 
-    def mine_block(self): #TODO
+    def mine_block(self, block): #TODO
         # call validator proof of stake competition
         # am i the validator? then i fill in the block fields with the info
         # if i am not the validator? pass?
