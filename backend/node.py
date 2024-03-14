@@ -55,6 +55,7 @@ class Node:
         else:
             self.stake = stake_amount
             self.create_transaction(0, type_of_transaction="stake", amount=stake_amount, message=None)
+            return True
         
     def validate_block(self, block): 
         # validate the previous hash and check validity of current hash
@@ -101,7 +102,18 @@ class Node:
 
         return self.curr_block
 
-    def proof_of_stake(self): # TODO
+    def proof_of_stake(self): # TODO 
+
+        #use: need to know who's gonna validate the next block
+        #PoS: valivator is based on the ammount of cryptocurrency 
+        #every node that wants to validate  uses the stake(amount)
+        #method in order to bind the ammount it wants from its wallet 
+        #and then 
+        amount = input("Enter amount needed for validation") #probably wrong but added for clarity (Anast)
+        #gonna check it out later
+        s = stake(self, amount)
+        
+
 
         # i need all peers stakes at this moment
         # then call a random number gen with the same seed for all node instances to get the same result
@@ -113,7 +125,7 @@ class Node:
         self.mine_block()
         
 
-    def mine_block(self, block): #TODO
+    def mine_block(self, block): #TODO #not sure if needed, proof of stake method should be the same based on Antoniadis work (Anast)
         # call validator proof of stake competition
         # am i the validator? then i fill in the block fields with the info
         # if i am not the validator? pass?
