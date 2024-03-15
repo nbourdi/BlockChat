@@ -1,4 +1,5 @@
 
+from random import random
 from backend.transaction import Transaction
 from backend.wallet import Wallet
 from backend.blockchain import Blockchain
@@ -13,6 +14,7 @@ class Peer: # helper class, to represent peer node data
         self.public_key = public_key
         self.balance = balance
         self.stake = None
+        self.stake_share = 0
 
 class Node:
 
@@ -87,7 +89,7 @@ class Node:
         peer = Peer(id, ip, port, public_key, balance)
         self.peers.append(peer)
 
-    def create_block(self): #TODO
+    def create_block(self, index, previous_hash, validator, capacity): #TODO
         # I'm creating and adding a new block to the blockchain (Anast)
         if len(self.chain.blocks) == 0:
             #genesis block of the chain
@@ -99,7 +101,7 @@ class Node:
             # (Anast) dk yet about capacity
              # #TODO λίστα από transactions περιλαμβάνει μόνο ένα transaction που δίνει στον bootsrap κόμβο 1000*n BCC coins από την wallet διεύθυνση 0
         else:
-            self.curr_block = Block(None, None, None, None ) #None values for the time being, gotta check the mining mathod -Anastasia
+            self.curr_block = Block(index, previous_hash, validator, capacity ) #None values for the time being, gotta check the mining mathod -Anastasia | filled (Nat)
 
         return self.curr_block
 
@@ -107,30 +109,49 @@ class Node:
 
         #use: need to know who's gonna validate the next block
         #PoS: valivator is based on the ammount of cryptocurrency 
-        #every node that wants to validate  uses the stake(amount)
         #method in order to bind the ammount it wants from its wallet 
         #and then 
-        amount = input("Enter amount needed for validation") #probably wrong but added for clarity (Anast)
+        # amount = input("Enter amount needed for validation") #probably wrong but added for clarity (Anast)
         #gonna check it out later
-        s = stake(self, amount)
+        # s = stake(self, amount)
+        
+        validator = -1 # no one validates
+        stake_sum = self.stake
+
+        for peer in self.peers:
+            stake_sum += peer.stake
+        
+        share_offset = 0
+        for peer in self.peers:
+            peer.stake_share = [share_offset, peer.stake / stake_sum + share_offset]
+            share_offset += peer.stake
+
+        #  the seed is the hash of the previous block
+        seed_hex = self.blockchain.blocks[-1].hash()
+        seed = int(seed_hex, 16) # convert to int
+        random.seed(seed) # sets the seed for the generator
+
+        # competition
+        rand = random()
+
+        for peer in self.peers:
+            if peer.stake_share[0] <= rand < peer.stake_share[1]:
+                validator = peer.id
+                break
+
+        # if i win, i mint
+        # TODO gotta check if theres a reward for minting to update balance one minted.
+        if validator == self.id:
+            self.mint_block()
+        
         
 
-
-        # i need all peers stakes at this moment
-        # then call a random number gen with the same seed for all node instances to get the same result
-        # retutn true if im the validator
-        # false if not
-        # do i need to know which peer is the validator if im not the val?
-
-        ## if validator == me:
-        self.mine_block()
+    def mint_block(self): #TODO #not sure if needed, proof of stake method should be the same based on Antoniadis work (Anast) - (Nata) divided competition and actual validation into PoS and minting for extra readability
+        # fill in the block, create if not created
+        # curr_block should be None unless there is an error thinking of it, should set back to None once its broadcasted # TODO
+        if self.curr_block == None:
+            self.create_block(index=self.blockchain.blocks[-1].index + 1, previous_hash=self.blockchain.blocks[-1].hash, validator=self.id, capacity=10) # TODO capacity here arbitrary
         
-
-    def mine_block(self, block): #TODO #not sure if needed, proof of stake method should be the same based on Antoniadis work (Anast)
-        # call validator proof of stake competition
-        # am i the validator? then i fill in the block fields with the info
-        # if i am not the validator? pass?
-        pass
 
     # TODO who is this called by? all nodes or some validator
     # TODO add mutexes if 

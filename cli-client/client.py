@@ -39,7 +39,6 @@ class CLI:
         print(f"Staking {amount}")
 
     def view(self, args):
-        # TODO: print  nicely
         print("Viewing last validated block...\n\n")
         last_block = node.view_block()
         validator, transactions = last_block["validator"], last_block["transactions"]
@@ -47,6 +46,9 @@ class CLI:
             f"Validated by: {validator}\n\n"
             f"TRANSACTIONS\n"
             )
+        for transaction in transactions:
+            print(transaction)
+            print("-" * 40)  
 
 
     def check_balance(self, args):
