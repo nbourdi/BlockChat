@@ -2,24 +2,57 @@ from cryptography.hazmat.primitives import serialization, hashes
 from cryptography.hazmat.backends import default_backend
 from cryptography.hazmat.primitives.asymmetric import padding, rsa, utils
 from tabulate import tabulate
+from blockchain import Blockchain ##to prosuesa egw ATHINA
+
+
+
+
+# Κάθε transaction περιέχει πληροφορίες για την αποστολή νομισμάτων/μηνύματος από ένα wallet
+# σε ένα άλλο. Οι πληροφορίες που περιλαμβάνει είναι
+# sender_address: To public key του wallet από το οποίο προέρχεται το μήνυμα
+# receiver_address: To public key του wallet παραλήπτη του μηνύματος
+# type_of_transaction: Καθορίζει τον τύπο του transaction (coins or message)
+# amount: το ποσο νομισμάτων προς αποστολή
+# message: το String του μηνύματος που στέλνεται
+# nonce: counter που διατηρείται ανά αποστολέα και αυξάνεται κατά 1 μετά από κάθε αποστολή
+# transaction_id: το hash του transaction
+# Signature: Υπογραφή που αποδεικνύει ότι ο κάτοχος του wallet δημιούργησε αυτό το transaction
 
 class Transaction:
 
-    def __init__(self, sender_address, receiver_address, type_of_transaction, amount, message, signature):
+    def __init__(self, sender_address, receiver_address, type_of_transaction, amount, message, noance):#αφαιρεσα το signature ως attribute και εβαλα το noance γτ το αρχικοποιουμε στο node.py
         self.sender_address = sender_address
         self.receiver_address = receiver_address
         self.type_of_transaction = type_of_transaction
         
         if (type_of_transaction == "message"):
             self.message = message
-            # self.amount = len(message) # TODO , need to be calculated here
+            self.amount = len(message) #seems ok
 
         else:
             self.message = None
             self.amount = amount
             
-        self.nonce = None  # TODO
+        self.nonce = noance  #το εκανα προσφατα modify (αθηνά) οταν ερθει η
+                             #ωρα να προσθεσουμε ενα transaction στο μπλοκ τσεκαρουμε 
+                             #αν το ζευγος sender_address,noance υπαρχει ηδη στο  nonce_history του Blockchain
+
+        
+
         # self.transaction_id # TODO
+
+    #  self.transaction_id = id if id is not None else self.calculate_transaction_id() συνφωνω με αυτον τον κωδικα αθ τον τσεκαρω κ εγω ξανα (αθηνα)
+
+    # def calculate_transaction_id(self):
+    #     """
+    #     Calculates the hash of the transaction using SHA-256 algorithm.
+    #     """
+    #     if self.message is None:
+    #         tx_content = f"{self.sender_address}{self.receiver_address}{self.type_of_transaction}{self.amount}{self.nonce}".encode()
+    #     else:
+    #         tx_content = f"{self.sender_address}{self.receiver_address}{self.type_of_transaction}{self.message}{self.nonce}".encode()
+    #     return hashlib.sha256(tx_content).hexdigest()
+        
         self.signature = None
 
 
