@@ -4,7 +4,7 @@ from backend.transaction import Transaction
 from backend.wallet import Wallet
 from backend.blockchain import Blockchain
 from backend.block import Block
-import threading
+
 
 class Peer: # helper class, to represent peer node data
     def __init__(self, peer_id, ip, port, public_key, balance):
@@ -43,6 +43,7 @@ class Node:
         # this should broadcast trans to all self.peers
         # need threads for this
         # 
+
         pass
 
     def stake(self, stake_amount): # TODO
@@ -99,7 +100,7 @@ class Node:
             index = 0
             previous_hash = 1
             validator = 0
-            capacity = None #not sure about capacity yet, wanna check it out later -Anastasia
+            #capacity = None #not sure about capacity yet, wanna check it out later -Anastasia
             self.curr_block = Block(index, previous_hash, validator, capacity)
             # (Anast) dk yet about capacity
              # #TODO λίστα από transactions περιλαμβάνει μόνο ένα transaction που δίνει στον bootsrap κόμβο 1000*n BCC coins από την wallet διεύθυνση 0
@@ -157,7 +158,7 @@ class Node:
         
 
     # TODO who is this called by? all nodes or some validator
-    # TODO add mutexes if 
+    # TODO add mutexes if  mutexes should not be needed 
     # TODO i want it to return True/False in success, failure. used in api
     def add_to_block(self, transaction):
 
