@@ -33,7 +33,8 @@ class Node:
 
         
     def create_transaction(self, receiver_address, type_of_transaction, amount, message):
-        trans = Transaction(self.wallet.public_key, receiver_address, type_of_transaction, amount, message)
+        self.nonce += 1 #added this (athina)
+        trans = Transaction(self.wallet.public_key, receiver_address, type_of_transaction, amount, message, self.nonce) #added the nonce attribute (athina)
         trans.sign_transaction(self.wallet.private_key)
         trans.broadcast_transaction(trans)
 
@@ -62,6 +63,8 @@ class Node:
         
     def validate_block(self, block): 
         # validate the previous hash and check validity of current hash
+        # εχει και αλλο to do εδω Επαληθεύεται ότι (a) ο validator είναι πράγματι ο σωστός (αυτός που υπέδειξε η κλήση της
+        # ψευδοτυχαίας γεννήτριας)
         if block.previous_hash == self.blockchain.blocks[-1].current_hash and block.current_hash == block.hash():
             return True
         return False
@@ -200,4 +203,4 @@ class Node:
         
 
 
-        
+           
