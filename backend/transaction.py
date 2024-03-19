@@ -20,7 +20,7 @@ from blockchain import Blockchain ##to prosuesa egw ATHINA
 
 class Transaction:
 
-    def __init__(self, sender_address, receiver_address, type_of_transaction, amount, message, noance):#αφαιρεσα το signature ως attribute και εβαλα το noance γτ το αρχικοποιουμε στο node.py
+    def __init__(self, sender_address, receiver_address, type_of_transaction, amount,noance, message):#αφαιρεσα το signature ως attribute και εβαλα το noance γτ το αρχικοποιουμε στο node.py
         self.sender_address = sender_address
         self.receiver_address = receiver_address
         self.type_of_transaction = type_of_transaction
@@ -37,21 +37,16 @@ class Transaction:
                              #ωρα να προσθεσουμε ενα transaction στο μπλοκ τσεκαρουμε 
                              #αν το ζευγος sender_address,noance υπαρχει ηδη στο  nonce_history του Blockchain
 
+        self.transaction_id = self.calculate_transaction_id() 
+
+##ΤΟ ΕΒΓΑΛΑ ΑΠΟ ΤΑ ΣΧΟΛΙΑ ΠΟΥ ΥΠΗΡΧΕ ΓΤ Μ ΦΑΝΗΚΕ ΚΟΜΠΛΕ
+    def calculate_transaction_id(self):
         
-
-        # self.transaction_id # TODO
-
-    #  self.transaction_id = id if id is not None else self.calculate_transaction_id() συνφωνω με αυτον τον κωδικα αθ τον τσεκαρω κ εγω ξανα (αθηνα)
-
-    # def calculate_transaction_id(self):
-    #     """
-    #     Calculates the hash of the transaction using SHA-256 algorithm.
-    #     """
-    #     if self.message is None:
-    #         tx_content = f"{self.sender_address}{self.receiver_address}{self.type_of_transaction}{self.amount}{self.nonce}".encode()
-    #     else:
-    #         tx_content = f"{self.sender_address}{self.receiver_address}{self.type_of_transaction}{self.message}{self.nonce}".encode()
-    #     return hashlib.sha256(tx_content).hexdigest()
+        if self.message is None:
+            tx_content = f"{self.sender_address}{self.receiver_address}{self.type_of_transaction}{self.amount}{self.nonce}".encode()
+        else:
+            tx_content = f"{self.sender_address}{self.receiver_address}{self.type_of_transaction}{self.message}{self.nonce}".encode()
+        return hashlib.sha256(tx_content).hexdigest()
         
         self.signature = None
 
