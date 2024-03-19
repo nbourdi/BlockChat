@@ -4,6 +4,8 @@ from backend.transaction import Transaction
 from backend.wallet import Wallet
 from backend.blockchain import Blockchain
 from backend.block import Block
+import requests
+
 
 
 class Peer: # helper class, to represent peer node data
@@ -15,6 +17,7 @@ class Peer: # helper class, to represent peer node data
         self.balance = balance
         self.stake = None
         self.stake_share = 0
+
 
 class Node:
 
@@ -43,8 +46,19 @@ class Node:
         # this should broadcast trans to all self.peers
         # need threads for this
         # 
+        # """Εκπέμπει τη συναλλαγή σε όλα τα peer."""
+        # for peer in self.peers:
+        #     ip, port, pubkey = peer.ip, peer.port, peer.public_key
+        #     url = f"http://{ip}:{port}/transaction/new" ( TO DO ΝΑ ΦΤΙΑΞΟΥΜΕ ΑΥΤΟ ΤΟ ENDPOINT)
+        #     try:
+        #         response = requests.post(url, json=trans)
+        #         if response.status_code == 200:
+        #             print(f"Transaction successfully sent to {ip}:{port}")
+        #         else:
+        #             print(f"Failed to send transaction to {ip}:{port}")
+        #     except Exception as e:
+        #         print(f"Error sending transaction to {ip}:{port}: {e}")
 
-        pass
 
     def stake(self, stake_amount): # TODO
         # Η συνάρτηση καλείται από τους nodes 
@@ -92,6 +106,8 @@ class Node:
         # Add peer to ring, probably only called by bootstrap 
         peer = Peer(id, ip, port, public_key, balance)
         self.peers.append(peer)
+
+
 
     def create_block(self, index, previous_hash, validator, capacity): #TODO
         # I'm creating and adding a new block to the blockchain (Anast)
