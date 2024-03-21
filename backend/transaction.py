@@ -1,3 +1,4 @@
+import hashlib
 from cryptography.hazmat.primitives import serialization, hashes
 from cryptography.hazmat.backends import default_backend
 from cryptography.hazmat.primitives.asymmetric import padding, rsa, utils
@@ -116,5 +117,27 @@ class Transaction:
             return self.message.encode()
         else:
             return str(self.amount).encode()
+        
 
+    def to_dict(self):
+        transaction_dict = {
+            'sender_address': self.sender_address,
+            'receiver_address': self.receiver_address,
+            'type_of_transaction': self.type_of_transaction,
+            'amount': self.amount,
+            'nonce': self.nonce,
+            'message': self.message,
+            'transaction_id': self.transaction_id
+        }
+        return transaction_dict
 
+    @classmethod
+    def from_dict(cls, transaction_dict):
+        return cls(
+            sender_address=transaction_dict['sender_address'],
+            receiver_address=transaction_dict['receiver_address'],
+            type_of_transaction=transaction_dict['type_of_transaction'],
+            amount=transaction_dict['amount'],
+            nonce=transaction_dict['nonce'],
+            message=transaction_dict['message']
+        )

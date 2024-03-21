@@ -37,3 +37,28 @@ class Block:
     def hash(self):
         block_string = f"{self.index}{self.timestamp}{self.transactions}{self.validator}{self.previous_hash}{self.capacity}{self.nonce}".encode()
         return hashlib.sha256(block_string).hexdigest()
+    
+    def to_dict(self):
+        return {
+            'index': self.index,
+            'previous_hash': self.previous_hash,
+            'validator': self.validator,
+            'capacity': self.capacity,
+            'transactions': self.transactions,
+            'current_hash': self.current_hash,
+            'nonce': self.nonce,
+            'timestamp': self.timestamp
+        }
+    
+    def from_dict(cls, block_dict):
+        block = cls(
+            index=block_dict['index'],
+            previous_hash=block_dict['previous_hash'],
+            validator=block_dict['validator'],
+            capacity=block_dict['capacity']
+        )
+        block.transactions = block_dict['transactions']
+        block.current_hash = block_dict['current_hash']
+        block.nonce = block_dict['nonce']
+        block.timestamp = block_dict['timestamp']
+        return block

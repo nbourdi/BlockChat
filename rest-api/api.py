@@ -1,3 +1,4 @@
+from backend.block import Block
 from backend.node import Node
 from flask import Flask, request, jsonify
 import json
@@ -11,18 +12,19 @@ node = Node()
 def get_block():
     # Logic to retrieve a block
 
-    inc_block = json.loads(request.get_data().decode('utf-8')) # incoming block
+    data = request.get_json()
+    inc_block = Block.from_dict(data['Block'])
 
     # may need lock logic
-    if node.validate_block(inc_block) == True:
+    if node.validate_block(inc_block):
         #TODO theres def more to it
         node.blockchain.add_block(inc_block)
+        return jsonify({'message': 'Block added successfully'}), 200
 
     else: # block couldn't be validated
         # if conflict --> resolve conflict
-        #  vallidate siga
         return jsonify({
-            'message': "Block invalid, signature inauthentic... Rejected."
+            'message': "Block invalid ... Rejected."
         }), 400
     
     
@@ -32,21 +34,24 @@ def get_block():
 # Endpoint to validate a transaction
 @app.route('/validate_transaction', methods=['POST'])
 def validate_transaction():
-    inc_transaction = json.loads(request.get_data().decode('utf-8')) # incoming block
-    if node.validate_transaction(inc_transaction):
+
+    data = request.get_json()
+    inc_transaction = Block.from_dict(data['Trabsaction'])
+
+    if node.add_to_block(inc_transaction):
         return jsonify({'message': "Transaction validated successfully."}), 200
     else:
         return jsonify({'message': "Couldn't verify signature, transaction rejected."}), 400
+    
 
-
-# Endpoint to get a transaction
-@app.route('/add_transaction', methods=['POST'])
-def add_transaction():
-    inc_transaction = json.loads(request.get_data().decode('utf-8')) # incoming transaction
-    if node.add_to_block(inc_transaction):
-        return jsonify({'message': "Transaction added."}), 200
-    else:
-        return jsonify({'message': "Transaction wasn't added."}), 400
+# Endpoint to get a transaction, i think this is covered by validate_transaction bc it also adds it if its signature verified 
+# @app.route('/add_transaction', methods=['POST'])
+# def add_transaction():
+#     inc_transaction = json.loads(request.get_data().decode('utf-8')) # incoming transaction
+#     if node.add_to_block(inc_transaction):
+#         return jsonify({'message': "Transaction added."}), 200
+#     else:
+#         return jsonify({'message': "Transaction wasn't added."}), 400
 
 
 
@@ -69,7 +74,7 @@ def register_node():
         for peer in node.peers:
             if peer.id != node.id:
                 node.send_blockchain_to_peer(peer=peer)
-                peer.send_peer_ring(peer)
+                node.send_peer_ring(peer) # TODO
                 node.create_transaction(
                     receiver_address=peer.public_key,
                     type_of_transaction="coins",
@@ -79,14 +84,16 @@ def register_node():
 
     return jsonify({'message': "Node added successfully", 'id': peer_id}), 200
 
-# Endpoint to get the ring... TODO is this needed anywhere????/!
+# Endpoint to get the ring... TODO 
 # @app.route('/get_ring', methods=['GET'])
 # def get_ring():
     # Logic to retrieve the ring
 
 # TODO: only implement if needed, idk if theyre essential for functionality
 # Endpoint to get the chain
-# @app.route('/get_chain', methods=['GET'])
+
+# NEEDED
+# @app.route('/validate_chain', methods=['POST'])
 # def get_chain():
 #     # Logic to retrieve the chain
 #     return jsonify(blockchain)

@@ -1,4 +1,4 @@
-
+import json
 from random import random
 from backend.transaction import Transaction
 from backend.wallet import Wallet
@@ -39,25 +39,8 @@ class Node:
         self.nonce += 1 #added this (athina)
         trans = Transaction(self.wallet.public_key, receiver_address, type_of_transaction, amount, message, self.nonce) #added the nonce attribute (athina)
         trans.sign_transaction(self.wallet.private_key)
+        self.add_to_block(trans)
         trans.broadcast_transaction(trans)
-
-    def broadcast_transaction(self, trans): # TODO
-
-        # this should broadcast trans to all self.peers
-        # need threads for this
-        # 
-        # """Εκπέμπει τη συναλλαγή σε όλα τα peer."""
-        # for peer in self.peers:
-        #     ip, port, pubkey = peer.ip, peer.port, peer.public_key
-        #     url = f"http://{ip}:{port}/transaction/new" ( TO DO ΝΑ ΦΤΙΑΞΟΥΜΕ ΑΥΤΟ ΤΟ ENDPOINT)
-        #     try:
-        #         response = requests.post(url, json=trans)
-        #         if response.status_code == 200:
-        #             print(f"Transaction successfully sent to {ip}:{port}")
-        #         else:
-        #             print(f"Failed to send transaction to {ip}:{port}")
-        #     except Exception as e:
-        #         print(f"Error sending transaction to {ip}:{port}: {e}")
 
 
     def stake(self, stake_amount): # TODO
@@ -98,16 +81,25 @@ class Node:
         return True
 
     def send_blockchain_to_peer(self, peer):
-        # HTTP POST it to peer.ip, peer.port
-        pass
+        
+        chain_json = json.dumps(self.chain.to_dict())
+
+        # send to every node in peers[]
+        for peer in self.peers:
+            address = 'http://' + peer.ip + ':' + peer.port + '/validate_chain'
+
+            res = requests.post(address, chain_json)
+
+            if res.status_code == 200:
+                print(f"Blockchain sent to peer with id = {peer.id}")
+            else:
+                print(f"Error sending blockchain to peer with id = {peer.id}")
                 
-    
+    # use when bootstraping?
     def add_peer(self, id, ip, port, public_key, balance):
         # Add peer to ring, probably only called by bootstrap 
         peer = Peer(id, ip, port, public_key, balance)
         self.peers.append(peer)
-
-
 
     def create_block(self, index, previous_hash, validator, capacity): #TODO
         # I'm creating and adding a new block to the blockchain (Anast)
@@ -160,24 +152,93 @@ class Node:
                 break
 
         # if i win, i mint
-        # TODO gotta check if theres a reward for minting to update balance one minted.
         if validator == self.id:
+            print("won the competition, attempting mint,,,")
             self.mint_block()
         
+        self.reward(validator) # every node will call this to give the fees to the validator
         
+        
+    # Ο επικυρωτής του block είναι και αυτός στου οποίου το wallet πιστώνονται οι χρεώσεις των
+      # transactions που έχουν συμπεριληφθεί στο block .
+    def reward(self, validator_id):
+
+        fee = 0
+        for t in self.q_transactions:
+
+            if t.type_of_transaction == "coins":
+                fee += 0.03 * t.amount # a 3% fee
+            else:
+                fee += len(t.message) # 1 char = 1BCC, we do count spaces
+
+        if validator_id == self.id:
+            self.wallet.balance += fee
+
+        else:
+            for peer in self.peers:
+                if peer.id == validator_id:
+                    peer.balance += fee
+
 
     def mint_block(self): #TODO #not sure if needed, proof of stake method should be the same based on Antoniadis work (Anast) - (Nata) divided competition and actual validation into PoS and minting for extra readability
         # fill in the block, create if not created
         # curr_block should be None unless there is an error thinking of it, should set back to None once its broadcasted # TODO
+        
         if self.curr_block == None:
             self.create_block(index=self.blockchain.blocks[-1].index + 1, previous_hash=self.blockchain.blocks[-1].hash, validator=self.id, capacity=10) # TODO capacity here arbitrary
-        
 
-    # TODO who is this called by? all nodes or some validator
-    # TODO add mutexes if  mutexes should not be needed 
-    # TODO i want it to return True/False in success, failure. used in api
+        self.curr_block.current_hash = self.curr_block.hash()
+
+        transactions = self.q_transactions
+
+        for t in transactions:
+            self.curr_block.add_transaction(t)
+
+        # TODO maybe we should have the minter validate his own block or is that redundant like
+            # self.validate_block(curr_block ..)
+
+        self.broadcast_block(self.curr_block)
+
+    # mostly done? are threads necess?, all error handling, get responses?
+    def broadcast_block(self, block):
+
+        # data = {'Block': block.to_dict()}
+        block_json = json.dumps(block.to_dict())
+
+        # send to every node in peers[]
+        for peer in self.peers:
+            address = 'http://' + peer.ip + ':' + peer.port + '/validate_block'
+
+            res = requests.post(address, block_json)
+
+            if res.status_code == 200:
+                print(f"Block sent to peer with id = {peer.id}")
+            else:
+                print(f"Error sending to peer with id = {peer.id}")
+
+    def broadcast_transaction(self, trans): # TODO
+        # """Εκπέμπει τη συναλλαγή σε όλα τα peer."""
+        # data = {'Transaction': transaction.to_dict()}
+        trans_json = json.dumps(trans.to_dict())
+
+        for peer in self.peers:
+            
+            address = 'http://' + peer.ip + ':' + peer.port + '/validate_transaction' # TODO ΝΑ ΦΤΙΑΞΟΥΜΕ ΑΥΤΟ ΤΟ ENDPOINT
+            try:
+                res = requests.post(address, json=trans_json)
+                if res.status_code == 200:
+                    print(f"Transaction successfully sent to {peer.ip}:{peer.port}")
+                else:
+                    print(f"Failed to send transaction to {peer.ip}:{peer.port}")
+            except Exception as e:
+                print(f"Error sending transaction to {peer.ip}:{peer.port}: {e}")
+
+
     def add_to_block(self, transaction):
 
+        if transaction.verify_signature() == False:
+            return False
+        
         if self.curr_block == None: # this only happens when freshly created, right after genesis block
             self.curr_block = self.create_block()
 
@@ -205,8 +266,13 @@ class Node:
             self.q_transactions.clear()
         else:
             print("Transaction is added to queue block, capacity not reached.")
-            
-        
+        return True
+    
+
+
+    # TODO , used by bootstrap to send the whole peer ring to some peer, via HTTP post            
+    def send_peer_ring(self, peer):
+        pass
 
     # needed for the "view" command in cli, should return last validated block's transactions and the validators id 
     def view_block(self):
