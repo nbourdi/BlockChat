@@ -1,9 +1,9 @@
 import json
 from random import random
-from backend.transaction import Transaction
-from backend.wallet import Wallet
-from backend.blockchain import Blockchain
-from backend.block import Block
+from transaction import Transaction
+from wallet import Wallet
+from blockchain import Blockchain
+from block import Block
 import requests
 
 class Peer: # helper class, to represent peer node data
