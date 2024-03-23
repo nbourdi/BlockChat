@@ -1,6 +1,14 @@
-from backend.block import Block
-from backend.node import Node
-from backend.node import Peer
+import sys
+import os
+
+# Add the path to the backend directory to the Python path
+backend_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'backend'))
+sys.path.append(backend_path)
+print(sys.path)
+
+from block import Block
+from node import Node
+from node import Peer
 from flask import Flask, request, jsonify
 import json
 
