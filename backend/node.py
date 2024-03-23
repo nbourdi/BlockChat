@@ -6,8 +6,6 @@ from backend.blockchain import Blockchain
 from backend.block import Block
 import requests
 
-
-
 class Peer: # helper class, to represent peer node data
     def __init__(self, peer_id, ip, port, public_key, balance):
         self.id = peer_id
@@ -82,23 +80,25 @@ class Node:
 
     def send_blockchain_to_peer(self, peer):
         
-        chain_json = json.dumps(self.chain.to_dict())
+        chain_json = json.dumps(self.chain)
 
         # send to every node in peers[]
-        for peer in self.peers:
-            address = 'http://' + peer.ip + ':' + peer.port + '/validate_chain'
+        
+        address = 'http://' + peer.ip + ':' + peer.port + '/validate_chain'
 
-            res = requests.post(address, chain_json)
+        res = requests.post(address, chain_json)
 
-            if res.status_code == 200:
-                print(f"Blockchain sent to peer with id = {peer.id}")
-            else:
-                print(f"Error sending blockchain to peer with id = {peer.id}")
+        if res.status_code == 200:
+            print(f"Blockchain sent to peer with id = {peer.id}")
+        else:
+            print(f"Error sending blockchain to peer with id = {peer.id}")
                 
-    # use when bootstraping?
     def add_peer(self, id, ip, port, public_key, balance):
         # Add peer to ring, probably only called by bootstrap 
         peer = Peer(id, ip, port, public_key, balance)
+        self.peers.append(peer)
+
+    def add_peer_obj(self, peer: Peer):
         self.peers.append(peer)
 
     def create_block(self, index, previous_hash, validator, capacity): #TODO
@@ -117,15 +117,12 @@ class Node:
 
         return self.curr_block
 
-    def proof_of_stake(self): # TODO 
+    def proof_of_stake(self):
 
         #use: need to know who's gonna validate the next block
         #PoS: valivator is based on the ammount of cryptocurrency 
         #method in order to bind the ammount it wants from its wallet 
-        #and then 
-        # amount = input("Enter amount needed for validation") #probably wrong but added for clarity (Anast)
-        #gonna check it out later
-        # s = stake(self, amount)
+       
         
         validator = -1 # no one validates
         stake_sum = self.stake
@@ -180,9 +177,9 @@ class Node:
                     peer.balance += fee
 
 
-    def mint_block(self): #TODO #not sure if needed, proof of stake method should be the same based on Antoniadis work (Anast) - (Nata) divided competition and actual validation into PoS and minting for extra readability
+    def mint_block(self):  
         # fill in the block, create if not created
-        # curr_block should be None unless there is an error thinking of it, should set back to None once its broadcasted # TODO
+        # curr_block should be None unless there is an error thinking of it, should set back to None once its broadcasted 
         
         if self.curr_block == None:
             self.create_block(index=self.blockchain.blocks[-1].index + 1, previous_hash=self.blockchain.blocks[-1].hash, validator=self.id, capacity=10) # TODO capacity here arbitrary
@@ -198,6 +195,7 @@ class Node:
             # self.validate_block(curr_block ..)
 
         self.broadcast_block(self.curr_block)
+        self.curr_block = None
 
     # mostly done? are threads necess?, all error handling, get responses?
     def broadcast_block(self, block):
@@ -216,7 +214,7 @@ class Node:
             else:
                 print(f"Error sending to peer with id = {peer.id}")
 
-    def broadcast_transaction(self, trans): # TODO
+    def broadcast_transaction(self, trans): 
         # """Εκπέμπει τη συναλλαγή σε όλα τα peer."""
         # data = {'Transaction': transaction.to_dict()}
         trans_json = json.dumps(trans.to_dict())
@@ -270,8 +268,25 @@ class Node:
     
 
 
-    # TODO , used by bootstrap to send the whole peer ring to some peer, via HTTP post            
+    # used by bootstrap to send the whole peer ring to some peer, via HTTP post            
     def send_peer_ring(self, peer):
+        
+        ring = self.peers
+
+        peer_data = [peer.__dict__ for peer in ring]
+
+        ring_json = json.dumps(peer_data)
+
+        address = 'http://' + peer.ip + ':' + peer.port + '/get_ring' # TODO ΝΑ ΦΤΙΑΞΟΥΜΕ ΑΥΤΟ ΤΟ ENDPOINT
+        try:
+            res = requests.post(address, json=ring_json)
+            if res.status_code == 200:
+                print(f"Ring successfully sent to {peer.ip}:{peer.port}")
+            else:
+                print(f"Failed to send ring to {peer.ip}:{peer.port}")
+        except Exception as e:
+            print(f"Error sending ring to {peer.ip}:{peer.port}: {e}")
+
         pass
 
     # needed for the "view" command in cli, should return last validated block's transactions and the validators id 

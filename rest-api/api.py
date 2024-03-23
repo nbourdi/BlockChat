@@ -1,16 +1,16 @@
 from backend.block import Block
 from backend.node import Node
+from backend.node import Peer
 from flask import Flask, request, jsonify
 import json
 
 app = Flask(__name__)
-n = 0 # TODO
+n = 3 
 node = Node()
 
 # Endpoint to get a block
 @app.route('/validate_block', methods=['GET'])
 def get_block():
-    # Logic to retrieve a block
 
     data = request.get_json()
     inc_block = Block.from_dict(data['Block'])
@@ -27,8 +27,6 @@ def get_block():
             'message': "Block invalid ... Rejected."
         }), 400
     
-    
-    return jsonify({'message': "Block added to blockchain."}), 200
 
 
 # Endpoint to validate a transaction
@@ -85,18 +83,36 @@ def register_node():
     return jsonify({'message': "Node added successfully", 'id': peer_id}), 200
 
 # Endpoint to get the ring... TODO 
-# @app.route('/get_ring', methods=['GET'])
-# def get_ring():
-    # Logic to retrieve the ring
+@app.route('/get_ring', methods=['GET'])
+def get_ring():
+    try:
+        data = request.get_json()
+        peers = [Peer(peer['id'], peer['ip'], peer['port'], peer['public_key'], peer['balance']) for peer in data]
+        
+        for peer in peers:
+            node.add_peer_obj(peer)
+        
+        return jsonify({"message": "Peers received successfully"}), 200
+    except Exception as e:
+        return jsonify({"error": str(e)}), 400
+    
 
 # TODO: only implement if needed, idk if theyre essential for functionality
 # Endpoint to get the chain
 
 # NEEDED
-# @app.route('/validate_chain', methods=['POST'])
-# def get_chain():
-#     # Logic to retrieve the chain
-#     return jsonify(blockchain)
+@app.route('/validate_chain', methods=['POST'])
+def get_chain():
+    try:
+        data = request.get_json()
+        
+        
+        node.validate_chain()
+        
+        return jsonify({"message": "Chain received successfully"}), 200
+    except Exception as e:
+        return jsonify({"error": str(e)}), 400
+     
 
 # Endpoint to send the chain
 # @app.route('/send_chain', methods=['POST'])
