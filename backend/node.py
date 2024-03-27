@@ -15,6 +15,7 @@ class Peer: # helper class, to represent peer node data
         self.balance = balance
         self.stake = None
         self.stake_share = 0
+        # self.nonce = 0
 
 
 class Node:
@@ -61,10 +62,6 @@ class Node:
     # TODO last -prio
     def update_stake(self, stake_amount):
         # create a transaction 
-        pass
-
-    # TODO high prior
-    def broadcast_stake(self):
         pass
 
     # TODO high prior
@@ -122,10 +119,7 @@ class Node:
             index = 0
             previous_hash = 1
             validator = 0
-            #capacity = None #not sure about capacity yet, wanna check it out later -Anastasia
             self.curr_block = Block(index, previous_hash, validator, capacity)
-            # (Anast) dk yet about capacity
-             # #TODO λίστα από transactions περιλαμβάνει μόνο ένα transaction που δίνει στον bootsrap κόμβο 1000*n BCC coins από την wallet διεύθυνση 0
         else:
             self.curr_block = Block(index, previous_hash, validator, capacity ) #None values for the time being, gotta check the mining mathod -Anastasia | filled (Nat)
 
@@ -204,7 +198,7 @@ class Node:
         for t in transactions:
             self.curr_block.add_transaction(t)
 
-        # TODO maybe we should have the minter validate his own block or is that redundant like
+        # TODO last prior maybe we should have the minter validate his own block or is that redundant like
             # self.validate_block(curr_block ..)
 
         self.broadcast_block(self.curr_block)

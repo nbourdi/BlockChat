@@ -1,6 +1,6 @@
-from backend.block import Block
-from backend.node import Node
-from backend.node import Peer
+from block import Block
+from node import Node
+from node import Peer
 from flask import Blueprint, request, jsonify
 # Add the path to the backend directory to the Python path
 # backend_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'backend'))
