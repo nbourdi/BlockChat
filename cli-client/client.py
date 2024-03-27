@@ -1,7 +1,7 @@
 import sys
 from backend.node import Node
 
-# TODO magic to point to the right thing, low priority
+# TODO low priority magic to point to the right thing, 
 node = Node()
 
 class CLI:
@@ -27,7 +27,7 @@ class CLI:
             print("Error: 't' command requires both recipient address and message.")
             return
         recipient_address, message = args
-        # # TODO call create transaction
+        # # TODO low prior call create transaction
         print(f"Sending message '{message}' to {recipient_address}")
 
     def stake_amount(self, args):
@@ -35,7 +35,7 @@ class CLI:
             print("Error: 'stake' command requires the amount to be specified.")
             return
         amount = args[0]
-        # # TODO call stake() from backend, handle failure for insuff funds
+        # TODO low prior call stake() from backend, handle failure for insuff funds
         print(f"Staking {amount}")
 
     def view(self, args):
@@ -52,7 +52,7 @@ class CLI:
 
 
     def check_balance(self, args):
-        # TODO
+        # TODO low prior
         print(f"Your balance is: {self.balance}")
 
     def show_help(self, args):

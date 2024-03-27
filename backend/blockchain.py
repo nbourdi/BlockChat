@@ -16,7 +16,7 @@ class Blockchain:
 # συναλλαγή. Αυτό εμποδίζει την υποβολή της ίδιας συναλλαγής περισσότερες από μία φορές στο
 # δίκτυο.
 
-# TODO erwtisi: auto mipws einai gia to transaction class? to blockchain einai mono 1 opote de xreiazetai nonce (nat)
+#  erwtisi: auto mipws einai gia to transaction class? to blockchain einai mono 1 opote de xreiazetai nonce (nat)
     def add_nonce(self, account_address, nonce):
         if account_address not in self.nonce_history:
             self.nonce_history[account_address] = set()

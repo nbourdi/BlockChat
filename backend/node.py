@@ -41,25 +41,39 @@ class Node:
         trans.broadcast_transaction(trans)
 
 
-    def stake(self, stake_amount): # TODO
+    def stake(self, stake_amount): 
+        # FIXME stakes should be released when minting is done
+        # FIXME stakes should be broadcasted so that they can be updated in Peer object, rn we can bypass by manually staking/releasing
         # Η συνάρτηση καλείται από τους nodes 
-        #για να καθορίσουν το ποσό που δεσμεύουν ως stake για το proof-of-stake
-        # Αυτό το ποσό καθορίζει και την πιθανότητα του κόμβου να επιλεγεί ως validator.
         # κάθε validator θα πρέπει να είναι σε θέση να κάνει και update στο ποσό
         # που έχει αποφασίσει να δεσμεύσει.
         # transaction με receiver_address = 0 και το ποσο που θλει να δεσμευσει ο καθε κομβος
-        # 
+        
         if self.balance < stake_amount:
             print(f"Can't stake {stake_amount}, not enough BCC in your acount...")
             return False
         else:
             self.stake = stake_amount
             self.create_transaction(0, type_of_transaction="stake", amount=stake_amount, message=None)
+            self.broadcast_stake()
             return True
+        
+    # TODO last -prio
+    def update_stake(self, stake_amount):
+        # create a transaction 
+        pass
+
+    # TODO high prior
+    def broadcast_stake(self):
+        pass
+
+    # TODO high prior
+    def release_stakes(self):
+        pass
         
     def validate_block(self, block): 
         # validate the previous hash and check validity of current hash
-        # εχει και αλλο to do εδω Επαληθεύεται ότι (a) ο validator είναι πράγματι ο σωστός (αυτός που υπέδειξε η κλήση της
+        # TODO last prior εχει και αλλο εδω Επαληθεύεται ότι (a) ο validator είναι πράγματι ο σωστός (αυτός που υπέδειξε η κλήση της
         # ψευδοτυχαίας γεννήτριας)
         if block.previous_hash == self.blockchain.blocks[-1].current_hash and block.current_hash == block.hash():
             return True
@@ -170,7 +184,6 @@ class Node:
 
         if validator_id == self.id:
             self.wallet.balance += fee
-
         else:
             for peer in self.peers:
                 if peer.id == validator_id:
@@ -220,8 +233,7 @@ class Node:
         trans_json = json.dumps(trans.to_dict())
 
         for peer in self.peers:
-            
-            address = 'http://' + peer.ip + ':' + peer.port + '/validate_transaction' # TODO ΝΑ ΦΤΙΑΞΟΥΜΕ ΑΥΤΟ ΤΟ ENDPOINT
+            address = 'http://' + peer.ip + ':' + peer.port + '/validate_transaction' 
             try:
                 res = requests.post(address, json=trans_json)
                 if res.status_code == 200:
@@ -267,7 +279,6 @@ class Node:
         return True
     
 
-
     # used by bootstrap to send the whole peer ring to some peer, via HTTP post            
     def send_peer_ring(self, peer):
         
@@ -277,7 +288,7 @@ class Node:
 
         ring_json = json.dumps(peer_data)
 
-        address = 'http://' + peer.ip + ':' + peer.port + '/get_ring' # TODO ΝΑ ΦΤΙΑΞΟΥΜΕ ΑΥΤΟ ΤΟ ENDPOINT
+        address = 'http://' + peer.ip + ':' + peer.port + '/get_ring' 
         try:
             res = requests.post(address, json=ring_json)
             if res.status_code == 200:

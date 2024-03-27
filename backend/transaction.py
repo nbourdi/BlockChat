@@ -8,6 +8,8 @@ from blockchain import Blockchain ##to prosuesa egw ATHINA
 
 
 
+
+
 # Κάθε transaction περιέχει πληροφορίες για την αποστολή νομισμάτων/μηνύματος από ένα wallet
 # σε ένα άλλο. Οι πληροφορίες που περιλαμβάνει είναι
 # sender_address: To public key του wallet από το οποίο προέρχεται το μήνυμα

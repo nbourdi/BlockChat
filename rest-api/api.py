@@ -1,18 +1,13 @@
-import sys
-import os
-
+from backend.block import Block
+from backend.node import Node
+from backend.node import Peer
+from flask import Blueprint, request, jsonify
 # Add the path to the backend directory to the Python path
-backend_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'backend'))
-sys.path.append(backend_path)
-print(sys.path)
+# backend_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'backend'))
+# sys.path.append(backend_path)
+# print(sys.path)
 
-from block import Block
-from node import Node
-from node import Peer
-from flask import Flask, request, jsonify
-import json
-
-app = Flask(__name__)
+app = Blueprint('api', __name__)
 n = 3 
 node = Node()
 
@@ -25,7 +20,7 @@ def get_block():
 
     # may need lock logic
     if node.validate_block(inc_block):
-        #TODO theres def more to it
+        # theres def more to it?
         node.blockchain.add_block(inc_block)
         return jsonify({'message': 'Block added successfully'}), 200
 
@@ -35,7 +30,6 @@ def get_block():
             'message': "Block invalid ... Rejected."
         }), 400
     
-
 
 # Endpoint to validate a transaction
 @app.route('/validate_transaction', methods=['POST'])
@@ -61,12 +55,10 @@ def validate_transaction():
 
 
 
-# Endpoint to register a 
-# TODO
+# Endpoint to register a node, by bootstrap
 @app.route('/register_node', methods=['POST'])
 def register_node():
-    # Logic to register a node as a peer
-
+    # Logic to register a node in the network
     peer_pk = request.form.get('public_key')
     peer_ip = request.form.get('ip')
     peer_port = request.form.get('port')
@@ -80,7 +72,7 @@ def register_node():
         for peer in node.peers:
             if peer.id != node.id:
                 node.send_blockchain_to_peer(peer=peer)
-                node.send_peer_ring(peer) # TODO
+                node.send_peer_ring(peer) 
                 node.create_transaction(
                     receiver_address=peer.public_key,
                     type_of_transaction="coins",
@@ -90,8 +82,8 @@ def register_node():
 
     return jsonify({'message': "Node added successfully", 'id': peer_id}), 200
 
-# Endpoint to get the ring... TODO 
-@app.route('/get_ring', methods=['GET'])
+# Endpoint to get the ring
+@app.route('/get_ring', methods=['POST'])
 def get_ring():
     try:
         data = request.get_json()
@@ -105,10 +97,7 @@ def get_ring():
         return jsonify({"error": str(e)}), 400
     
 
-# TODO: only implement if needed, idk if theyre essential for functionality
 # Endpoint to get the chain
-
-# NEEDED
 @app.route('/validate_chain', methods=['POST'])
 def get_chain():
     try:
@@ -122,10 +111,7 @@ def get_chain():
         return jsonify({"error": str(e)}), 400
      
 
-# Endpoint to send the chain
-# @app.route('/send_chain', methods=['POST'])
-# def send_chain():
-#     # Logic to send the chain
+
 
 # Endpoint to create a transaction
 @app.route('/create_transaction', methods=['POST'])
@@ -151,6 +137,12 @@ def create_transaction ():
     else:
         return jsonify({'message': 'Transaction failed. Wrong receiver id.'}), 4
 
+#  only implement if needed, idk if theyre essential for functionality
+# Endpoint to send the chain
+# @app.route('/send_chain', methods=['POST'])
+# def send_chain():
+#     # Logic to send the chain
+    
 # # Endpoint to get the balance
 # @app.route('/get_balance', methods=['GET'])
 # def get_balance():
@@ -175,6 +167,3 @@ def create_transaction ():
 # @app.route('/get_metrics', methods=['GET'])
 # def get_metrics():
 #     # Logic to get metrics
-
-if __name__ == '__main__':
-    app.run(debug=True)
