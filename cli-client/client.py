@@ -8,27 +8,56 @@ class CLI:
     def __init__(self):
         self.balance = 0
         self.command_descriptions = {
-            "t <recipient_address> <message>": "Send a message to a recipient",
+            "m <recipient_address> <message>": "Send a message to a recipient",
             "stake <amount>": "Commit your stake of a specified amount",
             "view": "View the last validated block's transactions and the id of the validator.",
             "balance": "Check your balance",
             "help": "Show available commands and their descriptions"
+            "t: <amount>: Create a new transaction transfering amount BCC"
         }
         self.commands = {
-            "t": self.send_message,
+            "m": self.send_message,
             "stake": self.stake_amount,
             "view": self.view,
             "balance": self.check_balance,
-            "help": self.show_help
+            "help": self.show_help,
+            "t": self.amount
         }
 
-    def send_message(self, args):
+    def amount(self, args):
         if len(args) < 2:
             print("Error: 't' command requires both recipient address and message.")
             return
-        recipient_address, message = args
+        recipient_address, amount = args
+        #not sure if ammount is needed, added for clarity, gonna check it out #TODO (anast)
         # # TODO low prior call create transaction
+        
+        #  === Begin New transaction ===
+
+        #Στείλε στο recipient_address wallet το ποσό amount από BTC coins που θα πάρει
+        #από το wallet sender_address.
+        #καλεί συνάρτηση create_transaction στο backend που θα
+        #υλοποιεί την παραπάνω λειτουργία.
+        #I'm sending to recipient amount BCC
+        new_trans = self.create_transaction(self, recipient_address, "coins", amount, None ) #rest arguments ?? (Anast)
+        
+        # === End new Transaction ===
+        
+        print(f"Sending '{amount}' BCC to {recipient_address}")
+
+    def send_message(self, args):
+        if len(args) < 2:
+            print("Error: 'm' command requires both recipient address and message.")
+            return
+        recipient_address, message = args
+        # do i get charged for sending a message? Has this functionality been implemented? (Anast)
+        #for now
+        #TODO
+        new_trans = self.create_transaction(self, recipient_address, "message", None, message ) #rest arguments ?? (Anast)
+
         print(f"Sending message '{message}' to {recipient_address}")
+
+        pass
 
     def stake_amount(self, args):
         if len(args) < 1:
