@@ -62,7 +62,7 @@ def register_node():
     peer_pk = request.form.get('public_key')
     peer_ip = request.form.get('ip')
     peer_port = request.form.get('port')
-    peer_id = len(node.peers)
+    peer_id = len(node.peers) + 2 # bootstrap is 1 so when node.peers are empty the first peer gets id 2
 
     # Add node in the list of registered nodes.
     node.add_peer(peer_id, peer_ip, peer_port, peer_pk, 0)

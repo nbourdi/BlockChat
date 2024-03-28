@@ -1,4 +1,5 @@
 import sys
+sys.path.append('../')
 from backend.node import Node
 
 # TODO low priority magic to point to the right thing, 
