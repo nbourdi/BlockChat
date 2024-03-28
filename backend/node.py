@@ -40,6 +40,7 @@ class Node:
         trans.sign_transaction(self.wallet.private_key)
         self.add_to_block(trans)
         trans.broadcast_transaction(trans)
+        #Am I charged for sending messages? Is this impemented? #TODO (Anast)
 
 
     def stake(self, stake_amount): 
