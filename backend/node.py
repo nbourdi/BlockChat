@@ -114,15 +114,15 @@ class Node:
         self.peers.append(peer)
 
     def create_block(self, index, previous_hash, validator, capacity): #TODO
-        # I'm creating and adding a new block to the blockchain (Anast)
-        if len(self.chain.blocks) == 0:
-            #genesis block of the chain
-            index = 0
-            previous_hash = 1
-            validator = 0
-            self.curr_block = Block(index, previous_hash, validator, capacity)
-        else:
-            self.curr_block = Block(index, previous_hash, validator, capacity ) #None values for the time being, gotta check the mining mathod -Anastasia | filled (Nat)
+        # # I'm creating and adding a new block to the blockchain (Anast)
+        # if len(self.chain.blocks) == 0:
+        #     #genesis block of the chain
+        #     index = 0
+        #     previous_hash = 1
+        #     validator = 0
+        #     self.curr_block = Block(index, previous_hash, validator, capacity)
+        # else:
+        self.curr_block = Block(index, previous_hash, validator, capacity ) #None values for the time being, gotta check the mining mathod -Anastasia | filled (Nat)
 
         return self.curr_block
 
