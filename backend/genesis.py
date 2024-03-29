@@ -2,6 +2,7 @@ from flask import Flask
 import requests
 from node import Node
 from api import app
+from block import Block
 from transaction import Transaction
 
 
@@ -22,21 +23,23 @@ stake = 5
 capacity = 10
 
 node = Node(capacity=capacity, stake=stake)
+set_node_instance(node)
 
-def main():
+
+
+if __name__ == "__main__":
     print("Node ID:", node.id)
     print("Node Wallet Public Key:", node.wallet.public_key)
     print("Node Blockchain Length:", len(node.blockchain.blocks))
-
-if __name__ == "__main__":
 
     if is_bootstrap == 1:
         # we are bootstrap
         node.id=0
         genesis_block = node.create_block(index=0, previous_hash=1, validator=0, capacity=5)
-        node.blockchain.blocks.append(genesis_block)
-
-
+        node.curr_block = genesis_block
+        node.wallet.balance += 5000
+        
+        
         print("Genesis Block Index:", genesis_block.index)
         print("Genesis Block Previous Hash:", genesis_block.previous_hash)
         print("Genesis Block Validator:", genesis_block.validator)
@@ -45,7 +48,9 @@ if __name__ == "__main__":
 
 
         transaction = Transaction(sender_address='0', receiver_address=f'{node.wallet.public_key}', type_of_transaction='coins', amount=5000, noance=0, message=None)
-        genesis_block.add_transaction(transaction)
+        node.curr_block.add_transaction(transaction)
+        node.blockchain.blocks.append(genesis_block)
+        print("Wallet balance after adding funds:", node.wallet.balance)
         print("Genesis Block transactions:", genesis_block.transactions)
         for transaction in genesis_block.transactions:
             print("Transaction ID:", transaction.transaction_id)
