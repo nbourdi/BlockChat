@@ -2,14 +2,24 @@ from block import Block
 from node import Node
 from node import Peer
 from flask import Blueprint, request, jsonify
+import logging
+
+#TO /money LEITOURGEI :D
+
 # Add the path to the backend directory to the Python path
 # backend_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'backend'))
 # sys.path.append(backend_path)
 # print(sys.path)
 
+api_blueprint = Blueprint('api', __name__)
+node_instance = None
+
+def set_node_instance(node):
+    global node_instance
+    node_instance = node
+
 app = Blueprint('api', __name__)
 n = 3 
-node = Node()
 
 # Endpoint to get a block
 @app.route('/validate_block', methods=['GET'])
@@ -30,6 +40,14 @@ def get_block():
             'message': "Block invalid ... Rejected."
         }), 400
     
+# Endpoint to get a money
+@app.route('/money', methods=['GET'])
+def get_money():
+    global node_instance
+    if node_instance:
+        return jsonify({'balance': node_instance.wallet.balance})
+    else:
+        return jsonify({'error': 'Node instance is not set.'}), 500
 
 # Endpoint to validate a transaction
 @app.route('/validate_transaction', methods=['POST'])
