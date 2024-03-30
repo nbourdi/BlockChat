@@ -18,7 +18,7 @@ class Block:
 
     def __init__(self, index, previous_hash, validator, capacity):
         self.index = index # let genesis have index 0 
-        self.timestamp = time() # not necess
+        self.timestamp = time.time() # not necess
         self.transactions = []
         self.validator = validator
         self.current_hash = None
