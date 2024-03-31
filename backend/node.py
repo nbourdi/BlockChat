@@ -51,14 +51,18 @@ class Node:
         # που έχει αποφασίσει να δεσμεύσει.
         # transaction με receiver_address = 0 και το ποσο που θλει να δεσμευσει ο καθε κομβος
         
+
         if self.balance < stake_amount:
-            print(f"Can't stake {stake_amount}, not enough BCC in your acount...")
+            # failure message is being printed in the client class 
+            #print(f"Can't stake {stake_amount}, not enough BCC in your acount...") 
             return False
         else:
             self.stake = stake_amount
             self.create_transaction(0, type_of_transaction="stake", amount=stake_amount, message=None)
             self.broadcast_stake()
             return True
+        
+
         
     # TODO last -prio
     def update_stake(self, stake_amount):
