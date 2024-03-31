@@ -60,13 +60,24 @@ class CLI:
 
         pass
 
+
+  
     def stake_amount(self, args):
         if len(args) < 1:
             print("Error: 'stake' command requires the amount to be specified.")
             return
         amount = args[0]
+
+        
         # TODO low prior call stake() from backend, handle failure for insuff funds
-        print(f"Staking {amount}")
+        # I hope that is what u meant by insuff funds. If not #FIXME  (Anast)
+        st = self.stake(amount)
+
+        if not st:
+            print("Not enough BCC in your account to bind...")
+        else:
+            print(f"Staking {amount}")
+
 
     def view(self, args):
         print("Viewing last validated block...\n\n")
