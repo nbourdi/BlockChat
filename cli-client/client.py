@@ -94,8 +94,7 @@ class CLI:
 
 
     def check_balance(self, args):
-        # TODO low prior
-
+        
         print(f"Your balance is: {self.balance}")
 
     def show_help(self, args):
