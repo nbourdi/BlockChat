@@ -2,17 +2,14 @@ from block import Block
 from node import Node
 from node import Peer
 from flask import Blueprint, request, jsonify
-# Add the path to the backend directory to the Python path
-# backend_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'backend'))
-# sys.path.append(backend_path)
-# print(sys.path)
 
-app = Blueprint('api', __name__)
+
+api = Blueprint('api', __name__)
 n = 3 
 node = Node()
 
 # Endpoint to get a block
-@app.route('/validate_block', methods=['GET'])
+@api.route('/validate_block', methods=['GET'])
 def get_block():
 
     data = request.get_json()
@@ -32,7 +29,7 @@ def get_block():
     
 
 # Endpoint to validate a transaction
-@app.route('/validate_transaction', methods=['POST'])
+@api.route('/validate_transaction', methods=['POST'])
 def validate_transaction():
 
     data = request.get_json()
@@ -45,7 +42,7 @@ def validate_transaction():
     
 
 # Endpoint to get a transaction, i think this is covered by validate_transaction bc it also adds it if its signature verified 
-# @app.route('/add_transaction', methods=['POST'])
+# @api.route('/add_transaction', methods=['POST'])
 # def add_transaction():
 #     inc_transaction = json.loads(request.get_data().decode('utf-8')) # incoming transaction
 #     if node.add_to_block(inc_transaction):
@@ -56,7 +53,7 @@ def validate_transaction():
 
 
 # Endpoint to register a node, by bootstrap
-@app.route('/register_node', methods=['POST'])
+@api.route('/register_node', methods=['POST'])
 def register_node():
     # Logic to register a node in the network
     peer_pk = request.form.get('public_key')
@@ -68,7 +65,7 @@ def register_node():
     node.add_peer(peer_id, peer_ip, peer_port, peer_pk, 0)
     
     # If all nodes have been added
-    if peer_id == n - 1:
+    if peer_id == n:
         for peer in node.peers:
             if peer.id != node.id:
                 node.send_blockchain_to_peer(peer=peer)
@@ -83,7 +80,7 @@ def register_node():
     return jsonify({'message': "Node added successfully", 'id': peer_id}), 200
 
 # Endpoint to get the ring
-@app.route('/get_ring', methods=['POST'])
+@api.route('/get_ring', methods=['POST'])
 def get_ring():
     try:
         data = request.get_json()
@@ -98,7 +95,7 @@ def get_ring():
     
 
 # Endpoint to get the chain
-@app.route('/validate_chain', methods=['POST'])
+@api.route('/validate_chain', methods=['POST'])
 def get_chain():
     try:
         data = request.get_json()
@@ -111,10 +108,8 @@ def get_chain():
         return jsonify({"error": str(e)}), 400
      
 
-
-
 # Endpoint to create a transaction
-@app.route('/create_transaction', methods=['POST'])
+@api.route('/create_transaction', methods=['POST'])
 def create_transaction ():
     receiver_id = request.form.get('receiver')
     type_of_transaction = request.form.get('type')
@@ -139,31 +134,31 @@ def create_transaction ():
 
 #  only implement if needed, idk if theyre essential for functionality
 # Endpoint to send the chain
-# @app.route('/send_chain', methods=['POST'])
+# @api.route('/send_chain', methods=['POST'])
 # def send_chain():
 #     # Logic to send the chain
     
 # # Endpoint to get the balance
-# @app.route('/get_balance', methods=['GET'])
+# @api.route('/get_balance', methods=['GET'])
 # def get_balance():
 #     # Logic to get balance
 
 # # Endpoint to get transactions
-# @app.route('/get_transactions', methods=['GET'])
+# @api.route('/get_transactions', methods=['GET'])
 # def get_transactions():
 #     # Logic to get transactions
 
 # # Endpoint to get my transactions
-# @app.route('/get_my_transactions', methods=['GET'])
+# @api.route('/get_my_transactions', methods=['GET'])
 # def get_my_transactions():
 #     # Logic to get transactions
 
 # # Endpoint to get ID
-# @app.route('/get_id', methods=['GET'])
+# @api.route('/get_id', methods=['GET'])
 # def get_id():
 #     # Logic to get ID
 
 # # Endpoint to get metrics
-# @app.route('/get_metrics', methods=['GET'])
+# @api.route('/get_metrics', methods=['GET'])
 # def get_metrics():
 #     # Logic to get metrics

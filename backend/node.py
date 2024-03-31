@@ -92,7 +92,8 @@ class Node:
 
     def send_blockchain_to_peer(self, peer):
         
-        chain_json = json.dumps(self.chain)
+        # chain_json = json.dumps(self.blockchain)
+        chain_json = self.blockchain.to_json()
 
         # send to every node in peers[]
         
@@ -115,7 +116,7 @@ class Node:
 
     def create_block(self, index, previous_hash, validator, capacity): #TODO
         # I'm creating and adding a new block to the blockchain (Anast)
-        if len(self.chain.blocks) == 0:
+        if len(self.blockchain.blocks) == 0:
             #genesis block of the chain
             index = 0
             previous_hash = 1

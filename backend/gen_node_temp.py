@@ -33,29 +33,20 @@ def main():
 
 if __name__ == "__main__":
 
-    if is_bootstrap == "1":
-        # we are bootstrap
-        app.run(host=bootstrap_ip, port=bootstrap_port)
-        # set the bootstrap id
-        node.id = 1
-        app.logger.debug("im boot")
     
-    else:
-        app.run(host=ip, port=port)
-        app.logger.debug("im else")
+    app.run(host="127.0.0.1", port=5001)
+    app.logger.debug("im node1 test temp")
 
-        json_info = {
-            'ip': "0.0.0.0",
-            'port': port,
-            'pub_key': node.wallet.public_key
-        }
+    json_info = {
+        'ip': "127.0.0.1",
+        'port': 5001,
+        'pub_key': node.wallet.public_key
+    }
 
-        app.logger.debug(json_info)
+    url = f'http://127.0.0.1:5000/register_node' # NOT FOR DOCKER ONLY PROCESSES
+    response = requests.post(url, json=json_info)
+    response_data = response.json()
 
-        url = f'http://172.21.0.3:5000/register_node'
-        response = requests.post(url, json=json_info)
-        response_data = response.json()
-
-        node.id = int(response_data['id'])
+    node.id = int(response_data['id'])
 
     main()
