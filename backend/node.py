@@ -93,7 +93,7 @@ class Node:
     def send_blockchain_to_peer(self, peer):
         
         # chain_json = json.dumps(self.blockchain)
-        chain_json = self.blockchain.to_json()
+        chain_json = self.blockchain.to_dict()
 
         # send to every node in peers[]
         

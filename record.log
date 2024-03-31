@@ -202,3 +202,868 @@ DwIDAQAB
 -----END PUBLIC KEY-----
 
 DEBUG:genesis:Node Blockchain Length: 0
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.2.8:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [31/Mar/2024 22:13:29] "GET /money HTTP/1.1" 200 -
+DEBUG:genesis:im boot
+DEBUG:genesis:Node ID: 1
+DEBUG:genesis:Node Wallet Public Key: -----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEArfGV1miRmUnNAk0dWj/b
+t4PjLk0zKcbhcpBBOYXtIudxf7KCCPvVH6CqfrCMPbAHS/oeolfHGwhUwmdOJg7c
+ePzK0f1BWFfy2GVs3SQOSpHLGi0glO4AL2+v9ab9aw5ncB0OULP1l/MJFt6cBxX8
+Nr3nnRUuapiCehKtdLriylpF9Ltl0I4JylcWMO23YzODaHk0MkkuZs1YaR46Syqh
+iOEjf3PWxeKEpwG9QgUuX2m1fXfYR8FkfBCf/yG8NL1gtoH17hdLh3R7zljtaffI
+29u30SM5O408WwjJuazgjmwE+O49kUpJwwWSh8kKFMUy6ta25CMF4CeSHOzCaUTz
+SwIDAQAB
+-----END PUBLIC KEY-----
+
+DEBUG:genesis:Node Blockchain Length: 0
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.2.8:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [31/Mar/2024 22:21:47] "GET /money HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Mar/2024 22:21:51] "GET /money HTTP/1.1" 200 -
+DEBUG:genesis:im boot
+DEBUG:genesis:Node ID: 1
+DEBUG:genesis:Node Wallet Public Key: -----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAk/YVPlj9hv5LwX9Nz1m/
+TCMK6TG3cndhrUf9AmxB3Ai4NL6pNAz9Q3PpAc9TP112KpsCBDjCKUfyp1D2cBQo
+J2ww58lhukYE+pJlykoRXK5Mj5752MojbX/T8uB7uI3SyIoIOEowK4kid4bU0ETI
+Krao3CfMsSO7cgTbzr9CbGwTiX4wYfSDXfTqKUdZbBjD0Z47akUbGnK3CVmxLvF5
+r/dqyu1+0jY9DEiIXah+lfzoCk/BTLdV1/GD4CW2XwqWZmGxpka1Gl8UCNhDfSIZ
+hcfstpkPM+sLdBVz5+6X3WEVrwWgLzrgaRmK9UMJl84SBcReoTHFs2VtIAsN/TL6
+SQIDAQAB
+-----END PUBLIC KEY-----
+
+DEBUG:genesis:Node Blockchain Length: 0
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.2.8:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+DEBUG:genesis:im boot
+DEBUG:genesis:Node ID: 1
+DEBUG:genesis:Node Wallet Public Key: -----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAvrdF9QUvTlPzVkFBpGM/
+TwRlSCN+TK9cXVqvyiqfW6HOqXLwnOjo8c+c3pwR2H5Ibl0LFU1oXxl29mRlj6No
+Cmfjfe96UL6RKDuGzKWBf+QG1T1K5KwEnzgeNjWBoM8NdAKmk+ZraFoJ5x5IZYZW
+K2aeg7yft+Tjc7aVKBg0WbIAvxgZgN7Mhx2YstOAj32y4EgCHiSvF7FzoGpLK+Gn
+cWtl5SLbWK0n0uphgbe2o62Wsf4/PMUDnDlDC4iPYk0VmoTwO2Fz53I2TpE+NCEj
+oJ232Ct9m4/K9PBJJkrSkxKt+MCnhom3UXOC7djduW2DgVmrNjLN40IjZS8KClNf
+RwIDAQAB
+-----END PUBLIC KEY-----
+
+DEBUG:genesis:Node Blockchain Length: 0
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.2.8:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [31/Mar/2024 22:23:21] "GET /money HTTP/1.1" 200 -
+DEBUG:genesis:im boot
+DEBUG:genesis:Node ID: 1
+DEBUG:genesis:Node Wallet Public Key: -----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp6RaAofjlA1KqNeAvpmW
+sw9Xk0TwXV0IfSGW1+Aby3kXDSIMGAdL9X3TF/mD4BOvfBU0Wi/L0D9zglNjk7zO
+wP8WLczu6Azqkd4UyPAGeyTjIswHx4w2bZCoLnYFYjdNS3sGG6NmZ09m9+LlZTkW
+9ed90M7Bq/hXU4eDwNpcJCSYH9m4ES3015BRjX2oOl8py2nWGoi5rwPwObP6VNAJ
+A7ECHVBJKuZEgy9+pbtGHXhMsJ+8gAciSA58d3bhyijTpLEkLy0+aMPUTl60sp5Q
+cvsYJBLxQGRJ8UU742QWQ84TBSQn5d3JVywgRgXmvR8YF5L88Dw4L34daxFeMNey
+YQIDAQAB
+-----END PUBLIC KEY-----
+
+DEBUG:genesis:Node Blockchain Length: 0
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.2.8:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [31/Mar/2024 22:24:27] "GET /money HTTP/1.1" 200 -
+DEBUG:genesis:im boot
+DEBUG:genesis:Node ID: 1
+DEBUG:genesis:Node Wallet Public Key: -----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAr4DcndNGC1kIuCREi4wX
+WLWl7RKtDc7kGUcsvbq5OboeLhrphou/JxyNhOOrGyrqq/4GoqgS3VcKu5HkIWfy
++NHu8gUAtmGdsWHxijaqVqD3i3UM1I7zkJUtroxAybhgMZeNKsxWhcAGj/PT05ja
+X8zn2k1l7sFCh5BQEx4D+sqWPxPzEKFSK8ec69+pg7zNcK9I0kUgsepNy6PHFEgi
+RlfmjpObd7ivpkWhqsDyrr5NHEjVSExoJLqfxW4QFW++RROcxP3nZ7xmrjSJLOgy
+JoKwlQ3CjyLKSMC1Kc8uf9yGHSL9sNNxBtYIk22XAgQVsqPfiyl20xPKd6GwBrby
+gQIDAQAB
+-----END PUBLIC KEY-----
+
+DEBUG:genesis:Node Blockchain Length: 0
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.2.8:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [31/Mar/2024 22:25:44] "GET /money HTTP/1.1" 200 -
+DEBUG:genesis:im boot
+DEBUG:genesis:Node ID: 1
+DEBUG:genesis:Node Wallet Public Key: -----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAnk7FPGuSEGjM0IfO92SX
+fpe7glUiymcEGOC2p5P0MIPAUs9r+H3c0wNDjxxLSJwBeP+CQctiQMCu2It6qZ4V
+kRFUwr2NTU8PeuBmfrPoIZt9fSI0cwVhoa8C3H4wDQuvxoYSrH8Nj4yOWtyPUxIx
+tkkEAYrBB4FZWF5KhtrvyHcHJ3cx6MNuFI2297yHBV2q1Cjmv4sIloH3ZuzHTi8e
+CNTi0kaPSZHd1iCppzjTTB8uXw5j/Ct5QH3wcGR3pWUVc6M+mMmjvzthHDi9GxGf
+4/C/TEzEUfWklrnJB5EPZC30hcs5ElOq3ZzB/g9YfpJ7SpgK8R38f4Pnh/GCsTj0
+UwIDAQAB
+-----END PUBLIC KEY-----
+
+DEBUG:genesis:Node Blockchain Length: 0
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.2.8:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [31/Mar/2024 22:26:14] "GET /money HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Mar/2024 22:26:16] "GET /money HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Mar/2024 22:26:17] "GET /money HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Mar/2024 22:26:18] "GET /money HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Mar/2024 22:26:20] "GET /money HTTP/1.1" 200 -
+DEBUG:genesis:im boot
+DEBUG:genesis:Node ID: 1
+DEBUG:genesis:Node Wallet Public Key: -----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA8Kc8XyrWQc20ZxSn3q5n
+8KZu2NTp/LekNJW7TQSbiC4jna0nvLl4FAzY0GqTK1UWsy7I27UqT4A54s2KJuwQ
+Wx+WuTGNI3Bn8G0XsH+4iCozyKd1UHE8NC5mS8KQYNPJLkgyLsNx/yKthsBp99ri
+sy9d3lxKGqDEv4UMVxbphkhAPE/Pxbnpoez3vsCuURDc5Vx5ZphJcdQIWVUWzCrp
+VPOy/Wib5LFd3XZXpJjSpz4fiYyilwrislC7cQqBXRByzYGB11unmzfplLLZrXnV
+FCpKyrPoy2B4hUgEgpu76In6XwYkois4HA5nZwq8w7InYv4NVR7LCtKl8E68bnUu
+WQIDAQAB
+-----END PUBLIC KEY-----
+
+DEBUG:genesis:Node Blockchain Length: 0
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.2.8:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [31/Mar/2024 22:27:07] "GET /money HTTP/1.1" 200 -
+DEBUG:genesis:im boot
+DEBUG:genesis:Node ID: 1
+DEBUG:genesis:Node Wallet Public Key: -----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtZ7XD75GNIQgJ0mA/8eS
+3GIwp3byWZMOPj3ZdusmkkJct5RVv1xKKw7rHz3tCFHhdZSpROqC36Nw2ChhuurR
+JBXS9AuRw1pcyR3hVUD9b/rluNNQ6kKAHijwvQc4rC+1cFcquel3UiNf78eVpwhh
+RhdRSnChVkH5TWVjcNx8BMbji7Tuf9Ju8SEcbflAhX0Mv3T7Jd+Jmp2a8LnjGKpM
+jKHFVR9q8fVwsiBlish/Gkv+R+1rw1ExL1TD6/VcBgeVMmjT9ar3FfWhbfIwBwG6
+CQu3g/J2OS1uvPK2C7nArRuCvyFUVNHrWzUtMgnVZP/mQfju28KipOnNvgdMh1xm
+EQIDAQAB
+-----END PUBLIC KEY-----
+
+DEBUG:genesis:Node Blockchain Length: 0
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.2.8:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [31/Mar/2024 22:28:32] "GET /money HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Mar/2024 22:28:34] "GET /money HTTP/1.1" 200 -
+DEBUG:genesis:im boot
+DEBUG:genesis:Node ID: 1
+DEBUG:genesis:Node Wallet Public Key: -----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEArf/aKuczpyN3FfSuvv/0
+BOnqXpuh76nOXL2hRY4eKaVOsI34SpeVXCZlYjcSonuZXcXTxC8h0aGEOhiJpCoP
++dyP5I2FidjuHP/vqLk2BufJO7SErGzaUD3oqff4T6oRs3wtlCeP9X9dOiF5WGPE
++N6A4TSid9NYEXR//Nks7RXZq/sbdb9/c1Gp/vHdk87ncMPIA23XH/dsDKeEb5Aa
+LEHbOACsvP+jwL/PBoLPPkxPFUUYHRfJbw7IfmIJiGDZEU6Nea2VU5DEekOjy0Yb
+Kco9Jt7RQsSDjwtg2DSp0gVz6Nak3OAREfy8p7w10IxryzIunGMQmWajdAfcKfUN
+hQIDAQAB
+-----END PUBLIC KEY-----
+
+DEBUG:genesis:Node Blockchain Length: 0
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.2.8:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [31/Mar/2024 22:28:45] "GET /money HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [31/Mar/2024 22:30:36] "GET /money HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5002
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [31/Mar/2024 22:31:22] "GET /money HTTP/1.1" 200 -
+DEBUG:genesis:im boot
+DEBUG:genesis:Node ID: 1
+DEBUG:genesis:Node Wallet Public Key: -----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtnnLxUGQFMqAdx2rpqRs
+GfRBDbnaiDWauLeRyuqFlqhXBTr3Ajj24DZTVWjPI90rCsAzHJFwSZ1KmEDlsRzk
+2E0nKUzBkHySaP9NIfPPfHmrXYodKwPuG9sgkFWhHRN/c61K3HBzzxU1X0EfB5Dl
+vOAVLBZDAZ+CaNyNXQCJqvbiRL3Px9OFlJr/Tm19bWLtqucMYQt64QwJwH+KlqiB
+NI0kpK3ApewrPmUScg03H2lCPCA/nsoQuuFggopmVWqmcRIUlOV7hHX+9PJ68NU0
+IjvgxeN206yfFwkI524c0WV7eU32ID2GhI6SzmsChdtHhwiZtdMpm5KQaOACk4mk
+5wIDAQAB
+-----END PUBLIC KEY-----
+
+DEBUG:genesis:Node Blockchain Length: 0
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.2.8:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [31/Mar/2024 22:36:13] "GET /money HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Mar/2024 22:36:18] "GET /money HTTP/1.1" 200 -
+DEBUG:gen_node_temp:im node1 test temp
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+INFO:werkzeug:127.0.0.1 - - [31/Mar/2024 22:40:15] "POST /register_node HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "POST /register_node HTTP/1.1" 200 45
+DEBUG:gen_node_temp:Node ID: 2
+DEBUG:gen_node_temp:Node Wallet Public Key: -----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAllKgiixmqnmlfZq2ndQX
+v2WsCyW89mgeAfWTYrlROJ7415DvtzpVtDuiXx4TWNwTgNU4Fyxl9gVIa7U6yriu
+UDjzzTpHyRyz5/riMsN2HSf3zsy0WosCMKbZYj72hhVTujrWYQBZLwh5PWZRzeyY
+UnWA7or8BoO1YnkeYD2ByegLuHdmHckKfXcNAkfy3d7H0pys4Kv8/5gNIzGGx/4X
+Qbq6Sv6etANiBawH4myNhiQqdj+c0cn/P6Mact1nKD0ChCJvehFtHzbpLuD+KSTj
+rBqggLxm7Xs0f+wFFpg+3rJfTKv0zdutV3lzDkhENQ0PT+CvNzzlKJkH4dGTNosp
+nwIDAQAB
+-----END PUBLIC KEY-----
+
+DEBUG:gen_node_temp:Node Blockchain Length: 0
+DEBUG:gen_node_temp:im node1 test temp
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+ERROR:genesis:Exception on /register_node [POST]
+Traceback (most recent call last):
+  File "C:\Users\30695\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\flask\app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\30695\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\flask\app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\30695\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\30695\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\30695\BlockChat\backend\api.py", line 82, in register_node
+    node.send_blockchain_to_peer(peer=peer)
+  File "c:\Users\30695\BlockChat\backend\node.py", line 100, in send_blockchain_to_peer
+    address = 'http://' + peer.ip + ':' + peer.port + '/validate_chain'
+              ~~~~~~~~~~^~~~~~~~~
+TypeError: can only concatenate str (not "NoneType") to str
+INFO:werkzeug:127.0.0.1 - - [31/Mar/2024 22:40:18] "[35m[1mPOST /register_node HTTP/1.1[0m" 500 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "POST /register_node HTTP/1.1" 500 265
+INFO:werkzeug:127.0.0.1 - - [31/Mar/2024 22:40:30] "[33mGET /mo HTTP/1.1[0m" 404 -
+DEBUG:genesis:im boot
+DEBUG:genesis:Node ID: 1
+DEBUG:genesis:Node Wallet Public Key: -----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAj3I3T+2HpXM1Yd8ftWhz
+HG90U7SuYTXqDqPjAvLNc9GsFaTIPtPdE9cbfs1GXdaRbRKPwiRvVYxw5ZXHC5GS
+lZMSlfT4n42qaRxLE/Fpu79kzup5J2yhkOvUet3q6AmYlA0On7/nXWQFzKd4D+TS
+RBgbjXLHH8oMdyX9DEQF50qCoOZ7X99mTPwFD1vEAGZNZosfzs1I8+XfKqrwVbUr
+hVnWDyo++Eqe7g9q/cClz0q4psCJAwLnzLkiNssngsd4OYzNA2Q0wHpnL1X+GdKQ
+QuAxD8aiIrgh8f6FhbaLBVFzK5hp66c/R0Tu2XjxvBCjedPutb4ccFnkNY7xyzBb
+NwIDAQAB
+-----END PUBLIC KEY-----
+
+DEBUG:genesis:Node Blockchain Length: 0
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.2.8:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+DEBUG:gen_node_temp:im node1 test temp
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+INFO:werkzeug:127.0.0.1 - - [31/Mar/2024 22:40:48] "POST /register_node HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "POST /register_node HTTP/1.1" 200 45
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5002
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [31/Mar/2024 22:40:52] "GET /money HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Mar/2024 22:41:01] "GET /money HTTP/1.1" 200 -
+DEBUG:gen_node_temp:im node1 test temp
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+ERROR:genesis:Exception on /register_node [POST]
+Traceback (most recent call last):
+  File "C:\Users\30695\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\flask\app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\30695\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\flask\app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\30695\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\30695\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\30695\BlockChat\backend\api.py", line 82, in register_node
+    node.send_blockchain_to_peer(peer=peer)
+  File "c:\Users\30695\BlockChat\backend\node.py", line 100, in send_blockchain_to_peer
+    address = 'http://' + peer.ip + ':' + peer.port + '/validate_chain'
+              ~~~~~~~~~~^~~~~~~~~
+TypeError: can only concatenate str (not "NoneType") to str
+INFO:werkzeug:127.0.0.1 - - [31/Mar/2024 22:41:59] "[35m[1mPOST /register_node HTTP/1.1[0m" 500 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "POST /register_node HTTP/1.1" 500 265
+INFO:werkzeug:127.0.0.1 - - [31/Mar/2024 22:43:33] "GET /money HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Mar/2024 22:43:44] "GET /money HTTP/1.1" 200 -
+DEBUG:genesis:im boot
+DEBUG:genesis:Node ID: 1
+DEBUG:genesis:Node Wallet Public Key: -----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEApXHcFDTnqq7Lcka+gqqP
+qji1JtFlM/uqaCJrVAIAv9sbu5A0fyJn5WVGm09KxlATLIHdMyYJG57z7ajFeo21
+2QZQPv/hPNeSvIVcYdrTvQZQwBatya1e9UYZxoNpLVBN6wIVGVCIpAFXqzEnXM5z
+nFz+usG0wAqgZCiM46qOMEu0PWj7PeQIswCnnWiRnetZ/Aq48W46TEy3nTF2E+LF
+//Hmykz1LV+t1kdpCkBt48s6BlyxSrIl1GdR/hDcFZTHdMbEdHDtTwD3jnaxwS9/
+nxHXiSKTfMeNVdcZ/5AxYLg5sVGL2ao+z+jnMhK8jAXXlNVBckUaHOnhrPzFOUet
+AwIDAQAB
+-----END PUBLIC KEY-----
+
+DEBUG:genesis:Node Blockchain Length: 0
+DEBUG:gen_node_temp:Node ID: 2
+DEBUG:gen_node_temp:Node Wallet Public Key: -----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAvOI5Ip6Ul0k3yOqMDCL7
+/OAhmN30rU+/7XxFuAPnAF09+UE0n9vDjW8ZNVwGXufxmWg2AHr3Vo9VejPCRGVK
+oA2S0+XIvgPj9ZZAUvyz3V/CB24ia/PFaB89hrXN3YZgLN7ZQDbLIaNYGYLSoOCF
+Z2SzQKP+Vhyvll5e4a/4OnvFuP/bzwIfh/56nNfMkkAcjNVyr7PLRS7UVqgDuDBC
+v3TIDR06vP1z2QPm1MUcuDHTPwytXPJbzvSH9mtjIq60BVithGkgxvPl10jAcFg4
+SSn0JEtWFWWMPSS2U1zf9pkct/96Pe8Y6juGPYfEuHfvkTbB/lCP2yUSTtv0bJ3q
+gwIDAQAB
+-----END PUBLIC KEY-----
+
+DEBUG:gen_node_temp:Node Blockchain Length: 0
+DEBUG:gen_node_temp:im node1 test temp
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.2.8:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+DEBUG:gen_node_temp:im node1 test temp
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+INFO:werkzeug:127.0.0.1 - - [31/Mar/2024 22:48:23] "POST /register_node HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "POST /register_node HTTP/1.1" 200 45
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+DEBUG:gen_node_temp:im node1 test temp
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+ERROR:genesis:Exception on /register_node [POST]
+Traceback (most recent call last):
+  File "C:\Users\30695\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\flask\app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\30695\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\flask\app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\30695\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\30695\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\30695\BlockChat\backend\api.py", line 83, in register_node
+    node.send_blockchain_to_peer(peer=peer)
+  File "c:\Users\30695\BlockChat\backend\node.py", line 100, in send_blockchain_to_peer
+    address = 'http://' + peer.ip + ':' + peer.port + '/validate_chain'
+              ~~~~~~~~~~^~~~~~~~~
+TypeError: can only concatenate str (not "NoneType") to str
+INFO:werkzeug:127.0.0.1 - - [31/Mar/2024 22:48:48] "[35m[1mPOST /register_node HTTP/1.1[0m" 500 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "POST /register_node HTTP/1.1" 500 265
+DEBUG:gen_node_temp:Node ID: 2
+DEBUG:gen_node_temp:Node Wallet Public Key: -----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsJ774u9ps0E8uj0FLCjL
+vXPiP2OOEPvS8RM4/9Lx1E4nIfukJph/dhRqopQ1UkxMAPo/vpCDOoNYckCLTBA9
+ufZhPHaGiljo3Yhz/dXRTv0ABkvcInoNSqI2LA/9rYk7yJN5dDZAby7pv8tlcCoK
+gt0RrdULwuwJcUk0gq6J+D9W3aqrbBiRRUdOOrLOUH2drqEK1ROSWYuSWrUob6Jj
+NihdR3CZMjnHgocyM4C2LxweJcVSEWcQza9AD21gUlnVwc1PpGvExphPoGzU0O/D
+mgQqG44erglNPibtEXiHDodtRyeE8Gl4PKUZXQsN6FeGIAu3HyVwBDfRFQ89Pp1T
+UwIDAQAB
+-----END PUBLIC KEY-----
+
+DEBUG:gen_node_temp:Node Blockchain Length: 0
+DEBUG:genesis:im boot
+DEBUG:genesis:Node ID: 1
+DEBUG:genesis:Node Wallet Public Key: -----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAuyd3GcktlRwRqIOiG/iY
+bw17qUdAA4ToLbXvsdbW7gJgvaztr+Wh2720d6sL12ey1qExkD8+gwRl9YJ08J3S
+uHh3Bh8NO+RxePk/oihDtoQ38C06ph9M7gZsGqVZh7nBQo6zUx+9BVTLqhf3E+y8
+dazA89TrnVpBGRh8k6syfsCi6MNkws80ufsgZprtB8JE+BLSEfA4FD4ofT9fzCiJ
+XqrqjkY5dpTnNWkgmNqnpJgvatg+/8MBNmeAf0rMe7LQBfjQjqjYALeZZo8005xQ
+IBsb1j6hOyDKxVr3C8JTrK7h5Q6Oy1rEYuELqt+UxKVi2icnnsjvZTW2oN9hm793
+TQIDAQAB
+-----END PUBLIC KEY-----
+
+DEBUG:genesis:Node Blockchain Length: 0
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.2.8:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+DEBUG:gen_node_temp:im node1 test temp
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+INFO:werkzeug:127.0.0.1 - - [31/Mar/2024 22:52:09] "POST /register_node HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "POST /register_node HTTP/1.1" 200 45
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5002
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+DEBUG:gen_node_temp:im node1 test temp
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+ERROR:genesis:Exception on /register_node [POST]
+Traceback (most recent call last):
+  File "C:\Users\30695\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\flask\app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\30695\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\flask\app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\30695\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\30695\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\30695\BlockChat\backend\api.py", line 86, in register_node
+    node.send_blockchain_to_peer(peer=peer)
+  File "c:\Users\30695\BlockChat\backend\node.py", line 100, in send_blockchain_to_peer
+    address = 'http://' + peer.ip + ':' + peer.port + '/validate_chain'
+              ~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~
+TypeError: can only concatenate str (not "int") to str
+INFO:werkzeug:127.0.0.1 - - [31/Mar/2024 22:52:42] "[35m[1mPOST /register_node HTTP/1.1[0m" 500 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "POST /register_node HTTP/1.1" 500 265
+DEBUG:genesis:im boot
+DEBUG:genesis:Node ID: 1
+DEBUG:genesis:Node Wallet Public Key: -----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAlk+0pIvkMjbHeWoyUYNU
+8BM+SAzrvW9zw/5hrHpvVhOblEiDt/KSRzHp50PXY1JYnDzB7Hou2DpM2ljHrsZ/
+m09RRQtpdiHsprWUK7EY1sbVL84Bp7wJ6vyR57J7PSJfAW5rxigBp8vyFN2JZZVs
+O10zDiZO7dr7Xi3cYyqQMlHrv9E/QkbXq58hNKd92TZMgSNHdqh++Qg9FpEkQruU
+d0QiyqzRnHVdSqPfCzNlZ2I8VowxUKxuT/gFJgOOad0P5HIdTxyJ/8u3Q2iK1phx
+OMi0/Kp1Q8SAfD/sIiQLmLVIa5ADjwXT7LCoyGGzH3l7HOC83yNpMQzTD6uCQvwl
+wQIDAQAB
+-----END PUBLIC KEY-----
+
+DEBUG:genesis:Node Blockchain Length: 0
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.2.8:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+DEBUG:gen_node_temp:Node ID: 2
+DEBUG:gen_node_temp:Node Wallet Public Key: -----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAuHOQij+osIdioSwioRj3
+VNJzVX9aja94Gk/sPK4sQYtFtnECbdoQN8lAMwCpdDPULPdJ6Rk3q0Yif/IKnfnl
+PwTbIl4j01Cwq+dtsRdjlt8Y/4taFfCFmugoN+KDgI1/tRGwe+QvdU/Uu5ht3ujL
+FeikIqQctHwqi+BpN+97N0Ox1LJM9HFItfK4pA62XFTRODKO501iZBdRhCP6uzdL
+pTdUFD1et+VvHXh3N4lNbzuPWx7pCtzt8W2H7ezX6xqsrDRWZ9oJb/dT3VDMQ3WZ
+sBNkU0pLlmq7QXdn2bjs6ONhk+jPjh6C63TQLEoClRxPKL1OYFh8KC+mmMK4IQvY
+HwIDAQAB
+-----END PUBLIC KEY-----
+
+DEBUG:gen_node_temp:Node Blockchain Length: 0
+DEBUG:gen_node_temp:im node1 test temp
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+INFO:werkzeug:127.0.0.1 - - [31/Mar/2024 22:55:37] "POST /register_node HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "POST /register_node HTTP/1.1" 200 45
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+DEBUG:gen_node_temp:im node1 test temp
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5001
+INFO:werkzeug:127.0.0.1 - - [31/Mar/2024 22:55:52] "[31m[1mPOST /validate_chain HTTP/1.1[0m" 400 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5001 "POST /validate_chain HTTP/1.1" 400 135
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5001
+INFO:werkzeug:127.0.0.1 - - [31/Mar/2024 22:55:52] "[31m[1mPOST /get_ring HTTP/1.1[0m" 400 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5001 "POST /get_ring HTTP/1.1" 400 55
+ERROR:genesis:Exception on /register_node [POST]
+Traceback (most recent call last):
+  File "C:\Users\30695\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\flask\app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\30695\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\flask\app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\30695\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\30695\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\30695\BlockChat\backend\api.py", line 88, in register_node
+    node.create_transaction(
+  File "c:\Users\30695\BlockChat\backend\node.py", line 40, in create_transaction
+    trans.sign_transaction(self.wallet.private_key)
+  File "c:\Users\30695\BlockChat\backend\transaction.py", line 85, in sign_transaction
+    self.signature = serialized_private_key.sign(
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: The provided data must be the same length as the hash algorithm's digest size.
+INFO:werkzeug:127.0.0.1 - - [31/Mar/2024 22:55:52] "[35m[1mPOST /register_node HTTP/1.1[0m" 500 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "POST /register_node HTTP/1.1" 500 265
+INFO:werkzeug:127.0.0.1 - - [31/Mar/2024 22:56:20] "GET /money HTTP/1.1" 200 -
+DEBUG:gen_node_temp:Node ID: 2
+DEBUG:gen_node_temp:Node Wallet Public Key: -----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAulN9zq7zXcrCr7dIJoP2
+bDaKwpsjgv0tU+yWhIA13iJAKVbIYGotRiNO0YIEI/RX3z4RfWOH+9tOIpFIo7Vc
+/j3PiQguJPa0zZptrZ/E+bs69s4VtYS53jazLTMC/csQftJbN7BKXMTBW7RT7oZA
+KxEmUT0cuceylPIrQj4KfuwjnmO4UpKazhm65M492vFaxQvjqkR3I7gHGB9kRRBI
+yHVm9GQ6By0fdM3/fD6TthfpTs20KDypvTBMoz9rAPoSXGxn/u0fofpP6+kDD1Hg
+FNBwzWPKK3eNawxOrDz00QlARD9skrT+U9f3YMGfwXKXWXeKMybXdLFht4rXT8Rp
+PwIDAQAB
+-----END PUBLIC KEY-----
+
+DEBUG:gen_node_temp:Node Blockchain Length: 0
+DEBUG:genesis:im boot
+DEBUG:genesis:Node ID: 1
+DEBUG:genesis:Node Wallet Public Key: -----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsGO3wLQqYgZxaS3AtJiH
+m4yczTi1w+UN/j8l97vz+i81MZncDLe8caNI9WsLTdlse7ugoXHUGiDWVZkmIkDG
+VMl5IKdrSfCGrp5h+C6iW3k5Ur285O3Db/2DysbrN5D2llEdknS+aKcaRHRlOM15
+Z98S53H+Ahkzpt7kiwuCX+7nkm+Sn8YkI99F7gVNY7nJlKUQv6JuYE/1Wvrrmk6z
+U3sj9Fw6lMQt7JcySXWOlej+ufdK5pa++pTV640pswlUIvIMbkYMENvvDmiJtnU5
+XvIkNJoYQ1LonKGhGrE9vyDUh5gEfwYqdPiMf4QLnx2E/XcnuGHYa4WiVv2tWf3w
+IwIDAQAB
+-----END PUBLIC KEY-----
+
+DEBUG:genesis:Node Blockchain Length: 0
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.2.8:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+DEBUG:gen_node_temp:im node1 test temp
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+INFO:werkzeug:127.0.0.1 - - [31/Mar/2024 23:10:55] "POST /register_node HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "POST /register_node HTTP/1.1" 200 45
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5002
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+DEBUG:gen_node_temp:im node1 test temp
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+ERROR:genesis:Exception on /register_node [POST]
+Traceback (most recent call last):
+  File "C:\Users\30695\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\flask\app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\30695\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\flask\app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\30695\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\30695\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\30695\BlockChat\backend\api.py", line 86, in register_node
+    node.send_blockchain_to_peer(peer=peer)
+  File "c:\Users\30695\BlockChat\backend\node.py", line 96, in send_blockchain_to_peer
+    chain_json = self.blockchain.to_json()
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\30695\BlockChat\backend\blockchain.py", line 20, in to_json
+    return json.dumps(self.to_dict())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2288.0_x64__qbz5n2kfra8p0\Lib\json\__init__.py", line 231, in dumps
+    return _default_encoder.encode(obj)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2288.0_x64__qbz5n2kfra8p0\Lib\json\encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2288.0_x64__qbz5n2kfra8p0\Lib\json\encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2288.0_x64__qbz5n2kfra8p0\Lib\json\encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type Transaction is not JSON serializable
+INFO:werkzeug:127.0.0.1 - - [31/Mar/2024 23:11:10] "[35m[1mPOST /register_node HTTP/1.1[0m" 500 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "POST /register_node HTTP/1.1" 500 265
+DEBUG:genesis:im boot
+DEBUG:genesis:Node ID: 1
+DEBUG:genesis:Node Wallet Public Key: -----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAxxH5wU7e/Bt/rFuZHJ72
+Qej/9kh/po1tiSqlOpwZLkakZfjbTfsaH2U4hqqJcwYSYxsOQEzRnL5ZJ+HMNmNN
+ELXlE3OWSxhQBKeJPgpflO9lG7dEL6hY4Ey1EazZCrRmh9UoI5lBewpicgXZF4Ad
+Mh/XUx3RFuW9KQ+RQ5wrwHSdoRU+5uy0cnNxvmPNuQyIxQNwWADqTkUmHjRPfdFg
+LqkBnQPQBHT4PJ5CJ0PDenhjqi2rQxQQCIRgLrBIcRqrlXNw+X4vKPSQ4HijMlHZ
+EUGcjQ0gTwLzUQ1r7jT0huwelb7bcQ8ArfFTJmhnRBbv0j/37qOHUo8RFecKkNXT
+hQIDAQAB
+-----END PUBLIC KEY-----
+
+DEBUG:genesis:Node Blockchain Length: 1
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.2.8:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+DEBUG:gen_node_temp:Node ID: 2
+DEBUG:gen_node_temp:Node Wallet Public Key: -----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAqCrtIpgND9nGx7QhsqFp
+8jIKoegQRbv2E7aHnvjbZ8vuxoweQCLibBYUL7vFYCILqFypYATIwF0KsGMILUWx
+AJQDi6vKd6gOmjBBsJNWkmzQVg6wWnuUoze6SFXt2QItbd/jojJd4XO7Tl2nS2Ih
+eA7fyRsPkMyFYyuvWgS6UDr7GiAM94+/ebR/+S4cWbXlaBGNuDbbrIQp0Eh8J8vs
+JD0t6g1C/Jc6eJ9rCYAw9dzGnfVm6q3Y7xZdK7K9b0m0ssqfTjIuAa8N2gXxpXHl
+rjIFHGWdywZukcTIxHTeS8qBn0v/b8G3xW3Bv/YV8RoyKe3e8SEwheUWGR+tno3v
+WwIDAQAB
+-----END PUBLIC KEY-----
+
+DEBUG:gen_node_temp:Node Blockchain Length: 0
+DEBUG:gen_node_temp:im node1 test temp
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+INFO:werkzeug:127.0.0.1 - - [31/Mar/2024 23:20:15] "POST /register_node HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "POST /register_node HTTP/1.1" 200 45
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+DEBUG:gen_node_temp:im node1 test temp
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5001
+INFO:werkzeug:127.0.0.1 - - [31/Mar/2024 23:20:28] "[31m[1mPOST /validate_chain HTTP/1.1[0m" 400 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5001 "POST /validate_chain HTTP/1.1" 400 135
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5001
+INFO:werkzeug:127.0.0.1 - - [31/Mar/2024 23:20:28] "[31m[1mPOST /get_ring HTTP/1.1[0m" 400 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5001 "POST /get_ring HTTP/1.1" 400 55
+ERROR:genesis:Exception on /register_node [POST]
+Traceback (most recent call last):
+  File "C:\Users\30695\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\flask\app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\30695\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\flask\app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\30695\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\30695\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\30695\BlockChat\backend\api.py", line 88, in register_node
+    node.create_transaction(
+  File "c:\Users\30695\BlockChat\backend\node.py", line 40, in create_transaction
+    trans.sign_transaction(self.wallet.private_key)
+  File "c:\Users\30695\BlockChat\backend\transaction.py", line 60, in sign_transaction
+    self.signature = serialized_private_key.sign(
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: The provided data must be the same length as the hash algorithm's digest size.
+INFO:werkzeug:127.0.0.1 - - [31/Mar/2024 23:20:28] "[35m[1mPOST /register_node HTTP/1.1[0m" 500 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "POST /register_node HTTP/1.1" 500 265
+DEBUG:genesis:im boot
+DEBUG:genesis:Node ID: 1
+DEBUG:genesis:Node Wallet Public Key: -----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEArHK7vbtdtdIvz24DK7Ic
+DxrG26+/fwG67q8Qy9wUsS44VZQwkgtn8vstvhsI4uFs8/sE+PDWyxry64RLXS7T
+UFlkGLVfu5N5P8oQj/QPQuob/2B2lOn1Mg6EuMl8+xjpCtI9/4ooddVMPeJ+TigN
+YFDx0UsLdmSf30xiz1EWdMNmvfgiVSVoQ5W9EnhaaHwHitfKeH9ziGLNhK0dc2p3
+Our9QRUB7ceg77W2craBKyFkoqp3ZiWnkDTtIgxziWDAmadajdTc5DEsdf3NB6E5
+EqznyUEYxeFTx6J3Ce5rbju7YOrwBC4Uxsgug0P0NZCUzJTGhh66kurVpQSuBd70
+hwIDAQAB
+-----END PUBLIC KEY-----
+
+DEBUG:genesis:Node Blockchain Length: 1
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.2.8:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+DEBUG:gen_node_temp:Node ID: 2
+DEBUG:gen_node_temp:Node Wallet Public Key: -----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAn1BeuUVGqV09+NpuEy5O
+dEGnTBeBf5+acAnF1bsDsoPouN/6a9xq7h62RGHahaDy9lPruWfYg4pRfZLX/Ijl
+6rz+xGLCWoW8Vym4KP2sj/0ENd4WZ15Ez08C1xIfEPCf12NkwwnmADw1JaaiSpZH
+xlxn/gPrLmgCOwb+0NfRbTxmpiRZGsu/MjVHn9RzYJe04L+6N5YZNktUJ1+Md7u7
+tBZchJapXCW91bhIMYhyyVr6OBwgd7ssZPAhXx0ZfpnfXJpuzqb4MkOHMO7gciU8
+CfugD9Snk+ztm8eM0gUCzT1SexPSRVz6k/8oILGcfkc/rnxc0b7bondKsSSE9eV2
+7QIDAQAB
+-----END PUBLIC KEY-----
+
+DEBUG:gen_node_temp:Node Blockchain Length: 0
+DEBUG:gen_node_temp:im node1 test temp
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+INFO:werkzeug:127.0.0.1 - - [31/Mar/2024 23:30:35] "POST /register_node HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "POST /register_node HTTP/1.1" 200 45
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5002
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+DEBUG:gen_node_temp:im node1 test temp
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5002
+INFO:werkzeug:127.0.0.1 - - [31/Mar/2024 23:30:55] "[31m[1mPOST /validate_chain HTTP/1.1[0m" 400 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5002 "POST /validate_chain HTTP/1.1" 400 135
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5002
+INFO:werkzeug:127.0.0.1 - - [31/Mar/2024 23:30:55] "[31m[1mPOST /get_ring HTTP/1.1[0m" 400 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5002 "POST /get_ring HTTP/1.1" 400 55
+ERROR:genesis:Exception on /register_node [POST]
+Traceback (most recent call last):
+  File "C:\Users\30695\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\flask\app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\30695\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\flask\app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\30695\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\30695\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\30695\BlockChat\backend\api.py", line 88, in register_node
+    node.create_transaction(
+  File "c:\Users\30695\BlockChat\backend\node.py", line 40, in create_transaction
+    trans.sign_transaction(self.wallet.private_key)
+  File "c:\Users\30695\BlockChat\backend\transaction.py", line 60, in sign_transaction
+    self.signature = serialized_private_key.sign(
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: The provided data must be the same length as the hash algorithm's digest size.
+INFO:werkzeug:127.0.0.1 - - [31/Mar/2024 23:30:55] "[35m[1mPOST /register_node HTTP/1.1[0m" 500 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "POST /register_node HTTP/1.1" 500 265
+DEBUG:genesis:im boot
+DEBUG:genesis:Node ID: 1
+DEBUG:genesis:Node Wallet Public Key: -----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtGQnzQdh8uYSJ1QpnSxI
+U06EJ7g44Bvm5eXor7EP/MZMPB153clP06Do3c1B+QSuWozyKdefYxeE6MUP7ovQ
+137/d8sSbMwWeTcwotmVHLOsqE4yaGy7uurCPz6OzAlJC8FIRtTEgTEGVzxYi52I
+1N2Pm/1SFmaEXdUPVrHddEeluj6Jr4jYkyw4Ewzif/is0SGPE8W335EKJw5x2+TP
+DIlnMn82qhLj2U+PFPO0TzzGA/rEWQn2TQYv5BzCoWX4Y7PXwVjjSN5aj3vGX3wj
+gQNTPQmMUk8+dAaZ9eFrOKVXCYwGrGytjFuO8kQHHFNtASo6US+ZAM5ODvSPNuyQ
+3QIDAQAB
+-----END PUBLIC KEY-----
+
+DEBUG:genesis:Node Blockchain Length: 1
+DEBUG:gen_node_temp:Node ID: 2
+DEBUG:gen_node_temp:Node Wallet Public Key: -----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAv+ERnmFG68u/ShA7TLif
+daw7nKwk/aJB+G7/zl1PHEJ7BKC2u/3/Rhz8DdQrnSPbjpzbqaTysDsp4FpJANAc
+N0c6e05Fq7/j84us8NYcI+eDIAVCsJAejAaziwIUq8GS+Zzwm7s/SC3nirrhMjV9
+/lnPBry1V4BvL5TeyMXSgR9US+Sbfq6CwGY3tbieyaR2FO6o7fUcRPT2AE9Gv9L0
+5DmyX4HDNqGoAN/nlrt+T4BsGcOJgIvSJoPP1eEERPZlvgtzLBck+tjIgBxC1vLp
+sGKqx2Uc19axpUJB0dcHPtfQNnIv6yK4PUkn2LrR0DX/YyvGuHdkVp5IISdNBcum
+iQIDAQAB
+-----END PUBLIC KEY-----
+
+DEBUG:gen_node_temp:Node Blockchain Length: 0
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.2.8:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+DEBUG:gen_node_temp:im node1 test temp
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+INFO:werkzeug:127.0.0.1 - - [31/Mar/2024 23:44:28] "POST /register_node HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "POST /register_node HTTP/1.1" 200 45
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+DEBUG:gen_node_temp:im node1 test temp
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5001
+INFO:werkzeug:127.0.0.1 - - [31/Mar/2024 23:44:43] "[31m[1mPOST /validate_chain HTTP/1.1[0m" 400 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5001 "POST /validate_chain HTTP/1.1" 400 135
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5001
+INFO:werkzeug:127.0.0.1 - - [31/Mar/2024 23:44:43] "[31m[1mPOST /get_ring HTTP/1.1[0m" 400 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5001 "POST /get_ring HTTP/1.1" 400 55
+ERROR:genesis:Exception on /register_node [POST]
+Traceback (most recent call last):
+  File "C:\Users\30695\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\flask\app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\30695\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\flask\app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\30695\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\30695\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\30695\BlockChat\backend\api.py", line 88, in register_node
+    node.create_transaction(
+  File "c:\Users\30695\BlockChat\backend\node.py", line 40, in create_transaction
+    trans.sign_transaction(self.wallet.private_key)
+  File "c:\Users\30695\BlockChat\backend\transaction.py", line 54, in sign_transaction
+    signer = rsa.pkcs1_15.new(private_key)
+             ^^^^^^^^^^^^
+AttributeError: module 'rsa' has no attribute 'pkcs1_15'
+INFO:werkzeug:127.0.0.1 - - [31/Mar/2024 23:44:43] "[35m[1mPOST /register_node HTTP/1.1[0m" 500 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "POST /register_node HTTP/1.1" 500 265
+DEBUG:gen_node_temp:Node ID: 2
+DEBUG:gen_node_temp:Node Wallet Public Key: -----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAzzh108hV82l47DG0Si94
+cAzWD5l8rW12WNF14yIr+qDBOWlab8guP48LGyZcsGDtFX7AEUgoW6rPEexmsPOu
+WXFwZIi+Mm+JegqP/ZPVFp2WZt72nTaMRjS2SdP0EpM3M38U6TbcGLOBtDmAyFEE
+7e10jJvcJyU1BZ/yBmoF+7U1Xi/J1a/XmBblAVWJD3A9Yu4drCil4dOkHVy1bJL3
+bz8UUew2PvT4fd/k8oUiLvkM2nzBXHzXCWoUKzei6iIwOkxVtWJ7MsTdhFjsktSi
+REdfqipyJET88sXWe0xLuMYIyXgP8K3OtABoYMQKhUNUgxd+lhtPQUJHJZstSS+m
+owIDAQAB
+-----END PUBLIC KEY-----
+
+DEBUG:gen_node_temp:Node Blockchain Length: 0
+DEBUG:genesis:im boot
+DEBUG:genesis:Node ID: 1
+DEBUG:genesis:Node Wallet Public Key: -----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEArVOIeYY/vEghoBVHADDj
+hRHfENad0cqaIF3Sy1EH/5cQTwjw/nvdZel+JOiJg1QRsUDGbGErb7o+gUV9a9Zn
+OqVZMdSsSXgWbgtej49g3lADwXasPdDlAHSfYZgKzGcF4FJlyXN88nnQkBw0TUYc
+/zpZBS6o1BLjvk0hV/5MdtBI8lUgdovgtHBorX+Gdz3spAZT1PlrqfG9+HtWGgj0
+Vi9PWLpRzkjdT5QTMr1Tn7UNvjBYPxQIg5HjiYLSrgyn5w99LDm9r85zsF+VVtl3
+D3SgvuvFPPsvnp8T3knwoHtbr0lVQkSHalbjfM6JoUoKPZvSaeO+8AK8PLYKGYMq
+nQIDAQAB
+-----END PUBLIC KEY-----
+
+DEBUG:genesis:Node Blockchain Length: 1
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.2.8:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+DEBUG:gen_node_temp:im node1 test temp
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+INFO:werkzeug:127.0.0.1 - - [31/Mar/2024 23:47:05] "POST /register_node HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "POST /register_node HTTP/1.1" 200 45
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5002
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+DEBUG:gen_node_temp:im node1 test temp
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5002
+INFO:werkzeug:127.0.0.1 - - [31/Mar/2024 23:47:19] "[31m[1mPOST /validate_chain HTTP/1.1[0m" 400 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5002 "POST /validate_chain HTTP/1.1" 400 135
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5002
+INFO:werkzeug:127.0.0.1 - - [31/Mar/2024 23:47:19] "[31m[1mPOST /get_ring HTTP/1.1[0m" 400 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5002 "POST /get_ring HTTP/1.1" 400 55
+ERROR:genesis:Exception on /register_node [POST]
+Traceback (most recent call last):
+  File "C:\Users\30695\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\flask\app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\30695\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\flask\app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\30695\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\30695\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\30695\BlockChat\backend\api.py", line 88, in register_node
+    node.create_transaction(
+  File "c:\Users\30695\BlockChat\backend\node.py", line 41, in create_transaction
+    self.add_to_block(trans)
+  File "c:\Users\30695\BlockChat\backend\node.py", line 245, in add_to_block
+    if transaction.verify_signature() == False:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\30695\BlockChat\backend\transaction.py", line 76, in verify_signature
+    verifier = public_key.verifier(
+               ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'cryptography.hazmat.bindings._rust.openssl.rsa.RSA' object has no attribute 'verifier'
+INFO:werkzeug:127.0.0.1 - - [31/Mar/2024 23:47:19] "[35m[1mPOST /register_node HTTP/1.1[0m" 500 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "POST /register_node HTTP/1.1" 500 265
+DEBUG:genesis:im boot
+DEBUG:genesis:Node ID: 1
+DEBUG:genesis:Node Wallet Public Key: -----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAoyqZ72gWuhbW3folUGg9
+FvCfIS5ypiGWuH6Itb1cwC+ZJALd8MFWjwl95ElNeKEv5kDOnon9xQA5xvFDhISE
+optgxTDwuA4DSEVjSW0NUp6ADcvR595a+yWRS2wMnecEvVgFgh2HdSIHrFOTjeKb
+yHHJeyHvQx5sgM5OcdhAGKlz8Sc1CTPBYqLrrQfQa00QRBCEnJpYlAtP3ozsSR2G
+BMp7IrTEH8ta/SHjfopkfSpsL8jsH7BvNBnq0H5LqyXMEIZA5HskGhIdEYMiUWxQ
+y6M+zU6VgxMKslTwsJCobHz3zzpU/PWwpV2dMIQSIZO9Bdz5z90zQmaX3gNGBu/8
+ZwIDAQAB
+-----END PUBLIC KEY-----
+
+DEBUG:genesis:Node Blockchain Length: 1

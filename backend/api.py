@@ -5,8 +5,19 @@ from flask import Blueprint, request, jsonify
 
 
 api = Blueprint('api', __name__)
-n = 3 
-node = Node()
+n = 2
+
+global global_node
+global_node = Node(5, 10)
+node = global_node
+
+@api.route('/money', methods=['GET'])
+def get_money():
+    # global node
+    #if node:
+    return jsonify({'balance': node.wallet.balance})
+    #else:
+    return jsonify({'error': 'Node instance is not set.'}), 500
 
 # Endpoint to get a block
 @api.route('/validate_block', methods=['GET'])
@@ -56,9 +67,13 @@ def validate_transaction():
 @api.route('/register_node', methods=['POST'])
 def register_node():
     # Logic to register a node in the network
-    peer_pk = request.form.get('public_key')
-    peer_ip = request.form.get('ip')
-    peer_port = request.form.get('port')
+
+    data = request.json  # This will contain the JSON data sent via POST
+    peer_ip = data.get('ip')
+    peer_port = data.get('port')
+    peer_pk = data.get('pub_key')
+
+    print(peer_pk)
     peer_id = len(node.peers) + 2 # bootstrap is 1 so when node.peers are empty the first peer gets id 2
 
     # Add node in the list of registered nodes.
