@@ -1,4 +1,5 @@
 import sys
+import cmd
 sys.path.append('../')
 from backend.node import Node
 
@@ -94,6 +95,7 @@ class CLI:
 
     def check_balance(self, args):
         # TODO low prior
+
         print(f"Your balance is: {self.balance}")
 
     def show_help(self, args):
@@ -136,4 +138,7 @@ To get started, type 'help' to see available commands.
 
 if __name__ == "__main__":
     cli = CLI()
+    # anast added this by following instructions from https://medium.com/@noransaber685/simple-guide-to-creating-a-command-line-interface-cli-in-python-c2de7b8f5e05 
+    cli.cmdloop()
     cli.start()
+
