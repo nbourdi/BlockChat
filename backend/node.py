@@ -5,6 +5,10 @@ from wallet import Wallet
 from blockchain import Blockchain
 from block import Block
 import requests
+import logging
+
+logging.basicConfig(filename='record.log', level=logging.DEBUG)
+
 
 class Peer: # helper class, to represent peer node data
     def __init__(self, peer_id, ip, port, public_key, balance):
@@ -39,7 +43,7 @@ class Node:
         trans = Transaction(self.wallet.public_key, receiver_address, type_of_transaction, amount, message, self.nonce) #added the nonce attribute (athina)
         trans.sign_transaction(self.wallet.private_key)
         self.add_to_block(trans)
-        trans.broadcast_transaction(trans)
+        self.broadcast_transaction(trans)
         #Am I charged for sending messages? Is this impemented? #TODO (Anast)
 
 
@@ -90,21 +94,33 @@ class Node:
             previous_block = block
         return True
 
+# Inside the Node class in node.py
+
+
+
     def send_blockchain_to_peer(self, peer):
-        
-        # chain_json = json.dumps(self.blockchain)
-        chain_json = self.blockchain.to_dict()
+        blocks_json = []
+        for block in self.blockchain.blocks:
+            transactions = [tx.to_dict() for tx in block.transactions]
+            block_data = {
+                'index': block.index,
+                'timestamp': block.timestamp,
+                'transactions': transactions,
+                'previous_hash': block.previous_hash,
+                'nonce': block.nonce
+            }
+            blocks_json.append(block_data)
 
-        # send to every node in peers[]
-        
-        address = 'http://' + peer.ip + ':' + peer.port + '/validate_chain'
+        data = {
+            'blocks': blocks_json
+        }
 
-        res = requests.post(address, chain_json)
+        address = f"http://{peer.ip}:{peer.port}/validate_chain"
+        res = requests.post(address, json=data)
+        return res
 
-        if res.status_code == 200:
-            print(f"Blockchain sent to peer with id = {peer.id}")
-        else:
-            print(f"Error sending blockchain to peer with id = {peer.id}")
+
+
                 
     def add_peer(self, id, ip, port, public_key, balance):
         # Add peer to ring, probably only called by bootstrap 
@@ -226,6 +242,7 @@ class Node:
     def broadcast_transaction(self, trans): 
         # """Εκπέμπει τη συναλλαγή σε όλα τα peer."""
         # data = {'Transaction': transaction.to_dict()}
+        trans_dict = trans.to_dict()
         trans_json = json.dumps(trans.to_dict())
 
         for peer in self.peers:
@@ -277,14 +294,20 @@ class Node:
 
     # used by bootstrap to send the whole peer ring to some peer, via HTTP post            
     def send_peer_ring(self, peer):
-        
-        ring = self.peers
+        ring_data = []
+        for peer_node in self.peers:
+            peer_data = {
+                'id': peer_node.id,
+                'ip': peer_node.ip,
+                'port': peer_node.port,
+                'public_key': peer_node.public_key,
+                'balance': peer_node.balance
+            }
+            ring_data.append(peer_data)
 
-        peer_data = [peer.__dict__ for peer in ring]
+        ring_json = json.dumps(ring_data)
 
-        ring_json = json.dumps(peer_data)
-
-        address = 'http://' + peer.ip + ':' + peer.port + '/get_ring' 
+        address = 'http://' + peer.ip + ':' + peer.port + '/get_ring'
         try:
             res = requests.post(address, json=ring_json)
             if res.status_code == 200:
@@ -294,7 +317,6 @@ class Node:
         except Exception as e:
             print(f"Error sending ring to {peer.ip}:{peer.port}: {e}")
 
-        pass
 
     # needed for the "view" command in cli, should return last validated block's transactions and the validators id 
     def view_block(self):
