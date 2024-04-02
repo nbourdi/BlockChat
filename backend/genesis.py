@@ -7,14 +7,14 @@ from api import api, global_node
 import os
 import sys
 
-bootstrap_ip = '0.0.0.0'
+bootstrap_ip = '127.0.0.1'
 bootstrap_port = 5000
 port = 5000
 node = global_node
 # is_bootstrap = os.environ.get('IS_BOOTSTRAP')
 is_bootstrap = "1"
 
-ip = '0.0.0.0'
+ip = '127.0.0.1'
 
 app = Flask(__name__)
 app.register_blueprint(api)
@@ -54,24 +54,4 @@ if __name__ == "__main__":
     
         app.logger.debug("im boot")
         
-    else:
-        app.run(host=ip, port=port)
-        app.logger.debug("im else")
-
-        json_info = {
-            'ip': "0.0.0.0",
-            'port': port,
-            'pub_key': node.wallet.public_key
-        }
-
-        app.logger.debug(json_info)
-
-        url = f'http://:5000/register_node'
-        response = requests.post(url, json=json_info)
-        response_data = response.json()
-
-        node.id = int(response_data['id'])
-    
-    
-
     main()
