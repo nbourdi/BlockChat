@@ -2,10 +2,16 @@ from block import Block
 from node import Node
 from node import Peer
 from flask import Blueprint, request, jsonify
+import logging
+import json
+from transaction import Transaction
+
+logging.basicConfig(filename='record.log', level=logging.DEBUG)
+
 
 
 api = Blueprint('api', __name__)
-n = 2
+n = 3
 
 global global_node
 global_node = Node(5, 10)
@@ -42,14 +48,37 @@ def get_block():
 # Endpoint to validate a transaction
 @api.route('/validate_transaction', methods=['POST'])
 def validate_transaction():
-
     data = request.get_json()
-    inc_transaction = Block.from_dict(data['Trabsaction'])
 
-    if node.add_to_block(inc_transaction):
+    logging.debug("Type of data: %s", type(data))  # Log the type of data
+    logging.debug("Data that I received:\n%s", data)  # Log the received data
+
+
+    # Iterate over the list of transactions in the data
+    data_dict = json.loads(data)
+    logging.debug("Type of data_dict: %s", type(data_dict))  # Log the type of data
+    logging.debug("Data_dict that I received:\n%s", data_dict)  # Log the received data
+
+
+    sender_address = data_dict['sender_address']
+    receiver_address = data_dict['receiver_address']
+    type_of_transaction = data_dict['type_of_transaction']
+    amount = data_dict['amount']
+    nonce = data_dict['nonce']
+    message = data_dict['message']
+    transaction_id = data_dict['transaction_id']
+
+     # Create a Transaction object
+    trans = Transaction(sender_address=sender_address, receiver_address=receiver_address,
+                         type_of_transaction=type_of_transaction, amount=amount,
+                         message=message, nonce=nonce, transaction_id=transaction_id)
+         
+         # Validate the transaction and add it to the block
+    if node.add_to_block(trans):
         return jsonify({'message': "Transaction validated successfully."}), 200
     else:
         return jsonify({'message': "Couldn't verify signature, transaction rejected."}), 400
+
     
 
 # Endpoint to get a transaction, i think this is covered by validate_transaction bc it also adds it if its signature verified 
@@ -72,8 +101,8 @@ def register_node():
     peer_ip = data.get('ip')
     peer_port = data.get('port')
     peer_pk = data.get('pub_key')
+    logging.debug("\n\n\nReceived registration request from peer with IP: %s, Port: %s\n\n", peer_ip, peer_port)
 
-    print(peer_pk)
     peer_id = len(node.peers) + 2 # bootstrap is 1 so when node.peers are empty the first peer gets id 2
 
     # Add node in the list of registered nodes.
@@ -99,14 +128,31 @@ def register_node():
 def get_ring():
     try:
         data = request.get_json()
-        peers = [Peer(peer['id'], peer['ip'], peer['port'], peer['public_key'], peer['balance']) for peer in data]
-        
+
+
+        logging.debug("Type of data: %s", type(data))  # Log the type of data
+        logging.debug("Data that I received:\n%s", data)  # Log the received data
+        data_dict = json.loads(data)
+        for item in data_dict:
+            peer_id = item['id']
+            ip = item['ip']
+            port = item['port']
+            public_key = item['public_key']
+            balance = item['balance']
+
+        peers = [Peer(peer_id, ip, port, public_key, balance) for item in data]
+
         for peer in peers:
             node.add_peer_obj(peer)
         
+        logging.debug("\n\n get ring  IS GUCCI\n\n")
+
         return jsonify({"message": "Peers received successfully"}), 200
     except Exception as e:
+        logging.error("Error occurred while processing JSON data: %s", str(e))
         return jsonify({"error": str(e)}), 400
+
+
     
 
 # Endpoint to get the chain
@@ -117,6 +163,9 @@ def get_chain():
         
         
         node.validate_chain()
+
+        logging.debug("\n\n\nVALIDATE IS GUCCI\n\n")
+
         
         return jsonify({"message": "Chain received successfully"}), 200
     except Exception as e:
