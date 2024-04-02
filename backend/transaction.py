@@ -18,10 +18,11 @@ from blockchain import Blockchain ##to prosuesa egw ATHINA
 
 class Transaction:
 
-    def __init__(self, sender_address, receiver_address, type_of_transaction, amount,nonce, message):#αφαιρεσα το signature ως attribute και εβαλα το nonce γτ το αρχικοποιουμε στο node.py
+    def __init__(self, sender_address, receiver_address, type_of_transaction, amount, message,nonce,transaction_id=None):#αφαιρεσα το signature ως attribute και εβαλα το nonce γτ το αρχικοποιουμε στο node.py
         self.sender_address = sender_address
         self.receiver_address = receiver_address
         self.type_of_transaction = type_of_transaction
+        self.signature = None  # Initialize signature attribute
         
         if (type_of_transaction == "message"):
             self.message = message
@@ -35,7 +36,8 @@ class Transaction:
                              #ωρα να προσθεσουμε ενα transaction στο μπλοκ τσεκαρουμε 
                              #αν το ζευγος sender_address,noance υπαρχει ηδη στο  nonce_history του Blockchain
 
-        self.transaction_id = self.calculate_transaction_id() 
+        self.transaction_id = transaction_id if transaction_id else self.calculate_transaction_id() 
+ 
 
 ##ΤΟ ΕΒΓΑΛΑ ΑΠΟ ΤΑ ΣΧΟΛΙΑ ΠΟΥ ΥΠΗΡΧΕ ΓΤ Μ ΦΑΝΗΚΕ ΚΟΜΠΛΕ
     def calculate_transaction_id(self):
@@ -104,6 +106,7 @@ class Transaction:
         }
         return transaction_dict
 
+    @classmethod
     def from_dict(cls, transaction_dict):
         return cls(
             sender_address=transaction_dict['sender_address'],
