@@ -1,3 +1,4 @@
+import base64
 import json
 from random import random
 from transaction import Transaction
@@ -40,9 +41,14 @@ class Node:
         
     def create_transaction(self, receiver_address, type_of_transaction, amount, message):
         self.nonce += 1 #added this (athina)
+
         trans = Transaction(self.wallet.public_key, receiver_address, type_of_transaction, amount, message, self.nonce) #added the nonce attribute (athina)
+        print(trans.signature)
         trans.sign_transaction(self.wallet.private_key)
+        print(trans.signature)
+        
         self.add_to_block(trans)
+        
         self.broadcast_transaction(trans)
         #Am I charged for sending messages? Is this impemented? #TODO (Anast)
 
@@ -242,8 +248,15 @@ class Node:
     def broadcast_transaction(self, trans): 
         # """Εκπέμπει τη συναλλαγή σε όλα τα peer."""
         # data = {'Transaction': transaction.to_dict()}
+        print("hii")
         trans_dict = trans.to_dict()
-        trans_json = json.dumps(trans.to_dict())
+        # print(trans_dict)
+        if trans_dict['signature']:
+            trans_dict['signature'] = base64.b64encode(trans_dict['signature']).decode('utf-8')
+    
+        trans_json = json.dumps(trans_dict)
+        print("\n\n\n"+trans_json)
+
 
         for peer in self.peers:
             address = 'http://' + peer.ip + ':' + peer.port + '/validate_transaction' 
@@ -260,35 +273,38 @@ class Node:
     def add_to_block(self, transaction):
 
         if transaction.verify_signature() == False:
+            print("verify sig is false")
             return False
         
-        if self.curr_block == None: # this only happens when freshly created, right after genesis block
-            self.curr_block = self.create_block()
+        # if self.curr_block == None: # this only happens when freshly created, right after genesis block
+        #     self.curr_block = self.create_block()
 
-        # check first if self is involved in the transaction
-        if (transaction.receiver_address == self.wallet.public_key):
-            self.wallet.balance -= transaction.amount
-        if (transaction.sender_address == self.wallet.public_key):
-            self.wallet.balance += transaction.amount
+        # # check first if self is involved in the transaction
+        # if (transaction.receiver_address == self.wallet.public_key):
+        #     self.wallet.balance -= transaction.amount
+        # if (transaction.sender_address == self.wallet.public_key):
+        #     self.wallet.balance += transaction.amount
 
-        # check and update all peers
-        for peer in self.peers:
-            if peer.public_key == transaction.sender_address:
-                peer.balance -= transaction.amount
-            if peer.public_key == transaction.receiver_address:
-                peer.balance += transaction.amount
+        # # check and update all peers
+        # for peer in self.peers:
+        #     if peer.public_key == transaction.sender_address:
+        #         peer.balance -= transaction.amount
+        #     if peer.public_key == transaction.receiver_address:
+        #         peer.balance += transaction.amount
 
-        self.curr_block.add_transaction(transaction)
+        # self.curr_block.add_transaction(transaction)
 
-        if self.curr_block.is_full():
-            print("Block is full, attempting minting...")
-            # Current block is full, initiate mining process
-            # call mine competition??
-            self.proof_of_stake()
-            # if that is successful then empty the queued transactions
-            self.q_transactions.clear()
-        else:
-            print("Transaction is added to queue block, capacity not reached.")
+        # if self.curr_block.is_full():
+        #     print("Block is full, attempting minting...")
+        #     # Current block is full, initiate mining process
+        #     # call mine competition??
+        #     self.proof_of_stake()
+        #     # if that is successful then empty the queued transactions
+        #     self.q_transactions.clear()
+        # else:
+        #     print("Transaction is added to queue block, capacity not reached.")
+
+        print("after add to block")
         return True
     
 

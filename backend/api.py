@@ -1,3 +1,4 @@
+import base64
 from block import Block
 from node import Node
 from node import Peer
@@ -11,7 +12,7 @@ logging.basicConfig(filename='record.log', level=logging.DEBUG)
 
 
 api = Blueprint('api', __name__)
-n = 3
+n = 2
 
 global global_node
 global_node = Node(5, 10)
@@ -49,6 +50,7 @@ def get_block():
 @api.route('/validate_transaction', methods=['POST'])
 def validate_transaction():
     data = request.get_json()
+    print(data)
 
     logging.debug("Type of data: %s", type(data))  # Log the type of data
     logging.debug("Data that I received:\n%s", data)  # Log the received data
@@ -68,10 +70,23 @@ def validate_transaction():
     message = data_dict['message']
     transaction_id = data_dict['transaction_id']
 
-     # Create a Transaction object
+    # Convert the base64 string signature back to a byte string
+    if data_dict['signature']:
+        data_dict['signature'] = base64.b64decode(data_dict['signature'])
+    signature = data_dict['signature']
+    print("\n\nAFTER ENCODE\n\n")
+    print(signature)
+
+
+
+
+
+
     trans = Transaction(sender_address=sender_address, receiver_address=receiver_address,
                          type_of_transaction=type_of_transaction, amount=amount,
-                         message=message, nonce=nonce, transaction_id=transaction_id)
+                         message=message, nonce=nonce, transaction_id=transaction_id,signature=signature)
+    
+
          
          # Validate the transaction and add it to the block
     if node.add_to_block(trans):

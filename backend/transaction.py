@@ -1,4 +1,6 @@
+import base64
 import hashlib
+import logging
 from Crypto.Signature import pkcs1_15
 from Crypto.Hash import SHA256
 from Crypto.PublicKey import RSA
@@ -18,11 +20,11 @@ from blockchain import Blockchain ##to prosuesa egw ATHINA
 
 class Transaction:
 
-    def __init__(self, sender_address, receiver_address, type_of_transaction, amount, message,nonce,transaction_id=None):#αφαιρεσα το signature ως attribute και εβαλα το nonce γτ το αρχικοποιουμε στο node.py
+    def __init__(self, sender_address, receiver_address, type_of_transaction, amount, message,nonce,transaction_id=None, signature=None):#αφαιρεσα το signature ως attribute και εβαλα το nonce γτ το αρχικοποιουμε στο node.py
         self.sender_address = sender_address
         self.receiver_address = receiver_address
         self.type_of_transaction = type_of_transaction
-        self.signature = None  # Initialize signature attribute
+        # self.signature = None  # Initialize signature attribute
         
         if (type_of_transaction == "message"):
             self.message = message
@@ -37,6 +39,7 @@ class Transaction:
                              #αν το ζευγος sender_address,noance υπαρχει ηδη στο  nonce_history του Blockchain
 
         self.transaction_id = transaction_id if transaction_id else self.calculate_transaction_id() 
+        self.signature = signature if signature else None
  
 
 ##ΤΟ ΕΒΓΑΛΑ ΑΠΟ ΤΑ ΣΧΟΛΙΑ ΠΟΥ ΥΠΗΡΧΕ ΓΤ Μ ΦΑΝΗΚΕ ΚΟΜΠΛΕ
@@ -48,7 +51,6 @@ class Transaction:
             tx_content = f"{self.sender_address}{self.receiver_address}{self.type_of_transaction}{self.message}{self.nonce}".encode()
         return hashlib.sha256(tx_content).hexdigest()
         
-        self.signature = None
 
 
     # made this to print in view command, use by print(transaction object)
@@ -70,11 +72,31 @@ class Transaction:
 
         return tabulate(transaction_data, tablefmt="fancy_grid")
 
+    # def sign_transaction(self, private_key):
+    #     private_key = RSA.import_key(private_key)
+    #     message = self._get_message_to_sign()
+    #     h = SHA256.new(message)
+    #     self.signature = pkcs1_15.new(private_key).sign(h)
+
+    # def verify_signature(self):
+    #     print("HI MY SIGNATURE IS THIS in verify sig")
+    #     print(self.signature)
+    #     sender_public_key = RSA.import_key(self.sender_address)
+    #     message = self._get_message_to_sign()
+    #     h = SHA256.new(message)
+    #     try:
+    #         pkcs1_15.new(sender_public_key).verify(h, self.signature)
+    #         return True
+    #     except (ValueError, TypeError):
+    #         print("Signature verification failed")
+    #         return False
+
     def sign_transaction(self, private_key):
         private_key = RSA.import_key(private_key)
         message = self._get_message_to_sign()
         h = SHA256.new(message)
         self.signature = pkcs1_15.new(private_key).sign(h)
+        print("Signed message: %s", self.signature.hex())  # Log the signed message
 
     def verify_signature(self):
         sender_public_key = RSA.import_key(self.sender_address)
@@ -82,10 +104,12 @@ class Transaction:
         h = SHA256.new(message)
         try:
             pkcs1_15.new(sender_public_key).verify(h, self.signature)
+            print("Signature verified successfully")
             return True
         except (ValueError, TypeError):
             print("Signature verification failed")
             return False
+
 
     def _get_message_to_sign(self):
         if self.type_of_transaction == "message":
@@ -102,17 +126,37 @@ class Transaction:
             'amount': self.amount,
             'nonce': self.nonce,
             'message': self.message,
-            'transaction_id': self.transaction_id
+            'transaction_id': self.transaction_id,
+            'signature': self.signature
         }
         return transaction_dict
 
-    @classmethod
+    # def from_dict(cls, transaction_dict):
+    #     return cls(
+    #         sender_address=transaction_dict['sender_address'],
+    #         receiver_address=transaction_dict['receiver_address'],
+    #         type_of_transaction=transaction_dict['type_of_transaction'],
+    #         amount=transaction_dict['amount'],
+    #         nonce=transaction_dict['nonce'],
+    #         message=transaction_dict['message'],
+    #         transaction_id=transaction_dict['transaction_id'],
+    #         signature=transaction_dict['signature']
+    #     )
+
     def from_dict(cls, transaction_dict):
+    # Decode base64 signature to byte string
+        if transaction_dict['signature']:
+            transaction_dict['signature'] = base64.b64decode(transaction_dict['signature'])
+        
         return cls(
             sender_address=transaction_dict['sender_address'],
             receiver_address=transaction_dict['receiver_address'],
             type_of_transaction=transaction_dict['type_of_transaction'],
             amount=transaction_dict['amount'],
             nonce=transaction_dict['nonce'],
-            message=transaction_dict['message']
-        )
+            message=transaction_dict['message'],
+            transaction_id=transaction_dict['transaction_id'],
+            signature=transaction_dict['signature']
+    )
+    
+
