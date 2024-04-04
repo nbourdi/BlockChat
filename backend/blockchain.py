@@ -1,5 +1,7 @@
 import json
 
+from block import Block
+
 
 class Blockchain:
 
@@ -19,6 +21,12 @@ class Blockchain:
     def to_json(self):
         return json.dumps(self.to_dict())
     
+    @classmethod
+    def from_json(cls, json_data):
+        blockchain = cls()
+        blockchain.blocks = [Block.from_json(block) for block in json_data['blocks']]
+        return blockchain
+
 
 #  TODO immed erwtisi: auto mipws einai gia to transaction class? to blockchain einai mono 1 opote de xreiazetai nonce (nat)
     # def add_nonce(self, account_address, nonce):
@@ -28,3 +36,8 @@ class Blockchain:
 
     # def is_nonce_used(self, account_address, nonce):
     #     return nonce in self.nonce_history.get(account_address, set())
+    @classmethod
+    def from_json(cls, json_data):
+        blockchain = cls()
+        blockchain.blocks = [Block.from_json(block) for block in json_data['blocks']]
+        return blockchain

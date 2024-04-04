@@ -1,6 +1,8 @@
 import hashlib
 import time
 
+from transaction import Transaction
+
 '''
 Block
  To κάθε block έχει τις εξής πληροφορίες
@@ -50,6 +52,19 @@ class Block:
             'timestamp': self.timestamp
         }
     
+    # def from_dict(cls, block_dict):
+    #     block = cls(
+    #         index=block_dict['index'],
+    #         previous_hash=block_dict['previous_hash'],
+    #         validator=block_dict['validator'],
+    #         capacity=block_dict['capacity']
+    #     )
+    #     block.transactions = block_dict['transactions']
+    #     block.current_hash = block_dict['current_hash']
+    #     block.nonce = block_dict['nonce']
+    #     block.timestamp = block_dict['timestamp']
+    #     return block
+
     def from_dict(cls, block_dict):
         block = cls(
             index=block_dict['index'],
@@ -57,8 +72,18 @@ class Block:
             validator=block_dict['validator'],
             capacity=block_dict['capacity']
         )
-        block.transactions = block_dict['transactions']
+        block.transactions = [Transaction(**tx) for tx in block_dict['transactions']]
         block.current_hash = block_dict['current_hash']
         block.nonce = block_dict['nonce']
         block.timestamp = block_dict['timestamp']
         return block
+    
+    @classmethod
+    def from_json(cls, json_data):
+        transactions = [Transaction.from_json(tx) for tx in json_data['transactions']]
+        return cls(
+            json_data['index'],
+            json_data['previous_hash'],
+            json_data['validator'],
+            json_data['capacity']
+        )

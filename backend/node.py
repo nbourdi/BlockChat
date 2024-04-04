@@ -1,5 +1,6 @@
 import base64
 import json
+
 from random import random
 from transaction import Transaction
 from wallet import Wallet
@@ -25,36 +26,31 @@ class Peer: # helper class, to represent peer node data
 
 class Node:
 
-    def __init__(self, capacity=5, stake=10):
+    def __init__(self, capacity, stake):
         self.id = None  # node's index/id
         self.wallet = Wallet()
         self.blockchain = Blockchain()
-        self.peers = []  # info about other nodes, should be in the [ip, port, pubkey] format, the ring
+        self.peers = []  # info about other nodes, should be in the [ip, port, pubkey] format, the ring IN PEER OBJECTS
         self.nonce = 0
-        self.curr_block = None  # the current block
+        self.curr_block = None  # the current UNVALIDATED/ QUEUED block
         self.peer_stakes = []
-        self.q_transactions = [] # list of transactions in queue that belong to the next block
-        self.capacity = capacity # idk how we will set this, may just do it manually for each experiment
-        self.stake = stake # same question as cap
-        #self.capacity = None #Anastasia added this (probably wrong)
+        self.q_transactions = [] # list of transactions in queue that belong to the current block #TODO maybe this is a little awkward i only use this for rewards
+        self.capacity = capacity 
+        self.stake = stake 
 
         
     def create_transaction(self, receiver_address, type_of_transaction, amount, message):
         self.nonce += 1 #added this (athina)
 
         trans = Transaction(self.wallet.public_key, receiver_address, type_of_transaction, amount, message, self.nonce) #added the nonce attribute (athina)
-        print(trans.signature)
+        #print(trans.signature)
         trans.sign_transaction(self.wallet.private_key)
-        print(trans.signature)
-        
         self.add_to_block(trans)
-        
         self.broadcast_transaction(trans)
-        #Am I charged for sending messages? Is this impemented? #TODO (Anast)
 
 
     def stake(self, stake_amount): 
-        # FIXME stakes should be released when minting is done
+        # FIXME stakes should be released when minting is done || UPDATE THATS WRONG:) THEY ARE KEPT UNTIL THE USER UPDATES THEM
         # FIXME stakes should be broadcasted so that they can be updated in Peer object, rn we can bypass by manually staking/releasing
         # Η συνάρτηση καλείται από τους nodes 
         # κάθε validator θα πρέπει να είναι σε θέση να κάνει και update στο ποσό
@@ -79,6 +75,7 @@ class Node:
     def release_stakes(self):
         pass
         
+        
     def validate_block(self, block): 
         # validate the previous hash and check validity of current hash
         # TODO last prior εχει και αλλο εδω Επαληθεύεται ότι (a) ο validator είναι πράγματι ο σωστός (αυτός που υπέδειξε η κλήση της
@@ -89,6 +86,7 @@ class Node:
     
     def validate_chain(self):
         previous_block = None
+
 
         for block in self.blockchain.blocks:
             if block.index == 1:
@@ -113,7 +111,9 @@ class Node:
                 'timestamp': block.timestamp,
                 'transactions': transactions,
                 'previous_hash': block.previous_hash,
-                'nonce': block.nonce
+                'nonce': block.nonce,
+                'capacity': block.capacity,
+                'validator': block.validator
             }
             blocks_json.append(block_data)
 
@@ -250,18 +250,16 @@ class Node:
     def broadcast_transaction(self, trans): 
         # """Εκπέμπει τη συναλλαγή σε όλα τα peer."""
         # data = {'Transaction': transaction.to_dict()}
-        print("hii")
         trans_dict = trans.to_dict()
         # print(trans_dict)
         if trans_dict['signature']:
             trans_dict['signature'] = base64.b64encode(trans_dict['signature']).decode('utf-8')
     
         trans_json = json.dumps(trans_dict)
-        print("\n\n\n"+trans_json)
 
 
         for peer in self.peers:
-            address = 'http://' + peer.ip + ':' + peer.port + '/validate_transaction' 
+            address = 'http://' + peer.ip + ':' + peer.port + '/add_transaction' 
             try:
                 res = requests.post(address, json=trans_json)
                 if res.status_code == 200:
@@ -272,13 +270,19 @@ class Node:
                 print(f"Error sending transaction to {peer.ip}:{peer.port}: {e}")
 
 
-    def add_to_block(self, transaction):
+    def validate_transaction(self, transaction):
 
         if transaction.verify_signature() == False:
             print("verify sig is false")
             return False
+        #TODO high priority ! we also need to check for sufficient funds considering stake too
         
-        if self.curr_block == None: # this only happens when freshly created, right after genesis block
+
+    def add_to_block(self, transaction):
+
+        self.validate_transaction(transaction)
+        
+        if self.curr_block == None: # this only happens when freshly created, right after genesis block?? are you sure
             self.curr_block = self.create_block(index=self.blockchain.blocks[-1].index + 1, previous_hash=self.blockchain.blocks[-1].hash, validator=self.id, capacity=10)
 
         # check first if self is involved in the transaction
@@ -295,6 +299,7 @@ class Node:
                 peer.balance += transaction.amount
 
         self.curr_block.add_transaction(transaction)
+        self.q_transactions.append(transaction)
 
         if self.curr_block.is_full():
             print("Block is full, attempting minting...")
@@ -306,7 +311,6 @@ class Node:
         else:
             print("Transaction is added to queue block, capacity not reached.")
 
-        print("after add to block")
         return True
     
 

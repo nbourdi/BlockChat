@@ -1,4 +1,5 @@
 import base64
+from blockchain import Blockchain
 from block import Block
 from node import Node
 from node import Peer
@@ -47,18 +48,17 @@ def get_block():
     
 
 # Endpoint to validate a transaction
-@api.route('/validate_transaction', methods=['POST'])
-def validate_transaction():
+@api.route('/add_transaction', methods=['POST'])
+def add_transaction():
     data = request.get_json()
-    print(data)
 
-    logging.debug("Type of data: %s", type(data))  # Log the type of data
+    #logging.debug("Type of data: %s", type(data))  # Log the type of data
     logging.debug("Data that I received:\n%s", data)  # Log the received data
 
 
     # Iterate over the list of transactions in the data
     data_dict = json.loads(data)
-    logging.debug("Type of data_dict: %s", type(data_dict))  # Log the type of data
+    #logging.debug("Type of data_dict: %s", type(data_dict))  # Log the type of data
     logging.debug("Data_dict that I received:\n%s", data_dict)  # Log the received data
 
 
@@ -74,37 +74,19 @@ def validate_transaction():
     if data_dict['signature']:
         data_dict['signature'] = base64.b64decode(data_dict['signature'])
     signature = data_dict['signature']
-    print("\n\nAFTER ENCODE\n\n")
-    print(signature)
-
-
-
-
-
+    #print("\n\nAFTER ENCODE\n\n")
+    #print(signature)
 
     trans = Transaction(sender_address=sender_address, receiver_address=receiver_address,
                          type_of_transaction=type_of_transaction, amount=amount,
                          message=message, nonce=nonce, transaction_id=transaction_id,signature=signature)
-    
-
-         
          # Validate the transaction and add it to the block
+    # this is wrong we need to add it to the queue not to the block
+
     if node.add_to_block(trans):
         return jsonify({'message': "Transaction validated successfully."}), 200
     else:
         return jsonify({'message': "Couldn't verify signature, transaction rejected."}), 400
-
-    
-
-# Endpoint to get a transaction, i think this is covered by validate_transaction bc it also adds it if its signature verified 
-# @api.route('/add_transaction', methods=['POST'])
-# def add_transaction():
-#     inc_transaction = json.loads(request.get_data().decode('utf-8')) # incoming transaction
-#     if node.add_to_block(inc_transaction):
-#         return jsonify({'message': "Transaction added."}), 200
-#     else:
-#         return jsonify({'message': "Transaction wasn't added."}), 400
-
 
 
 # Endpoint to register a node, by bootstrap
@@ -169,7 +151,6 @@ def get_ring():
 
 
     
-
 # Endpoint to get the chain
 @api.route('/validate_chain', methods=['POST'])
 def get_chain():
@@ -177,14 +158,15 @@ def get_chain():
         data = request.get_json()
         
         logging.debug(data)
+
         # TODO ftiajse to chain apo to data
         # TODO add the blocks in the data to the blockchain
-        node.add_genesis_chain(chain)
+
+        chain = Blockchain.from_json(data)
+        logging.debug(chain.blocks[-1])
+        node.blockchain = chain
         
         node.validate_chain()
-
-        logging.debug("\n\n\nVALIDATE IS GUCCI\n\n")
-
         
         return jsonify({"message": "Chain received successfully"}), 200
     except Exception as e:
@@ -214,34 +196,3 @@ def create_transaction ():
             return jsonify({'message': 'Not enough NBCs.', 'balance': node.wallet.get_balance()}), 400
     else:
         return jsonify({'message': 'Transaction failed. Wrong receiver id.'}), 4
-
-#  only implement if needed, idk if theyre essential for functionality
-# Endpoint to send the chain
-# @api.route('/send_chain', methods=['POST'])
-# def send_chain():
-#     # Logic to send the chain
-    
-# # Endpoint to get the balance
-# @api.route('/get_balance', methods=['GET'])
-# def get_balance():
-#     # Logic to get balance
-
-# # Endpoint to get transactions
-# @api.route('/get_transactions', methods=['GET'])
-# def get_transactions():
-#     # Logic to get transactions
-
-# # Endpoint to get my transactions
-# @api.route('/get_my_transactions', methods=['GET'])
-# def get_my_transactions():
-#     # Logic to get transactions
-
-# # Endpoint to get ID
-# @api.route('/get_id', methods=['GET'])
-# def get_id():
-#     # Logic to get ID
-
-# # Endpoint to get metrics
-# @api.route('/get_metrics', methods=['GET'])
-# def get_metrics():
-#     # Logic to get metrics

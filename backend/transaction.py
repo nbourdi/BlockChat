@@ -5,7 +5,6 @@ from Crypto.Signature import pkcs1_15
 from Crypto.Hash import SHA256
 from Crypto.PublicKey import RSA
 from tabulate import tabulate
-from blockchain import Blockchain ##to prosuesa egw ATHINA
 
 # Κάθε transaction περιέχει πληροφορίες για την αποστολή νομισμάτων/μηνύματος από ένα wallet
 # σε ένα άλλο. Οι πληροφορίες που περιλαμβάνει είναι
@@ -159,4 +158,7 @@ class Transaction:
             signature=transaction_dict['signature']
     )
     
+    @classmethod
+    def from_json(cls, json_data):
+        return cls(**json_data)
 

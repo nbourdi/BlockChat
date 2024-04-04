@@ -1,8 +1,9 @@
-from backend import Node
+from blockchain import Blockchain
 
-# here we should test functions and basic flows of execution 
 
-# idk like create the node and give 100 bcc (basically no bootstraping) and then test none network things?
+#data = {'blocks': [{'index': 0, 'validator': 0, 'capacity': 2,'timestamp': 1712263889.0811503, 'transactions': [{'sender_address': '0', 'receiver_address': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA1dPtaiqu6gMx8xTKoh4A\n9cUKkqtcnC0PkcTog38WI/EUvnNNRYMKBuJRgK5Dhr3At+i4s6ArUO2kNsjRateR\nxtXShUYRNotfGbKXoEvCbhdrgcnawzQrlnUGVLOgel1qlQyPONH2R0SEhDuylYra\nlMTOmUAfayao2BeFbnvXhXmxN6faAu6qN6GWPUZWCMkoNt6sgGS/wTT+BWIoAKcR\nIi9PTerjTnTtuLAeZoM18XIYIxeqnq5GDT3NYINVVZBtTG5AkgVk7LRrl+SRceAR\n+/xeWhEwkp4pca7gcdjpgBHsqI7wWQfJcSTqvNuSxi4gmRwZswGIe5PPByGzb/AO\nhwIDAQAB\n-----END PUBLIC KEY-----', 'type_of_transaction': 'coins', 'amount': 5000, 'nonce': 0, 'message': None, 'transaction_id': 'aa920cbf5e7eefc2821b27b425abadc08946d794e7340121934b8d02cf0650df', 'signature': None}], 'previous_hash': 1, 'nonce': None}]}
+data = {'blocks': [{'index': 0, 'timestamp': 1712266140.7562635, 'transactions': [{'sender_address': '0', 'receiver_address': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA6iwdEUiOf+PHKz7KPEzZ\ne/A71pdVoJdfmXcTNSCmjV4VAhSZilfdRHfZhlxFS1i8N/GcRRDngiZW2VKhFBe8\nmcra1Aw8iXDOTUQ1RP4v9tyRLkL6GDAT2oyaRAAKXCAcBsN+sRdK33T77MrNekky\n5XLPtNfmXhC9QDAsaSOyd8OSDdxAW20Xz++RkaPm1MRkLs7JjUIZBLrdb80SLU+7\n2XIZ5V1TvlOuzOsQt7WA/p8lVf2spUPaOioovFjMlmwBP15SLtth5RPeZlDFPald\n+v4UbLZsJDcZmqqR3zYJXaRUtBjYT7qAYb41vQGfcyD7JzOyFB65TqBGdRsltSf9\n7QIDAQAB\n-----END PUBLIC KEY-----', 'type_of_transaction': 'coins', 'amount': 5000, 'nonce': 0, 'message': None, 'transaction_id': 'ce4164eb7409bfc85e08643eb9bb8f3245378cb7f81c177d81d3cd7e2b3daa98', 'signature': None}], 'previous_hash': 1, 'nonce': None, 'capacity': 5, 'validator': 0}]}
 
-bootstrap = Node()
+chain = Blockchain.from_json(data)
 
+print(chain.blocks[-1].index)

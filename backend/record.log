@@ -1259,3 +1259,18 @@ Traceback (most recent call last):
 IndexError: list index out of range
 INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 19:39:24] "[35m[1mPOST /validate_transaction HTTP/1.1[0m" 500 -
 DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "POST /register_node HTTP/1.1" 200 45
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+nn
