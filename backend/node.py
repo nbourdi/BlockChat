@@ -207,13 +207,15 @@ class Node:
                 if peer.id == validator_id:
                     peer.balance += fee
 
+        # TODO make the blocks validator my id !!!
+
 
     def mint_block(self):  
         # fill in the block, create if not created
         # curr_block should be None unless there is an error thinking of it, should set back to None once its broadcasted 
         
         if self.curr_block == None:
-            self.create_block(index=self.blockchain.blocks[-1].index + 1, previous_hash=self.blockchain.blocks[-1].hash, validator=self.id, capacity=10) # TODO capacity here arbitrary
+            self.create_block(index=self.blockchain.blocks[-1].index + 1, previous_hash=self.blockchain.blocks[-1].hash, validator=-1, capacity=10) # TODO capacity here arbitrary
 
         self.curr_block.current_hash = self.curr_block.hash()
 
@@ -276,33 +278,33 @@ class Node:
             print("verify sig is false")
             return False
         
-        # if self.curr_block == None: # this only happens when freshly created, right after genesis block
-        #     self.curr_block = self.create_block()
+        if self.curr_block == None: # this only happens when freshly created, right after genesis block
+            self.curr_block = self.create_block(index=self.blockchain.blocks[-1].index + 1, previous_hash=self.blockchain.blocks[-1].hash, validator=self.id, capacity=10)
 
-        # # check first if self is involved in the transaction
-        # if (transaction.receiver_address == self.wallet.public_key):
-        #     self.wallet.balance -= transaction.amount
-        # if (transaction.sender_address == self.wallet.public_key):
-        #     self.wallet.balance += transaction.amount
+        # check first if self is involved in the transaction
+        if (transaction.receiver_address == self.wallet.public_key):
+            self.wallet.balance -= transaction.amount
+        if (transaction.sender_address == self.wallet.public_key):
+            self.wallet.balance += transaction.amount
 
-        # # check and update all peers
-        # for peer in self.peers:
-        #     if peer.public_key == transaction.sender_address:
-        #         peer.balance -= transaction.amount
-        #     if peer.public_key == transaction.receiver_address:
-        #         peer.balance += transaction.amount
+        # check and update all peers
+        for peer in self.peers:
+            if peer.public_key == transaction.sender_address:
+                peer.balance -= transaction.amount
+            if peer.public_key == transaction.receiver_address:
+                peer.balance += transaction.amount
 
-        # self.curr_block.add_transaction(transaction)
+        self.curr_block.add_transaction(transaction)
 
-        # if self.curr_block.is_full():
-        #     print("Block is full, attempting minting...")
-        #     # Current block is full, initiate mining process
-        #     # call mine competition??
-        #     self.proof_of_stake()
-        #     # if that is successful then empty the queued transactions
-        #     self.q_transactions.clear()
-        # else:
-        #     print("Transaction is added to queue block, capacity not reached.")
+        if self.curr_block.is_full():
+            print("Block is full, attempting minting...")
+            # Current block is full, initiate mining process
+            # call mine competition??
+            self.proof_of_stake()
+            # if that is successful then empty the queued transactions
+            self.q_transactions.clear()
+        else:
+            print("Transaction is added to queue block, capacity not reached.")
 
         print("after add to block")
         return True

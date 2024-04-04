@@ -176,6 +176,10 @@ def get_chain():
     try:
         data = request.get_json()
         
+        logging.debug(data)
+        # TODO ftiajse to chain apo to data
+        # TODO add the blocks in the data to the blockchain
+        node.add_genesis_chain(chain)
         
         node.validate_chain()
 

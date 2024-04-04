@@ -1,6 +1,7 @@
 from flask import Flask
 import requests
 import logging
+from transaction import Transaction
 from node import Node
 from api import api, global_node
 import threading
@@ -51,6 +52,7 @@ def register_node1():
 
 if __name__ == "__main__":
     app.logger.debug("im node1 test temp")
+
 
     # Start a new thread for registering the node if registration is not completed
     if not registration_completed:

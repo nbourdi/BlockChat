@@ -971,3 +971,291 @@ DEBUG:root:Data_dict that I received:
 {'sender_address': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA4o4NRqtSWfPIsZ2N90/r\n/ZkkwMK9sPmb871BO1SvcbN+DB+Yz23YvkEiUfhmzJjl2W/qz5NNcexjRX7JR/bg\n8EUvneHx0ssN5j/Y4g1tFkFnfmLYWvkjw5CSPUzV8SoUuRQDiWMGbotY/ncOWQ3o\ntzJoVmPb8JKeqp3z85dwCniIYQ72AQBkIk212GCetopOH+7trquvaSog28dDnW09\n3cYuX0uqr/y1ssmxyv8LNz/iYVnZjCbSGMfm6xQ7Fi2Q4EqlWb7A5rPYdu+pFJZe\ncB97TWf3qfmhITAj8AQ5fzsHhVU2uBBj0Um6YwOYWR7qwEooiHoJWRHF2EJCyY7L\n8wIDAQAB\n-----END PUBLIC KEY-----', 'receiver_address': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA1d8Wllp4VNYrR4245HJu\nHdUNAihRPH9yjaTrgNIXa1UrCIh86G4EPyxX6E9WXbY9gxGN2e4HbaMpyYmLdl5d\nQ0d3V+dhSip9Nwd6Pg0M2mq4qCWBHf25LbP501FD03VpfdWKFJZQiZWOgfPwWXGG\nVmKXA7WRuPUsjjE7+mLndIQSCYNC8BXT7dAHG6yww5u1pdeN1jpqBfRX6AfXyHDY\nOo+D3bQls8xETVETUHwq7lY6GCzxa21cdIhc+ueSeT9o57NWhJn0PtY9oyJjfGOS\nu6LmDc2ApvAROiBi8BMsPjC0Ci70xe2QPOjZ6I9MfsDitEiS0yAkZdhcLJHz2BRX\nzwIDAQAB\n-----END PUBLIC KEY-----', 'type_of_transaction': 'coins', 'amount': 1000, 'nonce': 1, 'message': None, 'transaction_id': 'deb1e8de3316447fa18281afca400b41407f9a37d6655293ceaade98a2bbceac', 'signature': 'O8XOtkMsNgse737EN5Sm0XXrZ6/ueH710nnfnFM41TvYmPZxo8n3W84Wp0uuv8zgIJjhQ5KHPUHyGMtbX8pPTrJ8erLqrZOCHnxGqx/4BSIvU7OgKTaHHVE6Qay6zrz/vSOV+1Bf8B7ZeRonhUSwh7HU4bZtTKD5o1cDzED+0IxqkM1GnumpEdJBglMGkl4URvthU/ZkG+qHjLDRk6n603ALDg0jKRcs9xM/sxQ0DePZszhraon2M5tnAmGKWlL6mHlUTGHExyslPhrm0PX7qnP16Utrtlns1+VfdzYlPaQUl1f5KjTN2G5Qqa2Ad1BXFZSNbbNrgrE8c71TSmqgzA=='}
 INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 18:40:37] "POST /validate_transaction HTTP/1.1" 200 -
 DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "POST /register_node HTTP/1.1" 200 45
+DEBUG:gen_node_temp:im node1 test temp
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "POST /register_node HTTP/1.1" 200 45
+DEBUG:root:
+
+
+VALIDATE IS GUCCI
+
+
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 19:06:45] "POST /validate_chain HTTP/1.1" 200 -
+DEBUG:root:Type of data: <class 'str'>
+DEBUG:root:Data that I received:
+[{"id": 2, "ip": "127.0.0.1", "port": "5001", "public_key": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEApQJCF9jCvOQOwqft2+dL\nNtXwkv2fejCFmrfmMZY8zzdoqHmz9si84eN27nTqshc6kYBdhDvH5cEouAlfj9l3\nQ7ML4Datf1ETcL/wETxpkudWNXYwYcd3UmUX+CJ281Rjz1Z4kD8bxdwKeNKZ0S7v\nwY8YZj5Dw6PZZU4LpPXDy6fY0xokYsizjetZmXe3XWENeu1zVSHYO915ldosxDX5\ngQ8OyWkkv8EEmQyr3xAL1+X4dXbE+LmyqexVsNDg21QvNj/7G9EDr2vmvqDX0QuK\n6dDfAp7Tn86+iZDD/sBjPYYvTJvKKsfTw627clnvMtIENs0cyPtXLXiKx/nCQVZw\nLwIDAQAB\n-----END PUBLIC KEY-----", "balance": 0}, {"id": 3, "ip": "127.0.0.1", "port": "5002", "public_key": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAnx6KDcNSb3lLhQp/s907\nAqB3w3aTNUru3TGjKwzQi2E+zwXqoAv2sN6FWbhijCYHmWb4LkdifhNvi8DK5S2N\njrfUE1obZsEYlOAyVujQrALMyeOq/MPr6gr/Nr6hu/dWxzIRQCOCrB8ACCIWBbN/\nr1RbuoUxqFSYsqiSI3bNJlSTY0nL0Oc0aE8HNJUICbL6n5UxWstso+4UATEAVeKb\nCNA0u7FnF0xXlWYnYH04m1dc6x8wuFEZ8mXuMC9seA6IsJEoNkIs7PUiB/6KKacm\nj2QSMNssb5wNU3eF+CJAoaUGVYVbnQc3TdIu18B3m70jNV00y1Fnac88GhNqoRf/\nAwIDAQAB\n-----END PUBLIC KEY-----", "balance": 0}]
+DEBUG:root:
+
+ get ring  IS GUCCI
+
+
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 19:06:45] "POST /get_ring HTTP/1.1" 200 -
+DEBUG:root:Type of data: <class 'str'>
+DEBUG:root:Data that I received:
+{"sender_address": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAyDqXR6wWb/3cM0M1WwPK\nCVTpFyswcwi/s0pFKW1R0H/zvxZHGaow/mVx8UOQ80Qd6ei3ECtnntNRNVmCJfXj\nXpeo/EzlPMoxeHWByKLTjHLpkgVzTXBBPujlPBNe64fuIEweKG6gw+a1N83/fdgS\ntP2H8LpHlXhKf+8hJMs91/J13jZAM9wtH/WIW0LSiwLBIreoR2q0uuqeMgsreiUJ\nYAbZpNWVGI82fI0qsz99JXmMfEfdhTZ2P4mm6G7Hbm5lHU9ExMvq6xMq6vJpRfE+\n3BqSzrnrCuBE5iAWlx2LVd9G1J9rZ43CSvJmTVSYJ51HgbmduOdGpiePgFnM5XiO\nuwIDAQAB\n-----END PUBLIC KEY-----", "receiver_address": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEApQJCF9jCvOQOwqft2+dL\nNtXwkv2fejCFmrfmMZY8zzdoqHmz9si84eN27nTqshc6kYBdhDvH5cEouAlfj9l3\nQ7ML4Datf1ETcL/wETxpkudWNXYwYcd3UmUX+CJ281Rjz1Z4kD8bxdwKeNKZ0S7v\nwY8YZj5Dw6PZZU4LpPXDy6fY0xokYsizjetZmXe3XWENeu1zVSHYO915ldosxDX5\ngQ8OyWkkv8EEmQyr3xAL1+X4dXbE+LmyqexVsNDg21QvNj/7G9EDr2vmvqDX0QuK\n6dDfAp7Tn86+iZDD/sBjPYYvTJvKKsfTw627clnvMtIENs0cyPtXLXiKx/nCQVZw\nLwIDAQAB\n-----END PUBLIC KEY-----", "type_of_transaction": "coins", "amount": 1000, "nonce": 1, "message": null, "transaction_id": "2c4393eb8c3002a16e100c6f4c513d043b223dcd72c19fb6115ba718cf538cd4", "signature": "dnJhUQtT4iBKPgj4Yl4maBJnp1orFfaF2Pwn9UiLHzHZo/owgFEcLI42jG+OBjVfxzj+YE4MPoyc0U4WwePUCS0k+B+Nq9A+9CoBH/LAb+rlmhIQm1y3a/FE2YjvttD3pOndglNy50Pw/bNvGFG7ak8Y+jTsrGYjTzPSsrBfvOWzkKXJLmX0BfNqrA9iu4DAUMWUm7CR4T89ofEOL1YvS7ZVYzxXTspSrdSCEnssHylS2jtvEqGrFLYXE3OVzm2XhgCt84isSFQA9QVFR0H+eiKTCzmkiKb+LUdmJvSck4ox2JRILm593BdjsNnQrR5WOxpzhM/s1prHLvB/CvFFiw=="}
+DEBUG:root:Type of data_dict: <class 'dict'>
+DEBUG:root:Data_dict that I received:
+{'sender_address': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAyDqXR6wWb/3cM0M1WwPK\nCVTpFyswcwi/s0pFKW1R0H/zvxZHGaow/mVx8UOQ80Qd6ei3ECtnntNRNVmCJfXj\nXpeo/EzlPMoxeHWByKLTjHLpkgVzTXBBPujlPBNe64fuIEweKG6gw+a1N83/fdgS\ntP2H8LpHlXhKf+8hJMs91/J13jZAM9wtH/WIW0LSiwLBIreoR2q0uuqeMgsreiUJ\nYAbZpNWVGI82fI0qsz99JXmMfEfdhTZ2P4mm6G7Hbm5lHU9ExMvq6xMq6vJpRfE+\n3BqSzrnrCuBE5iAWlx2LVd9G1J9rZ43CSvJmTVSYJ51HgbmduOdGpiePgFnM5XiO\nuwIDAQAB\n-----END PUBLIC KEY-----', 'receiver_address': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEApQJCF9jCvOQOwqft2+dL\nNtXwkv2fejCFmrfmMZY8zzdoqHmz9si84eN27nTqshc6kYBdhDvH5cEouAlfj9l3\nQ7ML4Datf1ETcL/wETxpkudWNXYwYcd3UmUX+CJ281Rjz1Z4kD8bxdwKeNKZ0S7v\nwY8YZj5Dw6PZZU4LpPXDy6fY0xokYsizjetZmXe3XWENeu1zVSHYO915ldosxDX5\ngQ8OyWkkv8EEmQyr3xAL1+X4dXbE+LmyqexVsNDg21QvNj/7G9EDr2vmvqDX0QuK\n6dDfAp7Tn86+iZDD/sBjPYYvTJvKKsfTw627clnvMtIENs0cyPtXLXiKx/nCQVZw\nLwIDAQAB\n-----END PUBLIC KEY-----', 'type_of_transaction': 'coins', 'amount': 1000, 'nonce': 1, 'message': None, 'transaction_id': '2c4393eb8c3002a16e100c6f4c513d043b223dcd72c19fb6115ba718cf538cd4', 'signature': 'dnJhUQtT4iBKPgj4Yl4maBJnp1orFfaF2Pwn9UiLHzHZo/owgFEcLI42jG+OBjVfxzj+YE4MPoyc0U4WwePUCS0k+B+Nq9A+9CoBH/LAb+rlmhIQm1y3a/FE2YjvttD3pOndglNy50Pw/bNvGFG7ak8Y+jTsrGYjTzPSsrBfvOWzkKXJLmX0BfNqrA9iu4DAUMWUm7CR4T89ofEOL1YvS7ZVYzxXTspSrdSCEnssHylS2jtvEqGrFLYXE3OVzm2XhgCt84isSFQA9QVFR0H+eiKTCzmkiKb+LUdmJvSck4ox2JRILm593BdjsNnQrR5WOxpzhM/s1prHLvB/CvFFiw=='}
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 19:06:45] "POST /validate_transaction HTTP/1.1" 200 -
+DEBUG:root:Type of data: <class 'str'>
+DEBUG:root:Data that I received:
+{"sender_address": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAyDqXR6wWb/3cM0M1WwPK\nCVTpFyswcwi/s0pFKW1R0H/zvxZHGaow/mVx8UOQ80Qd6ei3ECtnntNRNVmCJfXj\nXpeo/EzlPMoxeHWByKLTjHLpkgVzTXBBPujlPBNe64fuIEweKG6gw+a1N83/fdgS\ntP2H8LpHlXhKf+8hJMs91/J13jZAM9wtH/WIW0LSiwLBIreoR2q0uuqeMgsreiUJ\nYAbZpNWVGI82fI0qsz99JXmMfEfdhTZ2P4mm6G7Hbm5lHU9ExMvq6xMq6vJpRfE+\n3BqSzrnrCuBE5iAWlx2LVd9G1J9rZ43CSvJmTVSYJ51HgbmduOdGpiePgFnM5XiO\nuwIDAQAB\n-----END PUBLIC KEY-----", "receiver_address": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAnx6KDcNSb3lLhQp/s907\nAqB3w3aTNUru3TGjKwzQi2E+zwXqoAv2sN6FWbhijCYHmWb4LkdifhNvi8DK5S2N\njrfUE1obZsEYlOAyVujQrALMyeOq/MPr6gr/Nr6hu/dWxzIRQCOCrB8ACCIWBbN/\nr1RbuoUxqFSYsqiSI3bNJlSTY0nL0Oc0aE8HNJUICbL6n5UxWstso+4UATEAVeKb\nCNA0u7FnF0xXlWYnYH04m1dc6x8wuFEZ8mXuMC9seA6IsJEoNkIs7PUiB/6KKacm\nj2QSMNssb5wNU3eF+CJAoaUGVYVbnQc3TdIu18B3m70jNV00y1Fnac88GhNqoRf/\nAwIDAQAB\n-----END PUBLIC KEY-----", "type_of_transaction": "coins", "amount": 1000, "nonce": 2, "message": null, "transaction_id": "5e3ed865d98c507d265a579cf2dcfd169d1e8ec264af6a6d25e95d5d09279839", "signature": "dnJhUQtT4iBKPgj4Yl4maBJnp1orFfaF2Pwn9UiLHzHZo/owgFEcLI42jG+OBjVfxzj+YE4MPoyc0U4WwePUCS0k+B+Nq9A+9CoBH/LAb+rlmhIQm1y3a/FE2YjvttD3pOndglNy50Pw/bNvGFG7ak8Y+jTsrGYjTzPSsrBfvOWzkKXJLmX0BfNqrA9iu4DAUMWUm7CR4T89ofEOL1YvS7ZVYzxXTspSrdSCEnssHylS2jtvEqGrFLYXE3OVzm2XhgCt84isSFQA9QVFR0H+eiKTCzmkiKb+LUdmJvSck4ox2JRILm593BdjsNnQrR5WOxpzhM/s1prHLvB/CvFFiw=="}
+DEBUG:root:Type of data_dict: <class 'dict'>
+DEBUG:root:Data_dict that I received:
+{'sender_address': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAyDqXR6wWb/3cM0M1WwPK\nCVTpFyswcwi/s0pFKW1R0H/zvxZHGaow/mVx8UOQ80Qd6ei3ECtnntNRNVmCJfXj\nXpeo/EzlPMoxeHWByKLTjHLpkgVzTXBBPujlPBNe64fuIEweKG6gw+a1N83/fdgS\ntP2H8LpHlXhKf+8hJMs91/J13jZAM9wtH/WIW0LSiwLBIreoR2q0uuqeMgsreiUJ\nYAbZpNWVGI82fI0qsz99JXmMfEfdhTZ2P4mm6G7Hbm5lHU9ExMvq6xMq6vJpRfE+\n3BqSzrnrCuBE5iAWlx2LVd9G1J9rZ43CSvJmTVSYJ51HgbmduOdGpiePgFnM5XiO\nuwIDAQAB\n-----END PUBLIC KEY-----', 'receiver_address': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAnx6KDcNSb3lLhQp/s907\nAqB3w3aTNUru3TGjKwzQi2E+zwXqoAv2sN6FWbhijCYHmWb4LkdifhNvi8DK5S2N\njrfUE1obZsEYlOAyVujQrALMyeOq/MPr6gr/Nr6hu/dWxzIRQCOCrB8ACCIWBbN/\nr1RbuoUxqFSYsqiSI3bNJlSTY0nL0Oc0aE8HNJUICbL6n5UxWstso+4UATEAVeKb\nCNA0u7FnF0xXlWYnYH04m1dc6x8wuFEZ8mXuMC9seA6IsJEoNkIs7PUiB/6KKacm\nj2QSMNssb5wNU3eF+CJAoaUGVYVbnQc3TdIu18B3m70jNV00y1Fnac88GhNqoRf/\nAwIDAQAB\n-----END PUBLIC KEY-----', 'type_of_transaction': 'coins', 'amount': 1000, 'nonce': 2, 'message': None, 'transaction_id': '5e3ed865d98c507d265a579cf2dcfd169d1e8ec264af6a6d25e95d5d09279839', 'signature': 'dnJhUQtT4iBKPgj4Yl4maBJnp1orFfaF2Pwn9UiLHzHZo/owgFEcLI42jG+OBjVfxzj+YE4MPoyc0U4WwePUCS0k+B+Nq9A+9CoBH/LAb+rlmhIQm1y3a/FE2YjvttD3pOndglNy50Pw/bNvGFG7ak8Y+jTsrGYjTzPSsrBfvOWzkKXJLmX0BfNqrA9iu4DAUMWUm7CR4T89ofEOL1YvS7ZVYzxXTspSrdSCEnssHylS2jtvEqGrFLYXE3OVzm2XhgCt84isSFQA9QVFR0H+eiKTCzmkiKb+LUdmJvSck4ox2JRILm593BdjsNnQrR5WOxpzhM/s1prHLvB/CvFFiw=='}
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 19:06:45] "POST /validate_transaction HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 19:07:08] "GET /money HTTP/1.1" 200 -
+DEBUG:gen_node_temp:im node1 test temp
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "POST /register_node HTTP/1.1" 200 45
+DEBUG:root:
+
+
+VALIDATE IS GUCCI
+
+
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 19:08:11] "POST /validate_chain HTTP/1.1" 200 -
+DEBUG:root:Type of data: <class 'str'>
+DEBUG:root:Data that I received:
+[{"id": 2, "ip": "127.0.0.1", "port": "5001", "public_key": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA0ybLP7quJo0B3lxlRoLJ\npOX8NfAe6tLvtTjtrkLHcpmpSKTauXknjujpCfV5PVECofD0i4h/TnJw9//fHWTO\nJiN7q/PXzKZMUXQjtYyg9rFPr0zDYVrcqEZ5D7ytGN4SBeEl3CrxrB/lcoc02Ob3\n2eFc7mTZ4GMRXejRYkJEXnZw6+p1sysWwWmIhUcbCyTyGpp/n9DuHCV2H+XTwF4K\ngzxNDYig8YxwkzgS9KHvSGpTxLiuuc+/KLdS79aNmASZyyRas56df3ITzKCJbIaD\nLisxjGeOjusYRv60kV+D8t/ooiC9D8v4dhTZxmf81es/KJKFWMPEApyxZfWWPBBN\ndwIDAQAB\n-----END PUBLIC KEY-----", "balance": 0}, {"id": 3, "ip": "127.0.0.1", "port": "5002", "public_key": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAj1fJ25cjL4AljC0CQ2Pw\nIKEijLEo3vkC+3jLSXu84WRkuys/LyntF9OHje0MLbLfYjqLcFKX4Rrd1YZO5KYp\nkQfjWnuuGTfn5IufU6Y4XRQmdo19Uheng05/evkRtNOqY7yNDSDKpo1SytjuuDSm\n718X2cP+h0Isz2HHEZaacbzSqbLLFG6MrxbUJhcHF163LvRfjmweghHDpyg9QOLU\nwmtUPKzf0Vqzo3+qICLRevqTb1NwmrLA3WYZHnEsoLNO8HVgvZl1+0nTVu4lfZkZ\npXZfhvqjzzjU1oOgtKTp8s1nLs11xecA08LfliNE6NstXi1SXLwxbEr/3LW+LSoy\nwQIDAQAB\n-----END PUBLIC KEY-----", "balance": 0}]
+DEBUG:root:
+
+ get ring  IS GUCCI
+
+
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 19:08:11] "POST /get_ring HTTP/1.1" 200 -
+DEBUG:root:Type of data: <class 'str'>
+DEBUG:root:Data that I received:
+{"sender_address": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAog8z1reAbDFHhwdlF9sv\n9xvrIGlm+3VwEca/OzLcFvMjSLcLI9qAYfktVu1B+r6R6o7iyOPtoqWukKmpjL+5\ndXc1SqQ2z3NhJrVyRz+0xz+ToWgwL4HdK6ahHyyWXLqDh9MTCYuP1CqhHTCz9ZOk\nGir/YlrvKF/bnyOk5hcUjXm7xBYq2t/nC5ZBlTChgHYXEiS27uT6IBsnNuYTuGAR\nWKVYubrFmQBIhlSeFiJX0Bqvgan9rRG2xyIB9tk66PBSoUrGL0Mxrl5tSSxcZZn0\nj4AwHZVi0axH9nT2xGgln4J4r2/XuArysn1Nag+5Crv8eGFEJ/NErLnRh7zcruuP\n5wIDAQAB\n-----END PUBLIC KEY-----", "receiver_address": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA0ybLP7quJo0B3lxlRoLJ\npOX8NfAe6tLvtTjtrkLHcpmpSKTauXknjujpCfV5PVECofD0i4h/TnJw9//fHWTO\nJiN7q/PXzKZMUXQjtYyg9rFPr0zDYVrcqEZ5D7ytGN4SBeEl3CrxrB/lcoc02Ob3\n2eFc7mTZ4GMRXejRYkJEXnZw6+p1sysWwWmIhUcbCyTyGpp/n9DuHCV2H+XTwF4K\ngzxNDYig8YxwkzgS9KHvSGpTxLiuuc+/KLdS79aNmASZyyRas56df3ITzKCJbIaD\nLisxjGeOjusYRv60kV+D8t/ooiC9D8v4dhTZxmf81es/KJKFWMPEApyxZfWWPBBN\ndwIDAQAB\n-----END PUBLIC KEY-----", "type_of_transaction": "coins", "amount": 1000, "nonce": 1, "message": null, "transaction_id": "5dafdc327db4d89836dcb36e199a997b9b36e5e5f253759bc883185b8c19890c", "signature": "CvWxVZ13gz4vWuCQ4qSQemh1x98vi87z9AtOAgGtPVfh0ICgnjbmJlm0bdiD3dr0m9LXA+tWVdOx/njIdqMG59siBDXvlKdRr0R6WiL/w/jyLiisEva0VMYxXSSMUxJLZq/rtpE/+5nWUJpAYfwsKRP6LBWIl+UtCbB0aA9T7suXVpsyRTl1FkFdcDsAH9ZmBhSowZjkeJ5Tan6eq3cJVLOVxRpKmxtGJsJZCYI0S/ZRMv3vnRkIPi9LBI2PnAuuAZQTKxIR17Koux/Y7kTOBwS9lQxDbuNI+A4BU0iPeE6fhr4DB1s7MRV5RaeMmIuMeJ0n1rTquEq7SUjm16SItg=="}
+DEBUG:root:Type of data_dict: <class 'dict'>
+DEBUG:root:Data_dict that I received:
+{'sender_address': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAog8z1reAbDFHhwdlF9sv\n9xvrIGlm+3VwEca/OzLcFvMjSLcLI9qAYfktVu1B+r6R6o7iyOPtoqWukKmpjL+5\ndXc1SqQ2z3NhJrVyRz+0xz+ToWgwL4HdK6ahHyyWXLqDh9MTCYuP1CqhHTCz9ZOk\nGir/YlrvKF/bnyOk5hcUjXm7xBYq2t/nC5ZBlTChgHYXEiS27uT6IBsnNuYTuGAR\nWKVYubrFmQBIhlSeFiJX0Bqvgan9rRG2xyIB9tk66PBSoUrGL0Mxrl5tSSxcZZn0\nj4AwHZVi0axH9nT2xGgln4J4r2/XuArysn1Nag+5Crv8eGFEJ/NErLnRh7zcruuP\n5wIDAQAB\n-----END PUBLIC KEY-----', 'receiver_address': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA0ybLP7quJo0B3lxlRoLJ\npOX8NfAe6tLvtTjtrkLHcpmpSKTauXknjujpCfV5PVECofD0i4h/TnJw9//fHWTO\nJiN7q/PXzKZMUXQjtYyg9rFPr0zDYVrcqEZ5D7ytGN4SBeEl3CrxrB/lcoc02Ob3\n2eFc7mTZ4GMRXejRYkJEXnZw6+p1sysWwWmIhUcbCyTyGpp/n9DuHCV2H+XTwF4K\ngzxNDYig8YxwkzgS9KHvSGpTxLiuuc+/KLdS79aNmASZyyRas56df3ITzKCJbIaD\nLisxjGeOjusYRv60kV+D8t/ooiC9D8v4dhTZxmf81es/KJKFWMPEApyxZfWWPBBN\ndwIDAQAB\n-----END PUBLIC KEY-----', 'type_of_transaction': 'coins', 'amount': 1000, 'nonce': 1, 'message': None, 'transaction_id': '5dafdc327db4d89836dcb36e199a997b9b36e5e5f253759bc883185b8c19890c', 'signature': 'CvWxVZ13gz4vWuCQ4qSQemh1x98vi87z9AtOAgGtPVfh0ICgnjbmJlm0bdiD3dr0m9LXA+tWVdOx/njIdqMG59siBDXvlKdRr0R6WiL/w/jyLiisEva0VMYxXSSMUxJLZq/rtpE/+5nWUJpAYfwsKRP6LBWIl+UtCbB0aA9T7suXVpsyRTl1FkFdcDsAH9ZmBhSowZjkeJ5Tan6eq3cJVLOVxRpKmxtGJsJZCYI0S/ZRMv3vnRkIPi9LBI2PnAuuAZQTKxIR17Koux/Y7kTOBwS9lQxDbuNI+A4BU0iPeE6fhr4DB1s7MRV5RaeMmIuMeJ0n1rTquEq7SUjm16SItg=='}
+ERROR:gen_node_temp:Exception on /validate_transaction [POST]
+Traceback (most recent call last):
+  File "C:\Users\30695\BlockChat\venv\Lib\site-packages\flask\app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\30695\BlockChat\venv\Lib\site-packages\flask\app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\30695\BlockChat\venv\Lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\30695\BlockChat\venv\Lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\30695\BlockChat\backend\api.py", line 92, in validate_transaction
+    if node.add_to_block(trans):
+       ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\30695\BlockChat\backend\node.py", line 280, in add_to_block
+    self.curr_block = self.create_block()
+                      ^^^^^^^^^^^^^^^^^^^
+TypeError: Node.create_block() missing 4 required positional arguments: 'index', 'previous_hash', 'validator', and 'capacity'
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 19:08:11] "[35m[1mPOST /validate_transaction HTTP/1.1[0m" 500 -
+DEBUG:gen_node_temp:im node1 test temp
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:root:
+
+
+VALIDATE IS GUCCI
+
+
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 19:20:51] "POST /validate_chain HTTP/1.1" 200 -
+DEBUG:root:Type of data: <class 'str'>
+DEBUG:root:Data that I received:
+[{"id": 2, "ip": "127.0.0.1", "port": "5001", "public_key": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA0l6lSVS705zJCKQEfAp1\nU0qkOiSkU0G+vkr018bBAv7drBDkdpt9FwybJQh2bgKe0bwiM+6CxcVp/qalX7xj\nJbKodFvnBBbsBz5ynB6ju8hvn2g6sky2DWWPoew+zI1BHKBiXDN3Z+8P3oj/O/hw\nkXOPF8FHbU/35oYi7ZKkh9BEWFj3+KTUB56RCsgCfdynxFIs9huP0uXlN92qRtrg\nCV6kdcBtPOVjHYNx9oWJbVWl47N69Jqpp7Ky6ftGe5PLMHW1JyN5uHvgEZpyrYNz\nTF+t9DZ1cltAoscb6AKzg6+oqI4nHfl6xBxn7GboauBsXZ+H5980tK4OZLJJCC3T\nwwIDAQAB\n-----END PUBLIC KEY-----", "balance": 0}]
+DEBUG:root:
+
+ get ring  IS GUCCI
+
+
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 19:20:51] "POST /get_ring HTTP/1.1" 200 -
+DEBUG:root:Type of data: <class 'str'>
+DEBUG:root:Data that I received:
+{"sender_address": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAjUPAT1lXoi5BzTXig+V1\nbRPQmqTzJl0BNiyDIne8PCLWKAHQphqn27S39wFLKPI3xyxnKu50gwPKCjSOBsw5\nhh9UHxCvaFH2eUUjvn2TL9ybxMMoDNW06uigg/vhoSEMwUGpgc+3ZZ67h4kGwKiW\nuuEjDj0l/fkF8FO3RZ29ACDsUKNRZYyVOFFkWO1f00ItbXGuEkTAk6SRYME54g7m\nZ0cORDcUi3UZPDVWIfdR/h9qx1DPFsEOgIwzx+hYyQwAcpt9rWaDKWSPxWLOz9E4\nk/d8MSyXfnLddAAQawG9G2IxRSTpjOX24diAy48IOH8lIfRbuQv/6M99kymFJlJa\nSwIDAQAB\n-----END PUBLIC KEY-----", "receiver_address": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA0l6lSVS705zJCKQEfAp1\nU0qkOiSkU0G+vkr018bBAv7drBDkdpt9FwybJQh2bgKe0bwiM+6CxcVp/qalX7xj\nJbKodFvnBBbsBz5ynB6ju8hvn2g6sky2DWWPoew+zI1BHKBiXDN3Z+8P3oj/O/hw\nkXOPF8FHbU/35oYi7ZKkh9BEWFj3+KTUB56RCsgCfdynxFIs9huP0uXlN92qRtrg\nCV6kdcBtPOVjHYNx9oWJbVWl47N69Jqpp7Ky6ftGe5PLMHW1JyN5uHvgEZpyrYNz\nTF+t9DZ1cltAoscb6AKzg6+oqI4nHfl6xBxn7GboauBsXZ+H5980tK4OZLJJCC3T\nwwIDAQAB\n-----END PUBLIC KEY-----", "type_of_transaction": "coins", "amount": 1000, "nonce": 1, "message": null, "transaction_id": "341e29d1b25e31db439d0109c4530425a9d5bf728721a6e167ae54024fb5e53e", "signature": "hyJbWS1qc3M0lKTr/07sUoU+/6wnh737Azhx4bRkDhq27lHB2pFTz48Lz4imhuX7MGBMXNRVOX2RIThsNNMR4/T07fmv9lp+XJmsm/p/AY7Z2Ua8toTboUj6rhWLRJpdMAGkgWlLo1P2+00Fxjt41CmX87GzgeyjVrTaN9R0NtFpzo4dy1onMAgG6wVLu1S1Tzf+d8xETcVvGleMCo/lo00GVLZFa2rAoxarTYh0uFULjFx+GI/ALhXonccjE+yW5boC5fQ5O5e5uDDMAzapyORuZ6hjnacbHyA6j2jb9mfCjQPvbduDK9mkPew/+sC0D2EoIQ8UpZIb/ld4HTn2ow=="}
+DEBUG:root:Type of data_dict: <class 'dict'>
+DEBUG:root:Data_dict that I received:
+{'sender_address': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAjUPAT1lXoi5BzTXig+V1\nbRPQmqTzJl0BNiyDIne8PCLWKAHQphqn27S39wFLKPI3xyxnKu50gwPKCjSOBsw5\nhh9UHxCvaFH2eUUjvn2TL9ybxMMoDNW06uigg/vhoSEMwUGpgc+3ZZ67h4kGwKiW\nuuEjDj0l/fkF8FO3RZ29ACDsUKNRZYyVOFFkWO1f00ItbXGuEkTAk6SRYME54g7m\nZ0cORDcUi3UZPDVWIfdR/h9qx1DPFsEOgIwzx+hYyQwAcpt9rWaDKWSPxWLOz9E4\nk/d8MSyXfnLddAAQawG9G2IxRSTpjOX24diAy48IOH8lIfRbuQv/6M99kymFJlJa\nSwIDAQAB\n-----END PUBLIC KEY-----', 'receiver_address': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA0l6lSVS705zJCKQEfAp1\nU0qkOiSkU0G+vkr018bBAv7drBDkdpt9FwybJQh2bgKe0bwiM+6CxcVp/qalX7xj\nJbKodFvnBBbsBz5ynB6ju8hvn2g6sky2DWWPoew+zI1BHKBiXDN3Z+8P3oj/O/hw\nkXOPF8FHbU/35oYi7ZKkh9BEWFj3+KTUB56RCsgCfdynxFIs9huP0uXlN92qRtrg\nCV6kdcBtPOVjHYNx9oWJbVWl47N69Jqpp7Ky6ftGe5PLMHW1JyN5uHvgEZpyrYNz\nTF+t9DZ1cltAoscb6AKzg6+oqI4nHfl6xBxn7GboauBsXZ+H5980tK4OZLJJCC3T\nwwIDAQAB\n-----END PUBLIC KEY-----', 'type_of_transaction': 'coins', 'amount': 1000, 'nonce': 1, 'message': None, 'transaction_id': '341e29d1b25e31db439d0109c4530425a9d5bf728721a6e167ae54024fb5e53e', 'signature': 'hyJbWS1qc3M0lKTr/07sUoU+/6wnh737Azhx4bRkDhq27lHB2pFTz48Lz4imhuX7MGBMXNRVOX2RIThsNNMR4/T07fmv9lp+XJmsm/p/AY7Z2Ua8toTboUj6rhWLRJpdMAGkgWlLo1P2+00Fxjt41CmX87GzgeyjVrTaN9R0NtFpzo4dy1onMAgG6wVLu1S1Tzf+d8xETcVvGleMCo/lo00GVLZFa2rAoxarTYh0uFULjFx+GI/ALhXonccjE+yW5boC5fQ5O5e5uDDMAzapyORuZ6hjnacbHyA6j2jb9mfCjQPvbduDK9mkPew/+sC0D2EoIQ8UpZIb/ld4HTn2ow=='}
+ERROR:gen_node_temp:Exception on /validate_transaction [POST]
+Traceback (most recent call last):
+  File "C:\Users\30695\BlockChat\venv\Lib\site-packages\flask\app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\30695\BlockChat\venv\Lib\site-packages\flask\app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\30695\BlockChat\venv\Lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\30695\BlockChat\venv\Lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\30695\BlockChat\backend\api.py", line 92, in validate_transaction
+    if node.add_to_block(trans):
+       ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\30695\BlockChat\backend\node.py", line 280, in add_to_block
+    self.curr_block = self.create_block()
+                      ^^^^^^^^^^^^^^^^^^^
+TypeError: Node.create_block() missing 4 required positional arguments: 'index', 'previous_hash', 'validator', and 'capacity'
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 19:20:51] "[35m[1mPOST /validate_transaction HTTP/1.1[0m" 500 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "POST /register_node HTTP/1.1" 200 45
+DEBUG:gen_node_temp:im node1 test temp
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:root:
+
+
+VALIDATE IS GUCCI
+
+
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 19:31:49] "POST /validate_chain HTTP/1.1" 200 -
+DEBUG:root:Type of data: <class 'str'>
+DEBUG:root:Data that I received:
+[{"id": 2, "ip": "127.0.0.1", "port": "5001", "public_key": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEApQ5v/Wq4vTuKxfnMpRXH\nWVuhTXyL2/Q//r9UqQByXYjG6NGhw23R8uLyP/O7lQnUXpVCpTvtS7wYHD9ogqMU\nHT05DG6vtC066WPYe9iEM6GA/mtU6sB7geQk7F/yGKxqb66skXOE4seAojcaa+R+\n88BKgpJ95xENfm12akF+l64K9PXI+KEUEbv3tIfs5K7asSkxLECrG6e4pKNso1M0\nTzz8meeuVAJApakd4FyG3URMSjHcJTBib4xwLkoKUBNxAJqSpcw6hVfa1ABqGvdF\nnskSwHphyLQY5NgZJqD/U0SmqSP3USiX39UeNk1fcmRbD22wneOAL/v4zNsQyjZH\nhQIDAQAB\n-----END PUBLIC KEY-----", "balance": 0}]
+DEBUG:root:
+
+ get ring  IS GUCCI
+
+
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 19:31:49] "POST /get_ring HTTP/1.1" 200 -
+DEBUG:root:Type of data: <class 'str'>
+DEBUG:root:Data that I received:
+{"sender_address": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA9FqpnBPkdTvf8OWL3pqT\nSfzLng3fs3DSLNjvkToFIORppxa/EyBW2Uke1gtZL+g6eY6nDvTmbqk2HnX+EKW2\nbZdcJ6eKRSB3gg5yXl0ehPQt7yxx4drqs4ru0PbZqcj0xNbzDnDxhFHGFafj0qVO\ntw6xxhaX0rZTrloTSUr5bJ0TIvHE3nYkYJje9upev8QC6CYhpNnm4mHHdIRxDrb3\nj8QPkOcx3GgsWnmpvl5pyG79C0neCl9Tkdg9H8UgYRLIR12tYtc+nc8eK8ya6uwD\nqTIix31Ln1sliqHErzLUthEmbH7tq5gSWKVF36YE0ACg8O6u8FqhlbZmWo7/iGlV\neQIDAQAB\n-----END PUBLIC KEY-----", "receiver_address": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEApQ5v/Wq4vTuKxfnMpRXH\nWVuhTXyL2/Q//r9UqQByXYjG6NGhw23R8uLyP/O7lQnUXpVCpTvtS7wYHD9ogqMU\nHT05DG6vtC066WPYe9iEM6GA/mtU6sB7geQk7F/yGKxqb66skXOE4seAojcaa+R+\n88BKgpJ95xENfm12akF+l64K9PXI+KEUEbv3tIfs5K7asSkxLECrG6e4pKNso1M0\nTzz8meeuVAJApakd4FyG3URMSjHcJTBib4xwLkoKUBNxAJqSpcw6hVfa1ABqGvdF\nnskSwHphyLQY5NgZJqD/U0SmqSP3USiX39UeNk1fcmRbD22wneOAL/v4zNsQyjZH\nhQIDAQAB\n-----END PUBLIC KEY-----", "type_of_transaction": "coins", "amount": 1000, "nonce": 1, "message": null, "transaction_id": "fa75cad1b23cbe5f2e4159452a93565e1eee69debb1b7cfd4f5224590272b3b8", "signature": "ztA4Nk6+vuWNCKnErAoh5jD2KEGVtlDO+pjYfEmLj050hNUv29Bnk5AQehgPUl5urCsW9lnhHeUIhxJbWHE1VK+SswoGIcy9ROGKXXyfifT1APGRTWvHZtifctdOxTTENWm1CwVjc01i87emwB5YWnaondbFYQhlzuDfXm7toevAqlVZZEXejMDsVicOurY96Ho7RMDaOvM3RGdNvvJP/ZhjC7MFty9q4Plgl5SiBHzHBViYFWk/UOM6Z5tfjOysJVmJTbaSOVfuKdyePnscYdlGq/uFAu/E7QpZamukdTybc8ScK0NFkwQUkrVEOt1x2zX1Yp/0tAUeHBGHfjWu3g=="}
+DEBUG:root:Type of data_dict: <class 'dict'>
+DEBUG:root:Data_dict that I received:
+{'sender_address': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA9FqpnBPkdTvf8OWL3pqT\nSfzLng3fs3DSLNjvkToFIORppxa/EyBW2Uke1gtZL+g6eY6nDvTmbqk2HnX+EKW2\nbZdcJ6eKRSB3gg5yXl0ehPQt7yxx4drqs4ru0PbZqcj0xNbzDnDxhFHGFafj0qVO\ntw6xxhaX0rZTrloTSUr5bJ0TIvHE3nYkYJje9upev8QC6CYhpNnm4mHHdIRxDrb3\nj8QPkOcx3GgsWnmpvl5pyG79C0neCl9Tkdg9H8UgYRLIR12tYtc+nc8eK8ya6uwD\nqTIix31Ln1sliqHErzLUthEmbH7tq5gSWKVF36YE0ACg8O6u8FqhlbZmWo7/iGlV\neQIDAQAB\n-----END PUBLIC KEY-----', 'receiver_address': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEApQ5v/Wq4vTuKxfnMpRXH\nWVuhTXyL2/Q//r9UqQByXYjG6NGhw23R8uLyP/O7lQnUXpVCpTvtS7wYHD9ogqMU\nHT05DG6vtC066WPYe9iEM6GA/mtU6sB7geQk7F/yGKxqb66skXOE4seAojcaa+R+\n88BKgpJ95xENfm12akF+l64K9PXI+KEUEbv3tIfs5K7asSkxLECrG6e4pKNso1M0\nTzz8meeuVAJApakd4FyG3URMSjHcJTBib4xwLkoKUBNxAJqSpcw6hVfa1ABqGvdF\nnskSwHphyLQY5NgZJqD/U0SmqSP3USiX39UeNk1fcmRbD22wneOAL/v4zNsQyjZH\nhQIDAQAB\n-----END PUBLIC KEY-----', 'type_of_transaction': 'coins', 'amount': 1000, 'nonce': 1, 'message': None, 'transaction_id': 'fa75cad1b23cbe5f2e4159452a93565e1eee69debb1b7cfd4f5224590272b3b8', 'signature': 'ztA4Nk6+vuWNCKnErAoh5jD2KEGVtlDO+pjYfEmLj050hNUv29Bnk5AQehgPUl5urCsW9lnhHeUIhxJbWHE1VK+SswoGIcy9ROGKXXyfifT1APGRTWvHZtifctdOxTTENWm1CwVjc01i87emwB5YWnaondbFYQhlzuDfXm7toevAqlVZZEXejMDsVicOurY96Ho7RMDaOvM3RGdNvvJP/ZhjC7MFty9q4Plgl5SiBHzHBViYFWk/UOM6Z5tfjOysJVmJTbaSOVfuKdyePnscYdlGq/uFAu/E7QpZamukdTybc8ScK0NFkwQUkrVEOt1x2zX1Yp/0tAUeHBGHfjWu3g=='}
+ERROR:gen_node_temp:Exception on /validate_transaction [POST]
+Traceback (most recent call last):
+  File "C:\Users\30695\BlockChat\venv\Lib\site-packages\flask\app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\30695\BlockChat\venv\Lib\site-packages\flask\app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\30695\BlockChat\venv\Lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\30695\BlockChat\venv\Lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\30695\BlockChat\backend\api.py", line 92, in validate_transaction
+    if node.add_to_block(trans):
+       ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\30695\BlockChat\backend\node.py", line 282, in add_to_block
+    self.curr_block = self.create_block(index=self.blockchain.blocks[-1].index + 1, previous_hash=self.blockchain.blocks[-1].hash, validator=self.id, capacity=10)
+                                              ~~~~~~~~~~~~~~~~~~~~~~^^^^
+IndexError: list index out of range
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 19:31:49] "[35m[1mPOST /validate_transaction HTTP/1.1[0m" 500 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "POST /register_node HTTP/1.1" 200 45
+DEBUG:gen_node_temp:im node1 test temp
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:root:
+
+
+VALIDATE IS GUCCI
+
+
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 19:32:36] "POST /validate_chain HTTP/1.1" 200 -
+DEBUG:root:Type of data: <class 'str'>
+DEBUG:root:Data that I received:
+[{"id": 2, "ip": "127.0.0.1", "port": "5001", "public_key": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEArMx6QdXr5S6VDUfxE4gg\nMw5qXaKoXx3G3WBVJAVUR1PP2EQdJXmgOhI8Uq5u8wonnkyo4m5RcmpyWxHUJ9sI\n/cQ8IfpEpoJ7lhuezfSkbOAdrYaQQiwglPHMwbLUzBcXuRJbF5MeioiMLrhGWPO1\nNf8lxgLbXbHI+zBj/itJPX4HCQ7iJknSAIPT3LdWllLdEFOy151UEr3Dn2hJ34Te\nvkxdbaFB1z3Tm5A36wb61GZLj6poS67CtZmkF5aGq/2MDF9BMxZvocJE0Kt+/FDD\nFhOCJHr+41B6Go3tAN9ws4l5AO46g/bAU3dyP3L2ihNzCsW0E2QL9JLgUr2KJk1T\nvQIDAQAB\n-----END PUBLIC KEY-----", "balance": 0}]
+DEBUG:root:
+
+ get ring  IS GUCCI
+
+
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 19:32:36] "POST /get_ring HTTP/1.1" 200 -
+DEBUG:root:Type of data: <class 'str'>
+DEBUG:root:Data that I received:
+{"sender_address": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAl+5hGuSaxqXAkLHvIaQK\nkLsY3q1k/cuzhgBMiKepnF3YKcI8CAhu/cQk49uUEOB7B6iCaCICFhsMCTuh5RI1\nCpLcH76DF6ipEle0pgfMNwwe2sAH2VgnpELxKsEN931JDph+TNiW1hpcWuG09ye/\n2OUzk/3Rtsnv7dAlv38ngY/if/nIBWbwGpsE+kJKbbZyzuqnSFJnjR9kwYFFipmQ\ngnJUPWGVEicw4UKjwmBz9AdqEgMDw6edfImIYpLcf+qQ8t33VoBeZeVtkLLqiVEb\nq+z4oWB5GMqrxb0EOV+yYJtPJlY6N7dUfLwKl5365X1MpxJ0KGpmt+y/HspcNgd7\nVQIDAQAB\n-----END PUBLIC KEY-----", "receiver_address": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEArMx6QdXr5S6VDUfxE4gg\nMw5qXaKoXx3G3WBVJAVUR1PP2EQdJXmgOhI8Uq5u8wonnkyo4m5RcmpyWxHUJ9sI\n/cQ8IfpEpoJ7lhuezfSkbOAdrYaQQiwglPHMwbLUzBcXuRJbF5MeioiMLrhGWPO1\nNf8lxgLbXbHI+zBj/itJPX4HCQ7iJknSAIPT3LdWllLdEFOy151UEr3Dn2hJ34Te\nvkxdbaFB1z3Tm5A36wb61GZLj6poS67CtZmkF5aGq/2MDF9BMxZvocJE0Kt+/FDD\nFhOCJHr+41B6Go3tAN9ws4l5AO46g/bAU3dyP3L2ihNzCsW0E2QL9JLgUr2KJk1T\nvQIDAQAB\n-----END PUBLIC KEY-----", "type_of_transaction": "coins", "amount": 1000, "nonce": 1, "message": null, "transaction_id": "2c8b213a997488860dd77278b72f0ee7133669e3ab5e30098c9c022880e2656f", "signature": "jGbcIrc2V8XyEgH6FO3fjQNMk8SyIBhIwdPD5N5hKQtazk0RAzsTicrRNyOoXNEevnFkUeSdK3Y6NetrlK71Yx1epP3/hxBpAJbgUST5DuSSS9iSq6eG4MVgW6euc4Hs9ZuIzCWtEaQZN9nlOBROiyXe/XeN5SOWVn7qiNaVbMwZmL/5TqBF5vN5t1vC50sufeWMugB177QriyhzdQ4GoCv/u45PLBHBCV+zW376eX8lX2FBVF/YookYMMMRDjZ0F0YRBa5JdNdUW8w9n+pIbrxqFtUADvtSvkGqgWGTYvStI/ivDfwF3PcjtJkzWtwEdXDA0N0Xoi0/hzWhfs+Bog=="}
+DEBUG:root:Type of data_dict: <class 'dict'>
+DEBUG:root:Data_dict that I received:
+{'sender_address': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAl+5hGuSaxqXAkLHvIaQK\nkLsY3q1k/cuzhgBMiKepnF3YKcI8CAhu/cQk49uUEOB7B6iCaCICFhsMCTuh5RI1\nCpLcH76DF6ipEle0pgfMNwwe2sAH2VgnpELxKsEN931JDph+TNiW1hpcWuG09ye/\n2OUzk/3Rtsnv7dAlv38ngY/if/nIBWbwGpsE+kJKbbZyzuqnSFJnjR9kwYFFipmQ\ngnJUPWGVEicw4UKjwmBz9AdqEgMDw6edfImIYpLcf+qQ8t33VoBeZeVtkLLqiVEb\nq+z4oWB5GMqrxb0EOV+yYJtPJlY6N7dUfLwKl5365X1MpxJ0KGpmt+y/HspcNgd7\nVQIDAQAB\n-----END PUBLIC KEY-----', 'receiver_address': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEArMx6QdXr5S6VDUfxE4gg\nMw5qXaKoXx3G3WBVJAVUR1PP2EQdJXmgOhI8Uq5u8wonnkyo4m5RcmpyWxHUJ9sI\n/cQ8IfpEpoJ7lhuezfSkbOAdrYaQQiwglPHMwbLUzBcXuRJbF5MeioiMLrhGWPO1\nNf8lxgLbXbHI+zBj/itJPX4HCQ7iJknSAIPT3LdWllLdEFOy151UEr3Dn2hJ34Te\nvkxdbaFB1z3Tm5A36wb61GZLj6poS67CtZmkF5aGq/2MDF9BMxZvocJE0Kt+/FDD\nFhOCJHr+41B6Go3tAN9ws4l5AO46g/bAU3dyP3L2ihNzCsW0E2QL9JLgUr2KJk1T\nvQIDAQAB\n-----END PUBLIC KEY-----', 'type_of_transaction': 'coins', 'amount': 1000, 'nonce': 1, 'message': None, 'transaction_id': '2c8b213a997488860dd77278b72f0ee7133669e3ab5e30098c9c022880e2656f', 'signature': 'jGbcIrc2V8XyEgH6FO3fjQNMk8SyIBhIwdPD5N5hKQtazk0RAzsTicrRNyOoXNEevnFkUeSdK3Y6NetrlK71Yx1epP3/hxBpAJbgUST5DuSSS9iSq6eG4MVgW6euc4Hs9ZuIzCWtEaQZN9nlOBROiyXe/XeN5SOWVn7qiNaVbMwZmL/5TqBF5vN5t1vC50sufeWMugB177QriyhzdQ4GoCv/u45PLBHBCV+zW376eX8lX2FBVF/YookYMMMRDjZ0F0YRBa5JdNdUW8w9n+pIbrxqFtUADvtSvkGqgWGTYvStI/ivDfwF3PcjtJkzWtwEdXDA0N0Xoi0/hzWhfs+Bog=='}
+ERROR:gen_node_temp:Exception on /validate_transaction [POST]
+Traceback (most recent call last):
+  File "C:\Users\30695\BlockChat\venv\Lib\site-packages\flask\app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\30695\BlockChat\venv\Lib\site-packages\flask\app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\30695\BlockChat\venv\Lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\30695\BlockChat\venv\Lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\30695\BlockChat\backend\api.py", line 92, in validate_transaction
+    if node.add_to_block(trans):
+       ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\30695\BlockChat\backend\node.py", line 282, in add_to_block
+    self.curr_block = self.create_block(index=self.blockchain.blocks[-1].index + 1, previous_hash=self.blockchain.blocks[-1].hash, validator=self.id, capacity=10)
+                                              ~~~~~~~~~~~~~~~~~~~~~~^^^^
+IndexError: list index out of range
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 19:32:36] "[35m[1mPOST /validate_transaction HTTP/1.1[0m" 500 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "POST /register_node HTTP/1.1" 200 45
+DEBUG:gen_node_temp:im node1 test temp
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:root:{'blocks': [{'index': 0, 'timestamp': 1712162333.700466, 'transactions': [{'sender_address': '0', 'receiver_address': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAwKgxzI6ukrUUHlzTVS3o\n49r+D0p5ZDoMU8yXDmPGT9UCzWP4Z4vGXhMjRFnlZ6aOgDFvmBDtll8pLFejgR5d\n7rsTQLFMM8CmgnvGpWCSy4Tp6oACqsJH5IYRIhuIMZ3t6Qkyydpf67IbI8zSM3CM\nWnlO5B4cjqw/ae0Yvu+6H1L/l7DNnv8SJ7mtW3fG09BJlO50UIjVsrB10OnyRGG/\nVHaMUcJ7pcbakMqX8zFyhzEgn+pbIl40h9+ieG00grOZvGReVmZUEU/oGgYvxgPq\n/94IADmItfiXJhM0hIJXqI2Ccpl5Y098J83+ZNevZwkW9srWNiaTot2NOfpSG7F9\nMwIDAQAB\n-----END PUBLIC KEY-----', 'type_of_transaction': 'coins', 'amount': 5000, 'nonce': 0, 'message': None, 'transaction_id': '77e1437a8ad0b527de2bd1c75ac2ca9cb3696dda1888d9c183b7906f69ce13fe', 'signature': None}], 'previous_hash': 1, 'nonce': None}]}
+DEBUG:root:
+
+
+VALIDATE IS GUCCI
+
+
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 19:39:23] "POST /validate_chain HTTP/1.1" 200 -
+DEBUG:root:Type of data: <class 'str'>
+DEBUG:root:Data that I received:
+[{"id": 2, "ip": "127.0.0.1", "port": "5001", "public_key": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAwW081wP4XwCVm8pZcvRT\n2Q2lItbZQIR5t/iIe5dZh5RwXtT5hvNZvEScv+P0jhIXb66moQGxy6MjgArdTzeP\n+HJqih0qPhrcPrJoaVsAMQW5uzzek6UYHipyGZna8IP8kL0zDHsB11qF9bEV1Vl5\nbT1UZHk39Kx1xwsOTaSAQIL/iy1gMwk2gKcwhtEmpkaY+jFBfkTin/O80C1Ommiz\n0Iw7AxcckQKfhZkfQgirKcDXQ6mYzDqr3wtfxw765f8titF4Kf+RlrKDKZ+t4NEr\n9pcmXKBLsmkG2ntxLTRhUkWyvOHoovtEgFQE+7vnLZtnI6XGC4yWG8NrQYmoBJMd\ncwIDAQAB\n-----END PUBLIC KEY-----", "balance": 0}]
+DEBUG:root:
+
+ get ring  IS GUCCI
+
+
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 19:39:23] "POST /get_ring HTTP/1.1" 200 -
+DEBUG:root:Type of data: <class 'str'>
+DEBUG:root:Data that I received:
+{"sender_address": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAwKgxzI6ukrUUHlzTVS3o\n49r+D0p5ZDoMU8yXDmPGT9UCzWP4Z4vGXhMjRFnlZ6aOgDFvmBDtll8pLFejgR5d\n7rsTQLFMM8CmgnvGpWCSy4Tp6oACqsJH5IYRIhuIMZ3t6Qkyydpf67IbI8zSM3CM\nWnlO5B4cjqw/ae0Yvu+6H1L/l7DNnv8SJ7mtW3fG09BJlO50UIjVsrB10OnyRGG/\nVHaMUcJ7pcbakMqX8zFyhzEgn+pbIl40h9+ieG00grOZvGReVmZUEU/oGgYvxgPq\n/94IADmItfiXJhM0hIJXqI2Ccpl5Y098J83+ZNevZwkW9srWNiaTot2NOfpSG7F9\nMwIDAQAB\n-----END PUBLIC KEY-----", "receiver_address": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAwW081wP4XwCVm8pZcvRT\n2Q2lItbZQIR5t/iIe5dZh5RwXtT5hvNZvEScv+P0jhIXb66moQGxy6MjgArdTzeP\n+HJqih0qPhrcPrJoaVsAMQW5uzzek6UYHipyGZna8IP8kL0zDHsB11qF9bEV1Vl5\nbT1UZHk39Kx1xwsOTaSAQIL/iy1gMwk2gKcwhtEmpkaY+jFBfkTin/O80C1Ommiz\n0Iw7AxcckQKfhZkfQgirKcDXQ6mYzDqr3wtfxw765f8titF4Kf+RlrKDKZ+t4NEr\n9pcmXKBLsmkG2ntxLTRhUkWyvOHoovtEgFQE+7vnLZtnI6XGC4yWG8NrQYmoBJMd\ncwIDAQAB\n-----END PUBLIC KEY-----", "type_of_transaction": "coins", "amount": 1000, "nonce": 1, "message": null, "transaction_id": "91f5befc621be730f7c5a7f43cf9b57a4ec765c2226e56b4d76c92a9d45764fd", "signature": "qURVBKWWRAxHpwhe5wLbgeDznBs1RkQ9T2XpDS15NHtIX1LusxPzv3Si63MEpYhPw7Y6zmH5DbtDxbxx/qE+MRRPxKMctVLsDbPxB2ICeGxQpzXDXpAyO9QOl0/+nMsoloLiq7l0RrhxaSSdKqteaubiXarQkpEzcm7mtILfHEcprTXiOT/YKcW2u5RV4pyPKick1/JxA4kzZZxyR5bYR+bQJD2jystDczfUyM+bURv6dA5wA1gXEJ1rNf9NF1ScxcF8inHvKtoMeww59eA75CSaT+k9mljvHD4YhpKWPlB8eyJrm02i56yYVJdw+WlJKy7Cnfiv5sKUsrkDtLSZBQ=="}
+DEBUG:root:Type of data_dict: <class 'dict'>
+DEBUG:root:Data_dict that I received:
+{'sender_address': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAwKgxzI6ukrUUHlzTVS3o\n49r+D0p5ZDoMU8yXDmPGT9UCzWP4Z4vGXhMjRFnlZ6aOgDFvmBDtll8pLFejgR5d\n7rsTQLFMM8CmgnvGpWCSy4Tp6oACqsJH5IYRIhuIMZ3t6Qkyydpf67IbI8zSM3CM\nWnlO5B4cjqw/ae0Yvu+6H1L/l7DNnv8SJ7mtW3fG09BJlO50UIjVsrB10OnyRGG/\nVHaMUcJ7pcbakMqX8zFyhzEgn+pbIl40h9+ieG00grOZvGReVmZUEU/oGgYvxgPq\n/94IADmItfiXJhM0hIJXqI2Ccpl5Y098J83+ZNevZwkW9srWNiaTot2NOfpSG7F9\nMwIDAQAB\n-----END PUBLIC KEY-----', 'receiver_address': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAwW081wP4XwCVm8pZcvRT\n2Q2lItbZQIR5t/iIe5dZh5RwXtT5hvNZvEScv+P0jhIXb66moQGxy6MjgArdTzeP\n+HJqih0qPhrcPrJoaVsAMQW5uzzek6UYHipyGZna8IP8kL0zDHsB11qF9bEV1Vl5\nbT1UZHk39Kx1xwsOTaSAQIL/iy1gMwk2gKcwhtEmpkaY+jFBfkTin/O80C1Ommiz\n0Iw7AxcckQKfhZkfQgirKcDXQ6mYzDqr3wtfxw765f8titF4Kf+RlrKDKZ+t4NEr\n9pcmXKBLsmkG2ntxLTRhUkWyvOHoovtEgFQE+7vnLZtnI6XGC4yWG8NrQYmoBJMd\ncwIDAQAB\n-----END PUBLIC KEY-----', 'type_of_transaction': 'coins', 'amount': 1000, 'nonce': 1, 'message': None, 'transaction_id': '91f5befc621be730f7c5a7f43cf9b57a4ec765c2226e56b4d76c92a9d45764fd', 'signature': 'qURVBKWWRAxHpwhe5wLbgeDznBs1RkQ9T2XpDS15NHtIX1LusxPzv3Si63MEpYhPw7Y6zmH5DbtDxbxx/qE+MRRPxKMctVLsDbPxB2ICeGxQpzXDXpAyO9QOl0/+nMsoloLiq7l0RrhxaSSdKqteaubiXarQkpEzcm7mtILfHEcprTXiOT/YKcW2u5RV4pyPKick1/JxA4kzZZxyR5bYR+bQJD2jystDczfUyM+bURv6dA5wA1gXEJ1rNf9NF1ScxcF8inHvKtoMeww59eA75CSaT+k9mljvHD4YhpKWPlB8eyJrm02i56yYVJdw+WlJKy7Cnfiv5sKUsrkDtLSZBQ=='}
+ERROR:gen_node_temp:Exception on /validate_transaction [POST]
+Traceback (most recent call last):
+  File "C:\Users\30695\BlockChat\venv\Lib\site-packages\flask\app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\30695\BlockChat\venv\Lib\site-packages\flask\app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\30695\BlockChat\venv\Lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\30695\BlockChat\venv\Lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\30695\BlockChat\backend\api.py", line 92, in validate_transaction
+    if node.add_to_block(trans):
+       ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\30695\BlockChat\backend\node.py", line 282, in add_to_block
+    self.curr_block = self.create_block(index=self.blockchain.blocks[-1].index + 1, previous_hash=self.blockchain.blocks[-1].hash, validator=self.id, capacity=10)
+                                              ~~~~~~~~~~~~~~~~~~~~~~^^^^
+IndexError: list index out of range
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 19:39:24] "[35m[1mPOST /validate_transaction HTTP/1.1[0m" 500 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "POST /register_node HTTP/1.1" 200 45
