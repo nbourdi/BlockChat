@@ -3,6 +3,7 @@ from blockchain import Blockchain
 from block import Block
 from node import Node
 from node import Peer
+from transaction import Transaction
 from flask import Blueprint, request, jsonify
 import logging
 import json
@@ -39,7 +40,8 @@ def register_node():
         for peer in node.peers:
             if peer.id != node.id:
                 node.send_blockchain_to_peer(peer=peer)
-                node.send_peer_ring(peer) 
+                node.send_peer_ring(peer)
+                 
         for peer in node.peers:
             if peer.id != node.id:
                 node.create_transaction(
@@ -129,11 +131,11 @@ def get_ring():
         
         peers = [Peer(item['id'], item['ip'], item['port'], item['public_key'], item['balance']) for item in data]
         
-        print(peers)
+
 
         for peer in peers:
             node.add_peer_obj(peer)
-        
+
         print("HI love the peers u gave me ")
         print("Printing data of peers:")
         for peer in node.peers:
@@ -141,6 +143,7 @@ def get_ring():
             print(f"IP Address: {peer.ip}")
             print(f"Port: {peer.port}")
     # You can print additional attributes as needed
+
         return jsonify({"message": "Peers received successfully"}), 200
     except Exception as e:
         logging.error("Error occurred while processing JSON data: %s", str(e))
@@ -189,6 +192,7 @@ def get_chain():
         # Access the blocks key in the data dictionary
         blocks = data.get('blocks', [])
         # Get the existing blockchain instance
+        existing_blockchain = node.blockchain
 
         # Iterate over each block
         for block in blocks:
@@ -228,7 +232,6 @@ def get_chain():
         node.curr_block = new_block
         node.curr_block.add_transaction(new_transaction)
         node.blockchain.add_block(new_block)
-
                     
         logging.debug("\n\nExtract blockchain data from JSON")
 
@@ -239,12 +242,9 @@ def get_chain():
         
         node.validate_chain() #FIXME δεν εχει κατι συγκεκριμενο απλα δεν ξερω τι κανει οποτε καποτε καποιο καλο κοριτσι να μ εξηγησει
         
-        
-
         return jsonify({"message": "Chain received successfully"}), 200
     except Exception as e:
         return jsonify({"error": str(e)}), 400
-     
      
 
 # Endpoint to create a transaction
