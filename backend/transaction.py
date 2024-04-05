@@ -61,15 +61,15 @@ class Transaction:
             transaction_type = "Transfer"
             details = f"Amount: {self.amount}"
 
-        transaction_data = [
-            ["Transaction Type", transaction_type],
-            ["Sender Address", self.sender_address],
-            ["Receiver Address", self.receiver_address],
-            [f"{transaction_type} Details", details],
-            ["Signature", self.signature.hex() if self.signature else 'Not signed yet']
-        ]
+        signature_status = 'Not signed yet' if self.signature is None else 'Signed'
 
-        return tabulate(transaction_data, tablefmt="fancy_grid")
+        transaction_str = f"Transaction Type: {transaction_type}\n"
+        transaction_str += f"Sender Address: {self.sender_address}\n"
+        transaction_str += f"Receiver Address: {self.receiver_address}\n"
+        transaction_str += f"{transaction_type} Details: {details}\n"
+        transaction_str += f"Signature: {signature_status}"
+
+        return transaction_str
 
     # def sign_transaction(self, private_key):
     #     private_key = RSA.import_key(private_key)
