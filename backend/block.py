@@ -18,9 +18,9 @@ Block
  '''
 class Block:
 
-    def __init__(self, index, previous_hash, validator, capacity):
+    def __init__(self, index, previous_hash, validator, capacity,timestamp=None):
         self.index = index # let genesis have index 0 
-        self.timestamp = time.time() # not necess
+        self.timestamp = timestamp if timestamp else time.time()
         self.transactions = []
         self.validator = validator
         self.current_hash = None
@@ -34,6 +34,18 @@ class Block:
         if len(self.transactions) < self.capacity:
             return False
         return True
+    
+    def __str__(self):
+        block_str = f"Block Index: {self.index}\n"
+        block_str += f"Timestamp: {self.timestamp}\n"
+        block_str += "Transactions:\n"
+        for transaction in self.transactions:
+            block_str += f"{transaction}\n"
+        block_str += f"Validator: {self.validator}\n"
+        block_str += f"Current Hash: {self.current_hash}\n"
+        block_str += f"Previous Hash: {self.previous_hash}\n"
+        block_str += f"Capacity: {self.capacity}\n"
+        return block_str
     
     def add_transaction(self, transaction):
         self.transactions.append(transaction)
@@ -80,6 +92,7 @@ class Block:
         block.timestamp = block_dict['timestamp']
         return block
     
+    
     @classmethod
     def from_json(cls, json_data):
         transactions = [Transaction.from_json(tx) for tx in json_data['transactions']]
@@ -89,3 +102,4 @@ class Block:
             json_data['validator'],
             json_data['capacity']
         )
+    
