@@ -38,20 +38,19 @@ if __name__ == "__main__":
     if is_bootstrap == "1":
         
         transaction = Transaction(sender_address='0', receiver_address=node.wallet.public_key, type_of_transaction='coins', amount=5000, nonce=0, message=None)
-        genesis_block = node.create_block(index=0, previous_hash=1, validator=0, capacity=5)
+        genesis_block = node.create_block(index=0, previous_hash=1, validator=0, capacity=node.capacity)
         node.curr_block = genesis_block
-        node.wallet.balance += 5043330
+        node.wallet.balance += 10000
         node.curr_block.add_transaction(transaction)
         node.blockchain.add_block(genesis_block)
         print("Wallet balance after adding funds:", node.wallet.balance)
+        node.id = 1
+        #TODO add self to peer ring
+        node.add_peer(ip=bootstrap_ip, port="5000", public_key=node.wallet.public_key, balance=node.wallet.balance, id=1)
         
         # we are bootstrap
-        node.wallet.balance += 10000
         app.run(host=bootstrap_ip, port=bootstrap_port)
         # set the bootstrap id
-        node.id = 1
         
-    
-        app.logger.debug("im boot")
         
     main()

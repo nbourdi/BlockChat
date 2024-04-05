@@ -24,11 +24,13 @@ class Block:
         self.transactions = []
         self.validator = validator
         self.current_hash = None
-        self.nonce = None
+        self.nonce = None #TODO i dont think it needs nonce?
         self.previous_hash = previous_hash
         self.capacity = capacity  # i added this 
         
     def is_full(self):
+        print("block cap")
+        print(self.capacity)
         if len(self.transactions) < self.capacity:
             return False
         return True

@@ -10,14 +10,46 @@ from transaction import Transaction
 
 logging.basicConfig(filename='record.log', level=logging.DEBUG)
 
-
-
 api = Blueprint('api', __name__)
-n = 3
+n = 2
 
 global global_node
-global_node = Node(5, 10)
+global_node = Node(1, 10)
 node = global_node
+
+
+# Endpoint to register a node, by bootstrap
+@api.route('/register_node', methods=['POST'])
+def register_node():
+    # Logic to register a node in the network
+
+    data = request.json  # This will contain the JSON data sent via POST
+    peer_ip = data.get('ip')
+    peer_port = data.get('port')
+    peer_pk = data.get('pub_key')
+    logging.debug("\n\n\nReceived registration request from peer with IP: %s, Port: %s, pubkey: %s\n\n", peer_ip, peer_port, peer_pk)
+
+    peer_id = len(node.peers) + 1
+
+    # Add node in the list of registered nodes.
+    node.add_peer(peer_id, peer_ip, peer_port, peer_pk, 0)
+    
+    # If all nodes have been added
+    if peer_id == n:
+        for peer in node.peers:
+            if peer.id != node.id:
+                node.send_blockchain_to_peer(peer=peer)
+                node.send_peer_ring(peer) 
+        for peer in node.peers:
+            if peer.id != node.id:
+                node.create_transaction(
+                    receiver_address=peer.public_key,
+                    type_of_transaction="coins",
+                    amount=1000,
+                    message=None
+                )
+
+    return jsonify({'message': "Node added successfully", 'id': peer_id}), 200
 
 @api.route('/money', methods=['GET'])
 def get_money():
@@ -84,39 +116,6 @@ def add_transaction():
     else:
         return jsonify({'message': "Couldn't verify signature, transaction rejected."}), 400
 
-
-# Endpoint to register a node, by bootstrap
-@api.route('/register_node', methods=['POST'])
-def register_node():
-    # Logic to register a node in the network
-
-    data = request.json  # This will contain the JSON data sent via POST
-    peer_ip = data.get('ip')
-    peer_port = data.get('port')
-    peer_pk = data.get('pub_key')
-    logging.debug("\n\n\nReceived registration request from peer with IP: %s, Port: %s, pubkey: %s\n\n", peer_ip, peer_port, peer_pk)
-
-    peer_id = len(node.peers) + 2 # bootstrap is 1 so when node.peers are empty the first peer gets id 2
-
-    # Add node in the list of registered nodes.
-    node.add_peer(peer_id, peer_ip, peer_port, peer_pk, 0)
-    
-    # If all nodes have been added
-    if peer_id == n:
-        for peer in node.peers:
-            if peer.id != node.id:
-                node.send_blockchain_to_peer(peer=peer)
-                node.send_peer_ring(peer) 
-        for peer in node.peers:
-            if peer.id != node.id:
-                node.create_transaction(
-                    receiver_address=peer.public_key,
-                    type_of_transaction="coins",
-                    amount=1000,
-                    message=None
-                )
-
-    return jsonify({'message': "Node added successfully", 'id': peer_id}), 200
 
 # Endpoint to get the ring
 @api.route('/get_ring', methods=['POST'])

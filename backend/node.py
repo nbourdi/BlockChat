@@ -1,7 +1,7 @@
 import base64
 import json
 
-from random import random
+import random
 from transaction import Transaction
 from wallet import Wallet
 from blockchain import Blockchain
@@ -19,7 +19,7 @@ class Peer: # helper class, to represent peer node data
         self.port = port
         self.public_key = public_key
         self.balance = balance
-        self.stake = None
+        self.stake = 10 #TODO make it global ALSO #FIXME these wont get into the block more correct to stake in genesis after registration and then broadcast it but we dont have the function 
         self.stake_share = 0
         # self.nonce = 0 # TODO
 
@@ -64,10 +64,10 @@ class Node:
         # create a transaction 
         pass
 
-    # TODO high prior
-    def release_stakes(self):
+    # TODO mid prior
+    def broadcast_stake(self, stake):
         pass
-        
+
         
     def validate_block(self, block): 
         # validate the previous hash and check validity of current hash
@@ -90,10 +90,6 @@ class Node:
                     return False
             previous_block = block
         return True
-
-# Inside the Node class in node.py
-
-
 
     def send_blockchain_to_peer(self, peer):
         blocks_json = []
@@ -162,12 +158,16 @@ class Node:
 
         #  the seed is the hash of the previous block
         seed_hex = self.blockchain.blocks[-1].hash()
-        seed = int(seed_hex, 16) # convert to int
-        random.seed(seed) # sets the seed for the generator
+        seed = int(seed_hex, 16)  # convert to int
+
+        random_generator = random.Random()
+        random_generator.seed(seed)  # set the seed for the random generator
 
         # competition
-        rand = random()
+        rand = random_generator.random()  # call random() method on the random.Random instance
 
+        print("the rand number is")
+        print(rand)
         for peer in self.peers:
             if peer.stake_share[0] <= rand < peer.stake_share[1]:
                 validator = peer.id
@@ -208,7 +208,7 @@ class Node:
         # curr_block should be None unless there is an error thinking of it, should set back to None once its broadcasted 
         
         if self.curr_block == None:
-            self.create_block(index=self.blockchain.blocks[-1].index + 1, previous_hash=self.blockchain.blocks[-1].hash, validator=-1, capacity=10) # TODO capacity here arbitrary
+            self.create_block(index=self.blockchain.blocks[-1].index + 1, previous_hash=self.blockchain.blocks[-1].hash, validator=-1, capacity=self.capacity) # TODO capacity here arbitrary
 
         self.curr_block.current_hash = self.curr_block.hash()
 
@@ -252,15 +252,16 @@ class Node:
 
 
         for peer in self.peers:
-            address = 'http://' + peer.ip + ':' + peer.port + '/add_transaction' 
-            try:
-                res = requests.post(address, json=trans_json)
-                if res.status_code == 200:
-                    print(f"Transaction successfully sent to {peer.ip}:{peer.port}")
-                else:
-                    print(f"Failed to send transaction to {peer.ip}:{peer.port}")
-            except Exception as e:
-                print(f"Error sending transaction to {peer.ip}:{peer.port}: {e}")
+            if peer.id != self.id:
+                address = 'http://' + peer.ip + ':' + peer.port + '/add_transaction' 
+                try:
+                    res = requests.post(address, json=trans_json)
+                    if res.status_code == 200:
+                        print(f"Transaction successfully sent to {peer.ip}:{peer.port}")
+                    else:
+                        print(f"Failed to send transaction to {peer.ip}:{peer.port}")
+                except Exception as e:
+                    print(f"Error sending transaction to {peer.ip}:{peer.port}: {e}")
 
 
     def validate_transaction(self, transaction):
@@ -276,15 +277,12 @@ class Node:
         self.validate_transaction(transaction)
         
         if self.curr_block == None: # this only happens when freshly created, right after genesis block?? are you sure
-            self.curr_block = self.create_block(index=self.blockchain.blocks[-1].index + 1, previous_hash=self.blockchain.blocks[-1].hash, validator=self.id, capacity=10)
+            self.curr_block = self.create_block(index=self.blockchain.blocks[-1].index + 1, previous_hash=self.blockchain.blocks[-1].hash, validator=self.id, capacity=self.capacity)
 
         # check first if self is involved in the transaction
-        print("receiver address")
-        print(transaction.receiver_address)
-        print("my pub key")
+
         print(self.wallet.public_key)
         if (transaction.receiver_address == self.wallet.public_key):
-            print("line 283 node")
             self.wallet.balance += transaction.amount
         if (transaction.sender_address == self.wallet.public_key):
             self.wallet.balance -= transaction.amount
@@ -292,9 +290,9 @@ class Node:
         # check and update all peers
         for peer in self.peers:
             if peer.public_key == transaction.sender_address:
-                #print("updating peer balance")
                 peer.balance -= transaction.amount
-                #print(peer.balance)
+                print("updating b balance")
+                print(peer.balance)
             if peer.public_key == transaction.receiver_address:
                 print("updating peer balance")
                 peer.balance += transaction.amount
@@ -333,15 +331,16 @@ class Node:
 
         ring_json = json.dumps(ring_data)
 
-        address = 'http://' + peer.ip + ':' + peer.port + '/get_ring'
-        try:
-            res = requests.post(address, json=ring_json)
-            if res.status_code == 200:
-                print(f"Ring successfully sent to {peer.ip}:{peer.port}")
-            else:
-                print(f"Failed to send ring to {peer.ip}:{peer.port}")
-        except Exception as e:
-            print(f"Error sending ring to {peer.ip}:{peer.port}: {e}")
+        if peer.id != self.id:
+            address = 'http://' + peer.ip + ':' + peer.port + '/get_ring'
+            try:
+                res = requests.post(address, json=ring_json)
+                if res.status_code == 200:
+                    print(f"Ring successfully sent to {peer.ip}:{peer.port}")
+                else:
+                    print(f"Failed to send ring to {peer.ip}:{peer.port}")
+            except Exception as e:
+                print(f"Error sending ring to {peer.ip}:{peer.port}: {e}")
 
 
     # needed for the "view" command in cli, should return last validated block's transactions and the validators id 

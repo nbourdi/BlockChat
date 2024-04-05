@@ -18,8 +18,6 @@ ip = '127.0.0.1'
 app = Flask(__name__)
 app.register_blueprint(api)
 
-stake = 5
-capacity = 10
 
 #node = Node(capacity=capacity, stake=stake)
 
