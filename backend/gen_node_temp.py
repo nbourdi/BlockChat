@@ -21,7 +21,7 @@ app.register_blueprint(api)
 stake = 5
 capacity = 10
 
-node = Node(capacity=capacity, stake=stake)
+#node = Node(capacity=capacity, stake=stake)
 
 logging.basicConfig(filename='record.log', level=logging.DEBUG)
 

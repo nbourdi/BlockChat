@@ -21,7 +21,7 @@ class Peer: # helper class, to represent peer node data
         self.balance = balance
         self.stake = None
         self.stake_share = 0
-        # self.nonce = 0
+        # self.nonce = 0 # TODO
 
 
 class Node:
@@ -41,20 +41,13 @@ class Node:
         
     def create_transaction(self, receiver_address, type_of_transaction, amount, message):
         self.nonce += 1 #added this (athina)
-
         trans = Transaction(self.wallet.public_key, receiver_address, type_of_transaction, amount, message, self.nonce) #added the nonce attribute (athina)
-        #print(trans.signature)
         trans.sign_transaction(self.wallet.private_key)
         self.add_to_block(trans)
         self.broadcast_transaction(trans)
 
 
     def stake(self, stake_amount): 
-        # FIXME stakes should be released when minting is done || UPDATE THATS WRONG:) THEY ARE KEPT UNTIL THE USER UPDATES THEM
-        # FIXME stakes should be broadcasted so that they can be updated in Peer object, rn we can bypass by manually staking/releasing
-        # Η συνάρτηση καλείται από τους nodes 
-        # κάθε validator θα πρέπει να είναι σε θέση να κάνει και update στο ποσό
-        # που έχει αποφασίσει να δεσμεύσει.
         # transaction με receiver_address = 0 και το ποσο που θλει να δεσμευσει ο καθε κομβος
         
         if self.balance < stake_amount:
@@ -286,17 +279,28 @@ class Node:
             self.curr_block = self.create_block(index=self.blockchain.blocks[-1].index + 1, previous_hash=self.blockchain.blocks[-1].hash, validator=self.id, capacity=10)
 
         # check first if self is involved in the transaction
+        print("receiver address")
+        print(transaction.receiver_address)
+        print("my pub key")
+        print(self.wallet.public_key)
         if (transaction.receiver_address == self.wallet.public_key):
-            self.wallet.balance -= transaction.amount
-        if (transaction.sender_address == self.wallet.public_key):
+            print("line 283 node")
             self.wallet.balance += transaction.amount
+        if (transaction.sender_address == self.wallet.public_key):
+            self.wallet.balance -= transaction.amount
 
         # check and update all peers
         for peer in self.peers:
             if peer.public_key == transaction.sender_address:
+                #print("updating peer balance")
                 peer.balance -= transaction.amount
+                #print(peer.balance)
             if peer.public_key == transaction.receiver_address:
+                print("updating peer balance")
                 peer.balance += transaction.amount
+                print(peer.balance)
+
+        #print(self.peers)
 
         self.curr_block.add_transaction(transaction)
         self.q_transactions.append(transaction)

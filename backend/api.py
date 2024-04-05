@@ -13,7 +13,7 @@ logging.basicConfig(filename='record.log', level=logging.DEBUG)
 
 
 api = Blueprint('api', __name__)
-n = 2
+n = 3
 
 global global_node
 global_node = Node(5, 10)
@@ -21,11 +21,7 @@ node = global_node
 
 @api.route('/money', methods=['GET'])
 def get_money():
-    # global node
-    #if node:
     return jsonify({'balance': node.wallet.balance})
-    #else:
-    return jsonify({'error': 'Node instance is not set.'}), 500
 
 # Endpoint to get a block
 @api.route('/validate_block', methods=['GET'])
@@ -98,7 +94,7 @@ def register_node():
     peer_ip = data.get('ip')
     peer_port = data.get('port')
     peer_pk = data.get('pub_key')
-    logging.debug("\n\n\nReceived registration request from peer with IP: %s, Port: %s\n\n", peer_ip, peer_port)
+    logging.debug("\n\n\nReceived registration request from peer with IP: %s, Port: %s, pubkey: %s\n\n", peer_ip, peer_port, peer_pk)
 
     peer_id = len(node.peers) + 2 # bootstrap is 1 so when node.peers are empty the first peer gets id 2
 
@@ -111,6 +107,8 @@ def register_node():
             if peer.id != node.id:
                 node.send_blockchain_to_peer(peer=peer)
                 node.send_peer_ring(peer) 
+        for peer in node.peers:
+            if peer.id != node.id:
                 node.create_transaction(
                     receiver_address=peer.public_key,
                     type_of_transaction="coins",
@@ -126,28 +124,48 @@ def get_ring():
     try:
         data = request.get_json()
 
-
-        logging.debug("Type of data: %s", type(data))  # Log the type of data
+        #logging.debug("Type of data: %s", type(data))  # Log the type of data
         logging.debug("Data that I received:\n%s", data)  # Log the received data
-        data_dict = json.loads(data)
-        for item in data_dict:
-            peer_id = item['id']
-            ip = item['ip']
-            port = item['port']
-            public_key = item['public_key']
-            balance = item['balance']
-
-        peers = [Peer(peer_id, ip, port, public_key, balance) for item in data]
+        data = json.loads(data)
+        
+        peers = [Peer(item['id'], item['ip'], item['port'], item['public_key'], item['balance']) for item in data]
+        
+        print(peers)
 
         for peer in peers:
             node.add_peer_obj(peer)
         
-        logging.debug("\n\n get ring  IS GUCCI\n\n")
-
         return jsonify({"message": "Peers received successfully"}), 200
     except Exception as e:
         logging.error("Error occurred while processing JSON data: %s", str(e))
         return jsonify({"error": str(e)}), 400
+
+# @api.route('/get_ring', methods=['POST'])
+# def get_ring():
+#     try:
+#         data = request.get_json()
+
+#         #logging.debug("Type of data: %s", type(data))  # Log the type of data
+#         logging.debug("Data that I received:\n%s", data)  # Log the received data
+#         data_dict = json.loads(data)
+#         for item in data_dict:
+#             peer_id = item['id']
+#             ip = item['ip']
+#             port = item['port']
+#             public_key = item['public_key']
+#             balance = item['balance']
+
+#         peers = [Peer(peer_id, ip, port, public_key, balance) for item in data]
+#         print(len(peers))
+
+#         for peer in peers:
+#             node.add_peer_obj(peer)
+        
+
+#         return jsonify({"message": "Peers received successfully"}), 200
+#     except Exception as e:
+#         logging.error("Error occurred while processing JSON data: %s", str(e))
+#         return jsonify({"error": str(e)}), 400
 
 
     
