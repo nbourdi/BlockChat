@@ -49,7 +49,7 @@ if __name__ == "__main__":
         node.add_peer(ip=bootstrap_ip, port="5000", public_key=node.wallet.public_key, balance=node.wallet.balance, id=1)
         
         # we are bootstrap
-        app.run(host=bootstrap_ip, port=bootstrap_port)
+        app.run(host=bootstrap_ip, port=bootstrap_port, debug=True)
         # set the bootstrap id
         
         
