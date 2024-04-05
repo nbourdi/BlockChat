@@ -104,11 +104,20 @@ class Node:
                 'capacity': block.capacity,
                 'validator': block.validator
             }
-            blocks_json.append(block_data)
+        print("send_blockchain_to_peer block data")
+        variable_type = type(block_data)
+        print(variable_type)
+        
+        blocks_json.append(block_data)
+
 
         data = {
             'blocks': blocks_json
         }
+        
+        print("THE DATA SUPPOSED IS JSON")
+        print(data) 
+        print(type(data))
 
         address = f"http://{peer.ip}:{peer.port}/validate_chain"
         res = requests.post(address, json=data)
@@ -125,16 +134,16 @@ class Node:
     def add_peer_obj(self, peer: Peer):
         self.peers.append(peer)
 
-    def create_block(self, index, previous_hash, validator, capacity): #TODO
+    def create_block(self, index, previous_hash, validator, capacity,timestamp=None): #TODO
         # I'm creating and adding a new block to the blockchain (Anast)
         if len(self.blockchain.blocks) == 0:
             #genesis block of the chain
             index = 0
             previous_hash = 1
             validator = 0
-            self.curr_block = Block(index, previous_hash, validator, capacity)
+            self.curr_block = Block(index, previous_hash, validator, capacity,timestamp)
         else:
-            self.curr_block = Block(index, previous_hash, validator, capacity ) #None values for the time being, gotta check the mining mathod -Anastasia | filled (Nat)
+            self.curr_block = Block(index, previous_hash, validator, capacity, timestamp ) #None values for the time being, gotta check the mining mathod -Anastasia | filled (Nat)
 
         return self.curr_block
 
@@ -162,6 +171,10 @@ class Node:
 
         random_generator = random.Random()
         random_generator.seed(seed)  # set the seed for the random generator
+        print("\n\n\n hi im am ")
+        print(self.id)
+        print("the blockhain that i see")
+        print(self.blockchain.blocks[-1])
 
         # competition
         rand = random_generator.random()  # call random() method on the random.Random instance
