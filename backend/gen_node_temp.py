@@ -57,4 +57,4 @@ if __name__ == "__main__":
         registration_thread = threading.Thread(target=register_node1)
         registration_thread.start()
 
-    app.run(host="127.0.0.1", port=5001)
+    app.run(host="127.0.0.1", port=5001, debug=True)
