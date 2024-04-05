@@ -134,6 +134,13 @@ def get_ring():
         for peer in peers:
             node.add_peer_obj(peer)
         
+        print("HI love the peers u gave me ")
+        print("Printing data of peers:")
+        for peer in node.peers:
+            print(f"Peer ID: {peer.id}")
+            print(f"IP Address: {peer.ip}")
+            print(f"Port: {peer.port}")
+    # You can print additional attributes as needed
         return jsonify({"message": "Peers received successfully"}), 200
     except Exception as e:
         logging.error("Error occurred while processing JSON data: %s", str(e))
@@ -174,20 +181,70 @@ def get_chain():
     try:
         data = request.get_json()
         
+        
+        logging.debug("\n\n\n EIMAI STO VALIDATE CHAIN BITCH")
+        logging.debug(type(data))
         logging.debug(data)
+        
+        # Access the blocks key in the data dictionary
+        blocks = data.get('blocks', [])
+        # Get the existing blockchain instance
+
+        # Iterate over each block
+        for block in blocks:
+            # Extract block attributes
+            index = block.get('index')
+            timestamp = block.get('timestamp')
+            previous_hash = block.get('previous_hash')
+            nonce = block.get('nonce')
+            capacity = block.get('capacity')
+            validator = block.get('validator')
+
+            # Access the transactions key in each block
+            transactions = block.get('transactions', [])
+
+            # Iterate over each transaction in the transactions list
+            for transaction in transactions:
+                # Extract transaction attributes
+                sender_address = transaction.get('sender_address')
+                receiver_address = transaction.get('receiver_address')
+                type_of_transaction = transaction.get('type_of_transaction')
+                amount = transaction.get('amount')
+                nonce = transaction.get('nonce')
+                message = transaction.get('message')
+                transaction_id = transaction.get('transaction_id')
+                signature = transaction.get('signature')
+                new_transaction = Transaction(sender_address, receiver_address, type_of_transaction, amount, message, nonce, transaction_id, signature)
+                # existing_blockchain.blocks[-1].add_transaction(new_transaction)
+
+                # Now you can modify these variables as needed
+                # For example, modify the amount of a transaction
+                # Print or use the modified variables as needed
+
+        new_blockchain = Blockchain()
+        node.blockchain = new_blockchain
+
+        new_block = node.create_block(index=index, previous_hash=previous_hash, validator=validator, capacity=capacity,timestamp=timestamp)
+        node.curr_block = new_block
+        node.curr_block.add_transaction(new_transaction)
+        node.blockchain.add_block(new_block)
+
+                    
+        logging.debug("\n\nExtract blockchain data from JSON")
 
         # TODO ftiajse to chain apo to data
         # TODO add the blocks in the data to the blockchain
 
-        chain = Blockchain.from_json(data)
-        logging.debug(chain.blocks[-1])
-        node.blockchain = chain
+        logging.debug(new_blockchain.blocks[-1])
         
-        node.validate_chain()
+        node.validate_chain() #FIXME δεν εχει κατι συγκεκριμενο απλα δεν ξερω τι κανει οποτε καποτε καποιο καλο κοριτσι να μ εξηγησει
         
+        
+
         return jsonify({"message": "Chain received successfully"}), 200
     except Exception as e:
         return jsonify({"error": str(e)}), 400
+     
      
 
 # Endpoint to create a transaction
