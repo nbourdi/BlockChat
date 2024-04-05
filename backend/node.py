@@ -114,7 +114,6 @@ class Node:
         data = {
             'blocks': blocks_json
         }
-        
         print("THE DATA SUPPOSED IS JSON")
         print(data) 
         print(type(data))
