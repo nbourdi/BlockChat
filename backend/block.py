@@ -1,4 +1,5 @@
 import hashlib
+import json
 import time
 
 from transaction import Transaction
@@ -18,28 +19,27 @@ Block
  '''
 class Block:
 
-    def __init__(self, index, previous_hash, validator, capacity):
+    def __init__(self, index, previous_hash, validator, capacity, current_hash):
         self.index = index # let genesis have index 0 
-        self.timestamp = time.time() # not necess
         self.transactions = []
         self.validator = validator
-        self.current_hash = None
-        self.nonce = None #TODO i dont think it needs nonce?
         self.previous_hash = previous_hash
         self.capacity = capacity  # i added this 
-        
+        self.current_hash = current_hash if current_hash else self.hash()
+
     def is_full(self):
-        print("block cap")
-        print(self.capacity)
+        # print("block cap")
+        # print(self.capacity)
         if len(self.transactions) < self.capacity:
             return False
         return True
     
     def add_transaction(self, transaction):
         self.transactions.append(transaction)
+        self.current_hash = self.hash()
 
     def hash(self):
-        block_string = f"{self.index}{self.timestamp}{self.transactions}{self.validator}{self.previous_hash}{self.capacity}{self.nonce}".encode()
+        block_string = f"{self.index}{self.transactions}{self.validator}{self.previous_hash}{self.capacity}".encode()
         return hashlib.sha256(block_string).hexdigest()
     
     def to_dict(self):
@@ -48,10 +48,18 @@ class Block:
             'previous_hash': self.previous_hash,
             'validator': self.validator,
             'capacity': self.capacity,
-            'transactions': self.transactions,
+            'transactions': [t.to_dict() for t in self.transactions],
             'current_hash': self.current_hash,
-            'nonce': self.nonce,
-            'timestamp': self.timestamp
+        }
+    
+    def to_json(self):
+        return {
+            'index': self.index,
+            'previous_hash': self.previous_hash,
+            'validator': self.validator,
+            'capacity': self.capacity,
+            'transactions': [t.to_json() for t in self.transactions],
+            'current_hash': self.current_hash,
         }
     
     # def from_dict(cls, block_dict):
@@ -76,16 +84,49 @@ class Block:
         )
         block.transactions = [Transaction(**tx) for tx in block_dict['transactions']]
         block.current_hash = block_dict['current_hash']
-        block.nonce = block_dict['nonce']
-        block.timestamp = block_dict['timestamp']
         return block
+    
+   
+    # @classmethod
+    # def from_json(cls, json_data):
+    #     block = cls(
+    #         json_data['index'],
+    #         json_data['previous_hash'],
+    #         json_data['validator'],
+    #         json_data['capacity'],
+    #         json_data['current_hash']
+    #     )
+    #     block.transactions = [Transaction(**tx) for tx in json_data['transactions']]
+    #     #block.current_hash = json_data['current_hash']
+    #     return block
     
     @classmethod
     def from_json(cls, json_data):
-        transactions = [Transaction.from_json(tx) for tx in json_data['transactions']]
-        return cls(
+        # print(f"Type of json_data: {type(json_data)}")
+        # print(f"Content of json_data: {json_data}")
+        
+        if isinstance(json_data, str):
+            json_data = json.loads(json_data)
+
+        block = cls(
             json_data['index'],
             json_data['previous_hash'],
             json_data['validator'],
-            json_data['capacity']
+            json_data['capacity'],
+            json_data['current_hash']
+        )
+        block.transactions = [Transaction(**tx) for tx in json_data['transactions']]
+        return block
+    
+    def __str__(self):
+        transaction_strings = [str(tx) for tx in self.transactions]
+        transactions_str = "\n    ".join(transaction_strings)
+        
+        return (
+            f"Block {self.index}:\n"
+            f"  Previous Hash: {self.previous_hash}\n"
+            f"  Validator: {self.validator}\n"
+            f"  Capacity: {self.capacity}\n"
+            f"  Transactions:\n    {transactions_str}\n"
+            f"  Current Hash: {self.current_hash}"
         )

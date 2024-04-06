@@ -61,15 +61,15 @@ class Transaction:
             transaction_type = "Transfer"
             details = f"Amount: {self.amount}"
 
-        transaction_data = [
-            ["Transaction Type", transaction_type],
-            ["Sender Address", self.sender_address],
-            ["Receiver Address", self.receiver_address],
-            [f"{transaction_type} Details", details],
-            ["Signature", self.signature.hex() if self.signature else 'Not signed yet']
-        ]
+        signature_status = 'Not signed yet' if self.signature is None else 'Signed'
 
-        return tabulate(transaction_data, tablefmt="fancy_grid")
+        transaction_str = f"Transaction Type: {transaction_type}\n"
+        transaction_str += f"Sender Address: {self.sender_address}\n"
+        transaction_str += f"Receiver Address: {self.receiver_address}\n"
+        transaction_str += f"{transaction_type} Details: {details}\n"
+        transaction_str += f"Signature: {signature_status}"
+
+        return transaction_str
 
     # def sign_transaction(self, private_key):
     #     private_key = RSA.import_key(private_key)
@@ -95,7 +95,7 @@ class Transaction:
         message = self._get_message_to_sign()
         h = SHA256.new(message)
         self.signature = pkcs1_15.new(private_key).sign(h)
-        print("Signed message: %s", self.signature.hex())  # Log the signed message
+       # print("Signed message: %s", self.signature.hex())  # Log the signed message
 
     def verify_signature(self):
         sender_public_key = RSA.import_key(self.sender_address)
@@ -127,6 +127,19 @@ class Transaction:
             'message': self.message,
             'transaction_id': self.transaction_id,
             'signature': self.signature
+        }
+        return transaction_dict
+    
+    def to_json(self):
+        transaction_dict = {
+            'sender_address': self.sender_address,
+            'receiver_address': self.receiver_address,
+            'type_of_transaction': self.type_of_transaction,
+            'amount': self.amount,
+            'nonce': self.nonce,
+            'message': self.message,
+            'transaction_id': self.transaction_id,
+            'signature': self.signature.hex() if isinstance(self.signature, bytes) else self.signature
         }
         return transaction_dict
 

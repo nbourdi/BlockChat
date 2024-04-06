@@ -36,16 +36,36 @@ def register_node1():
         'pub_key': node.wallet.public_key
     }
 
-    url = f'http://{bootstrap_ip}:{bootstrap_port}/register_node'
+    url = f'http://{bootstrap_ip}:{bootstrap_port}/get_id'
     response = requests.post(url, json=json_info)
     
     try:
         response.raise_for_status()  # Raise an error for bad responses
         response_data = response.json()
         node.id = int(response_data.get('id'))
-        print("Registration completed.")
+        print("Got id.")
+    except Exception as e:
+        print(f"Failed to get id for node: {e}")
+
+    json_info = {
+        'id': node.id
+    }
+    url = f'http://{bootstrap_ip}:{bootstrap_port}/register_node'
+    response = requests.post(url, json=json_info)
+    try:
+        response.raise_for_status()  # Raise an error for bad responses
+        response_data = response.json()
+        print("Registration complete")
     except Exception as e:
         print(f"Failed to register node: {e}")
+
+    print("number of blocks in blockchain")
+    print(len(node.blockchain.blocks))
+
+    for block in node.blockchain.blocks:
+        print(block.transactions[-1])
+        print(block.current_hash)
+        print(block.previous_hash)
 
 
 if __name__ == "__main__":

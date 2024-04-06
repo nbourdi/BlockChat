@@ -27,17 +27,12 @@ class Blockchain:
         blockchain.blocks = [Block.from_json(block) for block in json_data['blocks']]
         return blockchain
 
-
-#  TODO immed erwtisi: auto mipws einai gia to transaction class? to blockchain einai mono 1 opote de xreiazetai nonce (nat)
-    # def add_nonce(self, account_address, nonce):
-    #     if account_address not in self.nonce_history:
-    #         self.nonce_history[account_address] = set()
-    #     self.nonce_history[account_address].add(nonce)    
-
-    # def is_nonce_used(self, account_address, nonce):
-    #     return nonce in self.nonce_history.get(account_address, set())
     @classmethod
     def from_json(cls, json_data):
         blockchain = cls()
         blockchain.blocks = [Block.from_json(block) for block in json_data['blocks']]
         return blockchain
+
+    def __str__(self):
+        block_strings = [str(block) for block in self.blocks]
+        return "\n".join(block_strings)

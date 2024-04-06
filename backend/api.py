@@ -17,13 +17,9 @@ global global_node
 global_node = Node(1, 10)
 node = global_node
 
-
-# Endpoint to register a node, by bootstrap
-@api.route('/register_node', methods=['POST'])
-def register_node():
-    # Logic to register a node in the network
-
-    data = request.json  # This will contain the JSON data sent via POST
+@api.route('/get_id', methods=['POST'])
+def get_id():
+    data = request.json
     peer_ip = data.get('ip')
     peer_port = data.get('port')
     peer_pk = data.get('pub_key')
@@ -33,13 +29,23 @@ def register_node():
 
     # Add node in the list of registered nodes.
     node.add_peer(peer_id, peer_ip, peer_port, peer_pk, 0)
-    
+
+    response_data = {'message': "Node added successfully", 'id': peer_id}
+    return jsonify(response_data), 200
+
+# Endpoint to register a node, by bootstrap
+@api.route('/register_node', methods=['POST'])
+def register_node():
+    data = request.json
+    peer_id = data.get('id')
+
     # If all nodes have been added
     if peer_id == n:
         for peer in node.peers:
             if peer.id != node.id:
                 node.send_blockchain_to_peer(peer=peer)
                 node.send_peer_ring(peer) 
+        node.curr_block = None
         for peer in node.peers:
             if peer.id != node.id:
                 node.create_transaction(
@@ -48,28 +54,40 @@ def register_node():
                     amount=1000,
                     message=None
                 )
+                
+    logging.debug("line 52 blockchain at register, boot strap:")
+    logging.debug(node.blockchain)
 
-    return jsonify({'message': "Node added successfully", 'id': peer_id}), 200
+    return jsonify({"message": "Registered all nodes"}), 200
+
 
 @api.route('/money', methods=['GET'])
 def get_money():
     return jsonify({'balance': node.wallet.balance})
 
 # Endpoint to get a block
-@api.route('/validate_block', methods=['GET'])
+@api.route('/validate_block', methods=['POST'])
 def get_block():
 
     data = request.get_json()
-    inc_block = Block.from_dict(data['Block'])
+    logging.debug("line 65 api data for validate block:")
+    logging.debug(data)
+    inc_block = Block.from_json(data)
+
+    logging.debug("line 69 inc block index:::")
+    logging.debug(inc_block.index)
+    logging.debug(inc_block.validator)
 
     # may need lock logic
     if node.validate_block(inc_block):
+        logging.debug("validate block is true...")
         # theres def more to it?
         node.blockchain.add_block(inc_block)
         return jsonify({'message': 'Block added successfully'}), 200
 
     else: # block couldn't be validated
         # if conflict --> resolve conflict
+        logging.debug("validate block was false, line 81")
         return jsonify({
             'message': "Block invalid ... Rejected."
         }), 400
@@ -124,12 +142,12 @@ def get_ring():
         data = request.get_json()
 
         #logging.debug("Type of data: %s", type(data))  # Log the type of data
-        logging.debug("Data that I received:\n%s", data)  # Log the received data
+        #logging.debug("Data that I received:\n%s", data)  # Log the received data
         data = json.loads(data)
         
         peers = [Peer(item['id'], item['ip'], item['port'], item['public_key'], item['balance']) for item in data]
         
-        print(peers)
+        #print(peers)
 
         for peer in peers:
             node.add_peer_obj(peer)
@@ -173,19 +191,14 @@ def get_ring():
 def get_chain():
     try:
         data = request.get_json()
-        
-        logging.debug(data)
-
-        # TODO ftiajse to chain apo to data
-        # TODO add the blocks in the data to the blockchain
 
         chain = Blockchain.from_json(data)
-        logging.debug(chain.blocks[-1])
         node.blockchain = chain
+        logging.debug("line 187 chain that i validate:")
+        logging.debug(chain)
         
-        node.validate_chain()
-        
-        return jsonify({"message": "Chain received successfully"}), 200
+        if node.validate_chain():
+            return jsonify({"message": "Chain received successfully"}), 200
     except Exception as e:
         return jsonify({"error": str(e)}), 400
      

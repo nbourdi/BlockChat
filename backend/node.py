@@ -43,8 +43,9 @@ class Node:
         self.nonce += 1 #added this (athina)
         trans = Transaction(self.wallet.public_key, receiver_address, type_of_transaction, amount, message, self.nonce) #added the nonce attribute (athina)
         trans.sign_transaction(self.wallet.private_key)
-        self.add_to_block(trans)
         self.broadcast_transaction(trans)
+        self.add_to_block(trans)
+        
 
 
     def stake(self, stake_amount): 
@@ -73,13 +74,25 @@ class Node:
         # validate the previous hash and check validity of current hash
         # TODO last prior εχει και αλλο εδω Επαληθεύεται ότι (a) ο validator είναι πράγματι ο σωστός (αυτός που υπέδειξε η κλήση της
         # ψευδοτυχαίας γεννήτριας)
+        print("BLOCK INCOMING\n\n\n")
+        print(block)
+        print("BLOCK CURRENT \n\n\n")
+        print(self.curr_block)
+        print("PLEASE PLEASEEEEE")
+        print("previous and current hash of inc block line 77 node")
+        print(block.previous_hash)
+        print(block.current_hash)
+        print("prev and curr hashes as calculated by self")
+        print(self.blockchain.blocks[-1].current_hash)
+        print(block.hash())
+
+
         if block.previous_hash == self.blockchain.blocks[-1].current_hash and block.current_hash == block.hash():
             return True
         return False
     
     def validate_chain(self):
         previous_block = None
-
 
         for block in self.blockchain.blocks:
             if block.index == 1:
@@ -95,20 +108,26 @@ class Node:
         blocks_json = []
         for block in self.blockchain.blocks:
             transactions = [tx.to_dict() for tx in block.transactions]
+            # print("line 98")
+            # print(transactions)
             block_data = {
                 'index': block.index,
-                'timestamp': block.timestamp,
                 'transactions': transactions,
                 'previous_hash': block.previous_hash,
-                'nonce': block.nonce,
                 'capacity': block.capacity,
-                'validator': block.validator
+                'validator': block.validator,
+                'current_hash': block.current_hash
             }
             blocks_json.append(block_data)
+
+        # print("block_data:")
+        # print(block_data)s
 
         data = {
             'blocks': blocks_json
         }
+        # print("data")
+        # print(data)
 
         address = f"http://{peer.ip}:{peer.port}/validate_chain"
         res = requests.post(address, json=data)
@@ -125,16 +144,16 @@ class Node:
     def add_peer_obj(self, peer: Peer):
         self.peers.append(peer)
 
-    def create_block(self, index, previous_hash, validator, capacity): #TODO
+    def create_block(self, index, previous_hash, validator, capacity, current_hash): #TODO
         # I'm creating and adding a new block to the blockchain (Anast)
         if len(self.blockchain.blocks) == 0:
             #genesis block of the chain
             index = 0
             previous_hash = 1
             validator = 0
-            self.curr_block = Block(index, previous_hash, validator, capacity)
+            self.curr_block = Block(index, previous_hash, validator, capacity, current_hash=None)
         else:
-            self.curr_block = Block(index, previous_hash, validator, capacity ) #None values for the time being, gotta check the mining mathod -Anastasia | filled (Nat)
+            self.curr_block = Block(index, previous_hash, validator, capacity, current_hash=None) #None values for the time being, gotta check the mining mathod -Anastasia | filled (Nat)
 
         return self.curr_block
 
@@ -143,21 +162,26 @@ class Node:
         #use: need to know who's gonna validate the next block
         #PoS: valivator is based on the ammount of cryptocurrency 
         #method in order to bind the ammount it wants from its wallet 
-       
-        
+
         validator = -1 # no one validates
         stake_sum = self.stake
+        print("my stake")
+        print(self.stake)
 
         for peer in self.peers:
-            stake_sum += peer.stake
+            if peer.id != self.id:
+                stake_sum += peer.stake
         
         share_offset = 0
         for peer in self.peers:
             peer.stake_share = [share_offset, peer.stake / stake_sum + share_offset]
-            share_offset += peer.stake
+            share_offset += peer.stake_share[1]
+            print(f"peer id: {peer.id}, stake_share: {peer.stake_share}")
 
         #  the seed is the hash of the previous block
-        seed_hex = self.blockchain.blocks[-1].hash()
+        #seed_hex = self.blockchain.blocks[-1].hash()
+        seed_hex = self.blockchain.blocks[-1].current_hash
+
         seed = int(seed_hex, 16)  # convert to int
 
         random_generator = random.Random()
@@ -169,10 +193,12 @@ class Node:
         print("the rand number is")
         print(rand)
         for peer in self.peers:
+
             if peer.stake_share[0] <= rand < peer.stake_share[1]:
                 validator = peer.id
                 break
-
+        
+        self.curr_block.validator = validator
         # if i win, i mint
         if validator == self.id:
             print("won the competition, attempting mint,,,")
@@ -208,17 +234,26 @@ class Node:
         # curr_block should be None unless there is an error thinking of it, should set back to None once its broadcasted 
         
         if self.curr_block == None:
-            self.create_block(index=self.blockchain.blocks[-1].index + 1, previous_hash=self.blockchain.blocks[-1].hash, validator=-1, capacity=self.capacity) # TODO capacity here arbitrary
+            print("CURR BLOCK IS NONE 230")
+            print(self.blockchain.blocks[-1])
+            self.curr_block = self.create_block(index=self.blockchain.blocks[-1].index + 1, previous_hash=self.blockchain.blocks[-1].current_hash, validator=-1, capacity=self.capacity) # TODO capacity here arbitrary
 
-        self.curr_block.current_hash = self.curr_block.hash()
+        # print("type of curr block 222 node")
+        # print(type(self.curr_block))
+        self.curr_block.current_hash = self.curr_block.hash() 
 
         transactions = self.q_transactions
+        print(transactions)
 
-        for t in transactions:
-            self.curr_block.add_transaction(t)
+        print(self.curr_block) 
+        # for t in transactions:
+        #     self.curr_block.add_transaction(t)
+
+        # print(self.curr_block)
 
         # TODO last prior maybe we should have the minter validate his own block or is that redundant like
             # self.validate_block(curr_block ..)
+
 
         self.broadcast_block(self.curr_block)
         self.curr_block = None
@@ -226,19 +261,23 @@ class Node:
     # mostly done? are threads necess?, all error handling, get responses?
     def broadcast_block(self, block):
 
-        # data = {'Block': block.to_dict()}
-        block_json = json.dumps(block.to_dict())
+        block_json = json.dumps(block.to_json())
+        
 
-        # send to every node in peers[]
+        # print("block_json line 232 node")
+        # print(block_json)
+
+        # send to every node in peers[]a
         for peer in self.peers:
-            address = 'http://' + peer.ip + ':' + peer.port + '/validate_block'
+            if peer.id != self.id:
+                address = 'http://' + peer.ip + ':' + peer.port + '/validate_block'
 
-            res = requests.post(address, block_json)
+                res = requests.post(address, json=block_json)
 
-            if res.status_code == 200:
-                print(f"Block sent to peer with id = {peer.id}")
-            else:
-                print(f"Error sending to peer with id = {peer.id}")
+                if res.status_code == 200:
+                    print(f"Block sent to peer with id = {peer.id}")
+                else:
+                    print(f"Error sending to peer with id = {peer.id}")
 
     def broadcast_transaction(self, trans): 
         # """Εκπέμπει τη συναλλαγή σε όλα τα peer."""
@@ -269,6 +308,8 @@ class Node:
         if transaction.verify_signature() == False:
             print("verify sig is false")
             return False
+        print("signature verified.")
+        return True
         #TODO high priority ! we also need to check for sufficient funds considering stake too
         
 
@@ -277,11 +318,16 @@ class Node:
         self.validate_transaction(transaction)
         
         if self.curr_block == None: # this only happens when freshly created, right after genesis block?? are you sure
-            self.curr_block = self.create_block(index=self.blockchain.blocks[-1].index + 1, previous_hash=self.blockchain.blocks[-1].hash, validator=self.id, capacity=self.capacity)
+            print("HIIIIIIIIIIII JJJJJJJJJJJJ \n\n\n\n\n\n")
+            print(self.blockchain.blocks[-1].current_hash)
+            print(self.id)
+            self.curr_block = self.create_block(index=self.blockchain.blocks[-1].index + 1, previous_hash=self.blockchain.blocks[-1].current_hash, validator=-1, capacity=self.capacity, current_hash=None)
+            print("validator 317 node " )
+            print(self.curr_block.validator)
 
         # check first if self is involved in the transaction
 
-        print(self.wallet.public_key)
+       # print(self.wallet.public_key)
         if (transaction.receiver_address == self.wallet.public_key):
             self.wallet.balance += transaction.amount
         if (transaction.sender_address == self.wallet.public_key):
@@ -347,6 +393,7 @@ class Node:
     def view_block(self):
         last_block = self.blockchain.blocks[-1]
         return {"validator": last_block.validator, "transactions": last_block.transactions}
+    
 
 
         
