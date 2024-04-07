@@ -51,11 +51,17 @@ if __name__ == "__main__":
         app.run(host=bootstrap_ip, port=bootstrap_port)
         # set the bootstrap id
 
-        for block in node.blockchain.blocks:
-           # print("ITERATE\n\n")
-            #print(block.transactions[-1].amount)
-            print(block.current_hash)
-            print(block.previous_hash)
+        # for block in node.blockchain.blocks:
+        #    # print("ITERATE\n\n")
+        #     #print(block.transactions[-1].amount)
+        #     print(block.current_hash)
+        #     print(block.previous_hash)
         # we are bootstrap
+    print("\nBlockchain that ive validated\n")
+    for block in node.blockchain.blocks:
+        print(block)
+
+    print("\ncurr block\n")
+    print(node.curr_block)
         
     main()

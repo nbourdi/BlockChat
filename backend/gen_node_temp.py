@@ -59,18 +59,9 @@ def register_node1():
     except Exception as e:
         print(f"Failed to register node: {e}")
 
-    print("number of blocks in blockchain")
-    print(len(node.blockchain.blocks))
-
-    for block in node.blockchain.blocks:
-        print(block.transactions[-1])
-        print(block.current_hash)
-        print(block.previous_hash)
 
 
 if __name__ == "__main__":
-    app.logger.debug("im node1 test temp")
-
 
     # Start a new thread for registering the node if registration is not completed
     if not registration_completed:
@@ -78,3 +69,10 @@ if __name__ == "__main__":
         registration_thread.start()
 
     app.run(host="127.0.0.1", port=5001)
+
+    print("\nBlockchain that ive validated\n")
+    for block in node.blockchain.blocks:
+        print(block)
+
+    print("\ncurr block \n")
+    print(node.curr_block)

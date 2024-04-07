@@ -39,8 +39,14 @@ class Block:
         self.current_hash = self.hash()
 
     def hash(self):
-        block_string = f"{self.index}{self.transactions}{self.validator}{self.previous_hash}{self.capacity}".encode()
-        return hashlib.sha256(block_string).hexdigest()
+        block_string = json.dumps({
+            'index': self.index,
+            'previous_hash': self.previous_hash,
+            'validator': self.validator,
+            'capacity': self.capacity,
+            'transactions': [t.to_json() for t in self.transactions]
+        }, sort_keys=True)
+        return hashlib.sha256(block_string.encode()).hexdigest()
     
     def to_dict(self):
         return {
@@ -119,7 +125,7 @@ class Block:
         return block
     
     def __str__(self):
-        transaction_strings = [str(tx) for tx in self.transactions]
+        transaction_strings = [str(tx.amount) for tx in self.transactions]
         transactions_str = "\n    ".join(transaction_strings)
         
         return (

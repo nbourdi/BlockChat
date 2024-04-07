@@ -11,10 +11,10 @@ from transaction import Transaction
 logging.basicConfig(filename='record.log', level=logging.DEBUG)
 
 api = Blueprint('api', __name__)
-n = 2
+n = 3
 
 global global_node
-global_node = Node(1, 10)
+global_node = Node(2, 10)
 node = global_node
 
 @api.route('/get_id', methods=['POST'])
@@ -48,6 +48,7 @@ def register_node():
         node.curr_block = None
         for peer in node.peers:
             if peer.id != node.id:
+                logging.debug("\n\n ====================== CREATING REG TRANSACTION............")
                 node.create_transaction(
                     receiver_address=peer.public_key,
                     type_of_transaction="coins",
@@ -83,6 +84,8 @@ def get_block():
         logging.debug("validate block is true...")
         # theres def more to it?
         node.blockchain.add_block(inc_block)
+        node.reward(inc_block.validator)
+        node.curr_block = None
         return jsonify({'message': 'Block added successfully'}), 200
 
     else: # block couldn't be validated
