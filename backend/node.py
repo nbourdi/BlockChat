@@ -1,11 +1,13 @@
 import base64
 import json
+import threading
 
 import random
 from transaction import Transaction
 from wallet import Wallet
 from blockchain import Blockchain
 from block import Block
+from client import CLI
 import requests
 import logging
 
@@ -26,7 +28,7 @@ class Peer: # helper class, to represent peer node data
 
 class Node:
 
-    def __init__(self, capacity, stake):
+    def __init__(self, capacity, stake, ip, port):
         self.id = None  # node's index/id
         self.wallet = Wallet()
         self.blockchain = Blockchain()
@@ -37,6 +39,9 @@ class Node:
         self.q_transactions = [] # list of transactions in queue that belong to the current block #TODO maybe this is a little awkward i only use this for rewards
         self.capacity = capacity 
         self.stake = stake 
+        self.cli = CLI(ip, port)
+        cli_thread = threading.Thread(target=self.cli.start, args=())
+        cli_thread.start()
 
         
     def create_transaction(self, receiver_address, type_of_transaction, amount, message):
@@ -47,7 +52,7 @@ class Node:
         self.broadcast_transaction(trans)
 
 
-    def stake(self, stake_amount): 
+    def stake_function(self, stake_amount): 
         # transaction με receiver_address = 0 και το ποσο που θλει να δεσμευσει ο καθε κομβος
         
         if self.balance < stake_amount:

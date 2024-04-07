@@ -1,9 +1,17 @@
 import sys
 sys.path.append('../')
 from backend.node import Node
+import requests
+
+
+
+
+
 
 # TODO low priority magic to point to the right thing, 
 node = Node()
+
+
 
 class CLI:
     def __init__(self):

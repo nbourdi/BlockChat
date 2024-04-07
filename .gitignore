@@ -2,3 +2,5 @@ venv/
 .vscode/
 menv/
 myenv/
+distributed/
+__pycache__/

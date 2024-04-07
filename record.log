@@ -1306,3 +1306,1511 @@ wbiS9P8LdnJQ38x8NsZV4Slk35jURXyh3ty+uNo+uQUMISOorV4Lpgdduw8eL1/j
 5wIDAQAB
 -----END PUBLIC KEY-----
 DEBUG:genesis:Node Blockchain Length: 1
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 121-479-881
+INFO:werkzeug: * Detected change in '/home/anastasia/Desktop/las gafas moradas/BlockChat/backend/genesis.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 121-479-881
+INFO:werkzeug: * Detected change in '/home/anastasia/Desktop/las gafas moradas/BlockChat/backend/client.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 121-479-881
+DEBUG:genesis:Node ID: 1
+DEBUG:genesis:Node Wallet Public Key: -----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA57UrFVqQabtDLUe9AbtL
+nPPSABndI7CftOainA4ULGL266rENtim3HzI183UTFNg11r0TBbhZ3d9apIdTiA8
+xN5MjKEaqydWN8L4p92aku91gOWPTjpqyoX0/VcsIpz6+LtOgp3GzKOsHLhkZ4DK
+Ky0GJP6nOxViPSfqJnA3wQfQR+DYTkEWoMVkGTNtsn0mUgBVkCjQU8e5x7EM/US8
+66QJe1dDbR0qIWl1VUeqmtBpRfrLOap+y6q6IrySSQl2CyqjxMrd02ZlFjhNRKoQ
++oROADBvfEcFYzaELiv2wlnPxViWT2hO+fy++BDkWm4/VZT9/7qLQKy7k3T0ubRt
+JQIDAQAB
+-----END PUBLIC KEY-----
+DEBUG:genesis:Node Blockchain Length: 1
+DEBUG:genesis:Node ID: 1
+DEBUG:genesis:Node Wallet Public Key: -----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAw0ZjugwTXa0MwQrIvC+O
+3jrEsp6hZ8afdryjBu3Wov1W2MD4qd0T1oK1bQT/NBqChqUp/YCvEQt7aGkzGSUS
+Y3NKpsx3zWe4zJckua4LDP/93fd5J+jSQ8bRxubH0bILftI2tqLlNiZMo1gEzM5n
+7YN5fj8wSXnNVr2vBx/MPfWGV+ib+2cZlej5SG7D9Ofdo3D8qLlDtToiXRhGMjMj
+yEdX+GwO00BnP6GiyMUc+HbeYZ0SmHW5bfS5wNHpYD/oJO6s5busbuUDKZBo72Qm
+Qs4GJsa9Eul6cVSHnTt8uGz9L50jnxORt8WHKKkoxSumcKtJbSsaqNKHYndq+HPV
+RwIDAQAB
+-----END PUBLIC KEY-----
+DEBUG:genesis:Node Blockchain Length: 1
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 121-479-881
+INFO:werkzeug: * Detected change in '/home/anastasia/Desktop/las gafas moradas/BlockChat/backend/client.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 121-479-881
+DEBUG:genesis:Node ID: 1
+DEBUG:genesis:Node Wallet Public Key: -----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAylC9MvWeLomuuY6QSQY+
+0ACO7UDzy1hrxZfmts49UCAPUfF3C/WpC/TQUCpMSBn+5lQf518C8VV5dSrYyM2J
+23D4evnWzhyJxQHTmsuwlc/GOB6G7U4n5qFzV/id/uM8ZVxoiCMIHrM0GX7cdq8x
+l/vAWMRCSMrTvLCnA+nTFNfaMGQhk6M752VRWEBJwtx+ohqOP1Hr3i2mIFPzQ1CW
+vTbfip5X62il31J+8TOItAf+0NcxMHRc8HbibNdTWKxmVmQbzewOIQNxgsvwqGvm
+jnGcrXr8wvlrsalPN97UsFFwR34kYwhDm9PiRlT8H95B/w0iPtuKzFdT8Aljaua9
+mQIDAQAB
+-----END PUBLIC KEY-----
+DEBUG:genesis:Node Blockchain Length: 1
+DEBUG:genesis:Node ID: 1
+DEBUG:genesis:Node Wallet Public Key: -----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAqcT4wYubrhlMa2f9n/76
+ksvRs8MWf0uTNfeyoG5Znjq/PyyNwwdOF7CM4iAhhA4d0u25ecMGAaFFAvwtHPIR
+Edly+GIVDM9S5Yei+a911sR6jxAvBagHHH17m1muHKS//VvTb1rA4HhbNPsRQk9c
+zeQQHU/pe2J2FhJl/eFqhyQISpx7hjoY9XoWz6BGPt5xOvWNedKaqrMPcJxHel12
+fgLXL5HI3b39GCLwCTYyk+fKhNgYqRFsRWTvOAQmtsbuvOIhHKMTw0s3dQeX53S6
+FyqLKSJru9LxK/6HewsTspNcanfs5qJmrQ/JqXGkF2vokS3lMSlNavBnvig3w0pt
+MwIDAQAB
+-----END PUBLIC KEY-----
+DEBUG:genesis:Node Blockchain Length: 1
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 121-479-881
+INFO:werkzeug: * Detected change in '/home/anastasia/Desktop/las gafas moradas/BlockChat/backend/genesis.py', reloading
+INFO:werkzeug: * Restarting with stat
+DEBUG:genesis:Node ID: 1
+DEBUG:genesis:Node Wallet Public Key: -----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp0hhZohmeTNDKJJ7auMS
+3JoxQLuS7KDovkrV0fvH/q6wp48Px6vv8PA/N5aFhEyXOqX/E5K+5fFeWOb2Sj3+
+dYq+WQCvwt3lwZgqaaz2bjTN+dGuCFvMrqaGdY8SRGgwom5Xe+2jlS5/q2aXrhNB
+IeUenH1zt7oVcYsp/ZiCOwTtZV9cOQR2PWbiRENgADxvF+IeSwRuRpXCQll+1ygD
+dBY8G3PnfEC67peu+PqmnXCjoitgA75p+Io9VVhZeNaHKKqcVjiKNBj0bQZhxGA7
+FGPrWWs/tKzwbvfQujYfaUZ9xhhW/Hqwkwb0X29noCa3borWwBfpKsyBX/ZNoUm3
+tQIDAQAB
+-----END PUBLIC KEY-----
+DEBUG:genesis:Node Blockchain Length: 1
+DEBUG:genesis:Node ID: 1
+DEBUG:genesis:Node Wallet Public Key: -----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAh+UVR91BVWMqCtaHyogn
+eR7wPLzZpa0yb3qDFQ2NEHOtBg9Jeghmy7KSCqP8BkWlCvqIZX9hxKTckgj/gTMh
+AURjTMI/VOKNpig9v7gNLQ5VuaYWuOnICq2QJEoS159S0gMTSVh+fBkfo2POAiD1
+7rQxdxlb5am0eenNN8auK1BFjbjAfLmEd9LVtzq1oEfpTnQ4+wx3xo21Dw25ZRLe
+yMWX8mwBL5TPY/b8TbWaVIaBMnVyZES1HI+kpRGFpUjoK6o7Lu4r9GXjtvptKoC2
+fGo+DSxtlzaNtj9Iw3+4ByX1GrYsXOCG257coi3kpPjRdhk7j/A9Bz1BgqAcc0Zl
+gQIDAQAB
+-----END PUBLIC KEY-----
+DEBUG:genesis:Node Blockchain Length: 1
+DEBUG:genesis:Node ID: 1
+DEBUG:genesis:Node Wallet Public Key: -----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEApDfpEC/OAZMQqJKjB7ii
+aMflH6SqeZSUoQO8TFMBpkHWeWNG2gUuRyAEcmmlQTJy5JXsT5QcQqZ5Z86u0x2K
+azbiCU8SS8Zl79t89eeunxXYqSMp+qh/3UovUUN4OgvgyVoNclWHH9UYLGAXzafu
+NQ8SEndWqMZWnXZGU7l3z+akwoJntVrtZvTZQmzz8zj6SVe3e+CB45XvrLyR0bm8
+NCALw+9RnX2vvjgpdZ6NoDRJ9dPDCd5r7WtrX/qWsEy584k1eE85PgzBuKqXRnY7
+r09N/XM8uBLz80fZTJcv4emm+ErX30TZj9k3DhESGFMUiQDosX4kUltEATmpp7zF
+qQIDAQAB
+-----END PUBLIC KEY-----
+DEBUG:genesis:Node Blockchain Length: 1
+DEBUG:genesis:Node ID: 1
+DEBUG:genesis:Node Wallet Public Key: -----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAvh83vBh3TIWhrwRidwvy
+dV0IxFfT3tRNgfbpepxf+1cMw+TwO1g58qCwirkFhKC4Y4iwlSqew/yhzyU4p4wq
+nKcIE1syVBMKjCXFSpMuUXNtvoKtfQdm3EfszUhO1bZXjD9YkHcgxEem6LEBT2iQ
+FB6OAOwY6sJ4V8k3vbyn/5sJ92JNvm995s5GMH609y4FdT6gSDK62vUO+yyAxDSg
+2VOM2J1/ZTYrQmXUv/dhkQ9arNcDljNsCf04gBpQ7TTFata5Axqm7eq6I3IcLZFz
+fAfdoxLVVFn9oOvnXiw+9Qeo/PEXzsXhjk420c77C50ucZDuXSP9GPX3Lhw555A9
+WQIDAQAB
+-----END PUBLIC KEY-----
+DEBUG:genesis:Node Blockchain Length: 1
+DEBUG:genesis:Node ID: 1
+DEBUG:genesis:Node Wallet Public Key: -----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAvBem/gVyxVm78/qQbSOS
+kuNF6mx9GPD6pckgbbIRrQeEWat8r2CBtui5gqHvjVKwwwqsTideuIHbyE4fP5p4
+t9KL5smvqB/FcMtHeb+5N27O4vUU3Zaf7lkD+2mx4VRqbRQSiILFrB5DLDEo2o1V
+GljHnMH9K6vErD11FwYSky7XFtqtURIu8TI0jN7Aiu6rbVD9bclz5Uc09jF1Y3jq
+HLyPFRxnehr0LoaqqkxVRtjFFGaBFMUImhcTWyG9oLtJJz05/RbOErtUMlxHYGey
+9RQqGTTFlBVt5GokgS7Q1k/4rvtUJDLKDnoPQHccA6LHDR5pArXYAeuVDXAaQ3qu
+swIDAQAB
+-----END PUBLIC KEY-----
+DEBUG:genesis:Node Blockchain Length: 1
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+DEBUG:genesis:Node ID: 1
+DEBUG:genesis:Node Wallet Public Key: -----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAxMgTD9CImYCkp079BWmb
+1gzD4kaxbZvwyfhCRjy2U78dI0TfJmPVXIuCVZJ628x87xZIcXOjAtYQND373Pvs
+gg3r0AB+dfBMnOxvKWhISmynqF0X1aTzET4ogwDjW4FAB4gGsNP5m77EyzvdDxrG
+B509jD7Nial313nPntR6Od6aZP4iLrPybq7dEzW40YwMFEAKKMuY46+14AG0KaF8
+jG03undEwc8h8WiI0cV+h0oTxZ5h0m7i8q1MSBT8SDcoVAEMZVl687J2ZJmV0bae
+oGRJhAvF5yqgudZNdF6TMyBz/iQ+3YOo14jJhGdLVP4KLDxT+a0S4QVAJCVpnMLM
+MwIDAQAB
+-----END PUBLIC KEY-----
+DEBUG:genesis:Node Blockchain Length: 1
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 121-479-881
+INFO:werkzeug: * Detected change in '/home/anastasia/Desktop/las gafas moradas/BlockChat/backend/node.py', reloading
+INFO:werkzeug: * Restarting with stat
+DEBUG:genesis:Node ID: 1
+DEBUG:genesis:Node Wallet Public Key: -----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAvBem/gVyxVm78/qQbSOS
+kuNF6mx9GPD6pckgbbIRrQeEWat8r2CBtui5gqHvjVKwwwqsTideuIHbyE4fP5p4
+t9KL5smvqB/FcMtHeb+5N27O4vUU3Zaf7lkD+2mx4VRqbRQSiILFrB5DLDEo2o1V
+GljHnMH9K6vErD11FwYSky7XFtqtURIu8TI0jN7Aiu6rbVD9bclz5Uc09jF1Y3jq
+HLyPFRxnehr0LoaqqkxVRtjFFGaBFMUImhcTWyG9oLtJJz05/RbOErtUMlxHYGey
+9RQqGTTFlBVt5GokgS7Q1k/4rvtUJDLKDnoPQHccA6LHDR5pArXYAeuVDXAaQ3qu
+swIDAQAB
+-----END PUBLIC KEY-----
+DEBUG:genesis:Node Blockchain Length: 1
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 90:10
+DEBUG:genesis:Node ID: 1
+DEBUG:genesis:Node Wallet Public Key: -----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAxCEXOhDg4KGLQ7rJente
+Tgr5dE/uX7Cv1No9OieM/B9SMCgp8xtgjdFsuPd4y5WdwML7k2B+ZQKdrnM/9/Ts
+n+8A0eGP94m0Ez1kTC8f1HeEJb47UghuWeqMVnFnd45c0FpKuTvacfLXlgmQeUv9
+fqzd1znb+Nu2+Ct4jDJqS1g6K8fRBbKSpOIqvoSbC5HAo6YTFdrla6l9b13ON3lF
+nDeTdl+P82Ip2buGDfDJidXyJkmy7iW/57pFCjkAQ4ss56vfNzDjnQR4XSZPE+Xg
+9iKC4LLT0HkuOe8BsOKHcv69xMf5ewpXkmiCsEJ17wSjXOQpAxyaOv9BKL8achQO
+LQIDAQAB
+-----END PUBLIC KEY-----
+DEBUG:genesis:Node Blockchain Length: 1
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+DEBUG:genesis:Node ID: 1
+DEBUG:genesis:Node Wallet Public Key: -----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAwaSlLpEtFOVFX0QUwO8g
+CMsdiyPBxEnYtU6XK5fS9I32xcLYq2P7/FcH6gJurQHPB29eJcKp7YG+NezVQm60
+UXL+U63O9y5BELvc3RWP0DdYHzO9GZtmNp/3dukSDzx2V/EN3ntvyY0amSpP54Gm
+1OWGXoZVvAomC0yJR1/YTO1PBCmxsJmBDOg+ajC91KQkbWErj/5NfKFlYqnkPako
+xbZWh4vKZutHfdZow4qNtbKPq2z8jVdGR4wlrI289Euz879Q/+4DLMaD+nhzRb2Q
+i4RXLBYPr0WuSBghORTu/l6EFSSv0AFwDws4Inv08yCdthq6aT3e7W+HMBlqR3st
+vQIDAQAB
+-----END PUBLIC KEY-----
+DEBUG:genesis:Node Blockchain Length: 1
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 121-479-881
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 90:10
+DEBUG:genesis:Node ID: 1
+DEBUG:genesis:Node Wallet Public Key: -----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAwaSlLpEtFOVFX0QUwO8g
+CMsdiyPBxEnYtU6XK5fS9I32xcLYq2P7/FcH6gJurQHPB29eJcKp7YG+NezVQm60
+UXL+U63O9y5BELvc3RWP0DdYHzO9GZtmNp/3dukSDzx2V/EN3ntvyY0amSpP54Gm
+1OWGXoZVvAomC0yJR1/YTO1PBCmxsJmBDOg+ajC91KQkbWErj/5NfKFlYqnkPako
+xbZWh4vKZutHfdZow4qNtbKPq2z8jVdGR4wlrI289Euz879Q/+4DLMaD+nhzRb2Q
+i4RXLBYPr0WuSBghORTu/l6EFSSv0AFwDws4Inv08yCdthq6aT3e7W+HMBlqR3st
+vQIDAQAB
+-----END PUBLIC KEY-----
+DEBUG:genesis:Node Blockchain Length: 1
+DEBUG:genesis:Node ID: 1
+DEBUG:genesis:Node Wallet Public Key: -----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAxCEXOhDg4KGLQ7rJente
+Tgr5dE/uX7Cv1No9OieM/B9SMCgp8xtgjdFsuPd4y5WdwML7k2B+ZQKdrnM/9/Ts
+n+8A0eGP94m0Ez1kTC8f1HeEJb47UghuWeqMVnFnd45c0FpKuTvacfLXlgmQeUv9
+fqzd1znb+Nu2+Ct4jDJqS1g6K8fRBbKSpOIqvoSbC5HAo6YTFdrla6l9b13ON3lF
+nDeTdl+P82Ip2buGDfDJidXyJkmy7iW/57pFCjkAQ4ss56vfNzDjnQR4XSZPE+Xg
+9iKC4LLT0HkuOe8BsOKHcv69xMf5ewpXkmiCsEJ17wSjXOQpAxyaOv9BKL8achQO
+LQIDAQAB
+-----END PUBLIC KEY-----
+DEBUG:genesis:Node Blockchain Length: 1
+DEBUG:genesis:Node ID: 1
+DEBUG:genesis:Node Wallet Public Key: -----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAi+hhGNEYJbqQcfM0bmC0
+HFLmusUnpslj4393pE45le1Kf7KmlWZTRu7kUxKlsBrS/Kl5LGcC4IlKqoa3KfBp
+3ZBpxePyMAeb/kcxWlqN8BjPh+7cfJA7sKfyrOwYvGxf7c1SJ+o6iLffovytbg7i
+5meooWdxn9EpFcUKkSOeDnf7CSQEwTBkf1kxlWR3apln9quZqf4g3sK7Df2Qbbur
+iKp9xu8V0JB499nqylVWBH44BQghabvlSxJ5q8W8zoqQxyB82bVXx+6ZmogigvTm
+bRErZdrEoWOB6GLvsT+IzyNhw+w/L9Rp2RU675Mf170GyZLsK3FzWkqO8WnQF4iz
+9QIDAQAB
+-----END PUBLIC KEY-----
+DEBUG:genesis:Node Blockchain Length: 1
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+DEBUG:genesis:Node ID: 1
+DEBUG:genesis:Node Wallet Public Key: -----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA9sdN8f2P6quJnKehYzDb
+7ZjOnQGubbSN6NkUBTIN3UoqEMh+tpHv+tF3yZSm2Vi9k+qLIZez2B02Yag38LOT
+HREb5nJ4icgFlHtokO2wujoHNM2lZJx8CWgRw57v8qB8ETsWSLNId7mQIaj5dTbP
+X3pLTWpvrxEpucytUXpR3yFzvibE13e9B3kjtYC1ThzLY2D1zvQWv08ClFmRCcgz
+8SdcBKBRmzhWEauJ5TCb0MUY0o6xh3gf2vmoEffcp3aAWcDKVj3zo2jktGHdV4en
+QU7wP8lgcCfx1cK7MOOGH3nDZ6NLzPlvjdBcfNPVTm8Mb6b5wb/aZ4IfByZc0qKp
+jQIDAQAB
+-----END PUBLIC KEY-----
+DEBUG:genesis:Node Blockchain Length: 1
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 121-479-881
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 90:10
+INFO:werkzeug:127.0.0.1 - - [06/Apr/2024 23:38:12] "GET /money HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Apr/2024 23:38:12] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [06/Apr/2024 23:38:32] "GET /money HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Apr/2024 23:38:32] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Detected change in '/home/anastasia/Desktop/las gafas moradas/BlockChat/backend/client.py', reloading
+DEBUG:genesis:Node ID: 1
+DEBUG:genesis:Node Wallet Public Key: -----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAi+hhGNEYJbqQcfM0bmC0
+HFLmusUnpslj4393pE45le1Kf7KmlWZTRu7kUxKlsBrS/Kl5LGcC4IlKqoa3KfBp
+3ZBpxePyMAeb/kcxWlqN8BjPh+7cfJA7sKfyrOwYvGxf7c1SJ+o6iLffovytbg7i
+5meooWdxn9EpFcUKkSOeDnf7CSQEwTBkf1kxlWR3apln9quZqf4g3sK7Df2Qbbur
+iKp9xu8V0JB499nqylVWBH44BQghabvlSxJ5q8W8zoqQxyB82bVXx+6ZmogigvTm
+bRErZdrEoWOB6GLvsT+IzyNhw+w/L9Rp2RU675Mf170GyZLsK3FzWkqO8WnQF4iz
+9QIDAQAB
+-----END PUBLIC KEY-----
+DEBUG:genesis:Node Blockchain Length: 1
+DEBUG:genesis:Node ID: 1
+DEBUG:genesis:Node Wallet Public Key: -----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAuaCoU8wE/dGjT4lDdG8D
+ORidfVFF5GWSx/xBEN7Y9c0Yvv8VzoJ1zI8bcsXrEjqq+pde9fO6QbW0i6d8fGr/
+oa0AXbEJ7PVgWMS9TPX8ICM+PaDVYSTKZDTJkQq7LS9F1y27kv5cZPsSfg3KPI/m
+iL8v/fTjcoeI2XNISzibB1xa6xmAEGudbDCyeIXhwatEaixyZlx15jYndzffgRIg
+k8Ace/mN7esBjUZFijx7RIULzKRQHhGiI0X6oqnhJRYzzes1stbnO2oY+CauGo6t
+NbS5tYO+r590xLLNBpqHy+O86kBaZGDI74DGtSUK2qq+P7fOt+wLQs2OFmhYwYM7
+QQIDAQAB
+-----END PUBLIC KEY-----
+DEBUG:genesis:Node Blockchain Length: 1
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+DEBUG:genesis:Node ID: 1
+DEBUG:genesis:Node Wallet Public Key: -----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAxnZrGfWqFu4h48LlxHTl
+ke3phTbJa1XZO+ttomjv+Jwk0bzTy10lTQ3m0Qp8q5xN9wWyhJzCVO1PDFge9Ys3
+RVu4cj/VkvvX302w4LeY5DLMfx0KyZvapct0zuzR5NvPkgoxkTIxdW23T0pYXmVH
+q1aszLJaElt2FN7quiSCpykHk6SUbzEFD5ZjfVRNP3fT+31oJIqMt+MorT8buWiX
+6sUPlI5QzTnQeorJGm8DtHk5ORYPE4MOga1YG5G4V78oVCpzuu272Y53o2YE8Tsn
+UoB2dWvh717001dSPNCQrYamR66ezaLT9+vR5Zoyv8ze3Jsf+UbTR8XvS1O6shA1
+AQIDAQAB
+-----END PUBLIC KEY-----
+DEBUG:genesis:Node Blockchain Length: 1
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 121-479-881
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 90:10
+INFO:werkzeug: * Detected change in '/home/anastasia/Desktop/las gafas moradas/BlockChat/backend/node.py', reloading
+DEBUG:genesis:Node ID: 1
+DEBUG:genesis:Node Wallet Public Key: -----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAuaCoU8wE/dGjT4lDdG8D
+ORidfVFF5GWSx/xBEN7Y9c0Yvv8VzoJ1zI8bcsXrEjqq+pde9fO6QbW0i6d8fGr/
+oa0AXbEJ7PVgWMS9TPX8ICM+PaDVYSTKZDTJkQq7LS9F1y27kv5cZPsSfg3KPI/m
+iL8v/fTjcoeI2XNISzibB1xa6xmAEGudbDCyeIXhwatEaixyZlx15jYndzffgRIg
+k8Ace/mN7esBjUZFijx7RIULzKRQHhGiI0X6oqnhJRYzzes1stbnO2oY+CauGo6t
+NbS5tYO+r590xLLNBpqHy+O86kBaZGDI74DGtSUK2qq+P7fOt+wLQs2OFmhYwYM7
+QQIDAQAB
+-----END PUBLIC KEY-----
+DEBUG:genesis:Node Blockchain Length: 1
+DEBUG:genesis:Node ID: 1
+DEBUG:genesis:Node Wallet Public Key: -----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAwaBkM0RHpuTJU346GMuN
+vGEv4YEE7+qL8kb+oO0p9Mz3HvzRQ0YJIe65NB+ymZPjG0IxlPttuykApOYzAeo5
+opjkveA/3bIRZwoSR3ZKFzNIRqIMVuFdXO6tO7nx6Iab95APyd3fhCOcns4gZjmR
+3NTXMUFK6QG4HSNnc7Y9itlAJhj43CDOt1Vgs34Dnyzo56/zrNKSncUvFJ6fp0BZ
+Pi7nEKvJgU0cildPpqje2y27KeInYcmifE47d0rFIEhyb61Ans7lbWqoZqSjIKya
+OoaI4WEisHQiZYHIJfajUX38a7z5H5trs0MBpiQ+5Js5nTvWprSubWCr9fONPd+c
+0wIDAQAB
+-----END PUBLIC KEY-----
+DEBUG:genesis:Node Blockchain Length: 1
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+DEBUG:genesis:Node ID: 1
+DEBUG:genesis:Node Wallet Public Key: -----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAqzzm/sXBmt8OoXaIQ2jl
+NyTdoTuXYc2wm8qpCcpFb1X7t3tPvk0Bh4u7FAJHUgiivM9mNz18hDL/AvUpo/1s
+nFF2Vn0f6IO95nuCmqpnWizzhefrgS1IwPsfC1auTKyekikuoLBXbo0MypJ7XK2r
+cVPNrvA/eN4gU/NQ/NZvPORJnbzaybjgz/1hKnVfrRVTDAMSIxnfmvP8uEbpK17m
+3O/tECctFLlPCtDgxOipGPEgSpaz5QspyKIRbt2Hyw0US6NVysiXVqrXubH8h2s4
+SV77We4akGrlN8zYJOuD/l2b9/k4UZFJnOxDTzIqPTf1H3JMUZeSVShHX0EmkyY3
+xwIDAQAB
+-----END PUBLIC KEY-----
+DEBUG:genesis:Node Blockchain Length: 1
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 121-479-881
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+INFO:werkzeug:127.0.0.1 - - [06/Apr/2024 23:39:56] "GET /money HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /money HTTP/1.1" 200 23
+INFO:werkzeug: * Detected change in '/home/anastasia/Desktop/las gafas moradas/test2.py', reloading
+DEBUG:genesis:Node ID: 1
+DEBUG:genesis:Node Wallet Public Key: -----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAoxEaTc89L1GecxiEaD8t
+bdLwLhvK4CF+NRzaLhIb3l8ARW4K8wPU6C8yDBV69ked++z+UqvPMz/XYJd4Q5GZ
+VfFk0y2UsZaqMYS/DUVSBr7XQbfQGFzGX4wdAy4cxWTKNYCKKqBT2DitsyIWOrYB
+amheYmEhjitsyRqtAmBS0c4PI0f35asBL2qZnuhsbv+RfDZqf66aSSosadBxXvzZ
+YNqqV/R8dFK75/U8Fvc8WKUxQPdkQxPVGbQHH/QxECVh4Li45VzahqwGAKdRa2gU
+U/8+fDz2pKnj3o0Brj0J8q4AuDbBA1bUsawJQS4iFWUsnKzTpy9vbJl5MHDCeFyx
+FQIDAQAB
+-----END PUBLIC KEY-----
+DEBUG:genesis:Node Blockchain Length: 1
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+DEBUG:genesis:Node ID: 1
+DEBUG:genesis:Node Wallet Public Key: -----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAmp2PCpDnxYBgmhYX6Txq
+K/0VY0nb8rmIErAVcAmi9awi5af7hfAS9QF2Epxn1JdESTtoMCnlmN9Rq7b0KwS2
+gxGwewzi/h0V8nVzKwZG2gGB/RoLWDXnW52aqbFh2mdtceS1VMNaQfvfq2IYlxvg
+eN+TP54aLlB8AaHkc/qpwSgHI5SJq3l4y8S7FxI1v2CR6CrhCIXX/TXVFYhxpcV7
++WnqyUYoIJKOAZ8lRNexQZHTfEyaXKpt/XURKRWhkaX21w3IJli5UVwmNq/xrvX1
+YPhcTvw+DlG9GnYk7dnk1JxE3dkXTpJ5hEPXQnep/ckhliEvX6Zf1geNuD10tzU3
+OwIDAQAB
+-----END PUBLIC KEY-----
+DEBUG:genesis:Node Blockchain Length: 1
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 121-479-881
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+INFO:werkzeug:127.0.0.1 - - [07/Apr/2024 17:18:18] "GET /money HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /money HTTP/1.1" 200 23
+DEBUG:genesis:Node ID: 1
+DEBUG:genesis:Node Wallet Public Key: -----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAmp2PCpDnxYBgmhYX6Txq
+K/0VY0nb8rmIErAVcAmi9awi5af7hfAS9QF2Epxn1JdESTtoMCnlmN9Rq7b0KwS2
+gxGwewzi/h0V8nVzKwZG2gGB/RoLWDXnW52aqbFh2mdtceS1VMNaQfvfq2IYlxvg
+eN+TP54aLlB8AaHkc/qpwSgHI5SJq3l4y8S7FxI1v2CR6CrhCIXX/TXVFYhxpcV7
++WnqyUYoIJKOAZ8lRNexQZHTfEyaXKpt/XURKRWhkaX21w3IJli5UVwmNq/xrvX1
+YPhcTvw+DlG9GnYk7dnk1JxE3dkXTpJ5hEPXQnep/ckhliEvX6Zf1geNuD10tzU3
+OwIDAQAB
+-----END PUBLIC KEY-----
+DEBUG:genesis:Node Blockchain Length: 1
+DEBUG:genesis:Node ID: 1
+DEBUG:genesis:Node Wallet Public Key: -----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAoxEaTc89L1GecxiEaD8t
+bdLwLhvK4CF+NRzaLhIb3l8ARW4K8wPU6C8yDBV69ked++z+UqvPMz/XYJd4Q5GZ
+VfFk0y2UsZaqMYS/DUVSBr7XQbfQGFzGX4wdAy4cxWTKNYCKKqBT2DitsyIWOrYB
+amheYmEhjitsyRqtAmBS0c4PI0f35asBL2qZnuhsbv+RfDZqf66aSSosadBxXvzZ
+YNqqV/R8dFK75/U8Fvc8WKUxQPdkQxPVGbQHH/QxECVh4Li45VzahqwGAKdRa2gU
+U/8+fDz2pKnj3o0Brj0J8q4AuDbBA1bUsawJQS4iFWUsnKzTpy9vbJl5MHDCeFyx
+FQIDAQAB
+-----END PUBLIC KEY-----
+DEBUG:genesis:Node Blockchain Length: 1
+DEBUG:genesis:Node ID: 1
+DEBUG:genesis:Node Wallet Public Key: -----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAoafnhROXWl0A2PRRBViX
+MKF1gYUSJ6ACn7eziDf+pSrhMUHXpWaDqWb7v/g/AI59qHopPXzApLPyO9gx6G06
+5y4LKcXmKGWRMniP5bQEOnnH1mOtTANB/Zi8sUcwHgz4YHCHYyQxN6fFzUTJE9L9
+ahitl7jrS/+FxP6hTqc0aLAxt+B0N4QSrmGB4k8HVtB/0ZqeGECUmwo3aj0R3xWB
+3G99mwp6J7A30vHW99n6Blz2KhRlTYilw3vSS97bVaAtUvBst1dyzHadF7NMQhVO
+v5O28OdW7GtQO1jC3h5tscRP+t0Xsudv0eDs44YZ0p8qjj9V2hDe2Z6KoAgo/XPZ
+5wIDAQAB
+-----END PUBLIC KEY-----
+DEBUG:genesis:Node Blockchain Length: 1
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+DEBUG:genesis:Node ID: 1
+DEBUG:genesis:Node Wallet Public Key: -----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA3gJRZSoNoH+V6RolZFUm
+AzSCCfQ/wDxSku0HPYD4gTTc3LSm9+dtIjAd2g7u4nFXbZr1FSwxJ4zGMJoLb63Q
+AEZiTLATyFI6VX4ImbRP2WCuqMmh9mfVHHG1VEllZ/wsuaO0Pk2yxqCnF/6lQu26
+NkrmeoWcZQzwId2xKGUc9pM4uJKbOfpSwkBZ6lWuftYcQO1M0pyf827FyqCltoaQ
+vOHDDPWFHqQl3sNVUQ7V1mskWOjzhnvAQAwts+mzXQp3t2IR1Ar6dMEBONTQCRQ2
+cBMOuIre7cr0GEOWIvj0pqNxwFktgUdCA7iMV6gPw3IGguBrIf+CShcQlF4hYyeD
+MwIDAQAB
+-----END PUBLIC KEY-----
+DEBUG:genesis:Node Blockchain Length: 1
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 121-479-881
+DEBUG:gen_node_temp:im node1 test temp
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+DEBUG:gen_node_temp:im node1 test temp
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 121-479-881
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:root:
+
+
+Received registration request from peer with IP: 127.0.0.1, Port: 5001, pubkey: -----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAqj3PVPZT3QbLvSI/5ovq
+YvhEGr4RktwQlwroEgcnzu91sutiKwsuQ/khqHfydcKpwQdMldQ171TcrwcyGwLk
+2LPfYBlP9lL7jsfwzEv9QEc3SU5MdIveFSWz0LYNMRrGBHKnQtYDW/GvBF1tmsqi
+IEBeFhentpyd7CxG8aw2nfE/byxA1cUOmK+6K+aUcx1jtcy/nT/VMIV8LsSYWh2i
+ol+to2PQZ+QqWM+TL1khIcg0Anht/hDokYwFqZyFSx7WfcA/hA4qS7YOR+T82fT/
+4gR2N4ajY1eDUyw3YftaTNx9YrODRGxPXyOTdE7lamAsuU7SuzZ2e5zSkDtOQXB2
+6wIDAQAB
+-----END PUBLIC KEY-----
+
+
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5001
+DEBUG:root:
+
+
+ EIMAI STO VALIDATE CHAIN BITCH
+DEBUG:root:<class 'dict'>
+DEBUG:root:{'blocks': [{'index': 0, 'timestamp': 1712500088.8685749, 'transactions': [{'sender_address': '0', 'receiver_address': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA3gJRZSoNoH+V6RolZFUm\nAzSCCfQ/wDxSku0HPYD4gTTc3LSm9+dtIjAd2g7u4nFXbZr1FSwxJ4zGMJoLb63Q\nAEZiTLATyFI6VX4ImbRP2WCuqMmh9mfVHHG1VEllZ/wsuaO0Pk2yxqCnF/6lQu26\nNkrmeoWcZQzwId2xKGUc9pM4uJKbOfpSwkBZ6lWuftYcQO1M0pyf827FyqCltoaQ\nvOHDDPWFHqQl3sNVUQ7V1mskWOjzhnvAQAwts+mzXQp3t2IR1Ar6dMEBONTQCRQ2\ncBMOuIre7cr0GEOWIvj0pqNxwFktgUdCA7iMV6gPw3IGguBrIf+CShcQlF4hYyeD\nMwIDAQAB\n-----END PUBLIC KEY-----', 'type_of_transaction': 'coins', 'amount': 5000, 'nonce': 0, 'message': None, 'transaction_id': '8a022b2b1ae4cf7cfa45a878b4c01149dff45f2cd6d49471706cc0cc914c11f0', 'signature': None}], 'previous_hash': 1, 'nonce': None, 'capacity': 90, 'validator': 0}]}
+DEBUG:root:
+
+Extract blockchain data from JSON
+DEBUG:root:Block Index: 0
+Timestamp: 1712500088.8685749
+Transactions:
+Transaction Type: Transfer
+Sender Address: 0
+Receiver Address: -----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA3gJRZSoNoH+V6RolZFUm
+AzSCCfQ/wDxSku0HPYD4gTTc3LSm9+dtIjAd2g7u4nFXbZr1FSwxJ4zGMJoLb63Q
+AEZiTLATyFI6VX4ImbRP2WCuqMmh9mfVHHG1VEllZ/wsuaO0Pk2yxqCnF/6lQu26
+NkrmeoWcZQzwId2xKGUc9pM4uJKbOfpSwkBZ6lWuftYcQO1M0pyf827FyqCltoaQ
+vOHDDPWFHqQl3sNVUQ7V1mskWOjzhnvAQAwts+mzXQp3t2IR1Ar6dMEBONTQCRQ2
+cBMOuIre7cr0GEOWIvj0pqNxwFktgUdCA7iMV6gPw3IGguBrIf+CShcQlF4hYyeD
+MwIDAQAB
+-----END PUBLIC KEY-----
+Transfer Details: Amount: 5000
+Signature: Not signed yet
+Validator: 0
+Current Hash: None
+Previous Hash: 1
+Capacity: 90
+
+INFO:werkzeug:127.0.0.1 - - [07/Apr/2024 17:29:10] "POST /validate_chain HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5001 "POST /validate_chain HTTP/1.1" 200 47
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5001
+DEBUG:root:Data that I received:
+[{"id": 1, "ip": "127.0.0.1", "port": "5000", "public_key": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA3gJRZSoNoH+V6RolZFUm\nAzSCCfQ/wDxSku0HPYD4gTTc3LSm9+dtIjAd2g7u4nFXbZr1FSwxJ4zGMJoLb63Q\nAEZiTLATyFI6VX4ImbRP2WCuqMmh9mfVHHG1VEllZ/wsuaO0Pk2yxqCnF/6lQu26\nNkrmeoWcZQzwId2xKGUc9pM4uJKbOfpSwkBZ6lWuftYcQO1M0pyf827FyqCltoaQ\nvOHDDPWFHqQl3sNVUQ7V1mskWOjzhnvAQAwts+mzXQp3t2IR1Ar6dMEBONTQCRQ2\ncBMOuIre7cr0GEOWIvj0pqNxwFktgUdCA7iMV6gPw3IGguBrIf+CShcQlF4hYyeD\nMwIDAQAB\n-----END PUBLIC KEY-----", "balance": 10000}, {"id": 2, "ip": "127.0.0.1", "port": "5001", "public_key": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAqj3PVPZT3QbLvSI/5ovq\nYvhEGr4RktwQlwroEgcnzu91sutiKwsuQ/khqHfydcKpwQdMldQ171TcrwcyGwLk\n2LPfYBlP9lL7jsfwzEv9QEc3SU5MdIveFSWz0LYNMRrGBHKnQtYDW/GvBF1tmsqi\nIEBeFhentpyd7CxG8aw2nfE/byxA1cUOmK+6K+aUcx1jtcy/nT/VMIV8LsSYWh2i\nol+to2PQZ+QqWM+TL1khIcg0Anht/hDokYwFqZyFSx7WfcA/hA4qS7YOR+T82fT/\n4gR2N4ajY1eDUyw3YftaTNx9YrODRGxPXyOTdE7lamAsuU7SuzZ2e5zSkDtOQXB2\n6wIDAQAB\n-----END PUBLIC KEY-----", "balance": 0}]
+INFO:werkzeug:127.0.0.1 - - [07/Apr/2024 17:29:10] "POST /get_ring HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5001 "POST /get_ring HTTP/1.1" 200 47
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5001
+DEBUG:root:Data that I received:
+{"sender_address": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA3gJRZSoNoH+V6RolZFUm\nAzSCCfQ/wDxSku0HPYD4gTTc3LSm9+dtIjAd2g7u4nFXbZr1FSwxJ4zGMJoLb63Q\nAEZiTLATyFI6VX4ImbRP2WCuqMmh9mfVHHG1VEllZ/wsuaO0Pk2yxqCnF/6lQu26\nNkrmeoWcZQzwId2xKGUc9pM4uJKbOfpSwkBZ6lWuftYcQO1M0pyf827FyqCltoaQ\nvOHDDPWFHqQl3sNVUQ7V1mskWOjzhnvAQAwts+mzXQp3t2IR1Ar6dMEBONTQCRQ2\ncBMOuIre7cr0GEOWIvj0pqNxwFktgUdCA7iMV6gPw3IGguBrIf+CShcQlF4hYyeD\nMwIDAQAB\n-----END PUBLIC KEY-----", "receiver_address": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAqj3PVPZT3QbLvSI/5ovq\nYvhEGr4RktwQlwroEgcnzu91sutiKwsuQ/khqHfydcKpwQdMldQ171TcrwcyGwLk\n2LPfYBlP9lL7jsfwzEv9QEc3SU5MdIveFSWz0LYNMRrGBHKnQtYDW/GvBF1tmsqi\nIEBeFhentpyd7CxG8aw2nfE/byxA1cUOmK+6K+aUcx1jtcy/nT/VMIV8LsSYWh2i\nol+to2PQZ+QqWM+TL1khIcg0Anht/hDokYwFqZyFSx7WfcA/hA4qS7YOR+T82fT/\n4gR2N4ajY1eDUyw3YftaTNx9YrODRGxPXyOTdE7lamAsuU7SuzZ2e5zSkDtOQXB2\n6wIDAQAB\n-----END PUBLIC KEY-----", "type_of_transaction": "coins", "amount": 1000, "nonce": 1, "message": null, "transaction_id": "a986955cb8de6b96c46511f37d2fb5af5dfac50f774f5bd2fff643569ac97ad0", "signature": "1wuWXXkFDNoN4XT8jAUyT3aUV/nqb9auyibh9VXNpdbR3CpuR8ymHuDO6BoSyBf+Fm7P3Bjx2IwXO0EfcWpCbFUuBLkFA38FljSSe8FK69mAL92vQkXskc2t+L09be6A6WNFN5kbxTp8wQp4+vP3jksoXwlnjE80K2JH4dgb7ujrJzNNji8w5B7QpuSbNhmA8Yb2wJS1oqvDl1cgfrv34hvROKvwOw0iNB/Y+bU3oKc2b0dSOscuiv5N0Et29CUTFz5kkS1a2KgoobR4rj6L8BJVJQXLVlqGSrgWeRbWykte7TjHSgsBKJutgwi7q34qLk1zq2jWks5p8GbkCXsd1Q=="}
+DEBUG:root:Data_dict that I received:
+{'sender_address': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA3gJRZSoNoH+V6RolZFUm\nAzSCCfQ/wDxSku0HPYD4gTTc3LSm9+dtIjAd2g7u4nFXbZr1FSwxJ4zGMJoLb63Q\nAEZiTLATyFI6VX4ImbRP2WCuqMmh9mfVHHG1VEllZ/wsuaO0Pk2yxqCnF/6lQu26\nNkrmeoWcZQzwId2xKGUc9pM4uJKbOfpSwkBZ6lWuftYcQO1M0pyf827FyqCltoaQ\nvOHDDPWFHqQl3sNVUQ7V1mskWOjzhnvAQAwts+mzXQp3t2IR1Ar6dMEBONTQCRQ2\ncBMOuIre7cr0GEOWIvj0pqNxwFktgUdCA7iMV6gPw3IGguBrIf+CShcQlF4hYyeD\nMwIDAQAB\n-----END PUBLIC KEY-----', 'receiver_address': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAqj3PVPZT3QbLvSI/5ovq\nYvhEGr4RktwQlwroEgcnzu91sutiKwsuQ/khqHfydcKpwQdMldQ171TcrwcyGwLk\n2LPfYBlP9lL7jsfwzEv9QEc3SU5MdIveFSWz0LYNMRrGBHKnQtYDW/GvBF1tmsqi\nIEBeFhentpyd7CxG8aw2nfE/byxA1cUOmK+6K+aUcx1jtcy/nT/VMIV8LsSYWh2i\nol+to2PQZ+QqWM+TL1khIcg0Anht/hDokYwFqZyFSx7WfcA/hA4qS7YOR+T82fT/\n4gR2N4ajY1eDUyw3YftaTNx9YrODRGxPXyOTdE7lamAsuU7SuzZ2e5zSkDtOQXB2\n6wIDAQAB\n-----END PUBLIC KEY-----', 'type_of_transaction': 'coins', 'amount': 1000, 'nonce': 1, 'message': None, 'transaction_id': 'a986955cb8de6b96c46511f37d2fb5af5dfac50f774f5bd2fff643569ac97ad0', 'signature': '1wuWXXkFDNoN4XT8jAUyT3aUV/nqb9auyibh9VXNpdbR3CpuR8ymHuDO6BoSyBf+Fm7P3Bjx2IwXO0EfcWpCbFUuBLkFA38FljSSe8FK69mAL92vQkXskc2t+L09be6A6WNFN5kbxTp8wQp4+vP3jksoXwlnjE80K2JH4dgb7ujrJzNNji8w5B7QpuSbNhmA8Yb2wJS1oqvDl1cgfrv34hvROKvwOw0iNB/Y+bU3oKc2b0dSOscuiv5N0Et29CUTFz5kkS1a2KgoobR4rj6L8BJVJQXLVlqGSrgWeRbWykte7TjHSgsBKJutgwi7q34qLk1zq2jWks5p8GbkCXsd1Q=='}
+INFO:werkzeug:127.0.0.1 - - [07/Apr/2024 17:29:10] "POST /add_transaction HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5001 "POST /add_transaction HTTP/1.1" 200 55
+INFO:werkzeug:127.0.0.1 - - [07/Apr/2024 17:29:10] "POST /register_node HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "POST /register_node HTTP/1.1" 200 54
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:root:
+
+
+Received registration request from peer with IP: 127.0.0.1, Port: 5001, pubkey: -----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAxUj4xS4GP+0HDewsLIp7
+TqbOcexf1+uVN4x1DW2AsUo44rDw8wA/VvLuv/vRE1oI7VnpS8z9/kzQrTIJeeGX
+fZiCrRrR59TIygvk6oVtbQTOgk++HTHlx4Q9Zc4aSezrDTT+n9CJW2QSwzHdJbZZ
+v8zsgvcZcUPEGjm2jHxIqAWvMEDsL6g/qIIydRsKeUQ1T4sk1KILcllo1HUGATul
+gtc3hHvtIsOU868uoSLif36YXwAuuVaSwb5SZg4tMRHed+l9qXmHW7/tuBobMYWf
+fzbUDT7emHlDhFDHort9WuTbbl3SnGlua5v59zInTiPiOC5j69ewC9n8WEl4VZe3
+3QIDAQAB
+-----END PUBLIC KEY-----
+
+
+INFO:werkzeug:127.0.0.1 - - [07/Apr/2024 17:29:10] "POST /register_node HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "POST /register_node HTTP/1.1" 200 54
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+INFO:werkzeug:127.0.0.1 - - [07/Apr/2024 17:29:31] "GET /money HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /money HTTP/1.1" 200 22
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+INFO:werkzeug:127.0.0.1 - - [07/Apr/2024 17:29:37] "GET /money HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /money HTTP/1.1" 200 22
+INFO:werkzeug: * Detected change in '/home/anastasia/Desktop/las gafas moradas/BlockChat/backend/client.py', reloading
+INFO:werkzeug: * Detected change in '/home/anastasia/Desktop/las gafas moradas/BlockChat/backend/client.py', reloading
+INFO:werkzeug: * Restarting with stat
+DEBUG:gen_node_temp:im node1 test temp
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:gen_node_temp:im node1 test temp
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 121-479-881
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+INFO:werkzeug: * Detected change in '/home/anastasia/Desktop/las gafas moradas/BlockChat/backend/client.py', reloading
+DEBUG:gen_node_temp:im node1 test temp
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:gen_node_temp:im node1 test temp
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 121-479-881
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+INFO:werkzeug: * Detected change in '/home/anastasia/Desktop/las gafas moradas/BlockChat/backend/api.py', reloading
+DEBUG:gen_node_temp:im node1 test temp
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+DEBUG:gen_node_temp:im node1 test temp
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 121-479-881
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+INFO:werkzeug: * Detected change in '/home/anastasia/Desktop/las gafas moradas/BlockChat/backend/api.py', reloading
+DEBUG:gen_node_temp:im node1 test temp
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+DEBUG:gen_node_temp:im node1 test temp
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 121-479-881
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:gen_node_temp:im node1 test temp
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+DEBUG:gen_node_temp:im node1 test temp
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 121-479-881
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:genesis:Node ID: 1
+DEBUG:genesis:Node Wallet Public Key: -----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAoafnhROXWl0A2PRRBViX
+MKF1gYUSJ6ACn7eziDf+pSrhMUHXpWaDqWb7v/g/AI59qHopPXzApLPyO9gx6G06
+5y4LKcXmKGWRMniP5bQEOnnH1mOtTANB/Zi8sUcwHgz4YHCHYyQxN6fFzUTJE9L9
+ahitl7jrS/+FxP6hTqc0aLAxt+B0N4QSrmGB4k8HVtB/0ZqeGECUmwo3aj0R3xWB
+3G99mwp6J7A30vHW99n6Blz2KhRlTYilw3vSS97bVaAtUvBst1dyzHadF7NMQhVO
+v5O28OdW7GtQO1jC3h5tscRP+t0Xsudv0eDs44YZ0p8qjj9V2hDe2Z6KoAgo/XPZ
+5wIDAQAB
+-----END PUBLIC KEY-----
+DEBUG:genesis:Node Blockchain Length: 1
+DEBUG:genesis:Node ID: 1
+DEBUG:genesis:Node Wallet Public Key: -----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAw9aOL4cVDBdnLuRobUim
++EA+mZN9vnwbisBusbssE8zI62W7WnHpn+nhmVPGeahLA1tHmx07qsQurT7KM9qj
+9vgmoQ75vvJOEjPEGhNhSO3QxzEZAz0xd0dlVSCwRl648Do0efpuPqyBjSXbDwk8
+cg+AbcBe9ZHf5PQh9xv2Ux4Y7EwUz9IdKG+8WvowwNR1FW/eb5AAu7t6Dq4iHF1L
+YxihsluNqoA9BaCqo5RPvtRpM+z4i2G2eOLARXABTRGbDR1+EaUeyAxkhKYQhlkg
+uLZHmodCAjod7rCiKf530/tp/aBOSMc6scnQRecQA7gLqUT4XSjCV2mbqAiT4R6J
+UQIDAQAB
+-----END PUBLIC KEY-----
+DEBUG:genesis:Node Blockchain Length: 1
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+DEBUG:genesis:Node ID: 1
+DEBUG:genesis:Node Wallet Public Key: -----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA0JmjkED+4/Uzc/xV4Rf+
+sI2ICU6+LCT+M41Wt5fGoaGxtxwFvEV1sO1cHUGijBGXTojqjrkjn+5rRwCFDgfZ
+ED64yAx6v2o0cfq26Nyii5mUTM2vaDGHNoIQ8TjPgglLl12ym/4xLi3lZf7Qff0L
+fWhAprx9XFjffSzTiAc0rLdsShKs25Vr/DJpvkFCTGzOaDwQf1EHd70KmEn9ysZS
+SpzFn4MNmHl3NmooE3b/n4uROoTzj+4ae1T9vikNq4N/mpftNhBlcoM4n0HX2xk6
+pA5F3yzOwTpNJFPiRYMIEeN0NEVMTvhMgI+Dx4yzFHYxrgrMzq1fk2Ut2LySKMwu
+ywIDAQAB
+-----END PUBLIC KEY-----
+DEBUG:genesis:Node Blockchain Length: 1
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 121-479-881
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+INFO:werkzeug:127.0.0.1 - - [07/Apr/2024 19:04:29] "GET /money HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /money HTTP/1.1" 200 23
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+INFO:werkzeug:127.0.0.1 - - [07/Apr/2024 19:04:32] "[31m[1mPOST /view HTTP/1.1[0m" 405 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "POST /view HTTP/1.1" 405 153
+DEBUG:gen_node_temp:im node1 test temp
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+DEBUG:gen_node_temp:im node1 test temp
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 121-479-881
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:root:
+
+
+Received registration request from peer with IP: 127.0.0.1, Port: 5001, pubkey: -----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAh6c36JpOpBmhGCvSu6Lh
+8x/1fpT80kkw24m0+XtcGgsMxY8fdT02uiM5pscD+QRsyKYxFi78p9KbY2HH1sz5
+6dBF0g7Fphlluv5zZvdWV6bXMBleIk1U6T9zhTHh8NlhdmJutzkvVjDmuJURJrk3
+pnFbnf+dSlyfq234RZUDwyAakIS231DH1uCBG9F3SVTgOCy0R+N54KGzbTjkawnl
+bMFlvAVX55v1F48CSlNTncBnp8m+AL2zPezIbP3jI1hJulvUM5Omy6/fN8BenOEi
+US8u1r0giKSco0TtbkSka4PU1fPTlNBDF0umlcpedkLly6Tal/c74yKBkl9Ariho
+3QIDAQAB
+-----END PUBLIC KEY-----
+
+
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5001
+DEBUG:root:
+
+
+ EIMAI STO VALIDATE CHAIN BITCH
+DEBUG:root:<class 'dict'>
+DEBUG:root:{'blocks': [{'index': 0, 'timestamp': 1712505867.4278932, 'transactions': [{'sender_address': '0', 'receiver_address': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA0JmjkED+4/Uzc/xV4Rf+\nsI2ICU6+LCT+M41Wt5fGoaGxtxwFvEV1sO1cHUGijBGXTojqjrkjn+5rRwCFDgfZ\nED64yAx6v2o0cfq26Nyii5mUTM2vaDGHNoIQ8TjPgglLl12ym/4xLi3lZf7Qff0L\nfWhAprx9XFjffSzTiAc0rLdsShKs25Vr/DJpvkFCTGzOaDwQf1EHd70KmEn9ysZS\nSpzFn4MNmHl3NmooE3b/n4uROoTzj+4ae1T9vikNq4N/mpftNhBlcoM4n0HX2xk6\npA5F3yzOwTpNJFPiRYMIEeN0NEVMTvhMgI+Dx4yzFHYxrgrMzq1fk2Ut2LySKMwu\nywIDAQAB\n-----END PUBLIC KEY-----', 'type_of_transaction': 'coins', 'amount': 5000, 'nonce': 0, 'message': None, 'transaction_id': 'e6ba1e3c6988c054231cb9e051b1815889e11ee56ed6fad0c404b8bdef33e77a', 'signature': None}], 'previous_hash': 1, 'nonce': None, 'capacity': 90, 'validator': 0}]}
+DEBUG:root:
+
+Extract blockchain data from JSON
+DEBUG:root:Block Index: 0
+Timestamp: 1712505867.4278932
+Transactions:
+Transaction Type: Transfer
+Sender Address: 0
+Receiver Address: -----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA0JmjkED+4/Uzc/xV4Rf+
+sI2ICU6+LCT+M41Wt5fGoaGxtxwFvEV1sO1cHUGijBGXTojqjrkjn+5rRwCFDgfZ
+ED64yAx6v2o0cfq26Nyii5mUTM2vaDGHNoIQ8TjPgglLl12ym/4xLi3lZf7Qff0L
+fWhAprx9XFjffSzTiAc0rLdsShKs25Vr/DJpvkFCTGzOaDwQf1EHd70KmEn9ysZS
+SpzFn4MNmHl3NmooE3b/n4uROoTzj+4ae1T9vikNq4N/mpftNhBlcoM4n0HX2xk6
+pA5F3yzOwTpNJFPiRYMIEeN0NEVMTvhMgI+Dx4yzFHYxrgrMzq1fk2Ut2LySKMwu
+ywIDAQAB
+-----END PUBLIC KEY-----
+Transfer Details: Amount: 5000
+Signature: Not signed yet
+Validator: 0
+Current Hash: None
+Previous Hash: 1
+Capacity: 90
+
+INFO:werkzeug:127.0.0.1 - - [07/Apr/2024 19:04:44] "POST /validate_chain HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5001 "POST /validate_chain HTTP/1.1" 200 47
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5001
+DEBUG:root:Data that I received:
+[{"id": 1, "ip": "127.0.0.1", "port": "5000", "public_key": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA0JmjkED+4/Uzc/xV4Rf+\nsI2ICU6+LCT+M41Wt5fGoaGxtxwFvEV1sO1cHUGijBGXTojqjrkjn+5rRwCFDgfZ\nED64yAx6v2o0cfq26Nyii5mUTM2vaDGHNoIQ8TjPgglLl12ym/4xLi3lZf7Qff0L\nfWhAprx9XFjffSzTiAc0rLdsShKs25Vr/DJpvkFCTGzOaDwQf1EHd70KmEn9ysZS\nSpzFn4MNmHl3NmooE3b/n4uROoTzj+4ae1T9vikNq4N/mpftNhBlcoM4n0HX2xk6\npA5F3yzOwTpNJFPiRYMIEeN0NEVMTvhMgI+Dx4yzFHYxrgrMzq1fk2Ut2LySKMwu\nywIDAQAB\n-----END PUBLIC KEY-----", "balance": 10000}, {"id": 2, "ip": "127.0.0.1", "port": "5001", "public_key": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAh6c36JpOpBmhGCvSu6Lh\n8x/1fpT80kkw24m0+XtcGgsMxY8fdT02uiM5pscD+QRsyKYxFi78p9KbY2HH1sz5\n6dBF0g7Fphlluv5zZvdWV6bXMBleIk1U6T9zhTHh8NlhdmJutzkvVjDmuJURJrk3\npnFbnf+dSlyfq234RZUDwyAakIS231DH1uCBG9F3SVTgOCy0R+N54KGzbTjkawnl\nbMFlvAVX55v1F48CSlNTncBnp8m+AL2zPezIbP3jI1hJulvUM5Omy6/fN8BenOEi\nUS8u1r0giKSco0TtbkSka4PU1fPTlNBDF0umlcpedkLly6Tal/c74yKBkl9Ariho\n3QIDAQAB\n-----END PUBLIC KEY-----", "balance": 0}]
+INFO:werkzeug:127.0.0.1 - - [07/Apr/2024 19:04:44] "POST /get_ring HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5001 "POST /get_ring HTTP/1.1" 200 47
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5001
+DEBUG:root:Data that I received:
+{"sender_address": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA0JmjkED+4/Uzc/xV4Rf+\nsI2ICU6+LCT+M41Wt5fGoaGxtxwFvEV1sO1cHUGijBGXTojqjrkjn+5rRwCFDgfZ\nED64yAx6v2o0cfq26Nyii5mUTM2vaDGHNoIQ8TjPgglLl12ym/4xLi3lZf7Qff0L\nfWhAprx9XFjffSzTiAc0rLdsShKs25Vr/DJpvkFCTGzOaDwQf1EHd70KmEn9ysZS\nSpzFn4MNmHl3NmooE3b/n4uROoTzj+4ae1T9vikNq4N/mpftNhBlcoM4n0HX2xk6\npA5F3yzOwTpNJFPiRYMIEeN0NEVMTvhMgI+Dx4yzFHYxrgrMzq1fk2Ut2LySKMwu\nywIDAQAB\n-----END PUBLIC KEY-----", "receiver_address": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAh6c36JpOpBmhGCvSu6Lh\n8x/1fpT80kkw24m0+XtcGgsMxY8fdT02uiM5pscD+QRsyKYxFi78p9KbY2HH1sz5\n6dBF0g7Fphlluv5zZvdWV6bXMBleIk1U6T9zhTHh8NlhdmJutzkvVjDmuJURJrk3\npnFbnf+dSlyfq234RZUDwyAakIS231DH1uCBG9F3SVTgOCy0R+N54KGzbTjkawnl\nbMFlvAVX55v1F48CSlNTncBnp8m+AL2zPezIbP3jI1hJulvUM5Omy6/fN8BenOEi\nUS8u1r0giKSco0TtbkSka4PU1fPTlNBDF0umlcpedkLly6Tal/c74yKBkl9Ariho\n3QIDAQAB\n-----END PUBLIC KEY-----", "type_of_transaction": "coins", "amount": 1000, "nonce": 1, "message": null, "transaction_id": "a281fa877902db8052bccabb2e7f6fb93a4b32bc73c0f6fa5196cff753f8ca95", "signature": "cIZf30DITAQASaRe8c7MxrXGfQzaYGLowVZT969wL0UCFovEZ22jBkg1jiZQy3f2hTzXMgw+yxl3NDuLpXRkC6gGWp+jx7kGn+WiLaXM4KkrJtY0D2pTibPEpgrBMzQ18Nqz6N+mektHIrC+ByRuRj0voGXU83As4UwGWy9zZMgiaMjZbL75ysY0KAc5HHM9XyFlA9KzpyKOORy+St5C+3S2WTOudhuXeMD/L5/M4TpxkgmjG9aXmOpxhnGsIpEdVf90Iy1AVtMoBqcm0I2Zq0u4mBsDBlT+QP9mvH3g3KiXswN5qC3qnRwCGBYYsw6qd7gvB6nHGFknexKzpGC8zA=="}
+DEBUG:root:Data_dict that I received:
+{'sender_address': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA0JmjkED+4/Uzc/xV4Rf+\nsI2ICU6+LCT+M41Wt5fGoaGxtxwFvEV1sO1cHUGijBGXTojqjrkjn+5rRwCFDgfZ\nED64yAx6v2o0cfq26Nyii5mUTM2vaDGHNoIQ8TjPgglLl12ym/4xLi3lZf7Qff0L\nfWhAprx9XFjffSzTiAc0rLdsShKs25Vr/DJpvkFCTGzOaDwQf1EHd70KmEn9ysZS\nSpzFn4MNmHl3NmooE3b/n4uROoTzj+4ae1T9vikNq4N/mpftNhBlcoM4n0HX2xk6\npA5F3yzOwTpNJFPiRYMIEeN0NEVMTvhMgI+Dx4yzFHYxrgrMzq1fk2Ut2LySKMwu\nywIDAQAB\n-----END PUBLIC KEY-----', 'receiver_address': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAh6c36JpOpBmhGCvSu6Lh\n8x/1fpT80kkw24m0+XtcGgsMxY8fdT02uiM5pscD+QRsyKYxFi78p9KbY2HH1sz5\n6dBF0g7Fphlluv5zZvdWV6bXMBleIk1U6T9zhTHh8NlhdmJutzkvVjDmuJURJrk3\npnFbnf+dSlyfq234RZUDwyAakIS231DH1uCBG9F3SVTgOCy0R+N54KGzbTjkawnl\nbMFlvAVX55v1F48CSlNTncBnp8m+AL2zPezIbP3jI1hJulvUM5Omy6/fN8BenOEi\nUS8u1r0giKSco0TtbkSka4PU1fPTlNBDF0umlcpedkLly6Tal/c74yKBkl9Ariho\n3QIDAQAB\n-----END PUBLIC KEY-----', 'type_of_transaction': 'coins', 'amount': 1000, 'nonce': 1, 'message': None, 'transaction_id': 'a281fa877902db8052bccabb2e7f6fb93a4b32bc73c0f6fa5196cff753f8ca95', 'signature': 'cIZf30DITAQASaRe8c7MxrXGfQzaYGLowVZT969wL0UCFovEZ22jBkg1jiZQy3f2hTzXMgw+yxl3NDuLpXRkC6gGWp+jx7kGn+WiLaXM4KkrJtY0D2pTibPEpgrBMzQ18Nqz6N+mektHIrC+ByRuRj0voGXU83As4UwGWy9zZMgiaMjZbL75ysY0KAc5HHM9XyFlA9KzpyKOORy+St5C+3S2WTOudhuXeMD/L5/M4TpxkgmjG9aXmOpxhnGsIpEdVf90Iy1AVtMoBqcm0I2Zq0u4mBsDBlT+QP9mvH3g3KiXswN5qC3qnRwCGBYYsw6qd7gvB6nHGFknexKzpGC8zA=='}
+INFO:werkzeug:127.0.0.1 - - [07/Apr/2024 19:04:44] "POST /add_transaction HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5001 "POST /add_transaction HTTP/1.1" 200 55
+INFO:werkzeug:127.0.0.1 - - [07/Apr/2024 19:04:44] "POST /register_node HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "POST /register_node HTTP/1.1" 200 54
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:root:
+
+
+Received registration request from peer with IP: 127.0.0.1, Port: 5001, pubkey: -----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA7D4b+0m48tUWysrKDsFR
+/6zOJG1B+htum0eFKOqsmxTiQHGYJMrCxMFLRKPGGiGBkq59WFiq2zAVYOTxfwuT
+hjoS6tsN+cXvINF5S4bbbXYtwnHVa05un5V/p8W7/8LyLTwSR9S5R8EfXRMh79+y
+aFfnu9YLZcRx8OaUb3xxFeHYWJ3Aufa/iwVZ50Jyi2BQ2Om7/m4C3qO5I1R3tpDI
+G7Tv96CuqyM2GU6d87yM9pswOLNxfRTIvjeiTckvAw8SFRhj1ZFNM7sRFmvf771T
+4rn2OGNcG3LlbXcr8vRfjYCsTLgQqZ0Wa+BWMxOZvqEa0AvBtoasQVOd1aXmt/E1
+wwIDAQAB
+-----END PUBLIC KEY-----
+
+
+INFO:werkzeug:127.0.0.1 - - [07/Apr/2024 19:04:45] "POST /register_node HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "POST /register_node HTTP/1.1" 200 54
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+INFO:werkzeug:127.0.0.1 - - [07/Apr/2024 19:04:49] "GET /money HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /money HTTP/1.1" 200 22
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+INFO:werkzeug:127.0.0.1 - - [07/Apr/2024 19:04:53] "GET /money HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /money HTTP/1.1" 200 22
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+INFO:werkzeug:127.0.0.1 - - [07/Apr/2024 19:04:55] "[31m[1mPOST /view HTTP/1.1[0m" 405 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "POST /view HTTP/1.1" 405 153
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+INFO:werkzeug:127.0.0.1 - - [07/Apr/2024 19:04:57] "[31m[1mPOST /view HTTP/1.1[0m" 405 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "POST /view HTTP/1.1" 405 153
+INFO:werkzeug: * Detected change in '/home/anastasia/Desktop/las gafas moradas/BlockChat/backend/client.py', reloading
+INFO:werkzeug: * Detected change in '/home/anastasia/Desktop/las gafas moradas/BlockChat/backend/client.py', reloading
+DEBUG:genesis:Node ID: 1
+DEBUG:genesis:Node Wallet Public Key: -----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAw9aOL4cVDBdnLuRobUim
++EA+mZN9vnwbisBusbssE8zI62W7WnHpn+nhmVPGeahLA1tHmx07qsQurT7KM9qj
+9vgmoQ75vvJOEjPEGhNhSO3QxzEZAz0xd0dlVSCwRl648Do0efpuPqyBjSXbDwk8
+cg+AbcBe9ZHf5PQh9xv2Ux4Y7EwUz9IdKG+8WvowwNR1FW/eb5AAu7t6Dq4iHF1L
+YxihsluNqoA9BaCqo5RPvtRpM+z4i2G2eOLARXABTRGbDR1+EaUeyAxkhKYQhlkg
+uLZHmodCAjod7rCiKf530/tp/aBOSMc6scnQRecQA7gLqUT4XSjCV2mbqAiT4R6J
+UQIDAQAB
+-----END PUBLIC KEY-----
+DEBUG:genesis:Node Blockchain Length: 1
+DEBUG:genesis:Node ID: 1
+DEBUG:genesis:Node Wallet Public Key: -----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEArfLHwTPbifjBjYB/MTMt
+xUrLqHXaLZZmsP0alqMhy3w9G/FX/sFluLOQRia03dclY2O7pPycsKuUOmxICb41
+yUSmvJa7Q09ltiwYr6SpKynuGqwD6tBP5hnQzUAyNmxvJkL9nT77kwomkh9vYtZ0
+cu9JcKr7d1GT4rPwMTKr5GnxPCpe4S/73A3DFcS5z51l9P6/dRDcTUF7wNqIUQfw
+6ahe0s1vsQ2BNx4WcTKH0MHPnszTS11+JQmMnKZcgRZ9syKfIlcVWubn1ciW/sJ1
+WQ8gR7ND+H7cjq0Uuv+AnqNnK1+xFqXHWqdbFJGRMJ6G943ayhPvFYU5jmGLlUf4
+jwIDAQAB
+-----END PUBLIC KEY-----
+DEBUG:genesis:Node Blockchain Length: 1
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+DEBUG:genesis:Node ID: 1
+DEBUG:genesis:Node Wallet Public Key: -----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA/D3SyaIqypYJA2CflpiG
+UeQju6hvYy56Wk/ZD2cCu9VNMwDTzINvkD3c8tPp6vYShFI0AbN7+xsb3sKHzzJ4
++a2aSxjLU1/40y6Hqcqm776Ap2WeR5tSM8BPDQkMvELSASK1Ce+59SbKxDFQJZqe
+EGZx3B9MPI0RDw+0/P0F6VOk5Nu0UHyhRudcV90+ptWlsaUmaRT11j0ZgfJiBRC5
+JF8UULdycf7++ZFgjjZWgbgc1zWXBKdFTk3QdDgSCvp3LmpBzzecYIQM81RHJ85+
+bPDDF+yzOgxUpVX/UjYa1iwtWyRnYOvZq9JlTpTKuPcQfetW214J3Aba4oW8NItI
+vwIDAQAB
+-----END PUBLIC KEY-----
+DEBUG:genesis:Node Blockchain Length: 1
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 121-479-881
+INFO:werkzeug: * Detected change in '/home/anastasia/Desktop/las gafas moradas/BlockChat/backend/client.py', reloading
+DEBUG:genesis:Node ID: 1
+DEBUG:genesis:Node Wallet Public Key: -----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEArfLHwTPbifjBjYB/MTMt
+xUrLqHXaLZZmsP0alqMhy3w9G/FX/sFluLOQRia03dclY2O7pPycsKuUOmxICb41
+yUSmvJa7Q09ltiwYr6SpKynuGqwD6tBP5hnQzUAyNmxvJkL9nT77kwomkh9vYtZ0
+cu9JcKr7d1GT4rPwMTKr5GnxPCpe4S/73A3DFcS5z51l9P6/dRDcTUF7wNqIUQfw
+6ahe0s1vsQ2BNx4WcTKH0MHPnszTS11+JQmMnKZcgRZ9syKfIlcVWubn1ciW/sJ1
+WQ8gR7ND+H7cjq0Uuv+AnqNnK1+xFqXHWqdbFJGRMJ6G943ayhPvFYU5jmGLlUf4
+jwIDAQAB
+-----END PUBLIC KEY-----
+DEBUG:genesis:Node Blockchain Length: 1
+DEBUG:genesis:Node ID: 1
+DEBUG:genesis:Node Wallet Public Key: -----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA5PrQ2GDgMN7eZCej0yz3
+vazQepOseMbRsv17mxYwzY98rVLzEJmKh/ReNt6JbTHrjntdfr6Qszqxx9eQZnHA
+e6BIQ2zmTI/5F/5bq0d/nuxMT+tO9FoxfujNUX6zxPw7Iq0e6mVAcR4E/Slph70d
+Xx3rU0xJfYPGXfp91gLcCxQQyXXk4jadB4jFU0fkPFrT51HS+28wIgZE8ZDhLPoO
+ErqSPYmydXD6K88KqxSBxdUl0c81+3c48u7sb4aziC2Mj0CXj9+XnBuNizeMWALr
+5VqQSQ/wz9nIb4182yhDb1r1ZQXZMebt97eS9AGvYLNIEiVtN54/SBySRMqt9UQi
+FwIDAQAB
+-----END PUBLIC KEY-----
+DEBUG:genesis:Node Blockchain Length: 1
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+DEBUG:genesis:Node ID: 1
+DEBUG:genesis:Node Wallet Public Key: -----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAyMyU4I5CFPM8v5QZGs9m
+5FNhxBQtfRKs2JdVOaBq/en64PHd7JZ6Ur5kH35ZguQvirIhHkPlOJ0RjB6/SagP
+eVI+hH2rOlj/LtFlN1pNzD1j8u1kPxFlAe2WPw8qZW3fYf7A1eMvEgpemwvPqoST
++3m6YF74dOFPQCCaKy6hkWleHTMy5a6WS1EyUc+4HIC7i+RndVGJcp1tHX3eqxPo
+w0XnFeqPkWuc1yQvFimE/cAZ5yXn72HF4FP7lH9RDSYKEyhwWVNtPEB3LV4VVrG9
+zyi3CqJndYPmr5/1fbaH6rJgNk6b1eje7302bad3cR3dTUrrBvHYlV5vxS/Tt3Fx
+AQIDAQAB
+-----END PUBLIC KEY-----
+DEBUG:genesis:Node Blockchain Length: 1
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 121-479-881
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+INFO:werkzeug:127.0.0.1 - - [07/Apr/2024 19:09:44] "[35m[1mGET /view HTTP/1.1[0m" 500 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /view HTTP/1.1" 500 30298
+INFO:werkzeug: * Detected change in '/home/anastasia/Desktop/las gafas moradas/BlockChat/backend/api.py', reloading
+DEBUG:genesis:Node ID: 1
+DEBUG:genesis:Node Wallet Public Key: -----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA5PrQ2GDgMN7eZCej0yz3
+vazQepOseMbRsv17mxYwzY98rVLzEJmKh/ReNt6JbTHrjntdfr6Qszqxx9eQZnHA
+e6BIQ2zmTI/5F/5bq0d/nuxMT+tO9FoxfujNUX6zxPw7Iq0e6mVAcR4E/Slph70d
+Xx3rU0xJfYPGXfp91gLcCxQQyXXk4jadB4jFU0fkPFrT51HS+28wIgZE8ZDhLPoO
+ErqSPYmydXD6K88KqxSBxdUl0c81+3c48u7sb4aziC2Mj0CXj9+XnBuNizeMWALr
+5VqQSQ/wz9nIb4182yhDb1r1ZQXZMebt97eS9AGvYLNIEiVtN54/SBySRMqt9UQi
+FwIDAQAB
+-----END PUBLIC KEY-----
+DEBUG:genesis:Node Blockchain Length: 1
+DEBUG:genesis:Node ID: 1
+DEBUG:genesis:Node Wallet Public Key: -----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA1Pq4bLgRY3OT4PSeDNiR
+gqDrq3zBLM14ew6Nq8m4jfQjmlaCP/hiNSJjd/I/obf41gNL2EUj8ZegxTj/WDt8
+BIPx1CAtMF2jK2tcFvTf+PHShG0JVpyEz3+vJDFLdumYcwkKe/K/36pQBchhHdQx
+m6+itP6YJfqrrbDukVfHVf0KmCWW/qahFBvu94lL3SluG/feuKXnpupBEbXilNY9
+xH8Qqq35XOKt5/S7BbNtWL0Hf4k0tMF9WAJEULFSie2ePy7oBpVcdPz1l75vvuk/
+bYxj39TOQQWvicJGzXTVZaadZzGbjLyqiiAFkS3O2MSGiKGJW3pGkWMz4oPMGbRz
+LwIDAQAB
+-----END PUBLIC KEY-----
+DEBUG:genesis:Node Blockchain Length: 1
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+DEBUG:genesis:Node ID: 1
+DEBUG:genesis:Node Wallet Public Key: -----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA1/k2bZw/z1vNS1xn8LOm
+DsIWJb3ROLClVpie5p/7jFgb3oq45lDe3NiP10VzAXzW+aS5rATHyvO5FIgAVVbp
+sRsnMCJSHyPk04axyfcA8catQaCS5U53eT6j5kSO28knIs7JMzunQgJ6RiLtvOjr
+AqLM4F1eO7f3UcUc18/7ybcUl78lgoSPkNRwnON8B+ytyfkCQWDgzPAg4xWIXknL
+R5CevgUEhyTa1hQ9mQ7tbKHR38oevoSau31Hn62p21KZSZuGuIIfgdlEZWJtWKel
+ez6nq0ssO8l5Dqpe5tw/cuug8mlJH3oGeG+bsUiQdwkBS8DxQ+/zyZhybMjdgDRa
+ewIDAQAB
+-----END PUBLIC KEY-----
+DEBUG:genesis:Node Blockchain Length: 1
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 121-479-881
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+INFO:werkzeug:127.0.0.1 - - [07/Apr/2024 19:10:29] "[35m[1mGET /view HTTP/1.1[0m" 500 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /view HTTP/1.1" 500 15888
+INFO:werkzeug: * Detected change in '/home/anastasia/Desktop/las gafas moradas/BlockChat/backend/api.py', reloading
+DEBUG:genesis:Node ID: 1
+DEBUG:genesis:Node Wallet Public Key: -----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA1Pq4bLgRY3OT4PSeDNiR
+gqDrq3zBLM14ew6Nq8m4jfQjmlaCP/hiNSJjd/I/obf41gNL2EUj8ZegxTj/WDt8
+BIPx1CAtMF2jK2tcFvTf+PHShG0JVpyEz3+vJDFLdumYcwkKe/K/36pQBchhHdQx
+m6+itP6YJfqrrbDukVfHVf0KmCWW/qahFBvu94lL3SluG/feuKXnpupBEbXilNY9
+xH8Qqq35XOKt5/S7BbNtWL0Hf4k0tMF9WAJEULFSie2ePy7oBpVcdPz1l75vvuk/
+bYxj39TOQQWvicJGzXTVZaadZzGbjLyqiiAFkS3O2MSGiKGJW3pGkWMz4oPMGbRz
+LwIDAQAB
+-----END PUBLIC KEY-----
+DEBUG:genesis:Node Blockchain Length: 1
+DEBUG:genesis:Node ID: 1
+DEBUG:genesis:Node Wallet Public Key: -----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAnRJV046kETkgjZc6Dx1Y
+L+cvdH7CJw+kg0QVzjzXTYBwRBdrrUqwFDgO4poE2ljkrCm2v3u4ORCT0CS6fvu3
+cioN3j+B5MOad3xAYkNzPvzdvVhrtgCBVhA6YoElAroZrvtZp2F1Gr1IwcmeLE9l
+mbeWflYmGDe6w+f3+5GuauAPbL5TYTwPMXsZkVPduhfeHsLznF7LzUQO+czlobeH
+j7Kqv9ZCUCPZzQ624o5UbIR82nYsjoYYiOzk3fkQLvYa2sSEcY1n/h6VuMaKlWm7
+/9fgZ9ax3k6hoUKCA47R1MI5Wwqoz7OMr6PxNkvBv/ObIhEjhzi7rSeyqXjmBLTM
+QQIDAQAB
+-----END PUBLIC KEY-----
+DEBUG:genesis:Node Blockchain Length: 1
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+DEBUG:genesis:Node ID: 1
+DEBUG:genesis:Node Wallet Public Key: -----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA84++qTaO5ZJAkY2MKnsx
+bHRsKUXt+eLkXPrpYZXI1TqWq20dhnlMw8B9Iv/PIoC/9M/BGox8lPGmEfhebj2y
+hjpoAuP76Jq/3GCbUqCTmR5jNB/7QlHHJSAeed1ctLOXe3siRlZajGHP25qZ3wHP
+oNrxleH687+Miye7jF0ORzy2yo2Y7cjeJM2wQBjLouGn5FpAGG3JcT+/1bSopQNt
+vGlZr6QXNdRCeBi7dzB22L/ie3LipqM5ZEuDNObtBoLKM2vl5YrYH/DItjEp3nnU
+7TiRA2xbfjgU+xZfdoFen55Sn/TcO1I9srMH/I9bQBONkrJMcosuEmqH43ucJxXR
+RwIDAQAB
+-----END PUBLIC KEY-----
+DEBUG:genesis:Node Blockchain Length: 1
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 121-479-881
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+INFO:werkzeug:127.0.0.1 - - [07/Apr/2024 19:13:08] "GET /view HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /view HTTP/1.1" 200 639
+INFO:werkzeug: * Detected change in '/home/anastasia/Desktop/las gafas moradas/BlockChat/backend/api.py', reloading
+DEBUG:genesis:Node ID: 1
+DEBUG:genesis:Node Wallet Public Key: -----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAnRJV046kETkgjZc6Dx1Y
+L+cvdH7CJw+kg0QVzjzXTYBwRBdrrUqwFDgO4poE2ljkrCm2v3u4ORCT0CS6fvu3
+cioN3j+B5MOad3xAYkNzPvzdvVhrtgCBVhA6YoElAroZrvtZp2F1Gr1IwcmeLE9l
+mbeWflYmGDe6w+f3+5GuauAPbL5TYTwPMXsZkVPduhfeHsLznF7LzUQO+czlobeH
+j7Kqv9ZCUCPZzQ624o5UbIR82nYsjoYYiOzk3fkQLvYa2sSEcY1n/h6VuMaKlWm7
+/9fgZ9ax3k6hoUKCA47R1MI5Wwqoz7OMr6PxNkvBv/ObIhEjhzi7rSeyqXjmBLTM
+QQIDAQAB
+-----END PUBLIC KEY-----
+DEBUG:genesis:Node Blockchain Length: 1
+DEBUG:genesis:Node ID: 1
+DEBUG:genesis:Node Wallet Public Key: -----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsfDmR3z8inyLyESIolP7
+dAgvgNsKeH5ZUS+ZqnrWmrmkeAYGxmghdSqdFeSJd60ZyNjLxcsDcIMPn4EqMWBV
+k3tKx9SZWyMv4le2IaCErKIrsCTToHNCrFfIB0jKy4u0xJd31yKWl0lQbZ2GWndG
+uMOWUT/k2+1lKR5cml1XfkXZ0owdcNb2cgcPjh9mhl+Y7WlzNfdvAyBfWxL5OsCL
+/xOgF/foNOdaM0WkhemV/dLlJ+b0/7ZpkGifdhGo5M3ISBBr5/1fCAiKaBu6SLFK
+gKA8dzb/4ebOisR1ejQmSgiR6YF1A5bQqLudtbWNQ25yvAUfOQjNXXpYJaYPkyku
+1wIDAQAB
+-----END PUBLIC KEY-----
+DEBUG:genesis:Node Blockchain Length: 1
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+DEBUG:genesis:Node ID: 1
+DEBUG:genesis:Node Wallet Public Key: -----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAy7NguGC7Jttt/DUjSoUZ
+ZOciYvwUVFu8QasKZbLXnHdmvhQP63wysnBpRlVe0P+2J+GURmhzjx5AzwsU10SK
+pMhEMsAYxWfA32GLg5yc0MS7UlWsf+tKDZ9vQr3vvhAoXcgLjwsskrlWOYJgTYJ6
+fCwELHYAoxxDKuiehdST0D+p6xuTHQ4OmMVXhNov07kRpIg6tUqUA5YXfxWMRF32
+aXSHwwLDcfImApy0Ne73qEUsmg0qUY0umQl+wfUczKIGVmSmldywHpBNfkD8bPll
+JQFoplOrxTaPWnkONmOlz7uSo7KyO4Y5XEeWf3r3ipZae0jKhSoyXklkjJLbmvHd
+nwIDAQAB
+-----END PUBLIC KEY-----
+DEBUG:genesis:Node Blockchain Length: 1
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 121-479-881
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+INFO:werkzeug:127.0.0.1 - - [07/Apr/2024 19:14:52] "GET /view HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /view HTTP/1.1" 200 683
+INFO:werkzeug: * Detected change in '/home/anastasia/Desktop/las gafas moradas/BlockChat/backend/api.py', reloading
+DEBUG:genesis:Node ID: 1
+DEBUG:genesis:Node Wallet Public Key: -----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsfDmR3z8inyLyESIolP7
+dAgvgNsKeH5ZUS+ZqnrWmrmkeAYGxmghdSqdFeSJd60ZyNjLxcsDcIMPn4EqMWBV
+k3tKx9SZWyMv4le2IaCErKIrsCTToHNCrFfIB0jKy4u0xJd31yKWl0lQbZ2GWndG
+uMOWUT/k2+1lKR5cml1XfkXZ0owdcNb2cgcPjh9mhl+Y7WlzNfdvAyBfWxL5OsCL
+/xOgF/foNOdaM0WkhemV/dLlJ+b0/7ZpkGifdhGo5M3ISBBr5/1fCAiKaBu6SLFK
+gKA8dzb/4ebOisR1ejQmSgiR6YF1A5bQqLudtbWNQ25yvAUfOQjNXXpYJaYPkyku
+1wIDAQAB
+-----END PUBLIC KEY-----
+DEBUG:genesis:Node Blockchain Length: 1
+DEBUG:genesis:Node ID: 1
+DEBUG:genesis:Node Wallet Public Key: -----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAzUyPEWun1Gb7g4Wot6cr
+S8dJbV9UshmMM45AnAYhIH6chSvzfXE521U/n7VBj5mGC3llfU6rOB2P9EwidngB
+MrlaQqA3SJAr8Y/gEX/76BYFxbSzOIJTbxJMiwupaqrH6eDklafZxCZdef+jlWcW
+zNBx/QXk1RlWbqAUPeZkf3O1vc/KUza1Wtqe3Djl5ehRJ2CiXy4AA1OVuDys4jDS
+1x51pWhZl/P6pdUfMhleDf/qp4DYZKXCNiJvOMge2BPjMdfefcq5BtkOZnWXCq+D
+ss0itZZiPTbTy2RVWLnhAlUj/L9LIpoDZM20/cP6rM/3JgGf3Bgv/kGfT+7U3i8r
+aQIDAQAB
+-----END PUBLIC KEY-----
+DEBUG:genesis:Node Blockchain Length: 1
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+DEBUG:genesis:Node ID: 1
+DEBUG:genesis:Node Wallet Public Key: -----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAopbmcAQ84kuxZciuLyMI
+U+WPSdFDB8oSKIMKPv+getViak1wNCFdqlHVfCqYhGZUNgPPi/PRAteu8AA61lF9
+k7UMibvLGxR7f++6D9NBjtUIKpQ41if6FnKjKFRsK+HesX3oG3wSsvu7i/6+P6oM
+OlCsTN2VN2f9+oFBWBA51QMIpiuMj9yu4ZFj7ls20l8zRnc/PBR8lIm03fGdjNiV
+nUtTOrGqDQ86ap4qYDgajBwiliJ2QMAUxm1YPtvc3NaIFajP7xqvRK7ihxUHjprz
+lMBo1abpZLPmHFFo0wLQHtVbdZia1Hkyd9+5uDydV3I7pB95H3mxkyA/ao1Zs3U1
+UwIDAQAB
+-----END PUBLIC KEY-----
+DEBUG:genesis:Node Blockchain Length: 1
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 121-479-881
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+INFO:werkzeug:127.0.0.1 - - [07/Apr/2024 19:15:06] "GET /view HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /view HTTP/1.1" 200 683
+INFO:werkzeug: * Detected change in '/home/anastasia/Desktop/las gafas moradas/BlockChat/backend/api.py', reloading
+DEBUG:genesis:Node ID: 1
+DEBUG:genesis:Node Wallet Public Key: -----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAzUyPEWun1Gb7g4Wot6cr
+S8dJbV9UshmMM45AnAYhIH6chSvzfXE521U/n7VBj5mGC3llfU6rOB2P9EwidngB
+MrlaQqA3SJAr8Y/gEX/76BYFxbSzOIJTbxJMiwupaqrH6eDklafZxCZdef+jlWcW
+zNBx/QXk1RlWbqAUPeZkf3O1vc/KUza1Wtqe3Djl5ehRJ2CiXy4AA1OVuDys4jDS
+1x51pWhZl/P6pdUfMhleDf/qp4DYZKXCNiJvOMge2BPjMdfefcq5BtkOZnWXCq+D
+ss0itZZiPTbTy2RVWLnhAlUj/L9LIpoDZM20/cP6rM/3JgGf3Bgv/kGfT+7U3i8r
+aQIDAQAB
+-----END PUBLIC KEY-----
+DEBUG:genesis:Node Blockchain Length: 1
+DEBUG:genesis:Node ID: 1
+DEBUG:genesis:Node Wallet Public Key: -----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAvcgZswrqhqvPm11u1wFN
+qctvdW3SxVcskd60ivqFPoZQF6+pw499dCdiHP8j/myTGh9Exy+94qxf4Um+69L0
+XAPZhAKaODob8cUAxALVxZqpSMiAZ9WnquqHWjmke7BeoJwXp7zRifoyUkPdf+eC
+kGtfMa99M0dp7t4gC1XM1xwA3w5/lXe/1sVCHuNJ7vG9IigCk2XxBMy/JYV8l6Nv
++oiYPKMevqawNCFdYJWqMgxbPXdA9b+TlH1aOKV8FzKiAlB2KVTMlIO/Sd0OMA3c
+fH7nDRcSQEMAevbbSRbMRzz0hR13YnQnBBAFkzAo0Oh0L6DydoZpGJ1tTUpDDXiT
+tQIDAQAB
+-----END PUBLIC KEY-----
+DEBUG:genesis:Node Blockchain Length: 1
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+DEBUG:genesis:Node ID: 1
+DEBUG:genesis:Node Wallet Public Key: -----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEArxBAhKyj3bh63G7cgyct
+YKcZdkC1Enm/BwTZA5Hrw/yxg+GMAQsq7P8NsBbVLaRKEkq4TOj1wbwYLhVITGWS
+pV+mhcd+bjWVTxTUguCIX/IN3uNvz+yowofSwrm0ZhXb9JgcvxGPn1Flv4nB+vbv
+F9h9otp1QVVYORb9C/WQ/ogKUNZlwtzTjd7FmaRGX87ODdHiKu7nuVMP1WCaIbrz
+5hg9I4tHa7dWXQi9VEPBp14QrsK+5Pp5GLMcADTH1ZOKZuDCxl19OcBrIMm7tflX
+UztR/yidb82FsbQkeXaNV95rkjXoxI9qJL3wf8hceB2T7cKU9F+h1JhR3F7WBroW
+mQIDAQAB
+-----END PUBLIC KEY-----
+DEBUG:genesis:Node Blockchain Length: 1
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 121-479-881
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+INFO:werkzeug:127.0.0.1 - - [07/Apr/2024 19:17:20] "GET /view HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /view HTTP/1.1" 200 684
+INFO:werkzeug: * Detected change in '/home/anastasia/Desktop/las gafas moradas/BlockChat/backend/api.py', reloading
+DEBUG:genesis:Node ID: 1
+DEBUG:genesis:Node Wallet Public Key: -----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAvcgZswrqhqvPm11u1wFN
+qctvdW3SxVcskd60ivqFPoZQF6+pw499dCdiHP8j/myTGh9Exy+94qxf4Um+69L0
+XAPZhAKaODob8cUAxALVxZqpSMiAZ9WnquqHWjmke7BeoJwXp7zRifoyUkPdf+eC
+kGtfMa99M0dp7t4gC1XM1xwA3w5/lXe/1sVCHuNJ7vG9IigCk2XxBMy/JYV8l6Nv
++oiYPKMevqawNCFdYJWqMgxbPXdA9b+TlH1aOKV8FzKiAlB2KVTMlIO/Sd0OMA3c
+fH7nDRcSQEMAevbbSRbMRzz0hR13YnQnBBAFkzAo0Oh0L6DydoZpGJ1tTUpDDXiT
+tQIDAQAB
+-----END PUBLIC KEY-----
+DEBUG:genesis:Node Blockchain Length: 1
+DEBUG:genesis:Node ID: 1
+DEBUG:genesis:Node Wallet Public Key: -----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA2Xi+ZZxR6sitCoV0shxC
+zxVYl2n71zeILXi4DEkPTpk2+oldiQVmKxNaXEqVnC3vQH2rb0H/Bnc5jvmvS2/w
+qbwG6ZJb//6tXW7SfOPM73oyfLRanhnzQwAoOyAXp9ObgwXoWlI2zMo8bY7fQCfh
+nnCt4eJmXWFh6vHseunX0omI2eNun1ykJHTRmb8QcserXkR6fIZGv/2pkktZLPhb
+jRjqcb89x85oSBp0mTIW+g2k5i5DMJChMMjb60BAAz5AhNwSDZAH5I3IyxROzhvz
+H3Qzj8//EjnANl5hlFMNT2GwMAfsxduAs0HEi3hSoCjxarCPzybO9bZSdjTO2ZjX
+BQIDAQAB
+-----END PUBLIC KEY-----
+DEBUG:genesis:Node Blockchain Length: 1
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+DEBUG:genesis:Node ID: 1
+DEBUG:genesis:Node Wallet Public Key: -----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAuuELCdFep5Lx/RsILUiE
++zEYguplVkO+33kkKtvoFU82Qmz2CPNP/dEWpKlS06C9kPKa8zwIbs3aL+9CFE95
+9f+vrBOAkv7z98e2TcAJt1VN8cAlunsKQY0xe1L9UzuqJkykx+Ppj4vpdLwyGfG7
+2EOimpLWPWDnuTfIWoTZldFjr07wg+laBLJzrFT5UOKS4Q/H8il3MGoIXVnOy+Rr
+E8T01o+3HE//y/8ldiZtbra6mO0xGIIwsddagGvHbKNSbZ4eRAbjuMXVthVgNgHy
+oT0cYJ7TRNhL01Q8n61nRuWLuRpw25EidkwhEPShZVQ4Y7GE/bD19f2RiJb2lHje
+cQIDAQAB
+-----END PUBLIC KEY-----
+DEBUG:genesis:Node Blockchain Length: 1
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 121-479-881
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+INFO:werkzeug:127.0.0.1 - - [07/Apr/2024 19:18:46] "GET /view HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /view HTTP/1.1" 200 684
+INFO:werkzeug: * Detected change in '/home/anastasia/Desktop/las gafas moradas/BlockChat/backend/client.py', reloading
+DEBUG:genesis:Node ID: 1
+DEBUG:genesis:Node Wallet Public Key: -----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA2Xi+ZZxR6sitCoV0shxC
+zxVYl2n71zeILXi4DEkPTpk2+oldiQVmKxNaXEqVnC3vQH2rb0H/Bnc5jvmvS2/w
+qbwG6ZJb//6tXW7SfOPM73oyfLRanhnzQwAoOyAXp9ObgwXoWlI2zMo8bY7fQCfh
+nnCt4eJmXWFh6vHseunX0omI2eNun1ykJHTRmb8QcserXkR6fIZGv/2pkktZLPhb
+jRjqcb89x85oSBp0mTIW+g2k5i5DMJChMMjb60BAAz5AhNwSDZAH5I3IyxROzhvz
+H3Qzj8//EjnANl5hlFMNT2GwMAfsxduAs0HEi3hSoCjxarCPzybO9bZSdjTO2ZjX
+BQIDAQAB
+-----END PUBLIC KEY-----
+DEBUG:genesis:Node Blockchain Length: 1
+DEBUG:genesis:Node ID: 1
+DEBUG:genesis:Node Wallet Public Key: -----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAx7UA6udvi9F57kQjgdLu
+DKzo2pSmHJkDvrVgwCEuYBCMlBLdK/VZeXhaotEDIRGHQnbHm5l/tZ5kBmjk+2QH
+YWwrdbnAc3OoheEjE54DQO2boGrb0Sy/LPfxeY9/Sohpl+3PCxgUJ9SJGJJJATf4
+8UCanSTiw5dg7xfdWhA33PRskdJ6yOmC1Ob15pBxoGtuNojMFak3FWUydR2J+ZVi
+tKVgAUF9zwxvcm+h/Y17XQKit4+cLM4XvrB7g9z4FzNCFEYFaOwCAyflO9mJApwM
+b3LPSzXHcQjvJgozVRIxDc8tc6VjP6Gf8m6ROg6iZzLkAxrd7gKjKVVDS06TTzd/
+/wIDAQAB
+-----END PUBLIC KEY-----
+DEBUG:genesis:Node Blockchain Length: 1
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+DEBUG:genesis:Node ID: 1
+DEBUG:genesis:Node Wallet Public Key: -----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA7AXDJ+TkHaIzfQHtbAIi
+NNMPLd5xUlXocjA4FsbjQ02Y9/vs83LKSxdhF+11fCwGnVauo88t5fHmKK/py99g
+yAgGGiQd0I2JrXGdXvbXyaeredIRgkBtWKBNFR1qbZKjF0ViCycHHV08s9I1WvOH
+zVQ16EG7vxl6rYugm69SVojzyPIOyktRqx8fr2+YjhM4IKjjEYD4jajMzvE/NaPr
+4RIhYUFPBANKV029+mMnK9kbTt/6eM5T6n45RQNU2IYyjhFxxfimA/vbJ+L7shCk
+g6DBGCOR/IDtUVegAszA5am+AcVf18YqSKF8jl4kJovb1VlyuDjopLmvi6SSMBpM
++wIDAQAB
+-----END PUBLIC KEY-----
+DEBUG:genesis:Node Blockchain Length: 1
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 121-479-881
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+INFO:werkzeug:127.0.0.1 - - [07/Apr/2024 19:38:36] "GET /view HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /view HTTP/1.1" 200 684
+INFO:werkzeug: * Detected change in '/home/anastasia/Desktop/las gafas moradas/BlockChat/backend/client.py', reloading
+DEBUG:genesis:Node ID: 1
+DEBUG:genesis:Node Wallet Public Key: -----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAx7UA6udvi9F57kQjgdLu
+DKzo2pSmHJkDvrVgwCEuYBCMlBLdK/VZeXhaotEDIRGHQnbHm5l/tZ5kBmjk+2QH
+YWwrdbnAc3OoheEjE54DQO2boGrb0Sy/LPfxeY9/Sohpl+3PCxgUJ9SJGJJJATf4
+8UCanSTiw5dg7xfdWhA33PRskdJ6yOmC1Ob15pBxoGtuNojMFak3FWUydR2J+ZVi
+tKVgAUF9zwxvcm+h/Y17XQKit4+cLM4XvrB7g9z4FzNCFEYFaOwCAyflO9mJApwM
+b3LPSzXHcQjvJgozVRIxDc8tc6VjP6Gf8m6ROg6iZzLkAxrd7gKjKVVDS06TTzd/
+/wIDAQAB
+-----END PUBLIC KEY-----
+DEBUG:genesis:Node Blockchain Length: 1
+DEBUG:genesis:Node ID: 1
+DEBUG:genesis:Node Wallet Public Key: -----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA1K5UtpMmLrA2fFI363qZ
+q3p6hdKJJXDRBUlQPTAynQoauNVKgyAwKLru5g+tRH0CIi3kuCkUuwZSlfcHcwVw
+zSLv974l9/NshRggnBcyeuX90r0HbZSAsNGn5l+Tk52z3EuJ/l5xIqt8U4CQEWJ1
+68TNppS2VGC2z/pXMxqR+J+6v4ubSq98g3gpO3C8riJaVoFT/gOY0lYklmbhNCrI
+dlW1iAwrwq6CfTqqShDgAr7wKT8+RzWzesRcxEm+07IJp1SBePGDRZn0y3Baoq46
+QCYnCSudoQp02sgo2cVZ/DFfPK9fvg4YGGfCLPpDkEFb9yj/LPG9fUS59iW2D566
+fQIDAQAB
+-----END PUBLIC KEY-----
+DEBUG:genesis:Node Blockchain Length: 1
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+DEBUG:genesis:Node ID: 1
+DEBUG:genesis:Node Wallet Public Key: -----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp2lpLeCtSMjZ8RJpfgq4
+c15i7CeiupMqYGheg6Rwrvwzgw8FOfcesrTyj4SoXooI4rV0Z9T/UODGAQIUvjtG
+TEKlDn1+BVc/HeSnFp2l2soSzZOes9Ydg3CtEqFGFxHGroTD2NuZHneKo/vyeLrj
+vxGXPPIenQJb3qKg65Jw8CH1VIaAEqoPTtVo7iA0D0gJYD3kHEq3oZlhLQQIcSF5
+hIT7jhSK9mB4qJh3gXLRCWLb2DamaxW+wG8VAhGYunpXfBcaQ8w6O0g7g1aNVHVX
+cWEjHycgW9PXer4W4RJE2oTR4smoCGJoeHIemMEXmX8SyiI9WgBK7HVJsFvFAUT3
+/wIDAQAB
+-----END PUBLIC KEY-----
+DEBUG:genesis:Node Blockchain Length: 1
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 121-479-881
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+INFO:werkzeug:127.0.0.1 - - [07/Apr/2024 19:40:36] "GET /view HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /view HTTP/1.1" 200 684
+INFO:werkzeug: * Detected change in '/home/anastasia/Desktop/las gafas moradas/BlockChat/backend/client.py', reloading
+DEBUG:genesis:Node ID: 1
+DEBUG:genesis:Node Wallet Public Key: -----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA1K5UtpMmLrA2fFI363qZ
+q3p6hdKJJXDRBUlQPTAynQoauNVKgyAwKLru5g+tRH0CIi3kuCkUuwZSlfcHcwVw
+zSLv974l9/NshRggnBcyeuX90r0HbZSAsNGn5l+Tk52z3EuJ/l5xIqt8U4CQEWJ1
+68TNppS2VGC2z/pXMxqR+J+6v4ubSq98g3gpO3C8riJaVoFT/gOY0lYklmbhNCrI
+dlW1iAwrwq6CfTqqShDgAr7wKT8+RzWzesRcxEm+07IJp1SBePGDRZn0y3Baoq46
+QCYnCSudoQp02sgo2cVZ/DFfPK9fvg4YGGfCLPpDkEFb9yj/LPG9fUS59iW2D566
+fQIDAQAB
+-----END PUBLIC KEY-----
+DEBUG:genesis:Node Blockchain Length: 1
+DEBUG:genesis:Node ID: 1
+DEBUG:genesis:Node Wallet Public Key: -----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA4r0hLnCwv4J1OFFN7MHF
+rxNbSKH3mHShH9oEpKgLUPT7zDOBmH8RTRt/WldgRLLnZbQx3IKJu06k2mgyd6kJ
+6GHOKD1RHxRqOjLccZxcrLqPtUzZ0rqTIfhBAu9+eVn5emWiAw/DJ04MLpC4+KjV
+hCY5L0B7vO74SIrcUnzeyzo4QyMu7xkrEapB5djLbd1jLNLX28pWtjR9xdTLBWx0
+tnc2z09/+EeP5zyzIu01jtsq7AaRAt4Ale6iUxwUOOOa1XTgbuD6JStg47nrj2TB
+G3nMRFRYBcAElbolWD09jL4DdaEfCw6mCFdq82VA2x1pcTTGW8n4aodWCqx0zvuk
+bQIDAQAB
+-----END PUBLIC KEY-----
+DEBUG:genesis:Node Blockchain Length: 1
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+DEBUG:genesis:Node ID: 1
+DEBUG:genesis:Node Wallet Public Key: -----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA1+Egb8GrHg1UKltclJpN
+9Ea1Oq+6W/fUKAAEz/Pk3FTUl6ih1FLL82Eile3hl4pZi8OqHCf0hSu3evQN9DDi
++PoFa9WxCThMG4b6uTqWvnwSqZiMO7qLlEk16jfuNXyCrLLnwpUMqlCqv7QQtmHK
+6WA993ATcMTkNmPEcLIo5z8JB6gnHHCtDKzsORymoR0RJq5Iv4ecxkH4GsT1nGd7
+QNEQCXqNJWAk9rH2jcKRjUKnGPL8g68qvnEFo6/kscqlfs+lAjJROucn01B96abN
+3rdcsFCXN5WiatS1/F1DuguPM8BagIBerUtPzkA0M0qgRBEgVjct6R+yiBZjPdTe
+9QIDAQAB
+-----END PUBLIC KEY-----
+DEBUG:genesis:Node Blockchain Length: 1
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 121-479-881
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+INFO:werkzeug:127.0.0.1 - - [07/Apr/2024 19:42:36] "GET /view HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /view HTTP/1.1" 200 684
+INFO:werkzeug: * Detected change in '/home/anastasia/Desktop/las gafas moradas/BlockChat/backend/client.py', reloading
+DEBUG:genesis:Node ID: 1
+DEBUG:genesis:Node Wallet Public Key: -----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA4r0hLnCwv4J1OFFN7MHF
+rxNbSKH3mHShH9oEpKgLUPT7zDOBmH8RTRt/WldgRLLnZbQx3IKJu06k2mgyd6kJ
+6GHOKD1RHxRqOjLccZxcrLqPtUzZ0rqTIfhBAu9+eVn5emWiAw/DJ04MLpC4+KjV
+hCY5L0B7vO74SIrcUnzeyzo4QyMu7xkrEapB5djLbd1jLNLX28pWtjR9xdTLBWx0
+tnc2z09/+EeP5zyzIu01jtsq7AaRAt4Ale6iUxwUOOOa1XTgbuD6JStg47nrj2TB
+G3nMRFRYBcAElbolWD09jL4DdaEfCw6mCFdq82VA2x1pcTTGW8n4aodWCqx0zvuk
+bQIDAQAB
+-----END PUBLIC KEY-----
+DEBUG:genesis:Node Blockchain Length: 1
+DEBUG:genesis:Node ID: 1
+DEBUG:genesis:Node Wallet Public Key: -----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAr0XIWZBgV8Jbxxz7FUyL
+wKPwQC2jZ4p8qjaoTiCEUJraCj+xpGVTe747Qy1YEJdV+viJHwHw9fUnuENFTKNH
+Bbu7ZZsBs0N/MsgyXrCgmYp8Mh6SPGa3dT6f1p9RApZ1Sh+o2gmobZ0AA92t2QhJ
+cfud0Bg9th7vn+SDqwEN91dbhRouDEizPxwXxsLR/8vCzDi04ZPd+LtyJFL2zfDb
+2P0nVg4Ac8Lmp0HwyMO88JEGrIJ44DOtG9xJ5ZDnrfL+TZ2NhW3G0RTV0DxMHmAV
+UMieRjDQmC694YtgbNB8aAGhBC2rWi8sGxiFvkl4Q4IQuujaaLRPfue8HeVgmUD3
+OQIDAQAB
+-----END PUBLIC KEY-----
+DEBUG:genesis:Node Blockchain Length: 1
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+DEBUG:genesis:Node ID: 1
+DEBUG:genesis:Node Wallet Public Key: -----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAmfL3PfWCWJzF61gg3z7C
+AcudTJtBUZ7PaBdU1jWZF4JiHvcypVTb+O9FL7x+qsZCMoGwRIUECIRo38huiNDI
+ZhUvOSDHlRIyYjEiI6srJDmhHHza4BZxQVoHsUTr1WJ6YvSobQSAgzZRTykQinBc
+vr4hytoY9tdLQApNC8KvSev6pHoxYGfCfby/raaVw4PI6Xidi59bhpA7yctJVaFR
+JRJC+n8dBPezGvJ2oA7GD1M2+J7GvnreA7Kli40GWfSFHeCkjTyzpmIaNlLgUi0j
+yepUCYri96lwM/Gelvgkl8Mu/McV1Gx8G4O/1DikEu/fcBoaBm6DtDnVLeOTay+G
+EwIDAQAB
+-----END PUBLIC KEY-----
+DEBUG:genesis:Node Blockchain Length: 1
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 121-479-881
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+INFO:werkzeug:127.0.0.1 - - [07/Apr/2024 19:43:42] "GET /view HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /view HTTP/1.1" 200 684
+INFO:werkzeug: * Detected change in '/home/anastasia/Desktop/las gafas moradas/BlockChat/backend/client.py', reloading
+DEBUG:genesis:Node ID: 1
+DEBUG:genesis:Node Wallet Public Key: -----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAr0XIWZBgV8Jbxxz7FUyL
+wKPwQC2jZ4p8qjaoTiCEUJraCj+xpGVTe747Qy1YEJdV+viJHwHw9fUnuENFTKNH
+Bbu7ZZsBs0N/MsgyXrCgmYp8Mh6SPGa3dT6f1p9RApZ1Sh+o2gmobZ0AA92t2QhJ
+cfud0Bg9th7vn+SDqwEN91dbhRouDEizPxwXxsLR/8vCzDi04ZPd+LtyJFL2zfDb
+2P0nVg4Ac8Lmp0HwyMO88JEGrIJ44DOtG9xJ5ZDnrfL+TZ2NhW3G0RTV0DxMHmAV
+UMieRjDQmC694YtgbNB8aAGhBC2rWi8sGxiFvkl4Q4IQuujaaLRPfue8HeVgmUD3
+OQIDAQAB
+-----END PUBLIC KEY-----
+DEBUG:genesis:Node Blockchain Length: 1
+DEBUG:genesis:Node ID: 1
+DEBUG:genesis:Node Wallet Public Key: -----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAuexfOER1sHP//j9SGMTM
+bwlmEAzzI9Orb00CnF4Nva3QmuJ+8FoZNQshilT+zIa4uBoHyDy8pArSkUjy3rx2
+ftm+dk1BTejZfhk6dK99CN39qw9IdNEYb/eI8nW2j2JTnEWEW71GxiFqubh3dOd7
+16gjK7m2ErV1e5+UElu/PlUNiHDQlLXmLFyK6wOldFsj+BmZ5EBsO7QwusodmceY
+ioTlB0rEPSLa1xOr9V1Zycobxgp6TcA6NjKwVIdjoHhfISOVJOw3CxKTRhTC6jap
+nAHgJktCkJu+HXt6hl4ZDf88tDVCK3oxGnEmIrKj3TlvpLQHQkLLs5IigDu3X5bH
+/wIDAQAB
+-----END PUBLIC KEY-----
+DEBUG:genesis:Node Blockchain Length: 1
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+DEBUG:genesis:Node ID: 1
+DEBUG:genesis:Node Wallet Public Key: -----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAwSWLseFebOR9N+JCdagw
+WJcaxRV5EJ1jfubwtfUpE+CYOLfExwT7xneeJWGxMUgGCVYkO3Jqp5tiQtqSJigx
+y4N+JNLgiKSk4/2aAV+/lVtYky353AtD+TpNgdDDpNOVUR8QhsuUFKVNjiv/wX1R
+/viy4j7+S8sDy1FJ4agfvRo1Db6cZILS7SvuGI+GMlbX99SNh5jxlhzI2QOehX1j
+xV71C8gpQezjsq3Lf0DHmDPKybvPV/r18qA+jE48+x6czmaN6jzkDdXePdMjLlO+
+LWLUsrVDffg5K6NXdUS5/c3G358iHpoNUX1HUnLtZXM1DdZ7A3Ntgim7jzP8WPtp
+LwIDAQAB
+-----END PUBLIC KEY-----
+DEBUG:genesis:Node Blockchain Length: 1
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 121-479-881
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+INFO:werkzeug:127.0.0.1 - - [07/Apr/2024 19:51:14] "[35m[1mPOST /stake HTTP/1.1[0m" 500 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "POST /stake HTTP/1.1" 500 14156
+DEBUG:genesis:Node ID: 1
+DEBUG:genesis:Node Wallet Public Key: -----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAwSWLseFebOR9N+JCdagw
+WJcaxRV5EJ1jfubwtfUpE+CYOLfExwT7xneeJWGxMUgGCVYkO3Jqp5tiQtqSJigx
+y4N+JNLgiKSk4/2aAV+/lVtYky353AtD+TpNgdDDpNOVUR8QhsuUFKVNjiv/wX1R
+/viy4j7+S8sDy1FJ4agfvRo1Db6cZILS7SvuGI+GMlbX99SNh5jxlhzI2QOehX1j
+xV71C8gpQezjsq3Lf0DHmDPKybvPV/r18qA+jE48+x6czmaN6jzkDdXePdMjLlO+
+LWLUsrVDffg5K6NXdUS5/c3G358iHpoNUX1HUnLtZXM1DdZ7A3Ntgim7jzP8WPtp
+LwIDAQAB
+-----END PUBLIC KEY-----
+DEBUG:genesis:Node Blockchain Length: 1
+DEBUG:genesis:Node ID: 1
+DEBUG:genesis:Node Wallet Public Key: -----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAuexfOER1sHP//j9SGMTM
+bwlmEAzzI9Orb00CnF4Nva3QmuJ+8FoZNQshilT+zIa4uBoHyDy8pArSkUjy3rx2
+ftm+dk1BTejZfhk6dK99CN39qw9IdNEYb/eI8nW2j2JTnEWEW71GxiFqubh3dOd7
+16gjK7m2ErV1e5+UElu/PlUNiHDQlLXmLFyK6wOldFsj+BmZ5EBsO7QwusodmceY
+ioTlB0rEPSLa1xOr9V1Zycobxgp6TcA6NjKwVIdjoHhfISOVJOw3CxKTRhTC6jap
+nAHgJktCkJu+HXt6hl4ZDf88tDVCK3oxGnEmIrKj3TlvpLQHQkLLs5IigDu3X5bH
+/wIDAQAB
+-----END PUBLIC KEY-----
+DEBUG:genesis:Node Blockchain Length: 1
+DEBUG:genesis:Node ID: 1
+DEBUG:genesis:Node Wallet Public Key: -----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAka5VEWFLvRwtzgIlI1NY
+6ZneIcyDScdJmNPhBvI3NICQRtgvB+d3WPd4SgqU0A0kV6SdTESy2D/q0bIAToZ0
+mtx8Amp1o58m7I9qkQazDosJFp307dhY3ixZicLgOXPuDtFxuYP1deXGsXZNbPhd
+JZ8/21qGLTLwemjmsJBA2KvFjPFNGa/1nTEjZz164Me60BLVlmSMBXo8UJYIXK9B
+wK6dt1YmNVvKC2eTlr0I+kqtHj1t8h8IJPViP3VkBlzS42EZbKOal/HSpdeEtEF0
+fBzyOcUrXsrnoArD4F9pV3H9vtEeqkCmI7wLdomFK4ku8Ah6TTdQJlfEQf/6BCwW
+lQIDAQAB
+-----END PUBLIC KEY-----
+DEBUG:genesis:Node Blockchain Length: 1
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+DEBUG:genesis:Node ID: 1
+DEBUG:genesis:Node Wallet Public Key: -----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAv+WnUPlfoP7aMn+3zIxU
+dyUl+yR4uTcG1FVwFpGOtVCiwJpTshRxURbmY0dnRL+mn14WNa/3lNabfmCVu8bp
+2idv4J6PliXH8oDlUgaoMwhBEFcE+8GjpDxk6Q5E7F3xqJtWsUb0yJ2om0Y/WeLU
+9FuAt95y8yh2YeEyHqLmvuRmUktZr0lmkbUdvLyHg7osDDefiXqcSavFdYsQ1ZnL
++hVSXTukvacrMNngWTN4UoZI6by6fTelJUMcxrvh1URTE7XAUC5Nd/LJVeTMnOOO
+SF1XJZYqx/CtF+1u0X+V2g4K+y+nKs9yCrFZqKdEho9iETKJgy+41Ht2oduPPu9S
+jQIDAQAB
+-----END PUBLIC KEY-----
+DEBUG:genesis:Node Blockchain Length: 1
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 121-479-881
+INFO:werkzeug: * Detected change in '/home/anastasia/Desktop/las gafas moradas/BlockChat/backend/client.py', reloading
+DEBUG:genesis:Node ID: 1
+DEBUG:genesis:Node Wallet Public Key: -----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAka5VEWFLvRwtzgIlI1NY
+6ZneIcyDScdJmNPhBvI3NICQRtgvB+d3WPd4SgqU0A0kV6SdTESy2D/q0bIAToZ0
+mtx8Amp1o58m7I9qkQazDosJFp307dhY3ixZicLgOXPuDtFxuYP1deXGsXZNbPhd
+JZ8/21qGLTLwemjmsJBA2KvFjPFNGa/1nTEjZz164Me60BLVlmSMBXo8UJYIXK9B
+wK6dt1YmNVvKC2eTlr0I+kqtHj1t8h8IJPViP3VkBlzS42EZbKOal/HSpdeEtEF0
+fBzyOcUrXsrnoArD4F9pV3H9vtEeqkCmI7wLdomFK4ku8Ah6TTdQJlfEQf/6BCwW
+lQIDAQAB
+-----END PUBLIC KEY-----
+DEBUG:genesis:Node Blockchain Length: 1
+DEBUG:genesis:Node ID: 1
+DEBUG:genesis:Node Wallet Public Key: -----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEArAR1qmkdgRzk8DR0t/Z3
+9qpfaGZiXtc9hjsPf5oK8tYyxcIz6Ay/Cl9tA49i96JR3a+dDuthuwR/y+rxPJwW
+ir+PNFnUJSuZ07jWLt8VOyVycwK0N+GDKRuXiCoFJa+8PHucxIFRWMkpPsit2d+5
+u7TPEe1NxDu62NAnRnNCY6FFQc8RyQ25JAyz65ifkA9KDCOAkrMIiuVjcJAYrm7h
+CadGW3P/7ZkDn7wFbuyAEFLX357OEA5C9srx4y08fmjS1/wNPf9V6jBwf1CyYcz7
+cRxbDl1whcetDX6utW6jqGB6ev2m5MGbemM060OoE63JLKQ02UKAGODPVLkCkeUP
+iwIDAQAB
+-----END PUBLIC KEY-----
+DEBUG:genesis:Node Blockchain Length: 1
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+DEBUG:genesis:Node ID: 1
+DEBUG:genesis:Node Wallet Public Key: -----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA5efx/Oqz+qEANxYKElbl
+JEuyJuf1072IL4KBis3XuY3DA1CJGLExNmH+UJCJIzxq/fcL9v2azQ0EX1tO0g57
+Y5ceOjEWnZTTCEchdpCMggaIsGLL+HPwl78sW4XXdjmvJbL9eKETjA0LRL/bL0A+
+IDThyjoj5G8d500PjHY5ZofFA7mvHFTKjbVx9F5sacZWu+0TjPJqv4tYvY8Yax1b
+C1HshAwu8ARq9dzYHYLUjjuL1umVZriKnmhCX44Bt20XzM0Of2htJKunGRudpuLa
+LuRZORrIhzuT1L6VMhO2FtVIXnXKBo1m5ibNO/2r2nltffhz+pZBKAqqzkWxQC2X
+oQIDAQAB
+-----END PUBLIC KEY-----
+DEBUG:genesis:Node Blockchain Length: 1
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 121-479-881
+INFO:werkzeug: * Detected change in '/home/anastasia/Desktop/las gafas moradas/BlockChat/backend/client.py', reloading
+DEBUG:genesis:Node ID: 1
+DEBUG:genesis:Node Wallet Public Key: -----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEArAR1qmkdgRzk8DR0t/Z3
+9qpfaGZiXtc9hjsPf5oK8tYyxcIz6Ay/Cl9tA49i96JR3a+dDuthuwR/y+rxPJwW
+ir+PNFnUJSuZ07jWLt8VOyVycwK0N+GDKRuXiCoFJa+8PHucxIFRWMkpPsit2d+5
+u7TPEe1NxDu62NAnRnNCY6FFQc8RyQ25JAyz65ifkA9KDCOAkrMIiuVjcJAYrm7h
+CadGW3P/7ZkDn7wFbuyAEFLX357OEA5C9srx4y08fmjS1/wNPf9V6jBwf1CyYcz7
+cRxbDl1whcetDX6utW6jqGB6ev2m5MGbemM060OoE63JLKQ02UKAGODPVLkCkeUP
+iwIDAQAB
+-----END PUBLIC KEY-----
+DEBUG:genesis:Node Blockchain Length: 1
+DEBUG:genesis:Node ID: 1
+DEBUG:genesis:Node Wallet Public Key: -----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAwGbpHQnKwCh2UwBJ5fVE
+Wvvj9xT7y1c5s/S3Dh5gFvbb1LMX0AvKeU5w0uyM+vzDulJLFBOWqmP1aT9SqcjM
+/KA85pS3KhrZ1xcyGWOvGAYb9cjhjxfSyMgwL43Sy0XqKz5rz+TUndDxafTTJH5r
+YBxk+WFpzZLscie38umRKudphnWstzovpsQmxci7cVMd1CilMIiZbiY1HjkP3sKD
+iYq8vd2PvEzSmthilJ1Ommfp8C3YevXWELDoN0QyC0VScKxAfVSNP3ZIpOzBMQqX
+sMZAHdYPpRb9ccvNhvv5mD6rY/5cni/nXBrn6vNuVx6lyANDxJg6psqKDjyF92Hn
+1QIDAQAB
+-----END PUBLIC KEY-----
+DEBUG:genesis:Node Blockchain Length: 1
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+DEBUG:genesis:Node ID: 1
+DEBUG:genesis:Node Wallet Public Key: -----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEArfriKLlwGe2SXCgbazQ3
+4jC7GSunZ3Dylk8YFJegpG2b0IMXjE2DhNM/Vi4oCaJThKtrL1XfggzCkXnJqtj5
+feRDrkKH2HytBfhTPiDdsD6q2WFaoE1XWMycQw2vi9uYyJBcR8aYY7qmga3EJhg5
+XdGHIWqnoQn4k5pUQr+1vPGSvz+WKHk1KBs4PzKrN8sQD9oAHJK7wUd2J3Nu3cxv
+48IofY7AvJg9njDCu6aIiT4KVg6iVmeX7DcVlURKA5rF0cMFnrWlEPsBKT9tF5fh
+MYiEFAKURR1SpctpZENi4HbHgAjBeV9ePvMR+aB698UrZ7aepF9CmKGznAtOxyKJ
+FwIDAQAB
+-----END PUBLIC KEY-----
+DEBUG:genesis:Node Blockchain Length: 1
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 121-479-881
+INFO:werkzeug: * Detected change in '/home/anastasia/Desktop/las gafas moradas/BlockChat/backend/client.py', reloading
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:genesis:Node ID: 1
+DEBUG:genesis:Node Wallet Public Key: -----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAwGbpHQnKwCh2UwBJ5fVE
+Wvvj9xT7y1c5s/S3Dh5gFvbb1LMX0AvKeU5w0uyM+vzDulJLFBOWqmP1aT9SqcjM
+/KA85pS3KhrZ1xcyGWOvGAYb9cjhjxfSyMgwL43Sy0XqKz5rz+TUndDxafTTJH5r
+YBxk+WFpzZLscie38umRKudphnWstzovpsQmxci7cVMd1CilMIiZbiY1HjkP3sKD
+iYq8vd2PvEzSmthilJ1Ommfp8C3YevXWELDoN0QyC0VScKxAfVSNP3ZIpOzBMQqX
+sMZAHdYPpRb9ccvNhvv5mD6rY/5cni/nXBrn6vNuVx6lyANDxJg6psqKDjyF92Hn
+1QIDAQAB
+-----END PUBLIC KEY-----
+DEBUG:genesis:Node Blockchain Length: 1
+DEBUG:genesis:Node ID: 1
+DEBUG:genesis:Node Wallet Public Key: -----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAu0uatwaozZmZEyIFaEsT
+aBERNrcmp9gAIiik1fHhbSaReQwPXSKRMUNJmCum5ZAX2bm9Q44uOOmjJaFJEnWd
+8sGqTB/YD6n+sNNHHgTFN/0QTv537gx/KQnI7m5nXn7ga57H0wbRImeLgGZbY8e1
+1ivtWbePvh0iIXYItfu5QZaCgYFPKNqOtbw+NqbWvDqYJ0i00Qc5jATWuBkEoIUq
+KdJqzxSVj1F83gnWYDgRTtykfDM/FUfcMERWJ1bO2orjslQH8UmSUqzRRpyAumm7
+7F5m+zHunZd82MJnIo2OaM5XuPk8IrUYYuSkeIOve3yoH7iKyI0roF9pWPE0eR7K
+cwIDAQAB
+-----END PUBLIC KEY-----
+DEBUG:genesis:Node Blockchain Length: 1
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+DEBUG:genesis:Node ID: 1
+DEBUG:genesis:Node Wallet Public Key: -----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA5Bk+uBTyMm/KeZPcq4fB
+fQx9AMTqaotYWtIIcqQBJALXMShWz5/KdXDVUljeMePD/q3hJTyrK53UiabesF8L
+FrPTqkOPszRrDLlZ0l4umVkF2rosn1JobVbrbS/BfY6vkprV0gYp1F1bjaXz+yG8
+FdsxmIpWupRgORAxbX5DafF+YoaO9RFcarfZD6eKUKFxs/fxGKs7WNQgLM2zcJmK
+Esh5Q0K3FXLSFJ7BBQDJc3/FFjsXocW7QBiVcsDqcb9wuWVvWsoHK/fM86Kztgpe
+f0OWuDvmFrMCrYYAOG7xlghhjRoAbgAXI0jCJ5svTxIOeQzb229vFyQw/zyBQOGs
+VwIDAQAB
+-----END PUBLIC KEY-----
+DEBUG:genesis:Node Blockchain Length: 1
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 121-479-881
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+INFO:werkzeug:127.0.0.1 - - [07/Apr/2024 19:54:28] "[35m[1mPOST /stake HTTP/1.1[0m" 500 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "POST /stake HTTP/1.1" 500 14156
+DEBUG:genesis:Node ID: 1
+DEBUG:genesis:Node Wallet Public Key: -----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA5Bk+uBTyMm/KeZPcq4fB
+fQx9AMTqaotYWtIIcqQBJALXMShWz5/KdXDVUljeMePD/q3hJTyrK53UiabesF8L
+FrPTqkOPszRrDLlZ0l4umVkF2rosn1JobVbrbS/BfY6vkprV0gYp1F1bjaXz+yG8
+FdsxmIpWupRgORAxbX5DafF+YoaO9RFcarfZD6eKUKFxs/fxGKs7WNQgLM2zcJmK
+Esh5Q0K3FXLSFJ7BBQDJc3/FFjsXocW7QBiVcsDqcb9wuWVvWsoHK/fM86Kztgpe
+f0OWuDvmFrMCrYYAOG7xlghhjRoAbgAXI0jCJ5svTxIOeQzb229vFyQw/zyBQOGs
+VwIDAQAB
+-----END PUBLIC KEY-----
+DEBUG:genesis:Node Blockchain Length: 1
+DEBUG:genesis:Node ID: 1
+DEBUG:genesis:Node Wallet Public Key: -----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAu0uatwaozZmZEyIFaEsT
+aBERNrcmp9gAIiik1fHhbSaReQwPXSKRMUNJmCum5ZAX2bm9Q44uOOmjJaFJEnWd
+8sGqTB/YD6n+sNNHHgTFN/0QTv537gx/KQnI7m5nXn7ga57H0wbRImeLgGZbY8e1
+1ivtWbePvh0iIXYItfu5QZaCgYFPKNqOtbw+NqbWvDqYJ0i00Qc5jATWuBkEoIUq
+KdJqzxSVj1F83gnWYDgRTtykfDM/FUfcMERWJ1bO2orjslQH8UmSUqzRRpyAumm7
+7F5m+zHunZd82MJnIo2OaM5XuPk8IrUYYuSkeIOve3yoH7iKyI0roF9pWPE0eR7K
+cwIDAQAB
+-----END PUBLIC KEY-----
+DEBUG:genesis:Node Blockchain Length: 1
+DEBUG:genesis:Node ID: 1
+DEBUG:genesis:Node Wallet Public Key: -----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAmy3+8NZ7Ojes1u24WzRP
+FRtctJ9qIXid6eP/H7vpfyCRh9yP/PpL/zkMZ22Y8V83W6nQs2OyVSWIpLKBz6Yj
+iAnPUBSxKqFu5qetuTOKoJQ1CRbRCFgqwcS+6Ias+jQ0smqcjr/Z7PLzuYwfIlW7
+TZMb6Ib8+Jqub1IEwhUyww4oKdIQFQQDntJH4g27+e9sw0zkMgudN7hmfg6/68AM
+0AowkkkCgVFoBYeBJ/LXO1tswFKZeU4KUlhQyuQmlwBzW4YVyKW1m2+aBSA3JBqi
+E7QsWbqdFMl0GIzp7MeMMTmVK6BMIFc7ADEufq8dgf8Dz4BTvhyCT3sQ9AOQtFBs
+ywIDAQAB
+-----END PUBLIC KEY-----
+DEBUG:genesis:Node Blockchain Length: 1
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+DEBUG:genesis:Node ID: 1
+DEBUG:genesis:Node Wallet Public Key: -----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAmWzCucQH0NJp46R20dLt
+7+19HZjVX7kuKG980aq2OwpNeONjrN4KsnB7UKtXvn/+0xi2gZ1gbWajtR1CQHDe
+Qc7UcBgGa/3eUEvna2+JwNX48+BtgZ7xadFILE3PqFL9ixmVkBM86QVvYpB8i8r0
+vp7SMWsm+lIjBjgfXQ5hFaUOwtGo3fOMQbMIrDSrNIhmC8DXMvYpvpIxcXEXLbr6
+MSuU9U5jt2wF4Yy1gWwy1JaFVWf4ZTxsf03+cUitgjMF2SDaotlGTPFQG/LkAs20
+j8iffsrZmFmfs9aiDyrRxI+ygbQvoV3/lgR/xcJWVXDueCyFXZkK/88r05bGNsiT
+lQIDAQAB
+-----END PUBLIC KEY-----
+DEBUG:genesis:Node Blockchain Length: 1
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 121-479-881
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+INFO:werkzeug:127.0.0.1 - - [07/Apr/2024 22:23:39] "[35m[1mPOST /stake HTTP/1.1[0m" 500 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "POST /stake HTTP/1.1" 500 16005
+INFO:werkzeug: * Detected change in '/home/anastasia/Desktop/las gafas moradas/BlockChat/backend/api.py', reloading
+DEBUG:genesis:Node ID: 1
+DEBUG:genesis:Node Wallet Public Key: -----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAmy3+8NZ7Ojes1u24WzRP
+FRtctJ9qIXid6eP/H7vpfyCRh9yP/PpL/zkMZ22Y8V83W6nQs2OyVSWIpLKBz6Yj
+iAnPUBSxKqFu5qetuTOKoJQ1CRbRCFgqwcS+6Ias+jQ0smqcjr/Z7PLzuYwfIlW7
+TZMb6Ib8+Jqub1IEwhUyww4oKdIQFQQDntJH4g27+e9sw0zkMgudN7hmfg6/68AM
+0AowkkkCgVFoBYeBJ/LXO1tswFKZeU4KUlhQyuQmlwBzW4YVyKW1m2+aBSA3JBqi
+E7QsWbqdFMl0GIzp7MeMMTmVK6BMIFc7ADEufq8dgf8Dz4BTvhyCT3sQ9AOQtFBs
+ywIDAQAB
+-----END PUBLIC KEY-----
+DEBUG:genesis:Node Blockchain Length: 1

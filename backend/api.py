@@ -15,7 +15,8 @@ api = Blueprint('api', __name__)
 n = 2
 
 global global_node
-global_node = Node(1, 10)
+#global_node = Node(1, 10)
+global_node = Node(90, 10, '127.0.0.1', 5000) # anast put it there
 node = global_node
 
 
@@ -270,3 +271,85 @@ def create_transaction ():
             return jsonify({'message': 'Not enough NBCs.', 'balance': node.wallet.get_balance()}), 400
     else:
         return jsonify({'message': 'Transaction failed. Wrong receiver id.'}), 4
+
+
+
+# Define an endpoint for staking
+@api.route('/stake', methods=['POST'])
+def stake():
+    # Parse JSON payload from the request
+    data = request.json
+    stake_amount = data.get('stake_amount')
+
+    # Call the `stake` method of your Node object
+    success = node.stake_function(stake_amount)
+
+    if success:
+        return jsonify({'message': f'Successfully staked {stake_amount} BCC'}), 200
+    else:
+        return jsonify({'error': 'Not enough BCC in your account to stake'}), 400
+    
+
+
+#self, sender_address, receiver_address, type_of_transaction, amount, message,nonce,transaction_id=None, signature=None
+# @api.route('/view', methods=['GET'])
+# def view():
+#     try:
+#         last_block = node.view_block()
+
+#         # Convert transactions to a serializable format (e.g., list of dictionaries)
+#         transactions_serializable = [
+#             {
+#                 "id": transaction.transaction_id,
+#                 "sender": transaction.sender_address,
+#                 "recipient": transaction.receiver_address,
+#                 "amount": transaction.amount,
+#                 "message": transaction.message
+#                 # Add more attributes as needed
+#             }
+#             for transaction in last_block["transactions"]
+#         ]
+
+#         response = {
+#             "validator": last_block["validator"],
+#             "transactions": transactions_serializable
+#         }
+
+#         return jsonify(response), 200
+
+#     except IndexError:
+#         return jsonify({"error": "No blocks available"}), 404
+
+
+
+
+@api.route('/view', methods=['GET'])
+def view():
+    try:
+        last_block = node.view_block()
+
+        # Convert transactions to a serializable format (list of dictionaries)
+        transactions_serializable = [
+            {
+                "id": transaction.transaction_id,
+                "sender": transaction.sender_address,
+                "recipient": transaction.receiver_address,
+                "amount": transaction.amount,
+                "message": transaction.message
+                # Add more attributes as needed
+            }
+            for transaction in last_block["transactions"]
+        ]
+
+        response = {
+            "validator": last_block["validator"],
+            "transactions": transactions_serializable
+        }
+
+        # Use json.dumps with indent parameter to format the JSON output
+        formatted_response = json.dumps(response, indent=4)
+
+        return jsonify(json.loads(formatted_response)), 200
+
+    except IndexError:
+        return jsonify({"error": "No blocks available"}), 404
