@@ -238,14 +238,6 @@ class Node:
 
         transactions = self.q_transactions
 
-        #print(self.curr_block) 
-        # for t in transactions:
-        #     self.curr_block.add_transaction(t)
-
-        # print(self.curr_block)
-
-
-
         print("===== BROADCASTING THE BLOCK I AM MINTING...: \n\n")
         print(self.curr_block)
         # self.blockchain.add_block(self.curr_block)

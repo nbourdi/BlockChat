@@ -81,7 +81,6 @@ def get_block():
 
     # may need lock logic
     if node.validate_block(inc_block):
-        logging.debug("validate block is true...")
         # theres def more to it?
         node.blockchain.add_block(inc_block)
         node.reward(inc_block.validator)
