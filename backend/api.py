@@ -62,7 +62,7 @@ def get_money():
     return jsonify({'balance': node.wallet.balance})
 
 # Endpoint to get a block
-@api.route('/validate_block', methods=['POST'])
+@api.route('/add_block', methods=['POST'])
 def get_block():
 
     data = request.get_json()
@@ -71,6 +71,7 @@ def get_block():
     if node.validate_block(inc_block):
         print("ADDING BLOCK BECAUSE IT WAS BROADCASTED TO ME")
         node.blockchain.add_block(inc_block)
+        node.finalize_balances(inc_block)
         return jsonify({'message': 'Block added successfully'}), 200
     
     else: # block couldn't be validated

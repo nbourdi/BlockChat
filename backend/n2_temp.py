@@ -65,9 +65,9 @@ def register_node1():
             bootstrap_pk = peer.public_key
 
     
-    node.create_transaction(receiver_address=bootstrap_pk, type_of_transaction="coins", amount=60, message=None)
-    node.create_transaction(receiver_address=bootstrap_pk, type_of_transaction="coins", amount=70, message=None)
-    node.create_transaction(receiver_address=bootstrap_pk, type_of_transaction="coins", amount=700, message=None)
+    # node.create_transaction(receiver_address=bootstrap_pk, type_of_transaction="coins", amount=60, message=None)
+    # node.create_transaction(receiver_address=bootstrap_pk, type_of_transaction="coins", amount=70, message=None)
+    # node.create_transaction(receiver_address=bootstrap_pk, type_of_transaction="coins", amount=700, message=None)
 
     
 

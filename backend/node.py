@@ -60,9 +60,8 @@ class Node:
         if block.validator != self.validator_id(block.previous_hash):
             return False
         if block.previous_hash == self.blockchain.blocks[-1].current_hash and block.current_hash == block.hash():
-            
             for t in block.transactions:
-                self.seen.add(t.transaction_id) # if i validate a block that i havent had even the chance to mint
+                self.seen.add(t.transaction_id) # if i validate a block that i havent had even the chance to pos yet
             return True
         return False
     
@@ -137,8 +136,6 @@ class Node:
 
         #  the seed is the hash of the previous block
         seed_hex = seed
-        print("the seed block index")
-        print(seed)
         seed = int(seed_hex, 16)  # convert to int
 
         random_generator = random.Random()
@@ -164,32 +161,59 @@ class Node:
         if validator == self.id:
             print("====== I WON the competition, MINTING...\n")
             self.mint_block()
+            #self.reward(validator)
         else:
             print(f"====== {validator} won the competition\n")
         
-        self.reward(validator) # every node will call this to give the fees to the validator
+         # every node will call this to give the fees to the validator
         
         
     # Ο επικυρωτής του block είναι και αυτός στου οποίου το wallet πιστώνονται οι χρεώσεις των
       # transactions που έχουν συμπεριληφθεί στο block .
-    def reward(self, validator_id):
+    def finalize_balances(self, block):
 
-        print("=====REWARDING THE MINTER..")
+        print("=====REWARDING THE MINTER & FINALIZING BALANCES..")
 
         fee = 0
-        for t in self.q_transactions:
+        for t in block.transactions:
             if t.type_of_transaction == "message":
                 fee += len(t.message) # 1 char = 1BCC, we do count spaces
-            else:
-                fee += 0.03 * t.amount # a 3% fee
 
-        if validator_id == self.id:
+            elif t.type_of_transaction == "coins" or t.type_of_transaction == "coins_reg":
+
+                fee += 0.03 * t.amount # a 3% fee
+                if t.receiver_address == self.wallet.public_key:
+                    self.wallet.balance += t.amount
+                if t.sender_address == self.wallet.public_key:
+                    self.wallet.balance -= t.amount
+
+                # check and update all peers
+                for peer in self.peers:
+                    if peer.public_key == t.sender_address:
+                        peer.balance -= t.amount
+                    if peer.public_key == t.receiver_address:
+                        peer.balance += t.amount
+
+            elif t.type_of_transaction == "stake":
+
+                if t.sender_address == self.wallet.public_key:
+                    self.stake -= t.amount
+                for peer in self.peers:
+                    if t.sender_address == peer.public_key:
+                        peer.stake = t.amount
+
+        if block.validator == self.id:
             self.wallet.balance += fee
         else:
             for peer in self.peers:
-                if peer.id == validator_id:
+                if peer.id == block.validator:
                     peer.balance += fee
 
+        # set temporary balances to the new validated ones
+        self.unvalidated_balance = self.wallet.balance
+
+        for peer in self.peers:
+            peer.unvalidated_balance = peer.balance
 
 
     def mint_block(self):  
@@ -210,6 +234,7 @@ class Node:
         print("===== BROADCASTING THE BLOCK I AM MINTING...: \n\n")
         print(minted_block)
         self.broadcast_block(minted_block)
+        self.finalize_balances(minted_block)
 
     # mostly done? are threads necess?, all error handling, get responses?
     def broadcast_block(self, block):
@@ -220,7 +245,7 @@ class Node:
         all_validated = True
         def send_block_to_peer(peer):
             nonlocal block_json, all_validated
-            address = f'http://{peer.ip}:{peer.port}/validate_block'
+            address = f'http://{peer.ip}:{peer.port}/add_block'
             try:
                 res = requests.post(address, json=block_json)
                 if res.status_code == 200:
@@ -296,23 +321,33 @@ class Node:
             self.add_transaction(trans, capacity)
             #self.q_transactions.append(trans)
 
-               
+        #        if (trans.receiver_address == self.wallet.public_key):
+        #     self.wallet.balance += trans.amount
+        # if (trans.sender_address == self.wallet.public_key):
+        #     self.wallet.balance -= trans.amount
+
+        # # check and update all peers
+        # for peer in self.peers:
+        #     if peer.public_key == trans.sender_address:
+        #         peer.balance -= trans.amount
+        #     if peer.public_key == trans.receiver_address:
+        #         peer.balance += trans.amount
 
     
     def add_transaction(self, trans, capacity):
         self.q_transactions.append(trans)
 
         if (trans.receiver_address == self.wallet.public_key):
-            self.wallet.balance += trans.amount
+            self.unvalidated_balance += trans.amount
         if (trans.sender_address == self.wallet.public_key):
-            self.wallet.balance -= trans.amount
+            self.unvalidated_balance -= trans.amount
 
         # check and update all peers
         for peer in self.peers:
             if peer.public_key == trans.sender_address:
-                peer.balance -= trans.amount
+                peer.unvalidated_balance -= trans.amount
             if peer.public_key == trans.receiver_address:
-                peer.balance += trans.amount
+                peer.unvalidated_balance += trans.amount
 
         if len(self.q_transactions) == capacity:
             self.proof_of_stake()
