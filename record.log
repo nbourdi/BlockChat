@@ -9052,3 +9052,187 @@ ezcjK/0x/j5WhrHY6WC/MH3tPokWqXgZBtjUd9XOWuOg6riQ3U32nWEzfJjEyBwh
 dwIDAQAB
 -----END PUBLIC KEY-----
 DEBUG:genesis:Node Blockchain Length: 2
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:root:
+
+
+Received registration request from peer with IP: 127.0.0.1, Port: 5001, pubkey: -----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtIdF/eSMuL3FOobmnDbS
+UKnmv2VzsGPxPC69fDIJIL8cTyPDzSbBWH/GS2p5MbIzY0v4qJh8GFQPht8kbi0g
+3q3o+LFL9Bh/j4Z32P93fNM7DgDzpTXgKsoG7VxErw1cgvuuuxLwuCNf/0Lu0weD
+pzIVhEcTtYAPp6jIeTesr4SsZ3IuD83Sj0Sz6/CnKzIpgXSVr6fURt3XrbeYuILL
+03gFpTNTt1giD2AUnpIsskGYPGobKqnH2++xcLWv8O5ag8+KMZmq8NovhBDFuz2y
+bN7kzTk9kl8PdvHuFpLzHgHPoVqZw28fi6sedJIpwbRYxk7cFm0DN+dKaxvmu9ua
+IwIDAQAB
+-----END PUBLIC KEY-----
+
+
+INFO:werkzeug:127.0.0.1 - - [08/Apr/2024 19:20:18] "POST /get_id HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "POST /get_id HTTP/1.1" 200 45
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:root:line 52 blockchain at register, boot strap:
+DEBUG:root:Block 0:
+  Previous Hash: 1
+  Validator: 0
+  Capacity: 2
+  Transactions:
+    5000
+  Current Hash: 6f16fc8b47645bebd78bed464e7460e507dcfad4cd48130592f5df1b350ba950
+INFO:werkzeug:127.0.0.1 - - [08/Apr/2024 19:20:18] "POST /register_node HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "POST /register_node HTTP/1.1" 200 35
+DEBUG:n2_temp:im node1 test temp
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5002
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:root:
+
+
+Received registration request from peer with IP: 127.0.0.1, Port: 5002, pubkey: -----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEApJABmn/adhn8Q9PAD+Pm
+7qXYKl/mVfyeTUjoBT/3xT7MO/VszrXEgb5r41OnwR1nKdVsKpGfCZnHmG4Tga9M
+1t+rmXa57Sxu+Mk4poQzJr8KkQEeSJ0SjWQSjYdZdimiPGl96+XSERn5x9XN8m5i
+s5+EAOw5c2vUQZXhxCDsBqwG/+Pe2kGwvnpv5mxC1ua9uSdbw1HuywC9ZKZ4jID3
+hmMw5KGSUSjb4U1Nv5RM1C25i5AMD53JZGZXjJ/OL8ajm/bp931oBaAinCeAehNO
+HXSxlSpSDD1EA+Gs/e8D9HQy+p9dRbveQP4N4dl52FrLzrJJuGqTMs7H7G8fnW9B
+0QIDAQAB
+-----END PUBLIC KEY-----
+
+
+INFO:werkzeug:127.0.0.1 - - [08/Apr/2024 19:20:21] "POST /get_id HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "POST /get_id HTTP/1.1" 200 45
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5001
+DEBUG:root:line 187 chain that i validate:
+DEBUG:root:Block 0:
+  Previous Hash: 1
+  Validator: 0
+  Capacity: 2
+  Transactions:
+    5000
+  Current Hash: 6f16fc8b47645bebd78bed464e7460e507dcfad4cd48130592f5df1b350ba950
+INFO:werkzeug:127.0.0.1 - - [08/Apr/2024 19:20:21] "POST /validate_chain HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5001 "POST /validate_chain HTTP/1.1" 200 42
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5001
+INFO:werkzeug:127.0.0.1 - - [08/Apr/2024 19:20:21] "POST /get_ring HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5001 "POST /get_ring HTTP/1.1" 200 42
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5002
+DEBUG:root:line 187 chain that i validate:
+DEBUG:root:Block 0:
+  Previous Hash: 1
+  Validator: 0
+  Capacity: 2
+  Transactions:
+    5000
+  Current Hash: 6f16fc8b47645bebd78bed464e7460e507dcfad4cd48130592f5df1b350ba950
+INFO:werkzeug:127.0.0.1 - - [08/Apr/2024 19:20:21] "POST /validate_chain HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5002 "POST /validate_chain HTTP/1.1" 200 42
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5002
+INFO:werkzeug:127.0.0.1 - - [08/Apr/2024 19:20:21] "POST /get_ring HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5002 "POST /get_ring HTTP/1.1" 200 42
+DEBUG:root:
+
+ ====================== CREATING REG TRANSACTION............
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5001
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5002
+DEBUG:root:Data_dict that I received:
+{'sender_address': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAzEiV0elQ5EKl9kKGdoD0\nK5idKXOyrY6DU4pr8uI6pqUDWQg0Gy/MnoCv1aRpbt/7B7ZtJyYqCBCmRbAOFrq8\ndZyG4ozUIHyxJ/0pn3aIWulNAimyq3TKMcIGuqFMPpZ7bokkb7aq+BS95iWmyXKU\nJviIemKXVEWUDiSgosgWCkLx20JUFqZvQnIfWGUCeaLRg0wHTLLCRitWs+wADf/Y\nVBnxJ2w0Nnz6akpkNv8RDKEH8l71W4JGVBWuwP7QdGDtlOcf2mEuA2Yu/EnUwun8\nR4GjxABbspxsG9KsUdnO53WM8rB/NRsrcDBCSHDwrrtkuTo5+12NeITxG/ji5LS2\nfwIDAQAB\n-----END PUBLIC KEY-----', 'receiver_address': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtIdF/eSMuL3FOobmnDbS\nUKnmv2VzsGPxPC69fDIJIL8cTyPDzSbBWH/GS2p5MbIzY0v4qJh8GFQPht8kbi0g\n3q3o+LFL9Bh/j4Z32P93fNM7DgDzpTXgKsoG7VxErw1cgvuuuxLwuCNf/0Lu0weD\npzIVhEcTtYAPp6jIeTesr4SsZ3IuD83Sj0Sz6/CnKzIpgXSVr6fURt3XrbeYuILL\n03gFpTNTt1giD2AUnpIsskGYPGobKqnH2++xcLWv8O5ag8+KMZmq8NovhBDFuz2y\nbN7kzTk9kl8PdvHuFpLzHgHPoVqZw28fi6sedJIpwbRYxk7cFm0DN+dKaxvmu9ua\nIwIDAQAB\n-----END PUBLIC KEY-----', 'type_of_transaction': 'coins', 'amount': 1000, 'nonce': 1, 'message': None, 'transaction_id': 'a4d00914a20be4ca4dff58e126bba1a355ffe16320e9f30cd415713bb4163175', 'signature': 'Bblx1uPQ1Tjhf39i8wPi2YMrzyG76mkFStv2k7tdXmsg0amo1SzpR+1L1x/un1wDnqRt8xyHdL0UTBWwRBwjdzAQpICiO0ZLXocMoQzYkrVdf8CQgvuDkvLElviTYkgfQ8WLV8bNalxdaqmtI/tXzbhE7qrtxQaDdgrgQTO3+oPfdIGPKiHrJ7e8M9xHJOAhrh9s0RvMdDoYVOqKHeS/s+cRh7l4TrEg6iXhDryNUhtw0OQ0O1v19XLhpoX+DvqF9EG/yzTT4LoBV0MyMqyE5jb9e5HXq64z8XHsmroTPjQR8wxilKT69uqtwN3z1DbhVAMKnk/x4K9rjuiyLMP//w=='}
+INFO:werkzeug:127.0.0.1 - - [08/Apr/2024 19:20:21] "POST /add_transaction HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Apr/2024 19:20:21] "POST /add_transaction HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5002 "POST /add_transaction HTTP/1.1" 200 50
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5001 "POST /add_transaction HTTP/1.1" 200 50
+DEBUG:root:
+
+ ====================== CREATING REG TRANSACTION............
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5002
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5001
+DEBUG:root:Data_dict that I received:
+{'sender_address': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAzEiV0elQ5EKl9kKGdoD0\nK5idKXOyrY6DU4pr8uI6pqUDWQg0Gy/MnoCv1aRpbt/7B7ZtJyYqCBCmRbAOFrq8\ndZyG4ozUIHyxJ/0pn3aIWulNAimyq3TKMcIGuqFMPpZ7bokkb7aq+BS95iWmyXKU\nJviIemKXVEWUDiSgosgWCkLx20JUFqZvQnIfWGUCeaLRg0wHTLLCRitWs+wADf/Y\nVBnxJ2w0Nnz6akpkNv8RDKEH8l71W4JGVBWuwP7QdGDtlOcf2mEuA2Yu/EnUwun8\nR4GjxABbspxsG9KsUdnO53WM8rB/NRsrcDBCSHDwrrtkuTo5+12NeITxG/ji5LS2\nfwIDAQAB\n-----END PUBLIC KEY-----', 'receiver_address': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEApJABmn/adhn8Q9PAD+Pm\n7qXYKl/mVfyeTUjoBT/3xT7MO/VszrXEgb5r41OnwR1nKdVsKpGfCZnHmG4Tga9M\n1t+rmXa57Sxu+Mk4poQzJr8KkQEeSJ0SjWQSjYdZdimiPGl96+XSERn5x9XN8m5i\ns5+EAOw5c2vUQZXhxCDsBqwG/+Pe2kGwvnpv5mxC1ua9uSdbw1HuywC9ZKZ4jID3\nhmMw5KGSUSjb4U1Nv5RM1C25i5AMD53JZGZXjJ/OL8ajm/bp931oBaAinCeAehNO\nHXSxlSpSDD1EA+Gs/e8D9HQy+p9dRbveQP4N4dl52FrLzrJJuGqTMs7H7G8fnW9B\n0QIDAQAB\n-----END PUBLIC KEY-----', 'type_of_transaction': 'coins', 'amount': 1000, 'nonce': 2, 'message': None, 'transaction_id': '536ead713bb28623e1e5c5a84be741d0ab809dbb87200ec9a183e70395e5240b', 'signature': 'Bblx1uPQ1Tjhf39i8wPi2YMrzyG76mkFStv2k7tdXmsg0amo1SzpR+1L1x/un1wDnqRt8xyHdL0UTBWwRBwjdzAQpICiO0ZLXocMoQzYkrVdf8CQgvuDkvLElviTYkgfQ8WLV8bNalxdaqmtI/tXzbhE7qrtxQaDdgrgQTO3+oPfdIGPKiHrJ7e8M9xHJOAhrh9s0RvMdDoYVOqKHeS/s+cRh7l4TrEg6iXhDryNUhtw0OQ0O1v19XLhpoX+DvqF9EG/yzTT4LoBV0MyMqyE5jb9e5HXq64z8XHsmroTPjQR8wxilKT69uqtwN3z1DbhVAMKnk/x4K9rjuiyLMP//w=='}
+DEBUG:root:Data_dict that I received:
+{'sender_address': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAzEiV0elQ5EKl9kKGdoD0\nK5idKXOyrY6DU4pr8uI6pqUDWQg0Gy/MnoCv1aRpbt/7B7ZtJyYqCBCmRbAOFrq8\ndZyG4ozUIHyxJ/0pn3aIWulNAimyq3TKMcIGuqFMPpZ7bokkb7aq+BS95iWmyXKU\nJviIemKXVEWUDiSgosgWCkLx20JUFqZvQnIfWGUCeaLRg0wHTLLCRitWs+wADf/Y\nVBnxJ2w0Nnz6akpkNv8RDKEH8l71W4JGVBWuwP7QdGDtlOcf2mEuA2Yu/EnUwun8\nR4GjxABbspxsG9KsUdnO53WM8rB/NRsrcDBCSHDwrrtkuTo5+12NeITxG/ji5LS2\nfwIDAQAB\n-----END PUBLIC KEY-----', 'receiver_address': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEApJABmn/adhn8Q9PAD+Pm\n7qXYKl/mVfyeTUjoBT/3xT7MO/VszrXEgb5r41OnwR1nKdVsKpGfCZnHmG4Tga9M\n1t+rmXa57Sxu+Mk4poQzJr8KkQEeSJ0SjWQSjYdZdimiPGl96+XSERn5x9XN8m5i\ns5+EAOw5c2vUQZXhxCDsBqwG/+Pe2kGwvnpv5mxC1ua9uSdbw1HuywC9ZKZ4jID3\nhmMw5KGSUSjb4U1Nv5RM1C25i5AMD53JZGZXjJ/OL8ajm/bp931oBaAinCeAehNO\nHXSxlSpSDD1EA+Gs/e8D9HQy+p9dRbveQP4N4dl52FrLzrJJuGqTMs7H7G8fnW9B\n0QIDAQAB\n-----END PUBLIC KEY-----', 'type_of_transaction': 'coins', 'amount': 1000, 'nonce': 2, 'message': None, 'transaction_id': '536ead713bb28623e1e5c5a84be741d0ab809dbb87200ec9a183e70395e5240b', 'signature': 'Bblx1uPQ1Tjhf39i8wPi2YMrzyG76mkFStv2k7tdXmsg0amo1SzpR+1L1x/un1wDnqRt8xyHdL0UTBWwRBwjdzAQpICiO0ZLXocMoQzYkrVdf8CQgvuDkvLElviTYkgfQ8WLV8bNalxdaqmtI/tXzbhE7qrtxQaDdgrgQTO3+oPfdIGPKiHrJ7e8M9xHJOAhrh9s0RvMdDoYVOqKHeS/s+cRh7l4TrEg6iXhDryNUhtw0OQ0O1v19XLhpoX+DvqF9EG/yzTT4LoBV0MyMqyE5jb9e5HXq64z8XHsmroTPjQR8wxilKT69uqtwN3z1DbhVAMKnk/x4K9rjuiyLMP//w=='}
+INFO:werkzeug:127.0.0.1 - - [08/Apr/2024 19:20:21] "POST /add_transaction HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Apr/2024 19:20:21] "POST /add_transaction HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5002 "POST /add_transaction HTTP/1.1" 200 50
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5001 "POST /add_transaction HTTP/1.1" 200 50
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5002
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5001
+DEBUG:root:line 65 api data for validate block:
+DEBUG:root:{"index": 1, "previous_hash": "6f16fc8b47645bebd78bed464e7460e507dcfad4cd48130592f5df1b350ba950", "validator": 1, "capacity": 2, "transactions": [{"sender_address": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAzEiV0elQ5EKl9kKGdoD0\nK5idKXOyrY6DU4pr8uI6pqUDWQg0Gy/MnoCv1aRpbt/7B7ZtJyYqCBCmRbAOFrq8\ndZyG4ozUIHyxJ/0pn3aIWulNAimyq3TKMcIGuqFMPpZ7bokkb7aq+BS95iWmyXKU\nJviIemKXVEWUDiSgosgWCkLx20JUFqZvQnIfWGUCeaLRg0wHTLLCRitWs+wADf/Y\nVBnxJ2w0Nnz6akpkNv8RDKEH8l71W4JGVBWuwP7QdGDtlOcf2mEuA2Yu/EnUwun8\nR4GjxABbspxsG9KsUdnO53WM8rB/NRsrcDBCSHDwrrtkuTo5+12NeITxG/ji5LS2\nfwIDAQAB\n-----END PUBLIC KEY-----", "receiver_address": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtIdF/eSMuL3FOobmnDbS\nUKnmv2VzsGPxPC69fDIJIL8cTyPDzSbBWH/GS2p5MbIzY0v4qJh8GFQPht8kbi0g\n3q3o+LFL9Bh/j4Z32P93fNM7DgDzpTXgKsoG7VxErw1cgvuuuxLwuCNf/0Lu0weD\npzIVhEcTtYAPp6jIeTesr4SsZ3IuD83Sj0Sz6/CnKzIpgXSVr6fURt3XrbeYuILL\n03gFpTNTt1giD2AUnpIsskGYPGobKqnH2++xcLWv8O5ag8+KMZmq8NovhBDFuz2y\nbN7kzTk9kl8PdvHuFpLzHgHPoVqZw28fi6sedJIpwbRYxk7cFm0DN+dKaxvmu9ua\nIwIDAQAB\n-----END PUBLIC KEY-----", "type_of_transaction": "coins", "amount": 1000, "nonce": 1, "message": null, "transaction_id": "a4d00914a20be4ca4dff58e126bba1a355ffe16320e9f30cd415713bb4163175", "signature": "05b971d6e3d0d538e17f7f62f303e2d9832bcf21bbea69054adbf693bb5d5e6b20d1a9a8d52ce947ed4bd71fee9f5c039ea46df31c8774bd144c15b0441c23773010a480a23b464b5e870ca10cd892b55d7fc09082fb8392f2c496f89362481f43c58b57c6cd6a5c5d6aa9ad23fb57cdb844eeaaedc50683760ae04133b7fa83df74818f2a21eb27b7bc33dc4724e021ae1f6cd11bcc743a1854ea8a1de4bfb3e71187b9784eb120ea25e10ebc8d521b70d0e4343b5bf5f572e1a685fe0efa85f441bfcb34d3e0ba0157433232ac84e636fd7b91d7abae33f171ec9aba133e3411f30c6294a4faf6eaadc0ddf3d436e154030a9e4ff1e0af6b8ee8b22cc3ffff"}, {"sender_address": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAzEiV0elQ5EKl9kKGdoD0\nK5idKXOyrY6DU4pr8uI6pqUDWQg0Gy/MnoCv1aRpbt/7B7ZtJyYqCBCmRbAOFrq8\ndZyG4ozUIHyxJ/0pn3aIWulNAimyq3TKMcIGuqFMPpZ7bokkb7aq+BS95iWmyXKU\nJviIemKXVEWUDiSgosgWCkLx20JUFqZvQnIfWGUCeaLRg0wHTLLCRitWs+wADf/Y\nVBnxJ2w0Nnz6akpkNv8RDKEH8l71W4JGVBWuwP7QdGDtlOcf2mEuA2Yu/EnUwun8\nR4GjxABbspxsG9KsUdnO53WM8rB/NRsrcDBCSHDwrrtkuTo5+12NeITxG/ji5LS2\nfwIDAQAB\n-----END PUBLIC KEY-----", "receiver_address": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEApJABmn/adhn8Q9PAD+Pm\n7qXYKl/mVfyeTUjoBT/3xT7MO/VszrXEgb5r41OnwR1nKdVsKpGfCZnHmG4Tga9M\n1t+rmXa57Sxu+Mk4poQzJr8KkQEeSJ0SjWQSjYdZdimiPGl96+XSERn5x9XN8m5i\ns5+EAOw5c2vUQZXhxCDsBqwG/+Pe2kGwvnpv5mxC1ua9uSdbw1HuywC9ZKZ4jID3\nhmMw5KGSUSjb4U1Nv5RM1C25i5AMD53JZGZXjJ/OL8ajm/bp931oBaAinCeAehNO\nHXSxlSpSDD1EA+Gs/e8D9HQy+p9dRbveQP4N4dl52FrLzrJJuGqTMs7H7G8fnW9B\n0QIDAQAB\n-----END PUBLIC KEY-----", "type_of_transaction": "coins", "amount": 1000, "nonce": 2, "message": null, "transaction_id": "536ead713bb28623e1e5c5a84be741d0ab809dbb87200ec9a183e70395e5240b", "signature": "05b971d6e3d0d538e17f7f62f303e2d9832bcf21bbea69054adbf693bb5d5e6b20d1a9a8d52ce947ed4bd71fee9f5c039ea46df31c8774bd144c15b0441c23773010a480a23b464b5e870ca10cd892b55d7fc09082fb8392f2c496f89362481f43c58b57c6cd6a5c5d6aa9ad23fb57cdb844eeaaedc50683760ae04133b7fa83df74818f2a21eb27b7bc33dc4724e021ae1f6cd11bcc743a1854ea8a1de4bfb3e71187b9784eb120ea25e10ebc8d521b70d0e4343b5bf5f572e1a685fe0efa85f441bfcb34d3e0ba0157433232ac84e636fd7b91d7abae33f171ec9aba133e3411f30c6294a4faf6eaadc0ddf3d436e154030a9e4ff1e0af6b8ee8b22cc3ffff"}], "current_hash": "e684da1f022fb7bd058a523a45136a5d1865992567eadb3c939fe5c98ca931f8"}
+DEBUG:root:line 69 inc block index:::
+DEBUG:root:{"index": 1, "previous_hash": "6f16fc8b47645bebd78bed464e7460e507dcfad4cd48130592f5df1b350ba950", "validator": 1, "capacity": 2, "transactions": [{"sender_address": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAzEiV0elQ5EKl9kKGdoD0\nK5idKXOyrY6DU4pr8uI6pqUDWQg0Gy/MnoCv1aRpbt/7B7ZtJyYqCBCmRbAOFrq8\ndZyG4ozUIHyxJ/0pn3aIWulNAimyq3TKMcIGuqFMPpZ7bokkb7aq+BS95iWmyXKU\nJviIemKXVEWUDiSgosgWCkLx20JUFqZvQnIfWGUCeaLRg0wHTLLCRitWs+wADf/Y\nVBnxJ2w0Nnz6akpkNv8RDKEH8l71W4JGVBWuwP7QdGDtlOcf2mEuA2Yu/EnUwun8\nR4GjxABbspxsG9KsUdnO53WM8rB/NRsrcDBCSHDwrrtkuTo5+12NeITxG/ji5LS2\nfwIDAQAB\n-----END PUBLIC KEY-----", "receiver_address": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtIdF/eSMuL3FOobmnDbS\nUKnmv2VzsGPxPC69fDIJIL8cTyPDzSbBWH/GS2p5MbIzY0v4qJh8GFQPht8kbi0g\n3q3o+LFL9Bh/j4Z32P93fNM7DgDzpTXgKsoG7VxErw1cgvuuuxLwuCNf/0Lu0weD\npzIVhEcTtYAPp6jIeTesr4SsZ3IuD83Sj0Sz6/CnKzIpgXSVr6fURt3XrbeYuILL\n03gFpTNTt1giD2AUnpIsskGYPGobKqnH2++xcLWv8O5ag8+KMZmq8NovhBDFuz2y\nbN7kzTk9kl8PdvHuFpLzHgHPoVqZw28fi6sedJIpwbRYxk7cFm0DN+dKaxvmu9ua\nIwIDAQAB\n-----END PUBLIC KEY-----", "type_of_transaction": "coins", "amount": 1000, "nonce": 1, "message": null, "transaction_id": "a4d00914a20be4ca4dff58e126bba1a355ffe16320e9f30cd415713bb4163175", "signature": "05b971d6e3d0d538e17f7f62f303e2d9832bcf21bbea69054adbf693bb5d5e6b20d1a9a8d52ce947ed4bd71fee9f5c039ea46df31c8774bd144c15b0441c23773010a480a23b464b5e870ca10cd892b55d7fc09082fb8392f2c496f89362481f43c58b57c6cd6a5c5d6aa9ad23fb57cdb844eeaaedc50683760ae04133b7fa83df74818f2a21eb27b7bc33dc4724e021ae1f6cd11bcc743a1854ea8a1de4bfb3e71187b9784eb120ea25e10ebc8d521b70d0e4343b5bf5f572e1a685fe0efa85f441bfcb34d3e0ba0157433232ac84e636fd7b91d7abae33f171ec9aba133e3411f30c6294a4faf6eaadc0ddf3d436e154030a9e4ff1e0af6b8ee8b22cc3ffff"}, {"sender_address": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAzEiV0elQ5EKl9kKGdoD0\nK5idKXOyrY6DU4pr8uI6pqUDWQg0Gy/MnoCv1aRpbt/7B7ZtJyYqCBCmRbAOFrq8\ndZyG4ozUIHyxJ/0pn3aIWulNAimyq3TKMcIGuqFMPpZ7bokkb7aq+BS95iWmyXKU\nJviIemKXVEWUDiSgosgWCkLx20JUFqZvQnIfWGUCeaLRg0wHTLLCRitWs+wADf/Y\nVBnxJ2w0Nnz6akpkNv8RDKEH8l71W4JGVBWuwP7QdGDtlOcf2mEuA2Yu/EnUwun8\nR4GjxABbspxsG9KsUdnO53WM8rB/NRsrcDBCSHDwrrtkuTo5+12NeITxG/ji5LS2\nfwIDAQAB\n-----END PUBLIC KEY-----", "receiver_address": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEApJABmn/adhn8Q9PAD+Pm\n7qXYKl/mVfyeTUjoBT/3xT7MO/VszrXEgb5r41OnwR1nKdVsKpGfCZnHmG4Tga9M\n1t+rmXa57Sxu+Mk4poQzJr8KkQEeSJ0SjWQSjYdZdimiPGl96+XSERn5x9XN8m5i\ns5+EAOw5c2vUQZXhxCDsBqwG/+Pe2kGwvnpv5mxC1ua9uSdbw1HuywC9ZKZ4jID3\nhmMw5KGSUSjb4U1Nv5RM1C25i5AMD53JZGZXjJ/OL8ajm/bp931oBaAinCeAehNO\nHXSxlSpSDD1EA+Gs/e8D9HQy+p9dRbveQP4N4dl52FrLzrJJuGqTMs7H7G8fnW9B\n0QIDAQAB\n-----END PUBLIC KEY-----", "type_of_transaction": "coins", "amount": 1000, "nonce": 2, "message": null, "transaction_id": "536ead713bb28623e1e5c5a84be741d0ab809dbb87200ec9a183e70395e5240b", "signature": "05b971d6e3d0d538e17f7f62f303e2d9832bcf21bbea69054adbf693bb5d5e6b20d1a9a8d52ce947ed4bd71fee9f5c039ea46df31c8774bd144c15b0441c23773010a480a23b464b5e870ca10cd892b55d7fc09082fb8392f2c496f89362481f43c58b57c6cd6a5c5d6aa9ad23fb57cdb844eeaaedc50683760ae04133b7fa83df74818f2a21eb27b7bc33dc4724e021ae1f6cd11bcc743a1854ea8a1de4bfb3e71187b9784eb120ea25e10ebc8d521b70d0e4343b5bf5f572e1a685fe0efa85f441bfcb34d3e0ba0157433232ac84e636fd7b91d7abae33f171ec9aba133e3411f30c6294a4faf6eaadc0ddf3d436e154030a9e4ff1e0af6b8ee8b22cc3ffff"}], "current_hash": "e684da1f022fb7bd058a523a45136a5d1865992567eadb3c939fe5c98ca931f8"}
+DEBUG:root:1
+DEBUG:root:line 69 inc block index:::
+DEBUG:root:1
+INFO:werkzeug:127.0.0.1 - - [08/Apr/2024 19:20:21] "POST /validate_block HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Apr/2024 19:20:21] "POST /validate_block HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5002 "POST /validate_block HTTP/1.1" 200 39
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5001 "POST /validate_block HTTP/1.1" 200 39
+DEBUG:root:line 52 blockchain at register, boot strap:
+DEBUG:root:Block 0:
+  Previous Hash: 1
+  Validator: 0
+  Capacity: 2
+  Transactions:
+    5000
+  Current Hash: 6f16fc8b47645bebd78bed464e7460e507dcfad4cd48130592f5df1b350ba950
+Block 1:
+  Previous Hash: 6f16fc8b47645bebd78bed464e7460e507dcfad4cd48130592f5df1b350ba950
+  Validator: 1
+  Capacity: 2
+  Transactions:
+    1000
+    1000
+  Current Hash: e684da1f022fb7bd058a523a45136a5d1865992567eadb3c939fe5c98ca931f8
+INFO:werkzeug:127.0.0.1 - - [08/Apr/2024 19:20:21] "POST /register_node HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "POST /register_node HTTP/1.1" 200 35
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5001
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:root:Data_dict that I received:
+{'sender_address': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEApJABmn/adhn8Q9PAD+Pm\n7qXYKl/mVfyeTUjoBT/3xT7MO/VszrXEgb5r41OnwR1nKdVsKpGfCZnHmG4Tga9M\n1t+rmXa57Sxu+Mk4poQzJr8KkQEeSJ0SjWQSjYdZdimiPGl96+XSERn5x9XN8m5i\ns5+EAOw5c2vUQZXhxCDsBqwG/+Pe2kGwvnpv5mxC1ua9uSdbw1HuywC9ZKZ4jID3\nhmMw5KGSUSjb4U1Nv5RM1C25i5AMD53JZGZXjJ/OL8ajm/bp931oBaAinCeAehNO\nHXSxlSpSDD1EA+Gs/e8D9HQy+p9dRbveQP4N4dl52FrLzrJJuGqTMs7H7G8fnW9B\n0QIDAQAB\n-----END PUBLIC KEY-----', 'receiver_address': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAzEiV0elQ5EKl9kKGdoD0\nK5idKXOyrY6DU4pr8uI6pqUDWQg0Gy/MnoCv1aRpbt/7B7ZtJyYqCBCmRbAOFrq8\ndZyG4ozUIHyxJ/0pn3aIWulNAimyq3TKMcIGuqFMPpZ7bokkb7aq+BS95iWmyXKU\nJviIemKXVEWUDiSgosgWCkLx20JUFqZvQnIfWGUCeaLRg0wHTLLCRitWs+wADf/Y\nVBnxJ2w0Nnz6akpkNv8RDKEH8l71W4JGVBWuwP7QdGDtlOcf2mEuA2Yu/EnUwun8\nR4GjxABbspxsG9KsUdnO53WM8rB/NRsrcDBCSHDwrrtkuTo5+12NeITxG/ji5LS2\nfwIDAQAB\n-----END PUBLIC KEY-----', 'type_of_transaction': 'coins', 'amount': 60, 'nonce': 1, 'message': None, 'transaction_id': '386f5cfd4d7d414e9bb3830ad4c6c7b200908d6ebe2af60323ae27be599ca258', 'signature': 'ak31m6GFKJ/KAydLmEIGJAGOcodBXxLDFxezc0pXm4UTu6HVoTkLVawU5AJuwHEkadEJkXXd/vfk57blkb0/H0NLw1rz/vdeeKNKCb7hl2EzBWMPVU8dJMu2jc2XgJpGUavmlwE47HSpE4z349ikm6Tz0Kndk69176hN3RNhRhb0A8/ZPSnqo29gAiP1GpqaNslqeDu+7orI6OwNMJBhGcJfs39D0pwL3Ve5Wqpzg9F6/P+jzGhMx/rcR2GoTKbIodhH+bDMpdrHbFLm6hV8YFu5L7UvxpwTf4z4qvbNFzlIie0EvkeukZxrh/TM9B9ErrDOfJvmkM+mwQYi+Ty2hg=='}
+DEBUG:root:Data_dict that I received:
+{'sender_address': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEApJABmn/adhn8Q9PAD+Pm\n7qXYKl/mVfyeTUjoBT/3xT7MO/VszrXEgb5r41OnwR1nKdVsKpGfCZnHmG4Tga9M\n1t+rmXa57Sxu+Mk4poQzJr8KkQEeSJ0SjWQSjYdZdimiPGl96+XSERn5x9XN8m5i\ns5+EAOw5c2vUQZXhxCDsBqwG/+Pe2kGwvnpv5mxC1ua9uSdbw1HuywC9ZKZ4jID3\nhmMw5KGSUSjb4U1Nv5RM1C25i5AMD53JZGZXjJ/OL8ajm/bp931oBaAinCeAehNO\nHXSxlSpSDD1EA+Gs/e8D9HQy+p9dRbveQP4N4dl52FrLzrJJuGqTMs7H7G8fnW9B\n0QIDAQAB\n-----END PUBLIC KEY-----', 'receiver_address': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAzEiV0elQ5EKl9kKGdoD0\nK5idKXOyrY6DU4pr8uI6pqUDWQg0Gy/MnoCv1aRpbt/7B7ZtJyYqCBCmRbAOFrq8\ndZyG4ozUIHyxJ/0pn3aIWulNAimyq3TKMcIGuqFMPpZ7bokkb7aq+BS95iWmyXKU\nJviIemKXVEWUDiSgosgWCkLx20JUFqZvQnIfWGUCeaLRg0wHTLLCRitWs+wADf/Y\nVBnxJ2w0Nnz6akpkNv8RDKEH8l71W4JGVBWuwP7QdGDtlOcf2mEuA2Yu/EnUwun8\nR4GjxABbspxsG9KsUdnO53WM8rB/NRsrcDBCSHDwrrtkuTo5+12NeITxG/ji5LS2\nfwIDAQAB\n-----END PUBLIC KEY-----', 'type_of_transaction': 'coins', 'amount': 60, 'nonce': 1, 'message': None, 'transaction_id': '386f5cfd4d7d414e9bb3830ad4c6c7b200908d6ebe2af60323ae27be599ca258', 'signature': 'ak31m6GFKJ/KAydLmEIGJAGOcodBXxLDFxezc0pXm4UTu6HVoTkLVawU5AJuwHEkadEJkXXd/vfk57blkb0/H0NLw1rz/vdeeKNKCb7hl2EzBWMPVU8dJMu2jc2XgJpGUavmlwE47HSpE4z349ikm6Tz0Kndk69176hN3RNhRhb0A8/ZPSnqo29gAiP1GpqaNslqeDu+7orI6OwNMJBhGcJfs39D0pwL3Ve5Wqpzg9F6/P+jzGhMx/rcR2GoTKbIodhH+bDMpdrHbFLm6hV8YFu5L7UvxpwTf4z4qvbNFzlIie0EvkeukZxrh/TM9B9ErrDOfJvmkM+mwQYi+Ty2hg=='}
+INFO:werkzeug:127.0.0.1 - - [08/Apr/2024 19:20:21] "POST /add_transaction HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Apr/2024 19:20:21] "POST /add_transaction HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "POST /add_transaction HTTP/1.1" 200 50
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5001 "POST /add_transaction HTTP/1.1" 200 50
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5001
+DEBUG:root:Data_dict that I received:
+{'sender_address': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEApJABmn/adhn8Q9PAD+Pm\n7qXYKl/mVfyeTUjoBT/3xT7MO/VszrXEgb5r41OnwR1nKdVsKpGfCZnHmG4Tga9M\n1t+rmXa57Sxu+Mk4poQzJr8KkQEeSJ0SjWQSjYdZdimiPGl96+XSERn5x9XN8m5i\ns5+EAOw5c2vUQZXhxCDsBqwG/+Pe2kGwvnpv5mxC1ua9uSdbw1HuywC9ZKZ4jID3\nhmMw5KGSUSjb4U1Nv5RM1C25i5AMD53JZGZXjJ/OL8ajm/bp931oBaAinCeAehNO\nHXSxlSpSDD1EA+Gs/e8D9HQy+p9dRbveQP4N4dl52FrLzrJJuGqTMs7H7G8fnW9B\n0QIDAQAB\n-----END PUBLIC KEY-----', 'receiver_address': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAzEiV0elQ5EKl9kKGdoD0\nK5idKXOyrY6DU4pr8uI6pqUDWQg0Gy/MnoCv1aRpbt/7B7ZtJyYqCBCmRbAOFrq8\ndZyG4ozUIHyxJ/0pn3aIWulNAimyq3TKMcIGuqFMPpZ7bokkb7aq+BS95iWmyXKU\nJviIemKXVEWUDiSgosgWCkLx20JUFqZvQnIfWGUCeaLRg0wHTLLCRitWs+wADf/Y\nVBnxJ2w0Nnz6akpkNv8RDKEH8l71W4JGVBWuwP7QdGDtlOcf2mEuA2Yu/EnUwun8\nR4GjxABbspxsG9KsUdnO53WM8rB/NRsrcDBCSHDwrrtkuTo5+12NeITxG/ji5LS2\nfwIDAQAB\n-----END PUBLIC KEY-----', 'type_of_transaction': 'coins', 'amount': 70, 'nonce': 2, 'message': None, 'transaction_id': 'c85774e4edd2c32aee5afaf3eece26e483a12aa42b8c591c76e386dcb88afb0c', 'signature': 'OtxsKdE66cXk8MzygIxGx4+kGJjjACM+kj5eYobIYIP7ldDQqxKDHSWyxJ1pAKmm0LaTfLdi5rHtmIF+r0bN3HpKDgb/PJnzcR8HlUMK1pafRtHI3DCcSinbqbzzNR73CYgxZNowUHsmElINuMTtC4Z1OGL+3mkTKYlEoez3R5wtUrpzVPb7NOaYxIk0PeTlZb4V/LIW1eJOfnO8kXbqt6KsfscitO92rL2vGsAdnJO96f6KjmCJVifO39e5T49h5ut7Ck3WRc5gDhS7RHwQ1m8DCfoOap9PNYmzIYDyy9l7J4glhwaA4CjP2CLTs2Gzz9q3JBrapj+T0L/Vz3Fcmg=='}
+DEBUG:root:Data_dict that I received:
+{'sender_address': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEApJABmn/adhn8Q9PAD+Pm\n7qXYKl/mVfyeTUjoBT/3xT7MO/VszrXEgb5r41OnwR1nKdVsKpGfCZnHmG4Tga9M\n1t+rmXa57Sxu+Mk4poQzJr8KkQEeSJ0SjWQSjYdZdimiPGl96+XSERn5x9XN8m5i\ns5+EAOw5c2vUQZXhxCDsBqwG/+Pe2kGwvnpv5mxC1ua9uSdbw1HuywC9ZKZ4jID3\nhmMw5KGSUSjb4U1Nv5RM1C25i5AMD53JZGZXjJ/OL8ajm/bp931oBaAinCeAehNO\nHXSxlSpSDD1EA+Gs/e8D9HQy+p9dRbveQP4N4dl52FrLzrJJuGqTMs7H7G8fnW9B\n0QIDAQAB\n-----END PUBLIC KEY-----', 'receiver_address': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAzEiV0elQ5EKl9kKGdoD0\nK5idKXOyrY6DU4pr8uI6pqUDWQg0Gy/MnoCv1aRpbt/7B7ZtJyYqCBCmRbAOFrq8\ndZyG4ozUIHyxJ/0pn3aIWulNAimyq3TKMcIGuqFMPpZ7bokkb7aq+BS95iWmyXKU\nJviIemKXVEWUDiSgosgWCkLx20JUFqZvQnIfWGUCeaLRg0wHTLLCRitWs+wADf/Y\nVBnxJ2w0Nnz6akpkNv8RDKEH8l71W4JGVBWuwP7QdGDtlOcf2mEuA2Yu/EnUwun8\nR4GjxABbspxsG9KsUdnO53WM8rB/NRsrcDBCSHDwrrtkuTo5+12NeITxG/ji5LS2\nfwIDAQAB\n-----END PUBLIC KEY-----', 'type_of_transaction': 'coins', 'amount': 70, 'nonce': 2, 'message': None, 'transaction_id': 'c85774e4edd2c32aee5afaf3eece26e483a12aa42b8c591c76e386dcb88afb0c', 'signature': 'OtxsKdE66cXk8MzygIxGx4+kGJjjACM+kj5eYobIYIP7ldDQqxKDHSWyxJ1pAKmm0LaTfLdi5rHtmIF+r0bN3HpKDgb/PJnzcR8HlUMK1pafRtHI3DCcSinbqbzzNR73CYgxZNowUHsmElINuMTtC4Z1OGL+3mkTKYlEoez3R5wtUrpzVPb7NOaYxIk0PeTlZb4V/LIW1eJOfnO8kXbqt6KsfscitO92rL2vGsAdnJO96f6KjmCJVifO39e5T49h5ut7Ck3WRc5gDhS7RHwQ1m8DCfoOap9PNYmzIYDyy9l7J4glhwaA4CjP2CLTs2Gzz9q3JBrapj+T0L/Vz3Fcmg=='}
+INFO:werkzeug:127.0.0.1 - - [08/Apr/2024 19:20:21] "POST /add_transaction HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "POST /add_transaction HTTP/1.1" 200 50
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5002
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:root:line 65 api data for validate block:
+DEBUG:root:{"index": 2, "previous_hash": "e684da1f022fb7bd058a523a45136a5d1865992567eadb3c939fe5c98ca931f8", "validator": 2, "capacity": 2, "transactions": [{"sender_address": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEApJABmn/adhn8Q9PAD+Pm\n7qXYKl/mVfyeTUjoBT/3xT7MO/VszrXEgb5r41OnwR1nKdVsKpGfCZnHmG4Tga9M\n1t+rmXa57Sxu+Mk4poQzJr8KkQEeSJ0SjWQSjYdZdimiPGl96+XSERn5x9XN8m5i\ns5+EAOw5c2vUQZXhxCDsBqwG/+Pe2kGwvnpv5mxC1ua9uSdbw1HuywC9ZKZ4jID3\nhmMw5KGSUSjb4U1Nv5RM1C25i5AMD53JZGZXjJ/OL8ajm/bp931oBaAinCeAehNO\nHXSxlSpSDD1EA+Gs/e8D9HQy+p9dRbveQP4N4dl52FrLzrJJuGqTMs7H7G8fnW9B\n0QIDAQAB\n-----END PUBLIC KEY-----", "receiver_address": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAzEiV0elQ5EKl9kKGdoD0\nK5idKXOyrY6DU4pr8uI6pqUDWQg0Gy/MnoCv1aRpbt/7B7ZtJyYqCBCmRbAOFrq8\ndZyG4ozUIHyxJ/0pn3aIWulNAimyq3TKMcIGuqFMPpZ7bokkb7aq+BS95iWmyXKU\nJviIemKXVEWUDiSgosgWCkLx20JUFqZvQnIfWGUCeaLRg0wHTLLCRitWs+wADf/Y\nVBnxJ2w0Nnz6akpkNv8RDKEH8l71W4JGVBWuwP7QdGDtlOcf2mEuA2Yu/EnUwun8\nR4GjxABbspxsG9KsUdnO53WM8rB/NRsrcDBCSHDwrrtkuTo5+12NeITxG/ji5LS2\nfwIDAQAB\n-----END PUBLIC KEY-----", "type_of_transaction": "coins", "amount": 60, "nonce": 1, "message": null, "transaction_id": "386f5cfd4d7d414e9bb3830ad4c6c7b200908d6ebe2af60323ae27be599ca258", "signature": "6a4df59ba185289fca03274b98420624018e7287415f12c31717b3734a579b8513bba1d5a1390b55ac14e4026ec0712469d1099175ddfef7e4e7b6e591bd3f1f434bc35af3fef75e78a34a09bee197613305630f554f1d24cbb68dcd97809a4651abe6970138ec74a9138cf7e3d8a49ba4f3d0a9dd93af75efa84ddd13614616f403cfd93d29eaa36f600223f51a9a9a36c96a783bbeee8ac8e8ec0d30906119c25fb37f43d29c0bdd57b95aaa7383d17afcffa3cc684cc7fadc4761a84ca6c8a1d847f9b0cca5dac76c52e6ea157c605bb92fb52fc69c137f8cf8aaf6cd17394889ed04be47ae919c6b87f4ccf41f44aeb0ce7c9be690cfa6c10622f93cb686"}, {"sender_address": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEApJABmn/adhn8Q9PAD+Pm\n7qXYKl/mVfyeTUjoBT/3xT7MO/VszrXEgb5r41OnwR1nKdVsKpGfCZnHmG4Tga9M\n1t+rmXa57Sxu+Mk4poQzJr8KkQEeSJ0SjWQSjYdZdimiPGl96+XSERn5x9XN8m5i\ns5+EAOw5c2vUQZXhxCDsBqwG/+Pe2kGwvnpv5mxC1ua9uSdbw1HuywC9ZKZ4jID3\nhmMw5KGSUSjb4U1Nv5RM1C25i5AMD53JZGZXjJ/OL8ajm/bp931oBaAinCeAehNO\nHXSxlSpSDD1EA+Gs/e8D9HQy+p9dRbveQP4N4dl52FrLzrJJuGqTMs7H7G8fnW9B\n0QIDAQAB\n-----END PUBLIC KEY-----", "receiver_address": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAzEiV0elQ5EKl9kKGdoD0\nK5idKXOyrY6DU4pr8uI6pqUDWQg0Gy/MnoCv1aRpbt/7B7ZtJyYqCBCmRbAOFrq8\ndZyG4ozUIHyxJ/0pn3aIWulNAimyq3TKMcIGuqFMPpZ7bokkb7aq+BS95iWmyXKU\nJviIemKXVEWUDiSgosgWCkLx20JUFqZvQnIfWGUCeaLRg0wHTLLCRitWs+wADf/Y\nVBnxJ2w0Nnz6akpkNv8RDKEH8l71W4JGVBWuwP7QdGDtlOcf2mEuA2Yu/EnUwun8\nR4GjxABbspxsG9KsUdnO53WM8rB/NRsrcDBCSHDwrrtkuTo5+12NeITxG/ji5LS2\nfwIDAQAB\n-----END PUBLIC KEY-----", "type_of_transaction": "coins", "amount": 70, "nonce": 2, "message": null, "transaction_id": "c85774e4edd2c32aee5afaf3eece26e483a12aa42b8c591c76e386dcb88afb0c", "signature": "3adc6c29d13ae9c5e4f0ccf2808c46c78fa41898e300233e923e5e6286c86083fb95d0d0ab12831d25b2c49d6900a9a6d0b6937cb762e6b1ed98817eaf46cddc7a4a0e06ff3c99f3711f0795430ad6969f46d1c8dc309c4a29dba9bcf3351ef709883164da30507b2612520db8c4ed0b86753862fede6913298944a1ecf7479c2d52ba7354f6fb34e698c489343de4e565be15fcb216d5e24e7e73bc9176eab7a2ac7ec722b4ef76acbdaf1ac01d9c93bde9fe8a8e60895627cedfd7b94f8f61e6eb7b0a4dd645ce600e14bb447c10d66f0309fa0e6a9f4f3589b32180f2cbd97b278825870680e028cfd822d3b361b3cfdab7241adaa63f93d0bfd5cf715c9a"}], "current_hash": "eb2dc055582df9f2c49f79bf6dc87e91a0db155185e387f813060d5089727eec"}
+DEBUG:root:line 65 api data for validate block:
+DEBUG:root:line 69 inc block index:::
+DEBUG:root:2
+DEBUG:root:{"index": 2, "previous_hash": "e684da1f022fb7bd058a523a45136a5d1865992567eadb3c939fe5c98ca931f8", "validator": 2, "capacity": 2, "transactions": [{"sender_address": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEApJABmn/adhn8Q9PAD+Pm\n7qXYKl/mVfyeTUjoBT/3xT7MO/VszrXEgb5r41OnwR1nKdVsKpGfCZnHmG4Tga9M\n1t+rmXa57Sxu+Mk4poQzJr8KkQEeSJ0SjWQSjYdZdimiPGl96+XSERn5x9XN8m5i\ns5+EAOw5c2vUQZXhxCDsBqwG/+Pe2kGwvnpv5mxC1ua9uSdbw1HuywC9ZKZ4jID3\nhmMw5KGSUSjb4U1Nv5RM1C25i5AMD53JZGZXjJ/OL8ajm/bp931oBaAinCeAehNO\nHXSxlSpSDD1EA+Gs/e8D9HQy+p9dRbveQP4N4dl52FrLzrJJuGqTMs7H7G8fnW9B\n0QIDAQAB\n-----END PUBLIC KEY-----", "receiver_address": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAzEiV0elQ5EKl9kKGdoD0\nK5idKXOyrY6DU4pr8uI6pqUDWQg0Gy/MnoCv1aRpbt/7B7ZtJyYqCBCmRbAOFrq8\ndZyG4ozUIHyxJ/0pn3aIWulNAimyq3TKMcIGuqFMPpZ7bokkb7aq+BS95iWmyXKU\nJviIemKXVEWUDiSgosgWCkLx20JUFqZvQnIfWGUCeaLRg0wHTLLCRitWs+wADf/Y\nVBnxJ2w0Nnz6akpkNv8RDKEH8l71W4JGVBWuwP7QdGDtlOcf2mEuA2Yu/EnUwun8\nR4GjxABbspxsG9KsUdnO53WM8rB/NRsrcDBCSHDwrrtkuTo5+12NeITxG/ji5LS2\nfwIDAQAB\n-----END PUBLIC KEY-----", "type_of_transaction": "coins", "amount": 60, "nonce": 1, "message": null, "transaction_id": "386f5cfd4d7d414e9bb3830ad4c6c7b200908d6ebe2af60323ae27be599ca258", "signature": "6a4df59ba185289fca03274b98420624018e7287415f12c31717b3734a579b8513bba1d5a1390b55ac14e4026ec0712469d1099175ddfef7e4e7b6e591bd3f1f434bc35af3fef75e78a34a09bee197613305630f554f1d24cbb68dcd97809a4651abe6970138ec74a9138cf7e3d8a49ba4f3d0a9dd93af75efa84ddd13614616f403cfd93d29eaa36f600223f51a9a9a36c96a783bbeee8ac8e8ec0d30906119c25fb37f43d29c0bdd57b95aaa7383d17afcffa3cc684cc7fadc4761a84ca6c8a1d847f9b0cca5dac76c52e6ea157c605bb92fb52fc69c137f8cf8aaf6cd17394889ed04be47ae919c6b87f4ccf41f44aeb0ce7c9be690cfa6c10622f93cb686"}, {"sender_address": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEApJABmn/adhn8Q9PAD+Pm\n7qXYKl/mVfyeTUjoBT/3xT7MO/VszrXEgb5r41OnwR1nKdVsKpGfCZnHmG4Tga9M\n1t+rmXa57Sxu+Mk4poQzJr8KkQEeSJ0SjWQSjYdZdimiPGl96+XSERn5x9XN8m5i\ns5+EAOw5c2vUQZXhxCDsBqwG/+Pe2kGwvnpv5mxC1ua9uSdbw1HuywC9ZKZ4jID3\nhmMw5KGSUSjb4U1Nv5RM1C25i5AMD53JZGZXjJ/OL8ajm/bp931oBaAinCeAehNO\nHXSxlSpSDD1EA+Gs/e8D9HQy+p9dRbveQP4N4dl52FrLzrJJuGqTMs7H7G8fnW9B\n0QIDAQAB\n-----END PUBLIC KEY-----", "receiver_address": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAzEiV0elQ5EKl9kKGdoD0\nK5idKXOyrY6DU4pr8uI6pqUDWQg0Gy/MnoCv1aRpbt/7B7ZtJyYqCBCmRbAOFrq8\ndZyG4ozUIHyxJ/0pn3aIWulNAimyq3TKMcIGuqFMPpZ7bokkb7aq+BS95iWmyXKU\nJviIemKXVEWUDiSgosgWCkLx20JUFqZvQnIfWGUCeaLRg0wHTLLCRitWs+wADf/Y\nVBnxJ2w0Nnz6akpkNv8RDKEH8l71W4JGVBWuwP7QdGDtlOcf2mEuA2Yu/EnUwun8\nR4GjxABbspxsG9KsUdnO53WM8rB/NRsrcDBCSHDwrrtkuTo5+12NeITxG/ji5LS2\nfwIDAQAB\n-----END PUBLIC KEY-----", "type_of_transaction": "coins", "amount": 70, "nonce": 2, "message": null, "transaction_id": "c85774e4edd2c32aee5afaf3eece26e483a12aa42b8c591c76e386dcb88afb0c", "signature": "3adc6c29d13ae9c5e4f0ccf2808c46c78fa41898e300233e923e5e6286c86083fb95d0d0ab12831d25b2c49d6900a9a6d0b6937cb762e6b1ed98817eaf46cddc7a4a0e06ff3c99f3711f0795430ad6969f46d1c8dc309c4a29dba9bcf3351ef709883164da30507b2612520db8c4ed0b86753862fede6913298944a1ecf7479c2d52ba7354f6fb34e698c489343de4e565be15fcb216d5e24e7e73bc9176eab7a2ac7ec722b4ef76acbdaf1ac01d9c93bde9fe8a8e60895627cedfd7b94f8f61e6eb7b0a4dd645ce600e14bb447c10d66f0309fa0e6a9f4f3589b32180f2cbd97b278825870680e028cfd822d3b361b3cfdab7241adaa63f93d0bfd5cf715c9a"}], "current_hash": "eb2dc055582df9f2c49f79bf6dc87e91a0db155185e387f813060d5089727eec"}
+DEBUG:root:line 69 inc block index:::
+DEBUG:root:2
+INFO:werkzeug:127.0.0.1 - - [08/Apr/2024 19:20:21] "POST /validate_block HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Apr/2024 19:20:21] "POST /validate_block HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "POST /validate_block HTTP/1.1" 200 39
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5002 "POST /validate_block HTTP/1.1" 200 39
+INFO:werkzeug:127.0.0.1 - - [08/Apr/2024 19:20:21] "POST /add_transaction HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5001 "POST /add_transaction HTTP/1.1" 200 50
+DEBUG:genesis:Node ID: 1
+DEBUG:genesis:Node Wallet Public Key: -----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAzEiV0elQ5EKl9kKGdoD0
+K5idKXOyrY6DU4pr8uI6pqUDWQg0Gy/MnoCv1aRpbt/7B7ZtJyYqCBCmRbAOFrq8
+dZyG4ozUIHyxJ/0pn3aIWulNAimyq3TKMcIGuqFMPpZ7bokkb7aq+BS95iWmyXKU
+JviIemKXVEWUDiSgosgWCkLx20JUFqZvQnIfWGUCeaLRg0wHTLLCRitWs+wADf/Y
+VBnxJ2w0Nnz6akpkNv8RDKEH8l71W4JGVBWuwP7QdGDtlOcf2mEuA2Yu/EnUwun8
+R4GjxABbspxsG9KsUdnO53WM8rB/NRsrcDBCSHDwrrtkuTo5+12NeITxG/ji5LS2
+fwIDAQAB
+-----END PUBLIC KEY-----
+DEBUG:genesis:Node Blockchain Length: 3

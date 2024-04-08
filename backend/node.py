@@ -112,7 +112,7 @@ class Node:
             if peer.public_key == trans.receiver_address:
                 peer.balance += trans.amount
 
-        if len(self.q_transactions == reg_capacity):
+        if len(self.q_transactions) == reg_capacity:
             self.proof_of_stake()
             self.q_transactions.clear()
         else:
