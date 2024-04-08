@@ -74,5 +74,3 @@ if __name__ == "__main__":
     for block in node.blockchain.blocks:
         print(block)
 
-    print("\ncurr block \n")
-    print(node.curr_block)

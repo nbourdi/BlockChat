@@ -33,11 +33,12 @@ class Node:
         self.blockchain = Blockchain()
         self.peers = []  # info about other nodes, should be in the [ip, port, pubkey] format, the ring IN PEER OBJECTS
         self.nonce = 0
-        self.curr_block = None  # the current UNVALIDATED/ QUEUED block
+        #self.curr_block = None  # the current UNVALIDATED/ QUEUED block
         self.peer_stakes = []
         self.q_transactions = [] # list of transactions in queue that belong to the current block #TODO maybe this is a little awkward i only use this for rewards
         self.capacity = capacity 
         self.stake = stake 
+        self.seen = set()
 
         
     def create_transaction(self, receiver_address, type_of_transaction, amount, message):
@@ -45,9 +46,78 @@ class Node:
         trans = Transaction(self.wallet.public_key, receiver_address, type_of_transaction, amount, message, self.nonce) #added the nonce attribute (athina)
         trans.sign_transaction(self.wallet.private_key)
         self.broadcast_transaction(trans)
-        #self.add_to_block(trans)
-        
 
+    def create_reg_transaction(self, receiver_address, reg_capacity):
+        self.nonce += 1 #added this (athina)
+        trans = Transaction(self.wallet.public_key, receiver_address, "coins", 1000, None, self.nonce) #added the nonce attribute (athina)
+        trans.sign_transaction(self.wallet.private_key)
+        self.broadcast_reg_transaction(trans, reg_capacity)
+        return trans
+    
+    def broadcast_reg_transaction(self, trans, reg_capacity): 
+        """Εκπέμπει τη συναλλαγή σε όλα τα peer."""
+        trans_dict = trans.to_dict()
+
+        if trans_dict['signature']:
+            trans_dict['signature'] = base64.b64encode(trans_dict['signature']).decode('utf-8')
+    
+        trans_json = json.dumps(trans_dict)
+        #self.add_to_block(trans)
+        lock = threading.Lock()  # Create a lock
+
+        valid_by_all = True
+
+        def send_to_peer(peer):
+            nonlocal trans_json, valid_by_all
+            address = f'http://{peer.ip}:{peer.port}/add_transaction'
+            try:
+                res = requests.post(address, json=trans_json)
+                if res.status_code == 200:
+                    with lock:
+                        print(f"Transaction successfully sent to {peer.ip}:{peer.port}")
+                else:
+                    with lock:
+                        print(f"Failed to send transaction to {peer.ip}:{peer.port}")
+                        valid_by_all = False
+            except Exception as e:
+                with lock:
+                    print(f"Error sending transaction to {peer.ip}:{peer.port}: {e}")
+                    valid_by_all = False
+
+        threads = []
+        for peer in self.peers:
+            if peer.id != self.id:
+                thread = threading.Thread(target=send_to_peer, args=(peer,))
+                threads.append(thread)
+                thread.start()
+
+        # Wait for all threads to complete
+        for thread in threads:
+            thread.join()
+
+        if valid_by_all:
+            print("valid by all ")
+            self.q_transactions.append(trans)
+
+                
+        if (trans.receiver_address == self.wallet.public_key):
+            self.wallet.balance += trans.amount
+        if (trans.sender_address == self.wallet.public_key):
+            self.wallet.balance -= trans.amount
+
+        # check and update all peers
+        for peer in self.peers:
+            if peer.public_key == trans.sender_address:
+                peer.balance -= trans.amount
+            if peer.public_key == trans.receiver_address:
+                peer.balance += trans.amount
+
+        if len(self.q_transactions == reg_capacity):
+            self.proof_of_stake()
+            self.q_transactions.clear()
+        else:
+            print(f"Transaction of {trans.amount} is added to queue block, capacity not reached.")
+  
 
     def stake(self, stake_amount): 
         # transaction με receiver_address = 0 και το ποσο που θλει να δεσμευσει ο καθε κομβος
@@ -73,11 +143,6 @@ class Node:
         
     def validate_block(self, block): 
         # validate the previous hash and check validity of current hash
-        
-        print("\n\n==== I HAVE RECIEVED THIS BLOCK INCOMING TO VALIDATE AND ADD\n\n")
-        print(block)
-        print("\n\n==== AND MY CURRENT BLOCK IS \n\n\n")
-        print(self.curr_block)
 
         if block.previous_hash == self.blockchain.blocks[-1].current_hash and block.current_hash == block.hash():
             return True
@@ -143,11 +208,11 @@ class Node:
             index = 0
             previous_hash = 1
             validator = 0
-            self.curr_block = Block(index, previous_hash, validator, capacity, current_hash=None)
+            new_block = Block(index, previous_hash, validator, capacity, current_hash=None)
         else:
-            self.curr_block = Block(index, previous_hash, validator, capacity, current_hash=None) #None values for the time being, gotta check the mining mathod -Anastasia | filled (Nat)
+            new_block = Block(index, previous_hash, validator, capacity, current_hash=None) #None values for the time being, gotta check the mining mathod -Anastasia | filled (Nat)
 
-        return self.curr_block
+        return new_block
 
     def proof_of_stake(self):
 
@@ -188,7 +253,7 @@ class Node:
                 validator = peer.id
                 break
         
-        self.curr_block.validator = validator
+        #self.curr_block.validator = validator
         # if i win, i mint
         if validator == self.id:
             print("====== I WON the competition, MINTING...\n")
@@ -196,7 +261,8 @@ class Node:
         else:
             print(f"====== {validator} won the competition\n")
         
-        #self.reward(validator) # every node will call this to give the fees to the validator
+        self.reward(validator) # every node will call this to give the fees to the validator
+        #self.q_transactions.clear()
         #self.curr_block = None
         
         
@@ -223,25 +289,36 @@ class Node:
 
 
 
-    def mint_block(self):  
+    def mint_block(self):  #THIS
         # fill in the block, create if not created
         # curr_block should be None unless there is an error thinking of it, should set back to None once its broadcasted 
         
-        if self.curr_block == None:
-            # print("CURR BLOCK IS NONE 230")
-            # print(self.blockchain.blocks[-1])
-            self.curr_block = self.create_block(index=self.blockchain.blocks[-1].index + 1, previous_hash=self.blockchain.blocks[-1].current_hash, validator=-1, capacity=self.capacity) 
+        # if self.curr_block == None:
+        #     # print("CURR BLOCK IS NONE 230")
+        #     # print(self.blockchain.blocks[-1])
+        #     self.curr_block = self.create_block(index=self.blockchain.blocks[-1].index + 1, previous_hash=self.blockchain.blocks[-1].current_hash, validator=-1, capacity=self.capacity) 
 
-        # print("type of curr block 222 node")
-        # print(type(self.curr_block))
-        self.curr_block.current_hash = self.curr_block.hash() 
+        # # print("type of curr block 222 node")
+        # # print(type(self.curr_block))
+        # self.curr_block.current_hash = self.curr_block.hash() 
 
         transactions = self.q_transactions
 
+        minted_block = self.create_block(
+            index=self.blockchain.blocks[-1].index + 1, 
+            previous_hash=self.blockchain.blocks[-1].current_hash,
+            validator=self.id,
+            capacity=self.capacity,
+            current_hash=None
+            )
+        
+        for tran in transactions:
+            minted_block.add_transaction(tran)
+        
         print("===== BROADCASTING THE BLOCK I AM MINTING...: \n\n")
-        print(self.curr_block)
+        print(minted_block)
         # self.blockchain.add_block(self.curr_block)
-        self.broadcast_block(self.curr_block)
+        self.broadcast_block(minted_block)
 
     # mostly done? are threads necess?, all error handling, get responses?
     def broadcast_block(self, block):
@@ -249,8 +326,9 @@ class Node:
         block_json = json.dumps(block.to_json())
         lock = threading.Lock()  # Create a lock
 
+        all_validated = True
         def send_block_to_peer(peer):
-            nonlocal block_json
+            nonlocal block_json, all_validated
             address = f'http://{peer.ip}:{peer.port}/validate_block'
             try:
                 res = requests.post(address, json=block_json)
@@ -260,9 +338,11 @@ class Node:
                 else:
                     with lock:
                         print(f"Error sending to peer with id = {peer.id}")
+                        all_validated = False
             except Exception as e:
                 with lock:
                     print(f"Error sending block to {peer.ip}:{peer.port}: {e}")
+                    all_validated = False
             
             
 
@@ -276,7 +356,9 @@ class Node:
         # Wait for all threads to complete
         for thread in threads:
             thread.join()
-        self.blockchain.add_block(self.curr_block)
+
+        if all_validated:
+            self.blockchain.add_block(block)
 
     def broadcast_transaction(self, trans): 
         """Εκπέμπει τη συναλλαγή σε όλα τα peer."""
@@ -289,8 +371,10 @@ class Node:
         #self.add_to_block(trans)
         lock = threading.Lock()  # Create a lock
 
+        valid_by_all = True
+
         def send_to_peer(peer):
-            nonlocal trans_json
+            nonlocal trans_json, valid_by_all
             address = f'http://{peer.ip}:{peer.port}/add_transaction'
             try:
                 res = requests.post(address, json=trans_json)
@@ -300,10 +384,11 @@ class Node:
                 else:
                     with lock:
                         print(f"Failed to send transaction to {peer.ip}:{peer.port}")
+                        valid_by_all = False
             except Exception as e:
                 with lock:
                     print(f"Error sending transaction to {peer.ip}:{peer.port}: {e}")
-            
+                    valid_by_all = False
 
         threads = []
         for peer in self.peers:
@@ -315,56 +400,47 @@ class Node:
         # Wait for all threads to complete
         for thread in threads:
             thread.join()
+
+        if valid_by_all:
+            self.q_transactions.append(trans)
+
+                
+        if (trans.receiver_address == self.wallet.public_key):
+            self.wallet.balance += trans.amount
+        if (trans.sender_address == self.wallet.public_key):
+            self.wallet.balance -= trans.amount
+
+        # check and update all peers
+        for peer in self.peers:
+            if peer.public_key == trans.sender_address:
+                peer.balance -= trans.amount
+            if peer.public_key == trans.receiver_address:
+                peer.balance += trans.amount
+
+        if self.q_transactions == self.capacity:
+            self.proof_of_stake()
+            self.q_transactions.clear()
+        else:
+            print(f"Transaction of {trans.amount} is added to queue block, capacity not reached.")
         
 
     def validate_transaction(self, transaction):
 
         if transaction.verify_signature() == False:
             return False
+        
+        self.q_transactions.append(transaction) #TODO maybe we should do a diff function for add trans that uses validate
+        
+        print("SELF Q TRANSACTIONS LEN")
+        print(len(self.q_transactions))
+        for t in self.q_transactions:
+            print("another in len")
+        if len(self.q_transactions) == self.capacity:
+            print("line 439")
+            self.proof_of_stake()
+            self.q_transactions.clear()
         return True
         #TODO high priority ! we also need to check for sufficient funds considering stake too
-        
-
-    def add_to_block(self, transaction):
-
-        print("==== ADD TO BLOCK CALLED")
-        self.validate_transaction(transaction)
-        
-        if self.curr_block == None: # this only happens when freshly created, right after genesis block?? are you sure
-            print("do i create rn.?\n")
-            self.curr_block = self.create_block(index=self.blockchain.blocks[-1].index + 1, previous_hash=self.blockchain.blocks[-1].current_hash, validator=-1, capacity=self.capacity, current_hash=None)
-
-        # check first if self is involved in the transaction
-
-       # print(self.wallet.public_key)
-        if (transaction.receiver_address == self.wallet.public_key):
-            self.wallet.balance += transaction.amount
-        if (transaction.sender_address == self.wallet.public_key):
-            self.wallet.balance -= transaction.amount
-
-        # check and update all peers
-        for peer in self.peers:
-            if peer.public_key == transaction.sender_address:
-                peer.balance -= transaction.amount
-            if peer.public_key == transaction.receiver_address:
-                peer.balance += transaction.amount
-
-        self.curr_block.add_transaction(transaction)
-        self.q_transactions.append(transaction)
-
-        if self.curr_block.is_full():
-            print("Block is full, attempting minting...")
-            # Current block is full, initiate mining process
-            # call mine competition??
-            self.proof_of_stake()
-            # if that is successful then empty the queued transactions
-            self.q_transactions.clear()
-            self.curr_block = None
-        else:
-            print(f"Transaction of {transaction.amount} is added to queue block, capacity not reached.")
-
-        return True
-    
 
     # used by bootstrap to send the whole peer ring to some peer, via HTTP post            
     def send_peer_ring(self, peer):
@@ -407,3 +483,42 @@ class Node:
 
 
            
+#def add_to_block(self, transaction):
+
+    #     print("==== ADD TO BLOCK CALLED")
+    #     self.validate_transaction(transaction)
+        
+    #     if self.curr_block == None: # this only happens when freshly created, right after genesis block?? are you sure
+    #         print("do i create rn.?\n")
+    #         self.curr_block = self.create_block(index=self.blockchain.blocks[-1].index + 1, previous_hash=self.blockchain.blocks[-1].current_hash, validator=-1, capacity=self.capacity, current_hash=None)
+
+    #     # check first if self is involved in the transaction
+
+    #    # print(self.wallet.public_key)
+    #     if (transaction.receiver_address == self.wallet.public_key):
+    #         self.wallet.balance += transaction.amount
+    #     if (transaction.sender_address == self.wallet.public_key):
+    #         self.wallet.balance -= transaction.amount
+
+    #     # check and update all peers
+    #     for peer in self.peers:
+    #         if peer.public_key == transaction.sender_address:
+    #             peer.balance -= transaction.amount
+    #         if peer.public_key == transaction.receiver_address:
+    #             peer.balance += transaction.amount
+
+    #     self.curr_block.add_transaction(transaction)
+    #     self.q_transactions.append(transaction)
+
+    #     if self.curr_block.is_full():
+    #         print("Block is full, attempting minting...")
+    #         # Current block is full, initiate mining process
+    #         # call mine competition??
+    #         self.proof_of_stake()
+    #         # if that is successful then empty the queued transactions
+    #         self.q_transactions.clear()
+    #         self.curr_block = None
+    #     else:
+    #         print(f"Transaction of {transaction.amount} is added to queue block, capacity not reached.")
+
+    #     return True

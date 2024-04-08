@@ -39,9 +39,9 @@ if __name__ == "__main__":
         
         transaction = Transaction(sender_address='0', receiver_address=node.wallet.public_key, type_of_transaction='coins', amount=5000, nonce=0, message=None)
         genesis_block = node.create_block(index=0, previous_hash=1, validator=0, capacity=node.capacity, current_hash=None)
-        node.curr_block = genesis_block
-        node.wallet.balance += 10000
-        node.curr_block.add_transaction(transaction)
+        #node.curr_block = genesis_block
+        node.wallet.balance += 5000
+        genesis_block.add_transaction(transaction)
         node.blockchain.add_block(genesis_block)
         #print("Wallet balance after adding funds:", node.wallet.balance)
         node.id = 1
@@ -62,6 +62,6 @@ if __name__ == "__main__":
         print(block)
 
     print("\ncurr block\n")
-    print(node.curr_block)
+    #print(node.curr_block)
         
     main()
