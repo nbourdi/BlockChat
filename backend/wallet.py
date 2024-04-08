@@ -8,4 +8,4 @@ class Wallet:
         public_key = private_key.publickey()
         self.private_key = private_key.export_key(format='PEM').decode()
         self.public_key = public_key.export_key(format='PEM').decode()
-        self.balance = 0  # Added this, assuming it's related to the wallet
+        self.balance = 0  

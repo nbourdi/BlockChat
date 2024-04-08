@@ -22,6 +22,7 @@ class Peer: # helper class, to represent peer node data
         self.balance = balance
         self.stake = 10 #TODO make it global ALSO #FIXME these wont get into the block more correct to stake in genesis after registration and then broadcast it but we dont have the function 
         self.stake_share = 0
+        self.unvalidated_balance = balance
         # self.nonce = 0 # TODO
 
 
@@ -33,118 +34,35 @@ class Node:
         self.blockchain = Blockchain()
         self.peers = []  # info about other nodes, should be in the [ip, port, pubkey] format, the ring IN PEER OBJECTS
         self.nonce = 0
-        #self.curr_block = None  # the current UNVALIDATED/ QUEUED block
         self.peer_stakes = []
-        self.q_transactions = [] # list of transactions in queue that belong to the current block #TODO maybe this is a little awkward i only use this for rewards
+        self.q_transactions = [] # list of transactions in queue 
         self.capacity = capacity 
         self.stake = stake 
         self.seen = set()
-
+        self.unvalidated_balance = 0
         
     def create_transaction(self, receiver_address, type_of_transaction, amount, message):
         self.nonce += 1 #added this (athina)
         trans = Transaction(self.wallet.public_key, receiver_address, type_of_transaction, amount, message, self.nonce) #added the nonce attribute (athina)
         trans.sign_transaction(self.wallet.private_key)
-        self.broadcast_transaction(trans)
+        self.broadcast_transaction(trans, self.capacity)
 
-    def create_reg_transaction(self, receiver_address, reg_capacity):
+    def create_reg_transaction(self, receiver_address, reg_capacity): #TODO could be cleaner
         self.nonce += 1 #added this (athina)
-        trans = Transaction(self.wallet.public_key, receiver_address, "coins", 1000, None, self.nonce) #added the nonce attribute (athina)
+        trans = Transaction(self.wallet.public_key, receiver_address, "coins_reg", 1000, None, self.nonce) #added the nonce attribute (athina)
         trans.sign_transaction(self.wallet.private_key)
-        self.broadcast_reg_transaction(trans, reg_capacity)
+        self.broadcast_transaction(trans, reg_capacity)
         return trans
     
-    def broadcast_reg_transaction(self, trans, reg_capacity): 
-        """Εκπέμπει τη συναλλαγή σε όλα τα peer."""
-        trans_dict = trans.to_dict()
-
-        if trans_dict['signature']:
-            trans_dict['signature'] = base64.b64encode(trans_dict['signature']).decode('utf-8')
-    
-        trans_json = json.dumps(trans_dict)
-        #self.add_to_block(trans)
-        lock = threading.Lock()  # Create a lock
-
-        valid_by_all = True
-
-        def send_to_peer(peer):
-            nonlocal trans_json, valid_by_all
-            address = f'http://{peer.ip}:{peer.port}/add_transaction'
-            try:
-                res = requests.post(address, json=trans_json)
-                if res.status_code == 200:
-                    with lock:
-                        print(f"Transaction successfully sent to {peer.ip}:{peer.port}")
-                else:
-                    with lock:
-                        print(f"Failed to send transaction to {peer.ip}:{peer.port}")
-                        valid_by_all = False
-            except Exception as e:
-                with lock:
-                    print(f"Error sending transaction to {peer.ip}:{peer.port}: {e}")
-                    valid_by_all = False
-
-        threads = []
-        for peer in self.peers:
-            if peer.id != self.id:
-                thread = threading.Thread(target=send_to_peer, args=(peer,))
-                threads.append(thread)
-                thread.start()
-
-        # Wait for all threads to complete
-        for thread in threads:
-            thread.join()
-
-        if valid_by_all:
-            print("valid by all ")
-            self.q_transactions.append(trans)
-
-                
-        if (trans.receiver_address == self.wallet.public_key):
-            self.wallet.balance += trans.amount
-        if (trans.sender_address == self.wallet.public_key):
-            self.wallet.balance -= trans.amount
-
-        # check and update all peers
-        for peer in self.peers:
-            if peer.public_key == trans.sender_address:
-                peer.balance -= trans.amount
-            if peer.public_key == trans.receiver_address:
-                peer.balance += trans.amount
-
-        if len(self.q_transactions) == reg_capacity:
-            self.proof_of_stake()
-            self.q_transactions.clear()
-        else:
-            print(f"Transaction of {trans.amount} is added to queue block, capacity not reached.")
-  
-
-    def stake(self, stake_amount): 
-        # transaction με receiver_address = 0 και το ποσο που θλει να δεσμευσει ο καθε κομβος
-        
-        if self.balance < stake_amount:
-            print(f"Can't stake {stake_amount}, not enough BCC in your acount...")
-            return False
-        else:
-            self.stake = stake_amount
-            self.create_transaction(0, type_of_transaction="stake", amount=stake_amount, message=None)
-            self.broadcast_stake()
-            return True
-        
-    # TODO last -prio
-    def update_stake(self, stake_amount):
-        # create a transaction 
-        pass
-
-    # TODO mid prior
-    def broadcast_stake(self, stake):
-        pass
-
-        
     def validate_block(self, block): 
         # validate the previous hash and check validity of current hash
-
+        print("INCOMING BLOCK")
+        if block.validator != self.validator_id(block.previous_hash):
+            return False
         if block.previous_hash == self.blockchain.blocks[-1].current_hash and block.current_hash == block.hash():
+            
+            for t in block.transactions:
+                self.seen.add(t.transaction_id) # if i validate a block that i havent had even the chance to mint
             return True
         return False
     
@@ -177,24 +95,15 @@ class Node:
             }
             blocks_json.append(block_data)
 
-        # print("block_data:")
-        # print(block_data)s
+        data = {'blocks': blocks_json}
 
-        data = {
-            'blocks': blocks_json
-        }
-        # print("data")
-        # print(data)
-
-        address = f"http://{peer.ip}:{peer.port}/validate_chain"
-        res = requests.post(address, json=data)
+        res = requests.post(f"http://{peer.ip}:{peer.port}/validate_chain", json=data)
         return res
 
 
 
                 
     def add_peer(self, id, ip, port, public_key, balance):
-        # Add peer to ring, probably only called by bootstrap 
         peer = Peer(id, ip, port, public_key, balance)
         self.peers.append(peer)
 
@@ -204,7 +113,7 @@ class Node:
     def create_block(self, index, previous_hash, validator, capacity, current_hash): 
         # I'm creating and adding a new block to the blockchain (Anast)
         if len(self.blockchain.blocks) == 0:
-            #genesis block of the chain
+            #genesis block of the chain - #TODO this will never happen
             index = 0
             previous_hash = 1
             validator = 0
@@ -214,14 +123,7 @@ class Node:
 
         return new_block
 
-    def proof_of_stake(self):
-
-        #use: need to know who's gonna validate the next block
-        #PoS: valivator is based on the ammount of cryptocurrency 
-        #method in order to bind the ammount it wants from its wallet 
-        print(f"\n\n=== ENTERING PROOF OF STAKE WITH STAKE {self.stake}\n\n")
-
-        validator = -1 # no one validates
+    def validator_id(self, seed):
         stake_sum = self.stake
 
         for peer in self.peers:
@@ -232,26 +134,30 @@ class Node:
         for peer in self.peers:
             peer.stake_share = [share_offset, peer.stake / stake_sum + share_offset]
             share_offset = peer.stake_share[1]
-            #print(f"peer id: {peer.id}, stake_share: {peer.stake_share}")
 
         #  the seed is the hash of the previous block
-        #seed_hex = self.blockchain.blocks[-1].hash()
-        seed_hex = self.blockchain.blocks[-1].current_hash
-
+        seed_hex = seed
+        print("the seed block index")
+        print(seed)
         seed = int(seed_hex, 16)  # convert to int
 
         random_generator = random.Random()
         random_generator.seed(seed)  # set the seed for the random generator
 
         # competition
-        rand = random_generator.random()  # call random() method on the random.Random instance
+        rand = random_generator.random() 
 
         print(f"==== THE RANDOM NUMBER IS {rand}")
         for peer in self.peers:
 
             if peer.stake_share[0] <= rand < peer.stake_share[1]:
-                validator = peer.id
-                break
+                return peer.id
+
+    def proof_of_stake(self):
+
+        print(f"\n\n=== ENTERING PROOF OF STAKE WITH STAKE {self.stake}\n\n")
+        validator = self.validator_id(self.blockchain.blocks[-1].hash())
+        
         
         #self.curr_block.validator = validator
         # if i win, i mint
@@ -262,8 +168,6 @@ class Node:
             print(f"====== {validator} won the competition\n")
         
         self.reward(validator) # every node will call this to give the fees to the validator
-        #self.q_transactions.clear()
-        #self.curr_block = None
         
         
     # Ο επικυρωτής του block είναι και αυτός στου οποίου το wallet πιστώνονται οι χρεώσεις των
@@ -274,11 +178,10 @@ class Node:
 
         fee = 0
         for t in self.q_transactions:
-
-            if t.type_of_transaction == "coins":
-                fee += 0.03 * t.amount # a 3% fee
-            else:
+            if t.type_of_transaction == "message":
                 fee += len(t.message) # 1 char = 1BCC, we do count spaces
+            else:
+                fee += 0.03 * t.amount # a 3% fee
 
         if validator_id == self.id:
             self.wallet.balance += fee
@@ -289,18 +192,7 @@ class Node:
 
 
 
-    def mint_block(self):  #THIS
-        # fill in the block, create if not created
-        # curr_block should be None unless there is an error thinking of it, should set back to None once its broadcasted 
-        
-        # if self.curr_block == None:
-        #     # print("CURR BLOCK IS NONE 230")
-        #     # print(self.blockchain.blocks[-1])
-        #     self.curr_block = self.create_block(index=self.blockchain.blocks[-1].index + 1, previous_hash=self.blockchain.blocks[-1].current_hash, validator=-1, capacity=self.capacity) 
-
-        # # print("type of curr block 222 node")
-        # # print(type(self.curr_block))
-        # self.curr_block.current_hash = self.curr_block.hash() 
+    def mint_block(self):  
 
         transactions = self.q_transactions
 
@@ -317,7 +209,6 @@ class Node:
         
         print("===== BROADCASTING THE BLOCK I AM MINTING...: \n\n")
         print(minted_block)
-        # self.blockchain.add_block(self.curr_block)
         self.broadcast_block(minted_block)
 
     # mostly done? are threads necess?, all error handling, get responses?
@@ -358,9 +249,10 @@ class Node:
             thread.join()
 
         if all_validated:
+            print("ADDING BLOCK BECAUSE I BROADCASTED")
             self.blockchain.add_block(block)
 
-    def broadcast_transaction(self, trans): 
+    def broadcast_transaction(self, trans, capacity): 
         """Εκπέμπει τη συναλλαγή σε όλα τα peer."""
         trans_dict = trans.to_dict()
 
@@ -368,7 +260,6 @@ class Node:
             trans_dict['signature'] = base64.b64encode(trans_dict['signature']).decode('utf-8')
     
         trans_json = json.dumps(trans_dict)
-        #self.add_to_block(trans)
         lock = threading.Lock()  # Create a lock
 
         valid_by_all = True
@@ -402,9 +293,15 @@ class Node:
             thread.join()
 
         if valid_by_all:
-            self.q_transactions.append(trans)
+            self.add_transaction(trans, capacity)
+            #self.q_transactions.append(trans)
 
-                
+               
+
+    
+    def add_transaction(self, trans, capacity):
+        self.q_transactions.append(trans)
+
         if (trans.receiver_address == self.wallet.public_key):
             self.wallet.balance += trans.amount
         if (trans.sender_address == self.wallet.public_key):
@@ -417,28 +314,21 @@ class Node:
             if peer.public_key == trans.receiver_address:
                 peer.balance += trans.amount
 
-        if self.q_transactions == self.capacity:
+        if len(self.q_transactions) == capacity:
             self.proof_of_stake()
             self.q_transactions.clear()
         else:
             print(f"Transaction of {trans.amount} is added to queue block, capacity not reached.")
         
 
-    def validate_transaction(self, transaction):
+    def validate_transaction(self, transaction, capacity):
 
         if transaction.verify_signature() == False:
             return False
+        if transaction.transaction_id in self.seen:
+            return True
         
-        self.q_transactions.append(transaction) #TODO maybe we should do a diff function for add trans that uses validate
-        
-        print("SELF Q TRANSACTIONS LEN")
-        print(len(self.q_transactions))
-        for t in self.q_transactions:
-            print("another in len")
-        if len(self.q_transactions) == self.capacity:
-            print("line 439")
-            self.proof_of_stake()
-            self.q_transactions.clear()
+        self.add_transaction(transaction, capacity)
         return True
         #TODO high priority ! we also need to check for sufficient funds considering stake too
 
@@ -481,7 +371,26 @@ class Node:
 
         
 
+    def stake(self, stake_amount): 
+        # transaction με receiver_address = 0 και το ποσο που θλει να δεσμευσει ο καθε κομβος
+        
+        if self.balance < stake_amount:
+            print(f"Can't stake {stake_amount}, not enough BCC in your acount...")
+            return False
+        else:
+            self.stake = stake_amount
+            self.create_transaction(0, type_of_transaction="stake", amount=stake_amount, message=None)
+            self.broadcast_stake()
+            return True
+        
+    # TODO last -prio
+    def update_stake(self, stake_amount):
+        # create a transaction 
+        pass
 
+    # TODO mid prior
+    def broadcast_stake(self, stake):
+        pass
            
 #def add_to_block(self, transaction):
 

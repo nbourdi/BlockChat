@@ -1,3 +1,4 @@
+from asyncio import sleep
 import base64
 from blockchain import Blockchain
 from block import Block
@@ -14,7 +15,7 @@ api = Blueprint('api', __name__)
 n = 3
 
 global global_node
-global_node = Node(2, 10)
+global_node = Node(3, 10)
 node = global_node
 
 @api.route('/get_id', methods=['POST'])
@@ -23,8 +24,6 @@ def get_id():
     peer_ip = data.get('ip')
     peer_port = data.get('port')
     peer_pk = data.get('pub_key')
-    logging.debug("\n\n\nReceived registration request from peer with IP: %s, Port: %s, pubkey: %s\n\n", peer_ip, peer_port, peer_pk)
-
     peer_id = len(node.peers) + 1
 
     # Add node in the list of registered nodes.
@@ -45,29 +44,15 @@ def register_node():
             if peer.id != node.id:
                 node.send_blockchain_to_peer(peer=peer)
                 node.send_peer_ring(peer) 
-        # na ftiaksei ena block 
-                
-        # registration_block = node.create_block(
-        #     index=1, previous_hash=node.blockchain.blocks[-1].current_hash, 
-        #     validator=0, 
-        #     capacity=n, 
-        #     current_hash=None
-        #     )
+                sleep(1)
 
         for peer in node.peers:
             if peer.id != node.id:
                 logging.debug("\n\n ====================== CREATING REG TRANSACTION............")
                 node.create_reg_transaction(
                     receiver_address=peer.public_key,
-                    reg_capacity=2
+                    reg_capacity=n-1
                 )
-
-
-               
-
-                
-    logging.debug("line 52 blockchain at register, boot strap:")
-    logging.debug(node.blockchain)
 
     return jsonify({"message": "Registered all nodes"}), 200
 
@@ -81,14 +66,10 @@ def get_money():
 def get_block():
 
     data = request.get_json()
-    logging.debug("line 65 api data for validate block:")
-    logging.debug(data)
     inc_block = Block.from_json(data)
 
-    logging.debug("line 69 inc block index:::")
-    logging.debug(inc_block.index)
-
     if node.validate_block(inc_block):
+        print("ADDING BLOCK BECAUSE IT WAS BROADCASTED TO ME")
         node.blockchain.add_block(inc_block)
         return jsonify({'message': 'Block added successfully'}), 200
     
@@ -120,9 +101,14 @@ def add_transaction():
     trans = Transaction(sender_address=sender_address, receiver_address=receiver_address,
                          type_of_transaction=type_of_transaction, amount=amount,
                          message=message, nonce=nonce, transaction_id=transaction_id,signature=signature)
-         # Validate the transaction and add it to the block
+         
 
-    if node.validate_transaction(trans):
+    valid = False
+    if trans.type_of_transaction == "coins_reg":
+        valid = node.validate_transaction(trans, n-1)
+    else:
+        valid = node.validate_transaction(trans, node.capacity)
+    if valid:
         return jsonify({'message': "Transaction validated successfully."}), 200
     else:
         return jsonify({'message': "Couldn't verify signature, transaction rejected."}), 400
@@ -133,14 +119,10 @@ def add_transaction():
 def get_ring():
     try:
         data = request.get_json()
-
-        #logging.debug("Type of data: %s", type(data))  # Log the type of data
-        #logging.debug("Data that I received:\n%s", data)  # Log the received data
         data = json.loads(data)
         
         peers = [Peer(item['id'], item['ip'], item['port'], item['public_key'], item['balance']) for item in data]
-        
-        #print(peers)
+
 
         for peer in peers:
             node.add_peer_obj(peer)
@@ -150,34 +132,6 @@ def get_ring():
         logging.error("Error occurred while processing JSON data: %s", str(e))
         return jsonify({"error": str(e)}), 400
 
-# @api.route('/get_ring', methods=['POST'])
-# def get_ring():
-#     try:
-#         data = request.get_json()
-
-#         #logging.debug("Type of data: %s", type(data))  # Log the type of data
-#         logging.debug("Data that I received:\n%s", data)  # Log the received data
-#         data_dict = json.loads(data)
-#         for item in data_dict:
-#             peer_id = item['id']
-#             ip = item['ip']
-#             port = item['port']
-#             public_key = item['public_key']
-#             balance = item['balance']
-
-#         peers = [Peer(peer_id, ip, port, public_key, balance) for item in data]
-#         print(len(peers))
-
-#         for peer in peers:
-#             node.add_peer_obj(peer)
-        
-
-#         return jsonify({"message": "Peers received successfully"}), 200
-#     except Exception as e:
-#         logging.error("Error occurred while processing JSON data: %s", str(e))
-#         return jsonify({"error": str(e)}), 400
-
-
     
 # Endpoint to get the chain
 @api.route('/validate_chain', methods=['POST'])
@@ -186,7 +140,7 @@ def get_chain():
         data = request.get_json()
 
         chain = Blockchain.from_json(data)
-        node.blockchain = chain #TODO thats not very good implem
+        node.blockchain = chain #TODO thats not very good implem - I DONT CARE NERD
         logging.debug("line 187 chain that i validate:")
         logging.debug(chain)
         
