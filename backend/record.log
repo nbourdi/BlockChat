@@ -1273,4 +1273,600 @@ DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "POST /register_node HTTP/1.1
 
 
 
-nn
+nnINFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "POST /get_id HTTP/1.1" 200 45
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "POST /register_node HTTP/1.1" 200 35
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "POST /get_id HTTP/1.1" 200 45
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:root:line 187 chain that i validate:
+DEBUG:root:Block 0:
+  Previous Hash: 1
+  Validator: 0
+  Capacity: 3
+  Transactions:
+    5000
+  Current Hash: 096b4c5bca941f4c483f628653fcbfe6254614c9c2a1c7ad9637f7abb3035048
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 18:58:28] "POST /validate_chain HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 18:58:28] "POST /get_ring HTTP/1.1" 200 -
+DEBUG:root:Data_dict that I received:
+{'sender_address': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA07ubJWvwc2bv1QRSve7P\nh/3IArEXqtXoTHjctGRy0SMFGltDlSI6Gmcc5zqby1+TBiKbY0EA+GsCP9Pv4XGA\nqlIYQc71rDO5zRrnBC34qZnhUeRjhPEIv5GZOYtlle4MsDAQfFxlvJvTFsroJ2wi\nrlKRxTTjAAlr47BpW3hzqAQXDLAbhvftecshnL+rv2m2UzczCULU8pb1bOlyZ2H2\nZYVAzdzrZZn89eNNBr9LrA0qXk/PmKUHIV3c+Tqlvyq+Zw2Goy++McEorEA+umr1\nsUsJYxXSK9fXe0ug4g0038T03F0lBqKjgluMfL5/cZSNVqlDTDFinOHg8EnqIteD\nbwIDAQAB\n-----END PUBLIC KEY-----', 'receiver_address': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAmNKmX+sfp0y0m9BFhnt3\nsRxN6OC+Zrzi2hiWd3pF48XUfnrdyRNHDI088pn5Eg8KCTEszBaLJIQcvbyXm4p7\nDScbFOFNtc61sAB2iMc70Qz1ikUns9lTEr7/qkVVHvjVXfS/gfvx4PBxwhuoAbwC\n1GYeVYAWOnjaY6V1aLQ2MFy/0zQaXbCLiKnyg7yvdOeD8HIzBVj4L+d9FHF7yknK\npUlReKrtX5vsv75zl9pD9o2fapFCEaJ80WVup3rkz58Lu1UWnudPkerwgU1v7NEb\n8Z+LeGtr5m9obdM/Hb5x9lz+uOVeWU4g/gxI5fli/Cgquxo4Z0qwxBHX8ptd9xqG\nhQIDAQAB\n-----END PUBLIC KEY-----', 'type_of_transaction': 'coins_reg', 'amount': 1000, 'nonce': 1, 'message': None, 'transaction_id': '72ccf89a9db6acf9da577968e437ff283c0d9a2195a930aa3d34b197a3285a2b', 'signature': 'cy0lANsYRRWzj0Ri3gWVuyeB1x4gjoCtQkd2AMED5FdFA1080zSQaNHlsSVlonshLTLqamIpItYPWAwJ+9jmS8VEOxxt5Bjo2wggh2NxHbYorL5Dgbcc+h0ywN/cCytjpcE0KY/TVn/R/xwQSOMqeP9FtTSFa35NLDcoV9oRUNMruf1oq4qcbpVUxM+HwQvLkzoxcW+XbUrggeW3JVUMsrRRqF8WnoKvm7u6ZGalZ67LRD2ijJsAyeggr6Vz+YyUo1+zypXtE+BmHDWXic7DiLAJgOM50k3EWX90W9Wf73ugyv12Eu/IYfewYebQoqbQqrSKxnBNNVVv24uVfS0v5Q=='}
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 18:58:28] "POST /add_transaction HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 18:58:28] "POST /add_block HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "POST /register_node HTTP/1.1" 200 35
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "POST /get_id HTTP/1.1" 200 45
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:root:line 187 chain that i validate:
+DEBUG:root:Block 0:
+  Previous Hash: 1
+  Validator: 0
+  Capacity: 3
+  Transactions:
+    5000
+  Current Hash: e18ebff23f5a20e9818588b4422a8bcb3f308541295cd8fd98147863c596c3ef
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 19:09:18] "POST /validate_chain HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 19:09:18] "POST /get_ring HTTP/1.1" 200 -
+DEBUG:root:Data_dict that I received:
+{'sender_address': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA01L9W0Q0hKqTtD4T6m4o\ndrbU79gEAIDToDJpOm/X47/IfFm5BG7xu+UFfSVLq/IZi/TbQ+BgAQgtLxDnmnvt\nmTnI1DHtSTisjuC+q2GfIpiNaN7imace5rSF+X48nVZ5kn/4F8rGj5zy8G59tIKY\nAnpGCSukeM9qA3vNeJah0htgFfHvjvWBBaZrPOvr9gRZn+x6di+E2zgIFe3Z4fSA\nokDe5NAlonh681QgvL1GhD/RwI/QYkVVMThiMBCXezTiLAV8LBcRnfRrnTqWRJh1\nM3ESayglOCQ64lweXXh/+y3rSjmYKYGR5uFtKQPZA8zBs8tnIPLTpincR2eGdoen\nqwIDAQAB\n-----END PUBLIC KEY-----', 'receiver_address': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAv0YiAVsOf/akFTRDxHaS\nldxyGzCeFjYdlMpKgis+YL/k/nVZz+GnbX4xwwCdgrb+azjDKZXUwxb1MrGX8NwI\nut03xV/2fbACOUOQgz5A8OR2gLdjGNaOD887aYFSGtT2GEY1YGU/S15omkUZA8zo\nJJusdPKLGkIDacBYlVu9WfxPEvjpq/6i2w1Ao1wsZOe06qsLB8Yj3GYxQti/qjXQ\n6Uvw6E1f1Ws+CrZdFNBxvYLYbB/82Ab6Ky9PQltqkS5V7GMsvxr6aHHtV5cFJ/hF\ndJIwEca105KGIj/WQMoR+nw4gQgYyRkAIzKUTKks7aT/kPXJXzLFvg9BCGPovXYB\n8wIDAQAB\n-----END PUBLIC KEY-----', 'type_of_transaction': 'coins_reg', 'amount': 1000, 'nonce': 1, 'message': None, 'transaction_id': '11c859a3adfaaa2a516649da759b32b3a315bb82b83c176da43515d87b2df543', 'signature': 'BQbLE0qQ0hpxh4yB6ryR06BHp6ZSTDUEeHZxaDgg6TeikDnW7BkNbfyFGWal47+aXDLsRjsKl24ig0uNLrn2kvrmIAkLZ/gZ/FuLb34+o1dDF0Nn544UCrk3Nrve2DcM+C2ZQ0qv+FD58TVMSCX0JtAmIaPV1cnJO0tJXV1+ad4voTOLQQJNjM8253Avoy/oG77f+lvxZeTQV+KgQ76E6JxPOkbh15AlsgyScTOH7/a2U34dEjxdFqpeTArh8WhPgPUmwBDoyZUvX9eprYjFRCVUgeD9Sp2kW16zvnAG/etEYo1DTTgK4Z/9Q0cXf8fN4PmFZaC3Edszv+s4CnZzAQ=='}
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "POST /add_block HTTP/1.1" 200 39
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 19:09:18] "POST /add_transaction HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "POST /register_node HTTP/1.1" 200 35
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "POST /get_id HTTP/1.1" 200 45
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:root:line 187 chain that i validate:
+DEBUG:root:Block 0:
+  Previous Hash: 1
+  Validator: 0
+  Capacity: 3
+  Transactions:
+    5000
+  Current Hash: 21fff102eae7d84c62fc5fb9e8d69910395cfba54b392b8a6a75897f3900a085
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 20:11:27] "POST /validate_chain HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 20:11:27] "POST /get_ring HTTP/1.1" 200 -
+DEBUG:root:Data_dict that I received:
+{'sender_address': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsAuDoUE4TRQglWpsoGzb\n7aAq+1i2JNMkguwaVF0FcgsJz9U4egbLFTEErVKYmGroF0riG0QcZkJmVHhJBMNh\nTLtMvgkEU6+WJVz/BrYs322kF0YCj3ccDH7cQwGC6MylsW29SwF/jUYGhMb7NMkL\nzTyR836YSzN52sxm+7XqR8lnd1UZ/JOz8H/EklCsiUhNrk0rDazPydgVnzdXH21D\nDReYi6dvGFB7FkTiTLiePFfN5kzYAit463I5/2tVbhHVZHI+l4yc6crIBjRAe6M0\n/MuIjffx6qHOVxQDAM1zOMqBI/gvc+60SYuCAdrO5M6oCM0GYVgirv+TGZOnunjh\nyQIDAQAB\n-----END PUBLIC KEY-----', 'receiver_address': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAzyBRRhQdJR1pxQWkyUhc\nelZcwg0s2y0aO95BgBOZVow1qNDXrnb6fW8pfuy7PBG/JMEytA55bf8tqr7c1f97\nzuosbjuvoFlDdc1ESvMBdkcE2r7CQYWhPyOiWl6Fsu8vPvyrtq4BCj5i2MhX1xG2\n0hZQWbk5reH8r4pWF/15avXCzrAUscwuz3aIE6+FcyN0YWGLi9CUZtlRRRHv+OlA\nEaXd/sX990XFtLqdIA8LINTrnW/etsMrwgpxy32qkX6pC+dBycA63Nbxm4pCNPsA\nriLlhSfQIK11HxqxDju8f9JUukFNVPNFr+AXhpEbIOqcg0IqcGOtHuxlCzvEKls9\nrwIDAQAB\n-----END PUBLIC KEY-----', 'type_of_transaction': 'coins_reg', 'amount': 1000, 'nonce': 1, 'message': None, 'transaction_id': '264ff5d187eea5d83fda1cdecaa673af578b601fbe37afb50e673a07d6b8b0c2', 'signature': 'ZwhPFezVrPQc16oJIcipx2z9eCpB1e8CDeIJmuxg7dO4zEBkXFH60/oCWA+cIK6/9bkPeLj+C+Xkn74zwsVmFpKHzR2pAfbPxSJ1fEXa4g1nGVu6Rg3HNQxeUguWjUDRwp1EaCmLjWBMkAENMi1uRbVp9GBUhgp8lHr8zVLbkvOmQwZd34hZQE3wjBU52MUPc9jF25FICTx0KWE4RS7FQnatu3EzaTpVZlRCYdmyEuwksgse75pucPpopVGOGkpPkxqfNpxGwHKqYHq1eoGg2cptgU1quLq7xLvXmBtnsl+GkiDl13OWmN0ylq4sM+wv1uTSG19mJxiLzFlVLi8L9Q=='}
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 20:11:27] "POST /add_transaction HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 20:11:27] "POST /add_block HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "POST /register_node HTTP/1.1" 200 35
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5001
+ERROR:gen_node_temp:Exception on /create_transaction [POST]
+Traceback (most recent call last):
+  File "/home/anastasia/Desktop/las gafas moradas/BlockChat/distributed/lib/python3.10/site-packages/flask/app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/anastasia/Desktop/las gafas moradas/BlockChat/distributed/lib/python3.10/site-packages/flask/app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/anastasia/Desktop/las gafas moradas/BlockChat/distributed/lib/python3.10/site-packages/flask/app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/anastasia/Desktop/las gafas moradas/BlockChat/distributed/lib/python3.10/site-packages/flask/app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/home/anastasia/Desktop/las gafas moradas/BlockChat/backend/api.py", line 168, in create_transaction
+    key = sorted_peers[receiver_id].public_key
+TypeError: list indices must be integers or slices, not str
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 20:11:36] "[35m[1mPOST /create_transaction HTTP/1.1[0m" 500 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5001 "POST /create_transaction HTTP/1.1" 500 265
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "POST /get_id HTTP/1.1" 200 45
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:root:line 187 chain that i validate:
+DEBUG:root:Block 0:
+  Previous Hash: 1
+  Validator: 0
+  Capacity: 3
+  Transactions:
+    5000
+  Current Hash: 262c44d70c4e232cf2ebcde74f8899d3de569db5391e2ce28b468bf7c33c48eb
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 20:14:36] "POST /validate_chain HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 20:14:36] "POST /get_ring HTTP/1.1" 200 -
+DEBUG:root:Data_dict that I received:
+{'sender_address': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAxZF6N9kF0Uydt0GMuSCQ\n/02rKej0eia4HQZEyUYlUeoyrvVVr7oz45klW1TK8KdOl6VFiAnbmd258737i4UV\nudqPqyNfOYUv+PZfMBBUpmKf+nOSJz6DkipO469lA5Wx9mjjH0xVmd/ED4A3Tv0K\nEwfXyuwO1Ri+2hfvjSuiXURTvdaI9+9i2vHv4kEgcyEeMTOb2pZPniMRtaekBAsk\nwOEmKiyLb7MHwZ+vGTihmN2W2Xuhk5yz1i1C65FkBaddNSB8PrqMVa5ZY/PuPHxY\nO+U38IEksEnbG+NKnNyWmU9XfzOND0U7B59sb0pSfF3sS7DV16TCcAGyrMzSpGsa\n3QIDAQAB\n-----END PUBLIC KEY-----', 'receiver_address': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAvZUBY2DRQDu0pqGCvD4d\nkI2JoGE8uXj8oV/1hj0lZY33UrysnOlLiI7No9/cogDgD1GI5XOZ8OodZp1FsnJq\nRHqOc6zBAZ0Sl67+BS9guSwjX+JAqjTB+1aPp0mY1zFFPQxzDxB7xSeox1cvX15O\nYD72klZ+TeASbjlz/KuFBr2iUKlM05n0VeFmUWK+VC7tvWL9BCa8okpt+SgXlMu9\njqkPO4GMSOoj+OSSzv+6PPLaj140NrH5qqOlcVOxXHfkEXkwAItVYRj7jBaa2SKN\nRgyiT7I+KQjAnIFmjvfb3MjL34RlZs+sFh85Kj+LuDAbt7dnBpC8Edy6XWgJvFzm\n+QIDAQAB\n-----END PUBLIC KEY-----', 'type_of_transaction': 'coins_reg', 'amount': 1000, 'nonce': 1, 'message': None, 'transaction_id': '405d212dbfd7893436acd472a51023622b2d8148e08d227ebbd4f099530e6ebf', 'signature': 'i8J6wb3iv7N/XCkeu1zrGJA9wmt2iWchm53puf3RsKhBI1u/rqfW4FT73/+vCUkQBCHwt7RYuEfaECtCWaiGzmtz2ZQi1pkfEdD1U7OLbtc8ER6SDiupKZQyVMo7GAwI96LnPJ6BVMGPE7uyq2IDI/nmonaBh70qf4jFAZ0BK2N0eFUz8YtTQUhdzCqe0kqMdTqHS1Y9YXvWPxZf6Mu5nmrpUoYYM1mdvcCVduIFvrc9Shtil8VzNYGuDldmLLH+L6BrRHl/eu5PUYUJknctLMwQC0p2RiO4ICrZcICNmXDvkLBddzi1I5bzU92P29Wc65fit5ky4jZsfl+Tq2cq/Q=='}
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 20:14:36] "POST /add_transaction HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 20:14:36] "POST /add_block HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "POST /register_node HTTP/1.1" 200 35
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "POST /get_id HTTP/1.1" 200 45
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:root:line 187 chain that i validate:
+DEBUG:root:Block 0:
+  Previous Hash: 1
+  Validator: 0
+  Capacity: 3
+  Transactions:
+    5000
+  Current Hash: c707d4c38afd0201ff5f91bd54a710a19c783d4bea87c1e50b66e2cf5eda3d6b
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 20:19:50] "POST /validate_chain HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 20:19:50] "POST /get_ring HTTP/1.1" 200 -
+DEBUG:root:Data_dict that I received:
+{'sender_address': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA03KagTwHrPGesVkc3iK/\ntJCWisw9Y23CitwR6AoMLOSIZmGNh+31V+4hIVG3EpC7RaP7/sCtAKCKTHnZ/RTZ\n9aqLwwve7sSSuxDOa42cJlrBO2ncNbcAHp581vJpDrkQKhf4RYI7C4zb/e3BvztX\neaLvT+PcCHAyYWYJTHjYmqypOfbC6/fsZ4ATmmycllxBCrsjrsv4wImMcNxehP0+\nE/6/cgJOIctVxUFD8bbVE0XNQ0G9GyLfwZj4gutTu3CRjHwo6XPRkt93Yz+eCfAo\nnmhwDb9vfNnBHg9H76gl2fBlYEmHw45HHib7WG8GBt+Py4+D3TG1AgjhPA14A4SX\n4wIDAQAB\n-----END PUBLIC KEY-----', 'receiver_address': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAmkPHhQQWtAPQYjQfos5x\ncp8ZL/bKzNUoKggfxCaQQ9XxdQsqbx5DfylCGu76gU5HdKKc6uT2hy7zf7YMWgh/\n/HuXx29sRoXFcrfqkYl/Z+YXBACrjSzfVYQsGn1hPV310a3Bpdoo5QylPJHmKgdu\nMQOy3BL7o7y2cL3zubrImuVwtKgRevc/vW6hoUzsIxOOOPiUfMRZNODKmBVfAeVF\nVpNuosXkLiaa6EiXQ9HCdZ24E8MNfYOWSHi8KJFkjrn944xFD/1G/HA019HPp5SL\no7yUJirPT2J5l+gh7lNYlLzO4V+5c5+7GLHdtjuHt0mayQPJNhIcp9nph7fa2Bxe\nOQIDAQAB\n-----END PUBLIC KEY-----', 'type_of_transaction': 'coins_reg', 'amount': 1000, 'nonce': 1, 'message': None, 'transaction_id': 'b0dc1d5c781663ada9a04d8f8b148241f96f9efecaf499eeb5d1fe6713add4bc', 'signature': 'WMS/GxJp0mT1SySYkdpVtcLf5ww9Eep35F64Sz0VuxmvlRnJWESVKMV3x+uB2hLm6M4MUfZHBDGHaHPguyk4ZSTkH+J++1A1qIFXRxRwszdBpriaB7SjMQxmqD40CUu4dtEQX5xNeB3Wt9P4Umlp8fbAvfxUiQ5IVpDRzyvF9F95+Vxb3ik3agCFofD6u+eD7PWBBh1PVQ42WxpIfUOe/C+AlW4qVKYq8KEE/rsJz2+hTNFmh4bXpBnpWznRKfmVQuuKU2ZQ0Jgdlw0qzVdtNSE3hdbMwhb8Q8vnDqoYoSE+GW0CyPu+s1l+pKeH66rSK7DyGr34Vxw8+socozaC6A=='}
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "POST /add_block HTTP/1.1" 200 39
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 20:19:50] "POST /add_transaction HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "POST /register_node HTTP/1.1" 200 35
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5001
+ERROR:gen_node_temp:Exception on /create_transaction [POST]
+Traceback (most recent call last):
+  File "/home/anastasia/Desktop/las gafas moradas/BlockChat/distributed/lib/python3.10/site-packages/flask/app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/anastasia/Desktop/las gafas moradas/BlockChat/distributed/lib/python3.10/site-packages/flask/app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/anastasia/Desktop/las gafas moradas/BlockChat/distributed/lib/python3.10/site-packages/flask/app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/anastasia/Desktop/las gafas moradas/BlockChat/distributed/lib/python3.10/site-packages/flask/app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/home/anastasia/Desktop/las gafas moradas/BlockChat/backend/api.py", line 168, in create_transaction
+    key = sorted_peers[receiver_id].public_key
+TypeError: list indices must be integers or slices, not str
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 20:20:08] "[35m[1mPOST /create_transaction HTTP/1.1[0m" 500 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5001 "POST /create_transaction HTTP/1.1" 500 265
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "POST /get_id HTTP/1.1" 200 45
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:root:line 187 chain that i validate:
+DEBUG:root:Block 0:
+  Previous Hash: 1
+  Validator: 0
+  Capacity: 3
+  Transactions:
+    5000
+  Current Hash: 06af7688c224a520fde644f149ac055850e58855658911ff06debd53c2eb2b3f
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 20:20:36] "POST /validate_chain HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 20:20:36] "POST /get_ring HTTP/1.1" 200 -
+DEBUG:root:Data_dict that I received:
+{'sender_address': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAplM7aX6IAviZBBCWwMvH\n/ae7eOnak+XQVs6iA9VqRV6zGGXxd5yZaJtvh7aBqYq9TADrJ0P+VhPFh0JcYJMP\nUlRfRfua4L3xcix0X9cI4APfXbYXl1BNX85UlFr4L2QP+ZlAD9dL+Y93sjn3m8Ia\nDhLMNmcR5bYiTZkoyttfuZgmWyAk2C6v2mY7NyhNroY3XaD0u+FrPuUi4EVPnQGQ\nxzcuWuJZXz+gzKVOly9LCHeGT2/HF9lHv4x4jgpOZM6KRmzgqnyP9HSQLTOwop/s\nudCzSqbopyfR2ZgoPs2ixrOiZKhzVPvJmrJsqV9qJmhd693wMR+rp00W9zBKFTxQ\nXwIDAQAB\n-----END PUBLIC KEY-----', 'receiver_address': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAnlu7uSA1krTA5YTwkcr3\nhDhHmSkQp4GORPA8rkf7aQzKLOjSYyr/srNo0tL+C0VSs/o4Xamlm4bozru9VdPg\ngGLjoR6y8n14FfQltiDCBxNE3wfflQPqQ+K2CqDekX35d1sgISoTFfiF5DLBISel\nyb5dnHuTaN/Bvi+0j2GOevJKH7D7GoeofCLWqTQSGVAEsHbX0M52cJhcQ4PkY5/k\n7O32wOdiqaC66MP8p0VUqediU41uk6RiUV2GVImmd4B8BmPE/URIKxtlsJj7ZHyv\nC63BwR4cvLxDRjdlUm94jugE1nwy6We9mApcnkKKuBno5g7c4lh8yCMx4Bh09we9\n0wIDAQAB\n-----END PUBLIC KEY-----', 'type_of_transaction': 'coins_reg', 'amount': 1000, 'nonce': 1, 'message': None, 'transaction_id': 'f995dec0d8beb18d0614a5aa2238452dabd4e0a5b7a9c8cd2750d6cbfd64e6df', 'signature': 'dtJRnoKPRBAA72c58MV3FhU8D1XZ6bVLbyTRbRaWJ3oZWZKJiqUT6cVNfYBYT1NFXgjkdq3R2d2fg93UJLjnCxS8hnptb7RRwAWeo/0h7iNLr0XQnuoXRSHcV18LZlX85VZyDmESdi5v9w4in1ZXpIT+gjkv5YEv7SlC5l0FOiixtV5LL/CeO4wLxlUz8jiz1HfzprJjmXznJChM2FUfNA7Ru3R2ioIhCZ6lx8iJaA8+onT+prOvKCBXDUU70l7vnnTJfh3LuWNoaj68/zNurA4vNENV/VGmdEXqh/xUI1+tUlZCbmu5zPU6yZSQ65C0uaV+SP9TzK3wfisunmGCkQ=='}
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 20:20:36] "POST /add_transaction HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 20:20:36] "POST /add_block HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "POST /register_node HTTP/1.1" 200 35
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5001
+ERROR:gen_node_temp:Exception on /create_transaction [POST]
+Traceback (most recent call last):
+  File "/home/anastasia/Desktop/las gafas moradas/BlockChat/distributed/lib/python3.10/site-packages/flask/app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/anastasia/Desktop/las gafas moradas/BlockChat/distributed/lib/python3.10/site-packages/flask/app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/anastasia/Desktop/las gafas moradas/BlockChat/distributed/lib/python3.10/site-packages/flask/app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/anastasia/Desktop/las gafas moradas/BlockChat/distributed/lib/python3.10/site-packages/flask/app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/home/anastasia/Desktop/las gafas moradas/BlockChat/backend/api.py", line 168, in create_transaction
+    key = sorted_peers[receiver_id].public_key
+TypeError: list indices must be integers or slices, not str
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 20:20:50] "[35m[1mPOST /create_transaction HTTP/1.1[0m" 500 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5001 "POST /create_transaction HTTP/1.1" 500 265
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "POST /get_id HTTP/1.1" 200 45
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:root:line 187 chain that i validate:
+DEBUG:root:Block 0:
+  Previous Hash: 1
+  Validator: 0
+  Capacity: 3
+  Transactions:
+    5000
+  Current Hash: bb0e3ae49fea3977e43b859e2c23572c0a838bb9749a156344444c8d336b5044
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 20:21:24] "POST /validate_chain HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 20:21:24] "POST /get_ring HTTP/1.1" 200 -
+DEBUG:root:Data_dict that I received:
+{'sender_address': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA18IskjX2OXRI0WNuxTeJ\na/YY6sUiFYFolqF/JMuxAK/lk1HE5+K/PUt1nhKToJ3+6yWAud635ei5hC549NVV\nEpwdpJiOdexncLysDb0mM7Prnx8oH22y7zxIq1kFcWIcItpv4Kn3j3f1xQ4JMgyg\niITX0eA03fiCvdhvQzMsjMsu5qY2mcZkq5GBKkg4YNG3aUc3KnadstVlzbarhNRz\nVbNjwMgQpsEcdY2QvLqro75ac4Jq57fHcMHf4UOdkuk16TxFSvxtftTa6tRDa/Gb\ni2XN0Mmzg0fe7xtvy8sBjvz+BEXJy5ZL432GGrbcbZI48TKQ3XZkY0wwsoTFEZS+\nEwIDAQAB\n-----END PUBLIC KEY-----', 'receiver_address': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAmt1gg3bYB9aHjanRZ7Cz\nuho4bX+GIMpnGegT+lZcLz8ovi0KtSuFXgeaGr0b+etctOxIyD473eph1UkePqxn\ntbJ7qLnJ9SlI42+bHm7osoGtEGaILtC5btWauq6HapHd2DiZZNAMl9lu4txsvpaE\nF8Ym5r1FLsf6ana6tj/pUeRJtczdDDJq/GsWwX66mgmpHaJhs57drgSixMjS73gF\n3Lg1in0417t0yOv9XysrAz6Sj1TdbduXz81Rom1/VfDH4w/1zlCTMuGDFoAHq3/e\nV0mPXlmlHLHCpPxPGW0g/DAZ6xfVqSkrFpj307m3jq/QIZa3AIA6/IoGrORytxyu\ncwIDAQAB\n-----END PUBLIC KEY-----', 'type_of_transaction': 'coins_reg', 'amount': 1000, 'nonce': 1, 'message': None, 'transaction_id': '092ebb000cffe1776ef5ed947b18569bb974027dda2b53c7a28cdc93d4b34672', 'signature': 'NZAOv6H7oYj9Hl1nKxbJi7faTlq5L8pEfyUOU9z/3YI6m76JGZ0XxOExHLyoIM1NftmNBghU9mXo8FJpN0Kq2lRWIBz04bYcRfnpSkOozqKFc/pTjRZGFrsLStvSXWWYXf7HiHm9SvFAreAOLCfSq77CWIt002ofwrbevC4eeE+MsIMXiSdnVoFIMvQDZD6grvQNqJi3vhAbncfNjwCbxT5hfTvEakjuPiLyEY9O6jhGmyOHVI+V9u272NbuPNHQU7S2LG989kCTjUbpg+f9L0/89mqHYuqLUXFV68oD4ngO8rIi0kXBx4IGh0udcUt8YiSUWUpH8Lq2A+PtsIHkQg=='}
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "POST /add_block HTTP/1.1" 200 39
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 20:21:24] "POST /add_transaction HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "POST /register_node HTTP/1.1" 200 35
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5001
+ERROR:gen_node_temp:Exception on /create_transaction [POST]
+Traceback (most recent call last):
+  File "/home/anastasia/Desktop/las gafas moradas/BlockChat/distributed/lib/python3.10/site-packages/flask/app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/anastasia/Desktop/las gafas moradas/BlockChat/distributed/lib/python3.10/site-packages/flask/app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/anastasia/Desktop/las gafas moradas/BlockChat/distributed/lib/python3.10/site-packages/flask/app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/anastasia/Desktop/las gafas moradas/BlockChat/distributed/lib/python3.10/site-packages/flask/app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/home/anastasia/Desktop/las gafas moradas/BlockChat/backend/api.py", line 168, in create_transaction
+    key = sorted_peers[receiver_id].public_key
+TypeError: list indices must be integers or slices, not str
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 20:21:40] "[35m[1mPOST /create_transaction HTTP/1.1[0m" 500 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5001 "POST /create_transaction HTTP/1.1" 500 265
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "POST /get_id HTTP/1.1" 200 45
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:root:line 187 chain that i validate:
+DEBUG:root:Block 0:
+  Previous Hash: 1
+  Validator: 0
+  Capacity: 3
+  Transactions:
+    5000
+  Current Hash: 29ad1251252a097de7416aeb5decd017d224e6a312ebf2287ca80b8939627c9e
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 20:23:33] "POST /validate_chain HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 20:23:33] "POST /get_ring HTTP/1.1" 200 -
+DEBUG:root:Data_dict that I received:
+{'sender_address': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAvZnPu1KSgZl+fCMIs3Rj\n6UtVUtK0YAf3cBN4gB7K4eIB8H0PeUXTX3w9Gzn2G6Ue6F3ejWh7aQJcaLBaj813\nNaL60F5ugNUPrrS1hTXe2W4Yxjqn3hBLDe0j2Jequa7DhqjJW6CDr2CKWLQicBRB\nNa6KTSoGytwpUk8GLzrqcBdR02BJRuN/FPXch2SHtPJNvrMUES+zNDGYdYplL4Sl\nsI6Rkm+SNwCKiCOaDzia1FSHomj9EOeikamPtNr3ynSe/YiCK7hWXHDbXsaI+Ebv\nThc4cIcWrUvJXYnLEZ6Ibp7lQPulRj9/oVkc841DvhdHYlRMliqBp8WP3D53QHGP\nHQIDAQAB\n-----END PUBLIC KEY-----', 'receiver_address': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAh9ZcL6hgTEyORbCyP7Nl\nu8j1GZkTvKIxaA1SHCpHaPEpSwTJ/bZ9k7UyPm7xk4pWa2a4haO5ScIqDtCP0wPi\nG3a9Q9qaw2i2/VLIhjeL+wvMRNisB7nFYd8yH5S2N+R4GjwLvEz6IbrIiepbQBbx\ntRRaMDHzhp76IEuSTGF7BO5xFEaJ7pX/CilAY17RYTsKZ755m6oBm0U2kXgmaviE\n7rdpYI1p/wruqEXA0IBU+AJrkJHkzwUsxXw6xeWRhsvAAnXzyzB6kM7Bgeq2+lRd\nBEZMYquNHVs24ghtB1kSqTAT35DntxliwXwtvpGfQq7CDHTyGqQaYtEJDvnFf0hW\nywIDAQAB\n-----END PUBLIC KEY-----', 'type_of_transaction': 'coins_reg', 'amount': 1000, 'nonce': 1, 'message': None, 'transaction_id': 'd01c392bfc3ccb4af96e695a93e69a52debb693857034b29ba660d13cb2f9221', 'signature': 'rOYAsMBkUDL+8/wYFYDWGUYGBjF5RTlxogCwpjox0ZnfWowFvA7+8KUY1a/DyCoJZEExvc1H2FNhldv5KF8EJP+ukTCAuZ0EthWzfIwJdQlE2NhD+Muf+ttjPlxCUlCLNadTayafQPStoE2YmIJNVR8svd1FioRB1GQpfeh7IZD7vUs2JvRPr/pMZN19U9j6Nf1/KDKdAhRkohLk5EnmQAEB2wcwBAGtrk+2rRsd8iNBoYCE3+r5hu75gb9L9fpYs1Obq7o7kXE9R0FmDiRIueiBV4Sb4OdEynmBPZcXMUHiAEZYP7zIs5MWDwU9hCjCr+xT/mH69h+t5ZKfubFxGA=='}
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "POST /add_block HTTP/1.1" 200 39
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 20:23:33] "POST /add_transaction HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "POST /register_node HTTP/1.1" 200 35
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5001
+ERROR:gen_node_temp:Exception on /create_transaction [POST]
+Traceback (most recent call last):
+  File "/home/anastasia/Desktop/las gafas moradas/BlockChat/distributed/lib/python3.10/site-packages/flask/app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/anastasia/Desktop/las gafas moradas/BlockChat/distributed/lib/python3.10/site-packages/flask/app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/anastasia/Desktop/las gafas moradas/BlockChat/distributed/lib/python3.10/site-packages/flask/app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/anastasia/Desktop/las gafas moradas/BlockChat/distributed/lib/python3.10/site-packages/flask/app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/home/anastasia/Desktop/las gafas moradas/BlockChat/backend/api.py", line 168, in create_transaction
+    key = sorted_peers[receiver_id].public_key
+TypeError: list indices must be integers or slices, not str
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 20:23:40] "[35m[1mPOST /create_transaction HTTP/1.1[0m" 500 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5001 "POST /create_transaction HTTP/1.1" 500 265
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "POST /get_id HTTP/1.1" 200 45
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:root:line 187 chain that i validate:
+DEBUG:root:Block 0:
+  Previous Hash: 1
+  Validator: 0
+  Capacity: 3
+  Transactions:
+    5000
+  Current Hash: 76651679ab2b99afa65c0b7e4e461ecfac4a94ef43e9fc6920644f7fa03e242b
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 20:26:04] "POST /validate_chain HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 20:26:04] "POST /get_ring HTTP/1.1" 200 -
+DEBUG:root:Data_dict that I received:
+{'sender_address': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAqV/HWwRPYlBCChNqvXun\nUC0/VNdONKWlPO+/HVe3ORvXEr3u5JG9d+YrSvYWwih0XMOIRzq3N8KosOBdyeFZ\nbij74vamxRPLVgEllxZGFLnScVUSPIsX1NS9vVFWb77S5dDB0rfayFBi6AQtF9HP\nsMG2YNez9oYJkL4xf+NjV9Yz8zZt/qeMDEleMgssdC/iBKBYhoaLycPHyKiWAr5Q\ntA38lJAPRB/xJkFRxyYsvY9aT8pBNSGdu3PaTLT5iJpr50K815bjRt98PHmEUVmL\nxebW6bH2XnrTMiguxQFhJCynuvD7HHnMFxC5qePmpOUSKwpQtG0yQqwlmMNNnCoB\nvQIDAQAB\n-----END PUBLIC KEY-----', 'receiver_address': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAxuRcnTsK6O7QRoQy0Ndu\nqmHdvSRHw+iQ+hVI2eFqDOcZkMT6y5n1+OFYNcqzbO2K9taiKf0RU54YoFB0/W1m\nIW+8oZJZhExBuN7oN5Y3/nTsk8Vt6EqIULH6baoEgu6g95ag5Qqu5Yq5fEwz4gMA\nlIKyLA44yyyNPjzXZsOFYfbwap4PLtMVumD1MHvwiMr2b8UnYhYQzLvVT/5LfAUM\nuHx3EU1Hb7xdLOmZw01c4uD1wAJwiZGF8b9fcakp9OJxiMLxgunlZFdGf9sbClBt\nffvGzlj4Io1d8Qe8osKiQ4LjeeOG+t5aFKNZQtcg5s11RLqVB0AU8OfXoA0TXB7x\nwQIDAQAB\n-----END PUBLIC KEY-----', 'type_of_transaction': 'coins_reg', 'amount': 1000, 'nonce': 1, 'message': None, 'transaction_id': 'fb74312b71c82a46710886b485acb444aa16a49b72b841d3f876784265a2f374', 'signature': 'XzAOT0FbkPrZWpwHtlOBXSKgkxLpW/yr9t5U/tyImwWPUTKT+vHJSdpuLhGjupQ2fVTezoJ+M9fLJVKNtTJ3086W5hDgk6lWKufCnSXdnxPg+2KkHg0RwxR2/NLYPwDYjxSpBGDkoa0c6MEFx4VxSvJiODtld3ioJRtNOIcWvlgO0x4gFhJbI7C0f5cWL7IViLGg+U4TF3A1YOuRUyAGCy4VrlDzOPq9gvwQEG4AyEywv3CDC4eCmHJsKzm92auNqKl623U82iEUGi+pbNpoQI5e0PnianhJgsRUlxsvfC0PdNyEez9eJTtVQ1Tq9GKuL+TicS1lJkc8gqjvGR90vQ=='}
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 20:26:04] "POST /add_transaction HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 20:26:04] "POST /add_block HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "POST /register_node HTTP/1.1" 200 35
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5001
+ERROR:gen_node_temp:Exception on /create_transaction [POST]
+Traceback (most recent call last):
+  File "/home/anastasia/Desktop/las gafas moradas/BlockChat/distributed/lib/python3.10/site-packages/flask/app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/anastasia/Desktop/las gafas moradas/BlockChat/distributed/lib/python3.10/site-packages/flask/app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/anastasia/Desktop/las gafas moradas/BlockChat/distributed/lib/python3.10/site-packages/flask/app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/anastasia/Desktop/las gafas moradas/BlockChat/distributed/lib/python3.10/site-packages/flask/app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/home/anastasia/Desktop/las gafas moradas/BlockChat/backend/api.py", line 168, in create_transaction
+    key = sorted_peers[receiver_id-1].public_key
+TypeError: unsupported operand type(s) for -: 'str' and 'int'
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 20:26:09] "[35m[1mPOST /create_transaction HTTP/1.1[0m" 500 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5001 "POST /create_transaction HTTP/1.1" 500 265
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "POST /get_id HTTP/1.1" 200 45
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:root:line 187 chain that i validate:
+DEBUG:root:Block 0:
+  Previous Hash: 1
+  Validator: 0
+  Capacity: 3
+  Transactions:
+    5000
+  Current Hash: bf24de14517aaed4d9f1931de435c18c67bf85934d1f71b5a696bb6542512929
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 20:27:25] "POST /validate_chain HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 20:27:25] "POST /get_ring HTTP/1.1" 200 -
+DEBUG:root:Data_dict that I received:
+{'sender_address': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAxRLbdKsi3t5aweLqYp8W\nO2NOnvZ7iluAN0OV/OgSi5dmginhZj4P5kG3DAZKpLFPUgKIr2JV5eFGVTGsGK4I\nnMOcNiJgT0ZFg9Pqs4vxwIQfYAVHir2rRBUFL1qSEJBbLuap4UZDZD4rjH8l2izw\nN5EbIc9JjduoFW5bxjnnVL/YRKod8gzmcx/9U9zQlLVFEkJb31Qxi8YbMLChUrtY\n+Oj69PUorzzmyH1VYIg3cJPhnFsrXLs6c/BDiOTcewGPHjn215is4yxzT8lb4MVc\n3SRMTuTPB2xeA6VryzMlmVTXunP8j+oXEATbnbx+Ovqt6utI2venoN+RCKyKCjf4\nQwIDAQAB\n-----END PUBLIC KEY-----', 'receiver_address': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA31k5e/hXN7TSJxc78+N1\nkUQF00b9Ld3QY5W2SDx18MXMDPeVCFX0pOiwahYjAFfzoySNRxFiPaZi+cvB+yZw\np1F2cx4qTLLwO/LiAXty1IlJdJ/gsRudW50pUAU2/UhGCqtZSRYaa3LKT/jT3yZo\n/N+URGvgzjNi3qvIyBm1ezzR6QKfd8KVqRpNnAwf1JeGwTunKWHsiI19sQXYRYVt\nkMwggfd0MgfBN4ijMXdppNwQfZJ0TsneVK0QPzX/MISq54ZP0yoSxUB89ECGgVY5\n26sr2H/HeBpgWNI2i1nyx9dfhVKz8p16jquCVVvzlcko7vzzYR3aA7bPqtoo6uZP\nlwIDAQAB\n-----END PUBLIC KEY-----', 'type_of_transaction': 'coins_reg', 'amount': 1000, 'nonce': 1, 'message': None, 'transaction_id': '12c045e9cc6e4add0e70b8c3176a321d8f202acf9298219af1309652f84abd81', 'signature': 'TGXrU5n/Hba2rx7cUf5bCZinWRcg7ONrF3NiDzW5vL3APR3GybQgzyk+2R7odp+VkftuDxbn80RKTcKPKR3RF/9DjKCPLzyTRjWUtWpWxfOUH5AaWNPQzVYU8mVcUR50a6B13K5Zf7ImhSuHpdOAAN+EUPVl/1ER8Q/+lIAip/hDb64eYr0W5T9xSVGF0ejUrUOxMcrVgQr0tELOwhjKptoEovYum0BpFGFrWpTGF2VaXM4uzEXtNsks4Dd3D1tsLHfgEUf1aYLKPrhEyW6fm6EEBo/fY6Xp2wRwIWZUZ7nS589uGYDRzHOxEft7z0GharDa4j68MGhQuoDSvhE9bA=='}
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 20:27:25] "POST /add_transaction HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 20:27:25] "POST /add_block HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "POST /register_node HTTP/1.1" 200 35
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5001
+ERROR:gen_node_temp:Exception on /create_transaction [POST]
+Traceback (most recent call last):
+  File "/home/anastasia/Desktop/las gafas moradas/BlockChat/distributed/lib/python3.10/site-packages/flask/app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/anastasia/Desktop/las gafas moradas/BlockChat/distributed/lib/python3.10/site-packages/flask/app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/anastasia/Desktop/las gafas moradas/BlockChat/distributed/lib/python3.10/site-packages/flask/app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/anastasia/Desktop/las gafas moradas/BlockChat/distributed/lib/python3.10/site-packages/flask/app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/home/anastasia/Desktop/las gafas moradas/BlockChat/backend/api.py", line 168, in create_transaction
+    key = sorted_peers[receiver_id - 1].public_key
+TypeError: unsupported operand type(s) for -: 'str' and 'int'
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 20:27:45] "[35m[1mPOST /create_transaction HTTP/1.1[0m" 500 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5001 "POST /create_transaction HTTP/1.1" 500 265
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "POST /get_id HTTP/1.1" 200 45
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:root:line 187 chain that i validate:
+DEBUG:root:Block 0:
+  Previous Hash: 1
+  Validator: 0
+  Capacity: 3
+  Transactions:
+    5000
+  Current Hash: 39fb7ee4e2377d9d8bb1a0d5d8bce512957950544c9a3281edb3f9446cc196f3
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 20:32:06] "POST /validate_chain HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 20:32:06] "POST /get_ring HTTP/1.1" 200 -
+DEBUG:root:Data_dict that I received:
+{'sender_address': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAjyoX34Fvk0Qf7za8517t\nBHISTLzHxwdYP7M3TsWKJLneINp1fu/B0xo5C1T3pHTP7d/cB+DWiUMNVhMVqokp\nwz1ylHAIvMq2FZ+1d/JbDCQryQI5/kcjokvtRJR6cdpgCjzO5tBe2YBTOWpkx77A\n2GIPHvwxkPdDikM3395eBTVXoJTQcONnwp+/y6Uq6dN8i73yPtUc8mEBF9e8dLZx\nVIxopjdbu60gDXPYbqbyPZoAkam4iMZSpTIx9+9h7dg7HZasbRr05hKwOhIFXfWN\nH3AMpTgQ3wJClUVDgif5gQwiEGsZNj4xMCWvUFRl09SWdjN+MJnvd/PRpahYEigz\nwQIDAQAB\n-----END PUBLIC KEY-----', 'receiver_address': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAr8IXFLI1QypihR7eeaio\nDHYPPTzv4U7jiCuEX0sMCzomNFzRFUBZkXRw2OJOzxraFvejpbk4EkGCXGaTkx/S\nurZt2xUDh0rthXL5Ulz1lwS5zKoK9ktq7q/47MiJCZPogE/XizDafhiknYRNuWVj\ngp/Ebq2jTbw9R/QpLOut/jls4/BO6OerPM95CXcTSbx8JSE6A3MujKPQg8LbKuCZ\nIiBJJBH+6KK1Ss213s1J/HfvtgfhSdu3PrPLmrja380CjBs6M7jOaCPs/lmLuHt9\nQ18htRnxl3eG7FymmIbzFQdSLRJUtz5asc3fAwDj0ByOa/t/cWdyJWcc9nRRsune\nmwIDAQAB\n-----END PUBLIC KEY-----', 'type_of_transaction': 'coins_reg', 'amount': 1000, 'nonce': 1, 'message': None, 'transaction_id': 'ab09bc1629c0f36db14a03de0d4b6cfe76f1a32cd804e5cd0723edc177418d0f', 'signature': 'T5xYKoD3oHgHAmZgX8zozqPW6mqOwogAxS6kHHYU/Nsaeh4UUr+ms58fHX6NMcTsGPlgBsSvqU7bGW/MAp0Awg2jHY13L75B2iECoo9Q2OfjB/+wMFQaGLx7KDyPIxPKt5aKQQvlEcd1BAG3bDj5lug8aeZvgW9Hir5S4o/xnf1PIjq/hR7JDfRa1L7ELHXvJpzv0XoySauAKKNLqPSBjQ4faUIIxiThdtrCLknC3RIXlggBzfXRuYw70yISwcjWHfDvpnKf8xoE8OjSWudL+m41i5OVRJfRVy0iEu7BMZF+qJZU5gNxQzUOm5NLrqwj9FHyoZ3uH/YVIURKfTkPvw=='}
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 20:32:06] "POST /add_transaction HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 20:32:06] "POST /add_block HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "POST /register_node HTTP/1.1" 200 35
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5001
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "POST /add_transaction HTTP/1.1" 200 50
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 20:32:14] "[31m[1mPOST /create_transaction HTTP/1.1[0m" 400 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5001 "POST /create_transaction HTTP/1.1" 400 31
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5001
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 20:32:29] "GET /money HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5001 "GET /money HTTP/1.1" 200 17
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "POST /get_id HTTP/1.1" 200 45
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:root:line 187 chain that i validate:
+DEBUG:root:Block 0:
+  Previous Hash: 1
+  Validator: 0
+  Capacity: 3
+  Transactions:
+    5000
+  Current Hash: 37301817519f789b19555a44180fde78796e42ee894bc7862140f5ae2c77a59e
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 20:34:20] "POST /validate_chain HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 20:34:20] "POST /get_ring HTTP/1.1" 200 -
+DEBUG:root:Data_dict that I received:
+{'sender_address': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAwlS3J9Bs3/veDCvzt4w/\n+E1v47KJFa/8w5dn+0maxDkmOc5MmUk6+GvU/rSLQ3WABoGq4esaadX2zpEilu3u\nLfJU+2pNdX7J98qSTMi4xJBPhopWJAR+NSv/y6CoSQ68eLQ8klpA8GM2qRP/BNou\n/zVjQ9tDuomBRNxDheUPxZBXNNumkrqHZJumdfr56qRyb2+J0TxRnyMMr9x0Xtgp\nijDMDWjkfcPJaQg8r70dSlZcuWQjfReuHwFlaj23Z1ErD6kGHztuxD6JXRRnpjDc\nGW55I1AQylUcAVSZytfmlDqFzr/q9arYY//S4J61ZCf7xjosTsnN7o3FNvv/01rv\nXwIDAQAB\n-----END PUBLIC KEY-----', 'receiver_address': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsE8P3Rr6uOMxqUInFYM/\nkkrFrljDCRgqh5V+TnmJoZuLJ4EzLHWZ5yIIR7FjYVUkycXxju7EsBtQbT42k4yl\nZeKlkoZ0cTi/bX3JLmVk6AgQ1OUH7DkSq4DvtHLVMEc6RrTsHK2I27580KrW3sqw\no5VH5ROs/uYd5rq6IR+cAKw4yE+4o9eEpABLw09jbLVd7M+2YEBtIjqFHBYqb8fR\nIBwfEYMW7NQVIf6pfETj4lIaY2e/DpUDqvw7MO4guXDqQL/3+X38bQ/kA2vMH5fE\nMEGdV9y6vNIP0ERygCuHYV/4f3G/AN733fw2n5kbv5oKsyIBV0ZNaGczdWwBvYzc\nSQIDAQAB\n-----END PUBLIC KEY-----', 'type_of_transaction': 'coins_reg', 'amount': 1000, 'nonce': 1, 'message': None, 'transaction_id': '2f5f63251664653e0e946578ebf367f113dad81b2338fdf516776252dc9f8303', 'signature': 'extiu6LcFqgQth1g6oqvVR+7a7AlPw4JUmy7YSiA3lMamZvWu4JFGHLc4IwFPbTRFcu0lKDqX3suDfe8CVFzGRejw7a/jWhtfJ90FUTub+66Z9QncL8e3kHbNeCBIHlOm5r+1QIMGJt20GSTo7VKBtF+jFglVSNVJ9qzILs4pHMZ5tJXgOXqlQA/E5K53Xm8qPtxxRCQdVfZYP1JEM6HaHF49gA/UE9rCKx13fRj08wGwt3Rx/jMilvmY4OTt2TAevVtrGxv2ive6CNjMZ0BiD/VlM7g/6OyX2gyL+zPdWNGqke1Ay0+MCqURBF7SWGEUeedtc0Ut1quHy205juhxQ=='}
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "POST /add_block HTTP/1.1" 200 39
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 20:34:20] "POST /add_transaction HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "POST /register_node HTTP/1.1" 200 35
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5001
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "POST /add_transaction HTTP/1.1" 200 50
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 20:34:27] "[31m[1mPOST /create_transaction HTTP/1.1[0m" 400 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5001 "POST /create_transaction HTTP/1.1" 400 31
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "POST /get_id HTTP/1.1" 200 45
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:root:line 187 chain that i validate:
+DEBUG:root:Block 0:
+  Previous Hash: 1
+  Validator: 0
+  Capacity: 3
+  Transactions:
+    5000
+  Current Hash: 2640ba3a2f3a81ac3b33c91b8f49daec5f11a53794f18250777c219d7d4c1c0e
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 20:37:13] "POST /validate_chain HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 20:37:13] "POST /get_ring HTTP/1.1" 200 -
+DEBUG:root:Data_dict that I received:
+{'sender_address': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAuRy8y2bTfeBOreZroe/n\nuD1UoaaPO5bP76pnbpZ/nCXbgtaQLzu+ZJLZkZINeFymXyDNnr3RH/g4Zza7bcfr\nZCtZKZFAr0idHVBYcYNcxNH/5qyeHVHvOqZNIa3Q6FdsT3DqmtilD7uSDTc0Apt0\n0cjj9zm2/1DYxPITpJrry3R009JemzW5BIXl7Krf6TSVOEVMqsX2PTLDHOVIAYBk\nAQDFqDCgZaTmySENkKZ1Am5UWdtZqjzPXJznFsUZem8FEWLnDs1h7Tz+++Dq4+z6\nkl13j8l9zWVjcvIe7VqWVHQOw5z5MEOd/MILUfuhStKfE8zsFk3rt34/brM55T0i\nJQIDAQAB\n-----END PUBLIC KEY-----', 'receiver_address': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEArLoahTtuvnxj/5yHor+9\n4ZVdez4gvnXhX2EzDGXkHi8hOSyDAmFLsCt8oEA1FVZs6juOdruq8nKipAOjit7o\n6MGqEi3kVnUnx22Bix10CGsZo70KSMt1C9S2vIfCIO88RoQwJakHPKxRaUh2nJRy\nXU1RWJAmBXwRIIK6+H/FIa6wdpC9hofVKJqa1bLgNrzxZiWaOGuhDUMpf1liWTOW\n3IsBlAC+2TCfLDqjd3FecgVVdsIMQouCLPO8D3B0jAc0cQMs5bXQxhnr/cNSUaKd\nW9TEr4EKJq/BA7lrNcbPJzmOLmVhWnDrcXQti1tBTzb9ISOO9h8tirz+Ed2VpE/S\n3wIDAQAB\n-----END PUBLIC KEY-----', 'type_of_transaction': 'coins_reg', 'amount': 1000, 'nonce': 1, 'message': None, 'transaction_id': '341cfdbe5783d5c352fe63fdd032bab47679ac7128eb611bd132d5d7aeb96e2b', 'signature': 's39JxHYqbiIfA11hgzkOSwr7tFd29I4FEu0FEaTo9hBFheAKV+5wViv4rl5kwO9eL3LjFZJyeExlLY5wyoeamw2CJL/nYT2JJ0/FLXDQW1F7tHguW3+5eGyHyWpaCOIqIdOIS+3ZSQsH23PA7WDq2zfP8UsTNyr50uW7H7UEf3JvVH0b+B/DPp1J0/3jdd8WiJaZJw1ZGDxEIZafrDCvGWB2LmJr97KzNsaK7XsZI3t92r+d2qiVPaJkb4T8hToHNJjF/ET1xVCwVw8j3vbvD5/eclX7KetMcLai7410vhJ5ooyKc2+5YKQkw919kMpOLiitoxYu/rZJ79si6lF/zA=='}
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "POST /add_block HTTP/1.1" 200 39
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 20:37:13] "POST /add_transaction HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "POST /register_node HTTP/1.1" 200 35
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5001
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "POST /add_transaction HTTP/1.1" 200 50
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 20:37:27] "POST /create_transaction HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5001 "POST /create_transaction HTTP/1.1" 200 46
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5001
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 20:37:40] "GET /money HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5001 "GET /money HTTP/1.1" 200 19
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "POST /get_id HTTP/1.1" 200 45
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:root:line 187 chain that i validate:
+DEBUG:root:Block 0:
+  Previous Hash: 1
+  Validator: 0
+  Capacity: 3
+  Transactions:
+    5000
+  Current Hash: c6b22b33a877530308b5033c2da4fdda5f825fc90ca5bceacefb62c1cd7deb84
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 20:39:40] "POST /validate_chain HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 20:39:40] "POST /get_ring HTTP/1.1" 200 -
+DEBUG:root:Data_dict that I received:
+{'sender_address': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAyysSQYbh8FWTFLZo3rjC\nMuza4TzKytLlo2Pds4ym8OiOgqkF3KsjOY3k/RnqKK+ZWIssPwSV8BhIfMl7xKYT\nNLkWGlp6ncNVJGajsFaLIheJWpGYWYKDbpu6F53MUTz1yWnmN5QKtYghdfwiAslP\nsRhQfMBnglEmX+SaBuiK1FZ3kh6nF/ntzMRpeCZwNnwT/iZtgGJGpQEBLSgPp/uD\nmDJm0etNUoE0hGuiFduzkKKqWTW2kE4gHByAHqogYnlzAXqLNLullOP/Kdrbs4Wv\nB7H/V4s+bbpEI4IPlydK0wwpXLBBPGvhbnxgFCtwKqjJF2mkm4ho74zQi+Ftg645\neQIDAQAB\n-----END PUBLIC KEY-----', 'receiver_address': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA5dQhsHmZlqsmdM/x46T4\nAjAJNquR4m3AKiETVjN5EmXPrbdLHpWR8vYFSaILj07sRAfRnKojkn6CtXNU0PYC\nHVZuVCAWsgrF+Ywdny9AcaaOTFtfzqGz7rg3zzfCQEcFCGmRfhcb0M5++mgjT/A5\nGc6QCjOBpj6onBL5d10w/SlS22U/1/SJxptyuIeR0k2dhTcgjQ0UvBAhZmRtDYtk\nIV9UBp3wsMaUcGIjw/6/BLknuMHgwFxL814/TnpWOLyiRQyOHwgXgm2YtEeo9lri\nkQPKbTXSd0Gm2yGfnOxTuWwxvD4/mVaxbE2Qw9rarg+2tUSyYXYgJ/eY6pF2AxKV\nvwIDAQAB\n-----END PUBLIC KEY-----', 'type_of_transaction': 'coins_reg', 'amount': 1000, 'nonce': 1, 'message': None, 'transaction_id': '7d780616e110241b4357080813350044b25c0bac8ec109fe4f568a3ceb5fbd57', 'signature': 'PLopiMoCOM7mkAg9WeYN4H0xc4yQU3j80xYWWfGevWqK1KiCLX8eE6nF7RIgOhAsN+ZfvbJ8zxPo2tt/v3IG61QvZYPUc0oxakHUP0hO0ROAcYXfOs1rJka6oxgY+KxCRhtMAW7d7lmcXoWf+oTJoy4WlkpwsFSjszsrGwmalCKjhS0+IQakZ6+wcPRQnb0e6uixchniHPIxXOp1bAnk4039jVJOp+Rj6/1v6yzuujOHiGlLswyvMBm+UPAjHORJlut/KHukIZ15sbu7v3csJXhwEqWEV1aNQlgvM8dTHzAP3T57ME5yyEjqdnO9ndX3YKznyrDVHQTxLOFK2IYAbQ=='}
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "POST /add_block HTTP/1.1" 200 39
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 20:39:40] "POST /add_transaction HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "POST /register_node HTTP/1.1" 200 35
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5001
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 20:39:53] "GET /money HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5001 "GET /money HTTP/1.1" 200 19
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "POST /get_id HTTP/1.1" 200 45
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:root:line 187 chain that i validate:
+DEBUG:root:Block 0:
+  Previous Hash: 1
+  Validator: 0
+  Capacity: 3
+  Transactions:
+    5000
+  Current Hash: 7e5e3baa86ed3eee32ece664699970aac0eefec1730543831a8f41ff29763569
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 20:42:27] "POST /validate_chain HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 20:42:27] "POST /get_ring HTTP/1.1" 200 -
+DEBUG:root:Data_dict that I received:
+{'sender_address': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAoSmTb+8CPy5uFCCwK9TZ\nstJn2w2Sa50Y67wy4ocU+2AlUnds+zI4oJNns5RcD/QP0hzx/TF2rVOhnIe171mP\nvg0HLbDa2EBj3NJy2Avj3J6cuO0/gz/s+NrFuWAjgbr3zx2NEo7OaTP59GOw4OBL\nokT5e2kl8UcHmZA8aqvmEt7G+CSKpY/iURLxSwRafbimS5JePSbZ/nzJFu+P7TSY\nHt4Gd13m1c0HZmNgUb4Nmv+R7w503G7kcjFYu4Ewp2YlWZ2zwZ3wKDE3lXevjJ9j\nlt1tvcOIfdiyLyfjVkXxG6IV/iGe+G3VBKAgPrkXUsNEwn+5xBxNShx1eoG6kYqU\n4QIDAQAB\n-----END PUBLIC KEY-----', 'receiver_address': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA5+4qNp1Nxmmk887G4fyZ\n48Bm3votxe60TJp2IcNDd65iSZwx4fvGl0kdaOO+2jXavORUMeWYBFC6BXp9mqk1\nO4G5hCeVvXM6yeGc6QpdBqrQiTegtE+Qy0bZRlhUfZ/6Q5G12ZhY2EgLDJW8VRgz\nnbkqsNp88WKoirdne7q/I8CfQCAEuVmObO+086x1fvocyAhZVWLyOZC0DA3xzSQ7\nIx3gn58Hb89nFre6GbCDh6/R3/BaYJMcv8/2PnvJ9ohu21oyh1grkAnwJTsif6Mp\nWrKB4RjtusoLyBc2akw+GqTbVoXZHH34wlrhSK4upuEIaRyjTfjmPmmPSERa7VUH\nMwIDAQAB\n-----END PUBLIC KEY-----', 'type_of_transaction': 'coins_reg', 'amount': 1000, 'nonce': 1, 'message': None, 'transaction_id': '628a49a9fdaf13b13f894d829441572cce2d55532b57db2a50faa94f4594b044', 'signature': 'DajEek1Kd4wlHi7gkjcdy1Hw93LSru+cplcn2Gs6T+wS6tPtO8dGH2piSKsoZndcSyQkV0rPLNiBbAeVxa0UJTSSMx7V3xldaRuChB2ggJYRBclGMzJ9ABYm8k5udix9NGvVYChBq9Bafi2yeR9kjnx5VxZiN3DNW07XNTQVum5B9tAORCdMbeZOG/FCe9uIQwoQ2FqsMjc3BXfMRjbDqm+W29maIN4v60oHQ28dzfJaEkM06iVteGJL8DSj7eTvcBC3CSRr8v4zED/FVDeuUR1r4KCEshkaj4SpRk2Cgh4PzOH0uGb4AGQLqBlgprtyvKct44N+Xmm4MPvx4+yFeA=='}
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "POST /add_block HTTP/1.1" 200 39
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 20:42:27] "POST /add_transaction HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "POST /register_node HTTP/1.1" 200 35
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "POST /get_id HTTP/1.1" 200 45
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:root:line 187 chain that i validate:
+DEBUG:root:Block 0:
+  Previous Hash: 1
+  Validator: 0
+  Capacity: 3
+  Transactions:
+    5000
+  Current Hash: 62aac30407b6e64e6cba33ee0f69659c744976f1993b9b51f1fa840b90552b53
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 20:44:16] "POST /validate_chain HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 20:44:16] "POST /get_ring HTTP/1.1" 200 -
+DEBUG:root:Data_dict that I received:
+{'sender_address': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAv/B63dRJm/mVfB1QKYG/\nyaB6q6zmp3zRckH1X1iuz1mkjjmQzH8miZumANQytPL84BaXk7L7+mUlKsqiWfDC\n0nXCgBry6/3i5RL7NKd1JQcXS9XKVx1Of5kkYR8IF0CNjz+RTnYyJEh2eH/2/ERo\ngEB4XyIth1f8JYkUf2r4xJotd4Cx5OZW6Tyeq6goldsc1BRBEg7LoaM98dLcnYDX\nDnWsebPv4h5u/TvO4dUH5odSywL8VbitxIi3vfVqZa+8muGqyomK2TPmOr+2FWUd\n12k1q3ij76hiuqVeswF9RXBZEW/tP5DwbKV2g6h5PRpqn+1CYi50cE2/xxA8czYU\nswIDAQAB\n-----END PUBLIC KEY-----', 'receiver_address': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAvMnpRqiBp2ekpiWOpYCI\n2aeh1d53duW70jol3qfUGTaoxOsWK1oKSNf1eHn/t6lS0MS8A0PvPnZWSoMbNMQF\nsjj0mmiY3hYRyGgtPEerhnAVeUsEsLviW4/2RpfLkikOvXF3NXIrxD73PTfJSZ6z\ntTEjoMotnosd8Sp3ikRR2eDYukWUN8hLW7cTeZxzhdI0FYdu6lxgN7UFV8c+z5rF\nrw7nPF9LEybm0nKi2DawM997Vi5sHGdg5GVz6cerSrVIdiALO0LyPrWXG+5iBGf6\nlOOm+JXRsPhynY6cMFyPHR4FpTbGPbc41Uv9XCyjGNdXkaPwGCfiGeddRQC0ma9N\noQIDAQAB\n-----END PUBLIC KEY-----', 'type_of_transaction': 'coins_reg', 'amount': 1000, 'nonce': 1, 'message': None, 'transaction_id': 'bac85abccd418aaef406ba802d54fe5caa41f9884a5de94138cf7390923e78bd', 'signature': 'AV8CJHc2D1Ayv11SaXqSWNre2EWxCws/RhJgK6/+N9iBWQxxaDUQ/Itb3ctt3+S3iBAh2U7CXGpMGc3rbQNRJ6JrCIUI6TnIueZuh472WH/DHiN/ZS7LIC/egzaa3hwOJlHA+eGUg7Gyxvs6FDjaXbWWh9WT1dFJ4mj1u0EDwrzj2JK8KoOai55gY2A1WfiEEvqogf1rmm9CP/oSmpiuHOmpWKXHmnIYOt9cShOWup9XP2liwmDDnTYgbg2EgzDrZICg3zTwIfWDBtnthczhtmCmzWcPZZo+DySABXtMHM5I7KEpg05v4+2l+pqATO06B/NBrzH7liU34ZGyMNAnNw=='}
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "POST /add_block HTTP/1.1" 200 39
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 20:44:16] "POST /add_transaction HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "POST /register_node HTTP/1.1" 200 35
+DEBUG:root:Data_dict that I received:
+{'sender_address': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAv/B63dRJm/mVfB1QKYG/\nyaB6q6zmp3zRckH1X1iuz1mkjjmQzH8miZumANQytPL84BaXk7L7+mUlKsqiWfDC\n0nXCgBry6/3i5RL7NKd1JQcXS9XKVx1Of5kkYR8IF0CNjz+RTnYyJEh2eH/2/ERo\ngEB4XyIth1f8JYkUf2r4xJotd4Cx5OZW6Tyeq6goldsc1BRBEg7LoaM98dLcnYDX\nDnWsebPv4h5u/TvO4dUH5odSywL8VbitxIi3vfVqZa+8muGqyomK2TPmOr+2FWUd\n12k1q3ij76hiuqVeswF9RXBZEW/tP5DwbKV2g6h5PRpqn+1CYi50cE2/xxA8czYU\nswIDAQAB\n-----END PUBLIC KEY-----', 'receiver_address': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAvMnpRqiBp2ekpiWOpYCI\n2aeh1d53duW70jol3qfUGTaoxOsWK1oKSNf1eHn/t6lS0MS8A0PvPnZWSoMbNMQF\nsjj0mmiY3hYRyGgtPEerhnAVeUsEsLviW4/2RpfLkikOvXF3NXIrxD73PTfJSZ6z\ntTEjoMotnosd8Sp3ikRR2eDYukWUN8hLW7cTeZxzhdI0FYdu6lxgN7UFV8c+z5rF\nrw7nPF9LEybm0nKi2DawM997Vi5sHGdg5GVz6cerSrVIdiALO0LyPrWXG+5iBGf6\nlOOm+JXRsPhynY6cMFyPHR4FpTbGPbc41Uv9XCyjGNdXkaPwGCfiGeddRQC0ma9N\noQIDAQAB\n-----END PUBLIC KEY-----', 'type_of_transaction': 'message', 'amount': 11, 'nonce': 2, 'message': '"heyyyy!!!"', 'transaction_id': '82d4df284575a8056f0f81a153ab7197312f684f7282335b27f783873f45cde0', 'signature': 'K9TjedYi7/IaOhCR+/DrIo9if4Cnbxe73fxTY4RiB6obRysgNqEf+oX3lfrGyPkye+MmFfuGphnfqKvtcc6er5hCpevRPMP5EAL8XK0zknOQTPVoXurhglA6y49FRkU2GpoEopDvmV5syAkV6Q3neFMiZZTjwnVvFC1LtZTRW61CLx43r44uiu4cx3fSp1mQB3w4FK2PDhJK7XgRErEzpfBA3fQFLF2PSRXzQPy6Lku4xhh01rkdcr+Z8fLMoW9R1n78sfq0CpHfEhTYw63L5T/DBITFiZRuggx+puJSXHs6RJxK4WEwrk4Au5sQcRz5LVJZq2Jn+vh9VM/6trjBIg=='}
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 20:44:23] "POST /add_transaction HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "POST /get_id HTTP/1.1" 200 45
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:root:line 187 chain that i validate:
+DEBUG:root:Block 0:
+  Previous Hash: 1
+  Validator: 0
+  Capacity: 3
+  Transactions:
+    5000
+  Current Hash: c8268e23c465f55bc27c5cedbe44a70e8cb8b815b80eb84b49139bbd0b339cae
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 20:52:34] "POST /validate_chain HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 20:52:34] "POST /get_ring HTTP/1.1" 200 -
+DEBUG:root:Data_dict that I received:
+{'sender_address': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAyfWAEb1EDdGtCAnNj/Ck\nFMqJcxwGpHyiXmTy189SLpF0gfr7Zbiw14D7L0ID5ueg6EGs3X8/yFMIVpzhDey5\nz4nJAwMhbezgntqfpyZgKQqnxyXXDhc72xI48o+jL2ppxzAcE5Ia37ZwgjqUR9p6\nQXzkPX2NZWrzaH1Ig/qXS6flcha10pb2CbJKLN/qh6gv7RwCNs7EtwpOY+ByQFK2\nGKssF21phI6v7qKZIxqthF/7UHWkVR0JcYlkvcAwSs/KT2UQdj5XDVnDI9SWeKhN\nYiSngl7Q23J4zkfPTMaLkMOfFLdZUYKDWbhKbyazMogFiofKemxVdIjTgTmVpMRz\ntQIDAQAB\n-----END PUBLIC KEY-----', 'receiver_address': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAwiKj082MpoB+JyS4XH6I\n/c2yOKsO3LaHZuFoR1JOIUkdGexYYL6f6xsUmvfCP0m05qrLCOVYbQezTzNsPYl6\nNlnvFUfzn4lN7k8lM9sO+eoqCNa9fxgAKUgfKY0BCC0Volvot1mzewW5kqlzvq1F\nPlZOJQ218e5wmonzfb4iinSJS/dEWgAn0E0Gpi+p4VEQtZFXKo2KFhrQYjFTTKZY\nRqEUCDqkhbXDs4AsxQtizKzq/zRyis5/G8K7go8w0ZojAL1FC4XDbbk5iv3p/3JC\nI8UqdhzY4sUGspPTE4a+gdN7c9/knI88q2oQaPBAoB5PGAk9c8V0Xks8dZeJYiyx\nuQIDAQAB\n-----END PUBLIC KEY-----', 'type_of_transaction': 'coins_reg', 'amount': 1000, 'nonce': 1, 'message': None, 'transaction_id': '863f2ae549426081747da1d91aa61e5d14c2d69d857234c75570dcb48c93cbce', 'signature': 'bH2F9mIsgDAh5w/v7sUP2JtUWMEoMRKtADo0AcQoYQKFWBi2bqvwB+n3FJC6hFduoiZig+ulfItptUIu7/6QYnUwR5pxwTGEIdCTZKqVLhoFfPtNXe14tiPv2TF3pPf7i062VrpfG5leAbd1E7Pw5NRoZkZM/VSQHNTmJqCWpiqIp4NhMLchUg90iz++kblule5okt1a0yy0EeG9dNJdzTpBBj/NlKn2O/lQfz1l0Y0ssFXzetKTv8lmZedgMxgFKlEFPZ5Hq7tomFgWsGYsafB/7qOugGKpLnK7PeyZki23VRZl9O0vilF4LbdYeB9LQe+yMCOwZ3ex3DUvPcWzKw=='}
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "POST /add_block HTTP/1.1" 200 39
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 20:52:34] "POST /add_transaction HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "POST /register_node HTTP/1.1" 200 35
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5001
+ERROR:gen_node_temp:Exception on /create_transaction [POST]
+Traceback (most recent call last):
+  File "/home/anastasia/Desktop/las gafas moradas/BlockChat/distributed/lib/python3.10/site-packages/flask/app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/anastasia/Desktop/las gafas moradas/BlockChat/distributed/lib/python3.10/site-packages/flask/app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/anastasia/Desktop/las gafas moradas/BlockChat/distributed/lib/python3.10/site-packages/flask/app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/anastasia/Desktop/las gafas moradas/BlockChat/distributed/lib/python3.10/site-packages/flask/app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/home/anastasia/Desktop/las gafas moradas/BlockChat/backend/api.py", line 185, in create_transaction
+    print(message)
+UnboundLocalError: local variable 'message' referenced before assignment
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 20:52:41] "[35m[1mPOST /create_transaction HTTP/1.1[0m" 500 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5001 "POST /create_transaction HTTP/1.1" 500 265
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "POST /get_id HTTP/1.1" 200 45
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:root:line 187 chain that i validate:
+DEBUG:root:Block 0:
+  Previous Hash: 1
+  Validator: 0
+  Capacity: 3
+  Transactions:
+    5000
+  Current Hash: a783e6c473c9128f1a12e6071b23a382fa6f316c835e9c7c6d7fe4e93a39e026
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 20:53:34] "POST /validate_chain HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 20:53:34] "POST /get_ring HTTP/1.1" 200 -
+DEBUG:root:Data_dict that I received:
+{'sender_address': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAn7KpzCeSvsQY2YLSmyUQ\nXUGjna5PPKdGOBV372kgQrH15fuWBkVJqoVZvjvpFTqQrFXrJZm62Wg2fAB0C463\nje+wAskZDEVJXAFYhQXGRqDxJb4FTUB76dVPY6FU9b/KCCR62CQxAG4Cpxe/67Ln\nSLd0IPAeMPBClZGgUWVwqd79WBr76UUtGQ7EVNdWDQsyCHG2+XLEqTEz/eHmIC3a\n9lytDJgCcBHyBUsV5ya+wdpO3JLH2iyRrW94E2r3yHZKn5WxO5gRVUJuDprU7i2O\nBjR/UbACjdwDPcYjTplCqMEKlOdibobBxmFXDV4xRkUk8owBxUufGb/A3k4ojXtT\nnQIDAQAB\n-----END PUBLIC KEY-----', 'receiver_address': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAqWVDXTkRlgfmKrD03rLV\nJtXprgwZywbn0oDvZ3PefAoY9HckAlUBMIbXgl6YT6jj8b8AvOcTEEIQvNlZKaV9\nBzI1Eqo1IdTHBs+VkPNxlDZ0pbJmMk+wJF4oF9c8cU2Y4s7j7r+/6k9g70oRh70O\n43FZZooUXwHcKp3I2GRe5W/uEzSkiMaAeyQ7HbLJC8BmnFJzBemk/MIuRLcsK6ox\nIyu1uXGdnEfSAs4ozPFnKKQ0p06HJwvw80am5Z8iDgR+HwR9FR+d1uDKDAQJE3+D\nc27LNDNfKIkBluRmI3E7Mq8xAD4G+vX3vlNkP01JIAaRP6FjFdalQ6Qj4iDs5X3B\nuwIDAQAB\n-----END PUBLIC KEY-----', 'type_of_transaction': 'coins_reg', 'amount': 1000, 'nonce': 1, 'message': None, 'transaction_id': '7811de2fc04663869494662659bbf061d75351bff783c346c135c2d30be63743', 'signature': 'iW14X/DktpZd2BXdI/U0ywK8Pm6uaV1zit1OrTQ4rUrxJ0/1wNTpGOc2ZMFpS27RHhMyaU1MUehjOWvnmAoflKLTme53/ergSqNaaPe/X/KTV/fJf1hjQXRg6FjTZ7wQk8oUsDpZamnONYgkZ8JTzX3FH9ekG2FhBRI0b4uCqG/WlFTSGI+lIH1ZGIOP63LjbbOlBgVHueXDXXooZMGksKzkrYmpxv79nCO5sqQ0cq5JZU7hMFxTuDrxTkwowvelMC7vfXjXU14YjaqSh4yGDSziTRJ5rKm0PaDwJbEBZ3Q6RhB0PW/ceY6uoybKw5VxoXv7hWhe+ZgmGY1m0uiLFg=='}
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 20:53:34] "POST /add_transaction HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 20:53:34] "POST /add_block HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "POST /register_node HTTP/1.1" 200 35
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5001
+ERROR:gen_node_temp:Exception on /create_transaction [POST]
+Traceback (most recent call last):
+  File "/home/anastasia/Desktop/las gafas moradas/BlockChat/distributed/lib/python3.10/site-packages/flask/app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/anastasia/Desktop/las gafas moradas/BlockChat/distributed/lib/python3.10/site-packages/flask/app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/anastasia/Desktop/las gafas moradas/BlockChat/distributed/lib/python3.10/site-packages/flask/app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/anastasia/Desktop/las gafas moradas/BlockChat/distributed/lib/python3.10/site-packages/flask/app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/home/anastasia/Desktop/las gafas moradas/BlockChat/backend/api.py", line 185, in create_transaction
+    print(message)
+UnboundLocalError: local variable 'message' referenced before assignment
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 20:53:40] "[35m[1mPOST /create_transaction HTTP/1.1[0m" 500 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5001 "POST /create_transaction HTTP/1.1" 500 265
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "POST /get_id HTTP/1.1" 200 45
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:root:line 187 chain that i validate:
+DEBUG:root:Block 0:
+  Previous Hash: 1
+  Validator: 0
+  Capacity: 3
+  Transactions:
+    5000
+  Current Hash: 75ffdbf6fce50b951bd1e1856ae2c0c8b4445fd4ad44e7baa625ae35442b37a8
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 20:54:33] "POST /validate_chain HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 20:54:33] "POST /get_ring HTTP/1.1" 200 -
+DEBUG:root:Data_dict that I received:
+{'sender_address': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA1TbQIxYj8lCpNf+uHPrr\nuAB5Mq6Q2JVUu4FJxipfXLSRxlrBKRN035YsyP3+Cg5iUUw7YJf2R799KT8LuEaP\nki6yGD4E9QJVIIy7aUPGVvl4jp3IK78XoICIjqI5cVbIrNcl78+shhRoXeF9R2Ba\n3pSZ97lpAEE2RJOM9bjuI9E7sLp9fdb0knSFrJ8XT9okNMnrIImPj284HddXxaEQ\ntGeQ5pc7sMeqTI8PrVrqK4tOmQfbaskoDXfVNrhV8jbN+3uTv13AcAFC8SzKQyvg\nCa0joiO6HLkail+pBtlHDAQpE2UxA6KIxuUATHNMfGi86/DX2F3TcsO6IX2Hrt7h\nJwIDAQAB\n-----END PUBLIC KEY-----', 'receiver_address': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA1ZcGO1WS7+JbvZ4JwhTp\nQFkVb3Fhsvv+SMRlcmEgZ8BFUaod6xp28bNsTPomsJwRqyofcvrYDX1sb0XV5OP/\nT9gzKBr9j+0sPSK3e1UaVSVFe6a+iK0w9mCKevcWkyuJFkVIw0j5xneiIeZCVSnn\naW3CtoTyj40ver6XCqmgSDaQT3tz90kRMLDt1fa1WQuI6xzV9LjtfuWXtMLvAhNi\nUzUaL4lbkF8EMrte7VhY/AIIp7S40eeG2HJJB/sV2GGCGM0gwpbqOsan6b6z8M9e\ntAUxF49artwJgIENHbRFVXNdHYLy7XRaq3I30xb2bDsaob+pUR/MJFL3zy6TygnD\nGQIDAQAB\n-----END PUBLIC KEY-----', 'type_of_transaction': 'coins_reg', 'amount': 1000, 'nonce': 1, 'message': None, 'transaction_id': '58a2933ee2655dd88bc82481e2bb6088695db79be62c506fb9420d9c4fd4c07e', 'signature': 'w6yhLhu82FdMKJyR86OI6QT+F4CDRQa+4fJnTraTWGnsSttIoaTkDB6U/zB6dt9kuqbuUHSNTDnYYMLUhAHvRwwMv2fSuuVlnTlimOxcQv+izN2adp7xYjAU4EPmpX1ApUI9skH8xcmyecHK9JrX4fPFqaM1MtTiWqpdUPj6EkhgVY44XEvYTUIeojK5/D+Ai7IkMZPeONkQMiOI48vhgc6ewl15EMgDViJXbWrPLKjC6haJ5fY2t2HFeL1Rb6qA0Ny1kf3MgEhjB1uuDB59yh4HMFajM/qjD9VXDAEUVuuZHVwHg7F3VfGU/a6kxCaoOeCE9HkJhzeVq/5crfKLZw=='}
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "POST /add_block HTTP/1.1" 200 39
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 20:54:34] "POST /add_transaction HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "POST /register_node HTTP/1.1" 200 35
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5001
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "POST /add_transaction HTTP/1.1" 200 50
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 20:54:39] "POST /create_transaction HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5001 "POST /create_transaction HTTP/1.1" 200 50

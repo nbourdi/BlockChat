@@ -5289,3 +5289,807 @@ wLZIFXIG+Bg/tF01FW/GRnzl6MmfkSwn3K3HMOJi5BwjBKo3uOodYajXnLO9VZeV
 bwIDAQAB
 -----END PUBLIC KEY-----
 DEBUG:genesis:Node Blockchain Length: 2
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 16:34:35] "POST /get_id HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 16:34:35] "POST /register_node HTTP/1.1" 200 -
+DEBUG:genesis:Node ID: 1
+DEBUG:genesis:Node Wallet Public Key: -----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsUguJWhC4p0AVcUUYuc1
+tk/8VGkw7hcgF3Gl0sC79A3sQxsKJvVI5lWvOL8EBZRC1ZQdqZswZyUcSJuFN3vh
+Su/gXIsKOEmbRzJdOCNsF5UMklnxUVZDod0wQdw0osiDpf59hMMkneotUkKpHN1n
+MxABfqFvKTgnx2wAWeNX1TmR87Is5qIWzkUQqaoKmwi66uGHxW5hUu9qD4he6tuy
+4OiVxx8/kttWAQ6AzNs03MSORdQrAi++ya3bQ+761MtrogUG4uRRPKUHqq22dQ9J
+M1+uo+Hzl2poiH/ulgnDBGr4jJFid95JWlbOnOFXP4p6hmI8CpDhTNS6BS3PaIeA
+tQIDAQAB
+-----END PUBLIC KEY-----
+DEBUG:genesis:Node Blockchain Length: 1
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+DEBUG:genesis:Node ID: 1
+DEBUG:genesis:Node Wallet Public Key: -----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAmcuVwZC86rlpdaY+9PLf
+2zZX5UH2Bxa/OYiCxBDLOXoo38+FSS3oHkcOu8iqOIEknhGALgVXxqf58f4aLpn2
+PXxu4pj3YzaQGd3f98zQVYNZbaVrz/KcMgLIM3sjPB6+XN2HlPCROFitp+pjcVij
+UGvzQ+T69sxpRAg9Y2fElYH4geNwoFiWIfoiBZgAUqRe0+n/r7FgPZDmrMRQ2ouT
++J0UcdSR5ogBgXWoeKgqCbBF3wwkFIvC965gu9sQ8i1Nzig5r872jj33Ni7P64vD
+Z4Q2dEgYfd5tiXd1bSu2n68AmBxSUuHaL8DIVWMeLTtIDCekffNJi8im4XFYMHp5
+sQIDAQAB
+-----END PUBLIC KEY-----
+DEBUG:genesis:Node Blockchain Length: 1
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+DEBUG:genesis:Node ID: 1
+DEBUG:genesis:Node Wallet Public Key: -----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtw0BuNxUAdKIyZ2YySLm
+psqJrzYq7G9OwJnARUMBH5m86v8Ml4w76YYUPInN0XDlixvcyh7fuyhvKSWyyUEC
+5JGy/ojc1byA4eoW/CdpMIhoqAWBAHTbi3YvCfNDqMdG++xTTFDFrB9IruZFsulw
+QBKDJrRqQ0taMYpmZBCFTUSkEHGObXc/xz0JAsBlRgo55d1etO8HIKMNcXMU/rjL
+s0tIPY3IK5i/aKBJEtGSlp0mdBX5KAbP1n0fWXAJPDdCsd6llocNdkKpgvqE6MG5
+b0zMQRm+owQ/zVxnR6lNg9Quh5jFJ2AO/19R0wno4bnMetuwL4c3uTOdrlsP0jlT
+iQIDAQAB
+-----END PUBLIC KEY-----
+DEBUG:genesis:Node Blockchain Length: 1
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+DEBUG:genesis:Node ID: 1
+DEBUG:genesis:Node Wallet Public Key: -----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAmOn2aBLfPdwZW/Ir9i2i
+loaIunaWQJjvzW/WdwdUr6mygQQDPP085Lnch+cmtTRlGaKvsYolyr+mQ+4lP+L6
+YdVQEZ85o8e6T+iE5zBPpzxnCXf2P+DI4qzqzWHiOL/RqVhHQJmCbDzw+Grsf5x9
+6TA1iajhctiY0KaoFUEmhvv94jThybLXlvfWl0PrENZfmrNMYTacpCl8hZ7tTSyP
+0SplrtLpY1DbeNoHRyhBYmPx6fCeZEBMJOOzkMk7yY4lHLWriR/VjtsxKO+5oy1e
+GY9pPqL86kkk+OY/M79T6ol3wtALeHP4nVjLZBwx8KUTCdhLmY7pMEYreuZCBgJH
+IwIDAQAB
+-----END PUBLIC KEY-----
+DEBUG:genesis:Node Blockchain Length: 1
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+DEBUG:genesis:Node ID: 1
+DEBUG:genesis:Node Wallet Public Key: -----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEArcZEN2yeimoiVXEMeDeV
+DjvsX++/8+zR4QfablAwc2t06lEk4Km7ul6paRUHTJG9CfVnh3L8gUpgRwsZLqiU
+IisF06b2EQi09NWWcLcIUr1mII+PUhoEAwhdX8eyt3Or42qqNLraR2BqBsLaB4O7
+zoYnIuJ8Z6uAxjoja/MRjugd3NCZXXCU2vQ90KiOLETAl5Tx6oP4IFTBvM9aSfek
+lwfVvIHRlqYTnNv7ODNclHGgCv/Spo/6L9oaKd9YVij8mW/KUzwDFO1nNhVq6yh/
+vcHpv/V2UrR62FIlKCkMEEx7lFpX70JBpCDllDY2QNhoiIZAFL8XleS5PI7gauJt
+dwIDAQAB
+-----END PUBLIC KEY-----
+DEBUG:genesis:Node Blockchain Length: 1
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 18:58:28] "POST /get_id HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5001
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5001 "POST /validate_chain HTTP/1.1" 200 42
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5001
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5001 "POST /get_ring HTTP/1.1" 200 42
+DEBUG:root:
+
+ ====================== CREATING REG TRANSACTION............
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5001
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5001 "POST /add_transaction HTTP/1.1" 200 50
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5001
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5001 "POST /add_block HTTP/1.1" 200 39
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 18:58:28] "POST /register_node HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 19:03:28] "[33mPOST /stake HTTP/1.1[0m" 404 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "POST /stake HTTP/1.1" 404 207
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 19:03:33] "GET /money HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /money HTTP/1.1" 200 19
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 19:05:26] "[33mGET /view HTTP/1.1[0m" 404 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /view HTTP/1.1" 404 207
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+ERROR:genesis:Exception on /create_transaction [POST]
+Traceback (most recent call last):
+  File "/home/anastasia/Desktop/las gafas moradas/BlockChat/distributed/lib/python3.10/site-packages/flask/app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/anastasia/Desktop/las gafas moradas/BlockChat/distributed/lib/python3.10/site-packages/flask/app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/anastasia/Desktop/las gafas moradas/BlockChat/distributed/lib/python3.10/site-packages/flask/app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/anastasia/Desktop/las gafas moradas/BlockChat/distributed/lib/python3.10/site-packages/flask/app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/home/anastasia/Desktop/las gafas moradas/BlockChat/backend/api.py", line 168, in create_transaction
+    key = sorted_peers[receiver_id].public_key
+TypeError: list indices must be integers or slices, not str
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 19:05:55] "[35m[1mPOST /create_transaction HTTP/1.1[0m" 500 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "POST /create_transaction HTTP/1.1" 500 265
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 19:09:18] "POST /get_id HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5001
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5001 "POST /validate_chain HTTP/1.1" 200 42
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5001
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5001 "POST /get_ring HTTP/1.1" 200 42
+DEBUG:root:
+
+ ====================== CREATING REG TRANSACTION............
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5001
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 19:09:18] "POST /add_block HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5001 "POST /add_transaction HTTP/1.1" 200 50
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 19:09:18] "POST /register_node HTTP/1.1" 200 -
+DEBUG:genesis:Node ID: 1
+DEBUG:genesis:Node Wallet Public Key: -----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA01L9W0Q0hKqTtD4T6m4o
+drbU79gEAIDToDJpOm/X47/IfFm5BG7xu+UFfSVLq/IZi/TbQ+BgAQgtLxDnmnvt
+mTnI1DHtSTisjuC+q2GfIpiNaN7imace5rSF+X48nVZ5kn/4F8rGj5zy8G59tIKY
+AnpGCSukeM9qA3vNeJah0htgFfHvjvWBBaZrPOvr9gRZn+x6di+E2zgIFe3Z4fSA
+okDe5NAlonh681QgvL1GhD/RwI/QYkVVMThiMBCXezTiLAV8LBcRnfRrnTqWRJh1
+M3ESayglOCQ64lweXXh/+y3rSjmYKYGR5uFtKQPZA8zBs8tnIPLTpincR2eGdoen
+qwIDAQAB
+-----END PUBLIC KEY-----
+DEBUG:genesis:Node Blockchain Length: 2
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+DEBUG:genesis:Node ID: 1
+DEBUG:genesis:Node Wallet Public Key: -----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAxsPehqLMQkrfrm8L32vR
+DnY1fJTASYbuqJEDbbncjLD99UQa6P1WJ0CUD75zS+Lcyj/IvsZPKNl2FRu8HbUk
+TRLTc0lh5XGJ8YFzTL+MgCyX7ujdn8bvNuGYYIZ9FubMj1a64Nw2cz0Cpo4yk/te
+r4vXa4EuVzl2BzO3RvOCUJUiJ224YUwF07mwBdvRTFZd8o2JQNINtlFtYf9lDOSh
+/fzaLOiki5AY9E25kuIWSnhOf9o8pZ4zK8X1mQOCf4suRysnwbBCAG2ySxa+Ryhc
+sgM3Gn+1MDuv23xGrQAl9FluJkNXHEtVooAJ5v7feAAuYwykjpPf/TuGVD0vpivk
+lwIDAQAB
+-----END PUBLIC KEY-----
+DEBUG:genesis:Node Blockchain Length: 1
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+DEBUG:genesis:Node ID: 1
+DEBUG:genesis:Node Wallet Public Key: -----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAmO1EaCud+ldSTw01rnc8
+YMXvGk0t1yBrm2L6dgA+YzN3xD9rfBitzZ9QQq4DOJAAaVoQ12fkT42MkDDKUizu
+13YWQHYiOubIrhDP6mgt7qiXPBe8/s+Ufx3RiyAO46/XIKqQRpuciPSsq1sioVx9
+A0A2dm9t2k+sY3QmLrOR80B3E36DM9Vq3bIClcnq865jEtj1fnCgV4PsD636lLZb
+YEVRZcbFj/8ihjsAGpRVh+iGKrr5LWD903f+ihh+6IYd1vnpfV+d6lVvA/7u0I9j
+twux774jGTt2lEsQ76Mu7EzrVpbwHOEFYlJfA8Yo7sxN0zNH+40w7+7zp4G5/GnG
+oQIDAQAB
+-----END PUBLIC KEY-----
+DEBUG:genesis:Node Blockchain Length: 1
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+DEBUG:genesis:Node ID: 1
+DEBUG:genesis:Node Wallet Public Key: -----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAwsNV6qln70Iv9uaxI5tC
+mxCZpxk/7vJ91UGFPif2f61y0TxNSvdSSuZ2MUFSpagaM9SQOQCua7ZNjwZxBgc1
+LBf9MgPWZZGd2Y3lzsFMIraoGnBpPSrUEsWgWd+WauuQJx+NddZ15xFya9x87IQZ
+HaiCU2XsEwI2KrlrMn6+PjRNNNnm6LClUENW1RkJM0gtL2rbu1aWHahAQOcCXcsF
+ysCMYxhqh/7CjxGiM2bQahNX7DFlnQoLIekrm5oteY/+SWrrgBmsr9K1S2oNYapE
+y13ZN9U680J+NTC3h62k3KUhB0IHzUVhVfB1CiFDxWKqWIre5CWyUiNAKJfbyFCN
+lwIDAQAB
+-----END PUBLIC KEY-----
+DEBUG:genesis:Node Blockchain Length: 1
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+DEBUG:genesis:Node ID: 1
+DEBUG:genesis:Node Wallet Public Key: -----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAwU5dsq2i2uFF9yGe0r19
+L7RXw/znOMvcNmKjQaZsZFJv2q8fnSaK6TbSeeKoppsXWSP/uDuQRBIuNW9BYEEI
+Xkqr+pHK6an4d2WWpbqRtXOFcSPEDj8+rpBzlyPHtDv+ESD6EsyarbPk8jg4/PNb
+WzDrfAGQrVO3vdG9AT/T1FUv9q/t/DQ9B3B03rx500p7VRarkiwTv7RsoEQh6ZGv
+OH4fXsPzan+Vdyl1JfnSz4630J0kurGH7iJB3O9pZ6u/1R5Z00QTpNGFFzcWp7mG
+j+VbKP7QQdibVMxbuAaSMZnLIBMvA6QFmyZKgy4MNaP5YWl6Mjf5Egu25Q84JVUC
+9wIDAQAB
+-----END PUBLIC KEY-----
+DEBUG:genesis:Node Blockchain Length: 1
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+ERROR:genesis:Exception on /create_transaction [POST]
+Traceback (most recent call last):
+  File "/home/anastasia/Desktop/las gafas moradas/BlockChat/distributed/lib/python3.10/site-packages/flask/app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/anastasia/Desktop/las gafas moradas/BlockChat/distributed/lib/python3.10/site-packages/flask/app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/anastasia/Desktop/las gafas moradas/BlockChat/distributed/lib/python3.10/site-packages/flask/app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/anastasia/Desktop/las gafas moradas/BlockChat/distributed/lib/python3.10/site-packages/flask/app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/home/anastasia/Desktop/las gafas moradas/BlockChat/backend/api.py", line 168, in create_transaction
+    key = sorted_peers[receiver_id].public_key
+TypeError: list indices must be integers or slices, not str
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 20:04:48] "[35m[1mPOST /create_transaction HTTP/1.1[0m" 500 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "POST /create_transaction HTTP/1.1" 500 265
+DEBUG:genesis:Node ID: 1
+DEBUG:genesis:Node Wallet Public Key: -----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAt6P5xa2R6bzL+yp4SfwH
+5jbDRcH4RidJfYD40Nzu2MP9yRKFPXwC4TJhd5cKkb1HFs8C6Ap0f+kUCL4pgSfc
+yEZxzXBI1v5V3dYckY62oaOFFclC/IoFiuNRbvA71Y82YK4uvW0hIoRtupNfL7at
+ln9LYl34D0yPvlA8cF1PWL6sN7oebStACSu6gOvnGPgFjaXwhKjMNmvO6jRXutV3
+37OwpvkoPoA2S5ueH/iZAGkpsnhZSWffoDov1ncwYcJTa1pY7p5Gdp4vdE3RqDil
+YHBMw6W6mt9gHKYUGir5etCTe8LpPm6DZPc01JADb6zmcdDnkXd8F7HHRlnEcI9r
+RQIDAQAB
+-----END PUBLIC KEY-----
+DEBUG:genesis:Node Blockchain Length: 1
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+DEBUG:genesis:Node ID: 1
+DEBUG:genesis:Node Wallet Public Key: -----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtd6ZiH7OKCULVl/CEt5X
+IQKQ/4s2ubfHMeXl3/CSEVqTPyLlfNNK4RJNwxLfGSWRntRYrGKhRtz/TOrF7OUI
+lVoyePNXILovizVE/pSq2pSao2dhRaa4v/3AbrGipTy+eaZWw+m539uJzI5rhjZN
+RI5XcEEn7BuZiBGOw/N8jquXH/MsTVvPAau/qpBkmoJpSoimPD9jDd2+aHQLul3I
+EhBCZTkhr3Z5ptlYENh8yGqpXoEZ7hv8zsSKOQXyEgLZ11V3Kkso8M5rBZ6CI1+m
+l/iWUyKAJW+sqdlKcBvQBIH88JmSC6gz+fjAQhrdbCxqS8kz/7NGaW03YPZdJnbG
+awIDAQAB
+-----END PUBLIC KEY-----
+DEBUG:genesis:Node Blockchain Length: 1
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+ERROR:genesis:Exception on /create_transaction [POST]
+Traceback (most recent call last):
+  File "/home/anastasia/Desktop/las gafas moradas/BlockChat/distributed/lib/python3.10/site-packages/flask/app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/anastasia/Desktop/las gafas moradas/BlockChat/distributed/lib/python3.10/site-packages/flask/app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/anastasia/Desktop/las gafas moradas/BlockChat/distributed/lib/python3.10/site-packages/flask/app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/anastasia/Desktop/las gafas moradas/BlockChat/distributed/lib/python3.10/site-packages/flask/app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/home/anastasia/Desktop/las gafas moradas/BlockChat/backend/api.py", line 168, in create_transaction
+    key = sorted_peers[receiver_id].public_key
+TypeError: list indices must be integers or slices, not str
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 20:08:38] "[35m[1mPOST /create_transaction HTTP/1.1[0m" 500 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "POST /create_transaction HTTP/1.1" 500 265
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+ERROR:genesis:Exception on /create_transaction [POST]
+Traceback (most recent call last):
+  File "/home/anastasia/Desktop/las gafas moradas/BlockChat/distributed/lib/python3.10/site-packages/flask/app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/anastasia/Desktop/las gafas moradas/BlockChat/distributed/lib/python3.10/site-packages/flask/app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/anastasia/Desktop/las gafas moradas/BlockChat/distributed/lib/python3.10/site-packages/flask/app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/anastasia/Desktop/las gafas moradas/BlockChat/distributed/lib/python3.10/site-packages/flask/app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/home/anastasia/Desktop/las gafas moradas/BlockChat/backend/api.py", line 168, in create_transaction
+    key = sorted_peers[receiver_id].public_key
+TypeError: list indices must be integers or slices, not str
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 20:09:06] "[35m[1mPOST /create_transaction HTTP/1.1[0m" 500 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "POST /create_transaction HTTP/1.1" 500 265
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 20:11:27] "POST /get_id HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5001
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5001 "POST /validate_chain HTTP/1.1" 200 42
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5001
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5001 "POST /get_ring HTTP/1.1" 200 42
+DEBUG:root:
+
+ ====================== CREATING REG TRANSACTION............
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5001
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5001 "POST /add_transaction HTTP/1.1" 200 50
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5001
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5001 "POST /add_block HTTP/1.1" 200 39
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 20:11:27] "POST /register_node HTTP/1.1" 200 -
+DEBUG:genesis:Node ID: 1
+DEBUG:genesis:Node Wallet Public Key: -----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsAuDoUE4TRQglWpsoGzb
+7aAq+1i2JNMkguwaVF0FcgsJz9U4egbLFTEErVKYmGroF0riG0QcZkJmVHhJBMNh
+TLtMvgkEU6+WJVz/BrYs322kF0YCj3ccDH7cQwGC6MylsW29SwF/jUYGhMb7NMkL
+zTyR836YSzN52sxm+7XqR8lnd1UZ/JOz8H/EklCsiUhNrk0rDazPydgVnzdXH21D
+DReYi6dvGFB7FkTiTLiePFfN5kzYAit463I5/2tVbhHVZHI+l4yc6crIBjRAe6M0
+/MuIjffx6qHOVxQDAM1zOMqBI/gvc+60SYuCAdrO5M6oCM0GYVgirv+TGZOnunjh
+yQIDAQAB
+-----END PUBLIC KEY-----
+DEBUG:genesis:Node Blockchain Length: 2
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 20:14:36] "POST /get_id HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5001
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5001 "POST /validate_chain HTTP/1.1" 200 42
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5001
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5001 "POST /get_ring HTTP/1.1" 200 42
+DEBUG:root:
+
+ ====================== CREATING REG TRANSACTION............
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5001
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5001 "POST /add_transaction HTTP/1.1" 200 50
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5001
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5001 "POST /add_block HTTP/1.1" 200 39
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 20:14:36] "POST /register_node HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+ERROR:genesis:Exception on /create_transaction [POST]
+Traceback (most recent call last):
+  File "/home/anastasia/Desktop/las gafas moradas/BlockChat/distributed/lib/python3.10/site-packages/flask/app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/anastasia/Desktop/las gafas moradas/BlockChat/distributed/lib/python3.10/site-packages/flask/app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/anastasia/Desktop/las gafas moradas/BlockChat/distributed/lib/python3.10/site-packages/flask/app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/anastasia/Desktop/las gafas moradas/BlockChat/distributed/lib/python3.10/site-packages/flask/app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/home/anastasia/Desktop/las gafas moradas/BlockChat/backend/api.py", line 168, in create_transaction
+    key = sorted_peers[receiver_id].public_key
+TypeError: list indices must be integers or slices, not str
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 20:14:45] "[35m[1mPOST /create_transaction HTTP/1.1[0m" 500 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "POST /create_transaction HTTP/1.1" 500 265
+DEBUG:genesis:Node ID: 1
+DEBUG:genesis:Node Wallet Public Key: -----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAxZF6N9kF0Uydt0GMuSCQ
+/02rKej0eia4HQZEyUYlUeoyrvVVr7oz45klW1TK8KdOl6VFiAnbmd258737i4UV
+udqPqyNfOYUv+PZfMBBUpmKf+nOSJz6DkipO469lA5Wx9mjjH0xVmd/ED4A3Tv0K
+EwfXyuwO1Ri+2hfvjSuiXURTvdaI9+9i2vHv4kEgcyEeMTOb2pZPniMRtaekBAsk
+wOEmKiyLb7MHwZ+vGTihmN2W2Xuhk5yz1i1C65FkBaddNSB8PrqMVa5ZY/PuPHxY
+O+U38IEksEnbG+NKnNyWmU9XfzOND0U7B59sb0pSfF3sS7DV16TCcAGyrMzSpGsa
+3QIDAQAB
+-----END PUBLIC KEY-----
+DEBUG:genesis:Node Blockchain Length: 2
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 20:19:50] "POST /get_id HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5001
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5001 "POST /validate_chain HTTP/1.1" 200 42
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5001
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5001 "POST /get_ring HTTP/1.1" 200 42
+DEBUG:root:
+
+ ====================== CREATING REG TRANSACTION............
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5001
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 20:19:50] "POST /add_block HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5001 "POST /add_transaction HTTP/1.1" 200 50
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 20:19:50] "POST /register_node HTTP/1.1" 200 -
+DEBUG:genesis:Node ID: 1
+DEBUG:genesis:Node Wallet Public Key: -----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA03KagTwHrPGesVkc3iK/
+tJCWisw9Y23CitwR6AoMLOSIZmGNh+31V+4hIVG3EpC7RaP7/sCtAKCKTHnZ/RTZ
+9aqLwwve7sSSuxDOa42cJlrBO2ncNbcAHp581vJpDrkQKhf4RYI7C4zb/e3BvztX
+eaLvT+PcCHAyYWYJTHjYmqypOfbC6/fsZ4ATmmycllxBCrsjrsv4wImMcNxehP0+
+E/6/cgJOIctVxUFD8bbVE0XNQ0G9GyLfwZj4gutTu3CRjHwo6XPRkt93Yz+eCfAo
+nmhwDb9vfNnBHg9H76gl2fBlYEmHw45HHib7WG8GBt+Py4+D3TG1AgjhPA14A4SX
+4wIDAQAB
+-----END PUBLIC KEY-----
+DEBUG:genesis:Node Blockchain Length: 2
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 20:20:36] "POST /get_id HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5001
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5001 "POST /validate_chain HTTP/1.1" 200 42
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5001
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5001 "POST /get_ring HTTP/1.1" 200 42
+DEBUG:root:
+
+ ====================== CREATING REG TRANSACTION............
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5001
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5001 "POST /add_transaction HTTP/1.1" 200 50
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5001
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5001 "POST /add_block HTTP/1.1" 200 39
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 20:20:36] "POST /register_node HTTP/1.1" 200 -
+DEBUG:genesis:Node ID: 1
+DEBUG:genesis:Node Wallet Public Key: -----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAplM7aX6IAviZBBCWwMvH
+/ae7eOnak+XQVs6iA9VqRV6zGGXxd5yZaJtvh7aBqYq9TADrJ0P+VhPFh0JcYJMP
+UlRfRfua4L3xcix0X9cI4APfXbYXl1BNX85UlFr4L2QP+ZlAD9dL+Y93sjn3m8Ia
+DhLMNmcR5bYiTZkoyttfuZgmWyAk2C6v2mY7NyhNroY3XaD0u+FrPuUi4EVPnQGQ
+xzcuWuJZXz+gzKVOly9LCHeGT2/HF9lHv4x4jgpOZM6KRmzgqnyP9HSQLTOwop/s
+udCzSqbopyfR2ZgoPs2ixrOiZKhzVPvJmrJsqV9qJmhd693wMR+rp00W9zBKFTxQ
+XwIDAQAB
+-----END PUBLIC KEY-----
+DEBUG:genesis:Node Blockchain Length: 2
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 20:21:24] "POST /get_id HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5001
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5001 "POST /validate_chain HTTP/1.1" 200 42
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5001
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5001 "POST /get_ring HTTP/1.1" 200 42
+DEBUG:root:
+
+ ====================== CREATING REG TRANSACTION............
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5001
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 20:21:24] "POST /add_block HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5001 "POST /add_transaction HTTP/1.1" 200 50
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 20:21:24] "POST /register_node HTTP/1.1" 200 -
+DEBUG:genesis:Node ID: 1
+DEBUG:genesis:Node Wallet Public Key: -----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA18IskjX2OXRI0WNuxTeJ
+a/YY6sUiFYFolqF/JMuxAK/lk1HE5+K/PUt1nhKToJ3+6yWAud635ei5hC549NVV
+EpwdpJiOdexncLysDb0mM7Prnx8oH22y7zxIq1kFcWIcItpv4Kn3j3f1xQ4JMgyg
+iITX0eA03fiCvdhvQzMsjMsu5qY2mcZkq5GBKkg4YNG3aUc3KnadstVlzbarhNRz
+VbNjwMgQpsEcdY2QvLqro75ac4Jq57fHcMHf4UOdkuk16TxFSvxtftTa6tRDa/Gb
+i2XN0Mmzg0fe7xtvy8sBjvz+BEXJy5ZL432GGrbcbZI48TKQ3XZkY0wwsoTFEZS+
+EwIDAQAB
+-----END PUBLIC KEY-----
+DEBUG:genesis:Node Blockchain Length: 2
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 20:23:33] "POST /get_id HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5001
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5001 "POST /validate_chain HTTP/1.1" 200 42
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5001
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5001 "POST /get_ring HTTP/1.1" 200 42
+DEBUG:root:
+
+ ====================== CREATING REG TRANSACTION............
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5001
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 20:23:33] "POST /add_block HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5001 "POST /add_transaction HTTP/1.1" 200 50
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 20:23:33] "POST /register_node HTTP/1.1" 200 -
+DEBUG:genesis:Node ID: 1
+DEBUG:genesis:Node Wallet Public Key: -----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAvZnPu1KSgZl+fCMIs3Rj
+6UtVUtK0YAf3cBN4gB7K4eIB8H0PeUXTX3w9Gzn2G6Ue6F3ejWh7aQJcaLBaj813
+NaL60F5ugNUPrrS1hTXe2W4Yxjqn3hBLDe0j2Jequa7DhqjJW6CDr2CKWLQicBRB
+Na6KTSoGytwpUk8GLzrqcBdR02BJRuN/FPXch2SHtPJNvrMUES+zNDGYdYplL4Sl
+sI6Rkm+SNwCKiCOaDzia1FSHomj9EOeikamPtNr3ynSe/YiCK7hWXHDbXsaI+Ebv
+Thc4cIcWrUvJXYnLEZ6Ibp7lQPulRj9/oVkc841DvhdHYlRMliqBp8WP3D53QHGP
+HQIDAQAB
+-----END PUBLIC KEY-----
+DEBUG:genesis:Node Blockchain Length: 2
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 20:26:04] "POST /get_id HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5001
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5001 "POST /validate_chain HTTP/1.1" 200 42
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5001
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5001 "POST /get_ring HTTP/1.1" 200 42
+DEBUG:root:
+
+ ====================== CREATING REG TRANSACTION............
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5001
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5001 "POST /add_transaction HTTP/1.1" 200 50
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5001
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5001 "POST /add_block HTTP/1.1" 200 39
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 20:26:04] "POST /register_node HTTP/1.1" 200 -
+DEBUG:genesis:Node ID: 1
+DEBUG:genesis:Node Wallet Public Key: -----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAqV/HWwRPYlBCChNqvXun
+UC0/VNdONKWlPO+/HVe3ORvXEr3u5JG9d+YrSvYWwih0XMOIRzq3N8KosOBdyeFZ
+bij74vamxRPLVgEllxZGFLnScVUSPIsX1NS9vVFWb77S5dDB0rfayFBi6AQtF9HP
+sMG2YNez9oYJkL4xf+NjV9Yz8zZt/qeMDEleMgssdC/iBKBYhoaLycPHyKiWAr5Q
+tA38lJAPRB/xJkFRxyYsvY9aT8pBNSGdu3PaTLT5iJpr50K815bjRt98PHmEUVmL
+xebW6bH2XnrTMiguxQFhJCynuvD7HHnMFxC5qePmpOUSKwpQtG0yQqwlmMNNnCoB
+vQIDAQAB
+-----END PUBLIC KEY-----
+DEBUG:genesis:Node Blockchain Length: 2
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 20:27:25] "POST /get_id HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5001
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5001 "POST /validate_chain HTTP/1.1" 200 42
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5001
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5001 "POST /get_ring HTTP/1.1" 200 42
+DEBUG:root:
+
+ ====================== CREATING REG TRANSACTION............
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5001
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5001 "POST /add_transaction HTTP/1.1" 200 50
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5001
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5001 "POST /add_block HTTP/1.1" 200 39
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 20:27:25] "POST /register_node HTTP/1.1" 200 -
+DEBUG:genesis:Node ID: 1
+DEBUG:genesis:Node Wallet Public Key: -----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAxRLbdKsi3t5aweLqYp8W
+O2NOnvZ7iluAN0OV/OgSi5dmginhZj4P5kG3DAZKpLFPUgKIr2JV5eFGVTGsGK4I
+nMOcNiJgT0ZFg9Pqs4vxwIQfYAVHir2rRBUFL1qSEJBbLuap4UZDZD4rjH8l2izw
+N5EbIc9JjduoFW5bxjnnVL/YRKod8gzmcx/9U9zQlLVFEkJb31Qxi8YbMLChUrtY
++Oj69PUorzzmyH1VYIg3cJPhnFsrXLs6c/BDiOTcewGPHjn215is4yxzT8lb4MVc
+3SRMTuTPB2xeA6VryzMlmVTXunP8j+oXEATbnbx+Ovqt6utI2venoN+RCKyKCjf4
+QwIDAQAB
+-----END PUBLIC KEY-----
+DEBUG:genesis:Node Blockchain Length: 2
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 20:32:06] "POST /get_id HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5001
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5001 "POST /validate_chain HTTP/1.1" 200 42
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5001
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5001 "POST /get_ring HTTP/1.1" 200 42
+DEBUG:root:
+
+ ====================== CREATING REG TRANSACTION............
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5001
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5001 "POST /add_transaction HTTP/1.1" 200 50
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5001
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5001 "POST /add_block HTTP/1.1" 200 39
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 20:32:06] "POST /register_node HTTP/1.1" 200 -
+DEBUG:root:Data_dict that I received:
+{'sender_address': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAr8IXFLI1QypihR7eeaio\nDHYPPTzv4U7jiCuEX0sMCzomNFzRFUBZkXRw2OJOzxraFvejpbk4EkGCXGaTkx/S\nurZt2xUDh0rthXL5Ulz1lwS5zKoK9ktq7q/47MiJCZPogE/XizDafhiknYRNuWVj\ngp/Ebq2jTbw9R/QpLOut/jls4/BO6OerPM95CXcTSbx8JSE6A3MujKPQg8LbKuCZ\nIiBJJBH+6KK1Ss213s1J/HfvtgfhSdu3PrPLmrja380CjBs6M7jOaCPs/lmLuHt9\nQ18htRnxl3eG7FymmIbzFQdSLRJUtz5asc3fAwDj0ByOa/t/cWdyJWcc9nRRsune\nmwIDAQAB\n-----END PUBLIC KEY-----', 'receiver_address': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAjyoX34Fvk0Qf7za8517t\nBHISTLzHxwdYP7M3TsWKJLneINp1fu/B0xo5C1T3pHTP7d/cB+DWiUMNVhMVqokp\nwz1ylHAIvMq2FZ+1d/JbDCQryQI5/kcjokvtRJR6cdpgCjzO5tBe2YBTOWpkx77A\n2GIPHvwxkPdDikM3395eBTVXoJTQcONnwp+/y6Uq6dN8i73yPtUc8mEBF9e8dLZx\nVIxopjdbu60gDXPYbqbyPZoAkam4iMZSpTIx9+9h7dg7HZasbRr05hKwOhIFXfWN\nH3AMpTgQ3wJClUVDgif5gQwiEGsZNj4xMCWvUFRl09SWdjN+MJnvd/PRpahYEigz\nwQIDAQAB\n-----END PUBLIC KEY-----', 'type_of_transaction': 'message', 'amount': 14, 'nonce': 1, 'message': '"hello world!"', 'transaction_id': 'd4af380712235bfe0619fa21956e0c4acbf87ebad060ed88bd172f1ddbc7e7a0', 'signature': 'W7OQEac9AW9t71StkTqN+L/KW/NNpFX+C87QqPcpZ0rtwE3r9f/PA/lykPNirM4rvsinzuYXQgMrOON8DGECdaFJVR9J2T6y74CJISthjDE1WTIB9rdK3Cz2EVP/Eqx5S4MszZtrkXcwvZTvFx4y47SsLGSI0o7UN2fAtSxrbRUVmrw/CmKW0QfSKbCrfbGDLSNW1dYlZuC6UYdvlW/coljeUtWg2qachWs4nUDpBMgvUECaAdZJmPERouGk6gI2vDV7+jHiqmQooHKnMe+BB+s7fz7UYeZU0V09Z0A/5o1+LeSm2Y10CUAITfzWAob00werlg2qyQ20SDbbscOY/A=='}
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 20:32:14] "POST /add_transaction HTTP/1.1" 200 -
+DEBUG:genesis:Node ID: 1
+DEBUG:genesis:Node Wallet Public Key: -----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAjyoX34Fvk0Qf7za8517t
+BHISTLzHxwdYP7M3TsWKJLneINp1fu/B0xo5C1T3pHTP7d/cB+DWiUMNVhMVqokp
+wz1ylHAIvMq2FZ+1d/JbDCQryQI5/kcjokvtRJR6cdpgCjzO5tBe2YBTOWpkx77A
+2GIPHvwxkPdDikM3395eBTVXoJTQcONnwp+/y6Uq6dN8i73yPtUc8mEBF9e8dLZx
+VIxopjdbu60gDXPYbqbyPZoAkam4iMZSpTIx9+9h7dg7HZasbRr05hKwOhIFXfWN
+H3AMpTgQ3wJClUVDgif5gQwiEGsZNj4xMCWvUFRl09SWdjN+MJnvd/PRpahYEigz
+wQIDAQAB
+-----END PUBLIC KEY-----
+DEBUG:genesis:Node Blockchain Length: 2
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 20:34:20] "POST /get_id HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5001
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5001 "POST /validate_chain HTTP/1.1" 200 42
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5001
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5001 "POST /get_ring HTTP/1.1" 200 42
+DEBUG:root:
+
+ ====================== CREATING REG TRANSACTION............
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5001
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 20:34:20] "POST /add_block HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5001 "POST /add_transaction HTTP/1.1" 200 50
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 20:34:20] "POST /register_node HTTP/1.1" 200 -
+DEBUG:root:Data_dict that I received:
+{'sender_address': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsE8P3Rr6uOMxqUInFYM/\nkkrFrljDCRgqh5V+TnmJoZuLJ4EzLHWZ5yIIR7FjYVUkycXxju7EsBtQbT42k4yl\nZeKlkoZ0cTi/bX3JLmVk6AgQ1OUH7DkSq4DvtHLVMEc6RrTsHK2I27580KrW3sqw\no5VH5ROs/uYd5rq6IR+cAKw4yE+4o9eEpABLw09jbLVd7M+2YEBtIjqFHBYqb8fR\nIBwfEYMW7NQVIf6pfETj4lIaY2e/DpUDqvw7MO4guXDqQL/3+X38bQ/kA2vMH5fE\nMEGdV9y6vNIP0ERygCuHYV/4f3G/AN733fw2n5kbv5oKsyIBV0ZNaGczdWwBvYzc\nSQIDAQAB\n-----END PUBLIC KEY-----', 'receiver_address': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAwlS3J9Bs3/veDCvzt4w/\n+E1v47KJFa/8w5dn+0maxDkmOc5MmUk6+GvU/rSLQ3WABoGq4esaadX2zpEilu3u\nLfJU+2pNdX7J98qSTMi4xJBPhopWJAR+NSv/y6CoSQ68eLQ8klpA8GM2qRP/BNou\n/zVjQ9tDuomBRNxDheUPxZBXNNumkrqHZJumdfr56qRyb2+J0TxRnyMMr9x0Xtgp\nijDMDWjkfcPJaQg8r70dSlZcuWQjfReuHwFlaj23Z1ErD6kGHztuxD6JXRRnpjDc\nGW55I1AQylUcAVSZytfmlDqFzr/q9arYY//S4J61ZCf7xjosTsnN7o3FNvv/01rv\nXwIDAQAB\n-----END PUBLIC KEY-----', 'type_of_transaction': 'message', 'amount': 14, 'nonce': 1, 'message': '"hello there!"', 'transaction_id': '2547a449e4681c1c1643ca797a7dc2616fe23347c87b7c45c4b749fe242e2115', 'signature': 'imKZF2CYwOkvcyFf/FleOqT0R0gBkTsMbh4HadFZbm092su71CHmd4nYc3kQ3gJWx6J9ioqmQVHzN7lBVyJw9MwYwzhAmHSdpq2lxsc+L2Ve2OgTqsUU67KJf3aM2KVOstrVugamtO2tWvp6NpenvRB9yd0uwvI7Y0ZfYlNzi4IjCu28kl5hGLScInBRkR3BP1eukqb8xy0Eq5WArlQiV41Jc4WMIDlzp+IdBRhDJs33N89VQfEhtevdYftsIlgFHScsGhwthGVc7TorIspfmTb1ArVVsDBcmDIPh/74a382g4s0IsbwpTVc2gadj8ItVSOYNxf8c9lkVDqRhQVeEQ=='}
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 20:34:27] "POST /add_transaction HTTP/1.1" 200 -
+DEBUG:genesis:Node ID: 1
+DEBUG:genesis:Node Wallet Public Key: -----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAwlS3J9Bs3/veDCvzt4w/
++E1v47KJFa/8w5dn+0maxDkmOc5MmUk6+GvU/rSLQ3WABoGq4esaadX2zpEilu3u
+LfJU+2pNdX7J98qSTMi4xJBPhopWJAR+NSv/y6CoSQ68eLQ8klpA8GM2qRP/BNou
+/zVjQ9tDuomBRNxDheUPxZBXNNumkrqHZJumdfr56qRyb2+J0TxRnyMMr9x0Xtgp
+ijDMDWjkfcPJaQg8r70dSlZcuWQjfReuHwFlaj23Z1ErD6kGHztuxD6JXRRnpjDc
+GW55I1AQylUcAVSZytfmlDqFzr/q9arYY//S4J61ZCf7xjosTsnN7o3FNvv/01rv
+XwIDAQAB
+-----END PUBLIC KEY-----
+DEBUG:genesis:Node Blockchain Length: 2
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 20:37:13] "POST /get_id HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5001
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5001 "POST /validate_chain HTTP/1.1" 200 42
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5001
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5001 "POST /get_ring HTTP/1.1" 200 42
+DEBUG:root:
+
+ ====================== CREATING REG TRANSACTION............
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5001
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 20:37:13] "POST /add_block HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5001 "POST /add_transaction HTTP/1.1" 200 50
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 20:37:13] "POST /register_node HTTP/1.1" 200 -
+DEBUG:root:Data_dict that I received:
+{'sender_address': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEArLoahTtuvnxj/5yHor+9\n4ZVdez4gvnXhX2EzDGXkHi8hOSyDAmFLsCt8oEA1FVZs6juOdruq8nKipAOjit7o\n6MGqEi3kVnUnx22Bix10CGsZo70KSMt1C9S2vIfCIO88RoQwJakHPKxRaUh2nJRy\nXU1RWJAmBXwRIIK6+H/FIa6wdpC9hofVKJqa1bLgNrzxZiWaOGuhDUMpf1liWTOW\n3IsBlAC+2TCfLDqjd3FecgVVdsIMQouCLPO8D3B0jAc0cQMs5bXQxhnr/cNSUaKd\nW9TEr4EKJq/BA7lrNcbPJzmOLmVhWnDrcXQti1tBTzb9ISOO9h8tirz+Ed2VpE/S\n3wIDAQAB\n-----END PUBLIC KEY-----', 'receiver_address': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAuRy8y2bTfeBOreZroe/n\nuD1UoaaPO5bP76pnbpZ/nCXbgtaQLzu+ZJLZkZINeFymXyDNnr3RH/g4Zza7bcfr\nZCtZKZFAr0idHVBYcYNcxNH/5qyeHVHvOqZNIa3Q6FdsT3DqmtilD7uSDTc0Apt0\n0cjj9zm2/1DYxPITpJrry3R009JemzW5BIXl7Krf6TSVOEVMqsX2PTLDHOVIAYBk\nAQDFqDCgZaTmySENkKZ1Am5UWdtZqjzPXJznFsUZem8FEWLnDs1h7Tz+++Dq4+z6\nkl13j8l9zWVjcvIe7VqWVHQOw5z5MEOd/MILUfuhStKfE8zsFk3rt34/brM55T0i\nJQIDAQAB\n-----END PUBLIC KEY-----', 'type_of_transaction': 'message', 'amount': 16, 'nonce': 1, 'message': '"hello there!!!"', 'transaction_id': '5b9d05b0827ca3cdf148160e663cd9be1d1ebea15c00276967a2e928ca302eed', 'signature': 'GTdCZV87GggYcPS4t5dxtAsRZ3Uqk/W44B52IAUlIl75JoWsZ6vHXtodX5p5GgLWDC00MF7QyVkddBydRitaJwqBOUwLOJYifwG/EXdXP6Ec1jJkr/al4c+Zjkmuk9RTbvnxyC+E8BrTIb+bvma7P30ycQ+vKHXBSc5J9NWOyh9ITKyeN4I4BrUBxvL4YpJa2fg1lTjWwdzuKTCOf60Vt52uUf5XL3d5Pp3cfJJ04gNLG84GU4m3GuI/PhKWXyDd9f53gdnnTRmE2JCfAPLroEIwjSJDJm5pSgNJncbSv4D9iTwqdSGIvP4F17bJnaKqfrH7WLQfqHTefjDtzqFY/Q=='}
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 20:37:27] "POST /add_transaction HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 20:37:35] "[33mGET /view HTTP/1.1[0m" 404 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /view HTTP/1.1" 404 207
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 20:37:49] "GET /money HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /money HTTP/1.1" 200 19
+DEBUG:genesis:Node ID: 1
+DEBUG:genesis:Node Wallet Public Key: -----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAuRy8y2bTfeBOreZroe/n
+uD1UoaaPO5bP76pnbpZ/nCXbgtaQLzu+ZJLZkZINeFymXyDNnr3RH/g4Zza7bcfr
+ZCtZKZFAr0idHVBYcYNcxNH/5qyeHVHvOqZNIa3Q6FdsT3DqmtilD7uSDTc0Apt0
+0cjj9zm2/1DYxPITpJrry3R009JemzW5BIXl7Krf6TSVOEVMqsX2PTLDHOVIAYBk
+AQDFqDCgZaTmySENkKZ1Am5UWdtZqjzPXJznFsUZem8FEWLnDs1h7Tz+++Dq4+z6
+kl13j8l9zWVjcvIe7VqWVHQOw5z5MEOd/MILUfuhStKfE8zsFk3rt34/brM55T0i
+JQIDAQAB
+-----END PUBLIC KEY-----
+DEBUG:genesis:Node Blockchain Length: 2
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 20:39:40] "POST /get_id HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5001
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5001 "POST /validate_chain HTTP/1.1" 200 42
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5001
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5001 "POST /get_ring HTTP/1.1" 200 42
+DEBUG:root:
+
+ ====================== CREATING REG TRANSACTION............
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5001
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 20:39:40] "POST /add_block HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5001 "POST /add_transaction HTTP/1.1" 200 50
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 20:39:40] "POST /register_node HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 20:39:46] "GET /money HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /money HTTP/1.1" 200 19
+DEBUG:genesis:Node ID: 1
+DEBUG:genesis:Node Wallet Public Key: -----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAyysSQYbh8FWTFLZo3rjC
+Muza4TzKytLlo2Pds4ym8OiOgqkF3KsjOY3k/RnqKK+ZWIssPwSV8BhIfMl7xKYT
+NLkWGlp6ncNVJGajsFaLIheJWpGYWYKDbpu6F53MUTz1yWnmN5QKtYghdfwiAslP
+sRhQfMBnglEmX+SaBuiK1FZ3kh6nF/ntzMRpeCZwNnwT/iZtgGJGpQEBLSgPp/uD
+mDJm0etNUoE0hGuiFduzkKKqWTW2kE4gHByAHqogYnlzAXqLNLullOP/Kdrbs4Wv
+B7H/V4s+bbpEI4IPlydK0wwpXLBBPGvhbnxgFCtwKqjJF2mkm4ho74zQi+Ftg645
+eQIDAQAB
+-----END PUBLIC KEY-----
+DEBUG:genesis:Node Blockchain Length: 2
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 20:42:27] "POST /get_id HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5001
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5001 "POST /validate_chain HTTP/1.1" 200 42
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5001
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5001 "POST /get_ring HTTP/1.1" 200 42
+DEBUG:root:
+
+ ====================== CREATING REG TRANSACTION............
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5001
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 20:42:27] "POST /add_block HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5001 "POST /add_transaction HTTP/1.1" 200 50
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 20:42:27] "POST /register_node HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+ERROR:genesis:Exception on /create_transaction [POST]
+Traceback (most recent call last):
+  File "/home/anastasia/Desktop/las gafas moradas/BlockChat/distributed/lib/python3.10/site-packages/flask/app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/anastasia/Desktop/las gafas moradas/BlockChat/distributed/lib/python3.10/site-packages/flask/app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/anastasia/Desktop/las gafas moradas/BlockChat/distributed/lib/python3.10/site-packages/flask/app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/anastasia/Desktop/las gafas moradas/BlockChat/distributed/lib/python3.10/site-packages/flask/app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/home/anastasia/Desktop/las gafas moradas/BlockChat/backend/api.py", line 169, in create_transaction
+    key = sorted_peers[receiver_id-1].public_key
+TypeError: unsupported operand type(s) for -: 'str' and 'int'
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 20:42:47] "[35m[1mPOST /create_transaction HTTP/1.1[0m" 500 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "POST /create_transaction HTTP/1.1" 500 265
+DEBUG:genesis:Node ID: 1
+DEBUG:genesis:Node Wallet Public Key: -----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAoSmTb+8CPy5uFCCwK9TZ
+stJn2w2Sa50Y67wy4ocU+2AlUnds+zI4oJNns5RcD/QP0hzx/TF2rVOhnIe171mP
+vg0HLbDa2EBj3NJy2Avj3J6cuO0/gz/s+NrFuWAjgbr3zx2NEo7OaTP59GOw4OBL
+okT5e2kl8UcHmZA8aqvmEt7G+CSKpY/iURLxSwRafbimS5JePSbZ/nzJFu+P7TSY
+Ht4Gd13m1c0HZmNgUb4Nmv+R7w503G7kcjFYu4Ewp2YlWZ2zwZ3wKDE3lXevjJ9j
+lt1tvcOIfdiyLyfjVkXxG6IV/iGe+G3VBKAgPrkXUsNEwn+5xBxNShx1eoG6kYqU
+4QIDAQAB
+-----END PUBLIC KEY-----
+DEBUG:genesis:Node Blockchain Length: 2
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 20:44:16] "POST /get_id HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5001
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5001 "POST /validate_chain HTTP/1.1" 200 42
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5001
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5001 "POST /get_ring HTTP/1.1" 200 42
+DEBUG:root:
+
+ ====================== CREATING REG TRANSACTION............
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5001
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 20:44:16] "POST /add_block HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5001 "POST /add_transaction HTTP/1.1" 200 50
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 20:44:16] "POST /register_node HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5001
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5001 "POST /add_transaction HTTP/1.1" 200 50
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 20:44:23] "POST /create_transaction HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "POST /create_transaction HTTP/1.1" 200 46
+DEBUG:genesis:Node ID: 1
+DEBUG:genesis:Node Wallet Public Key: -----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAv/B63dRJm/mVfB1QKYG/
+yaB6q6zmp3zRckH1X1iuz1mkjjmQzH8miZumANQytPL84BaXk7L7+mUlKsqiWfDC
+0nXCgBry6/3i5RL7NKd1JQcXS9XKVx1Of5kkYR8IF0CNjz+RTnYyJEh2eH/2/ERo
+gEB4XyIth1f8JYkUf2r4xJotd4Cx5OZW6Tyeq6goldsc1BRBEg7LoaM98dLcnYDX
+DnWsebPv4h5u/TvO4dUH5odSywL8VbitxIi3vfVqZa+8muGqyomK2TPmOr+2FWUd
+12k1q3ij76hiuqVeswF9RXBZEW/tP5DwbKV2g6h5PRpqn+1CYi50cE2/xxA8czYU
+swIDAQAB
+-----END PUBLIC KEY-----
+DEBUG:genesis:Node Blockchain Length: 2
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 20:52:34] "POST /get_id HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5001
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5001 "POST /validate_chain HTTP/1.1" 200 42
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5001
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5001 "POST /get_ring HTTP/1.1" 200 42
+DEBUG:root:
+
+ ====================== CREATING REG TRANSACTION............
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5001
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 20:52:34] "POST /add_block HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5001 "POST /add_transaction HTTP/1.1" 200 50
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 20:52:34] "POST /register_node HTTP/1.1" 200 -
+DEBUG:genesis:Node ID: 1
+DEBUG:genesis:Node Wallet Public Key: -----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAyfWAEb1EDdGtCAnNj/Ck
+FMqJcxwGpHyiXmTy189SLpF0gfr7Zbiw14D7L0ID5ueg6EGs3X8/yFMIVpzhDey5
+z4nJAwMhbezgntqfpyZgKQqnxyXXDhc72xI48o+jL2ppxzAcE5Ia37ZwgjqUR9p6
+QXzkPX2NZWrzaH1Ig/qXS6flcha10pb2CbJKLN/qh6gv7RwCNs7EtwpOY+ByQFK2
+GKssF21phI6v7qKZIxqthF/7UHWkVR0JcYlkvcAwSs/KT2UQdj5XDVnDI9SWeKhN
+YiSngl7Q23J4zkfPTMaLkMOfFLdZUYKDWbhKbyazMogFiofKemxVdIjTgTmVpMRz
+tQIDAQAB
+-----END PUBLIC KEY-----
+DEBUG:genesis:Node Blockchain Length: 2
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 20:53:34] "POST /get_id HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5001
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5001 "POST /validate_chain HTTP/1.1" 200 42
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5001
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5001 "POST /get_ring HTTP/1.1" 200 42
+DEBUG:root:
+
+ ====================== CREATING REG TRANSACTION............
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5001
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5001 "POST /add_transaction HTTP/1.1" 200 50
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5001
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5001 "POST /add_block HTTP/1.1" 200 39
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 20:53:34] "POST /register_node HTTP/1.1" 200 -
+DEBUG:genesis:Node ID: 1
+DEBUG:genesis:Node Wallet Public Key: -----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAn7KpzCeSvsQY2YLSmyUQ
+XUGjna5PPKdGOBV372kgQrH15fuWBkVJqoVZvjvpFTqQrFXrJZm62Wg2fAB0C463
+je+wAskZDEVJXAFYhQXGRqDxJb4FTUB76dVPY6FU9b/KCCR62CQxAG4Cpxe/67Ln
+SLd0IPAeMPBClZGgUWVwqd79WBr76UUtGQ7EVNdWDQsyCHG2+XLEqTEz/eHmIC3a
+9lytDJgCcBHyBUsV5ya+wdpO3JLH2iyRrW94E2r3yHZKn5WxO5gRVUJuDprU7i2O
+BjR/UbACjdwDPcYjTplCqMEKlOdibobBxmFXDV4xRkUk8owBxUufGb/A3k4ojXtT
+nQIDAQAB
+-----END PUBLIC KEY-----
+DEBUG:genesis:Node Blockchain Length: 2
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 20:54:33] "POST /get_id HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5001
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5001 "POST /validate_chain HTTP/1.1" 200 42
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5001
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5001 "POST /get_ring HTTP/1.1" 200 42
+DEBUG:root:
+
+ ====================== CREATING REG TRANSACTION............
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5001
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 20:54:34] "POST /add_block HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5001 "POST /add_transaction HTTP/1.1" 200 50
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 20:54:34] "POST /register_node HTTP/1.1" 200 -
+DEBUG:root:Data_dict that I received:
+{'sender_address': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA1ZcGO1WS7+JbvZ4JwhTp\nQFkVb3Fhsvv+SMRlcmEgZ8BFUaod6xp28bNsTPomsJwRqyofcvrYDX1sb0XV5OP/\nT9gzKBr9j+0sPSK3e1UaVSVFe6a+iK0w9mCKevcWkyuJFkVIw0j5xneiIeZCVSnn\naW3CtoTyj40ver6XCqmgSDaQT3tz90kRMLDt1fa1WQuI6xzV9LjtfuWXtMLvAhNi\nUzUaL4lbkF8EMrte7VhY/AIIp7S40eeG2HJJB/sV2GGCGM0gwpbqOsan6b6z8M9e\ntAUxF49artwJgIENHbRFVXNdHYLy7XRaq3I30xb2bDsaob+pUR/MJFL3zy6TygnD\nGQIDAQAB\n-----END PUBLIC KEY-----', 'receiver_address': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA1TbQIxYj8lCpNf+uHPrr\nuAB5Mq6Q2JVUu4FJxipfXLSRxlrBKRN035YsyP3+Cg5iUUw7YJf2R799KT8LuEaP\nki6yGD4E9QJVIIy7aUPGVvl4jp3IK78XoICIjqI5cVbIrNcl78+shhRoXeF9R2Ba\n3pSZ97lpAEE2RJOM9bjuI9E7sLp9fdb0knSFrJ8XT9okNMnrIImPj284HddXxaEQ\ntGeQ5pc7sMeqTI8PrVrqK4tOmQfbaskoDXfVNrhV8jbN+3uTv13AcAFC8SzKQyvg\nCa0joiO6HLkail+pBtlHDAQpE2UxA6KIxuUATHNMfGi86/DX2F3TcsO6IX2Hrt7h\nJwIDAQAB\n-----END PUBLIC KEY-----', 'type_of_transaction': 'coins', 'amount': 20, 'nonce': 1, 'message': None, 'transaction_id': '8c100f153c949e81870fc3c3a01c112073d4f68a39f70e97264a9166ac96829a', 'signature': 'WTBspTLn526C5OmR+XAWMS3yzMI+wNhh0cuXcmPZTEGsYlY+Fo8ZfWLSRcRjZwFyAM3KC0iHOMVl9lNwIVhqlmLvfGUoYbG5Th+HfVS3BA045WnJRctBXUQgxPo8FpsAZZTmjHaoPxNcXp0dRG2fehdrWgL+0VFLiMdE3NldjFtRoWHfenLs535EwqI4r2UMMVU7iuEnqq2n2Z3FS/NzypGqz66C6SQuBiONQpzXJOKng/l+WuBRS3fsnzIU3peQiGB2FBzw5xBo1uOyTyI0PFV8NJXw3wF++KnFLNp+SWgV+gjPZn7RehNon+ZHXDldbuVqN4HfJdxaL9gqwzKReg=='}
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 20:54:39] "POST /add_transaction HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 20:54:59] "GET /money HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /money HTTP/1.1" 200 19
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 20:55:07] "[33mGET /view HTTP/1.1[0m" 404 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /view HTTP/1.1" 404 207
+DEBUG:genesis:Node ID: 1
+DEBUG:genesis:Node Wallet Public Key: -----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA1TbQIxYj8lCpNf+uHPrr
+uAB5Mq6Q2JVUu4FJxipfXLSRxlrBKRN035YsyP3+Cg5iUUw7YJf2R799KT8LuEaP
+ki6yGD4E9QJVIIy7aUPGVvl4jp3IK78XoICIjqI5cVbIrNcl78+shhRoXeF9R2Ba
+3pSZ97lpAEE2RJOM9bjuI9E7sLp9fdb0knSFrJ8XT9okNMnrIImPj284HddXxaEQ
+tGeQ5pc7sMeqTI8PrVrqK4tOmQfbaskoDXfVNrhV8jbN+3uTv13AcAFC8SzKQyvg
+Ca0joiO6HLkail+pBtlHDAQpE2UxA6KIxuUATHNMfGi86/DX2F3TcsO6IX2Hrt7h
+JwIDAQAB
+-----END PUBLIC KEY-----
+DEBUG:genesis:Node Blockchain Length: 2
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+DEBUG:genesis:Node ID: 1
+DEBUG:genesis:Node Wallet Public Key: -----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAn9dk0ETUUUdfGWA6lUnG
+4mbsMfEinftpryuXeMHOPtKak9nsK9Uatqn5OBnwXCh/Nkqw5d3A9wlW2jx5633N
+3AF9Li46zlOAhWk88Vk2ezsJEaskKC6OahSWuKYY2sYox9BVuMEx1oNxXybvKmJj
+oLPKAanu2uC30wwSIKV3gBC1N0NHIvtS0OMyan8rQsfZ4pNJKKCdBkiSNlOLU7IQ
+dAmhFyJW9WNbZpiigykgtXvZ4PsKnSbWpay+vxRgUrocWAsfFDAXA0EVJ/JIYGKr
+18TGeHIax9tR77Y32biADsnGUIMqWFgou8PrmeBAGoV1ACZ8v1xcIjrd3plp4anL
+PwIDAQAB
+-----END PUBLIC KEY-----
+DEBUG:genesis:Node Blockchain Length: 1

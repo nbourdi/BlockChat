@@ -37,6 +37,14 @@ def main():
 
 if __name__ == "__main__":
 
+
+    # print("im sending a message to myself!!!!!!!")
+    # myid = 1
+    # msg = "hello world!"
+    # print("myid = ", myid)
+    # print("msg = ", msg)
+    # CLI.send_message2(1, msg)
+
     if is_bootstrap == "1":
         
         transaction = Transaction(sender_address='0', receiver_address=node.wallet.public_key, type_of_transaction='coins', amount=5000, nonce=0, message=None)
@@ -66,6 +74,9 @@ if __name__ == "__main__":
         #     print(block.current_hash)
         #     print(block.previous_hash)
         # we are bootstrap
+      
+
+
     print("\nBlockchain that ive validated\n")
     for block in node.blockchain.blocks:
         print(block)

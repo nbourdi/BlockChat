@@ -12,7 +12,7 @@ from transaction import Transaction
 logging.basicConfig(filename='record.log', level=logging.DEBUG)
 
 api = Blueprint('api', __name__)
-n = 3
+n = 2
 
 global global_node
 global_node = Node(3, 10)
@@ -84,6 +84,9 @@ def get_block():
 # Endpoint to validate a transaction
 @api.route('/add_transaction', methods=['POST'])
 def add_transaction():
+
+    sorted_peers = sorted(node.peers, key=lambda x: x.id)
+
     data = request.get_json()
     data_dict = json.loads(data)
     logging.debug("Data_dict that I received:\n%s", data_dict)  # Log the received data
@@ -151,29 +154,54 @@ def get_chain():
         return jsonify({"error": str(e)}), 400
      
 
-###TODO auto einai mono gia message 
+###TODO  done einai gia ola <3 (nat eimai simp for u -anast) 
 @api.route('/create_transaction', methods=['POST'])
 def create_transaction ():
+
     receiver_id = request.form.get('receiver')
+    receiver_id = int(receiver_id)
     print("IM IN CREATE TRANSACTION AND IM SEEING THE RECEIVER")
     print(receiver_id)
-
+    
+    sorted_peers = sorted(node.peers, key=lambda x: x.id)
+    print("********* im after sorted peers")
+    print(sorted_peers)
+    
+    key = sorted_peers[receiver_id-1].public_key
+ 
+    print("###############################333 IM AFTER KEY######################")
 
     print("WHATS MY TYPE?")
     type_of_transaction = request.form.get('type')
-
+    print("just found the type")
     if type_of_transaction == "coins":
         amount = request.form.get('amount')
+        amount = int(amount)
     else: 
+        print("im in else")
         message = request.form.get('message')
 
-    print("WHATS MY MESSAGE?")
-    print(message)
+   # print("WHATS MY MESSAGE?")
+   # print(message)
+    print("im before BIG if statement")
+    if type_of_transaction == "message":
+        if (key and key != node.wallet.public_key):
+            try:
+                node.create_transaction(receiver_address=key, type_of_transaction="message", amount=None,message=message)
+                return jsonify({'message': 'Message sent succesfully.'}), 200
 
-    if (receiver_id and receiver_id != node.wallet.public_key):
-        if node.create_transaction(receiver_address=receiver_id, type_of_transaction="message", amount=None,message=message):
-            return jsonify({'message': 'The transaction was successful.'}), 200
-        else:
-            return jsonify({'message': 'Not enough NBCs.'}), 400
+            except:
+                return jsonify({'message': 'Transaction failed.'}), 400
     else:
-        return jsonify({'message': 'Transaction failed. Wrong receiver id.'}), 4
+        if (key and key != node.wallet.public_key):
+            try:
+                print("heyyy")
+                node.create_transaction(receiver_address=key, type_of_transaction="coins", amount=amount,message=None)
+                return jsonify({'message': 'Transaction completed successfully.'}), 200
+
+            except:
+                print("neyyy")
+                return jsonify({'message': 'Transaction failed.'}), 400
+
+
+  

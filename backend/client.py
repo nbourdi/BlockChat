@@ -58,11 +58,11 @@ class CLI:
             "stake <amount>": "Commit your stake of a specified amount",
             "view": "View the last validated block's transactions and the id of the validator.",
             "balance": "Check your balance",
-            "help": "Show available commands and their descriptions"
-            "t: <amount>: Create a new transaction transfering amount BCC"
+            "help": "Show available commands and their descriptions", 
+            "t <amount>": "Create a new transaction transfering amount BCC"
         }
         self.commands = {
-            "m": self.send_message,
+            "m": self.send_message2,
             "stake": self.stake_amount,
             "view": self.view,
             "balance": self.check_balance,
@@ -78,11 +78,17 @@ class CLI:
             print("Error: 't' command requires both recipient address and amount.")
             return
         
-        recipient_address, amount = args
-        
+        rec_id = args[0]
+        amount = args[1]
+        if rec_id is None:
+            print("Error: 'amount' requires a recipient address.")
+            return
+        if amount is None:
+            print("Error: 'amount' requires a message.")
+            return
         # Prepare the payload for the HTTP POST request
         payload = {
-            'receiver': recipient_address,
+            'receiver': rec_id,
             'type': 'coins',  # Assuming type of transaction is 'coins' for sending amount
             'amount': amount  # The amount to send
         }
@@ -95,54 +101,51 @@ class CLI:
         if response.status_code == 200:
             response_data = response.json()
             print(response_data['message'])
-            print(f"Current Balance: {response_data['balance']}")
+           # print(f"Current Balance: {response_data['balance']}")
         elif response.status_code == 400:
             response_data = response.json()
             print(response_data['message'])
-            print(f"Current Balance: {response_data['balance']}")
+           # print(f"Current Balance: {response_data['balance']}")
         else:
             print("Failed to create transaction. Error occurred.")
 
 
 
 
-    ##################CHANGED
-    def send_message(self, args):
-        if len(args) < 1:
-            print("Error: 'm' command requires both recipient address and message.")
+   
+   
+
+
+
+    def send_message2(self, args):
+        # Check if rec_id or mess is None
+        print( "lenght od args = " ,len(args))
+        rec_id = args[0]
+        mess = args[1]
+        if len(args):
+            for i in range(2, len(args)):
+                mess = mess + " "+ args[i]
+        if rec_id is None:
+            print("Error: 'send_message2' requires a recipient address.")
+            return
+        if mess is None:
+            print("Error: 'send_message2' requires a message.")
             return
 
-        # Join all elements after the first one as the command string
-        command = ' '.join(args)
-        
-        # Find the indices of "-----BEGIN PUBLIC KEY-----" and "-----END PUBLIC KEY-----"
-        begin_index = command.find("-----BEGIN PUBLIC KEY-----")
-        end_index = command.find("-----END PUBLIC KEY-----")
-        
-        if begin_index == -1 or end_index == -1 or end_index < begin_index:
-            print("Error: Incorrect command format.")
-            return
-        
-        # Extract the key substring including "-----BEGIN PUBLIC KEY-----" and "-----END PUBLIC KEY-----"
-        key = command[begin_index:end_index + len("-----END PUBLIC KEY-----")].strip()
-        
-        # Extract the message substring after "-----END PUBLIC KEY-----"
-        message_index = command.find('-----END PUBLIC KEY-----', end_index)
-        message = command[message_index + 1:].strip()
-        
-        print("Key:", key)
-        print("Message:", message)
+        # Print recipient ID and message for debugging
+        print("Recipient ID:", rec_id)
+        print("Message:", mess)
 
         # Prepare the payload for the HTTP POST request
         payload = {
-            'receiver': key,
+            'receiver': rec_id,
             'type': 'message',
-            'message': message
+            'message': mess
         }
-        
+
         # Make the HTTP POST request to your endpoint
         response = requests.post(f'http://{self.ip}:{self.port}/create_transaction', data=payload)
-        
+
         # Check the response status and handle accordingly
         if response.status_code == 200:
             print("Message sent successfully!")
@@ -151,7 +154,9 @@ class CLI:
         else:
             print("Failed to send message. Error occurred.")
 
-        
+
+
+
 
 
     def stake_amount(self, args):
@@ -172,63 +177,7 @@ class CLI:
         
         except requests.exceptions.RequestException as e:
             print(f"Error occurred: {e}")
-    # def view(self, args):
-    #     print("Viewing last validated block...\n\n")
-    #     last_block = node.view_block()
-    #     validator, transactions = last_block["validator"], last_block["transactions"]
-    #     print(
-    #         f"Validated by: {validator}\n\n"
-    #         f"TRANSACTIONS\n"
-    #         )
-    #     for transaction in transactions:
-    #         print(transaction)
-    #         print("-" * 40)  
 
-    
-    # def view(self, args):
-    #     try:
-    #         # Make a GET request to the /api/block endpoint
-    #         response = requests.post(f'http://{self.ip}:{self.port}/view')
-
-    #         #response = requests.get(f"{self.api_base_url}/api/block")
-            
-            
-    #         # Check the response status code
-    #         if response.status_code == 200:
-    #             last_block = response.json()
-    #             print("Last Block Details:")
-    #             print(f"Validator: {last_block['validator']}")
-    #             print("Transactions:")
-    #             for transaction in last_block['transactions']:
-    #                 print(f" - {transaction}")
-    #         elif response.status_code == 404:
-    #             print("No blocks available")
-    #         else:
-    #             print(f"Error: {response.status_code}")
-        
-    #     except requests.exceptions.RequestException as e:
-    #         print(f"Error occurred: {e}")
-
-    # def view(self, args):
-    #     try:
-    #         # Make a GET request to the /view endpoint
-    #         response = requests.get(f'http://{self.ip}:{self.port}/view')
-            
-    #         # Check the response status code
-    #         if response.status_code == 200:
-    #             last_block = response.json()
-    #             print("Last Block Details:")
-    #             print(f"Validator: {last_block['validator']}")
-    #             print("Transactions:")
-    #             for transaction in last_block['transactions']:
-    #                 print(f" - {transaction}")
-    #         elif response.status_code == 404:
-    #             print("No blocks available")
-    #         else:
-    #             print(f"Error: {response.status_code}")
-        
-    #     except requests.exceptions.RequestException as e:
-    #         print(f"Error occurred: {e}")
 
 
     def view(self, args):
@@ -314,8 +263,3 @@ To get started, type 'help' to see available commands.
             command = user_input[0]
             args = user_input[1:]
             self.run_command(command, args)
-
-# if __name__ == "__main__":
-#     print("hi")
-#     cli = CLI()
-#     cli.start()
