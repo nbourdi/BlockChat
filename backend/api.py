@@ -12,7 +12,7 @@ from transaction import Transaction
 logging.basicConfig(filename='record.log', level=logging.DEBUG)
 
 api = Blueprint('api', __name__)
-n = 3
+n = 5
 
 global global_node
 global_node = Node(3, 10)
@@ -53,6 +53,17 @@ def register_node():
                     receiver_address=peer.public_key,
                     reg_capacity=n-1
                 )
+        # for peer in node.peers:
+        #     if peer.id == 1:
+        #         bootstrap_pk = peer.public_key
+        # sorted_peers = sorted(node.peers, key=lambda x: x.id)
+        # node.create_transaction(receiver_address=sorted_peers[1].public_key, type_of_transaction="coins", amount=11, message=None)
+        # node.create_transaction(receiver_address=sorted_peers[1].public_key, type_of_transaction="coins", amount=12, message=None)
+        # node.create_transaction(receiver_address=sorted_peers[1].public_key, type_of_transaction="coins", amount=12, message=None)
+        # node.create_transaction(receiver_address=sorted_peers[1].public_key, type_of_transaction="coins", amount=13, message=None)
+        # node.create_transaction(receiver_address=sorted_peers[1].public_key, type_of_transaction="coins", amount=15, message=None)
+        # node.create_transaction(receiver_address=sorted_peers[1].public_key, type_of_transaction="coins", amount=16, message=None)
+
 
     return jsonify({"message": "Registered all nodes"}), 200
 
@@ -177,3 +188,17 @@ def create_transaction ():
             return jsonify({'message': 'Not enough NBCs.'}), 400
     else:
         return jsonify({'message': 'Transaction failed. Wrong receiver id.'}), 4
+    
+
+    ###TODO auto einai mono gia message 
+@api.route('/stake', methods=['POST'])
+def stake():
+    data = request.get_json()
+    stake_amount = data.get('stake_amount')
+    print(f"Received stake_amount: {stake_amount}")
+    print(type(stake_amount))
+    stake_amount_int = int(stake_amount)
+    print(f"Type of stake_amount: {type(stake_amount_int)}")
+    node.update_stake(stake_amount_int)
+    return jsonify({'message': f'Successfully received stake_amount: {stake_amount}'})
+    

@@ -9,6 +9,8 @@ from block import Block
 import requests
 import logging
 from client import CLI
+import time
+
 
 logging.basicConfig(filename='record.log', level=logging.DEBUG)
 
@@ -46,10 +48,16 @@ class Node:
         
         
     def create_transaction(self, receiver_address, type_of_transaction, amount, message):
+        start_time = time.time() # Record start time
+
         self.nonce += 1 #added this (athina)
         trans = Transaction(self.wallet.public_key, receiver_address, type_of_transaction, amount, message, self.nonce) #added the nonce attribute (athina)
         trans.sign_transaction(self.wallet.private_key)
         self.broadcast_transaction(trans, self.capacity)
+        end_time = time.time()
+        execution_time = end_time - start_time
+        with open('execution_times.txt', 'a') as file:
+            file.write(f"Execution time: {execution_time} seconds\n")
 
     def create_reg_transaction(self, receiver_address, reg_capacity): #TODO could be cleaner
         self.nonce += 1 #added this (athina)
@@ -154,6 +162,7 @@ class Node:
 
     def proof_of_stake(self):
 
+        start_time = time.time()
         print(f"\n\n=== ENTERING PROOF OF STAKE WITH STAKE {self.stake}\n\n")
         validator = self.validator_id(self.blockchain.blocks[-1].hash())
         
@@ -162,7 +171,11 @@ class Node:
         # if i win, i mint
         if validator == self.id:
             print("====== I WON the competition, MINTING...\n")
-            self.mint_block()
+            end_time=self.mint_block()
+            execution_time = end_time - start_time
+            with open('execution_times2.txt', 'a') as file:
+                file.write(f"Execution time: {execution_time} seconds\n")
+
             #self.reward(validator)
         else:
             print(f"====== {validator} won the competition\n")
@@ -237,6 +250,8 @@ class Node:
         print(minted_block)
         self.broadcast_block(minted_block)
         self.finalize_balances(minted_block)
+        end_time=time.time()
+        return end_time
 
     # mostly done? are threads necess?, all error handling, get responses?
     def broadcast_block(self, block):
@@ -417,26 +432,19 @@ class Node:
 
         
 
-    def stake(self, stake_amount): 
+    def update_stake(self, stake_amount): 
         # transaction με receiver_address = 0 και το ποσο που θλει να δεσμευσει ο καθε κομβος
         
-        if self.balance < stake_amount:
+        if self.unvalidated_balance < stake_amount:
             print(f"Can't stake {stake_amount}, not enough BCC in your acount...")
             return False
         else:
             self.stake = stake_amount
             self.create_transaction(0, type_of_transaction="stake", amount=stake_amount, message=None)
-            self.broadcast_stake()
             return True
         
-    # TODO last -prio
-    def update_stake(self, stake_amount):
-        # create a transaction 
-        pass
 
-    # TODO mid prior
-    def broadcast_stake(self, stake):
-        pass
+
            
 #def add_to_block(self, transaction):
 

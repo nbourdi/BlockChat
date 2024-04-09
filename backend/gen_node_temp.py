@@ -60,6 +60,20 @@ def register_node1():
     except Exception as e:
         print(f"Failed to register node: {e}")
 
+    for peer in node.peers:
+        if peer.id == 1:
+            bootstrap_pk = peer.public_key
+    
+            node.create_transaction(receiver_address=bootstrap_pk, type_of_transaction="message", amount=None, message="hi bitches")
+            node.create_transaction(receiver_address=bootstrap_pk, type_of_transaction="message", amount=None, message="hi bitches")
+            node.create_transaction(receiver_address=bootstrap_pk, type_of_transaction="message", amount=None, message="hi bitches")
+            node.create_transaction(receiver_address=bootstrap_pk, type_of_transaction="message", amount=None, message="hi bitches")
+            node.create_transaction(receiver_address=bootstrap_pk, type_of_transaction="message", amount=None, message="hi bitches")
+            node.create_transaction(receiver_address=bootstrap_pk, type_of_transaction="message", amount=None, message="hi bitches")
+
+    
+
+
 
 
 if __name__ == "__main__":
