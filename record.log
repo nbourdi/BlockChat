@@ -4629,3 +4629,663 @@ BnF2K2/GYacQuXD5d+9uXxENmhYo4UTCoq1y9ZxIWIqukNC7QXiHCkELyNgBnoVw
 0wIDAQAB
 -----END PUBLIC KEY-----
 DEBUG:genesis:Node Blockchain Length: 2
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+DEBUG:genesis:Node ID: 1
+DEBUG:genesis:Node Wallet Public Key: -----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAvD1g5qhqMbp0BkDOjDtX
+d6ZC5YOGAXpdjixcT+3rtEHI36yjx+JsMKANJTScl3UvjZhB+bcsW24hgzRy3P//
+RAJeIXcm/qg+IVJ9/wOjzZMWqfDNJ0sZfxHJW2+e50TNaPWvS2q4v8nzS97FEgsq
+2ApsE2gA0hRyB6Rn+EaMV9rRM8wsp3Y0s+PBtPaM5rc62EHoqgM/jU8wdhwggkZD
+iUMF9WQRlKKyoGdJ8pObiNQEeHoMvrcXOMwLapRrg19zPoiJeZTzRh5TZ6SgKeE9
+kuQUxKmLF/eFk2sXAPBOOa3P1oxUbeZx+u7RnHncOvYGSfiR0BCcv4uspc1RC9Xl
+AwIDAQAB
+-----END PUBLIC KEY-----
+DEBUG:genesis:Node Blockchain Length: 1
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 15:08:23] "GET /money HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /money HTTP/1.1" 200 17
+DEBUG:genesis:Node ID: 1
+DEBUG:genesis:Node Wallet Public Key: -----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAmkBInBJY+s+tpwSXOGjL
+jU3Us3YfOMIaVzrKNuERkpT77K5eZQI+n+HlTSA8knyYv7gjAffju/4eJrR7SIDy
+D9UipDwrE4nVONnahGnEkuLtEX+oyNpZkHP522ZeAyF2qMJgDsKximpKHHCCgfz1
+/zOkUIbq8NS313Y8piAtLOB5zd8onrva7pxtBWURCQAcrj4oYCKQUgWqAfi+WYtb
+Lu0XMNS7RgnVdurfcH78IGIJU8PqOLnCaC4lDkjcB/IQoyViu2id6E4oJeuPEr24
+eubFNrKAN/xSFrXltC/fdOeA7jReOGPHwsJaAc+6V4w3uurm0yvq+yNgsOGh/7UL
+6QIDAQAB
+-----END PUBLIC KEY-----
+DEBUG:genesis:Node Blockchain Length: 1
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 15:11:02] "GET /money HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /money HTTP/1.1" 200 17
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 15:11:17] "POST /get_id HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "POST /get_id HTTP/1.1" 200 45
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 15:11:17] "POST /register_node HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "POST /register_node HTTP/1.1" 200 35
+DEBUG:genesis:Node ID: 1
+DEBUG:genesis:Node Wallet Public Key: -----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAr17yDfX/6rBZ+hjfCkbk
+5bpaihgohkClKAWM7rjkpKyJrPhOfcWWxnq2kvj1uboFiI7NsKi8rhzvWsSUHTim
+X0i7X0MzWBI2TzirJU/Nc2lVpOFh5Ar1kyo6refQd0SuOAUzhvfIRV2/DLmEE4af
++kNsye3oCT68BtfwC5twlKKc+epKc0uIaTtgHakJHRxfynzFEZeItT96x2FuiV4J
+QYdpA2Iom4A7mVEOGVGTY2c8l18TVgq2ju3cgjQb3EDWcds+AAB8+9WU9vtrg+Ei
+SWpuNIBKJ2AJy8iVPFsS6uhujwbQ20n8zz6K+2SUyaaopNw/VvjKphbVpEuUZkDo
+yQIDAQAB
+-----END PUBLIC KEY-----
+DEBUG:genesis:Node Blockchain Length: 1
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 15:12:19] "POST /get_id HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "POST /get_id HTTP/1.1" 200 45
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 15:12:19] "POST /register_node HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "POST /register_node HTTP/1.1" 200 35
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5001
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 15:12:23] "GET /money HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5001 "GET /money HTTP/1.1" 200 14
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 15:12:29] "GET /money HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /money HTTP/1.1" 200 17
+DEBUG:n2_temp:im node1 test temp
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5002
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 15:13:30] "POST /get_id HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "POST /get_id HTTP/1.1" 200 45
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5001
+DEBUG:root:line 187 chain that i validate:
+DEBUG:root:Block 0:
+  Previous Hash: 1
+  Validator: 0
+  Capacity: 3
+  Transactions:
+    5000
+  Current Hash: 6010fba1c525ff339860c41c6ce8bf1b47eb21d3791b0b2b3b8cbfd7b43efbf1
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 15:13:30] "POST /validate_chain HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5001 "POST /validate_chain HTTP/1.1" 200 42
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5001
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 15:13:30] "POST /get_ring HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5001 "POST /get_ring HTTP/1.1" 200 42
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5002
+DEBUG:root:line 187 chain that i validate:
+DEBUG:root:Block 0:
+  Previous Hash: 1
+  Validator: 0
+  Capacity: 3
+  Transactions:
+    5000
+  Current Hash: 6010fba1c525ff339860c41c6ce8bf1b47eb21d3791b0b2b3b8cbfd7b43efbf1
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 15:13:30] "POST /validate_chain HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5002 "POST /validate_chain HTTP/1.1" 200 42
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5002
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 15:13:30] "POST /get_ring HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5002 "POST /get_ring HTTP/1.1" 200 42
+DEBUG:root:
+
+ ====================== CREATING REG TRANSACTION............
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5001
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5002
+DEBUG:root:Data_dict that I received:
+{'sender_address': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsuISpv20QZt7z3T2BrD4\nB2n2dom7e6k2UaI+ldx+44d7Buc0euzUWBwAgdarR/Sk9s/TayFkX7Zf5RBOgHAi\nc7orHoV09B8KUM6CjfkIfzsGIQzvxkrnlaZ3sm0lk2XehSfR5fmWfkQpevDWF8Xo\njyGWpfyghQ9tXWXv5bRBK1zqtfJNZjXpTfSWnwmC87mBDzLBJVl11X/Yyx4OZX/q\nU72QRSPBs81CgQmXPa13SGPbhGr7QcybPcrMSUS+VndoNIlNLzpiKsA6Wanb7ZwS\nniYXvCkEBSEZi6dAkoENKhPdDkteltyGjcCoxUAdIqZ9dAv+dreleMW7Hj/DLQgf\nHwIDAQAB\n-----END PUBLIC KEY-----', 'receiver_address': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAjxImLKmiQhaHXwxulMGh\nhBSD7g6rALdEIsQ5YUDt7XKpEo7PlVxJU9ZOUpRNsHgArun/sMxoFMGMqhHpsWso\nqGvWW7cgVFKe/TvLyS7t9aZVhm7oIBa/fTECwjgp81AURrDAnkc6jtaDr5pZoNoz\nRWLUz4Q+0JqoBj1fDnSrj5wUqTj9L8IvCW7YLCMdl3suZzBqV9mrJ7LW6lwYaDe1\nx6x7t+3GmaZOXE209j83+BSxhwTqpLnb61SIZopTUnBe9BhRqoOxQ1hVf9CxBMg/\n38UvGsQgwfbJQT6/um9NjlrHQauM2pQk4g9HOHCiFW2vEHopmGJnZP+ZkNUQ4WPr\nVQIDAQAB\n-----END PUBLIC KEY-----', 'type_of_transaction': 'coins_reg', 'amount': 1000, 'nonce': 1, 'message': None, 'transaction_id': 'e1b056ee253792505fe758228bebf112086a069aaa155a7634ed2a24eeaad2a8', 'signature': 'KhWB1WgUfcr8wSeFDPPCOUUItwCAzq0ClLoiAShaw/+qmfx8iprCmYzZBuTtfqAg0KS8bhAonU+dEpToMmoGbR8iaHya/CppwHU6k/u8lVoScHY3kt0j1Tgjf1MkKLPG6Oa1OA2qFBaa5uqPjjxeoe03+s6rEt25se3S/Yfu0dxHNIxLZCQhjiwrhVZLIfQY7UH9zx6TBFkwCN1I7YHZ/uH2P0tEnIamjRYaC7njtYLrAgqzxdHWekKuaEHOoe0HbojuqClBRu55yggJxLRyxe1CMkxFhWqoMoSDMLxPGPNDd59DQFVFkFigc9Jsgr45N/yo/n/SUniAaIVrMQkaaA=='}
+DEBUG:root:Data_dict that I received:
+{'sender_address': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsuISpv20QZt7z3T2BrD4\nB2n2dom7e6k2UaI+ldx+44d7Buc0euzUWBwAgdarR/Sk9s/TayFkX7Zf5RBOgHAi\nc7orHoV09B8KUM6CjfkIfzsGIQzvxkrnlaZ3sm0lk2XehSfR5fmWfkQpevDWF8Xo\njyGWpfyghQ9tXWXv5bRBK1zqtfJNZjXpTfSWnwmC87mBDzLBJVl11X/Yyx4OZX/q\nU72QRSPBs81CgQmXPa13SGPbhGr7QcybPcrMSUS+VndoNIlNLzpiKsA6Wanb7ZwS\nniYXvCkEBSEZi6dAkoENKhPdDkteltyGjcCoxUAdIqZ9dAv+dreleMW7Hj/DLQgf\nHwIDAQAB\n-----END PUBLIC KEY-----', 'receiver_address': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAjxImLKmiQhaHXwxulMGh\nhBSD7g6rALdEIsQ5YUDt7XKpEo7PlVxJU9ZOUpRNsHgArun/sMxoFMGMqhHpsWso\nqGvWW7cgVFKe/TvLyS7t9aZVhm7oIBa/fTECwjgp81AURrDAnkc6jtaDr5pZoNoz\nRWLUz4Q+0JqoBj1fDnSrj5wUqTj9L8IvCW7YLCMdl3suZzBqV9mrJ7LW6lwYaDe1\nx6x7t+3GmaZOXE209j83+BSxhwTqpLnb61SIZopTUnBe9BhRqoOxQ1hVf9CxBMg/\n38UvGsQgwfbJQT6/um9NjlrHQauM2pQk4g9HOHCiFW2vEHopmGJnZP+ZkNUQ4WPr\nVQIDAQAB\n-----END PUBLIC KEY-----', 'type_of_transaction': 'coins_reg', 'amount': 1000, 'nonce': 1, 'message': None, 'transaction_id': 'e1b056ee253792505fe758228bebf112086a069aaa155a7634ed2a24eeaad2a8', 'signature': 'KhWB1WgUfcr8wSeFDPPCOUUItwCAzq0ClLoiAShaw/+qmfx8iprCmYzZBuTtfqAg0KS8bhAonU+dEpToMmoGbR8iaHya/CppwHU6k/u8lVoScHY3kt0j1Tgjf1MkKLPG6Oa1OA2qFBaa5uqPjjxeoe03+s6rEt25se3S/Yfu0dxHNIxLZCQhjiwrhVZLIfQY7UH9zx6TBFkwCN1I7YHZ/uH2P0tEnIamjRYaC7njtYLrAgqzxdHWekKuaEHOoe0HbojuqClBRu55yggJxLRyxe1CMkxFhWqoMoSDMLxPGPNDd59DQFVFkFigc9Jsgr45N/yo/n/SUniAaIVrMQkaaA=='}
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 15:13:31] "POST /add_transaction HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5002 "POST /add_transaction HTTP/1.1" 200 50
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5001 "POST /add_transaction HTTP/1.1" 200 50
+DEBUG:root:
+
+ ====================== CREATING REG TRANSACTION............
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5001
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5002
+DEBUG:root:Data_dict that I received:
+{'sender_address': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsuISpv20QZt7z3T2BrD4\nB2n2dom7e6k2UaI+ldx+44d7Buc0euzUWBwAgdarR/Sk9s/TayFkX7Zf5RBOgHAi\nc7orHoV09B8KUM6CjfkIfzsGIQzvxkrnlaZ3sm0lk2XehSfR5fmWfkQpevDWF8Xo\njyGWpfyghQ9tXWXv5bRBK1zqtfJNZjXpTfSWnwmC87mBDzLBJVl11X/Yyx4OZX/q\nU72QRSPBs81CgQmXPa13SGPbhGr7QcybPcrMSUS+VndoNIlNLzpiKsA6Wanb7ZwS\nniYXvCkEBSEZi6dAkoENKhPdDkteltyGjcCoxUAdIqZ9dAv+dreleMW7Hj/DLQgf\nHwIDAQAB\n-----END PUBLIC KEY-----', 'receiver_address': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA33tfVhgqjUV+JWveHq3a\nFg27drdZubtClD7PpbS8/DSptitJUoo2y6L+4b/k4pYqhUYPXg2vAx4BWs4eykNm\nmdpkPNE9xvs4OILqnu/FGQdguStvePMxisfkbarjyJETfjZiFCc/nRLCvCgS//10\nbjaeJm4yntioH5vYsfr3s07bRiy4E3UA0gOgt9lky0p87mZjeVRh9s7+sv028BGl\n/aVFxLUUF9wVjcnOglZxt9nMJEFAAPO1Cjahc7YGABYfWnPayaVUXQR5EKccOCvM\nSpIvA9+QfTaM0XOHLWkmMrk0tYg28Uv3g9OOM8hNHvmSeea6pGMtIgY2j6iYvws7\n+QIDAQAB\n-----END PUBLIC KEY-----', 'type_of_transaction': 'coins_reg', 'amount': 1000, 'nonce': 2, 'message': None, 'transaction_id': 'bd71af6ffb1b96f85aaae54dfe5dbcf33bf559f92b1b7d46b7d68b02722c9ee7', 'signature': 'KhWB1WgUfcr8wSeFDPPCOUUItwCAzq0ClLoiAShaw/+qmfx8iprCmYzZBuTtfqAg0KS8bhAonU+dEpToMmoGbR8iaHya/CppwHU6k/u8lVoScHY3kt0j1Tgjf1MkKLPG6Oa1OA2qFBaa5uqPjjxeoe03+s6rEt25se3S/Yfu0dxHNIxLZCQhjiwrhVZLIfQY7UH9zx6TBFkwCN1I7YHZ/uH2P0tEnIamjRYaC7njtYLrAgqzxdHWekKuaEHOoe0HbojuqClBRu55yggJxLRyxe1CMkxFhWqoMoSDMLxPGPNDd59DQFVFkFigc9Jsgr45N/yo/n/SUniAaIVrMQkaaA=='}
+DEBUG:root:Data_dict that I received:
+{'sender_address': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsuISpv20QZt7z3T2BrD4\nB2n2dom7e6k2UaI+ldx+44d7Buc0euzUWBwAgdarR/Sk9s/TayFkX7Zf5RBOgHAi\nc7orHoV09B8KUM6CjfkIfzsGIQzvxkrnlaZ3sm0lk2XehSfR5fmWfkQpevDWF8Xo\njyGWpfyghQ9tXWXv5bRBK1zqtfJNZjXpTfSWnwmC87mBDzLBJVl11X/Yyx4OZX/q\nU72QRSPBs81CgQmXPa13SGPbhGr7QcybPcrMSUS+VndoNIlNLzpiKsA6Wanb7ZwS\nniYXvCkEBSEZi6dAkoENKhPdDkteltyGjcCoxUAdIqZ9dAv+dreleMW7Hj/DLQgf\nHwIDAQAB\n-----END PUBLIC KEY-----', 'receiver_address': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA33tfVhgqjUV+JWveHq3a\nFg27drdZubtClD7PpbS8/DSptitJUoo2y6L+4b/k4pYqhUYPXg2vAx4BWs4eykNm\nmdpkPNE9xvs4OILqnu/FGQdguStvePMxisfkbarjyJETfjZiFCc/nRLCvCgS//10\nbjaeJm4yntioH5vYsfr3s07bRiy4E3UA0gOgt9lky0p87mZjeVRh9s7+sv028BGl\n/aVFxLUUF9wVjcnOglZxt9nMJEFAAPO1Cjahc7YGABYfWnPayaVUXQR5EKccOCvM\nSpIvA9+QfTaM0XOHLWkmMrk0tYg28Uv3g9OOM8hNHvmSeea6pGMtIgY2j6iYvws7\n+QIDAQAB\n-----END PUBLIC KEY-----', 'type_of_transaction': 'coins_reg', 'amount': 1000, 'nonce': 2, 'message': None, 'transaction_id': 'bd71af6ffb1b96f85aaae54dfe5dbcf33bf559f92b1b7d46b7d68b02722c9ee7', 'signature': 'KhWB1WgUfcr8wSeFDPPCOUUItwCAzq0ClLoiAShaw/+qmfx8iprCmYzZBuTtfqAg0KS8bhAonU+dEpToMmoGbR8iaHya/CppwHU6k/u8lVoScHY3kt0j1Tgjf1MkKLPG6Oa1OA2qFBaa5uqPjjxeoe03+s6rEt25se3S/Yfu0dxHNIxLZCQhjiwrhVZLIfQY7UH9zx6TBFkwCN1I7YHZ/uH2P0tEnIamjRYaC7njtYLrAgqzxdHWekKuaEHOoe0HbojuqClBRu55yggJxLRyxe1CMkxFhWqoMoSDMLxPGPNDd59DQFVFkFigc9Jsgr45N/yo/n/SUniAaIVrMQkaaA=='}
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 15:13:31] "POST /add_transaction HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5001 "POST /add_transaction HTTP/1.1" 200 50
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5001
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 15:13:31] "POST /add_block HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 15:13:31] "POST /add_block HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "POST /add_block HTTP/1.1" 200 39
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5001 "POST /add_block HTTP/1.1" 200 39
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 15:13:31] "POST /add_transaction HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5002 "POST /add_transaction HTTP/1.1" 200 50
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 15:13:31] "POST /register_node HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "POST /register_node HTTP/1.1" 200 35
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 15:13:35] "GET /money HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /money HTTP/1.1" 200 19
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5001
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 15:13:39] "GET /money HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5001 "GET /money HTTP/1.1" 200 17
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 15:13:42] "GET /money HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /money HTTP/1.1" 200 19
+DEBUG:genesis:Node ID: 1
+DEBUG:genesis:Node Wallet Public Key: -----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsuISpv20QZt7z3T2BrD4
+B2n2dom7e6k2UaI+ldx+44d7Buc0euzUWBwAgdarR/Sk9s/TayFkX7Zf5RBOgHAi
+c7orHoV09B8KUM6CjfkIfzsGIQzvxkrnlaZ3sm0lk2XehSfR5fmWfkQpevDWF8Xo
+jyGWpfyghQ9tXWXv5bRBK1zqtfJNZjXpTfSWnwmC87mBDzLBJVl11X/Yyx4OZX/q
+U72QRSPBs81CgQmXPa13SGPbhGr7QcybPcrMSUS+VndoNIlNLzpiKsA6Wanb7ZwS
+niYXvCkEBSEZi6dAkoENKhPdDkteltyGjcCoxUAdIqZ9dAv+dreleMW7Hj/DLQgf
+HwIDAQAB
+-----END PUBLIC KEY-----
+DEBUG:genesis:Node Blockchain Length: 2
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 15:15:53] "POST /get_id HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "POST /get_id HTTP/1.1" 200 45
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 15:15:53] "POST /register_node HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "POST /register_node HTTP/1.1" 200 35
+DEBUG:n2_temp:im node1 test temp
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5002
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 15:15:57] "POST /get_id HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "POST /get_id HTTP/1.1" 200 45
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5001
+DEBUG:root:line 187 chain that i validate:
+DEBUG:root:Block 0:
+  Previous Hash: 1
+  Validator: 0
+  Capacity: 3
+  Transactions:
+    5000
+  Current Hash: f5245982d808c1b127a8311b3d408e79315a2d5652b52b71715ee1746009d60b
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 15:15:57] "POST /validate_chain HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5001 "POST /validate_chain HTTP/1.1" 200 42
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5001
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 15:15:57] "POST /get_ring HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5001 "POST /get_ring HTTP/1.1" 200 42
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5002
+DEBUG:root:line 187 chain that i validate:
+DEBUG:root:Block 0:
+  Previous Hash: 1
+  Validator: 0
+  Capacity: 3
+  Transactions:
+    5000
+  Current Hash: f5245982d808c1b127a8311b3d408e79315a2d5652b52b71715ee1746009d60b
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 15:15:57] "POST /validate_chain HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5002 "POST /validate_chain HTTP/1.1" 200 42
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5002
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 15:15:57] "POST /get_ring HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5002 "POST /get_ring HTTP/1.1" 200 42
+DEBUG:root:
+
+ ====================== CREATING REG TRANSACTION............
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5001
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5002
+DEBUG:root:Data_dict that I received:
+{'sender_address': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAn/356wH1GjkOvw4dH/sM\niCwgTlkkt0wKbp6HEs8Jin4G7DkOoowgRzPdwlfOGxuMK81t4kaLwDjexF9FwZrd\nXcTnxq+3cmuI2/xE3fzGDcmSRphdZ/zTTuOtW8VDF4PP5Of4ziMT9ko+TCWnhxbe\nhRq1wczIpZJOOXwrw0v1mZMxVHbL1EJscW7XzCZJ8bqlTJa75deyAv3Jjx7cIGdg\n+oLXbgrTYvqXcR53sRQjGuzSXYXlyf8LwuHMKiWcFuqrgoiczg8rMgtZMjOL5D3h\nwnzapOhCQSefFX2/U9dmzYM4Ck29PTDUMfriJh9qYGJtUDesj3Zdp01tiRo3DH2a\nAwIDAQAB\n-----END PUBLIC KEY-----', 'receiver_address': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEApAKtdruW+r0u68DXhGs4\noYHWA5HwtFl/uQyoUSSSziqyOFliRSM/4DpnUgW2mt90WgDTQMNY7P7D+CNHAcKH\nzmXsfYSLNAhANqUZJtst52Yg6YzA6+yjW0kKHG51iXSh/6RUDIH1YQA+WxvT7SOw\n3qfrOYG6Vl2bPBVeL7j+qsEQ318OFoUQWPMqnOpIFDlIISSYgh5YwB+YtQrug9HK\nqyhw53/W5V9eRNkaxwHCRyS/TFnBGK7R1dD0lj7ATlG3oiGfcJFjycDB56/k5/Wq\nny3aOUA5um/KUrfrpjQLbBKhxfjj0H0AyIAsjrv+LE3/Se/HZFxfA1W/38JqYwEK\n1QIDAQAB\n-----END PUBLIC KEY-----', 'type_of_transaction': 'coins_reg', 'amount': 1000, 'nonce': 1, 'message': None, 'transaction_id': 'e6023227ba1a8e5bcbfe4d66a4eb54d0d54375399fec4aeb783438547e959c87', 'signature': 'NZCqzVFu4D3ilHGTJxhN5Sc9otRVCidB/0TrIEsoSppyVbGEIFLgkGBoMMsed6T93eUkce1n1FWH/wrLsUqoLF17Eg0f5Ygm0A6mEjZSMQwUVm1S9vpG6RnCzihY8Qio7BEDVSLEE4yajfjcUhXLwPHo6w7Nk0wY3Z/du0yM5P5ReMRaeQBtK3mvxIR9QJjTf9BI1bJ+IDxY94o9G6yXVR1my/SocQm8qLQzd+A/29R29kIm+LFYgg67Vq2XkGUsSjxEaAOIorcdN1nGOwnccjuy6ylPj61zyCWrw5yGADFp0eRsRS4hDs7Xvd/5azqIQsE+67IPjdLdVipPzj08kA=='}
+DEBUG:root:Data_dict that I received:
+{'sender_address': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAn/356wH1GjkOvw4dH/sM\niCwgTlkkt0wKbp6HEs8Jin4G7DkOoowgRzPdwlfOGxuMK81t4kaLwDjexF9FwZrd\nXcTnxq+3cmuI2/xE3fzGDcmSRphdZ/zTTuOtW8VDF4PP5Of4ziMT9ko+TCWnhxbe\nhRq1wczIpZJOOXwrw0v1mZMxVHbL1EJscW7XzCZJ8bqlTJa75deyAv3Jjx7cIGdg\n+oLXbgrTYvqXcR53sRQjGuzSXYXlyf8LwuHMKiWcFuqrgoiczg8rMgtZMjOL5D3h\nwnzapOhCQSefFX2/U9dmzYM4Ck29PTDUMfriJh9qYGJtUDesj3Zdp01tiRo3DH2a\nAwIDAQAB\n-----END PUBLIC KEY-----', 'receiver_address': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEApAKtdruW+r0u68DXhGs4\noYHWA5HwtFl/uQyoUSSSziqyOFliRSM/4DpnUgW2mt90WgDTQMNY7P7D+CNHAcKH\nzmXsfYSLNAhANqUZJtst52Yg6YzA6+yjW0kKHG51iXSh/6RUDIH1YQA+WxvT7SOw\n3qfrOYG6Vl2bPBVeL7j+qsEQ318OFoUQWPMqnOpIFDlIISSYgh5YwB+YtQrug9HK\nqyhw53/W5V9eRNkaxwHCRyS/TFnBGK7R1dD0lj7ATlG3oiGfcJFjycDB56/k5/Wq\nny3aOUA5um/KUrfrpjQLbBKhxfjj0H0AyIAsjrv+LE3/Se/HZFxfA1W/38JqYwEK\n1QIDAQAB\n-----END PUBLIC KEY-----', 'type_of_transaction': 'coins_reg', 'amount': 1000, 'nonce': 1, 'message': None, 'transaction_id': 'e6023227ba1a8e5bcbfe4d66a4eb54d0d54375399fec4aeb783438547e959c87', 'signature': 'NZCqzVFu4D3ilHGTJxhN5Sc9otRVCidB/0TrIEsoSppyVbGEIFLgkGBoMMsed6T93eUkce1n1FWH/wrLsUqoLF17Eg0f5Ygm0A6mEjZSMQwUVm1S9vpG6RnCzihY8Qio7BEDVSLEE4yajfjcUhXLwPHo6w7Nk0wY3Z/du0yM5P5ReMRaeQBtK3mvxIR9QJjTf9BI1bJ+IDxY94o9G6yXVR1my/SocQm8qLQzd+A/29R29kIm+LFYgg67Vq2XkGUsSjxEaAOIorcdN1nGOwnccjuy6ylPj61zyCWrw5yGADFp0eRsRS4hDs7Xvd/5azqIQsE+67IPjdLdVipPzj08kA=='}
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 15:15:57] "POST /add_transaction HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 15:15:57] "POST /add_transaction HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5002 "POST /add_transaction HTTP/1.1" 200 50
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5001 "POST /add_transaction HTTP/1.1" 200 50
+DEBUG:root:
+
+ ====================== CREATING REG TRANSACTION............
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5001
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5002
+DEBUG:root:Data_dict that I received:
+{'sender_address': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAn/356wH1GjkOvw4dH/sM\niCwgTlkkt0wKbp6HEs8Jin4G7DkOoowgRzPdwlfOGxuMK81t4kaLwDjexF9FwZrd\nXcTnxq+3cmuI2/xE3fzGDcmSRphdZ/zTTuOtW8VDF4PP5Of4ziMT9ko+TCWnhxbe\nhRq1wczIpZJOOXwrw0v1mZMxVHbL1EJscW7XzCZJ8bqlTJa75deyAv3Jjx7cIGdg\n+oLXbgrTYvqXcR53sRQjGuzSXYXlyf8LwuHMKiWcFuqrgoiczg8rMgtZMjOL5D3h\nwnzapOhCQSefFX2/U9dmzYM4Ck29PTDUMfriJh9qYGJtUDesj3Zdp01tiRo3DH2a\nAwIDAQAB\n-----END PUBLIC KEY-----', 'receiver_address': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAyFL9dLDy/kbm/91Y3oEH\nnZDAmOqMI/x+HjwvPlXcekI6K/VDXnu0qsw3LqI3gRnWDGygmMmCccsbMlF2Vdgs\newPillYqsXnEjW8rTmyeG7GCu5gDilo+gKAA+xUGalEqCZ/XcSd8oAOj9C8T6DTF\ncJkDMuQ9MbYKU99l0Ttjd8cCrSbxGLMC4X84yuFE7HFtDVBwtcqmCEzbF0vAhaf6\nzEpM1Aq8CuiAWyVJ+wm9YoSRYbgOQlZCHRDLM4oZQ+dpQboLjd3RVb7yd2l8P2P6\n9wTQPvmzJMKd/yMa/oJmFitQne3L2T+uGXNFkzz4pv7a9GKahqDT8HPKNMUHFgZv\n1wIDAQAB\n-----END PUBLIC KEY-----', 'type_of_transaction': 'coins_reg', 'amount': 1000, 'nonce': 2, 'message': None, 'transaction_id': 'fc0210ff23f838d5634820d737ebdbed3a28222d71ef31881197b5b090c94c25', 'signature': 'NZCqzVFu4D3ilHGTJxhN5Sc9otRVCidB/0TrIEsoSppyVbGEIFLgkGBoMMsed6T93eUkce1n1FWH/wrLsUqoLF17Eg0f5Ygm0A6mEjZSMQwUVm1S9vpG6RnCzihY8Qio7BEDVSLEE4yajfjcUhXLwPHo6w7Nk0wY3Z/du0yM5P5ReMRaeQBtK3mvxIR9QJjTf9BI1bJ+IDxY94o9G6yXVR1my/SocQm8qLQzd+A/29R29kIm+LFYgg67Vq2XkGUsSjxEaAOIorcdN1nGOwnccjuy6ylPj61zyCWrw5yGADFp0eRsRS4hDs7Xvd/5azqIQsE+67IPjdLdVipPzj08kA=='}
+DEBUG:root:Data_dict that I received:
+{'sender_address': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAn/356wH1GjkOvw4dH/sM\niCwgTlkkt0wKbp6HEs8Jin4G7DkOoowgRzPdwlfOGxuMK81t4kaLwDjexF9FwZrd\nXcTnxq+3cmuI2/xE3fzGDcmSRphdZ/zTTuOtW8VDF4PP5Of4ziMT9ko+TCWnhxbe\nhRq1wczIpZJOOXwrw0v1mZMxVHbL1EJscW7XzCZJ8bqlTJa75deyAv3Jjx7cIGdg\n+oLXbgrTYvqXcR53sRQjGuzSXYXlyf8LwuHMKiWcFuqrgoiczg8rMgtZMjOL5D3h\nwnzapOhCQSefFX2/U9dmzYM4Ck29PTDUMfriJh9qYGJtUDesj3Zdp01tiRo3DH2a\nAwIDAQAB\n-----END PUBLIC KEY-----', 'receiver_address': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAyFL9dLDy/kbm/91Y3oEH\nnZDAmOqMI/x+HjwvPlXcekI6K/VDXnu0qsw3LqI3gRnWDGygmMmCccsbMlF2Vdgs\newPillYqsXnEjW8rTmyeG7GCu5gDilo+gKAA+xUGalEqCZ/XcSd8oAOj9C8T6DTF\ncJkDMuQ9MbYKU99l0Ttjd8cCrSbxGLMC4X84yuFE7HFtDVBwtcqmCEzbF0vAhaf6\nzEpM1Aq8CuiAWyVJ+wm9YoSRYbgOQlZCHRDLM4oZQ+dpQboLjd3RVb7yd2l8P2P6\n9wTQPvmzJMKd/yMa/oJmFitQne3L2T+uGXNFkzz4pv7a9GKahqDT8HPKNMUHFgZv\n1wIDAQAB\n-----END PUBLIC KEY-----', 'type_of_transaction': 'coins_reg', 'amount': 1000, 'nonce': 2, 'message': None, 'transaction_id': 'fc0210ff23f838d5634820d737ebdbed3a28222d71ef31881197b5b090c94c25', 'signature': 'NZCqzVFu4D3ilHGTJxhN5Sc9otRVCidB/0TrIEsoSppyVbGEIFLgkGBoMMsed6T93eUkce1n1FWH/wrLsUqoLF17Eg0f5Ygm0A6mEjZSMQwUVm1S9vpG6RnCzihY8Qio7BEDVSLEE4yajfjcUhXLwPHo6w7Nk0wY3Z/du0yM5P5ReMRaeQBtK3mvxIR9QJjTf9BI1bJ+IDxY94o9G6yXVR1my/SocQm8qLQzd+A/29R29kIm+LFYgg67Vq2XkGUsSjxEaAOIorcdN1nGOwnccjuy6ylPj61zyCWrw5yGADFp0eRsRS4hDs7Xvd/5azqIQsE+67IPjdLdVipPzj08kA=='}
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 15:15:57] "POST /add_transaction HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5002 "POST /add_transaction HTTP/1.1" 200 50
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5002
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 15:15:57] "POST /add_block HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5002 "POST /add_block HTTP/1.1" 200 39
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 15:15:57] "POST /add_block HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "POST /add_block HTTP/1.1" 200 39
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 15:15:57] "POST /add_transaction HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5001 "POST /add_transaction HTTP/1.1" 200 50
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 15:15:57] "POST /register_node HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "POST /register_node HTTP/1.1" 200 35
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5001
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5002
+DEBUG:root:Data_dict that I received:
+{'sender_address': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEApAKtdruW+r0u68DXhGs4\noYHWA5HwtFl/uQyoUSSSziqyOFliRSM/4DpnUgW2mt90WgDTQMNY7P7D+CNHAcKH\nzmXsfYSLNAhANqUZJtst52Yg6YzA6+yjW0kKHG51iXSh/6RUDIH1YQA+WxvT7SOw\n3qfrOYG6Vl2bPBVeL7j+qsEQ318OFoUQWPMqnOpIFDlIISSYgh5YwB+YtQrug9HK\nqyhw53/W5V9eRNkaxwHCRyS/TFnBGK7R1dD0lj7ATlG3oiGfcJFjycDB56/k5/Wq\nny3aOUA5um/KUrfrpjQLbBKhxfjj0H0AyIAsjrv+LE3/Se/HZFxfA1W/38JqYwEK\n1QIDAQAB\n-----END PUBLIC KEY-----', 'receiver_address': '<-----BEGIN PUBLIC KEY-----MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAn/356wH1GjkOvw4dH/sMiCwgTlkkt0wKbp6HEs8Jin4G7DkOoowgRzPdwlfOGxuMK81t4kLwDjexF9FwZrdXcTnxq3cmuI2/xE3fzGDcmSRphdZ/zTTuOtW8VDF4PP5Of4ziMT9ko+TCWnhxbehRq1wczIpZJOOXwrw0v1mZMxVHbL1EJscW7XzCZJ8bqlTJa75deyAv3Jjx7cIGdg+oLXbgrTYvqXcR53sRQjGuzSXYXlyf8LwuHMKiWcFuqrgoiczg8rMgtZMjOL5D3hwnzapOhCQSefFX2/U9dmzYM4Ck29PTDUMfriJh9qYGJtUDesj3Zdp01tiRo3DH2aAwIDAQAB-----END PUBLIC KEY----->', 'type_of_transaction': 'message', 'amount': 10, 'nonce': 1, 'message': 'On display', 'transaction_id': '86aaaef83fa8b4ef14788a4ac806051c2f4b0b26d5e7cd5b46ca8abb47fea7a0', 'signature': 'Li2Q4AizBjWg4mn+hFk5ZklpBiARBBTsbyGsrf9SkDUgPQOCYewbotOEfMU5xxYokDCArJ2DHg5f+xkzCuRkQ25rcvbzaWLfmj3LNaiPlkewPfS7QbiVvDWB+170lZcIzn4EUpxd0M9pv/OlVPCrhC79PVZo4WX78pjU77SoH4k22b6WRcm8mqmjUIZRUuJ6tOSaezlvImXBGF3nP9aUoKRUFWAtdtvUZXZAzI2h6/Wi3FeuD667TzcHzVEDeqBJqBDb/XhqeUuUBgzRYgBm0X3KvowaSKcHIM3iAJG4dudTwuNxHy6T2izA5xckzBBFqJXFkAx1TcQo0/6DqO3AiQ=='}
+DEBUG:root:Data_dict that I received:
+{'sender_address': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEApAKtdruW+r0u68DXhGs4\noYHWA5HwtFl/uQyoUSSSziqyOFliRSM/4DpnUgW2mt90WgDTQMNY7P7D+CNHAcKH\nzmXsfYSLNAhANqUZJtst52Yg6YzA6+yjW0kKHG51iXSh/6RUDIH1YQA+WxvT7SOw\n3qfrOYG6Vl2bPBVeL7j+qsEQ318OFoUQWPMqnOpIFDlIISSYgh5YwB+YtQrug9HK\nqyhw53/W5V9eRNkaxwHCRyS/TFnBGK7R1dD0lj7ATlG3oiGfcJFjycDB56/k5/Wq\nny3aOUA5um/KUrfrpjQLbBKhxfjj0H0AyIAsjrv+LE3/Se/HZFxfA1W/38JqYwEK\n1QIDAQAB\n-----END PUBLIC KEY-----', 'receiver_address': '<-----BEGIN PUBLIC KEY-----MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAn/356wH1GjkOvw4dH/sMiCwgTlkkt0wKbp6HEs8Jin4G7DkOoowgRzPdwlfOGxuMK81t4kLwDjexF9FwZrdXcTnxq3cmuI2/xE3fzGDcmSRphdZ/zTTuOtW8VDF4PP5Of4ziMT9ko+TCWnhxbehRq1wczIpZJOOXwrw0v1mZMxVHbL1EJscW7XzCZJ8bqlTJa75deyAv3Jjx7cIGdg+oLXbgrTYvqXcR53sRQjGuzSXYXlyf8LwuHMKiWcFuqrgoiczg8rMgtZMjOL5D3hwnzapOhCQSefFX2/U9dmzYM4Ck29PTDUMfriJh9qYGJtUDesj3Zdp01tiRo3DH2aAwIDAQAB-----END PUBLIC KEY----->', 'type_of_transaction': 'message', 'amount': 10, 'nonce': 1, 'message': 'On display', 'transaction_id': '86aaaef83fa8b4ef14788a4ac806051c2f4b0b26d5e7cd5b46ca8abb47fea7a0', 'signature': 'Li2Q4AizBjWg4mn+hFk5ZklpBiARBBTsbyGsrf9SkDUgPQOCYewbotOEfMU5xxYokDCArJ2DHg5f+xkzCuRkQ25rcvbzaWLfmj3LNaiPlkewPfS7QbiVvDWB+170lZcIzn4EUpxd0M9pv/OlVPCrhC79PVZo4WX78pjU77SoH4k22b6WRcm8mqmjUIZRUuJ6tOSaezlvImXBGF3nP9aUoKRUFWAtdtvUZXZAzI2h6/Wi3FeuD667TzcHzVEDeqBJqBDb/XhqeUuUBgzRYgBm0X3KvowaSKcHIM3iAJG4dudTwuNxHy6T2izA5xckzBBFqJXFkAx1TcQo0/6DqO3AiQ=='}
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 15:21:24] "POST /add_transaction HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 15:21:24] "POST /add_transaction HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "POST /add_transaction HTTP/1.1" 200 50
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5002 "POST /add_transaction HTTP/1.1" 200 50
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 15:21:24] "[31m[1mPOST /create_transaction HTTP/1.1[0m" 400 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5001 "POST /create_transaction HTTP/1.1" 400 31
+DEBUG:genesis:Node ID: 1
+DEBUG:genesis:Node Wallet Public Key: -----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAn/356wH1GjkOvw4dH/sM
+iCwgTlkkt0wKbp6HEs8Jin4G7DkOoowgRzPdwlfOGxuMK81t4kaLwDjexF9FwZrd
+XcTnxq+3cmuI2/xE3fzGDcmSRphdZ/zTTuOtW8VDF4PP5Of4ziMT9ko+TCWnhxbe
+hRq1wczIpZJOOXwrw0v1mZMxVHbL1EJscW7XzCZJ8bqlTJa75deyAv3Jjx7cIGdg
++oLXbgrTYvqXcR53sRQjGuzSXYXlyf8LwuHMKiWcFuqrgoiczg8rMgtZMjOL5D3h
+wnzapOhCQSefFX2/U9dmzYM4Ck29PTDUMfriJh9qYGJtUDesj3Zdp01tiRo3DH2a
+AwIDAQAB
+-----END PUBLIC KEY-----
+DEBUG:genesis:Node Blockchain Length: 2
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 15:31:05] "POST /get_id HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "POST /get_id HTTP/1.1" 200 45
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 15:31:05] "POST /register_node HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "POST /register_node HTTP/1.1" 200 35
+DEBUG:n2_temp:im node1 test temp
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5002
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 15:31:11] "POST /get_id HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "POST /get_id HTTP/1.1" 200 45
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5001
+DEBUG:root:line 187 chain that i validate:
+DEBUG:root:Block 0:
+  Previous Hash: 1
+  Validator: 0
+  Capacity: 3
+  Transactions:
+    5000
+  Current Hash: 63f349cb5b665e8db2703cdafaa051bd745dcfa4d1a3b7a9e3563e6359610242
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 15:31:11] "POST /validate_chain HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5001 "POST /validate_chain HTTP/1.1" 200 42
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5001
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 15:31:11] "POST /get_ring HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5001 "POST /get_ring HTTP/1.1" 200 42
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5002
+DEBUG:root:line 187 chain that i validate:
+DEBUG:root:Block 0:
+  Previous Hash: 1
+  Validator: 0
+  Capacity: 3
+  Transactions:
+    5000
+  Current Hash: 63f349cb5b665e8db2703cdafaa051bd745dcfa4d1a3b7a9e3563e6359610242
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 15:31:11] "POST /validate_chain HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5002 "POST /validate_chain HTTP/1.1" 200 42
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5002
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 15:31:11] "POST /get_ring HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5002 "POST /get_ring HTTP/1.1" 200 42
+DEBUG:root:
+
+ ====================== CREATING REG TRANSACTION............
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5001
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5002
+DEBUG:root:Data_dict that I received:
+{'sender_address': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAo4Ifc98jPuDw5AaslkLy\noeRPUyUPL4p0JaA4pA56Mixc0l+hCGM4ECLn4w2Mv8smcFdd7zco80Xmx1rkcuJP\nlDGpZBLwduXIWv1uNsz2YVuAhng3BovexbIpPHGrMT8G7trPzYFmaFYnlz1T4g3v\nU1UUm/UoUOzdUKw5z5LeL8Mjwn3W0DdqFs4590lhsB6QZz24T89ZTqq+vrtXa/mQ\nXS3yghwmetPL0P0pNEzpp1O4hF0knkhqRTdl8fB+wyYfdZKuqMD7SxRKw//KQh5F\n8WXmM7t5JU4bflWwgJJ04rATJJ6nppcBDEKlxYY7B79jhnHrTxUBGFASvyn+L62x\nfQIDAQAB\n-----END PUBLIC KEY-----', 'receiver_address': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAoHhLoZ1/8B66jKUGNs76\nUPOtfcamrU135xsfr+71ga9gpk3vjNTk2rp6YmRtcW+Yc6SHKYmbj63GX2wnd6o3\nRNRI4x7DOrGPwewc7mBmmLDA0rp6pyP15r1kd8S/+y+fBa3OccGE2C0PR/kJ4NbC\nj7Bzhl3x56NBT1uZ61o3ZPDYwYiZZK4YZWuDcf3WMFJaT0xaXt1clTetivmlzAXr\n9wJJWw60c1lFVW44SP9JOWO0UUWlw6K39v4L2IFlK2AK/D0X3KL1sSCQgUPusrmv\ncDczB1JgkO/AVx8bSehmhA6XmYkiXscmJRcRap5CKE+QUZEdxVtHrQ5BiSA2stCw\nNQIDAQAB\n-----END PUBLIC KEY-----', 'type_of_transaction': 'coins_reg', 'amount': 1000, 'nonce': 1, 'message': None, 'transaction_id': 'c3684bec043c574bb89cf935d52a03ae42c4595b39b1fa2b7d620ad3feebc3f8', 'signature': 'GHXcUTxgKoynCMHXlnVMOlCEPeXCqY5FhEdwGSY3S+TQgTX2Tl1KTKWdxY4r/r+aj0JMNokGT3nLQLKLts1uIRuqTG9Hapa9GvnjkUwQA40F3NAhC9gO2L37t9dKNVYtI/5Vplmc/n0KvD59+wNGuYHtzTw27Tvt4w9/ZwuVojF9Jb2bl6uX1ANRUklwFy5Dm/FLOmvSwsubOu+dA09aNOIxi7+6XDDVoJgfgNqoMpNfLP8WMZ1RdujSdmCcvSkrS9EIbrIY1jP3BoCu1AHzM9hSJ7hNSdzOeupgovdOQ2HFyyz2aQNNsWb3gqOCC95vdQjSbK5nSrFEoiu+E8JGOw=='}
+DEBUG:root:Data_dict that I received:
+{'sender_address': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAo4Ifc98jPuDw5AaslkLy\noeRPUyUPL4p0JaA4pA56Mixc0l+hCGM4ECLn4w2Mv8smcFdd7zco80Xmx1rkcuJP\nlDGpZBLwduXIWv1uNsz2YVuAhng3BovexbIpPHGrMT8G7trPzYFmaFYnlz1T4g3v\nU1UUm/UoUOzdUKw5z5LeL8Mjwn3W0DdqFs4590lhsB6QZz24T89ZTqq+vrtXa/mQ\nXS3yghwmetPL0P0pNEzpp1O4hF0knkhqRTdl8fB+wyYfdZKuqMD7SxRKw//KQh5F\n8WXmM7t5JU4bflWwgJJ04rATJJ6nppcBDEKlxYY7B79jhnHrTxUBGFASvyn+L62x\nfQIDAQAB\n-----END PUBLIC KEY-----', 'receiver_address': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAoHhLoZ1/8B66jKUGNs76\nUPOtfcamrU135xsfr+71ga9gpk3vjNTk2rp6YmRtcW+Yc6SHKYmbj63GX2wnd6o3\nRNRI4x7DOrGPwewc7mBmmLDA0rp6pyP15r1kd8S/+y+fBa3OccGE2C0PR/kJ4NbC\nj7Bzhl3x56NBT1uZ61o3ZPDYwYiZZK4YZWuDcf3WMFJaT0xaXt1clTetivmlzAXr\n9wJJWw60c1lFVW44SP9JOWO0UUWlw6K39v4L2IFlK2AK/D0X3KL1sSCQgUPusrmv\ncDczB1JgkO/AVx8bSehmhA6XmYkiXscmJRcRap5CKE+QUZEdxVtHrQ5BiSA2stCw\nNQIDAQAB\n-----END PUBLIC KEY-----', 'type_of_transaction': 'coins_reg', 'amount': 1000, 'nonce': 1, 'message': None, 'transaction_id': 'c3684bec043c574bb89cf935d52a03ae42c4595b39b1fa2b7d620ad3feebc3f8', 'signature': 'GHXcUTxgKoynCMHXlnVMOlCEPeXCqY5FhEdwGSY3S+TQgTX2Tl1KTKWdxY4r/r+aj0JMNokGT3nLQLKLts1uIRuqTG9Hapa9GvnjkUwQA40F3NAhC9gO2L37t9dKNVYtI/5Vplmc/n0KvD59+wNGuYHtzTw27Tvt4w9/ZwuVojF9Jb2bl6uX1ANRUklwFy5Dm/FLOmvSwsubOu+dA09aNOIxi7+6XDDVoJgfgNqoMpNfLP8WMZ1RdujSdmCcvSkrS9EIbrIY1jP3BoCu1AHzM9hSJ7hNSdzOeupgovdOQ2HFyyz2aQNNsWb3gqOCC95vdQjSbK5nSrFEoiu+E8JGOw=='}
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 15:31:11] "POST /add_transaction HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 15:31:11] "POST /add_transaction HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5001 "POST /add_transaction HTTP/1.1" 200 50
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5002 "POST /add_transaction HTTP/1.1" 200 50
+DEBUG:root:
+
+ ====================== CREATING REG TRANSACTION............
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5001
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5002
+DEBUG:root:Data_dict that I received:
+{'sender_address': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAo4Ifc98jPuDw5AaslkLy\noeRPUyUPL4p0JaA4pA56Mixc0l+hCGM4ECLn4w2Mv8smcFdd7zco80Xmx1rkcuJP\nlDGpZBLwduXIWv1uNsz2YVuAhng3BovexbIpPHGrMT8G7trPzYFmaFYnlz1T4g3v\nU1UUm/UoUOzdUKw5z5LeL8Mjwn3W0DdqFs4590lhsB6QZz24T89ZTqq+vrtXa/mQ\nXS3yghwmetPL0P0pNEzpp1O4hF0knkhqRTdl8fB+wyYfdZKuqMD7SxRKw//KQh5F\n8WXmM7t5JU4bflWwgJJ04rATJJ6nppcBDEKlxYY7B79jhnHrTxUBGFASvyn+L62x\nfQIDAQAB\n-----END PUBLIC KEY-----', 'receiver_address': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAvXHLM4JgCEYEV2Tn9aYT\n/TwFN+9H6DU7uy6SlhEGwTVLq1/8eRrWIEez9IFK47d9tLXnDF3ofCs1PSn90BHc\nT3XyhQej7fCB449nwp3XV+HY4S+qfjqcN9g8GTZsq24G3nI2/E9X7hnE5S5C7vvl\nyD4pOdkYOr90+3UVDPql0u4tQHjq/lmmhFzb1sUU02JIALO353hs0saasVHafRRJ\nkRTIAO+G/ooAhQpX2euaZED+dI9whxAEMHnPPe0HZ+pBxL2yV08Sv3MWspc/ukdU\ndvTEnpEDBFTXZCD3Mdxx1AxOZy0TFK9jkHZYu9iFYgIAzPYdW5U7lhpinlKjjRUL\nDwIDAQAB\n-----END PUBLIC KEY-----', 'type_of_transaction': 'coins_reg', 'amount': 1000, 'nonce': 2, 'message': None, 'transaction_id': 'b567ed840c4e8da286aac3cd35179bc3d7ded8349f37d626dbd99ec2535e5254', 'signature': 'GHXcUTxgKoynCMHXlnVMOlCEPeXCqY5FhEdwGSY3S+TQgTX2Tl1KTKWdxY4r/r+aj0JMNokGT3nLQLKLts1uIRuqTG9Hapa9GvnjkUwQA40F3NAhC9gO2L37t9dKNVYtI/5Vplmc/n0KvD59+wNGuYHtzTw27Tvt4w9/ZwuVojF9Jb2bl6uX1ANRUklwFy5Dm/FLOmvSwsubOu+dA09aNOIxi7+6XDDVoJgfgNqoMpNfLP8WMZ1RdujSdmCcvSkrS9EIbrIY1jP3BoCu1AHzM9hSJ7hNSdzOeupgovdOQ2HFyyz2aQNNsWb3gqOCC95vdQjSbK5nSrFEoiu+E8JGOw=='}
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 15:31:11] "POST /add_transaction HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5001 "POST /add_transaction HTTP/1.1" 200 50
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5001
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 15:31:11] "POST /add_block HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 15:31:11] "POST /add_block HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "POST /add_block HTTP/1.1" 200 39
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5001 "POST /add_block HTTP/1.1" 200 39
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 15:31:11] "POST /add_transaction HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5002 "POST /add_transaction HTTP/1.1" 200 50
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 15:31:11] "POST /register_node HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "POST /register_node HTTP/1.1" 200 35
+DEBUG:genesis:Node ID: 1
+DEBUG:genesis:Node Wallet Public Key: -----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAo4Ifc98jPuDw5AaslkLy
+oeRPUyUPL4p0JaA4pA56Mixc0l+hCGM4ECLn4w2Mv8smcFdd7zco80Xmx1rkcuJP
+lDGpZBLwduXIWv1uNsz2YVuAhng3BovexbIpPHGrMT8G7trPzYFmaFYnlz1T4g3v
+U1UUm/UoUOzdUKw5z5LeL8Mjwn3W0DdqFs4590lhsB6QZz24T89ZTqq+vrtXa/mQ
+XS3yghwmetPL0P0pNEzpp1O4hF0knkhqRTdl8fB+wyYfdZKuqMD7SxRKw//KQh5F
+8WXmM7t5JU4bflWwgJJ04rATJJ6nppcBDEKlxYY7B79jhnHrTxUBGFASvyn+L62x
+fQIDAQAB
+-----END PUBLIC KEY-----
+DEBUG:genesis:Node Blockchain Length: 2
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 15:34:06] "POST /get_id HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "POST /get_id HTTP/1.1" 200 45
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 15:34:06] "POST /register_node HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "POST /register_node HTTP/1.1" 200 35
+DEBUG:n2_temp:im node1 test temp
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5002
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 15:34:15] "POST /get_id HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "POST /get_id HTTP/1.1" 200 45
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5001
+DEBUG:root:line 187 chain that i validate:
+DEBUG:root:Block 0:
+  Previous Hash: 1
+  Validator: 0
+  Capacity: 3
+  Transactions:
+    5000
+  Current Hash: 92868c0a1dbd40431e51e93488de562f9ec63988ea4bcad23191af7e80dd53e1
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 15:34:15] "POST /validate_chain HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5001 "POST /validate_chain HTTP/1.1" 200 42
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5001
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 15:34:15] "POST /get_ring HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5001 "POST /get_ring HTTP/1.1" 200 42
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5002
+DEBUG:root:line 187 chain that i validate:
+DEBUG:root:Block 0:
+  Previous Hash: 1
+  Validator: 0
+  Capacity: 3
+  Transactions:
+    5000
+  Current Hash: 92868c0a1dbd40431e51e93488de562f9ec63988ea4bcad23191af7e80dd53e1
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 15:34:15] "POST /validate_chain HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5002 "POST /validate_chain HTTP/1.1" 200 42
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5002
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 15:34:15] "POST /get_ring HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5002 "POST /get_ring HTTP/1.1" 200 42
+DEBUG:root:
+
+ ====================== CREATING REG TRANSACTION............
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5001
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5002
+DEBUG:root:Data_dict that I received:
+{'sender_address': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEApKwrSMgC+s/pUzdO93Nx\niqMtBvz8b0J9UyTRNOd8rftBTJWsTlVvUTQcO9QONr3IueBL98gczBXuLOX0YH77\nat7FRa83WmoX+Ecy37e+sdPtw3gdscMFPaNZH8ZGoGr8yQ38o+XhghTAVTSSg18m\n6+hxQuTnv7t61ffIgZLtEnCY67ozMCU4M5G9oSlizhdHNHoU0Ll8zZQRTEgenpUA\nqJgezZhePztabo4KH/Q9TXxqMDTceW0eHcqhb32WZJnXgB4iq5JDcdhyYol7Ij+7\nulG/53FPQaj1fSE980anELjhND067jcWIS5u+SYDGst2y6xZpR66hUhAYV+kiaBR\nQwIDAQAB\n-----END PUBLIC KEY-----', 'receiver_address': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA3stCiYFsgufNlB17yCGC\nTDKzZNkRJf72b+q7+m5MkRlgx+WThS/I9ArpO6yNKa7U0HfSSoDsE5Lw0fRAzcJt\n+ow9ZgmbOF8GbC7Ukphv6XbwJCjYMs6+J03+nXYYCINIaSvHl5t6tZeFpJhYrkWc\ntT+eqA5Az1obYOxjMM0badYsyrQz3/1ahg7uehZeQ6E9ZbUqlxldzomrBrlcPky/\ndRzhRMf6UT1bVoCdRQ+8QxBQOL4cmMlzXu/39vAU/koOsJrno1bsv4jFdH+f71vo\n/Q1PpcadiqJJnHRVaQ8zic0X9f7WwGsHJt4QqI0GIRfdos3nDLl8DB5Jq4iuM74x\nGQIDAQAB\n-----END PUBLIC KEY-----', 'type_of_transaction': 'coins_reg', 'amount': 1000, 'nonce': 1, 'message': None, 'transaction_id': '23d1844ae4af955650e581435fa5d77e7dd56d2be1cb11b05c91ff268e56f51a', 'signature': 'T+SA9rPm6AHbd0ZuKJ1NMIWaVzZ+/ZnSR+sDCAHcAOgkF/pHlLI4LYq0VQNosqGNXcGC/yHXSxD6mg8aAZm0Wj5yt+25uvtwQgqcZBnEqbVzB/3yk3n6eyCu6w3KLptNzKtnXhJsDkE09jfxg1Id5qNLSikPucmge7KVBXOptyGI/oi23gjXAL8qaW4I5yRZkTm1uEg4fY67ELvuTm0L1ZZ/PiEbiZIuMpJ9jCjCcUiILd/G+QQtdcpO5DJIkZSoRKIE87DX0RqtAy56gwBS6eRxPr5lRev+s0jnSuC0SYewCIGALolRbSPKECnw5JnFIFpEvvNGgQZmrjsjlN5VBg=='}
+DEBUG:root:Data_dict that I received:
+{'sender_address': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEApKwrSMgC+s/pUzdO93Nx\niqMtBvz8b0J9UyTRNOd8rftBTJWsTlVvUTQcO9QONr3IueBL98gczBXuLOX0YH77\nat7FRa83WmoX+Ecy37e+sdPtw3gdscMFPaNZH8ZGoGr8yQ38o+XhghTAVTSSg18m\n6+hxQuTnv7t61ffIgZLtEnCY67ozMCU4M5G9oSlizhdHNHoU0Ll8zZQRTEgenpUA\nqJgezZhePztabo4KH/Q9TXxqMDTceW0eHcqhb32WZJnXgB4iq5JDcdhyYol7Ij+7\nulG/53FPQaj1fSE980anELjhND067jcWIS5u+SYDGst2y6xZpR66hUhAYV+kiaBR\nQwIDAQAB\n-----END PUBLIC KEY-----', 'receiver_address': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA3stCiYFsgufNlB17yCGC\nTDKzZNkRJf72b+q7+m5MkRlgx+WThS/I9ArpO6yNKa7U0HfSSoDsE5Lw0fRAzcJt\n+ow9ZgmbOF8GbC7Ukphv6XbwJCjYMs6+J03+nXYYCINIaSvHl5t6tZeFpJhYrkWc\ntT+eqA5Az1obYOxjMM0badYsyrQz3/1ahg7uehZeQ6E9ZbUqlxldzomrBrlcPky/\ndRzhRMf6UT1bVoCdRQ+8QxBQOL4cmMlzXu/39vAU/koOsJrno1bsv4jFdH+f71vo\n/Q1PpcadiqJJnHRVaQ8zic0X9f7WwGsHJt4QqI0GIRfdos3nDLl8DB5Jq4iuM74x\nGQIDAQAB\n-----END PUBLIC KEY-----', 'type_of_transaction': 'coins_reg', 'amount': 1000, 'nonce': 1, 'message': None, 'transaction_id': '23d1844ae4af955650e581435fa5d77e7dd56d2be1cb11b05c91ff268e56f51a', 'signature': 'T+SA9rPm6AHbd0ZuKJ1NMIWaVzZ+/ZnSR+sDCAHcAOgkF/pHlLI4LYq0VQNosqGNXcGC/yHXSxD6mg8aAZm0Wj5yt+25uvtwQgqcZBnEqbVzB/3yk3n6eyCu6w3KLptNzKtnXhJsDkE09jfxg1Id5qNLSikPucmge7KVBXOptyGI/oi23gjXAL8qaW4I5yRZkTm1uEg4fY67ELvuTm0L1ZZ/PiEbiZIuMpJ9jCjCcUiILd/G+QQtdcpO5DJIkZSoRKIE87DX0RqtAy56gwBS6eRxPr5lRev+s0jnSuC0SYewCIGALolRbSPKECnw5JnFIFpEvvNGgQZmrjsjlN5VBg=='}
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 15:34:15] "POST /add_transaction HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 15:34:15] "POST /add_transaction HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5002 "POST /add_transaction HTTP/1.1" 200 50
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5001 "POST /add_transaction HTTP/1.1" 200 50
+DEBUG:root:
+
+ ====================== CREATING REG TRANSACTION............
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5001
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5002
+DEBUG:root:Data_dict that I received:
+{'sender_address': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEApKwrSMgC+s/pUzdO93Nx\niqMtBvz8b0J9UyTRNOd8rftBTJWsTlVvUTQcO9QONr3IueBL98gczBXuLOX0YH77\nat7FRa83WmoX+Ecy37e+sdPtw3gdscMFPaNZH8ZGoGr8yQ38o+XhghTAVTSSg18m\n6+hxQuTnv7t61ffIgZLtEnCY67ozMCU4M5G9oSlizhdHNHoU0Ll8zZQRTEgenpUA\nqJgezZhePztabo4KH/Q9TXxqMDTceW0eHcqhb32WZJnXgB4iq5JDcdhyYol7Ij+7\nulG/53FPQaj1fSE980anELjhND067jcWIS5u+SYDGst2y6xZpR66hUhAYV+kiaBR\nQwIDAQAB\n-----END PUBLIC KEY-----', 'receiver_address': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAx/PpYBXC6ZFCCgXS+pG2\nPw8SjYW2bN8KTls6BVlC7r7pyjGDII7/8X0nMm/IFfDj3eotNceTKIefbVME0ugb\nLIxdeC2azRYVfzsSs8AJjczDgOMOXKV3p9GXtxupKHAAdtDc0uJ20/inYSaYLMP8\npuIQMra3T4ssqQ6nydLIt0Y0T1ybCKUD7PMQey6dD/OakWOD9/4Jk8vDoQkUmaew\ngYPSay+GC+DqtRKPuIZGEv7COy+IG0uiFJ7AC3Ir+Mhe7UUNOaJ7lG0HIIW5elGU\nOGB7Of7wa02Qd+Vxzt19P8oNFYQBUT1MkOybpCfHoXJoVy28U20PPeI0idsYFFEM\nBwIDAQAB\n-----END PUBLIC KEY-----', 'type_of_transaction': 'coins_reg', 'amount': 1000, 'nonce': 2, 'message': None, 'transaction_id': '63803525aef62693cc05aa7b91b96e0f6fef1ac71a9024727788284557dfe711', 'signature': 'T+SA9rPm6AHbd0ZuKJ1NMIWaVzZ+/ZnSR+sDCAHcAOgkF/pHlLI4LYq0VQNosqGNXcGC/yHXSxD6mg8aAZm0Wj5yt+25uvtwQgqcZBnEqbVzB/3yk3n6eyCu6w3KLptNzKtnXhJsDkE09jfxg1Id5qNLSikPucmge7KVBXOptyGI/oi23gjXAL8qaW4I5yRZkTm1uEg4fY67ELvuTm0L1ZZ/PiEbiZIuMpJ9jCjCcUiILd/G+QQtdcpO5DJIkZSoRKIE87DX0RqtAy56gwBS6eRxPr5lRev+s0jnSuC0SYewCIGALolRbSPKECnw5JnFIFpEvvNGgQZmrjsjlN5VBg=='}
+DEBUG:root:Data_dict that I received:
+{'sender_address': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEApKwrSMgC+s/pUzdO93Nx\niqMtBvz8b0J9UyTRNOd8rftBTJWsTlVvUTQcO9QONr3IueBL98gczBXuLOX0YH77\nat7FRa83WmoX+Ecy37e+sdPtw3gdscMFPaNZH8ZGoGr8yQ38o+XhghTAVTSSg18m\n6+hxQuTnv7t61ffIgZLtEnCY67ozMCU4M5G9oSlizhdHNHoU0Ll8zZQRTEgenpUA\nqJgezZhePztabo4KH/Q9TXxqMDTceW0eHcqhb32WZJnXgB4iq5JDcdhyYol7Ij+7\nulG/53FPQaj1fSE980anELjhND067jcWIS5u+SYDGst2y6xZpR66hUhAYV+kiaBR\nQwIDAQAB\n-----END PUBLIC KEY-----', 'receiver_address': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAx/PpYBXC6ZFCCgXS+pG2\nPw8SjYW2bN8KTls6BVlC7r7pyjGDII7/8X0nMm/IFfDj3eotNceTKIefbVME0ugb\nLIxdeC2azRYVfzsSs8AJjczDgOMOXKV3p9GXtxupKHAAdtDc0uJ20/inYSaYLMP8\npuIQMra3T4ssqQ6nydLIt0Y0T1ybCKUD7PMQey6dD/OakWOD9/4Jk8vDoQkUmaew\ngYPSay+GC+DqtRKPuIZGEv7COy+IG0uiFJ7AC3Ir+Mhe7UUNOaJ7lG0HIIW5elGU\nOGB7Of7wa02Qd+Vxzt19P8oNFYQBUT1MkOybpCfHoXJoVy28U20PPeI0idsYFFEM\nBwIDAQAB\n-----END PUBLIC KEY-----', 'type_of_transaction': 'coins_reg', 'amount': 1000, 'nonce': 2, 'message': None, 'transaction_id': '63803525aef62693cc05aa7b91b96e0f6fef1ac71a9024727788284557dfe711', 'signature': 'T+SA9rPm6AHbd0ZuKJ1NMIWaVzZ+/ZnSR+sDCAHcAOgkF/pHlLI4LYq0VQNosqGNXcGC/yHXSxD6mg8aAZm0Wj5yt+25uvtwQgqcZBnEqbVzB/3yk3n6eyCu6w3KLptNzKtnXhJsDkE09jfxg1Id5qNLSikPucmge7KVBXOptyGI/oi23gjXAL8qaW4I5yRZkTm1uEg4fY67ELvuTm0L1ZZ/PiEbiZIuMpJ9jCjCcUiILd/G+QQtdcpO5DJIkZSoRKIE87DX0RqtAy56gwBS6eRxPr5lRev+s0jnSuC0SYewCIGALolRbSPKECnw5JnFIFpEvvNGgQZmrjsjlN5VBg=='}
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 15:34:15] "POST /add_transaction HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5001 "POST /add_transaction HTTP/1.1" 200 50
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5001
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 15:34:15] "POST /add_block HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 15:34:15] "POST /add_block HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "POST /add_block HTTP/1.1" 200 39
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5001 "POST /add_block HTTP/1.1" 200 39
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 15:34:15] "POST /add_transaction HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5002 "POST /add_transaction HTTP/1.1" 200 50
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 15:34:15] "POST /register_node HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "POST /register_node HTTP/1.1" 200 35
+DEBUG:genesis:Node ID: 1
+DEBUG:genesis:Node Wallet Public Key: -----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEApKwrSMgC+s/pUzdO93Nx
+iqMtBvz8b0J9UyTRNOd8rftBTJWsTlVvUTQcO9QONr3IueBL98gczBXuLOX0YH77
+at7FRa83WmoX+Ecy37e+sdPtw3gdscMFPaNZH8ZGoGr8yQ38o+XhghTAVTSSg18m
+6+hxQuTnv7t61ffIgZLtEnCY67ozMCU4M5G9oSlizhdHNHoU0Ll8zZQRTEgenpUA
+qJgezZhePztabo4KH/Q9TXxqMDTceW0eHcqhb32WZJnXgB4iq5JDcdhyYol7Ij+7
+ulG/53FPQaj1fSE980anELjhND067jcWIS5u+SYDGst2y6xZpR66hUhAYV+kiaBR
+QwIDAQAB
+-----END PUBLIC KEY-----
+DEBUG:genesis:Node Blockchain Length: 2
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 15:36:22] "POST /get_id HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "POST /get_id HTTP/1.1" 200 45
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 15:36:22] "POST /register_node HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "POST /register_node HTTP/1.1" 200 35
+DEBUG:n2_temp:im node1 test temp
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5002
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 15:36:25] "POST /get_id HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "POST /get_id HTTP/1.1" 200 45
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5001
+DEBUG:root:line 187 chain that i validate:
+DEBUG:root:Block 0:
+  Previous Hash: 1
+  Validator: 0
+  Capacity: 3
+  Transactions:
+    5000
+  Current Hash: b89dcff750bb1bfe3b5d5b2275f6d76c266a86ca841745e169a0320e6d31924f
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 15:36:25] "POST /validate_chain HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5001 "POST /validate_chain HTTP/1.1" 200 42
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5001
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 15:36:25] "POST /get_ring HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5001 "POST /get_ring HTTP/1.1" 200 42
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5002
+DEBUG:root:line 187 chain that i validate:
+DEBUG:root:Block 0:
+  Previous Hash: 1
+  Validator: 0
+  Capacity: 3
+  Transactions:
+    5000
+  Current Hash: b89dcff750bb1bfe3b5d5b2275f6d76c266a86ca841745e169a0320e6d31924f
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 15:36:25] "POST /validate_chain HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5002 "POST /validate_chain HTTP/1.1" 200 42
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5002
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 15:36:25] "POST /get_ring HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5002 "POST /get_ring HTTP/1.1" 200 42
+DEBUG:root:
+
+ ====================== CREATING REG TRANSACTION............
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5001
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5002
+DEBUG:root:Data_dict that I received:
+{'sender_address': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAl7Q+6dACJs1BpyzH1TmO\ngcEIMOtXdz2s9det5sIZH8oVswwDsLUo4dflu2yqLS1IDJNHRye2znu8HQ59jnxJ\ndGNm+9vKZyHZufgaketBTnT9OB58myg7F5CIIBaXvC6AToHsYTItofSPJWQ649Sa\n4u3wdCjGLlZ5yjjU6Yzf/TwS3tAcMSKKFU7WE+aa+Yf6QJnXpYtqrFnHe6hXIo5R\n17MxM+CbwE6lHJ6nhmhwT9RZz33CqBr/pocMo+ukIX36hIksao3LI6K/iLNWzric\ni8qFeL54V/QLegbn0539+Q4EOFmBy0JUtmRW+zWtwM2F4vB1RjzbouwANxABiPp6\ngQIDAQAB\n-----END PUBLIC KEY-----', 'receiver_address': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA3a0Vob16Ne4788pOItG1\noSJk/eu7byW/LajNbWV6Iae+kAhh1bWrBGhmWFMXhDWbsgdhvG976NF8m6y+xYm6\nAqPZcFinGLopZoAnE8vm7oTXdT0NAe1IyoUBEC0EfaeWSvRZ3cPQpxZ4VYHqjb6V\nOzVpSMTiXGbNedxNvrR6LaMDGaKu7wIGwXgQc4lZBeZuIDVQHmfGm6wY8D0QrxgW\nDx6IhKiclBuA+RATdJ7FWrcybqr9Zq3kOdK1dEVjlYnd+I/oyxV3VQhYnryLrBUO\n8cnQxSEPeHcPDOGlvQKeuXxWvjOqcbkAIT4QhdctMAv+JNdRW+T995BXhuoxh8S5\nuQIDAQAB\n-----END PUBLIC KEY-----', 'type_of_transaction': 'coins_reg', 'amount': 1000, 'nonce': 1, 'message': None, 'transaction_id': '69bec967ac857d673ed1d56665d16f50b420eeebaefd853e5ae1ae98fb20887e', 'signature': 'Oj5N/Q5ms7kHMv4SmFG4sxCY9HHD1BIVInSqgoFhPPlLidmfWK0j0UPKY7U2LYG37RxKflAakBLiLxXU6EF2Op/ykidEEt1trC3/tVKleP2tOJO/miV6c9AtwEynfSgoZuQg2mMQq4zMuaqGtgDbs4E7B4ov4lDAyKnBAvcS5+AJmsqzsJYWqzwWS7eqqe8OPAgJa7mpa8u0TZNN2csy0nEoBbr/SUTkkaWm3ByWmegIU3Bviaj696CIWU62puXJsF4CCfJrBDxA2cscbFTYJRsOf3dx7SNNoDA2EaokFI+urtVCWxNLkTE7rSeTSq/IGq4B2CewsbuUzsEMqAOJXg=='}
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 15:36:26] "POST /add_transaction HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5001 "POST /add_transaction HTTP/1.1" 200 50
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 15:36:26] "POST /add_transaction HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5002 "POST /add_transaction HTTP/1.1" 200 50
+DEBUG:root:
+
+ ====================== CREATING REG TRANSACTION............
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5002
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5001
+DEBUG:root:Data_dict that I received:
+{'sender_address': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAl7Q+6dACJs1BpyzH1TmO\ngcEIMOtXdz2s9det5sIZH8oVswwDsLUo4dflu2yqLS1IDJNHRye2znu8HQ59jnxJ\ndGNm+9vKZyHZufgaketBTnT9OB58myg7F5CIIBaXvC6AToHsYTItofSPJWQ649Sa\n4u3wdCjGLlZ5yjjU6Yzf/TwS3tAcMSKKFU7WE+aa+Yf6QJnXpYtqrFnHe6hXIo5R\n17MxM+CbwE6lHJ6nhmhwT9RZz33CqBr/pocMo+ukIX36hIksao3LI6K/iLNWzric\ni8qFeL54V/QLegbn0539+Q4EOFmBy0JUtmRW+zWtwM2F4vB1RjzbouwANxABiPp6\ngQIDAQAB\n-----END PUBLIC KEY-----', 'receiver_address': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEApk9olTUPYfXI1S6+v58H\n+Dmam10pT30ojYACm5t0QAgfInzI6MqK7nxsleyBrmxeNeOiuxGdmu0Z2AaISzSd\nsoqFODKG0cdnTOvqG1SyymBDK/LkqS5wUnGXQ50xN1/fxjTVo25ZZo+lz92l7guZ\nzHmv6lazH424DYF/SD+kcGdVLLD2+a5u0D97jHJkOHd5oInthcLogDMwY9g/alZ1\nUf75O57vE3M4qTk859+3xz6z1L1smORX829r4bD32VgknPKB/+SpgHE9x6AZXGz4\n2BvP0BzcVKCggBeITA4fpvPhrdprVyrn9oOcnHu3gFfFggIrCaCBbODyvwFJOrBA\nAQIDAQAB\n-----END PUBLIC KEY-----', 'type_of_transaction': 'coins_reg', 'amount': 1000, 'nonce': 2, 'message': None, 'transaction_id': '209ee4976cb5edca01232de46d4278d753f1bc8ae30b3353ccbdbf29f03d02ff', 'signature': 'Oj5N/Q5ms7kHMv4SmFG4sxCY9HHD1BIVInSqgoFhPPlLidmfWK0j0UPKY7U2LYG37RxKflAakBLiLxXU6EF2Op/ykidEEt1trC3/tVKleP2tOJO/miV6c9AtwEynfSgoZuQg2mMQq4zMuaqGtgDbs4E7B4ov4lDAyKnBAvcS5+AJmsqzsJYWqzwWS7eqqe8OPAgJa7mpa8u0TZNN2csy0nEoBbr/SUTkkaWm3ByWmegIU3Bviaj696CIWU62puXJsF4CCfJrBDxA2cscbFTYJRsOf3dx7SNNoDA2EaokFI+urtVCWxNLkTE7rSeTSq/IGq4B2CewsbuUzsEMqAOJXg=='}
+DEBUG:root:Data_dict that I received:
+{'sender_address': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAl7Q+6dACJs1BpyzH1TmO\ngcEIMOtXdz2s9det5sIZH8oVswwDsLUo4dflu2yqLS1IDJNHRye2znu8HQ59jnxJ\ndGNm+9vKZyHZufgaketBTnT9OB58myg7F5CIIBaXvC6AToHsYTItofSPJWQ649Sa\n4u3wdCjGLlZ5yjjU6Yzf/TwS3tAcMSKKFU7WE+aa+Yf6QJnXpYtqrFnHe6hXIo5R\n17MxM+CbwE6lHJ6nhmhwT9RZz33CqBr/pocMo+ukIX36hIksao3LI6K/iLNWzric\ni8qFeL54V/QLegbn0539+Q4EOFmBy0JUtmRW+zWtwM2F4vB1RjzbouwANxABiPp6\ngQIDAQAB\n-----END PUBLIC KEY-----', 'receiver_address': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEApk9olTUPYfXI1S6+v58H\n+Dmam10pT30ojYACm5t0QAgfInzI6MqK7nxsleyBrmxeNeOiuxGdmu0Z2AaISzSd\nsoqFODKG0cdnTOvqG1SyymBDK/LkqS5wUnGXQ50xN1/fxjTVo25ZZo+lz92l7guZ\nzHmv6lazH424DYF/SD+kcGdVLLD2+a5u0D97jHJkOHd5oInthcLogDMwY9g/alZ1\nUf75O57vE3M4qTk859+3xz6z1L1smORX829r4bD32VgknPKB/+SpgHE9x6AZXGz4\n2BvP0BzcVKCggBeITA4fpvPhrdprVyrn9oOcnHu3gFfFggIrCaCBbODyvwFJOrBA\nAQIDAQAB\n-----END PUBLIC KEY-----', 'type_of_transaction': 'coins_reg', 'amount': 1000, 'nonce': 2, 'message': None, 'transaction_id': '209ee4976cb5edca01232de46d4278d753f1bc8ae30b3353ccbdbf29f03d02ff', 'signature': 'Oj5N/Q5ms7kHMv4SmFG4sxCY9HHD1BIVInSqgoFhPPlLidmfWK0j0UPKY7U2LYG37RxKflAakBLiLxXU6EF2Op/ykidEEt1trC3/tVKleP2tOJO/miV6c9AtwEynfSgoZuQg2mMQq4zMuaqGtgDbs4E7B4ov4lDAyKnBAvcS5+AJmsqzsJYWqzwWS7eqqe8OPAgJa7mpa8u0TZNN2csy0nEoBbr/SUTkkaWm3ByWmegIU3Bviaj696CIWU62puXJsF4CCfJrBDxA2cscbFTYJRsOf3dx7SNNoDA2EaokFI+urtVCWxNLkTE7rSeTSq/IGq4B2CewsbuUzsEMqAOJXg=='}
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 15:36:26] "POST /add_transaction HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5001 "POST /add_transaction HTTP/1.1" 200 50
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5001
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 15:36:26] "POST /add_block HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 15:36:26] "POST /add_block HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "POST /add_block HTTP/1.1" 200 39
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5001 "POST /add_block HTTP/1.1" 200 39
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 15:36:26] "POST /add_transaction HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5002 "POST /add_transaction HTTP/1.1" 200 50
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 15:36:26] "POST /register_node HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "POST /register_node HTTP/1.1" 200 35
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5001
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5002
+DEBUG:root:Data_dict that I received:
+{'sender_address': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA3a0Vob16Ne4788pOItG1\noSJk/eu7byW/LajNbWV6Iae+kAhh1bWrBGhmWFMXhDWbsgdhvG976NF8m6y+xYm6\nAqPZcFinGLopZoAnE8vm7oTXdT0NAe1IyoUBEC0EfaeWSvRZ3cPQpxZ4VYHqjb6V\nOzVpSMTiXGbNedxNvrR6LaMDGaKu7wIGwXgQc4lZBeZuIDVQHmfGm6wY8D0QrxgW\nDx6IhKiclBuA+RATdJ7FWrcybqr9Zq3kOdK1dEVjlYnd+I/oyxV3VQhYnryLrBUO\n8cnQxSEPeHcPDOGlvQKeuXxWvjOqcbkAIT4QhdctMAv+JNdRW+T995BXhuoxh8S5\nuQIDAQAB\n-----END PUBLIC KEY-----', 'receiver_address': '-----BEGIN PUBLIC KEY-----MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAl7Q+6dACJs1BpyzH1TmOgcEIMOtXdz2s9det5sIZH8oVswwDsLUo4dflu2yqLS1IDJNHRye2znu8HQ59jnxJdGNm+9vKZyHZufgaketBTnT9OB58myg7F5CIIBaXvC6AToHsYTItofSPJWQ649Sa4u3wdCjGLlZ5yjjU6Yzf/TwS3tAcMSKKFU7WE+aa+Yf6QJnXpYtqrFnHe6hXIo5R17MxM+CbwE6lHJ6nhmhwT9RZz33CqBr/pocMo+ukIX36hIksao3LI6K/iLNWzrici8qFeL54V/QLegbn0539+Q4EOFmBy0JUtmRW+zWtwM2F4vB1RjzbouwANxABiPp6gQIDAQAB-----END PUBLIC KEY-----', 'type_of_transaction': 'message', 'amount': 26, 'nonce': 1, 'message': '----END PUBLIC KEY----- hi', 'transaction_id': '9a55ada979f0f4b09d146871bcc2bb3fe73a6c1b6871c5a18ca836f9aa101f91', 'signature': '14AfnR+LIUM49jjRs3TWAearLeEaAbE1fAHVmlvGIuuvMme9puRp15sLQzZIKfaOLIC9rPCbY2YPdUSC8nPEd33xWDFivd/G1iU2InXxPkFteWcNXi6g5hu4aHegnUPIb2SbMPpDrvkDo5hD5MRKlnHEGFnboBx3uGTWECae3gG/bPk/AvqEY8NsN1bc38IezDebuSIQ3CQ+tWlBvSr/vxKt1w4qbhDYFGX+TzavECh9SThVeAHLhTGWcW7vEuQyHtVuzPghX7QOigaDduUbTUEd3ljJ8Mn24ba6TJTZ9mccNLTei77crgMzFujCoP693oLCpfAzVtVuSB+rDe72SQ=='}
+DEBUG:root:Data_dict that I received:
+{'sender_address': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA3a0Vob16Ne4788pOItG1\noSJk/eu7byW/LajNbWV6Iae+kAhh1bWrBGhmWFMXhDWbsgdhvG976NF8m6y+xYm6\nAqPZcFinGLopZoAnE8vm7oTXdT0NAe1IyoUBEC0EfaeWSvRZ3cPQpxZ4VYHqjb6V\nOzVpSMTiXGbNedxNvrR6LaMDGaKu7wIGwXgQc4lZBeZuIDVQHmfGm6wY8D0QrxgW\nDx6IhKiclBuA+RATdJ7FWrcybqr9Zq3kOdK1dEVjlYnd+I/oyxV3VQhYnryLrBUO\n8cnQxSEPeHcPDOGlvQKeuXxWvjOqcbkAIT4QhdctMAv+JNdRW+T995BXhuoxh8S5\nuQIDAQAB\n-----END PUBLIC KEY-----', 'receiver_address': '-----BEGIN PUBLIC KEY-----MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAl7Q+6dACJs1BpyzH1TmOgcEIMOtXdz2s9det5sIZH8oVswwDsLUo4dflu2yqLS1IDJNHRye2znu8HQ59jnxJdGNm+9vKZyHZufgaketBTnT9OB58myg7F5CIIBaXvC6AToHsYTItofSPJWQ649Sa4u3wdCjGLlZ5yjjU6Yzf/TwS3tAcMSKKFU7WE+aa+Yf6QJnXpYtqrFnHe6hXIo5R17MxM+CbwE6lHJ6nhmhwT9RZz33CqBr/pocMo+ukIX36hIksao3LI6K/iLNWzrici8qFeL54V/QLegbn0539+Q4EOFmBy0JUtmRW+zWtwM2F4vB1RjzbouwANxABiPp6gQIDAQAB-----END PUBLIC KEY-----', 'type_of_transaction': 'message', 'amount': 26, 'nonce': 1, 'message': '----END PUBLIC KEY----- hi', 'transaction_id': '9a55ada979f0f4b09d146871bcc2bb3fe73a6c1b6871c5a18ca836f9aa101f91', 'signature': '14AfnR+LIUM49jjRs3TWAearLeEaAbE1fAHVmlvGIuuvMme9puRp15sLQzZIKfaOLIC9rPCbY2YPdUSC8nPEd33xWDFivd/G1iU2InXxPkFteWcNXi6g5hu4aHegnUPIb2SbMPpDrvkDo5hD5MRKlnHEGFnboBx3uGTWECae3gG/bPk/AvqEY8NsN1bc38IezDebuSIQ3CQ+tWlBvSr/vxKt1w4qbhDYFGX+TzavECh9SThVeAHLhTGWcW7vEuQyHtVuzPghX7QOigaDduUbTUEd3ljJ8Mn24ba6TJTZ9mccNLTei77crgMzFujCoP693oLCpfAzVtVuSB+rDe72SQ=='}
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 15:37:48] "POST /add_transaction HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 15:37:48] "POST /add_transaction HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5002 "POST /add_transaction HTTP/1.1" 200 50
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "POST /add_transaction HTTP/1.1" 200 50
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 15:37:48] "[31m[1mPOST /create_transaction HTTP/1.1[0m" 400 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5001 "POST /create_transaction HTTP/1.1" 400 31
+DEBUG:genesis:Node ID: 1
+DEBUG:genesis:Node Wallet Public Key: -----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAl7Q+6dACJs1BpyzH1TmO
+gcEIMOtXdz2s9det5sIZH8oVswwDsLUo4dflu2yqLS1IDJNHRye2znu8HQ59jnxJ
+dGNm+9vKZyHZufgaketBTnT9OB58myg7F5CIIBaXvC6AToHsYTItofSPJWQ649Sa
+4u3wdCjGLlZ5yjjU6Yzf/TwS3tAcMSKKFU7WE+aa+Yf6QJnXpYtqrFnHe6hXIo5R
+17MxM+CbwE6lHJ6nhmhwT9RZz33CqBr/pocMo+ukIX36hIksao3LI6K/iLNWzric
+i8qFeL54V/QLegbn0539+Q4EOFmBy0JUtmRW+zWtwM2F4vB1RjzbouwANxABiPp6
+gQIDAQAB
+-----END PUBLIC KEY-----
+DEBUG:genesis:Node Blockchain Length: 2
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 15:41:14] "POST /get_id HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "POST /get_id HTTP/1.1" 200 45
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 15:41:14] "POST /register_node HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "POST /register_node HTTP/1.1" 200 35
+DEBUG:n2_temp:im node1 test temp
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5002
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 15:41:17] "POST /get_id HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "POST /get_id HTTP/1.1" 200 45
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5001
+DEBUG:root:line 187 chain that i validate:
+DEBUG:root:Block 0:
+  Previous Hash: 1
+  Validator: 0
+  Capacity: 3
+  Transactions:
+    5000
+  Current Hash: a6a062b4765c6bed6b614bd78b3cc8e41e06ca2d1d7c18b1b8c2ecf923977f45
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 15:41:17] "POST /validate_chain HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5001 "POST /validate_chain HTTP/1.1" 200 42
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5001
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 15:41:17] "POST /get_ring HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5001 "POST /get_ring HTTP/1.1" 200 42
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5002
+DEBUG:root:line 187 chain that i validate:
+DEBUG:root:Block 0:
+  Previous Hash: 1
+  Validator: 0
+  Capacity: 3
+  Transactions:
+    5000
+  Current Hash: a6a062b4765c6bed6b614bd78b3cc8e41e06ca2d1d7c18b1b8c2ecf923977f45
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 15:41:17] "POST /validate_chain HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5002 "POST /validate_chain HTTP/1.1" 200 42
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5002
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 15:41:17] "POST /get_ring HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5002 "POST /get_ring HTTP/1.1" 200 42
+DEBUG:root:
+
+ ====================== CREATING REG TRANSACTION............
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5001
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5002
+DEBUG:root:Data_dict that I received:
+{'sender_address': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp43LxyYdV3ArB1nz00PA\nFo7xgSAG9sxtF77lJtuNHBM5x/R7qA7yZsHrtXsZHYyKnw+FMPoo2PWRlifGhNCe\nMCxn9b/ssirA6P0T8xRHCu30faVCDa3DOilqwhGA2vvW7UkxtMfcaQ7YjpGtvDbc\njFnEB9hvAEmxcoyon/X2wt4jsph2toW78Dm7y74KUMrz8QsQOhIWGs4qm3peRRyx\nwLZIFXIG+Bg/tF01FW/GRnzl6MmfkSwn3K3HMOJi5BwjBKo3uOodYajXnLO9VZeV\n4EZx1zlXg6D5RTb5v4ob9b5wbYKA9/1cPmonZU3qGRp/p42rIvjwB6FQQKCxyWXT\nbwIDAQAB\n-----END PUBLIC KEY-----', 'receiver_address': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAxPjRKwt76i+DDtzrME4n\nBRajH3pQc/0qWL9eb5cgOVwJ1+f2ase9EobN/352ryX9LJNjRuw3SpIorFOvESt9\nKvfwnDa/rOgdiWlU3OVAcyQzt7xa5lHNbK+Z0IsT7RDOD25EW0s47X0U9WWmRRdX\nTEl0WjvENFET/+vS9ex07sSHUA+rr3bcAMnRQQ60yMKZZwDVqfMNelSRzVcO5qVP\n5KFnJ209y4dI/YfYoUfAQWsSPnFMpq5oKTkVn7WetBbp6onZzBfz3VYQD079vTjd\no/Hn7uoNgiPGGPXMMd9ziuCDwB/fy6K2fle9nYsD59NXcdXnGXDenbhNi0agYuis\n7wIDAQAB\n-----END PUBLIC KEY-----', 'type_of_transaction': 'coins_reg', 'amount': 1000, 'nonce': 1, 'message': None, 'transaction_id': 'a3ed87cc9c9a3bd45e1468254d680c66b0baf94c7865a3ec3db86246e697ba88', 'signature': 'm0Tx/o4bFUOslLDw/+2yfJOnNI+RoXo7GeWt06t3MHnT/jx4kELUwtkKxE3kewj9DZHtcPSNMEyAiDs7U1xmEwT8gXl1bLjgr08c/wRntnNW3ftwNKIGgrqNafrh8tIhaHbHp7hAQZSKuNoVLq4zBy6QUUQSN16clS4nPi6xv9MSaeIgjstot+2BZZPIjZ+zlJ9AlzziIK3pdOILyMZikpQR9uf9B0RVMaBHpN8FAn7raSPhsosILnIorLNpSorlkxPurjKLBktVYUMvG8zyKMcsswjjkapLGC6YPzRd7sv9hXbRaDKmjPBPwWnvgVfZ5Qiq6PvEVkFx1JilaokYWQ=='}
+DEBUG:root:Data_dict that I received:
+{'sender_address': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp43LxyYdV3ArB1nz00PA\nFo7xgSAG9sxtF77lJtuNHBM5x/R7qA7yZsHrtXsZHYyKnw+FMPoo2PWRlifGhNCe\nMCxn9b/ssirA6P0T8xRHCu30faVCDa3DOilqwhGA2vvW7UkxtMfcaQ7YjpGtvDbc\njFnEB9hvAEmxcoyon/X2wt4jsph2toW78Dm7y74KUMrz8QsQOhIWGs4qm3peRRyx\nwLZIFXIG+Bg/tF01FW/GRnzl6MmfkSwn3K3HMOJi5BwjBKo3uOodYajXnLO9VZeV\n4EZx1zlXg6D5RTb5v4ob9b5wbYKA9/1cPmonZU3qGRp/p42rIvjwB6FQQKCxyWXT\nbwIDAQAB\n-----END PUBLIC KEY-----', 'receiver_address': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAxPjRKwt76i+DDtzrME4n\nBRajH3pQc/0qWL9eb5cgOVwJ1+f2ase9EobN/352ryX9LJNjRuw3SpIorFOvESt9\nKvfwnDa/rOgdiWlU3OVAcyQzt7xa5lHNbK+Z0IsT7RDOD25EW0s47X0U9WWmRRdX\nTEl0WjvENFET/+vS9ex07sSHUA+rr3bcAMnRQQ60yMKZZwDVqfMNelSRzVcO5qVP\n5KFnJ209y4dI/YfYoUfAQWsSPnFMpq5oKTkVn7WetBbp6onZzBfz3VYQD079vTjd\no/Hn7uoNgiPGGPXMMd9ziuCDwB/fy6K2fle9nYsD59NXcdXnGXDenbhNi0agYuis\n7wIDAQAB\n-----END PUBLIC KEY-----', 'type_of_transaction': 'coins_reg', 'amount': 1000, 'nonce': 1, 'message': None, 'transaction_id': 'a3ed87cc9c9a3bd45e1468254d680c66b0baf94c7865a3ec3db86246e697ba88', 'signature': 'm0Tx/o4bFUOslLDw/+2yfJOnNI+RoXo7GeWt06t3MHnT/jx4kELUwtkKxE3kewj9DZHtcPSNMEyAiDs7U1xmEwT8gXl1bLjgr08c/wRntnNW3ftwNKIGgrqNafrh8tIhaHbHp7hAQZSKuNoVLq4zBy6QUUQSN16clS4nPi6xv9MSaeIgjstot+2BZZPIjZ+zlJ9AlzziIK3pdOILyMZikpQR9uf9B0RVMaBHpN8FAn7raSPhsosILnIorLNpSorlkxPurjKLBktVYUMvG8zyKMcsswjjkapLGC6YPzRd7sv9hXbRaDKmjPBPwWnvgVfZ5Qiq6PvEVkFx1JilaokYWQ=='}
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 15:41:17] "POST /add_transaction HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5001 "POST /add_transaction HTTP/1.1" 200 50
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 15:41:17] "POST /add_transaction HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5002 "POST /add_transaction HTTP/1.1" 200 50
+DEBUG:root:
+
+ ====================== CREATING REG TRANSACTION............
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5001
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5002
+DEBUG:root:Data_dict that I received:
+{'sender_address': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp43LxyYdV3ArB1nz00PA\nFo7xgSAG9sxtF77lJtuNHBM5x/R7qA7yZsHrtXsZHYyKnw+FMPoo2PWRlifGhNCe\nMCxn9b/ssirA6P0T8xRHCu30faVCDa3DOilqwhGA2vvW7UkxtMfcaQ7YjpGtvDbc\njFnEB9hvAEmxcoyon/X2wt4jsph2toW78Dm7y74KUMrz8QsQOhIWGs4qm3peRRyx\nwLZIFXIG+Bg/tF01FW/GRnzl6MmfkSwn3K3HMOJi5BwjBKo3uOodYajXnLO9VZeV\n4EZx1zlXg6D5RTb5v4ob9b5wbYKA9/1cPmonZU3qGRp/p42rIvjwB6FQQKCxyWXT\nbwIDAQAB\n-----END PUBLIC KEY-----', 'receiver_address': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAoJ+MMeug43pSVPpUtLSI\nxhuTN2n0hIxsXm5N8ZHBpE2NPQMPcfcqAsnWjVyagJta3JFpqD3E4vCYojkNH0I1\nvfPtldujZbooQyY9OVq7C1QbhHKfCxNLXHoU5L226oebIhKMOiCmp9yB84cG7ojY\nYPnhDr9c+iCSvhUePwJ5CbX3v7V887kRmbTj71DIC5PaEfztxmUGNS903Qfk4mEN\n4TypSYW6EeBTVDSsRdzhZJmxHLiOT0UuTTuimF7Svv5jSbjyu+ynsLHTugP03Zaw\nsE1p+MfgBV5gwqggZuFg9iEuguIKerTk1rWH1vbXcpp9LYCgkRJ1uwtOGPiMmr5P\nQQIDAQAB\n-----END PUBLIC KEY-----', 'type_of_transaction': 'coins_reg', 'amount': 1000, 'nonce': 2, 'message': None, 'transaction_id': 'ded35d5892af54d8762fcbfbe2569df5b8ecbe79a59e08c9ac73e516503b082d', 'signature': 'm0Tx/o4bFUOslLDw/+2yfJOnNI+RoXo7GeWt06t3MHnT/jx4kELUwtkKxE3kewj9DZHtcPSNMEyAiDs7U1xmEwT8gXl1bLjgr08c/wRntnNW3ftwNKIGgrqNafrh8tIhaHbHp7hAQZSKuNoVLq4zBy6QUUQSN16clS4nPi6xv9MSaeIgjstot+2BZZPIjZ+zlJ9AlzziIK3pdOILyMZikpQR9uf9B0RVMaBHpN8FAn7raSPhsosILnIorLNpSorlkxPurjKLBktVYUMvG8zyKMcsswjjkapLGC6YPzRd7sv9hXbRaDKmjPBPwWnvgVfZ5Qiq6PvEVkFx1JilaokYWQ=='}
+DEBUG:root:Data_dict that I received:
+{'sender_address': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp43LxyYdV3ArB1nz00PA\nFo7xgSAG9sxtF77lJtuNHBM5x/R7qA7yZsHrtXsZHYyKnw+FMPoo2PWRlifGhNCe\nMCxn9b/ssirA6P0T8xRHCu30faVCDa3DOilqwhGA2vvW7UkxtMfcaQ7YjpGtvDbc\njFnEB9hvAEmxcoyon/X2wt4jsph2toW78Dm7y74KUMrz8QsQOhIWGs4qm3peRRyx\nwLZIFXIG+Bg/tF01FW/GRnzl6MmfkSwn3K3HMOJi5BwjBKo3uOodYajXnLO9VZeV\n4EZx1zlXg6D5RTb5v4ob9b5wbYKA9/1cPmonZU3qGRp/p42rIvjwB6FQQKCxyWXT\nbwIDAQAB\n-----END PUBLIC KEY-----', 'receiver_address': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAoJ+MMeug43pSVPpUtLSI\nxhuTN2n0hIxsXm5N8ZHBpE2NPQMPcfcqAsnWjVyagJta3JFpqD3E4vCYojkNH0I1\nvfPtldujZbooQyY9OVq7C1QbhHKfCxNLXHoU5L226oebIhKMOiCmp9yB84cG7ojY\nYPnhDr9c+iCSvhUePwJ5CbX3v7V887kRmbTj71DIC5PaEfztxmUGNS903Qfk4mEN\n4TypSYW6EeBTVDSsRdzhZJmxHLiOT0UuTTuimF7Svv5jSbjyu+ynsLHTugP03Zaw\nsE1p+MfgBV5gwqggZuFg9iEuguIKerTk1rWH1vbXcpp9LYCgkRJ1uwtOGPiMmr5P\nQQIDAQAB\n-----END PUBLIC KEY-----', 'type_of_transaction': 'coins_reg', 'amount': 1000, 'nonce': 2, 'message': None, 'transaction_id': 'ded35d5892af54d8762fcbfbe2569df5b8ecbe79a59e08c9ac73e516503b082d', 'signature': 'm0Tx/o4bFUOslLDw/+2yfJOnNI+RoXo7GeWt06t3MHnT/jx4kELUwtkKxE3kewj9DZHtcPSNMEyAiDs7U1xmEwT8gXl1bLjgr08c/wRntnNW3ftwNKIGgrqNafrh8tIhaHbHp7hAQZSKuNoVLq4zBy6QUUQSN16clS4nPi6xv9MSaeIgjstot+2BZZPIjZ+zlJ9AlzziIK3pdOILyMZikpQR9uf9B0RVMaBHpN8FAn7raSPhsosILnIorLNpSorlkxPurjKLBktVYUMvG8zyKMcsswjjkapLGC6YPzRd7sv9hXbRaDKmjPBPwWnvgVfZ5Qiq6PvEVkFx1JilaokYWQ=='}
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 15:41:18] "POST /add_transaction HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5001 "POST /add_transaction HTTP/1.1" 200 50
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5001
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 15:41:18] "POST /add_block HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 15:41:18] "POST /add_block HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "POST /add_block HTTP/1.1" 200 39
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5001 "POST /add_block HTTP/1.1" 200 39
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 15:41:18] "POST /add_transaction HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5002 "POST /add_transaction HTTP/1.1" 200 50
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 15:41:18] "POST /register_node HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "POST /register_node HTTP/1.1" 200 35
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5001
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5002
+DEBUG:root:Data_dict that I received:
+{'sender_address': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAxPjRKwt76i+DDtzrME4n\nBRajH3pQc/0qWL9eb5cgOVwJ1+f2ase9EobN/352ryX9LJNjRuw3SpIorFOvESt9\nKvfwnDa/rOgdiWlU3OVAcyQzt7xa5lHNbK+Z0IsT7RDOD25EW0s47X0U9WWmRRdX\nTEl0WjvENFET/+vS9ex07sSHUA+rr3bcAMnRQQ60yMKZZwDVqfMNelSRzVcO5qVP\n5KFnJ209y4dI/YfYoUfAQWsSPnFMpq5oKTkVn7WetBbp6onZzBfz3VYQD079vTjd\no/Hn7uoNgiPGGPXMMd9ziuCDwB/fy6K2fle9nYsD59NXcdXnGXDenbhNi0agYuis\n7wIDAQAB\n-----END PUBLIC KEY-----', 'receiver_address': '-----BEGIN PUBLIC KEY-----\\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp43LxyYdV3ArB1nz00PA\\nFo7xgSAG9sxtF77lJtuNHBM5x/R7qA7yZsHrtXsZHYyKnw+FMPoo2PWRlifGhNCe\\nMCxn9b/ssirA6P0T8xRHCu30faVCDa3DOilqwhGA2vvW7UkxtMfcaQ7YjpGtvDbc\\njFnEB9hvAEmxcoyon/X2wt4jsph2toW78Dm7y74KUMrz8QsQOhIWGs4qm3peRRyx\\nwLZIFXIG+Bg/tF01FW/GRnzl6MmfkSwn3K3HMOJi5BwjBKo3uOodYajXnLO9VZeV\\n4EZx1zlXg6D5RTb5v4ob9b5wbYKA9/1cPmonZU3qGRp/p42rIvjwB6FQQKCxyWXT\\nbwIDAQAB\\n-----END PUBLIC KEY-----', 'type_of_transaction': 'message', 'amount': 31, 'nonce': 1, 'message': '----END PUBLIC KEY----- on disp', 'transaction_id': 'b58ac7e9cf003d0254400d8bfa1f95aeea94eadffd231c24ff6957b5673acc9f', 'signature': 'IgckXk8aZLoMSYA2DV5gKNDOhgiDcXt6JjRuqAREZed0L+67PHLbJVBDLDDVKgMh05JjpMUKazhpo89jFYO3fNpRfDoEq/XxAhXP9ggOvZjqsPUi8oO+ZTPpK89dkOP5+d6NB38JUYDLmDHFTE4KcqFrsHRJc7EBsi3+2tRCxO3IJAQcHbr1Pq0+6twHj1xuTf2zTDBQXlToXophM8LDSk2c5LbhQvGvmuecBO0TEPavFjITg8Wld/T/N9gZGKGPpliWFK+gtxVxB9guuTHL9w66OqX0xnAZBBIXO6+I8t4L/BK/m3UMpMwTcTAAg9x7JQTcA+0h0p7HcMe+xsMmnw=='}
+DEBUG:root:Data_dict that I received:
+{'sender_address': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAxPjRKwt76i+DDtzrME4n\nBRajH3pQc/0qWL9eb5cgOVwJ1+f2ase9EobN/352ryX9LJNjRuw3SpIorFOvESt9\nKvfwnDa/rOgdiWlU3OVAcyQzt7xa5lHNbK+Z0IsT7RDOD25EW0s47X0U9WWmRRdX\nTEl0WjvENFET/+vS9ex07sSHUA+rr3bcAMnRQQ60yMKZZwDVqfMNelSRzVcO5qVP\n5KFnJ209y4dI/YfYoUfAQWsSPnFMpq5oKTkVn7WetBbp6onZzBfz3VYQD079vTjd\no/Hn7uoNgiPGGPXMMd9ziuCDwB/fy6K2fle9nYsD59NXcdXnGXDenbhNi0agYuis\n7wIDAQAB\n-----END PUBLIC KEY-----', 'receiver_address': '-----BEGIN PUBLIC KEY-----\\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp43LxyYdV3ArB1nz00PA\\nFo7xgSAG9sxtF77lJtuNHBM5x/R7qA7yZsHrtXsZHYyKnw+FMPoo2PWRlifGhNCe\\nMCxn9b/ssirA6P0T8xRHCu30faVCDa3DOilqwhGA2vvW7UkxtMfcaQ7YjpGtvDbc\\njFnEB9hvAEmxcoyon/X2wt4jsph2toW78Dm7y74KUMrz8QsQOhIWGs4qm3peRRyx\\nwLZIFXIG+Bg/tF01FW/GRnzl6MmfkSwn3K3HMOJi5BwjBKo3uOodYajXnLO9VZeV\\n4EZx1zlXg6D5RTb5v4ob9b5wbYKA9/1cPmonZU3qGRp/p42rIvjwB6FQQKCxyWXT\\nbwIDAQAB\\n-----END PUBLIC KEY-----', 'type_of_transaction': 'message', 'amount': 31, 'nonce': 1, 'message': '----END PUBLIC KEY----- on disp', 'transaction_id': 'b58ac7e9cf003d0254400d8bfa1f95aeea94eadffd231c24ff6957b5673acc9f', 'signature': 'IgckXk8aZLoMSYA2DV5gKNDOhgiDcXt6JjRuqAREZed0L+67PHLbJVBDLDDVKgMh05JjpMUKazhpo89jFYO3fNpRfDoEq/XxAhXP9ggOvZjqsPUi8oO+ZTPpK89dkOP5+d6NB38JUYDLmDHFTE4KcqFrsHRJc7EBsi3+2tRCxO3IJAQcHbr1Pq0+6twHj1xuTf2zTDBQXlToXophM8LDSk2c5LbhQvGvmuecBO0TEPavFjITg8Wld/T/N9gZGKGPpliWFK+gtxVxB9guuTHL9w66OqX0xnAZBBIXO6+I8t4L/BK/m3UMpMwTcTAAg9x7JQTcA+0h0p7HcMe+xsMmnw=='}
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 15:41:24] "POST /add_transaction HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "POST /add_transaction HTTP/1.1" 200 50
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5002 "POST /add_transaction HTTP/1.1" 200 50
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2024 15:41:24] "[31m[1mPOST /create_transaction HTTP/1.1[0m" 400 -
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5001 "POST /create_transaction HTTP/1.1" 400 31
+DEBUG:genesis:Node ID: 1
+DEBUG:genesis:Node Wallet Public Key: -----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp43LxyYdV3ArB1nz00PA
+Fo7xgSAG9sxtF77lJtuNHBM5x/R7qA7yZsHrtXsZHYyKnw+FMPoo2PWRlifGhNCe
+MCxn9b/ssirA6P0T8xRHCu30faVCDa3DOilqwhGA2vvW7UkxtMfcaQ7YjpGtvDbc
+jFnEB9hvAEmxcoyon/X2wt4jsph2toW78Dm7y74KUMrz8QsQOhIWGs4qm3peRRyx
+wLZIFXIG+Bg/tF01FW/GRnzl6MmfkSwn3K3HMOJi5BwjBKo3uOodYajXnLO9VZeV
+4EZx1zlXg6D5RTb5v4ob9b5wbYKA9/1cPmonZU3qGRp/p42rIvjwB6FQQKCxyWXT
+bwIDAQAB
+-----END PUBLIC KEY-----
+DEBUG:genesis:Node Blockchain Length: 2

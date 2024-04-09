@@ -151,26 +151,29 @@ def get_chain():
         return jsonify({"error": str(e)}), 400
      
 
-# Endpoint to create a transaction
-# @api.route('/create_transaction', methods=['POST'])
-# def create_transaction ():
-#     receiver_id = request.form.get('receiver')
-#     type_of_transaction = request.form.get('type')
+###TODO auto einai mono gia message 
+@api.route('/create_transaction', methods=['POST'])
+def create_transaction ():
+    receiver_id = request.form.get('receiver')
+    print("IM IN CREATE TRANSACTION AND IM SEEING THE RECEIVER")
+    print(receiver_id)
 
-#     if type_of_transaction == "coins":
-#         amount = request.form.get('amount')
-#     else: 
-#         message = request.form.get('message')
 
-#     # Find the address of the receiver.
-#     receiver_public_key = None
-#     for ring_node in node.ring:
-#         if (ring_node['id'] == receiver_id):
-#             receiver_public_key = ring_node['public_key']
-#     if (receiver_public_key and receiver_id != node.id):
-#         if node.create_transaction(receiver_public_key, receiver_id, amount):
-#             return jsonify({'message': 'The transaction was successful.', 'balance': node.wallet.get_balance()}), 200
-#         else:
-#             return jsonify({'message': 'Not enough NBCs.', 'balance': node.wallet.get_balance()}), 400
-#     else:
-#         return jsonify({'message': 'Transaction failed. Wrong receiver id.'}), 4
+    print("WHATS MY TYPE?")
+    type_of_transaction = request.form.get('type')
+
+    if type_of_transaction == "coins":
+        amount = request.form.get('amount')
+    else: 
+        message = request.form.get('message')
+
+    print("WHATS MY MESSAGE?")
+    print(message)
+
+    if (receiver_id and receiver_id != node.wallet.public_key):
+        if node.create_transaction(receiver_address=receiver_id, type_of_transaction="message", amount=None,message=message):
+            return jsonify({'message': 'The transaction was successful.'}), 200
+        else:
+            return jsonify({'message': 'Not enough NBCs.'}), 400
+    else:
+        return jsonify({'message': 'Transaction failed. Wrong receiver id.'}), 4

@@ -1,6 +1,5 @@
 import base64
 import json
-
 import random
 import threading
 from transaction import Transaction
@@ -9,6 +8,7 @@ from blockchain import Blockchain
 from block import Block
 import requests
 import logging
+from client import CLI
 
 logging.basicConfig(filename='record.log', level=logging.DEBUG)
 
@@ -40,6 +40,10 @@ class Node:
         self.stake = stake 
         self.seen = set()
         self.unvalidated_balance = 0 
+        
+        # for CLI
+        
+        
         
     def create_transaction(self, receiver_address, type_of_transaction, amount, message):
         self.nonce += 1 #added this (athina)

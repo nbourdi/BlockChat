@@ -1,6 +1,7 @@
 from flask import Flask
 import requests
 import logging
+from client import CLI
 from transaction import Transaction
 from node import Node
 from api import api, global_node
@@ -68,6 +69,9 @@ if __name__ == "__main__":
         registration_thread = threading.Thread(target=register_node1)
         registration_thread.start()
 
+    node.cli = CLI("127.0.0.1", 5001)
+    cli_thread = threading.Thread(target=node.cli.start, args=())
+    cli_thread.start()
     app.run(host="127.0.0.1", port=5001)
 
     print("\nBlockchain that ive validated\n")

@@ -2,6 +2,7 @@ from asyncio import sleep
 from flask import Flask
 import requests
 import logging
+from client import CLI
 from transaction import Transaction
 from node import Node
 from api import api, global_node
@@ -82,7 +83,9 @@ if __name__ == "__main__":
     if not registration_completed:
         registration_thread = threading.Thread(target=register_node1)
         registration_thread.start()
-
+    node.cli = CLI("127.0.0.1", 5000)
+    cli_thread = threading.Thread(target=node.cli.start, args=())
+    cli_thread.start()
     app.run(host="127.0.0.1", port=5002)
     print("\n\ Blockchain that ive validated\n")
     for block in node.blockchain.blocks:

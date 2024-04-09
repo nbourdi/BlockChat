@@ -1,6 +1,8 @@
+import threading
 from flask import Flask
 import requests
 import logging
+from client import CLI
 from transaction import Transaction
 from node import Node
 from api import api, global_node
@@ -49,6 +51,12 @@ if __name__ == "__main__":
         # add self to peer ring
         node.add_peer(ip=bootstrap_ip, port="5000", public_key=node.wallet.public_key, balance=node.wallet.balance, id=1)
 
+        node.cli = CLI("127.0.0.1", 5000)
+        cli_thread = threading.Thread(target=node.cli.start, args=())
+        cli_thread.start()
+        print(" ============================================================= "
+              )
+        print(node.wallet.public_key)
         app.run(host=bootstrap_ip, port=bootstrap_port)
         # set the bootstrap id
 
