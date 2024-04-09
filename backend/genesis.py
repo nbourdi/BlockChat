@@ -45,6 +45,7 @@ if __name__ == "__main__":
         node.blockchain.add_block(genesis_block)
         #print("Wallet balance after adding funds:", node.wallet.balance)
         node.id = 1
+        node.unvalidated_balance = 5000
         # add self to peer ring
         node.add_peer(ip=bootstrap_ip, port="5000", public_key=node.wallet.public_key, balance=node.wallet.balance, id=1)
 

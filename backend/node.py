@@ -39,7 +39,7 @@ class Node:
         self.capacity = capacity 
         self.stake = stake 
         self.seen = set()
-        self.unvalidated_balance = 0
+        self.unvalidated_balance = 0 
         
     def create_transaction(self, receiver_address, type_of_transaction, amount, message):
         self.nonce += 1 #added this (athina)
@@ -100,8 +100,6 @@ class Node:
         return res
 
 
-
-                
     def add_peer(self, id, ip, port, public_key, balance):
         peer = Peer(id, ip, port, public_key, balance)
         self.peers.append(peer)
@@ -185,14 +183,14 @@ class Node:
                 if t.receiver_address == self.wallet.public_key:
                     self.wallet.balance += t.amount
                 if t.sender_address == self.wallet.public_key:
-                    self.wallet.balance -= t.amount
+                    self.wallet.balance -= t.amount + t.amount*0.03
 
                 # check and update all peers
                 for peer in self.peers:
                     if peer.public_key == t.sender_address:
-                        peer.balance -= t.amount
+                        peer.balance -= t.amount + t.amount*0.03
                     if peer.public_key == t.receiver_address:
-                        peer.balance += t.amount
+                        peer.balance += t.amount 
 
             elif t.type_of_transaction == "stake":
 
@@ -318,7 +316,7 @@ class Node:
             thread.join()
 
         if valid_by_all:
-            self.add_transaction(trans, capacity)
+            self.validate_transaction(trans, capacity)
             #self.q_transactions.append(trans)
 
         #        if (trans.receiver_address == self.wallet.public_key):
@@ -340,12 +338,12 @@ class Node:
         if (trans.receiver_address == self.wallet.public_key):
             self.unvalidated_balance += trans.amount
         if (trans.sender_address == self.wallet.public_key):
-            self.unvalidated_balance -= trans.amount
+            self.unvalidated_balance -= trans.amount + trans.amount*0.03 # fee is charged to the sender
 
         # check and update all peers
         for peer in self.peers:
             if peer.public_key == trans.sender_address:
-                peer.unvalidated_balance -= trans.amount
+                peer.unvalidated_balance -= trans.amount + trans.amount*0.03
             if peer.public_key == trans.receiver_address:
                 peer.unvalidated_balance += trans.amount
 
@@ -356,14 +354,23 @@ class Node:
             print(f"Transaction of {trans.amount} is added to queue block, capacity not reached.")
         
 
-    def validate_transaction(self, transaction, capacity):
+    def validate_transaction(self, t, capacity):
 
-        if transaction.verify_signature() == False:
+        if t.verify_signature() == False:
             return False
-        if transaction.transaction_id in self.seen:
+        if t.transaction_id in self.seen:
             return True
         
-        self.add_transaction(transaction, capacity)
+        if t.sender_address == self.wallet.public_key:
+            if self.unvalidated_balance < t.amount*1.03:
+                return False
+            
+        for peer in self.peers:
+            if peer.public_key == t.sender_address:
+                if peer.unvalidated_balance < t.amount*1.03:
+                    return False
+        
+        self.add_transaction(t, capacity)
         return True
         #TODO high priority ! we also need to check for sufficient funds considering stake too
 
