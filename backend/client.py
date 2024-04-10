@@ -3,12 +3,6 @@ import sys
 sys.path.append('../')
 import requests
 
-# from backend.node import Node
-# from node import Node
-
-# TODO low priority magic to point to the right thing, 
-#node = Node()
-
 
 def print_header(text):
     print(f"\n{'='*30} {text} {'='*30}")

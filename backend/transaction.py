@@ -1,6 +1,5 @@
 import base64
 import hashlib
-import logging
 from Crypto.Signature import pkcs1_15
 from Crypto.Hash import SHA256
 from Crypto.PublicKey import RSA
@@ -41,7 +40,6 @@ class Transaction:
         self.signature = signature if signature else None
  
 
-##ΤΟ ΕΒΓΑΛΑ ΑΠΟ ΤΑ ΣΧΟΛΙΑ ΠΟΥ ΥΠΗΡΧΕ ΓΤ Μ ΦΑΝΗΚΕ ΚΟΜΠΛΕ
     def calculate_transaction_id(self):
         
         if self.message is None:

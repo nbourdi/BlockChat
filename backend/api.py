@@ -27,7 +27,7 @@ def get_id():
     peer_id = len(node.peers) + 1
 
     # Add node in the list of registered nodes.
-    node.add_peer(peer_id, peer_ip, peer_port, peer_pk, 0)
+    node.add_peer(peer_id, peer_ip, peer_port, peer_pk, 0, 10)
 
     response_data = {'message': "Node added successfully", 'id': peer_id}
     return jsonify(response_data), 200
@@ -44,7 +44,6 @@ def register_node():
             if peer.id != node.id:
                 node.send_blockchain_to_peer(peer=peer)
                 node.send_peer_ring(peer) 
-                sleep(1)
 
         for peer in node.peers:
             if peer.id != node.id:
@@ -122,7 +121,7 @@ def get_ring():
         data = request.get_json()
         data = json.loads(data)
         
-        peers = [Peer(item['id'], item['ip'], item['port'], item['public_key'], item['balance']) for item in data]
+        peers = [Peer(item['id'], item['ip'], item['port'], item['public_key'], item['balance'], item['initial_stake']) for item in data]
 
 
         for peer in peers:

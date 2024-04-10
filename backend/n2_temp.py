@@ -61,19 +61,19 @@ def register_node1():
     except Exception as e:
         print(f"Failed to register node: {e}")
     
+    
     for peer in node.peers:
-        if peer.id == 1:
+        if peer.id == 2:
             bootstrap_pk = peer.public_key
 
-    
-    # node.create_transaction(receiver_address=bootstrap_pk, type_of_transaction="coins", amount=60, message=None)
-    # node.create_transaction(receiver_address=bootstrap_pk, type_of_transaction="coins", amount=70, message=None)
-    # node.create_transaction(receiver_address=bootstrap_pk, type_of_transaction="coins", amount=700, message=None)
+            node.create_transaction(receiver_address=bootstrap_pk, type_of_transaction="coins", amount=12, message=None)
+            node.create_transaction(receiver_address=bootstrap_pk, type_of_transaction="coins", amount=13, message=None)
+            node.create_transaction(receiver_address=bootstrap_pk, type_of_transaction="coins", amount=14, message=None)
+            node.create_transaction(receiver_address=bootstrap_pk, type_of_transaction="coins", amount=15, message=None)
+            node.create_transaction(receiver_address=bootstrap_pk, type_of_transaction="coins", amount=16, message=None)
+            node.create_transaction(receiver_address=bootstrap_pk, type_of_transaction="coins", amount=17, message=None)
 
     
-
-
-
 
 if __name__ == "__main__":
     app.logger.debug("im node1 test temp")

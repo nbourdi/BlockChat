@@ -49,7 +49,7 @@ if __name__ == "__main__":
         node.id = 1
         node.unvalidated_balance = 5000
         # add self to peer ring
-        node.add_peer(ip=bootstrap_ip, port="5000", public_key=node.wallet.public_key, balance=node.wallet.balance, id=1)
+        node.add_peer(ip=bootstrap_ip, port="5000", public_key=node.wallet.public_key, balance=node.wallet.balance, id=1, initial_stake=node.stake)
 
         node.cli = CLI("127.0.0.1", 5000)
         cli_thread = threading.Thread(target=node.cli.start, args=())
