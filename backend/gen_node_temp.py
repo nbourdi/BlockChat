@@ -73,6 +73,12 @@ def register_node1():
             node.create_transaction(receiver_address=bootstrap_pk, type_of_transaction="coins", amount=15, message=None)
             node.create_transaction(receiver_address=bootstrap_pk, type_of_transaction="coins", amount=16, message=None)
             node.create_transaction(receiver_address=bootstrap_pk, type_of_transaction="coins", amount=17, message=None)
+            node.create_transaction(receiver_address=bootstrap_pk, type_of_transaction="coins", amount=18, message=None)
+            node.create_transaction(receiver_address=bootstrap_pk, type_of_transaction="coins", amount=19, message=None)
+            node.create_transaction(receiver_address=bootstrap_pk, type_of_transaction="coins", amount=20, message=None)
+            node.create_transaction(receiver_address=bootstrap_pk, type_of_transaction="coins", amount=21, message=None)
+            node.create_transaction(receiver_address=bootstrap_pk, type_of_transaction="coins", amount=22, message=None)
+            node.create_transaction(receiver_address=bootstrap_pk, type_of_transaction="coins", amount=23, message=None)
 
     # for peer in node.peers:
     #     if peer.id == 1:
@@ -101,6 +107,7 @@ if __name__ == "__main__":
     cli_thread = threading.Thread(target=node.cli.start, args=())
     cli_thread.start()
     app.run(host="127.0.0.1", port=5001)
+    
 
     print("\nBlockchain that ive validated\n")
     for block in node.blockchain.blocks:

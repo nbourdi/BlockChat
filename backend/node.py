@@ -25,7 +25,6 @@ class Peer: # helper class, to represent peer node data
         self.stake = initial_stake 
         self.stake_share = 0
         self.unvalidated_balance = balance
-        # self.nonce = 0 # TODO
 
 
 class Node:
@@ -43,6 +42,8 @@ class Node:
         self.seen = set()
         self.unvalidated_balance = 0 
         self.bootstraping_done = False
+        self.minting_lock = threading.Lock()
+        self.transaction_lock = threading.Lock()
         
 
     def create_transaction(self, receiver_address, type_of_transaction, amount, message):
@@ -79,15 +80,18 @@ class Node:
     
     def validate_block(self, block): 
         # validate the previous hash and check validity of current hash
-        print("INCOMING BLOCK")
-        if block.validator != self.validator_id(block.previous_hash):
-            return False
-        if block.previous_hash == self.blockchain.blocks[-1].current_hash and block.current_hash == block.hash():
-            for t in block.transactions:
-                self.seen.add(t.transaction_id) # if i validate a block that i havent had even the chance to pos yet
+        with self.minting_lock:
+
+            print("INCOMING BLOCK")
+            if block.validator != self.validator_id(block.previous_hash):
+                print("wrong validator")
+                return False
+            if block.previous_hash == self.blockchain.blocks[-1].current_hash and block.current_hash == block.hash():
+                for t in block.transactions:
+                    self.seen.add(t.transaction_id) # if i validate a block that i havent had even the chance to pos yet
                 
-            return True
-        return False
+                return True
+            return False
     
     def validate_chain(self):
         previous_block = None
@@ -238,7 +242,7 @@ class Node:
             elif t.type_of_transaction == "stake":
 
                 if t.sender_address == self.wallet.public_key:
-                    self.stake -= t.amount
+                    self.stake = t.amount
                 for peer in self.peers:
                     if t.sender_address == peer.public_key:
                         peer.stake = t.amount
@@ -256,11 +260,10 @@ class Node:
         for peer in self.peers:
             peer.unvalidated_balance = peer.balance
 
-        self.q_transactions = [] #FIXME idk i dont think thats right but the transactions dont get deleted it seems
+        # self.q_transactions = [] #FIXME idk i dont think thats right but the transactions dont get deleted it seems
 
 
     def mint_block(self):  
-
 
         minted_block = self.create_block(
             index=self.blockchain.blocks[-1].index + 1, 
@@ -269,13 +272,21 @@ class Node:
             capacity=self.capacity,
             current_hash=None
             )
-        
-        for tran in self.q_transactions:
-            if tran.transaction_id not in self.seen:
 
+        i = 0
+        for tran in self.q_transactions:
+    
+            if tran.transaction_id not in self.seen:
+                
                 minted_block.add_transaction(tran)
+                i+=1
+                if i == minted_block.capacity:
+                    break
+                #self.q_transactions.remove(tran)
             else: 
                 print(f"line 235 ============== {tran.amount} it WAS SEEN and NOT ADDED")
+        
+
         
         print("===== BROADCASTING THE BLOCK I AM MINTING...: \n\n")
         print(minted_block)
@@ -371,7 +382,8 @@ class Node:
 
         if valid_by_all:
             #self.q_transactions.append(trans)
-            self.add_transaction(trans, capacity)
+            with self.transaction_lock:
+                self.add_transaction(trans, capacity)
     
     def add_transaction(self, trans, capacity):
 
@@ -395,14 +407,15 @@ class Node:
 
         if len(self.q_transactions) == capacity:
             print("entering proof of stake from line 397...................")
-            self.proof_of_stake()
-            self.q_transactions = []
+            with self.minting_lock:
+                self.proof_of_stake()
+                self.q_transactions = []
         else:
             print(f"Transaction of {trans.amount} is added to queue block, capacity not reached. \n {len(self.q_transactions)} in queue: {self.q_transactions}")
         
 
     def validate_transaction(self, t, capacity):
-
+        
         if t.verify_signature() == False:
             return False
         if t.transaction_id in self.seen:
@@ -418,7 +431,9 @@ class Node:
                 if peer.unvalidated_balance - peer.stake < t.amount*1.03:
                     print("Validate transaction fails for unsufficient funds.")
                     return False
+                
         
+
         self.add_transaction(t, capacity)
         return True
 
@@ -456,6 +471,12 @@ class Node:
         return {"validator": last_block.validator, "transactions": last_block.transactions}
 
 
+
+        
+        
+
+        
+
     def update_stake(self, stake_amount): 
         # transaction με receiver_address = 0 και το ποσο που θλει να δεσμευσει ο καθε κομβος
         if self.unvalidated_balance < stake_amount:
@@ -466,7 +487,6 @@ class Node:
             self.create_transaction(0, type_of_transaction="stake", amount=stake_amount, message=None)
             return True
         
-
 
     def create_reg_transaction(self, receiver_address, reg_capacity):
         self.nonce += 1 #added this (athina)

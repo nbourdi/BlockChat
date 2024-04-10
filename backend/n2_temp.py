@@ -75,6 +75,12 @@ def register_node1():
             node.create_transaction(receiver_address=bootstrap_pk, type_of_transaction="coins", amount=4, message=None)
             node.create_transaction(receiver_address=bootstrap_pk, type_of_transaction="coins", amount=5, message=None)
             node.create_transaction(receiver_address=bootstrap_pk, type_of_transaction="coins", amount=6, message=None)
+            node.create_transaction(receiver_address=bootstrap_pk, type_of_transaction="coins", amount=31, message=None)
+            node.create_transaction(receiver_address=bootstrap_pk, type_of_transaction="coins", amount=32, message=None)
+            node.create_transaction(receiver_address=bootstrap_pk, type_of_transaction="coins", amount=33, message=None)
+            node.create_transaction(receiver_address=bootstrap_pk, type_of_transaction="coins", amount=34, message=None)
+            node.create_transaction(receiver_address=bootstrap_pk, type_of_transaction="coins", amount=35, message=None)
+            node.create_transaction(receiver_address=bootstrap_pk, type_of_transaction="coins", amount=36, message=None)
 
     
 
@@ -90,6 +96,7 @@ if __name__ == "__main__":
     cli_thread = threading.Thread(target=node.cli.start, args=())
     cli_thread.start()
     app.run(host="127.0.0.1", port=5002)
+    
     print("\n\ Blockchain that ive validated\n")
     for block in node.blockchain.blocks:
         print(block)

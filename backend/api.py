@@ -128,7 +128,7 @@ def add_transaction():
     valid = False
     if trans.type_of_transaction == "coins_reg":
         valid = node.validate_transaction(trans, n-1)
-        
+
     else:
         valid = node.validate_transaction(trans, node.capacity)
     if valid:

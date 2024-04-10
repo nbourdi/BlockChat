@@ -304,12 +304,16 @@ To get started, type 'help' to see available commands.
     def start(self):
         self.welcome_message()
         while True:
-            user_input = input("\n93m$ ").split()
-            if not user_input:
-                continue
-            command = user_input[0]
-            args = user_input[1:]
-            self.run_command(command, args)
+            try:
+                user_input = input(print_colored("\n$ ", "cyan")).split()
+                if not user_input:
+                    continue
+                command = user_input[0]
+                args = user_input[1:]
+                self.run_command(command, args)
+            except KeyboardInterrupt:
+                print(print_colored("\nExiting...", "red"))
+                sys.exit(0)
 
 # if __name__ == "__main__":
 #     print("hi")
