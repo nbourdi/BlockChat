@@ -52,6 +52,19 @@ def register_node():
                     receiver_address=peer.public_key,
                     reg_capacity=n-1
                 )
+        
+        
+        # for peer in node.peers:
+        #     if peer.id == 1:
+        #         bootstrap_pk = peer.public_key
+        # sorted_peers = sorted(node.peers, key=lambda x: x.id)
+        # node.create_transaction(receiver_address=sorted_peers[1].public_key, type_of_transaction="coins", amount=11, message=None)
+        # node.create_transaction(receiver_address=sorted_peers[1].public_key, type_of_transaction="coins", amount=12, message=None)
+        # node.create_transaction(receiver_address=sorted_peers[1].public_key, type_of_transaction="coins", amount=12, message=None)
+        # node.create_transaction(receiver_address=sorted_peers[1].public_key, type_of_transaction="coins", amount=13, message=None)
+        # node.create_transaction(receiver_address=sorted_peers[1].public_key, type_of_transaction="coins", amount=15, message=None)
+        # node.create_transaction(receiver_address=sorted_peers[1].public_key, type_of_transaction="coins", amount=16, message=None)
+
 
     return jsonify({"message": "Registered all nodes"}), 200
 
@@ -59,6 +72,11 @@ def register_node():
 @api.route('/money', methods=['GET'])
 def get_money():
     return jsonify({'balance': node.wallet.balance})
+
+@api.route('/bootstraping_done', methods=['POST'])
+def bootstraping_done():
+    node.bootstraping_done = True
+    return jsonify({'message': "notified"}), 200
 
 # Endpoint to get a block
 @api.route('/add_block', methods=['POST'])
@@ -71,6 +89,10 @@ def get_block():
         print("ADDING BLOCK BECAUSE IT WAS BROADCASTED TO ME")
         node.blockchain.add_block(inc_block)
         node.finalize_balances(inc_block)
+        if node.id == 1 and inc_block.index == 1:
+            for peer in node.peers:
+                node.notify_reg_complete(peer)
+
         return jsonify({'message': 'Block added successfully'}), 200
     
     else: # block couldn't be validated
@@ -106,6 +128,7 @@ def add_transaction():
     valid = False
     if trans.type_of_transaction == "coins_reg":
         valid = node.validate_transaction(trans, n-1)
+        
     else:
         valid = node.validate_transaction(trans, node.capacity)
     if valid:
@@ -176,3 +199,17 @@ def create_transaction ():
             return jsonify({'message': 'Not enough NBCs.'}), 400
     else:
         return jsonify({'message': 'Transaction failed. Wrong receiver id.'}), 4
+    
+
+    ###TODO auto einai mono gia message 
+@api.route('/stake', methods=['POST'])
+def stake():
+    data = request.get_json()
+    stake_amount = data.get('stake_amount')
+    print(f"Received stake_amount: {stake_amount}")
+    print(type(stake_amount))
+    stake_amount_int = int(stake_amount)
+    print(f"Type of stake_amount: {type(stake_amount_int)}")
+    node.update_stake(stake_amount_int)
+    return jsonify({'message': f'Successfully received stake_amount: {stake_amount}'})
+    

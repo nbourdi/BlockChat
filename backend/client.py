@@ -151,6 +151,8 @@ class CLI:
     def stake_amount(self, args):
         # Get stake amount from user input or args
         amount = args[0]
+        print(amount)
+        print(type(amount))
 
         try:
             # Make a POST request to the /stake endpoint
@@ -253,7 +255,7 @@ class CLI:
 
     def check_balance(self, args):
         # # TODO low prior
-        # print(f"Your balance is: {self.balance}")
+        print(f"Your balance is: {self.balance}")
         # Construct the URL for the API endpoint
         url = f'http://{self.ip}:{self.port}/money'  # Update with your actual API URL
         #response = requests.post(f'http://{self.ip}:{self.port}/create_transaction', data=payload)

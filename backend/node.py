@@ -9,6 +9,8 @@ from block import Block
 import requests
 import logging
 from client import CLI
+import time
+
 
 logging.basicConfig(filename='record.log', level=logging.DEBUG)
 
@@ -40,13 +42,40 @@ class Node:
         self.stake = stake 
         self.seen = set()
         self.unvalidated_balance = 0 
+        self.bootstraping_done = False
         
 
     def create_transaction(self, receiver_address, type_of_transaction, amount, message):
+        start_time = time.time() # Record start time
+
         self.nonce += 1 #added this (athina)
         trans = Transaction(self.wallet.public_key, receiver_address, type_of_transaction, amount, message, self.nonce) #added the nonce attribute (athina)
         trans.sign_transaction(self.wallet.private_key)
         self.broadcast_transaction(trans, self.capacity)
+        end_time = time.time()
+        execution_time = end_time - start_time
+        with open('execution_times.txt', 'a') as file:
+            file.write(f"Execution time: {execution_time} seconds\n")
+
+    def create_reg_transaction(self, receiver_address, reg_capacity): #TODO could be cleaner
+        self.nonce += 1 #added this (athina)
+        trans = Transaction(self.wallet.public_key, receiver_address, "coins_reg", 1000, None, self.nonce) #added the nonce attribute (athina)
+        trans.sign_transaction(self.wallet.private_key)
+        self.broadcast_transaction(trans, reg_capacity)
+        return trans
+    
+    def notify_reg_complete(self, peer):
+
+        address = f'http://{peer.ip}:{peer.port}/bootstraping_done'
+        try:
+            res = requests.post(address)
+            if res.status_code == 200:
+                    print(f"Notified peer with id = {peer.id}")
+            else:
+                    print(f"Error notifying peer with id = {peer.id}")
+        except Exception as e:
+                print(f"Error notifying {peer.ip}:{peer.port}: {e}")
+
     
     def validate_block(self, block): 
         # validate the previous hash and check validity of current hash
@@ -138,6 +167,7 @@ class Node:
 
     def proof_of_stake(self):
 
+        start_time = time.time()
         print(f"\n\n=== ENTERING PROOF OF STAKE WITH STAKE {self.stake}\n\n")
         validator = self.validator_id(self.blockchain.blocks[-1].hash())
         
@@ -146,7 +176,11 @@ class Node:
         # if i win, i mint
         if validator == self.id:
             print("====== I WON the competition, MINTING...\n")
-            self.mint_block()
+            end_time=self.mint_block()
+            execution_time = end_time - start_time
+            with open('execution_times2.txt', 'a') as file:
+                file.write(f"Execution time: {execution_time} seconds\n")
+
             #self.reward(validator)
         else:
             print(f"====== {validator} won the competition\n")
@@ -160,8 +194,17 @@ class Node:
 
         print("=====REWARDING THE MINTER & FINALIZING BALANCES..")
 
-        fee = 0
+        
         for t in block.transactions:
+
+            i = 0  
+            while i < len(self.q_transactions):
+                if self.q_transactions[i].transaction_id == t.transaction_id:
+                    del self.q_transactions[i]
+                    continue  
+                i += 1  
+            fee = 0
+
             if t.type_of_transaction == "message":
                 fee += len(t.message) # 1 char = 1BCC, we do count spaces
                 
@@ -213,11 +256,11 @@ class Node:
         for peer in self.peers:
             peer.unvalidated_balance = peer.balance
 
+        self.q_transactions = [] #FIXME idk i dont think thats right but the transactions dont get deleted it seems
+
 
     def mint_block(self):  
 
-        
-        transactions = self.q_transactions
 
         minted_block = self.create_block(
             index=self.blockchain.blocks[-1].index + 1, 
@@ -227,7 +270,7 @@ class Node:
             current_hash=None
             )
         
-        for tran in transactions:
+        for tran in self.q_transactions:
             if tran.transaction_id not in self.seen:
 
                 minted_block.add_transaction(tran)
@@ -236,9 +279,10 @@ class Node:
         
         print("===== BROADCASTING THE BLOCK I AM MINTING...: \n\n")
         print(minted_block)
-        self.q_transactions = []
         self.broadcast_block(minted_block)
         self.finalize_balances(minted_block)
+        end_time=time.time()
+        return end_time
 
     # mostly done? are threads necess?, all error handling, get responses?
     def broadcast_block(self, block):
@@ -280,6 +324,10 @@ class Node:
         if all_validated:
             print("ADDING BLOCK BECAUSE I BROADCASTED")
             self.blockchain.add_block(block)
+            if self.id == 1 and block.index == 1:
+                for peer in self.peers:
+                    self.notify_reg_complete(peer)
+                    
 
     def broadcast_transaction(self, trans, capacity): 
         """Εκπέμπει τη συναλλαγή σε όλα τα peer."""
@@ -323,7 +371,7 @@ class Node:
 
         if valid_by_all:
             #self.q_transactions.append(trans)
-            self.validate_transaction(trans, capacity)
+            self.add_transaction(trans, capacity)
     
     def add_transaction(self, trans, capacity):
 
@@ -346,10 +394,11 @@ class Node:
                 peer.unvalidated_balance += trans.amount
 
         if len(self.q_transactions) == capacity:
+            print("entering proof of stake from line 397...................")
             self.proof_of_stake()
             self.q_transactions = []
         else:
-            print(f"Transaction of {trans.amount} is added to queue block, capacity not reached.")
+            print(f"Transaction of {trans.amount} is added to queue block, capacity not reached. \n {len(self.q_transactions)} in queue: {self.q_transactions}")
         
 
     def validate_transaction(self, t, capacity):
@@ -361,11 +410,13 @@ class Node:
         
         if t.sender_address == self.wallet.public_key:
             if self.unvalidated_balance - self.stake < t.amount*1.03 :
+                print("Validate transaction fails for unsufficient funds.")
                 return False
             
         for peer in self.peers:
             if peer.public_key == t.sender_address:
                 if peer.unvalidated_balance - peer.stake < t.amount*1.03:
+                    print("Validate transaction fails for unsufficient funds.")
                     return False
         
         self.add_transaction(t, capacity)
@@ -405,9 +456,8 @@ class Node:
         return {"validator": last_block.validator, "transactions": last_block.transactions}
 
 
-    def stake(self, stake_amount): 
+    def update_stake(self, stake_amount): 
         # transaction με receiver_address = 0 και το ποσο που θλει να δεσμευσει ο καθε κομβος
-        
         if self.unvalidated_balance < stake_amount:
             print(f"Can't stake {stake_amount}, not enough BCC in your acount...")
             return False
@@ -416,6 +466,8 @@ class Node:
             self.create_transaction(0, type_of_transaction="stake", amount=stake_amount, message=None)
             return True
         
+
+
     def create_reg_transaction(self, receiver_address, reg_capacity):
         self.nonce += 1 #added this (athina)
         trans = Transaction(self.wallet.public_key, receiver_address, "coins_reg", 1000, None, self.nonce) #added the nonce attribute (athina)

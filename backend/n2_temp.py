@@ -61,17 +61,20 @@ def register_node1():
     except Exception as e:
         print(f"Failed to register node: {e}")
     
+    while not node.bootstraping_done:
+        pass
     
     for peer in node.peers:
+        print(f"going through peers: ")
         if peer.id == 2:
             bootstrap_pk = peer.public_key
 
-            node.create_transaction(receiver_address=bootstrap_pk, type_of_transaction="coins", amount=12, message=None)
-            node.create_transaction(receiver_address=bootstrap_pk, type_of_transaction="coins", amount=13, message=None)
-            node.create_transaction(receiver_address=bootstrap_pk, type_of_transaction="coins", amount=14, message=None)
-            node.create_transaction(receiver_address=bootstrap_pk, type_of_transaction="coins", amount=15, message=None)
-            node.create_transaction(receiver_address=bootstrap_pk, type_of_transaction="coins", amount=16, message=None)
-            node.create_transaction(receiver_address=bootstrap_pk, type_of_transaction="coins", amount=17, message=None)
+            node.create_transaction(receiver_address=bootstrap_pk, type_of_transaction="coins", amount=1, message=None)
+            node.create_transaction(receiver_address=bootstrap_pk, type_of_transaction="coins", amount=2, message=None)
+            node.create_transaction(receiver_address=bootstrap_pk, type_of_transaction="coins", amount=3, message=None)
+            node.create_transaction(receiver_address=bootstrap_pk, type_of_transaction="coins", amount=4, message=None)
+            node.create_transaction(receiver_address=bootstrap_pk, type_of_transaction="coins", amount=5, message=None)
+            node.create_transaction(receiver_address=bootstrap_pk, type_of_transaction="coins", amount=6, message=None)
 
     
 
