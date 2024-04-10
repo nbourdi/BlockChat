@@ -168,18 +168,21 @@ class CLI:
         
         except requests.exceptions.RequestException as e:
             print(f"Error occurred: {e}")
-    # def view(self, args):
-    #     print("Viewing last validated block...\n\n")
-    #     last_block = node.view_block()
-    #     validator, transactions = last_block["validator"], last_block["transactions"]
-    #     print(
-    #         f"Validated by: {validator}\n\n"
-    #         f"TRANSACTIONS\n"
-    #         )
-    #     for transaction in transactions:
-    #         print(transaction)
-    #         print("-" * 40)  
+    def view(self, args):
+        try:
+            # Make a GET request to the /view endpoint
+            response = requests.get(f'http://{self.ip}:{self.port}/view')
 
+
+            # Check the response status code
+            if response.status_code == 200:
+                # Parse the JSON response
+                print("Retrieve last Block succesfully")
+  
+            else:
+                print("Failed to retrieve data.")
+        except Exception as e:
+            print(f"Error: {e}")
     
     # def view(self, args):
     #     try:

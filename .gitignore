@@ -2,3 +2,4 @@ venv/
 .vscode/
 menv/
 myenv/
+record.log

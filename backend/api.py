@@ -213,3 +213,29 @@ def stake():
     node.update_stake(stake_amount_int)
     return jsonify({'message': f'Successfully received stake_amount: {stake_amount}'})
     
+
+@api.route('/view', methods=['GET'])
+def view():
+    block_details = node.view_block()  # Assuming view_block is a standalone function
+
+    if block_details is None:
+        return jsonify({'message': 'No blocks validated yet'})
+
+    index = block_details["index"]
+    validator = block_details["validator"]
+    transactions = block_details["transactions"]
+
+    print("Validator:", validator)
+    print("Block Index:", index)
+    print("Transactions of the Block:")
+    
+    for data in transactions:
+        print("Transaction ID:", data['transaction_id'])
+        print("Sender's ID:", data['sender_address'])
+        print("Receiver's ID:", data['receiver_address'])
+        print("Type of Transaction:", data['type_of_transaction'])
+        print("Amount:", data['amount'])
+        print("Message:", data['message'])
+        print()
+
+    return jsonify({'message': f'Successfully received stake_amount: {block_details}'})

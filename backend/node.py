@@ -380,11 +380,41 @@ class Node:
         for thread in threads:
             thread.join()
 
-        if valid_by_all:
+        if valid_by_all and trans.type_of_transaction =="stake":
+            self.add_transaction_stake(trans, capacity)
+
+        elif valid_by_all:
             #self.q_transactions.append(trans)
             with self.transaction_lock:
                 self.add_transaction(trans, capacity)
     
+
+    def add_transaction_stake(self, trans, capacity):
+
+        if trans.transaction_id in self.seen:
+            print(f"Transaction of {trans.amount} has already been seen, not adding to queue block.")
+            return
+        
+        print("IM IN STAKE ADD")
+        self.q_transactions.append(trans)
+
+
+        if (trans.sender_address == self.wallet.public_key):
+            self.stake = trans.amount 
+
+        # check and update all peers
+        for peer in self.peers:
+            if peer.public_key == trans.sender_address:
+                peer.stake = trans.amount
+
+        if len(self.q_transactions) == capacity:
+            print("entering proof of stake from line 397...................")
+            with self.minting_lock:
+                self.proof_of_stake()
+                self.q_transactions = []
+        else:
+            print(f"Transaction of {trans.amount} is added to queue block, capacity not reached. \n {len(self.q_transactions)} in queue: {self.q_transactions}")
+        
     def add_transaction(self, trans, capacity):
 
         if trans.transaction_id in self.seen:
@@ -467,8 +497,29 @@ class Node:
 
     # needed for the "view" command in cli, should return last validated block's transactions and the validators id 
     def view_block(self):
-        last_block = self.blockchain.blocks[-1]
-        return {"validator": last_block.validator, "transactions": last_block.transactions}
+        if self.blockchain.blocks:
+            last_block = self.blockchain.blocks[-1]
+            transactions_info = []
+            for transaction in last_block.transactions:
+                transaction_info = {
+                    "transaction_id": transaction.transaction_id,
+                    "sender_address": self.get_peer_id(transaction.sender_address),
+                    "receiver_address": self.get_peer_id(transaction.receiver_address),
+                    "type_of_transaction": transaction.type_of_transaction,
+                    "amount": transaction.amount,
+                    "message": transaction.message,
+                }
+                transactions_info.append(transaction_info)
+            return {"index": last_block.index,"validator": last_block.validator, "transactions": transactions_info}
+        else:
+            return None
+        
+    def get_peer_id(self, pubkey):
+        sorted_peers = sorted(self.peers, key=lambda x: x.id)
+        for peer in sorted_peers:
+                if peer.public_key == pubkey:
+                    return peer.id
+        return None  # If the public key is not found in any peer
 
 
 
