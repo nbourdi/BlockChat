@@ -45,7 +45,6 @@ def register_node1():
         response.raise_for_status()  # Raise an error for bad responses
         response_data = response.json()
         node.id = int(response_data.get('id'))
-        print("Got id.")
     except Exception as e:
         print(f"Failed to get id for node: {e}")
 
@@ -63,24 +62,6 @@ def register_node1():
     
     while not node.bootstraping_done:
         pass
-    
-    for peer in node.peers:
-        print(f"going through peers: ")
-        if peer.id == 2:
-            bootstrap_pk = peer.public_key
-
-            node.create_transaction(receiver_address=bootstrap_pk, type_of_transaction="coins", amount=1, message=None)
-            node.create_transaction(receiver_address=bootstrap_pk, type_of_transaction="coins", amount=2, message=None)
-            node.create_transaction(receiver_address=bootstrap_pk, type_of_transaction="coins", amount=3, message=None)
-            node.create_transaction(receiver_address=bootstrap_pk, type_of_transaction="coins", amount=4, message=None)
-            node.create_transaction(receiver_address=bootstrap_pk, type_of_transaction="coins", amount=5, message=None)
-            node.create_transaction(receiver_address=bootstrap_pk, type_of_transaction="coins", amount=6, message=None)
-            node.create_transaction(receiver_address=bootstrap_pk, type_of_transaction="coins", amount=31, message=None)
-            node.create_transaction(receiver_address=bootstrap_pk, type_of_transaction="coins", amount=32, message=None)
-            node.create_transaction(receiver_address=bootstrap_pk, type_of_transaction="coins", amount=33, message=None)
-            node.create_transaction(receiver_address=bootstrap_pk, type_of_transaction="coins", amount=34, message=None)
-            node.create_transaction(receiver_address=bootstrap_pk, type_of_transaction="coins", amount=35, message=None)
-            node.create_transaction(receiver_address=bootstrap_pk, type_of_transaction="coins", amount=36, message=None)
 
     
 
@@ -92,11 +73,9 @@ if __name__ == "__main__":
     if not registration_completed:
         registration_thread = threading.Thread(target=register_node1)
         registration_thread.start()
-    node.cli = CLI("127.0.0.1", 5000)
+    node.cli = CLI("127.0.0.1", 5002)
     cli_thread = threading.Thread(target=node.cli.start, args=())
     cli_thread.start()
     app.run(host="127.0.0.1", port=5002)
     
-    print("\n\ Blockchain that ive validated\n")
-    for block in node.blockchain.blocks:
-        print(block)
+    

@@ -101,7 +101,6 @@ class Transaction:
         h = SHA256.new(message)
         try:
             pkcs1_15.new(sender_public_key).verify(h, self.signature)
-            print("Signature verified successfully")
             return True
         except (ValueError, TypeError):
             print("Signature verification failed")

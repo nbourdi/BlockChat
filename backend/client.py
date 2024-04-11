@@ -1,4 +1,3 @@
-# from node import node
 import sys
 sys.path.append('../')
 import requests
@@ -52,11 +51,11 @@ class CLI:
             "stake <amount>": "Commit your stake of a specified amount",
             "view": "View the last validated block's transactions and the id of the validator.",
             "balance": "Check your balance",
-            "help": "Show available commands and their descriptions"
-            "t: <amount>: Create a new transaction transfering amount BCC"
+            "help": "Show available commands and their descriptions",
+            "t: <amount>": "Create a new transaction transferring amount BCC"
         }
         self.commands = {
-            "m": self.send_message,
+            "m": self.send_message2,
             "stake": self.stake_amount,
             "view": self.view,
             "balance": self.check_balance,
@@ -69,14 +68,20 @@ class CLI:
     
     def amount(self, args):
         if len(args) < 2:
-            print("Error: 't' command requires both recipient address and amount.")
+            print(print_colored("Error: 't' command requires both recipient address and amount.", "red"))
             return
         
-        recipient_address, amount = args
-        
+        rec_id = args[0]
+        amount = args[1]
+        if rec_id is None:
+            print(print_colored("Error: 'amount' requires a recipient address.", "red"))
+            return
+        if amount is None:
+            print(print_colored("Error: 'amount' requires an amount.", "red"))
+            return
         # Prepare the payload for the HTTP POST request
         payload = {
-            'receiver': recipient_address,
+            'receiver': rec_id,
             'type': 'coins',  # Assuming type of transaction is 'coins' for sending amount
             'amount': amount  # The amount to send
         }
@@ -88,71 +93,51 @@ class CLI:
         # Check the response status and handle accordingly
         if response.status_code == 200:
             response_data = response.json()
-            print(response_data['message'])
-            print(f"Current Balance: {response_data['balance']}")
+            print(print_colored(response_data['message'], "green"))
         elif response.status_code == 400:
             response_data = response.json()
-            print(response_data['message'])
-            print(f"Current Balance: {response_data['balance']}")
+            print(print_colored(response_data['message'], "red"))
         else:
-            print("Failed to create transaction. Error occurred.")
+            print(print_colored("Failed to create transaction. Error occurred.", "red"))
 
 
 
-
-    ##################CHANGED
-    def send_message(self, args):
-        if len(args) < 1:
-            print("Error: 'm' command requires both recipient address and message.")
+    def send_message2(self, args):
+        # Check if rec_id or mess is None
+        rec_id = args[0]
+        mess = args[1]
+        if len(args) > 2:
+            for i in range(2, len(args)):
+                mess = mess + " "+ args[i]
+        if rec_id is None:
+            print(print_colored("Error: 'send_message2' requires a recipient address.", "red"))
             return
-
-        # Join all elements after the first one as the command string
-        command = ' '.join(args)
-        
-        # Find the indices of "-----BEGIN PUBLIC KEY-----" and "-----END PUBLIC KEY-----"
-        begin_index = command.find("-----BEGIN PUBLIC KEY-----")
-        end_index = command.find("-----END PUBLIC KEY-----")
-        
-        if begin_index == -1 or end_index == -1 or end_index < begin_index:
-            print("Error: Incorrect command format.")
+        if mess is None:
+            print(print_colored("Error: 'send_message2' requires a message.", "red"))
             return
-        
-        # Extract the key substring including "-----BEGIN PUBLIC KEY-----" and "-----END PUBLIC KEY-----"
-        key = command[begin_index:end_index + len("-----END PUBLIC KEY-----")].strip()
-        
-        # Extract the message substring after "-----END PUBLIC KEY-----"
-        message_index = command.find('-----END PUBLIC KEY-----', end_index)
-        message = command[message_index + 1:].strip()
-        
-        print("Key:", key)
-        print("Message:", message)
 
         # Prepare the payload for the HTTP POST request
         payload = {
-            'receiver': key,
+            'receiver': rec_id,
             'type': 'message',
-            'message': message
+            'message': mess
         }
-        
+
         # Make the HTTP POST request to your endpoint
         response = requests.post(f'http://{self.ip}:{self.port}/create_transaction', data=payload)
-        
+
         # Check the response status and handle accordingly
         if response.status_code == 200:
-            print("Message sent successfully!")
+            print(print_colored("Message sent successfully!", "green"))
         elif response.status_code == 400:
-            print("Failed to send message: Not enough NBCs.")
+            print(print_colored("Failed to send message: Not enough NBCs.", "red"))
         else:
-            print("Failed to send message. Error occurred.")
-
-        
+            print(print_colored("Failed to send message. Error occurred.", "red"))
 
 
     def stake_amount(self, args):
         # Get stake amount from user input or args
         amount = args[0]
-        print(amount)
-        print(type(amount))
 
         try:
             # Make a POST request to the /stake endpoint
@@ -160,105 +145,32 @@ class CLI:
 
             # Check the response status code
             if response.status_code == 200:
-                print(response.json()['message'])  # Print success message
+                print(print_colored(response.json()['message'], "green"))  # Print success message
             elif response.status_code == 400:
-                print(response.json()['error'])  # Print error message
+                print(print_colored(response.json()['error'], "red"))  # Print error message
             else:
-                print(f"Error: {response.status_code}")
+                print(print_colored(f"Error: {response.status_code}", "red"))
         
         except requests.exceptions.RequestException as e:
-            print(f"Error occurred: {e}")
+            print(print_colored(f"Error occurred: {e}", "red"))
+
+
     def view(self, args):
         try:
             # Make a GET request to the /view endpoint
             response = requests.get(f'http://{self.ip}:{self.port}/view')
 
-
-            # Check the response status code
             if response.status_code == 200:
-                # Parse the JSON response
-                print("Retrieve last Block succesfully")
+                pass
   
             else:
-                print("Failed to retrieve data.")
+                print(print_colored("Failed to retrieve data.", "red"))
         except Exception as e:
-            print(f"Error: {e}")
-    
-    # def view(self, args):
-    #     try:
-    #         # Make a GET request to the /api/block endpoint
-    #         response = requests.post(f'http://{self.ip}:{self.port}/view')
-
-    #         #response = requests.get(f"{self.api_base_url}/api/block")
-            
-            
-    #         # Check the response status code
-    #         if response.status_code == 200:
-    #             last_block = response.json()
-    #             print("Last Block Details:")
-    #             print(f"Validator: {last_block['validator']}")
-    #             print("Transactions:")
-    #             for transaction in last_block['transactions']:
-    #                 print(f" - {transaction}")
-    #         elif response.status_code == 404:
-    #             print("No blocks available")
-    #         else:
-    #             print(f"Error: {response.status_code}")
-        
-    #     except requests.exceptions.RequestException as e:
-    #         print(f"Error occurred: {e}")
-
-    # def view(self, args):
-    #     try:
-    #         # Make a GET request to the /view endpoint
-    #         response = requests.get(f'http://{self.ip}:{self.port}/view')
-            
-    #         # Check the response status code
-    #         if response.status_code == 200:
-    #             last_block = response.json()
-    #             print("Last Block Details:")
-    #             print(f"Validator: {last_block['validator']}")
-    #             print("Transactions:")
-    #             for transaction in last_block['transactions']:
-    #                 print(f" - {transaction}")
-    #         elif response.status_code == 404:
-    #             print("No blocks available")
-    #         else:
-    #             print(f"Error: {response.status_code}")
-        
-    #     except requests.exceptions.RequestException as e:
-    #         print(f"Error occurred: {e}")
-
-
-    def view(self, args):
-        try:
-            # Make a GET request to the /view endpoint
-            response = requests.get(f'http://{self.ip}:{self.port}/view')
-
-            # Check the response status code
-            if response.status_code == 200:
-                last_block = response.json()
-                print_block_details(last_block)
-
-                if last_block['transactions']:
-                    transactions = last_block['transactions']
-                    print_transactions(transactions)
-                else:
-                    print("\nNo transactions available in this block.")
-
-            elif response.status_code == 404:
-                print("\nNo blocks available")
-
-            else:
-                print(f"\nError: {response.status_code}")
-
-        except requests.exceptions.RequestException as e:
-            print(f"\nError occurred: {e}")
+            print(print_colored(f"Error: {e}", "red"))
 
 
     def check_balance(self, args):
         # # TODO low prior
-        print(f"Your balance is: {self.balance}")
         # Construct the URL for the API endpoint
         url = f'http://{self.ip}:{self.port}/money'  # Update with your actual API URL
         #response = requests.post(f'http://{self.ip}:{self.port}/create_transaction', data=payload)
@@ -266,28 +178,44 @@ class CLI:
         # Send an HTTP GET request to the API endpoint
         response = requests.get(url)
         
+
         # Check the response status and handle accordingly
         if response.status_code == 200:
             # Assuming the response contains JSON data with 'balance' key
             balance = response.json().get('balance')
-            print(f"Your balance is: {balance}")
+            print(print_colored(f"Your balance is: {balance}", "green"))
         else:
-            print("Failed to retrieve balance. Error occurred.")
+            print(print_colored("Failed to retrieve balance. Error occurred.", "red"))
+
+        url = f'http://{self.ip}:{self.port}/pending_money'  # Update with your actual API URL
+        #response = requests.post(f'http://{self.ip}:{self.port}/create_transaction', data=payload)
+
+        # Send an HTTP GET request to the API endpoint
+        response = requests.get(url)
+        
+        
+        # Check the response status and handle accordingly
+        if response.status_code == 200:
+            # Assuming the response contains JSON data with 'balance' key
+            balance = response.json().get('balance')
+            print(print_colored(f"Your pending balance is: {balance}", "yellow"))
+        else:
+            print(print_colored("Failed to retrieve balance. Error occurred.", "red"))
 
 
 
     def show_help(self, args):
         max_command_length = max(len(command) for command in self.command_descriptions.keys())
-        print("\n\033[1mAvailable commands:\033[0m\n")
+        print(print_colored("\nAvailable commands:\n", "bold"))
         for command, description in self.command_descriptions.items():
             padding = ' ' * (max_command_length - len(command) + 4)
-            print(f"\033[93m{command}\033[0m{padding}{description}")
+            print(f"{print_colored(command, 'cyan')}{padding}{description}")
 
     def run_command(self, command, args):
         if command in self.commands:
             self.commands[command](args)
         else:
-            print("Command not found. Type 'help' to see available commands.")
+            print(print_colored("Command not found. Type 'help' to see available commands.", "red"))
 
     def welcome_message(self):
         print("""

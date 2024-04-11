@@ -35,11 +35,10 @@ class Node:
         self.blockchain = Blockchain()
         self.peers = []  # info about other nodes, should be in the [ip, port, pubkey] format, the ring IN PEER OBJECTS
         self.nonce = 0
-        self.peer_stakes = []
         self.q_transactions = [] # list of transactions in queue 
         self.capacity = capacity 
         self.stake = stake 
-        self.seen = set()
+        self.trans_ids = set()
         self.unvalidated_balance = 0 
         self.bootstraping_done = False
         self.minting_lock = threading.Lock()
@@ -71,7 +70,8 @@ class Node:
         try:
             res = requests.post(address)
             if res.status_code == 200:
-                    print(f"Notified peer with id = {peer.id}")
+                    # print(f"Notified peer with id = {peer.id}")
+                pass
             else:
                     print(f"Error notifying peer with id = {peer.id}")
         except Exception as e:
@@ -82,13 +82,13 @@ class Node:
         # validate the previous hash and check validity of current hash
         with self.minting_lock:
 
-            print("INCOMING BLOCK")
+            # print("INCOMING BLOCK")
             if block.validator != self.validator_id(block.previous_hash):
-                print("wrong validator")
+                # print("wrong validator")
                 return False
             if block.previous_hash == self.blockchain.blocks[-1].current_hash and block.current_hash == block.hash():
                 for t in block.transactions:
-                    self.seen.add(t.transaction_id) # if i validate a block that i havent had even the chance to pos yet
+                    self.trans_ids.add(t.transaction_id) # if i validate a block that i havent had even the chance to pos yet
                 
                 return True
             return False
@@ -110,8 +110,8 @@ class Node:
         blocks_json = []
         for block in self.blockchain.blocks:
             transactions = [tx.to_dict() for tx in block.transactions]
-            # print("line 98")
-            # print(transactions)
+            # # print("line 98")
+            # # print(transactions)
             block_data = {
                 'index': block.index,
                 'transactions': transactions,
@@ -129,7 +129,7 @@ class Node:
 
 
     def add_peer(self, id, ip, port, public_key, balance, initial_stake):
-        peer = Peer(id, ip, port, public_key, balance, 10)
+        peer = Peer(id, ip, port, public_key, balance, initial_stake)
         self.peers.append(peer)
 
     def add_peer_obj(self, peer: Peer):
@@ -163,7 +163,7 @@ class Node:
         # competition
         rand = random_generator.random() 
 
-        print(f"==== THE RANDOM NUMBER IS {rand}")
+        # print(f"==== THE RANDOM NUMBER IS {rand}")
         for peer in self.peers:
 
             if peer.stake_share[0] <= rand < peer.stake_share[1]:
@@ -172,33 +172,30 @@ class Node:
     def proof_of_stake(self):
 
         start_time = time.time()
-        print(f"\n\n=== ENTERING PROOF OF STAKE WITH STAKE {self.stake}\n\n")
+        # print(f"\n\n=== ENTERING PROOF OF STAKE WITH STAKE {self.stake}\n\n")
         validator = self.validator_id(self.blockchain.blocks[-1].hash())
         
         
         #self.curr_block.validator = validator
         # if i win, i mint
         if validator == self.id:
-            print("====== I WON the competition, MINTING...\n")
+            print("I am minting ... \n")
             end_time=self.mint_block()
             execution_time = end_time - start_time
             with open('execution_times2.txt', 'a') as file:
                 file.write(f"Execution time: {execution_time} seconds\n")
-
-            #self.reward(validator)
         else:
-            print(f"====== {validator} won the competition\n")
-        
-         # every node will call this to give the fees to the validator
+            print(f"Node {validator} is minting")
+
         
         
     # Ο επικυρωτής του block είναι και αυτός στου οποίου το wallet πιστώνονται οι χρεώσεις των
       # transactions που έχουν συμπεριληφθεί στο block .
     def finalize_balances(self, block):
 
-        print("=====REWARDING THE MINTER & FINALIZING BALANCES..")
+        # print("=====REWARDING THE MINTER & FINALIZING BALANCES..")
 
-        
+        fee = 0
         for t in block.transactions:
 
             i = 0  
@@ -207,14 +204,17 @@ class Node:
                     del self.q_transactions[i]
                     continue  
                 i += 1  
-            fee = 0
+            
 
             if t.type_of_transaction == "message":
                 fee += len(t.message) # 1 char = 1BCC, we do count spaces
                 
                 if t.sender_address == self.wallet.public_key:
-                    print(f"New message from {t.sender_address}: {t.message}")
+                    
                     self.wallet.balance -= t.amount + fee
+
+                if t.receiver_address == self.wallet.public_key:
+                    print(f"=== New message from ==== \n {t.sender_address}\n=== message === \n {t.message}")
 
                 # check and update all peers
                 for peer in self.peers:
@@ -276,7 +276,7 @@ class Node:
         i = 0
         for tran in self.q_transactions:
     
-            if tran.transaction_id not in self.seen:
+            if tran.transaction_id not in self.trans_ids:
                 
                 minted_block.add_transaction(tran)
                 i+=1
@@ -284,12 +284,12 @@ class Node:
                     break
                 #self.q_transactions.remove(tran)
             else: 
-                print(f"line 235 ============== {tran.amount} it WAS SEEN and NOT ADDED")
+                pass
+                # print(f"line 235 ============== {tran.amount} it WAS SEEN and NOT ADDED")
+ 
         
-
-        
-        print("===== BROADCASTING THE BLOCK I AM MINTING...: \n\n")
-        print(minted_block)
+        # print("===== BROADCASTING THE BLOCK I AM MINTING...: \n\n")
+        # print(minted_block)
         self.broadcast_block(minted_block)
         self.finalize_balances(minted_block)
         end_time=time.time()
@@ -309,14 +309,15 @@ class Node:
                 res = requests.post(address, json=block_json)
                 if res.status_code == 200:
                     with lock:
-                        print(f"Block sent to peer with id = {peer.id}")
+                        # print(f"Block sent to peer with id = {peer.id}")
+                        pass
                 else:
                     with lock:
-                        print(f"Error sending to peer with id = {peer.id}")
+                        # print(f"Error sending to peer with id = {peer.id}")
                         all_validated = False
             except Exception as e:
                 with lock:
-                    print(f"Error sending block to {peer.ip}:{peer.port}: {e}")
+                    # print(f"Error sending block to {peer.ip}:{peer.port}: {e}")
                     all_validated = False
             
             
@@ -333,7 +334,7 @@ class Node:
             thread.join()
 
         if all_validated:
-            print("ADDING BLOCK BECAUSE I BROADCASTED")
+            # print("ADDING BLOCK BECAUSE I BROADCASTED")
             self.blockchain.add_block(block)
             if self.id == 1 and block.index == 1:
                 for peer in self.peers:
@@ -359,14 +360,15 @@ class Node:
                 res = requests.post(address, json=trans_json)
                 if res.status_code == 200:
                     with lock:
-                        print(f"Transaction successfully sent to {peer.ip}:{peer.port}")
+                        pass
+                        # print(f"Transaction successfully sent to {peer.ip}:{peer.port}")
                 else:
                     with lock:
-                        print(f"Failed to send transaction to {peer.ip}:{peer.port}")
+                        # print(f"Failed to send transaction to {peer.ip}:{peer.port}")
                         valid_by_all = False
             except Exception as e:
                 with lock:
-                    print(f"Error sending transaction to {peer.ip}:{peer.port}: {e}")
+                    # print(f"Error sending transaction to {peer.ip}:{peer.port}: {e}")
                     valid_by_all = False
 
         threads = []
@@ -391,11 +393,10 @@ class Node:
 
     def add_transaction_stake(self, trans, capacity):
 
-        if trans.transaction_id in self.seen:
-            print(f"Transaction of {trans.amount} has already been seen, not adding to queue block.")
+        if trans.transaction_id in self.trans_ids:
+            # print(f"Transaction of {trans.amount} has already been seen, not adding to queue block.")
             return
         
-        print("IM IN STAKE ADD")
         self.q_transactions.append(trans)
 
 
@@ -408,17 +409,15 @@ class Node:
                 peer.stake = trans.amount
 
         if len(self.q_transactions) == capacity:
-            print("entering proof of stake from line 397...................")
             with self.minting_lock:
                 self.proof_of_stake()
                 self.q_transactions = []
         else:
-            print(f"Transaction of {trans.amount} is added to queue block, capacity not reached. \n {len(self.q_transactions)} in queue: {self.q_transactions}")
-        
+            print(f"Transaction of {trans.amount} is added to queue block, capacity not reached.")
     def add_transaction(self, trans, capacity):
 
-        if trans.transaction_id in self.seen:
-            print(f"Transaction of {trans.amount} has already been seen, not adding to queue block.")
+        if trans.transaction_id in self.trans_ids:
+            # print(f"Transaction of {trans.amount} has already been seen, not adding to queue block.")
             return
         
         self.q_transactions.append(trans)
@@ -436,19 +435,19 @@ class Node:
                 peer.unvalidated_balance += trans.amount
 
         if len(self.q_transactions) == capacity:
-            print("entering proof of stake from line 397...................")
+            # print("entering proof of stake from line 397...................")
             with self.minting_lock:
                 self.proof_of_stake()
                 self.q_transactions = []
         else:
-            print(f"Transaction of {trans.amount} is added to queue block, capacity not reached. \n {len(self.q_transactions)} in queue: {self.q_transactions}")
+            print(f"Transaction of {trans.amount} is added to queue block, capacity not reached.")
         
 
     def validate_transaction(self, t, capacity):
         
         if t.verify_signature() == False:
             return False
-        if t.transaction_id in self.seen:
+        if t.transaction_id in self.trans_ids:
             return True
         
         if t.sender_address == self.wallet.public_key:
@@ -461,9 +460,7 @@ class Node:
                 if peer.unvalidated_balance - peer.stake < t.amount*1.03:
                     print("Validate transaction fails for unsufficient funds.")
                     return False
-                
-        
-
+            
         self.add_transaction(t, capacity)
         return True
 
@@ -488,7 +485,8 @@ class Node:
             try:
                 res = requests.post(address, json=ring_json)
                 if res.status_code == 200:
-                    print(f"Ring successfully sent to {peer.ip}:{peer.port}")
+                    pass
+                    # print(f"Ring successfully sent to {peer.ip}:{peer.port}")
                 else:
                     print(f"Failed to send ring to {peer.ip}:{peer.port}")
             except Exception as e:
@@ -522,11 +520,6 @@ class Node:
         return None  # If the public key is not found in any peer
 
 
-
-        
-        
-
-        
 
     def update_stake(self, stake_amount): 
         # transaction με receiver_address = 0 και το ποσο που θλει να δεσμευσει ο καθε κομβος

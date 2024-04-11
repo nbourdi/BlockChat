@@ -27,7 +27,7 @@ def get_id():
     peer_id = len(node.peers) + 1
 
     # Add node in the list of registered nodes.
-    node.add_peer(peer_id, peer_ip, peer_port, peer_pk, 0, 10)
+    node.add_peer(peer_id, peer_ip, peer_port, peer_pk, 0, node.stake)
 
     response_data = {'message': "Node added successfully", 'id': peer_id}
     return jsonify(response_data), 200
@@ -52,19 +52,6 @@ def register_node():
                     receiver_address=peer.public_key,
                     reg_capacity=n-1
                 )
-        
-        
-        # for peer in node.peers:
-        #     if peer.id == 1:
-        #         bootstrap_pk = peer.public_key
-        # sorted_peers = sorted(node.peers, key=lambda x: x.id)
-        # node.create_transaction(receiver_address=sorted_peers[1].public_key, type_of_transaction="coins", amount=11, message=None)
-        # node.create_transaction(receiver_address=sorted_peers[1].public_key, type_of_transaction="coins", amount=12, message=None)
-        # node.create_transaction(receiver_address=sorted_peers[1].public_key, type_of_transaction="coins", amount=12, message=None)
-        # node.create_transaction(receiver_address=sorted_peers[1].public_key, type_of_transaction="coins", amount=13, message=None)
-        # node.create_transaction(receiver_address=sorted_peers[1].public_key, type_of_transaction="coins", amount=15, message=None)
-        # node.create_transaction(receiver_address=sorted_peers[1].public_key, type_of_transaction="coins", amount=16, message=None)
-
 
     return jsonify({"message": "Registered all nodes"}), 200
 
@@ -72,6 +59,10 @@ def register_node():
 @api.route('/money', methods=['GET'])
 def get_money():
     return jsonify({'balance': node.wallet.balance})
+
+@api.route('/pending_money', methods=['GET'])
+def pending_money():
+    return jsonify({'balance': node.unvalidated_balance})
 
 @api.route('/bootstraping_done', methods=['POST'])
 def bootstraping_done():
@@ -86,7 +77,7 @@ def get_block():
     inc_block = Block.from_json(data)
 
     if node.validate_block(inc_block):
-        print("ADDING BLOCK BECAUSE IT WAS BROADCASTED TO ME")
+        # print("ADDING BLOCK BECAUSE IT WAS BROADCASTED TO ME")
         node.blockchain.add_block(inc_block)
         node.finalize_balances(inc_block)
         if node.id == 1 and inc_block.index == 1:
@@ -163,7 +154,7 @@ def get_chain():
         data = request.get_json()
 
         chain = Blockchain.from_json(data)
-        node.blockchain = chain #TODO thats not very good implem - I DONT CARE NERD
+        node.blockchain = chain 
         logging.debug("line 187 chain that i validate:")
         logging.debug(chain)
         
@@ -173,32 +164,7 @@ def get_chain():
         return jsonify({"error": str(e)}), 400
      
 
-###TODO auto einai mono gia message 
-@api.route('/create_transaction', methods=['POST'])
-def create_transaction ():
-    receiver_id = request.form.get('receiver')
-    print("IM IN CREATE TRANSACTION AND IM SEEING THE RECEIVER")
-    print(receiver_id)
 
-
-    print("WHATS MY TYPE?")
-    type_of_transaction = request.form.get('type')
-
-    if type_of_transaction == "coins":
-        amount = request.form.get('amount')
-    else: 
-        message = request.form.get('message')
-
-    print("WHATS MY MESSAGE?")
-    print(message)
-
-    if (receiver_id and receiver_id != node.wallet.public_key):
-        if node.create_transaction(receiver_address=receiver_id, type_of_transaction="message", amount=None,message=message):
-            return jsonify({'message': 'The transaction was successful.'}), 200
-        else:
-            return jsonify({'message': 'Not enough NBCs.'}), 400
-    else:
-        return jsonify({'message': 'Transaction failed. Wrong receiver id.'}), 4
     
 
     ###TODO auto einai mono gia message 
@@ -206,10 +172,7 @@ def create_transaction ():
 def stake():
     data = request.get_json()
     stake_amount = data.get('stake_amount')
-    print(f"Received stake_amount: {stake_amount}")
-    print(type(stake_amount))
     stake_amount_int = int(stake_amount)
-    print(f"Type of stake_amount: {type(stake_amount_int)}")
     node.update_stake(stake_amount_int)
     return jsonify({'message': f'Successfully received stake_amount: {stake_amount}'})
     
@@ -239,3 +202,41 @@ def view():
         print()
 
     return jsonify({'message': f'Successfully received stake_amount: {block_details}'})
+
+
+@api.route('/create_transaction', methods=['POST'])
+def create_transaction ():
+
+    receiver_id = request.form.get('receiver')
+    receiver_id = int(receiver_id)
+    
+    sorted_peers = sorted(node.peers, key=lambda x: x.id)
+    
+    key = sorted_peers[receiver_id-1].public_key
+ 
+    type_of_transaction = request.form.get('type')
+    if type_of_transaction == "coins":
+        amount = request.form.get('amount')
+        amount = int(amount)
+    else: 
+        message = request.form.get('message')
+
+   # print("WHATS MY MESSAGE?")
+   # print(message)
+    if type_of_transaction == "message":
+        if (key and key != node.wallet.public_key):
+            try:
+                node.create_transaction(receiver_address=key, type_of_transaction="message", amount=None,message=message)
+                return jsonify({'message': 'Message sent succesfully.'}), 200
+
+            except:
+                return jsonify({'message': 'Transaction failed.'}), 400
+    else:
+        if (key and key != node.wallet.public_key):
+            try:
+                node.create_transaction(receiver_address=key, type_of_transaction="coins", amount=amount,message=None)
+                return jsonify({'message': 'Transaction completed successfully.'}), 200
+
+            except:
+                print("neyyy")
+                return jsonify({'message': 'Transaction failed.'}), 400

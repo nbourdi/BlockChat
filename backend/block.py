@@ -27,12 +27,6 @@ class Block:
         self.capacity = capacity  # i added this 
         self.current_hash = current_hash if current_hash else self.hash()
 
-    def is_full(self):
-        # print("block cap")
-        # print(self.capacity)
-        if len(self.transactions) < self.capacity:
-            return False
-        return True
     
     def add_transaction(self, transaction):
         self.transactions.append(transaction)
